@@ -1,0 +1,1 @@
+{"id": "70de7c67-9e1f-4f30-86b5-42413ecbdc60", "name": "05_検証", "description": "要求および設計が意図どおり満たされているかを確認するための検証・妥当性確認情報を管理するパッケージ。試験、解析、レビュー、検証結果を一貫して整理する。", "isReferenceModel": false, "metaData": null, "className": "Package"}

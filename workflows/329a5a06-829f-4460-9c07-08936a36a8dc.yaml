@@ -1,0 +1,149 @@
+# ============================================================
+# ワークフロー定義 (デフォルトテンプレート)
+# ------------------------------------------------------------
+# ワークフローは ReAct ループを最小単位とする AIエージェントを
+# シーケンシャルに組み合わせることで、AIの操作を制御します。
+#
+# 各エージェントは「責務」「指示」「有効なツール」を持ち、
+# order の昇順で順番に実行されます。前のエージェントの出力は
+# 次のエージェントへ自動的に引き継がれます。
+#
+# 実行中は、チャットのワークフロー実行メッセージに表示される
+# 「一時停止 / 再開 / 中止」ボタンで実行を制御できます。
+#   - 一時停止: 次のステップ境界で待機します（再開すると続きから実行）。
+#   - 中止: ここまでの成果を保持したまま安全に停止します。
+# ============================================================
+
+# ワークフローの名前 (任意。未指定ならファイル名が使われる)
+name: サンプルワークフロー
+
+# ワークフローの説明
+description: |
+  要件の調査からモデル化、図の作成までを順番に実行するサンプルです。
+
+# ------------------------------------------------------------
+# input: ワークフローへの入力定義
+#   実行時にユーザーへ入力を求める変数を宣言します。
+#   各エージェントの instruction 内で {変数名} として参照できます。
+# ------------------------------------------------------------
+input:
+  - name: target
+    label: 対象
+    description: 調査・モデル化の対象テーマ
+    type: text          # text | multiline | number
+    required: true
+    default: ""
+
+# ------------------------------------------------------------
+# agents: シーケンシャルに実行する AIエージェントのリスト
+#   order の昇順で 1 つずつ実行されます。
+# ------------------------------------------------------------
+agents:
+  - id: investigate
+    name: 調査エージェント
+    order: 1
+    # responsibility: このエージェントの責務 (system prompt の中核)
+    responsibility: |
+      対象テーマに関連する既存のモデル要素・オントロジー・ドキュメントを
+      調査し、後続エージェントが利用できる文脈を収集する。
+    # instruction: ユーザー入力を踏まえた具体的な指示
+    instruction: |
+      「{target}」に関連する既存要素を検索し、不足している情報を洗い出してください。
+    # tools: このエージェントが使用できるツール (許可リスト)
+    tools:
+      - search_item
+      - search_terminology
+      - graph_query
+      - macro_query
+      - read
+    # max_steps: ReAct ループの最大ステップ数 (任意。既定は 20)
+    max_steps: 12
+    # output: 構造化出力 (任意)
+    #   後続エージェントが {<id>.data.<name>} で参照できる型付き出力を定義する。
+    #   type: string | number | integer | boolean | array | object
+    output:
+      - name: summary
+        description: 調査結果の要約
+        type: string
+        required: true
+      - name: missing_topics
+        description: 不足している情報・トピックの一覧
+        type: array
+
+  - id: model
+    name: モデル化エージェント
+    order: 2
+    responsibility: |
+      調査結果に基づき、対象テーマを SysML モデルとして構造化する。
+      適切なパッケージ・ブロック・要件・関係性を作成する。
+    instruction: |
+      調査結果をもとに「{target}」のモデルを作成してください。
+      既存要素との重複を避け、適切な親パッケージ配下に配置すること。
+      調査要約: {investigate.data.summary}
+      不足トピック: {investigate.data.missing_topics}
+    tools:
+      - search_item
+      - read
+      - create_package
+      - create_block
+      - create_requirement
+      - create_relationship
+      - create_multi_elements
+      - update_multi_elements
+    max_steps: 20
+
+  - id: visualize
+    name: 可視化エージェント
+    order: 3
+    responsibility: |
+      作成したモデルを分かりやすく図 (ダイアグラム / テーブル) として可視化する。
+    instruction: |
+      前ステップで作成した要素を含むダイアグラムを作成してください。
+    tools:
+      - search_item
+      - read
+      - create_diagram
+      - create_table
+    max_steps: 10
+
+  # ------------------------------------------------------------
+  # サブワークフロー呼び出しの例 (任意)
+  #   sub_workflow を指定すると、このエージェントは通常の ReAct の
+  #   代わりに別のワークフローを入れ子で実行します。
+  #   ref には呼び出すワークフローのファイル名 / ID / パスを指定し、
+  #   inputs でサブワークフローへの入力を受け渡します
+  #   ({変数} で親の入力やエージェント成果を参照できます)。
+  # ------------------------------------------------------------
+  # - id: call_sub
+  #   name: サブワークフロー実行
+  #   order: 4
+  #   sub_workflow:
+  #     ref: 詳細設計ワークフロー.yaml
+  #     inputs:
+  #       target: "{target}"
+  #       summary: "{investigate.data.summary}"
+
+  # ------------------------------------------------------------
+  # エラー時のリトライ / フォールバック (任意)
+  #   on_error を指定すると、エージェントが失敗した場合に
+  #   自動でリトライしたり、別のワークフローでフォールバック可能。
+  #
+  #   retry         : 再試行回数 (0 ならリトライしない)
+  #   retry_delay   : 各リトライ前の待機秒数
+  #   fallback      : 全リトライ失敗後の動作
+  #                    abort             — ワークフローを中断 (既定)
+  #                    continue          — 警告を出して次のエージェントへ
+  #                    fallback_workflow — 別のワークフローを実行して継続
+  #   fallback_workflow : fallback_workflow 指定時に実行する WF
+  #   fallback_inputs   : フォールバック WF へ渡す入力 ({変数} 可)
+  # ------------------------------------------------------------
+  # - id: robust_step
+  #   name: 例: 失敗に強いエージェント
+  #   order: 5
+  #   on_error:
+  #     retry: 2
+  #     retry_delay: 1.0
+  #     fallback: fallback_workflow
+  #     fallback_workflow: 例外対応ワークフロー.yaml
+  #     fallback_inputs:
+  #       reason: "{target} の処理が失敗"

@@ -1,0 +1,12 @@
+{
+  "items": [
+    {
+      "id": "329a5a06-829f-4460-9c07-08936a36a8dc",
+      "name": "サンプルワークフロー.yaml",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 0
+    }
+  ],
+  "hooks": {}
+}

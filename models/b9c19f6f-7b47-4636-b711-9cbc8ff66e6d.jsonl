@@ -1,0 +1,1 @@
+{"id": "b9c19f6f-7b47-4636-b711-9cbc8ff66e6d", "name": "01_要求・制約参照", "description": "顧客要求、上位要件、法規、標準、契約条件など、開発対象へ影響する要求と制約の参照モデルを整理するパッケージ。", "isReferenceModel": false, "metaData": null, "className": "Package"}

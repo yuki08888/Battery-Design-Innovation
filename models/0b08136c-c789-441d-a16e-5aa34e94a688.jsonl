@@ -1,0 +1,1 @@
+{"id": "0b08136c-c789-441d-a16e-5aa34e94a688", "name": "04_設計判断・前提", "description": "設計上の前提、制約、仮定、判断理由、比較検討結果などを記録するパッケージ。設計の意図や背景を保持し、将来の変更やレビューに備える。", "isReferenceModel": false, "metaData": null, "className": "Package"}

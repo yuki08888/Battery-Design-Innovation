@@ -1,0 +1,90 @@
+{
+    "all_view_entities": [
+        {
+            "id": "9fa8ea01-8644-4131-b4f7-c832f9753086",
+            "name": "パッケージ構成図",
+            "parent_id": "7d7b9ae6-a2f7-4f07-8ef0-a3b1aa4d97ad",
+            "icon_key": "HubOutlined"
+        },
+        {
+            "id": "dd26978e-f9f2-47fc-9e2a-a313cc7945e0",
+            "name": "パッケージ構成図",
+            "parent_id": "7d7b9ae6-a2f7-4f07-8ef0-a3b1aa4d97ad",
+            "icon_key": "HubOutlined"
+        },
+        {
+            "id": "8c1ac890-62dc-492b-9eb8-200f84697583",
+            "name": "ようこそ",
+            "parent_id": "root",
+            "icon_key": "MenuBookOutlined"
+        },
+        {
+            "id": "1e00e07b-6398-495d-b68a-84be59f095ea",
+            "name": "ようこそ",
+            "parent_id": "root",
+            "icon_key": "MenuBookOutlined"
+        },
+        {
+            "id": "b08b285e-870c-4728-bd0e-45540d18e39d",
+            "name": "SysMLオントロジー.yaml",
+            "parent_id": "",
+            "icon_key": "AccountTreeOutlined"
+        },
+        {
+            "id": "ac3c49ad-d75b-4062-b8bf-344975da152f",
+            "name": "ビジネス要求書",
+            "parent_id": "",
+            "icon_key": "DescriptionOutlined"
+        },
+        {
+            "id": "5aae99b8-4194-4161-b887-3484fca76220",
+            "name": "電池企画要求構造図",
+            "parent_id": "778a05f2-5501-4baa-b78b-9f97fc6c5c20",
+            "icon_key": "HubOutlined"
+        },
+        {
+            "id": "5639b941-6cf8-4190-997f-a00e469a90da",
+            "name": "要求階層関係性トレーサビリティ図",
+            "parent_id": "760bc253-1ea0-4fdb-b108-26abf5eeb037",
+            "icon_key": "HubOutlined"
+        },
+        {
+            "id": "f8023e39-7165-411e-b0f3-e0cb4b850080",
+            "name": "電池企画要求-システム要求トレーサビリティマトリクス",
+            "parent_id": "760bc253-1ea0-4fdb-b108-26abf5eeb037",
+            "icon_key": "GridOnOutlined"
+        },
+        {
+            "id": "7ef1c4c8-bdbc-4698-8096-a5282d49edd8",
+            "name": "絶縁カバー-システム性能要求マトリクス",
+            "parent_id": "760bc253-1ea0-4fdb-b108-26abf5eeb037",
+            "icon_key": "GridOnOutlined"
+        },
+        {
+            "id": "cec84077-8965-4c62-9176-6087794025c7",
+            "name": "絶縁カバー - 内部ブロック図",
+            "parent_id": "6acda2a2-8fcf-4b3c-ac98-34377dbfff3d",
+            "icon_key": "DashboardOutlined"
+        },
+        {
+            "id": "957e10f0-e07d-4451-9963-b75e4e8cf1b0",
+            "name": "ビジネス要求-電池企画要求トレーサビリティマトリクス",
+            "parent_id": "fc2c227d-e517-4a9a-af5d-9e5f5b770c24",
+            "icon_key": "GridOnOutlined"
+        }
+    ],
+    "current_tab_ids": [
+        "dd26978e-f9f2-47fc-9e2a-a313cc7945e0",
+        "8c1ac890-62dc-492b-9eb8-200f84697583",
+        "1e00e07b-6398-495d-b68a-84be59f095ea",
+        "7ef1c4c8-bdbc-4698-8096-a5282d49edd8",
+        "cec84077-8965-4c62-9176-6087794025c7",
+        "f8023e39-7165-411e-b0f3-e0cb4b850080",
+        "957e10f0-e07d-4451-9963-b75e4e8cf1b0"
+    ],
+    "current_view_id": "dd26978e-f9f2-47fc-9e2a-a313cc7945e0",
+    "split_tab_ids": [],
+    "split_view_id": null,
+    "split_ratio": 50.0,
+    "active_view_group": "main"
+}
