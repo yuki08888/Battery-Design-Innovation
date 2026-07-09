@@ -18,7 +18,20 @@
     "rel_filter_types": [
         "satisfy",
         "deriveReqt",
-        "trace"
+        "trace",
+        "containment",
+        "dependency",
+        "association",
+        "generalization",
+        "realization",
+        "composition",
+        "aggregation",
+        "allocation",
+        "merge",
+        "refine",
+        "verify",
+        "include",
+        "extend"
     ],
     "row_scope_config": {
         "roots": [
