@@ -25,8 +25,8 @@
             "class_name": "DiagramNode",
             "id": "b9404ac2-1e7e-46b1-98fe-e4d18baf07bf",
             "element_id": "b9404ac2-1e7e-46b1-98fe-e4d18baf07bf",
-            "x": -39,
-            "y": 105,
+            "x": -123,
+            "y": 99,
             "width": 120,
             "height": 80
         },
@@ -85,11 +85,38 @@
             "control_points": null,
             "source_anchor": null,
             "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "dc50a2f5-a02f-46a6-8234-c123413e8e20",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "c1d23857-21e0-4a65-99f0-eeffb48fb3b5",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "f8e4d3b1-9c6e-43ec-b254-7200748a2203",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
         }
     ],
     "scale": 1.0,
-    "offset_x": 235.5,
-    "offset_y": 207.5,
+    "offset_x": 155.5,
+    "offset_y": 73.5,
     "relationship_type": "containment",
     "visible_relation_types": [
         "containment",
