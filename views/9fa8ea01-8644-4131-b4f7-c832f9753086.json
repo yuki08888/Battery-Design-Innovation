@@ -2347,15 +2347,6 @@
         },
         {
             "class_name": "DiagramEdge",
-            "element_id": "16f90d8e-6a9a-4c4a-abd2-a523695a0d49",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
-        },
-        {
-            "class_name": "DiagramEdge",
             "element_id": "48011bb4-3d34-48a9-867d-23237a2455c0",
             "control_point": null,
             "routing": "bezier",
