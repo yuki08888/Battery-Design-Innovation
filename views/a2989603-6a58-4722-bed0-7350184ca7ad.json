@@ -1,0 +1,64 @@
+{
+    "id": "a2989603-6a58-4722-bed0-7350184ca7ad",
+    "name": "test",
+    "class_name": "FreeTable",
+    "description": "",
+    "root_ids": [
+        "760bc253-1ea0-4fdb-b108-26abf5eeb037"
+    ],
+    "columns": [
+        {
+            "id": "rzi4dzmb51c",
+            "name": "パッケージ",
+            "sourceColumnId": null,
+            "type": "element",
+            "relationQueries": [
+                [
+                    {
+                        "relationType": "all",
+                        "direction": "outgoing",
+                        "nodeType": "all"
+                    }
+                ]
+            ]
+        },
+        {
+            "id": "08h11iv1nhdw",
+            "name": "要素",
+            "sourceColumnId": "rzi4dzmb51c",
+            "type": "element",
+            "relationQueries": [
+                [
+                    {
+                        "relationType": "all",
+                        "direction": "outgoing",
+                        "nodeType": "all"
+                    }
+                ]
+            ]
+        },
+        {
+            "id": "53q824iv8s",
+            "name": "名前",
+            "sourceColumnId": "08h11iv1nhdw",
+            "type": "property",
+            "propertyName": "name"
+        },
+        {
+            "id": "cg1i8luhfgf",
+            "name": "要求",
+            "sourceColumnId": "08h11iv1nhdw",
+            "type": "property",
+            "propertyName": "text"
+        }
+    ],
+    "expanded_keys": [
+        "760bc253-1ea0-4fdb-b108-26abf5eeb037-root",
+        "760bc253-1ea0-4fdb-b108-26abf5eeb037_rzi4dzmb51c_0-rzi4dzmb51c",
+        "760bc253-1ea0-4fdb-b108-26abf5eeb037_rzi4dzmb51c_1-rzi4dzmb51c"
+    ],
+    "hidden_columns": [],
+    "column_widths": {
+        "08h11iv1nhdw": 305
+    }
+}
