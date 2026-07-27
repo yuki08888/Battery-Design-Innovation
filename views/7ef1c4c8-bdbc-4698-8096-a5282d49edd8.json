@@ -81,9 +81,9 @@
         ],
         "directElementIds": []
     },
-    "direction_filter": "both",
+    "direction_filter": "outgoing",
     "create_relation_type": "__all__",
-    "include_implied": false,
+    "include_implied": true,
     "implied_edge_config": {
         "customRules": [
             {
@@ -346,7 +346,7 @@
     ],
     "show_outgoing": true,
     "show_incoming": true,
-    "row_header_width": 185,
+    "row_header_width": 180,
     "col_header_height": 120,
     "cell_size": 40
 }
