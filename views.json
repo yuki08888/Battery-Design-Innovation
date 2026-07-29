@@ -1,0 +1,19 @@
+{
+    "all_view_entities": [
+        {
+            "id": "c4725d55-8fcc-4455-b31d-c46fd8f2d370",
+            "name": "部品×性能マトリクス",
+            "parent_id": "dfee9968-ddb6-4879-be6f-36304df9a428",
+            "icon_key": "GridOnOutlined",
+            "icon_color": null
+        }
+    ],
+    "current_tab_ids": [
+        "c4725d55-8fcc-4455-b31d-c46fd8f2d370"
+    ],
+    "current_view_id": "c4725d55-8fcc-4455-b31d-c46fd8f2d370",
+    "split_tab_ids": [],
+    "split_view_id": null,
+    "split_ratio": 50.0,
+    "active_view_group": "main"
+}
