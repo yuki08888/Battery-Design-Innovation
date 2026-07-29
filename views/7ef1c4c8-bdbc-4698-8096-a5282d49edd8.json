@@ -18,20 +18,7 @@
     "rel_filter_types": [
         "satisfy",
         "deriveReqt",
-        "trace",
-        "containment",
-        "dependency",
-        "association",
-        "generalization",
-        "realization",
-        "composition",
-        "aggregation",
-        "allocation",
-        "merge",
-        "refine",
-        "verify",
-        "include",
-        "extend"
+        "trace"
     ],
     "row_scope_config": {
         "roots": [
@@ -81,9 +68,9 @@
         ],
         "directElementIds": []
     },
-    "direction_filter": "outgoing",
+    "direction_filter": "both",
     "create_relation_type": "__all__",
-    "include_implied": true,
+    "include_implied": false,
     "implied_edge_config": {
         "customRules": [
             {
@@ -339,14 +326,15 @@
         ]
     },
     "row_expanded_ids": [
-        "dfee9968-ddb6-4879-be6f-36304df9a428"
+        "dfee9968-ddb6-4879-be6f-36304df9a428",
+        "d8cf2e37-c4c2-4ead-8de0-1121f655a327"
     ],
     "col_expanded_ids": [
         "835145bc-3af4-4da8-9744-35372b33307f"
     ],
     "show_outgoing": true,
     "show_incoming": true,
-    "row_header_width": 180,
-    "col_header_height": 120,
+    "row_header_width": 198,
+    "col_header_height": 248,
     "cell_size": 40
 }
