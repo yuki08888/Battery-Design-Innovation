@@ -1,0 +1,31 @@
+{
+    "id": "71df7b08-50b4-4288-b61d-bda064a0eb31",
+    "name": "熱拡散防止システム 法規要求一覧表",
+    "class_name": "FreeTable",
+    "description": "熱拡散防止システムに関連する法規要求（TSR-A〜E）の一覧表",
+    "root_ids": [
+        "d9308187-7bb7-4ad8-b782-63ec29826dc6",
+        "73419dff-4f98-4f2a-8fc4-ea3764cc7c30",
+        "d5ad1a19-9308-4086-94fd-dce1bb79116b",
+        "6b9072d0-1e8e-488f-929c-063a578b5c97"
+    ],
+    "columns": [
+        {
+            "id": "c1",
+            "name": "要求ID",
+            "sourceColumnId": null,
+            "type": "property",
+            "propertyName": "name"
+        },
+        {
+            "id": "c2",
+            "name": "要求テキスト",
+            "sourceColumnId": null,
+            "type": "property",
+            "propertyName": "text"
+        }
+    ],
+    "expanded_keys": [],
+    "hidden_columns": [],
+    "column_widths": {}
+}

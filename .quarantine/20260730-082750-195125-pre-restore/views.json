@@ -97,15 +97,22 @@
             "parent_id": "c0664c1e-9616-4d96-b61d-287b7fbe4287",
             "icon_key": "DashboardOutlined",
             "icon_color": null
+        },
+        {
+            "id": "d20b618d-1fc9-4431-b57e-6f7fc42500cc",
+            "name": "F6.1: 熱暴走後2時間以上、機能を維持する - 内部ブロック図",
+            "parent_id": "d5ad1a19-9308-4086-94fd-dce1bb79116b",
+            "icon_key": "DashboardOutlined",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [
         "dd26978e-f9f2-47fc-9e2a-a313cc7945e0",
         "71df7b08-50b4-4288-b61d-bda064a0eb31",
         "b08b285e-870c-4728-bd0e-45540d18e39d",
-        "5639b941-6cf8-4190-997f-a00e469a90da"
+        "cec84077-8965-4c62-9176-6087794025c7"
     ],
-    "current_view_id": "5639b941-6cf8-4190-997f-a00e469a90da",
+    "current_view_id": "cec84077-8965-4c62-9176-6087794025c7",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,
