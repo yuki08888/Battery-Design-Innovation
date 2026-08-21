@@ -1394,7 +1394,10 @@
         {
             "class_name": "DiagramEdge",
             "element_id": "ed67d340-2e4e-4ecb-9ce5-3d31541d7107",
-            "control_point": null,
+            "control_point": {
+                "x": -433.7841491699219,
+                "y": -160.81765747070312
+            },
             "routing": "bezier",
             "control_points": null,
             "source_anchor": null,
@@ -1514,13 +1517,16 @@
             "control_point": null,
             "routing": "bezier",
             "control_points": null,
-            "source_anchor": null,
+            "source_anchor": {
+                "x": -424.30575754131064,
+                "y": -806.9200439453125
+            },
             "target_anchor": null
         }
     ],
-    "scale": 0.2552938309063617,
-    "offset_x": 542.0673862062774,
-    "offset_y": 441.6230597664126,
+    "scale": 1.0999999999999999,
+    "offset_x": 860.5005261420877,
+    "offset_y": 1055.6120580483275,
     "relationship_type": "containment",
     "visible_relation_types": [
         "containment",

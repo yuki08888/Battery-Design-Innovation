@@ -87,9 +87,9 @@
             "target_anchor": null
         }
     ],
-    "scale": 1.0,
-    "offset_x": 135.5,
-    "offset_y": 217.5,
+    "scale": 0.7000000000000001,
+    "offset_x": 284.40833333333336,
+    "offset_y": 198.48888931274416,
     "relationship_type": "containment",
     "visible_relation_types": [
         "containment",

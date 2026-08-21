@@ -1,6 +1,6 @@
 {
-    "id": "7ef1c4c8-bdbc-4698-8096-a5282d49edd8",
-    "name": "絶縁カバー-システム性能要求マトリクス",
+    "id": "7911d666-80ff-4c52-8175-66062310ab04",
+    "name": "熱拡散 - 絶縁カバー",
     "class_name": "FreeMatrix",
     "description": "",
     "vertical_scope_el_ids": [
@@ -9,50 +9,20 @@
     "horizontal_scope_el_ids": [
         "835145bc-3af4-4da8-9744-35372b33307f"
     ],
-    "vertical_types": [
-        "Block"
-    ],
-    "horizontal_types": [
-        "Requirement"
-    ],
+    "vertical_types": [],
+    "horizontal_types": [],
     "rel_filter_types": [
         "satisfy",
         "deriveReqt",
-        "trace",
-        "containment",
-        "dependency",
-        "association",
-        "generalization",
-        "realization",
-        "composition",
-        "aggregation",
-        "allocation",
-        "merge",
-        "refine",
-        "verify",
-        "include",
-        "extend"
+        "trace"
     ],
     "row_scope_config": {
         "roots": [
             {
-                "rootId": "dfee9968-ddb6-4879-be6f-36304df9a428",
+                "rootId": "9c05a211-2101-4ee7-bdaf-86509f2d3b7d",
                 "includeRoot": true,
-                "includeIntermediates": true,
-                "queries": [
-                    {
-                        "relationType": "containment",
-                        "direction": "outgoing",
-                        "nodeType": "Package"
-                    },
-                    {
-                        "relationType": "containment",
-                        "direction": "outgoing",
-                        "nodeType": "Block",
-                        "mergeWithPrevious": true
-                    }
-                ],
-                "recursive": true
+                "includeIntermediates": false,
+                "queries": []
             }
         ],
         "directElementIds": []
@@ -60,23 +30,18 @@
     "col_scope_config": {
         "roots": [
             {
-                "rootId": "835145bc-3af4-4da8-9744-35372b33307f",
+                "rootId": "6e424939-4695-41ec-a2f2-d4b8b6ba148d",
                 "includeRoot": true,
-                "includeIntermediates": true,
+                "includeIntermediates": false,
                 "queries": [
                     {
-                        "relationType": "containment",
+                        "relationType": "all",
                         "direction": "outgoing",
-                        "nodeType": "Package"
-                    },
-                    {
-                        "relationType": "containment",
-                        "direction": "outgoing",
-                        "nodeType": "Requirement",
-                        "mergeWithPrevious": true
+                        "nodeType": "all",
+                        "mergeWithPrevious": false
                     }
                 ],
-                "recursive": true
+                "recursive": false
             }
         ],
         "directElementIds": []
@@ -338,16 +303,13 @@
             }
         ]
     },
-    "row_expanded_ids": [
-        "dfee9968-ddb6-4879-be6f-36304df9a428",
-        "d8cf2e37-c4c2-4ead-8de0-1121f655a327"
-    ],
+    "row_expanded_ids": [],
     "col_expanded_ids": [
-        "835145bc-3af4-4da8-9744-35372b33307f"
+        "6e424939-4695-41ec-a2f2-d4b8b6ba148d"
     ],
     "show_outgoing": true,
     "show_incoming": true,
     "row_header_width": 180,
-    "col_header_height": 120,
+    "col_header_height": 221,
     "cell_size": 40
 }
