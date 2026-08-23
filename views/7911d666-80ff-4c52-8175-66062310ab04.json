@@ -1,81 +1,28 @@
 {
-    "id": "c4725d55-8fcc-4455-b31d-c46fd8f2d370",
-    "name": "部品×性能マトリクス",
+    "id": "7911d666-80ff-4c52-8175-66062310ab04",
+    "name": "熱拡散 - 絶縁カバー",
     "class_name": "FreeMatrix",
-    "description": "部品（ブロック）と要求（CTR・上位要求）の追跡・満足関係を可視化するマトリクス",
+    "description": "",
     "vertical_scope_el_ids": [
-        "cfcb364e-7491-4244-9119-3813b56a5247"
+        "dfee9968-ddb6-4879-be6f-36304df9a428"
     ],
     "horizontal_scope_el_ids": [
         "835145bc-3af4-4da8-9744-35372b33307f"
     ],
-    "vertical_types": [
-        "Block"
-    ],
-    "horizontal_types": [
-        "Requirement"
-    ],
+    "vertical_types": [],
+    "horizontal_types": [],
     "rel_filter_types": [
-        "containment",
-        "dependency",
-        "association",
-        "generalization",
-        "realization",
-        "composition",
-        "aggregation",
-        "allocation",
-        "merge",
-        "trace",
-        "refine",
         "satisfy",
-        "verify",
         "deriveReqt",
-        "include",
-        "extend"
+        "trace"
     ],
     "row_scope_config": {
         "roots": [
             {
-                "rootId": "94c51eaf-c85c-4bd3-afb5-501ff41284c8",
+                "rootId": "9c05a211-2101-4ee7-bdaf-86509f2d3b7d",
                 "includeRoot": true,
                 "includeIntermediates": false,
-                "queries": [
-                    {
-                        "relationType": "all",
-                        "direction": "both",
-                        "nodeType": "all",
-                        "mergeWithPrevious": false
-                    }
-                ],
-                "recursive": false
-            },
-            {
-                "rootId": "50d0d2ac-9465-4376-b381-ed65c75ae5e4",
-                "includeRoot": true,
-                "includeIntermediates": false,
-                "queries": [
-                    {
-                        "relationType": "all",
-                        "direction": "both",
-                        "nodeType": "all",
-                        "mergeWithPrevious": false
-                    }
-                ],
-                "recursive": false
-            },
-            {
-                "rootId": "5862d70a-116a-4c03-b0f2-11b3f5287bfe",
-                "includeRoot": true,
-                "includeIntermediates": false,
-                "queries": [
-                    {
-                        "relationType": "all",
-                        "direction": "both",
-                        "nodeType": "all",
-                        "mergeWithPrevious": false
-                    }
-                ],
-                "recursive": false
+                "queries": []
             }
         ],
         "directElementIds": []
@@ -83,28 +30,23 @@
     "col_scope_config": {
         "roots": [
             {
-                "rootId": "760bc253-1ea0-4fdb-b108-26abf5eeb037",
+                "rootId": "6e424939-4695-41ec-a2f2-d4b8b6ba148d",
                 "includeRoot": true,
-                "includeIntermediates": true,
+                "includeIntermediates": false,
                 "queries": [
                     {
-                        "relationType": "containment",
+                        "relationType": "all",
                         "direction": "outgoing",
-                        "nodeType": "Package"
-                    },
-                    {
-                        "relationType": "containment",
-                        "direction": "outgoing",
-                        "nodeType": "Requirement",
-                        "mergeWithPrevious": true
+                        "nodeType": "all",
+                        "mergeWithPrevious": false
                     }
                 ],
-                "recursive": true
+                "recursive": false
             }
         ],
         "directElementIds": []
     },
-    "direction_filter": "both",
+    "direction_filter": "outgoing",
     "create_relation_type": "__all__",
     "include_implied": true,
     "implied_edge_config": {
@@ -361,40 +303,13 @@
             }
         ]
     },
-    "row_expanded_ids": [
-        "835145bc-3af4-4da8-9744-35372b33307f",
-        "50d0d2ac-9465-4376-b381-ed65c75ae5e4"
-    ],
+    "row_expanded_ids": [],
     "col_expanded_ids": [
-        "f2301b59-33bf-46d9-846b-a40ca982fbca",
-        "01541267-5224-4216-9b98-2a327ee03b1d",
-        "135db228-4565-4391-a789-8dcf54a82d7c",
-        "9b18ae27-2643-462c-ab21-e8b38845b1b6",
-        "44f9f2b3-a52d-43ee-ad95-02bd30305960",
-        "f0d2d687-16ca-4189-8fbc-9e41d0e58af2",
-        "7abd03af-9839-473f-a0d5-b478fd3cc857",
-        "5023d9a1-9dd3-481f-b17e-e0b64243a78f",
-        "cdca2bcc-5e3a-41f0-943c-5bca59557244",
-        "bf55740f-da0a-4abe-b9a3-b5ff20ee3dff",
-        "28f40c39-ff41-49bd-b95b-8d92df2789bb",
-        "b02e71c0-8737-4b8f-8058-e96a7507d92b",
-        "fc2c227d-e517-4a9a-af5d-9e5f5b770c24",
-        "778a05f2-5501-4baa-b78b-9f97fc6c5c20",
-        "217c05af-aa6c-4cc6-aee8-163f5e1fc2a9",
-        "f82afe42-a320-48e8-8e04-faa4324e7808",
-        "cfcb364e-7491-4244-9119-3813b56a5247",
-        "fb71180f-6f4d-41f9-bfa4-4810cbc9b19f",
-        "760bc253-1ea0-4fdb-b108-26abf5eeb037",
-        "b15a8c13-6392-4290-8d50-a3a27c14a51a",
-        "dcab22b9-7869-4064-9c00-2e8171522cb5",
-        "586d668b-29a6-45d6-8f80-2f097df46d72",
-        "835145bc-3af4-4da8-9744-35372b33307f",
-        "02df8286-c86e-4500-b32a-db22102cd55d",
-        "05c79587-2c75-413c-99bf-d884a3df139a"
+        "6e424939-4695-41ec-a2f2-d4b8b6ba148d"
     ],
     "show_outgoing": true,
     "show_incoming": true,
     "row_header_width": 180,
-    "col_header_height": 120,
+    "col_header_height": 221,
     "cell_size": 40
 }

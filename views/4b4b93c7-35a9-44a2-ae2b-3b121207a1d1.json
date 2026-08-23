@@ -1,0 +1,380 @@
+{
+    "id": "4b4b93c7-35a9-44a2-ae2b-3b121207a1d1",
+    "name": "排煙バルブ要求割当図",
+    "class_name": "FreeDiagram",
+    "nodes": [
+        {
+            "class_name": "DiagramNode",
+            "id": "50d0d2ac-9465-4376-b381-ed65c75ae5e4",
+            "element_id": "50d0d2ac-9465-4376-b381-ed65c75ae5e4",
+            "x": 60,
+            "y": 35.26315789473684,
+            "width": 120,
+            "height": 80
+        }
+    ],
+    "edges": [
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "ab8e5c4b-177e-46a6-be54-a399edf2235b",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "0b7b4998-660f-49f7-a176-aec9daf3efff",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "775bedff-b7a2-405e-a7fb-dae9c4dd0be1",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "065c2d39-fea9-4716-ba35-b5b6edf7c607",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "794bc3a6-56d3-413c-9c80-c1aa7b073982",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "1873188c-6b94-4cc3-a13b-b44dd60fc703",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "797da288-1cea-4b12-948f-82271e570d33",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "8410d5f5-51f4-4547-8df8-98108d0121c6",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "d66ca35c-7f5c-4c5b-8b2c-4f0c3c353486",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "e7259f6e-e38e-4780-accc-f0b6de7cc81c",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "1b4bbb61-082f-4973-bfdd-8cdf4c4b8212",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "0bfc891a-9f82-4509-8101-9503c309ede4",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "965a1afc-ac86-4fbb-9df3-1f2e46326e5b",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "c13bf7ef-3e2c-4a66-bf3f-ba74ca625c0e",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "1b1bea58-c3b2-4f48-a3e8-329141cb2767",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "f64186da-715d-4e59-86a1-44bf9e1282ea",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "f84f243e-0419-4937-9408-ef0f67a8701b",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "65fb766a-fd65-4416-ac8b-73dc13ecc357",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "ff5a799e-2311-4a5c-8215-e9afbf73ab90",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "298a0e19-61fa-4425-be58-f8ac8d9027b3",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "40cab8b3-de09-45e9-9b87-aab7773bf18c",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "bc2ca852-2791-4272-b02f-8e8bafee5891",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "be0480c9-28fe-4ecc-8dd3-adb586988adc",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "71069ade-96c6-4651-835b-327805bd5357",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "6e8360df-7326-4105-b589-1ac03dbd5286",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "b50b30ef-268c-49ad-987a-4f64c0ab06eb",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "3fb48e60-fc07-40d6-af51-c69ec4791a2a",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "560fecbe-c1ef-4c7c-a57d-ec0ca5569851",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "b93a082c-ed27-43fa-a2f0-4a653fa55085",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "f951765b-448d-4191-9d4f-fb340e95b63e",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "e6c649f9-515f-4a02-911e-27c494d94e69",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "890ace4e-7f11-437e-87cd-040636dddbc3",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "aefa05d8-20df-4ded-b1a4-9244c69ac0fb",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "3d497a72-7c66-4df7-9883-879dee879951",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "a77a3edb-c7b8-4800-b91b-ec11d32b6dc8",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "884cc825-712e-46e8-9fdb-edf6012f921b",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "00efcfd2-0792-4d58-9770-09672932d57d",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "29adc256-530e-47ad-9d9a-033ed07c1cf8",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "e93354b9-0e6d-490d-b44b-bbb26267a8f8",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "53df7f3c-2ecb-423d-abce-8383674ee6db",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "022d52d7-e6c9-4951-a679-b5e60bb01063",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "3f92eb03-6fda-44ac-9753-494fee698248",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "d9bb195d-53d8-49d4-b3f4-84ebcf8983a6",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "582577a9-830f-4ee3-999a-ed322331e1b8",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "ce216c01-9731-4103-9046-200cb35a0e3d",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "f7cc2ec1-ff3d-43f6-87f3-514a7f87e638",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "82f13637-2364-4677-a7e1-a277b53bea6a",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "f67221ad-84bf-4191-af72-78f98266ebd6",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "3ffb5f88-693f-44df-ab65-38502c13057c",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "67aff905-065f-4306-822e-476ade9f7097",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "ab7a0ead-8a24-4881-a981-ba40f102ef5a",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "003a200e-929b-4e2b-a2e6-d2a4d3c2090d",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "8896edaf-9006-4ea9-a082-10b08eccadfc",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "ba6d0d91-6853-47e3-aa86-49dd5ea8b741",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "ccabfb5d-c639-4196-bbca-1a70108323ea",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "4cd46a55-685d-4e71-99e9-6c8151e3a11e",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "d5caf1f9-2f97-4039-8346-bd77957a8240",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "d182095d-adf7-434a-8779-2f707299a02e",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "04d2ad5d-ed4d-4a28-bd74-d2d6ed21d6c5",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "1acd551e-6283-467d-950d-e99789a79db4",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "feda8a37-191a-4126-99c9-03efb9e802c1",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "4f4e2ba8-c637-418f-b2f1-7ed3b3668c96",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "452acbc9-d9cc-4574-b4b5-f836264f7e38",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "a89dc65d-4781-424a-829c-0fdd96263596",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "b6352d24-0e53-4c70-ba4d-7f53c4b3921d",
+            "routing": "bezier"
+        }
+    ],
+    "scale": 0.6333333333333334,
+    "offset_x": 58.025,
+    "offset_y": 258.60833333333335,
+    "relationship_type": "containment",
+    "visible_relation_types": [
+        "containment",
+        "association",
+        "aggregation",
+        "composition",
+        "generalization",
+        "dependency",
+        "realization",
+        "satisfy",
+        "deriveReqt",
+        "trace",
+        "refine",
+        "allocate",
+        "merge",
+        "extend",
+        "include",
+        "verify"
+    ],
+    "visible_node_types": [
+        "Activity",
+        "ActivityNode",
+        "ActivityEdge",
+        "Actor",
+        "Block",
+        "Operation",
+        "Property",
+        "Parameter",
+        "Package",
+        "Requirement",
+        "TestCase",
+        "TestStep",
+        "UseCase"
+    ]
+}

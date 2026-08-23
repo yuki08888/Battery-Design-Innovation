@@ -6,12 +6,100 @@
             "parent_id": "dfee9968-ddb6-4879-be6f-36304df9a428",
             "icon_key": "GridOnOutlined",
             "icon_color": null
+        },
+        {
+            "id": "c7c6a999-0c6d-4c3f-9291-5650adaab40e",
+            "name": "法規適合・熱拡散安全性能マトリクス",
+            "parent_id": "835145bc-3af4-4da8-9744-35372b33307f",
+            "icon_key": "GridOnOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "407d0ccd-af56-461d-b2d6-8148dc63c411",
+            "name": "関係性",
+            "parent_id": "cfcb364e-7491-4244-9119-3813b56a5247",
+            "icon_key": "HubOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "2ad2b7ef-3734-4840-95c8-6ef890ceb32c",
+            "name": "テーブル",
+            "parent_id": "cfcb364e-7491-4244-9119-3813b56a5247",
+            "icon_key": "TableChartOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "e56c667f-1cb9-43fb-915c-2f18fbd0d261",
+            "name": "マトリクス",
+            "parent_id": "cfcb364e-7491-4244-9119-3813b56a5247",
+            "icon_key": "GridOnOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "59acf820-c3c1-433b-8d94-2bff9501d644",
+            "name": "SysMLオントロジー.yaml",
+            "parent_id": "",
+            "icon_key": "AccountTreeOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "c935be1f-a1ed-4eec-933d-1cd7b7f6a167",
+            "name": "関係",
+            "parent_id": "835145bc-3af4-4da8-9744-35372b33307f",
+            "icon_key": "HubOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "64346ec5-747b-4332-881d-b252e7543ae1",
+            "name": "部品-CTR-BATs要求トレーサビリティ図",
+            "parent_id": "dfee9968-ddb6-4879-be6f-36304df9a428",
+            "icon_key": "HubOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "3a5f2710-0344-4b9b-890a-74bf893136bf",
+            "name": "部品目標CTR-設計パラメータ定量評価適合表",
+            "parent_id": "dfee9968-ddb6-4879-be6f-36304df9a428",
+            "icon_key": "TableChartOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "4b4b93c7-35a9-44a2-ae2b-3b121207a1d1",
+            "name": "排煙バルブ要求割当図",
+            "parent_id": "dfee9968-ddb6-4879-be6f-36304df9a428",
+            "icon_key": "HubOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "539a223a-283a-4e3f-aaac-dd3c9da2e96e",
+            "name": "排煙バルブ設計要件表",
+            "parent_id": "dfee9968-ddb6-4879-be6f-36304df9a428",
+            "icon_key": "TableChartOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "5be77210-89b8-43ba-855a-c392ecdb5220",
+            "name": "要求検証マッピングトレーサビリティ表",
+            "parent_id": "70de7c67-9e1f-4f30-86b5-42413ecbdc60",
+            "icon_key": "TableChartOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "889f5b2b-f2ec-425c-a79a-568e611e842b",
+            "name": "セル間断熱材 - 内部ブロック図",
+            "parent_id": "5862d70a-116a-4c03-b0f2-11b3f5287bfe",
+            "icon_key": "DashboardOutlined",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [
-        "c4725d55-8fcc-4455-b31d-c46fd8f2d370"
+        "407d0ccd-af56-461d-b2d6-8148dc63c411",
+        "e56c667f-1cb9-43fb-915c-2f18fbd0d261",
+        "c4725d55-8fcc-4455-b31d-c46fd8f2d370",
+        "889f5b2b-f2ec-425c-a79a-568e611e842b",
+        "4b4b93c7-35a9-44a2-ae2b-3b121207a1d1"
     ],
-    "current_view_id": "c4725d55-8fcc-4455-b31d-c46fd8f2d370",
+    "current_view_id": "889f5b2b-f2ec-425c-a79a-568e611e842b",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,
