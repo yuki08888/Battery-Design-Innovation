@@ -1,0 +1,212 @@
+{
+    "id": "3b995336-a8da-4018-8273-a75e6691d8b7",
+    "title": "ビジネス要求書",
+    "pages": [
+        {
+            "id": "d6865903-ffde-4358-90db-65898929ee56",
+            "title": "ビジネス要求書（たたき台）",
+            "content": "<h1>ビジネス要求書（たたき台）</h1><h2>1. ビジネス背景と目的</h2><h3>1.1 現状と課題</h3><ul><li><p>現在どのような状況にあり、どのような課題が存在するかを記載します。</p></li><li><p>例：手作業による業務プロセスが多く、ヒューマンエラーが発生しやすい。</p></li></ul><h3>1.2 導入・開発の目的</h3><ul><li><p>このプロジェクトやシステムを導入することで、何を解決したいのかを明確にします。</p></li><li><p>例：業務プロセスの自動化により、作業時間の削減と品質向上を図る。</p></li></ul><hr><h2>2. ビジネス目標（KGI / KPI）</h2><p>プロジェクトの成功を測定するための指標を定義します。</p><ul><li><p><strong>KGI（重要目標達成指標）</strong>: 例：全体の業務効率を30%向上させる。</p></li><li><p><strong>KPI（重要業績評価指標）</strong>:</p><ul><li><p>例1：手作業プロセスの処理時間を月間50時間削減。</p></li><li><p>例2：入力データのミスの発生率を0.1%以下に抑える。</p></li></ul></li></ul><hr><h2>3. 対象ユーザーとペルソナ</h2><p>本システムやサービスを実際に利用するユーザー層を定義します。</p><table class=\"document-table\" style=\"min-width: 75px;\"><colgroup><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"></colgroup><tbody><tr><th colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>ユーザーロール</p></th><th colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>想定される役割・特徴</p></th><th colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>期待する主なメリット</p></th></tr><tr><td colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p><strong>現場オペレーター</strong></p></td><td colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>データの入力や日々の処理を担当する。ITスキルは一般的。</p></td><td colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>入力の簡易化、ミスの自動検知</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p><strong>管理者</strong></p></td><td colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>進捗の承認やステータス監視を担当する。全体最適化を求める。</p></td><td colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>承認フローの迅速化、ボトルネックの可視化</p></td></tr></tbody></table><hr><h2>4. 主要なビジネス要求事項</h2><p>システムやサービスが満たすべき要求事項を一覧化します。</p><table class=\"document-table\" style=\"min-width: 100px;\"><colgroup><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"></colgroup><tbody><tr><th colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>ID</p></th><th colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>要求事項</p></th><th colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>優先度 (Must / Want)</p></th><th colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>詳細・備考</p></th></tr><tr><td colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>BR-01</p></td><td colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>取引データのインポート自動化</p></td><td colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>Must</p></td><td colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>CSVファイルをドラッグ＆ドロップで一括登録できること</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>BR-02</p></td><td colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>入力ミス防止のチェック機能</p></td><td colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>Must</p></td><td colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>必須項目や型エラーをアップロード時にリアルタイムで検知すること</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>BR-03</p></td><td colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>承認ワークフローのデジタル化</p></td><td colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>Must</p></td><td colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>作成者 -&gt; 一次承認者 -&gt; 最終承認者の多段階フローをシステム上で完結すること</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>BR-04</p></td><td colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>処理状況のダッシュボード化</p></td><td colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>Want</p></td><td colspan=\"1\" rowspan=\"1\" style=\"text-align: left;\"><p>月次・週次の処理件数をグラフで可視化すること</p></td></tr></tbody></table><hr><h2>5. 制約事項・前提条件</h2><p>プロジェクトを進める上での制限やあらかじめ決まっている前提条件を整理します。</p><ul><li><p><strong>開発期間</strong>: 202X年X月〜202X年X月（リリース目標：202X年X月）</p></li><li><p><strong>予算規模</strong>: OOO万円（システム構築費用、ライセンス等を含む）</p></li><li><p><strong>システム環境</strong>: 既存の社内基幹システム（API連携対応）との接続が必要</p></li><li><p><strong>セキュリティ・法規制</strong>:</p><ul><li><p>個人情報保護法および社内のセキュリティポリシーに準拠すること。</p></li><li><p>データ通信は全て暗号化（HTTPS）すること。</p></li></ul></li></ul><hr><h2>6. 将来の展望・スコープ外</h2><p>今回のフェーズでは対応しない事項（フェーズ2以降の検討事項）を定義し、期待値のコントロールを行います。</p><ul><li><p><strong>フェーズ1（今回）のスコープ</strong>:</p><ul><li><p>コアとなる取引データの自動化、および基本的なワークフローの実装。</p></li></ul></li><li><p><strong>将来的な要望（スコープ外）</strong>:</p><ul><li><p>AIを用いたエラー予測・最適化パターンの提案機能。</p></li><li><p>モバイル専用ネイティブアプリの構築（本フェーズではWebブラウザ対応のみ）。</p></li></ul></li></ul><p></p>",
+            "references": [],
+            "sourceImagePath": null,
+            "thumbnailPath": null,
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "f7bab157-c64b-4ec7-988f-7a57632a5763",
+            "title": "",
+            "content": "",
+            "references": [],
+            "sourceImagePath": null,
+            "thumbnailPath": null,
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        }
+    ],
+    "references": [],
+    "sourceFilePath": null,
+    "createdAt": "2026-07-06T00:05:15.543Z",
+    "updatedAt": "2026-07-06T09:10:13.895790",
+    "skeleton": {
+        "documentId": "3b995336-a8da-4018-8273-a75e6691d8b7",
+        "roots": [
+            {
+                "id": "7396abd1-e5d9-4709-b950-ee1676c33455",
+                "title": "ビジネス要求書（たたき台）",
+                "level": 1,
+                "sectionType": "unclassified",
+                "pageId": "d6865903-ffde-4358-90db-65898929ee56",
+                "startLine": 1,
+                "endLine": 0,
+                "children": [
+                    {
+                        "id": "a1ea3543-1760-435b-8623-4051d061d08b",
+                        "title": "1. ビジネス背景と目的",
+                        "level": 2,
+                        "sectionType": "unclassified",
+                        "pageId": "d6865903-ffde-4358-90db-65898929ee56",
+                        "startLine": 1,
+                        "endLine": 0,
+                        "children": [
+                            {
+                                "id": "14270820-655e-405b-9e01-e98b6084f3c9",
+                                "title": "1.1 現状と課題",
+                                "level": 3,
+                                "sectionType": "unclassified",
+                                "pageId": "d6865903-ffde-4358-90db-65898929ee56",
+                                "startLine": 1,
+                                "endLine": 0,
+                                "children": [],
+                                "linkedElementIds": [],
+                                "pageIndex": 0,
+                                "pageIds": [
+                                    "d6865903-ffde-4358-90db-65898929ee56"
+                                ],
+                                "pageIndices": [
+                                    0
+                                ]
+                            },
+                            {
+                                "id": "ac3271fb-8a08-4321-8894-a7521bc010d5",
+                                "title": "1.2 導入・開発の目的",
+                                "level": 3,
+                                "sectionType": "unclassified",
+                                "pageId": "d6865903-ffde-4358-90db-65898929ee56",
+                                "startLine": 1,
+                                "endLine": 0,
+                                "children": [],
+                                "linkedElementIds": [],
+                                "pageIndex": 0,
+                                "pageIds": [
+                                    "d6865903-ffde-4358-90db-65898929ee56"
+                                ],
+                                "pageIndices": [
+                                    0
+                                ]
+                            }
+                        ],
+                        "linkedElementIds": [],
+                        "pageIndex": 0,
+                        "pageIds": [
+                            "d6865903-ffde-4358-90db-65898929ee56"
+                        ],
+                        "pageIndices": [
+                            0
+                        ]
+                    },
+                    {
+                        "id": "5927d6d4-0362-4a32-87c2-e4a624906fb6",
+                        "title": "2. ビジネス目標（KGI / KPI）",
+                        "level": 2,
+                        "sectionType": "unclassified",
+                        "pageId": "d6865903-ffde-4358-90db-65898929ee56",
+                        "startLine": 1,
+                        "endLine": 0,
+                        "children": [],
+                        "linkedElementIds": [],
+                        "pageIndex": 0,
+                        "pageIds": [
+                            "d6865903-ffde-4358-90db-65898929ee56"
+                        ],
+                        "pageIndices": [
+                            0
+                        ]
+                    },
+                    {
+                        "id": "bc885017-22bd-4e4a-89ed-bb7ee0174abe",
+                        "title": "3. 対象ユーザーとペルソナ",
+                        "level": 2,
+                        "sectionType": "unclassified",
+                        "pageId": "d6865903-ffde-4358-90db-65898929ee56",
+                        "startLine": 1,
+                        "endLine": 0,
+                        "children": [],
+                        "linkedElementIds": [],
+                        "pageIndex": 0,
+                        "pageIds": [
+                            "d6865903-ffde-4358-90db-65898929ee56"
+                        ],
+                        "pageIndices": [
+                            0
+                        ]
+                    },
+                    {
+                        "id": "54b853b2-7241-47f4-ab97-a3a73c818085",
+                        "title": "4. 主要なビジネス要求事項",
+                        "level": 2,
+                        "sectionType": "unclassified",
+                        "pageId": "d6865903-ffde-4358-90db-65898929ee56",
+                        "startLine": 1,
+                        "endLine": 0,
+                        "children": [],
+                        "linkedElementIds": [],
+                        "pageIndex": 0,
+                        "pageIds": [
+                            "d6865903-ffde-4358-90db-65898929ee56"
+                        ],
+                        "pageIndices": [
+                            0
+                        ]
+                    },
+                    {
+                        "id": "c79da893-e802-4b5a-9439-3e47b47d9b5d",
+                        "title": "5. 制約事項・前提条件",
+                        "level": 2,
+                        "sectionType": "unclassified",
+                        "pageId": "d6865903-ffde-4358-90db-65898929ee56",
+                        "startLine": 1,
+                        "endLine": 0,
+                        "children": [],
+                        "linkedElementIds": [],
+                        "pageIndex": 0,
+                        "pageIds": [
+                            "d6865903-ffde-4358-90db-65898929ee56"
+                        ],
+                        "pageIndices": [
+                            0
+                        ]
+                    },
+                    {
+                        "id": "e4d25caf-8f9d-49f0-9e6a-2cccfbb16eac",
+                        "title": "6. 将来の展望・スコープ外",
+                        "level": 2,
+                        "sectionType": "unclassified",
+                        "pageId": "d6865903-ffde-4358-90db-65898929ee56",
+                        "startLine": 1,
+                        "endLine": 1,
+                        "children": [],
+                        "linkedElementIds": [],
+                        "pageIndex": 0,
+                        "pageIds": [
+                            "d6865903-ffde-4358-90db-65898929ee56"
+                        ],
+                        "pageIndices": [
+                            0
+                        ]
+                    }
+                ],
+                "linkedElementIds": [],
+                "pageIndex": 0,
+                "pageIds": [
+                    "d6865903-ffde-4358-90db-65898929ee56"
+                ],
+                "pageIndices": [
+                    0
+                ]
+            }
+        ],
+        "updatedAt": 1783296557701,
+        "isComplete": true
+    },
+    "headingRules": {
+        "ruleEntries": [],
+        "commonRules": {
+            "blankLineBeforeHeading": true,
+            "mergeSameLevelHeadings": true,
+            "fillMissingNumbers": true,
+            "preserveContentExactly": true
+        }
+    }
+}
