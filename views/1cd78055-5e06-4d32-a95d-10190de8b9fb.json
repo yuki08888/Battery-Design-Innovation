@@ -4,7 +4,9 @@
     "class_name": "FreeMatrix",
     "description": "",
     "vertical_scope_el_ids": [
-        "cfcb364e-7491-4244-9119-3813b56a5247"
+        "44f9f2b3-a52d-43ee-ad95-02bd30305960",
+        "bf55740f-da0a-4abe-b9a3-b5ff20ee3dff",
+        "b15a8c13-6392-4290-8d50-a3a27c14a51a"
     ],
     "horizontal_scope_el_ids": [
         "dfee9968-ddb6-4879-be6f-36304df9a428"
@@ -21,7 +23,45 @@
     "row_scope_config": {
         "roots": [
             {
-                "rootId": "cfcb364e-7491-4244-9119-3813b56a5247",
+                "rootId": "44f9f2b3-a52d-43ee-ad95-02bd30305960",
+                "includeRoot": true,
+                "includeIntermediates": true,
+                "queries": [
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Package"
+                    },
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Requirement",
+                        "mergeWithPrevious": true
+                    }
+                ],
+                "recursive": true
+            },
+            {
+                "rootId": "bf55740f-da0a-4abe-b9a3-b5ff20ee3dff",
+                "includeRoot": true,
+                "includeIntermediates": true,
+                "queries": [
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Package"
+                    },
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Requirement",
+                        "mergeWithPrevious": true
+                    }
+                ],
+                "recursive": true
+            },
+            {
+                "rootId": "b15a8c13-6392-4290-8d50-a3a27c14a51a",
                 "includeRoot": true,
                 "includeIntermediates": true,
                 "queries": [
@@ -68,10 +108,9 @@
     },
     "direction_filter": "both",
     "row_expanded_ids": [
-        "b15a8c13-6392-4290-8d50-a3a27c14a51a",
         "44f9f2b3-a52d-43ee-ad95-02bd30305960",
         "bf55740f-da0a-4abe-b9a3-b5ff20ee3dff",
-        "cfcb364e-7491-4244-9119-3813b56a5247"
+        "b15a8c13-6392-4290-8d50-a3a27c14a51a"
     ],
     "col_expanded_ids": [
         "dfee9968-ddb6-4879-be6f-36304df9a428"
