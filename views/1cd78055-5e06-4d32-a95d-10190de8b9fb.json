@@ -1,0 +1,81 @@
+{
+    "id": "1cd78055-5e06-4d32-a95d-10190de8b9fb",
+    "name": "CTR要求-物理ブロック関係性マトリクス",
+    "class_name": "FreeMatrix",
+    "description": "",
+    "vertical_scope_el_ids": [
+        "cfcb364e-7491-4244-9119-3813b56a5247"
+    ],
+    "horizontal_scope_el_ids": [
+        "dfee9968-ddb6-4879-be6f-36304df9a428"
+    ],
+    "vertical_types": [
+        "Requirement"
+    ],
+    "horizontal_types": [
+        "Block"
+    ],
+    "rel_filter_types": [
+        "satisfy"
+    ],
+    "row_scope_config": {
+        "roots": [
+            {
+                "rootId": "cfcb364e-7491-4244-9119-3813b56a5247",
+                "includeRoot": true,
+                "includeIntermediates": true,
+                "queries": [
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Package"
+                    },
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Requirement",
+                        "mergeWithPrevious": true
+                    }
+                ],
+                "recursive": true
+            }
+        ],
+        "directElementIds": []
+    },
+    "col_scope_config": {
+        "roots": [
+            {
+                "rootId": "dfee9968-ddb6-4879-be6f-36304df9a428",
+                "includeRoot": true,
+                "includeIntermediates": true,
+                "queries": [
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Package"
+                    },
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Block",
+                        "mergeWithPrevious": true
+                    }
+                ],
+                "recursive": true
+            }
+        ],
+        "directElementIds": []
+    },
+    "direction_filter": "both",
+    "row_expanded_ids": [
+        "b15a8c13-6392-4290-8d50-a3a27c14a51a",
+        "44f9f2b3-a52d-43ee-ad95-02bd30305960",
+        "bf55740f-da0a-4abe-b9a3-b5ff20ee3dff",
+        "cfcb364e-7491-4244-9119-3813b56a5247"
+    ],
+    "col_expanded_ids": [
+        "dfee9968-ddb6-4879-be6f-36304df9a428"
+    ],
+    "show_outgoing": true,
+    "show_incoming": true
+}

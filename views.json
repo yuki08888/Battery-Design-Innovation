@@ -90,6 +90,13 @@
             "parent_id": "5862d70a-116a-4c03-b0f2-11b3f5287bfe",
             "icon_key": "DashboardOutlined",
             "icon_color": null
+        },
+        {
+            "id": "1cd78055-5e06-4d32-a95d-10190de8b9fb",
+            "name": "CTR要求-物理ブロック関係性マトリクス",
+            "parent_id": "760bc253-1ea0-4fdb-b108-26abf5eeb037",
+            "icon_key": "GridOnOutlined",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [
