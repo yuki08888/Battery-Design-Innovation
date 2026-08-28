@@ -1,0 +1,1 @@
+{"id": "64ad5fcb-2763-4599-b7a9-b083d7dcfafb", "name": "03_既存システム・外部環境参照", "description": "現行システム、接続先システム、外部機器、周辺環境など、設計時に前提となる外部構造の参照モデルを整理するパッケージ。", "isReferenceModel": false, "metaData": null, "className": "Package"}
