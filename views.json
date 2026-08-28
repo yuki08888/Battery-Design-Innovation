@@ -97,6 +97,13 @@
             "parent_id": "760bc253-1ea0-4fdb-b108-26abf5eeb037",
             "icon_key": "GridOnOutlined",
             "icon_color": null
+        },
+        {
+            "id": "028fab96-9f7a-447d-a70f-ad344426d4b9",
+            "name": "絶縁カバー CTR-BATs トレーサビリティマトリクス",
+            "parent_id": "b15a8c13-6392-4290-8d50-a3a27c14a51a",
+            "icon_key": "GridOnOutlined",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [
@@ -104,9 +111,10 @@
         "e56c667f-1cb9-43fb-915c-2f18fbd0d261",
         "c4725d55-8fcc-4455-b31d-c46fd8f2d370",
         "889f5b2b-f2ec-425c-a79a-568e611e842b",
-        "4b4b93c7-35a9-44a2-ae2b-3b121207a1d1"
+        "4b4b93c7-35a9-44a2-ae2b-3b121207a1d1",
+        "028fab96-9f7a-447d-a70f-ad344426d4b9"
     ],
-    "current_view_id": "c4725d55-8fcc-4455-b31d-c46fd8f2d370",
+    "current_view_id": "028fab96-9f7a-447d-a70f-ad344426d4b9",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,

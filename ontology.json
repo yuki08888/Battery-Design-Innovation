@@ -1,12 +1,15 @@
 {
+  "schemaVersion": 3,
   "items": [
     {
       "id": "18ae3915-9a06-4ae3-8129-9fce7891a423",
       "name": "SysMLオントロジー.yaml",
-      "item_type": "file",
+      "item_type": "ontology",
       "parent_id": null,
       "reference_level": "standard",
-      "order": 0
+      "order": 0,
+      "domain": "Battery Design Innovationプロジェクトにおけるビジネス要求（取引データの自動化、承認ワークフロー等）およびMBSEの汎用的なモデリング概念・関係・命名規則・ルールを定義する統合オントロジー。",
+      "version": "3.0.0"
     }
   ]
 }

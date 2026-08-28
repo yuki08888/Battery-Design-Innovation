@@ -1,8 +1,8 @@
 {
-    "id": "c4725d55-8fcc-4455-b31d-c46fd8f2d370",
-    "name": "部品×性能マトリクス",
+    "id": "028fab96-9f7a-447d-a70f-ad344426d4b9",
+    "name": "絶縁カバー CTR-BATs トレーサビリティマトリクス",
     "class_name": "FreeMatrix",
-    "description": "部品（ブロック）と要求（CTR・上位要求）の追跡・満足関係を可視化するマトリクス",
+    "description": "絶縁カバーに関するCTR（PKG30）と、対応するシステム要求（BATs）との間の allocate 依存関係を示すトレーサビリティマトリクス。ユーザー提示指示に従って検証できるように全CTR要求と関連BATs要求を行列スコープとして配置。",
     "vertical_scope_el_ids": [
         "cfcb364e-7491-4244-9119-3813b56a5247"
     ],
@@ -10,7 +10,7 @@
         "835145bc-3af4-4da8-9744-35372b33307f"
     ],
     "vertical_types": [
-        "Block"
+        "Requirement"
     ],
     "horizontal_types": [
         "Requirement"
@@ -36,46 +36,23 @@
     "row_scope_config": {
         "roots": [
             {
-                "rootId": "94c51eaf-c85c-4bd3-afb5-501ff41284c8",
+                "rootId": "b15a8c13-6392-4290-8d50-a3a27c14a51a",
                 "includeRoot": true,
-                "includeIntermediates": false,
+                "includeIntermediates": true,
                 "queries": [
                     {
-                        "relationType": "all",
-                        "direction": "both",
-                        "nodeType": "all",
-                        "mergeWithPrevious": false
-                    }
-                ],
-                "recursive": false
-            },
-            {
-                "rootId": "50d0d2ac-9465-4376-b381-ed65c75ae5e4",
-                "includeRoot": true,
-                "includeIntermediates": false,
-                "queries": [
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Package"
+                    },
                     {
-                        "relationType": "all",
-                        "direction": "both",
-                        "nodeType": "all",
-                        "mergeWithPrevious": false
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Requirement",
+                        "mergeWithPrevious": true
                     }
                 ],
-                "recursive": false
-            },
-            {
-                "rootId": "5862d70a-116a-4c03-b0f2-11b3f5287bfe",
-                "includeRoot": true,
-                "includeIntermediates": false,
-                "queries": [
-                    {
-                        "relationType": "all",
-                        "direction": "both",
-                        "nodeType": "all",
-                        "mergeWithPrevious": false
-                    }
-                ],
-                "recursive": false
+                "recursive": true
             }
         ],
         "directElementIds": []
@@ -83,7 +60,7 @@
     "col_scope_config": {
         "roots": [
             {
-                "rootId": "760bc253-1ea0-4fdb-b108-26abf5eeb037",
+                "rootId": "cfcb364e-7491-4244-9119-3813b56a5247",
                 "includeRoot": true,
                 "includeIntermediates": true,
                 "queries": [
@@ -367,12 +344,9 @@
     "col_expanded_ids": [
         "bf55740f-da0a-4abe-b9a3-b5ff20ee3dff",
         "cfcb364e-7491-4244-9119-3813b56a5247",
-        "44f9f2b3-a52d-43ee-ad95-02bd30305960",
-        "b15a8c13-6392-4290-8d50-a3a27c14a51a"
+        "b15a8c13-6392-4290-8d50-a3a27c14a51a",
+        "44f9f2b3-a52d-43ee-ad95-02bd30305960"
     ],
     "show_outgoing": true,
-    "show_incoming": true,
-    "row_header_width": 180,
-    "col_header_height": 120,
-    "cell_size": 40
+    "show_incoming": true
 }
