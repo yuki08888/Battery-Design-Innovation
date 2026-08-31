@@ -1,0 +1,127 @@
+{
+    "id": "cec84077-8965-4c62-9176-6087794025c7",
+    "name": "絶縁カバー - 内部ブロック図",
+    "class_name": "FreeDiagram",
+    "nodes": [
+        {
+            "class_name": "DiagramNode",
+            "id": "6acda2a2-8fcf-4b3c-ac98-34377dbfff3d",
+            "element_id": "6acda2a2-8fcf-4b3c-ac98-34377dbfff3d",
+            "x": 151,
+            "y": 60,
+            "width": 200,
+            "height": 120
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "3898d53c-3c6b-4296-84b1-f69fb3a654df",
+            "element_id": "3898d53c-3c6b-4296-84b1-f69fb3a654df",
+            "x": -89,
+            "y": -101,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "b9404ac2-1e7e-46b1-98fe-e4d18baf07bf",
+            "element_id": "b9404ac2-1e7e-46b1-98fe-e4d18baf07bf",
+            "x": -39,
+            "y": 105,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "110d1d45-6206-4203-9bef-31080245d890",
+            "element_id": "110d1d45-6206-4203-9bef-31080245d890",
+            "x": 91,
+            "y": 312,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "3317f763-2ee7-4aee-bafa-ff33b4acf662",
+            "element_id": "3317f763-2ee7-4aee-bafa-ff33b4acf662",
+            "x": 401,
+            "y": 260,
+            "width": 120,
+            "height": 80
+        }
+    ],
+    "edges": [
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "73e714ca-5eb1-4f40-b16a-0fe54d2ad8ce",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "f32cfdbd-fc65-458b-b1fb-b19a2ef8c1f4",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "9b0af70e-79be-4300-84a3-40f12c078247",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "1dd58627-4459-4e25-8e92-b5fd17518904",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        }
+    ],
+    "scale": 1.0,
+    "offset_x": 135.5,
+    "offset_y": 217.5,
+    "relationship_type": "containment",
+    "visible_relation_types": [
+        "containment",
+        "association",
+        "aggregation",
+        "composition",
+        "generalization",
+        "dependency",
+        "realization",
+        "satisfy",
+        "deriveReqt",
+        "trace",
+        "refine",
+        "allocate",
+        "merge",
+        "extend",
+        "include",
+        "verify"
+    ],
+    "visible_node_types": [
+        "Activity",
+        "ActivityNode",
+        "ActivityEdge",
+        "Actor",
+        "Block",
+        "Operation",
+        "Property",
+        "Parameter",
+        "Package",
+        "Requirement",
+        "TestCase",
+        "TestStep",
+        "UseCase"
+    ]
+}

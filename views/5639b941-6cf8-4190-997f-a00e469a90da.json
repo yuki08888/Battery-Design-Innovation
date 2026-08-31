@@ -1072,21 +1072,8 @@
     "relationship_type": "containment",
     "visible_relation_types": [
         "containment",
-        "association",
-        "aggregation",
-        "composition",
-        "generalization",
         "dependency",
-        "realization",
-        "satisfy",
-        "deriveReqt",
-        "trace",
-        "refine",
-        "allocate",
-        "merge",
-        "extend",
-        "include",
-        "verify"
+        "satisfy"
     ],
     "visible_node_types": [
         "Activity",

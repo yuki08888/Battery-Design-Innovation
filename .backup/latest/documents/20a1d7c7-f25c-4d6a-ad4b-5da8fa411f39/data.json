@@ -1,0 +1,36 @@
+{
+    "id": "20a1d7c7-f25c-4d6a-ad4b-5da8fa411f39",
+    "title": "新しいドキュメント",
+    "pages": [
+        {
+            "id": "e531df8c-8553-45bf-b857-b1eb65caa6b9",
+            "title": "",
+            "content": "<p></p>",
+            "references": [],
+            "sourceImagePath": null,
+            "thumbnailPath": null,
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        }
+    ],
+    "references": [],
+    "sourceFilePath": null,
+    "createdAt": "2026-07-06T01:23:59.129Z",
+    "updatedAt": "2026-07-06T01:23:59.129Z",
+    "skeleton": {
+        "documentId": "20a1d7c7-f25c-4d6a-ad4b-5da8fa411f39",
+        "roots": [],
+        "updatedAt": 1783301037340,
+        "isComplete": true
+    },
+    "headingRules": {
+        "ruleEntries": [],
+        "commonRules": {
+            "blankLineBeforeHeading": true,
+            "mergeSameLevelHeadings": true,
+            "fillMissingNumbers": true,
+            "preserveContentExactly": true
+        }
+    }
+}
