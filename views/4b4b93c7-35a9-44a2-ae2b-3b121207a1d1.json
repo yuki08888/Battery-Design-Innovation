@@ -46,11 +46,6 @@
         },
         {
             "class_name": "DiagramEdge",
-            "element_id": "797da288-1cea-4b12-948f-82271e570d33",
-            "routing": "bezier"
-        },
-        {
-            "class_name": "DiagramEdge",
             "element_id": "8410d5f5-51f4-4547-8df8-98108d0121c6",
             "routing": "bezier"
         },
@@ -251,42 +246,12 @@
         },
         {
             "class_name": "DiagramEdge",
-            "element_id": "f67221ad-84bf-4191-af72-78f98266ebd6",
-            "routing": "bezier"
-        },
-        {
-            "class_name": "DiagramEdge",
-            "element_id": "3ffb5f88-693f-44df-ab65-38502c13057c",
-            "routing": "bezier"
-        },
-        {
-            "class_name": "DiagramEdge",
             "element_id": "67aff905-065f-4306-822e-476ade9f7097",
             "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
-            "element_id": "ab7a0ead-8a24-4881-a981-ba40f102ef5a",
-            "routing": "bezier"
-        },
-        {
-            "class_name": "DiagramEdge",
             "element_id": "003a200e-929b-4e2b-a2e6-d2a4d3c2090d",
-            "routing": "bezier"
-        },
-        {
-            "class_name": "DiagramEdge",
-            "element_id": "8896edaf-9006-4ea9-a082-10b08eccadfc",
-            "routing": "bezier"
-        },
-        {
-            "class_name": "DiagramEdge",
-            "element_id": "ba6d0d91-6853-47e3-aa86-49dd5ea8b741",
-            "routing": "bezier"
-        },
-        {
-            "class_name": "DiagramEdge",
-            "element_id": "ccabfb5d-c639-4196-bbca-1a70108323ea",
             "routing": "bezier"
         },
         {
@@ -297,16 +262,6 @@
         {
             "class_name": "DiagramEdge",
             "element_id": "d5caf1f9-2f97-4039-8346-bd77957a8240",
-            "routing": "bezier"
-        },
-        {
-            "class_name": "DiagramEdge",
-            "element_id": "d182095d-adf7-434a-8779-2f707299a02e",
-            "routing": "bezier"
-        },
-        {
-            "class_name": "DiagramEdge",
-            "element_id": "04d2ad5d-ed4d-4a28-bd74-d2d6ed21d6c5",
             "routing": "bezier"
         },
         {
@@ -327,11 +282,6 @@
         {
             "class_name": "DiagramEdge",
             "element_id": "452acbc9-d9cc-4574-b4b5-f836264f7e38",
-            "routing": "bezier"
-        },
-        {
-            "class_name": "DiagramEdge",
-            "element_id": "a89dc65d-4781-424a-829c-0fdd96263596",
             "routing": "bezier"
         },
         {

@@ -1,0 +1,29 @@
+# >>> system-factory internal artifacts (do not edit between markers) >>>
+# アプリが自動生成する一時データ・退避フォルダ（コミット対象外）。
+.backup/
+chat_history/
+project_config.json
+git-remote.json
+models/manifest.json
+models/*.partition
+vector_store.db
+vector_store.db-wal
+vector_store.db-shm
+vector_index_*.json
+ontology_vector_index.json
+ontology_terminology_index.json
+ontology_element_index.json
+ontologies/*.orphan
+ontologies/*.orphan[0-9]*
+app_doc_vector_index.json
+.merge_proposals/
+.naming_proposals/
+.description_proposals/
+.requirement_proposals/
+.restructure_proposals/
+*.corrupt-backup/
+*.corrupt-*
+.ontology-migration-backup-*/
+apps/**/.build/
+apps/**/app_build_log.txt
+# <<< system-factory internal artifacts <<<

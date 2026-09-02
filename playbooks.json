@@ -1,0 +1,233 @@
+{
+  "items": [
+    {
+      "id": "0fe08803-2040-4d7d-a23e-a85b1cacd015",
+      "name": "ブロック階層の整理",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 0
+    },
+    {
+      "id": "e5a8b01b-0aed-4bd2-bde8-11a76aaf6eb5",
+      "name": "変更影響分析",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 1
+    },
+    {
+      "id": "efb9d512-4bc7-4861-8424-3f5192c003f4",
+      "name": "機能フロー設計",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 2
+    },
+    {
+      "id": "ca84b141-ee73-45ff-9214-7e2227c84bc7",
+      "name": "ハザード分析と安全要求",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 3
+    },
+    {
+      "id": "3421e80d-4dab-482a-8ea8-f62435571a8b",
+      "name": "内部構造展開（IBD）",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 4
+    },
+    {
+      "id": "1f117755-b026-4785-a20b-fa451c456efb",
+      "name": "インターフェース定義",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 5
+    },
+    {
+      "id": "20f192cc-efec-4af3-ac4d-6458567b4f78",
+      "name": "モデルレビュー",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 6
+    },
+    {
+      "id": "17f1e500-5022-4e1a-8e13-7199f9a49432",
+      "name": "パラメトリック制約定義",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 7
+    },
+    {
+      "id": "c1f0681e-a624-49a9-ab28-bd673ab6b69a",
+      "name": "要求ツリー整備",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 8
+    },
+    {
+      "id": "caf23827-3a8b-4236-8077-0b7b1899da2e",
+      "name": "要求品質レビュー",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 9
+    },
+    {
+      "id": "17ec899c-beb9-4bfb-a127-9920a39cf272",
+      "name": "シナリオ（シーケンス）設計",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 10
+    },
+    {
+      "id": "45544e33-bc23-4037-88e5-18aa5b1769c0",
+      "name": "状態遷移設計",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 11
+    },
+    {
+      "id": "c4e1bfe6-8f29-4e30-ba0b-b6e6841b2da9",
+      "name": "システムコンテキスト定義",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 12
+    },
+    {
+      "id": "5086e4fa-be1c-407e-9be2-e98484f80421",
+      "name": "トレーサビリティ監査",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 13
+    },
+    {
+      "id": "734967f7-afa3-482b-b6c7-fd4e36d918b5",
+      "name": "ユースケース分析",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 14
+    },
+    {
+      "id": "7b04664d-0d2e-4b37-9aac-bbd2ee9da102",
+      "name": "検証計画（V&V）",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 15
+    }
+  ],
+  "version": 2,
+  "seeded_templates": [
+    "block-hierarchy",
+    "change-impact",
+    "functional-flow",
+    "hazard-safety",
+    "ibd-expand",
+    "interface-definition",
+    "model-review",
+    "parametric-analysis",
+    "req-tree",
+    "requirement-quality",
+    "scenario-sequence",
+    "state-machine",
+    "system-context",
+    "traceability-audit",
+    "usecase-analysis",
+    "verification-planning"
+  ],
+  "seeded_template_state": {
+    "block-hierarchy": {
+      "item_id": "0fe08803-2040-4d7d-a23e-a85b1cacd015",
+      "name": "ブロック階層の整理",
+      "content_hash": "cfb4f61b87aac754c9ee4320a182add2ae2a7de7979b87b89c6860c501dbc4a0",
+      "managed": true
+    },
+    "change-impact": {
+      "item_id": "e5a8b01b-0aed-4bd2-bde8-11a76aaf6eb5",
+      "name": "変更影響分析",
+      "content_hash": "eba17413eaaf981d04a58cf1c0b14baa9549f75e7cae624337e927679a3bf3e5",
+      "managed": true
+    },
+    "functional-flow": {
+      "item_id": "efb9d512-4bc7-4861-8424-3f5192c003f4",
+      "name": "機能フロー設計",
+      "content_hash": "e6d7d03e6c4db7fbfa67213a7f14fb3b14eefdb9face9a0ef206d8fffb215dcd",
+      "managed": true
+    },
+    "hazard-safety": {
+      "item_id": "ca84b141-ee73-45ff-9214-7e2227c84bc7",
+      "name": "ハザード分析と安全要求",
+      "content_hash": "fc18b6be0bbfd52c7cfb4891a8122849aa72beade6ddc9d73ad297c8881041ee",
+      "managed": true
+    },
+    "ibd-expand": {
+      "item_id": "3421e80d-4dab-482a-8ea8-f62435571a8b",
+      "name": "内部構造展開（IBD）",
+      "content_hash": "42ea52c3498c165c3a74cad2c4df5279fa59e99f1bcd23241c8608f98ae7d1cc",
+      "managed": true
+    },
+    "interface-definition": {
+      "item_id": "1f117755-b026-4785-a20b-fa451c456efb",
+      "name": "インターフェース定義",
+      "content_hash": "ae0130f54b749e8e673d17fb50a3a84351a2907afe21cb4397f7cd5d35302c54",
+      "managed": true
+    },
+    "model-review": {
+      "item_id": "20f192cc-efec-4af3-ac4d-6458567b4f78",
+      "name": "モデルレビュー",
+      "content_hash": "f2c36b2893beba32c39c90a31e61da637acb356f0bdfe41719f6b2d83e770387",
+      "managed": true
+    },
+    "parametric-analysis": {
+      "item_id": "17f1e500-5022-4e1a-8e13-7199f9a49432",
+      "name": "パラメトリック制約定義",
+      "content_hash": "0bb1209e032fc2c7e46abc60d15d97798c8e9ddbdfe6e8e3c8533bb15ef08ef6",
+      "managed": true
+    },
+    "req-tree": {
+      "item_id": "c1f0681e-a624-49a9-ab28-bd673ab6b69a",
+      "name": "要求ツリー整備",
+      "content_hash": "d267c4b5272436570a74d41c6df3931a86048974d4916cd10b9c390f14448e5f",
+      "managed": true
+    },
+    "requirement-quality": {
+      "item_id": "caf23827-3a8b-4236-8077-0b7b1899da2e",
+      "name": "要求品質レビュー",
+      "content_hash": "3f652fac2cbe19cb5fad9268e8b36b4ef70543b5dd472addf2dd0df7ba32ed48",
+      "managed": true
+    },
+    "scenario-sequence": {
+      "item_id": "17ec899c-beb9-4bfb-a127-9920a39cf272",
+      "name": "シナリオ（シーケンス）設計",
+      "content_hash": "c7b3d8d5fb7a89d3c73dd068869403ccd95110c65cd9dd3b507cafa707cda4ff",
+      "managed": true
+    },
+    "state-machine": {
+      "item_id": "45544e33-bc23-4037-88e5-18aa5b1769c0",
+      "name": "状態遷移設計",
+      "content_hash": "ad6353ad890a2129ec45f25cbecd95037cbcb05613a4bb21384672bde418bed8",
+      "managed": true
+    },
+    "system-context": {
+      "item_id": "c4e1bfe6-8f29-4e30-ba0b-b6e6841b2da9",
+      "name": "システムコンテキスト定義",
+      "content_hash": "41d01c3e1f7a3c426a96417130006693715dbf952ef1933439b94ffb0e914559",
+      "managed": true
+    },
+    "traceability-audit": {
+      "item_id": "5086e4fa-be1c-407e-9be2-e98484f80421",
+      "name": "トレーサビリティ監査",
+      "content_hash": "f0cf2df9b2bf3d2b2a8336439ee1bc385ed662a5e5a918d18153bcf4a7b4f02c",
+      "managed": true
+    },
+    "usecase-analysis": {
+      "item_id": "734967f7-afa3-482b-b6c7-fd4e36d918b5",
+      "name": "ユースケース分析",
+      "content_hash": "e38a26a1bae6dcc0ecb8c32758096b6d14081d6bedf3b511ec591d2af8e66962",
+      "managed": true
+    },
+    "verification-planning": {
+      "item_id": "7b04664d-0d2e-4b37-9aac-bbd2ee9da102",
+      "name": "検証計画（V&V）",
+      "content_hash": "e07c96f1d5544c105388005d4de70cf5ba602da7ecac1259a99f30886fca66ef",
+      "managed": true
+    }
+  }
+}

@@ -368,353 +368,197 @@
         {
             "class_name": "DiagramEdge",
             "element_id": "1a13173c-904f-4a8b-a77a-663d0f34cf53",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "6ec68ed7-ed19-40e7-9f1f-1bc6868cde5b",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "468cd3ed-a43c-4ec5-b38e-0a28d019ad77",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "4179e83c-c122-4530-a6ce-eef3868ec778",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "d696ca32-46fa-42cc-a6ac-e019ddd68808",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "8b7d7ae9-8a4d-4a4c-a3e9-f2385baa449e",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "1c845c64-de62-4ede-9579-22d70388562e",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "764e758d-deb7-47ef-8d95-a5319b474cdc",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "2f20aac2-b07d-4220-83d2-f58990c6e4ec",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "b259986c-9f89-43cd-ba50-cbedb7c77e01",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "c679a4d8-a991-45e6-b7aa-851d93648c1f",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "9ddbaafb-4802-4c9b-88a9-0f5ba669789a",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "669e480f-0603-4755-85b1-118aa9e7171f",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "8688e077-3639-44d8-a975-2f9a3149ee67",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "b9905eca-0484-4aa2-9f0f-b906d42ef64d",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "2285a394-f00f-46e7-b477-adfef1776f9b",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "6ebe57d8-32ff-4a1a-abad-483bf4780deb",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "93499f72-279b-46d9-98fb-eb0e3208b983",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "e88d69b4-19b4-49ab-96a4-6852755be028",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "055bf0c1-88e2-4cfc-80d8-5da9069c82dd",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "c7bc7bca-20e2-4942-9697-66873836453c",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "9f94955e-e9a5-46d5-bd15-470d597cf759",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "19a7ce29-d96f-4b80-bad4-71fb4e961c20",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "ce04a581-4aa1-44f5-a4f7-93da14393159",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "868e613b-cdc0-4c2d-9338-0ae4d65a7347",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "2a76f296-0c1c-4768-bfa9-c7ab33dfb5f1",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "c25bbe0e-aa33-4a68-8b3d-5cce30a8737c",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "527ac255-8c80-4c65-9aa5-fb6be2f45316",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "42aa1686-de4f-4ee2-b303-0ed15a5dec98",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "5610e3db-9469-49d8-80cc-c967c6b3f772",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "f616c174-5118-4529-bf6d-c99b72b30d34",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "eefd75bd-dc04-4c98-b3e2-88d3f21658c6",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "7d36ef1c-499f-4b68-875b-5fa4929f9f01",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "7f163746-85ce-45a3-ba08-72345922fc56",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "ca113462-4e4c-4b74-9e2c-fe4d478da331",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "865ea2ec-525d-4df3-ba50-bc70bf02c62c",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "f0d033e3-a6e6-433a-91c0-0e2e430a2d79",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "e54bb3e0-714b-41d0-94e0-9f654faf595c",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         },
         {
             "class_name": "DiagramEdge",
             "element_id": "dd295ac1-95e0-461f-ad99-77aa50c40848",
-            "control_point": null,
-            "routing": "bezier",
-            "control_points": null,
-            "source_anchor": null,
-            "target_anchor": null
+            "routing": "bezier"
         }
     ],
     "scale": 0.2325431117026757,

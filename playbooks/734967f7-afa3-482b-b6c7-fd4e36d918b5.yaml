@@ -1,0 +1,76 @@
+id: ""
+name: ユースケース分析
+slash_command: usecase
+description: |
+  アクターの目的からユースケースを抽出し、include / extend / 汎化で
+  整理してユースケース図を作成する手順。
+  機能要求を導出する前段として実施する。
+use_when: |
+  ユーザーが「ユースケースを洗い出して」「利用シナリオを整理」
+  「アクターの目的から機能を導きたい」等を依頼したとき。
+steps:
+  - no: 1
+    title: アクターと既存ユースケースの確認
+    instruction: |
+      対象 Package 配下の Actor / UseCase を列挙し、既存の
+      association / include / extend 関係を把握する。
+    tools:
+      - search_item
+      - read_package_contents
+      - get_related_elements
+      - read
+    done_when: 対象範囲の全 Actor / UseCase について短縮ID・説明・association / include / extend の接続先を0件の場合も含めて一覧化できている
+  - no: 2
+    title: アクターの目的の整理
+    instruction: |
+      各アクターが対象システムを使って達成したい「目的」を列挙する。
+      操作手順（how）ではなく目的（what/why）の粒度で書くこと。
+      主アクターだけでなく副アクター（外部システム等）も検討する。
+    done_when: 全 Actor に1件以上の外部から観測可能な目的が対応し、各目的に主アクターと得られる価値が明記され、未分析 Actor 0件である
+  - no: 3
+    title: ユースケースの抽出
+    instruction: |
+      目的を UseCase に変換する。名前は「動詞＋目的語」で表し、
+      粒度は「1 回の利用で完結する価値の単位」に揃える。
+      共通処理は include、条件付き拡張は extend で切り出す。
+    done_when: 全アクター目的が重複しない動詞＋目的語の UseCase に対応し、各 include / extend に接続元・接続先・適用理由が定まっている
+  - no: 4
+    title: ユースケースの作成
+    instruction: |
+      create_internal_model_elements（structureType=use_case）で
+      Actor / UseCase と association / include / extend / generalization を
+      一括生成する。既存要素と重複しないよう注意すること。
+    tools:
+      - create_internal_model_elements
+      - create_use_case
+      - create_actor
+      - create_relationship
+    done_when: 設計一覧の全 Actor / UseCase が存在し、全 UseCase が主 Actor と association で接続され、設計した include / extend が欠落0件である
+    referenceConventions:
+      - UseCase
+      - Actor
+  - no: 5
+    title: 要求への橋渡し
+    instruction: |
+      各 UseCase から導かれる機能要求を Requirement として作成し、
+      refine 関係（UseCase → Requirement）で接続する。
+      すでに対応する要求がある場合は新規作成せず既存に接続する。
+    tools:
+      - create_requirement
+      - create_relationship
+      - search_item
+    done_when: 全 UseCase に対応する機能 Requirement が1件以上存在し、UseCase から Requirement への refine が接続され、未接続 UseCase 0件である
+    referenceConventions:
+      - Requirement
+  - no: 6
+    title: 検証
+    instruction: |
+      作成した要素の短縮ID を validate_model に渡して検証する。
+      違反があれば修正し、最大 2 回まで再検証する。
+      残った違反は未解決の課題として最終報告に含める。
+    tools:
+      - validate_model
+    done_when: 作成・更新要素を validate_model で検証し、error 0件、または最大2回の修正後に残る各違反へ ruleId・要素ID・未解決理由を記録した
+strict: true
+allow_skip: false
+max_steps_per_stage: 14

@@ -1,0 +1,68 @@
+id: ""
+name: 要求品質レビュー
+slash_command: req-quality
+description: |
+  要求文を INCOSE の品質特性（曖昧でない・検証可能・単一・
+  実現可能・必要）の観点で点検し、問題のある要求を改善する手順。
+use_when: |
+  ユーザーが「要求文を見直して」「要求の品質をチェック」
+  「曖昧な要求を洗い出して」等を依頼したとき。
+steps:
+  - no: 1
+    title: 対象要求の収集
+    instruction: |
+      対象範囲の Requirement を列挙し、name / text / requirementId を
+      すべて読み取る。
+    tools:
+      - search_item
+      - read_package_contents
+      - read
+    done_when: 対象範囲の全 Requirement について短縮ID・requirementId・名前・要求文を一覧化し、取得件数と対象件数が一致している
+  - no: 2
+    title: 品質特性による点検
+    instruction: |
+      各要求文を以下の観点で点検し、問題を分類する。
+      - 曖昧語（適切に、十分に、迅速に、必要に応じて 等）を含む
+      - 検証可能な測定量と閾値が無い
+      - 1 文に複数の要求が混在している（「かつ」「および」）
+      - 実装方法を規定してしまっている（how を語っている）
+      - 上位要求から辿れない（根拠が無い）
+    tools:
+      - explain_applicable_conventions
+      - search_ontology_concepts
+    done_when: 全 Requirement を曖昧性・検証可能性・単一性・実現可能性・根拠の5観点で合格または指摘ありに分類し、未評価要求0件である
+  - no: 3
+    title: 改善案の作成
+    instruction: |
+      問題のある要求について、改善後の要求文を作成する。
+      複数要求が混在するものは分割する。
+      測定量が不明なものは、勝手に数値を決めずに
+      「確認が必要な項目」として明示すること。
+    done_when: 全指摘に改善後の要求文または分割案が対応し、未確定の測定量・閾値は質問事項として対象要求IDとともに一覧化されている
+  - no: 4
+    title: 要求の更新
+    instruction: |
+      改善案を update_requirement で反映する。
+      分割が必要な要求は create_requirement で新規作成し、
+      元の要求から deriveReqt で接続する。
+      既存の satisfy / verify リンクが切れないよう注意すること。
+    tools:
+      - update_requirement
+      - create_requirement
+      - create_relationship
+      - get_related_elements
+    done_when: 承認された全改善案がモデル本文に一致し、分割した要求は元要求と deriveReqt で接続され、既存 satisfy / verify の欠落・端点切れ0件である
+    referenceConventions:
+      - Requirement
+  - no: 5
+    title: 検証と報告
+    instruction: |
+      更新した要求の短縮ID を validate_model に渡して検証する。
+      ユーザー確認が必要な項目は最終報告に必ず含めること。
+    tools:
+      - validate_model
+      - diff_model
+    done_when: 更新要求を validate_model で検証して error 0件または残る違反を理由付きで記録し、全ユーザー確認事項に要求ID・質問・未確定理由がある
+strict: true
+allow_skip: false
+max_steps_per_stage: 12
