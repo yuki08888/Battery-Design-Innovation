@@ -1,660 +1,2004 @@
-OntologyName: "標準 SysML/MBSE オントロジー (Battery Design Innovation 拡張版)"
-Version: "2.1.0"
-Domain: "Battery Design Innovationプロジェクトにおけるビジネス要求（取引データの自動化、承認ワークフロー等）およびMBSEの汎用的なモデリング概念・関係・命名規則・ルールを定義する統合オントロジー。"
-
-# ─────────────────────────────────────────────────────────────────────
-# Classes — ドメイン概念と SysML 要素タイプのマッピング
-# ─────────────────────────────────────────────────────────────────────
-Classes:
-  - ClassId: "CLS_001"
-    Name: "システム"
-    ElementType: "Block"
-    Description: "検討対象となるシステム全体 (System-of-Interest)。境界の最上位ブロックで、外部アクター/外部システムと接する。1モデルにつき原則1つ。"
-    Attributes:
-      - key: "purpose"
-        type: "string"
-        description: "システムの目的・存在意義。1〜2文で簡潔に。"
-      - key: "scope"
-        type: "string"
-        description: "対象範囲・境界 (システムが扱う/扱わないものの明示)。"
-      - key: "operationalContext"
-        type: "string"
-        description: "運用環境・使用条件 (温度/電源/通信環境など)。"
-
-  - ClassId: "CLS_002"
-    Name: "サブシステム"
-    ElementType: "Block"
-    Description: "システムを責務単位で分解した中間構造。複数のコンポーネントを束ねる。階層モデリングの中間層として使用。"
-    Attributes:
-      - key: "responsibility"
-        type: "string"
-        description: "サブシステムが担う責務・機能領域 (1文)。"
-      - key: "criticality"
-        type: "enum"
-        description: "重要度。high/medium/low。安全性・可用性に影響する場合は high。"
-
-  - ClassId: "CLS_003"
-    Name: "コンポーネント"
-    ElementType: "Block"
-    Description: "サブシステムを構成する最小の構造単位 (HW/SW モジュール、ECU、サービスなど)。さらに分解しない実装単位。"
-    Attributes:
-      - key: "category"
-        type: "enum"
-        description: "種別。hardware/software/mechanical/service/external。"
-      - key: "supplier"
-        type: "string"
-        description: "供給元 (内製/外部ベンダー名)。任意。"
-
-  - ClassId: "CLS_004"
-    Name: "インターフェース"
-    ElementType: "Property"
-    Description: "ブロック間で情報・エネルギー・物理接続を受け渡す接点 (port/part)。signal/itemFlow の発生源となる。方向 (in/out/inout) を必ず指定する。"
-    Attributes:
-      - key: "type"
-        type: "string"
-        description: "受け渡す対象の型 (Block ID または プリミティブ型名)。"
-      - key: "direction"
-        type: "enum"
-        description: "入出力方向。in/out/inout。"
-      - key: "multiplicity"
-        type: "string"
-        description: "多重度 (例: '1', '0..1', '*', '1..*')。省略時は '1'。"
-      - key: "defaultValue"
-        type: "string"
-        description: "既定値 (任意)。"
-
-  - ClassId: "CLS_005"
-    Name: "要求"
-    ElementType: "Requirement"
-    Description: "システムが満たすべき機能要求・性能要求・制約・非機能要求 (品質要求)。ビジネス要求書等から導出され、検証可能 (testable) な単一要求として記述する。"
-    Attributes:
-      - key: "text"
-        type: "string"
-        description: "要求本文。曖昧語を避け、検証可能な単一文で記述する。"
-      - key: "priority"
-        type: "enum"
-        description: "優先度。must/should/may（またはMust/Want）。"
-      - key: "status"
-        type: "enum"
-        description: "ライフサイクル状態。proposed/approved/implemented/verified/rejected。"
-      - key: "source"
-        type: "string"
-        description: "出典 (ビジネス要求書、規格名、ユースケース、ステークホルダ名など)。"
-      - key: "verificationMethod"
-        type: "enum"
-        description: "検証方法。test/analysis/inspection/demonstration。"
-      - key: "risk"
-        type: "string"
-        description: "リスク評価。"
-
-  - ClassId: "CLS_006"
-    Name: "ユースケース"
-    ElementType: "UseCase"
-    Description: "アクター視点でシステムが提供する価値ある一連の振る舞い。ビジネス目標や自動化シナリオを表現する。"
-    Attributes:
-      - key: "primaryActor"
-        type: "string"
-        description: "主アクター (このユースケースを起動するアクター名)。"
-      - key: "preconditions"
-        type: "array"
-        description: "事前条件のリスト。"
-      - key: "postconditions"
-        type: "array"
-        description: "事後条件のリスト。"
-      - key: "mainScenario"
-        type: "array"
-        description: "基本シナリオの手順 (1ステップ=1文)。"
-
-  - ClassId: "CLS_007"
-    Name: "アクター"
-    ElementType: "Actor"
-    Description: "システムと相互作用する外部主体 (現場オペレーター、管理者、外部基幹システムなど)。"
-    Attributes:
-      - key: "role"
-        type: "string"
-        description: "役割の説明 (このアクターが果たす機能・立場)。"
-      - key: "actorKind"
-        type: "enum"
-        description: "種別。human/external_system/external_device/organization。"
-      - key: "primary"
-        type: "boolean"
-        description: "主アクターか副アクターか (true=主)。"
-
-  - ClassId: "CLS_008"
-    Name: "アクティビティ"
-    ElementType: "Activity"
-    Description: "システムまたはサブシステムが実行する処理の流れ (インポート自動化、承認ワークフロー、リアルタイムエラーチェックなど)。"
-    Attributes:
-      - key: "purpose"
-        type: "string"
-        description: "この振る舞いが達成する目的・成果。"
-      - key: "trigger"
-        type: "string"
-        description: "起動条件・トリガ。"
-      - key: "preconditions"
-        type: "string"
-        description: "事前条件。"
-      - key: "postconditions"
-        type: "string"
-        description: "事後条件。"
-
-  - ClassId: "CLS_009"
-    Name: "状態"
-    ElementType: "State"
-    Description: "ブロックや取引データ、承認ワークフローが取りうる動作モード・内部状態（例：インポート中、承認待ち、承認済、差し戻し中など）。"
-    Attributes:
-      - key: "stateType"
-        type: "enum"
-        description: "状態種別。initial/normal/final。"
-      - key: "entryAction"
-        type: "string"
-        description: "状態に入った直後に実行されるアクション。"
-      - key: "exitAction"
-        type: "string"
-        description: "状態から出る直前に実行されるアクション。"
-
-  - ClassId: "CLS_010"
-    Name: "テストケース"
-    ElementType: "TestCase"
-    Description: "要求（リアルタイムチェック、インポート、暗号化通信等）を検証するための試験観点・手順・合否基準。"
-    Attributes:
-      - key: "objective"
-        type: "string"
-        description: "検証目的 (何を確認するか)。"
-      - key: "preConditions"
-        type: "array"
-        description: "試験前提条件のリスト。"
-      - key: "expectedResults"
-        type: "array"
-        description: "期待結果のリスト (合否判定基準)。"
-      - key: "postConditions"
-        type: "array"
-        description: "事後条件のリスト。"
-      - key: "method"
-        type: "enum"
-        description: "実施方法。test/analysis/inspection/demonstration。"
-      - key: "testSteps"
-        type: "array"
-        description: "個別の試験ステップ列。"
-
-  - ClassId: "CLS_012"
-    Name: "操作"
-    ElementType: "Operation"
-    Description: "ブロックが提供する操作・メソッド・サービス（API連携メソッド、暗号化処理、インポート処理等）。"
-    Attributes:
-      - key: "returnType"
-        type: "string"
-        description: "戻り値の型。"
-      - key: "method"
-        type: "array"
-        description: "実装を担う Activity の ID 配列。"
-      - key: "visibility"
-        type: "enum"
-        description: "可視性。public/protected/private。"
-
-  - ClassId: "CLS_013"
-    Name: "パラメータ"
-    ElementType: "Property"
-    Description: "Operation や Activity の入出力。CSVファイル、暗号化データなどの取引データ等。"
-    Attributes:
-      - key: "type"
-        type: "string"
-        description: "型。"
-      - key: "direction"
-        type: "enum"
-        description: "入出力方向。in/out/inout/return。"
-      - key: "multiplicity"
-        type: "string"
-        description: "多重度。"
-
-  - ClassId: "CLS_014"
-    Name: "パッケージ"
-    ElementType: "Package"
-    Description: "モデル要素を観点やビジネス目標、システム開発フェーズ（フェーズ1、フェーズ2など）ごとに整理するコンテナ。"
-    Attributes:
-      - key: "viewpoint"
-        type: "enum"
-        description: "観点。requirements/structure/behavior/usecase/verification/architecture/domain。"
-
-# ─────────────────────────────────────────────────────────────────────
-# Relationships — ドメイン概念間の関係定義
-# ─────────────────────────────────────────────────────────────────────
+SchemaVersion: 3
+OntologyName: SysMLオントロジー
+Version: 3.0.0
+Domain: Battery Design Innovationプロジェクトにおけるビジネス要求（取引データの自動化、承認ワークフロー等）およびMBSEの汎用的なモデリング概念・関係・命名規則・ルールを定義する統合オントロジー。
+Elements:
+- className: Requirement
+  id: 17326236-31b6-4e4b-8c4c-fe261e645d25
+  name: 要求
+  description: システムが満たすべき機能要求・性能要求・制約・非機能要求 (品質要求)。ビジネス要求書等から導出され、検証可能 (testable) な単一要求として記述する。
+  text: システムが満たすべき機能要求・性能要求・制約・非機能要求 (品質要求)。ビジネス要求書等から導出され、検証可能 (testable) な単一要求として記述する。
+  stereotypes: []
+  conventions:
+    naming:
+      pattern: 検証可能な要求文。末尾は『〜すること』『〜できること』『〜以下とすること』等の断定形で統一する。ビジネス要求ID（BR-XXなど）をプレフィックスに含める。
+      examples:
+        good:
+        - BR-01 取引データをCSVのドラッグ＆ドロップにより一括登録できること
+        - BR-02 CSVアップロード時に必須項目や型エラーをリアルタイムで検知すること
+        - BR-05 データ通信はすべてHTTPSにより暗号化すること
+      severity: warning
+    rules:
+    - id: RUL_da33
+      title: ビジネス要件のフェージング（スコープ外）制御
+      statement: AIエラー予測、モバイルネイティブアプリ等の将来展望項目（スコープ外）は、今回の開発フェーズパッケージ（フェーズ1）からは除外し、バックログまたは将来フェーズパッケージ（フェーズ2）に明確に隔離してモデリングすること。
+      severity: warning
+    - id: RUL_f0a7
+      title: モデルレビューで整合性を確認する
+      statement: 要求-設計-振る舞い-検証の各レイヤ間で、未接続要素・矛盾・重複が無いか定期的に確認する。生成直後と統合直後は必須。
+      severity: info
+    - id: RUL_6b65
+      title: 命名は ElementType ごとの規約に従う
+      statement: Block は名詞句、Activity は動詞句、Requirement は『〜すること』、UseCase はアクター視点の価値表現で命名する (NamingConventions 参照)。
+      severity: info
+    - id: RUL_ac8b
+      title: 要求は必ずテストケースで検証する
+      statement: priority=must/Must の要求は少なくとも 1 つの TestCase と verify 関係で接続する。verify の無い must 要求はカバレッジ不足。
+      severity: warning
+    - id: RUL_f793
+      title: 要求は設計要素または振る舞いへ追跡可能にする
+      statement: 主要要求は satisfy / refine / trace の少なくとも一つで下流成果物 (Block, Activity, UseCase) と接続する。孤立した要求を残さない。
+      severity: warning
+    - id: RUL_3374
+      title: 要求には優先度と検証方法を必ず付与する
+      statement: priority (must/should/may、またはMust/Want) と verificationMethod を欠落させない。
+      severity: info
+    - id: RUL_330d
+      title: 要求は検証可能な単一文で記述する
+      statement: Requirement の text は『〜すること』形式の単一要求とし、'適切な'/'十分な'/'なるべく' 等の曖昧語を使わない。複合要求は分割する。
+      severity: warning
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_005
+- className: UseCase
+  id: 04c27c67-fbc8-4210-8fc2-917fde2c8ecd
+  name: ユースケース
+  description: アクター視点でシステムが提供する価値ある一連の振る舞い。ビジネス目標や自動化シナリオを表現する。
+  messageOrder: []
+  stereotypes: []
+  conventions:
+    naming:
+      pattern: アクター視点の価値表現。動詞句または短文。システム内部の処理ではなくアクターが得る成果を表す。
+      examples:
+        good:
+        - 取引データをインポートする
+        - 承認進捗を確認する
+        - 多段階承認を実行する
+        - 処理状況をダッシュボードで監視する
+      severity: warning
+    rules:
+    - id: RUL_f0a7
+      title: モデルレビューで整合性を確認する
+      statement: 要求-設計-振る舞い-検証の各レイヤ間で、未接続要素・矛盾・重複が無いか定期的に確認する。生成直後と統合直後は必須。
+      severity: info
+    - id: RUL_6b65
+      title: 命名は ElementType ごとの規約に従う
+      statement: Block は名詞句、Activity は動詞句、Requirement は『〜すること』、UseCase はアクター視点の価値表現で命名する (NamingConventions 参照)。
+      severity: info
+    - id: RUL_9547
+      title: ユースケースは Activity で詳細化する
+      statement: 主要 UseCase は refine 関係で Activity と接続し、シナリオを詳細化する。テキスト記述のみのユースケースは検証困難。
+      severity: info
+    - id: RUL_c34f
+      title: ユースケースは最低 1 つのアクターを持つ
+      statement: UseCase は association で最低 1 アクターと接続。アクター無しのユースケースはシステム外部からの起動契機が不明。
+      severity: warning
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_006
+- className: Actor
+  id: 508936b5-ac44-4b9e-9b0d-35380c85484e
+  name: アクター
+  description: システムと相互作用する外部主体 (現場オペレーター、管理者、外部基幹システムなど)。
+  stereotypes: []
+  conventions:
+    naming:
+      pattern: 外部主体の役割名。人間アクターは肩書きで、外部システムはシステム名+役割で命名。
+      examples:
+        good:
+        - 現場オペレーター
+        - 管理者
+        - 既存社内基幹システム
+      severity: warning
+    rules:
+    - id: RUL_c34f
+      title: ユースケースは最低 1 つのアクターを持つ
+      statement: UseCase は association で最低 1 アクターと接続。アクター無しのユースケースはシステム外部からの起動契機が不明。
+      severity: warning
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_007
+- className: Activity
+  id: 34097f46-1dbd-44ac-afe2-3d1ba5de2466
+  name: アクティビティ
+  description: システムまたはサブシステムが実行する処理の流れ (インポート自動化、承認ワークフロー、リアルタイムエラーチェックなど)。
+  stereotypes: []
+  conventions:
+    naming:
+      pattern: 動詞 (+ 目的語) で機能を表す。何をする振る舞いか一読で分かるようにする。受動態は避ける。
+      examples:
+        good:
+        - 取引データをCSVから一括インポートする
+        - アップロードデータをリアルタイム検証する
+        - 多段階承認を処理する
+        - 通信データを暗号化する
+      severity: warning
+    rules:
+    - id: RUL_f0a7
+      title: モデルレビューで整合性を確認する
+      statement: 要求-設計-振る舞い-検証の各レイヤ間で、未接続要素・矛盾・重複が無いか定期的に確認する。生成直後と統合直後は必須。
+      severity: info
+    - id: RUL_6b65
+      title: 命名は ElementType ごとの規約に従う
+      statement: Block は名詞句、Activity は動詞句、Requirement は『〜すること』、UseCase はアクター視点の価値表現で命名する (NamingConventions 参照)。
+      severity: info
+    - id: RUL_9547
+      title: ユースケースは Activity で詳細化する
+      statement: 主要 UseCase は refine 関係で Activity と接続し、シナリオを詳細化する。テキスト記述のみのユースケースは検証困難。
+      severity: info
+    - id: RUL_91c1
+      title: 振る舞いは実行主体へ allocate で割り当てる
+      statement: 主要な Activity は allocate 関係で実行主体の Block (Subsystem/Component) に割り当てる。割当が無い機能は実装責任が曖昧。
+      severity: warning
+    - id: RUL_f793
+      title: 要求は設計要素または振る舞いへ追跡可能にする
+      statement: 主要要求は satisfy / refine / trace の少なくとも一つで下流成果物 (Block, Activity, UseCase) と接続する。孤立した要求を残さない。
+      severity: warning
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_008
+- className: State
+  id: 0c4b4bb0-de0c-44f6-8a13-7c675dae69fb
+  name: 状態
+  description: ブロックや取引データ、承認ワークフローが取りうる動作モード・内部状態（例：インポート中、承認待ち、承認済、差し戻し中など）。
+  stateType: normal
+  stereotypes: []
+  conventions:
+    naming:
+      pattern: 形容詞 / 動名詞 / 名詞で状態を表す。'〜中' '〜状態' '〜済' 等で完了/進行/結果を区別する。
+      examples:
+        good:
+        - インポート処理中
+        - 一時承認待ち
+        - 最終承認済
+        - エラー検知状態
+      severity: warning
+    rules:
+    - id: RUL_7ce5
+      title: 状態遷移は初期状態と最終状態を含める
+      statement: State Machine を作成する場合は stateType=initial の状態を 1 つ用意する。終了する振る舞いには stateType=final を含める。
+      severity: info
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_009
+- className: TestCase
+  id: 7bf4480b-d140-4ed3-8b69-176e23aa1923
+  name: テストケース
+  description: 要求（リアルタイムチェック、インポート、暗号化通信等）を検証するための試験観点・手順・合否基準。
+  preConditions: []
+  expectedResults: []
+  postConditions: []
+  stereotypes: []
+  conventions:
+    naming:
+      pattern: 『検証対象 + 観点』または『要求ID + 検証内容』。何を検証するテストか一意に分かる名前にする。
+      examples:
+        good:
+        - BR-01 取引データ一括インポート検証
+        - BR-02 CSVリアルタイムバリデーションテスト
+        - HTTPS通信暗号化監査テスト
+      severity: warning
+    rules:
+    - id: RUL_f0a7
+      title: モデルレビューで整合性を確認する
+      statement: 要求-設計-振る舞い-検証の各レイヤ間で、未接続要素・矛盾・重複が無いか定期的に確認する。生成直後と統合直後は必須。
+      severity: info
+    - id: RUL_6b65
+      title: 命名は ElementType ごとの規約に従う
+      statement: Block は名詞句、Activity は動詞句、Requirement は『〜すること』、UseCase はアクター視点の価値表現で命名する (NamingConventions 参照)。
+      severity: info
+    - id: RUL_daf5
+      title: テストケースには合否基準と前提条件を記述する
+      statement: TestCase は objective, preConditions, expectedResults を必ず記述。expectedResults 欠落のテストは合否判定不能。
+      severity: warning
+    - id: RUL_ac8b
+      title: 要求は必ずテストケースで検証する
+      statement: priority=must/Must の要求は少なくとも 1 つの TestCase と verify 関係で接続する。verify の無い must 要求はカバレッジ不足。
+      severity: warning
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_010
+- className: Operation
+  id: 41ccc932-ea8b-41ae-8adb-623237a473b3
+  name: 操作
+  description: ブロックが提供する操作・メソッド・サービス（API連携メソッド、暗号化処理、インポート処理等）。
+  stereotypes: []
+  conventions:
+    naming:
+      pattern: 動詞 (+ 目的語) の camelCase。Getter は get*, Setter は set*, 状態確認 is*/has*。
+      examples:
+        good:
+        - importCsvData
+        - validateFields
+        - approveStep
+        - encryptPayload
+      severity: warning
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_012
+- className: Package
+  id: b05b09b9-37a4-4af2-8fb3-5b1cd7a4b9bb
+  name: Package 共通規約
+  isReferenceModel: false
+  conventions:
+    naming:
+      pattern: 観点 (viewpoint) または開発フェーズを考慮した分類名。同じプロジェクト内で命名スタイルを統一する。
+      examples:
+        good:
+        - フェーズ1コア要求
+        - 既存基幹システム接続物理アーキテクチャ
+        - 将来フェーズバックログ
+      severity: warning
+    rules:
+    - id: RUL_da33
+      title: ビジネス要件のフェージング（スコープ外）制御
+      statement: AIエラー予測、モバイルネイティブアプリ等の将来展望項目（スコープ外）は、今回の開発フェーズパッケージ（フェーズ1）からは除外し、バックログまたは将来フェーズパッケージ（フェーズ2）に明確に隔離してモデリングすること。
+      severity: warning
+    - id: RUL_6b65
+      title: 命名は ElementType ごとの規約に従う
+      statement: Block は名詞句、Activity は動詞句、Requirement は『〜すること』、UseCase はアクター視点の価値表現で命名する (NamingConventions 参照)。
+      severity: info
+    - id: RUL_49b0
+      title: モデルは観点ごとにパッケージで整理する
+      statement: 要求 / 構造 / 振る舞い / ユースケース / 検証 を別々のパッケージ (viewpoint) に分けて整理する。1 パッケージに混在させない。
+      severity: info
+    - id: RUL_fd37
+      title: 分解階層は 3 段までを目安とする
+      statement: System → Subsystem → Component の 3 段が標準。それ以上は粒度過剰の可能性。例外はパッケージで観点を分けて整理する。
+      severity: info
+- className: Package
+  id: bc4291c3-b7ff-4827-84d9-7e3a2e91fa14
+  name: パッケージ
+  description: モデル要素を観点やビジネス目標、システム開発フェーズ（フェーズ1、フェーズ2など）ごとに整理するコンテナ。
+  isReferenceModel: false
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_014
+- className: Package
+  id: 8d394dde-5d53-4550-9872-d2f94ae3b1bf
+  name: 用語
+  isReferenceModel: false
+- className: Package
+  id: a527e7c4-89f3-4015-a9f2-0b13fca19936
+  name: Block 共通規約
+  isReferenceModel: false
+  conventions:
+    naming:
+      pattern: 名詞句で役割・対象を表す。階層に応じた粒度 (System=全体, Subsystem=機能領域, Component=モジュール)。
+      examples:
+        good:
+        - バッテリー取引管理システム
+        - ワークフロー管理サブシステム
+        - 既存社内基幹システム
+        - CSVデータ検証コンポーネント
+      severity: warning
+    rules:
+    - id: RUL_d0fe
+      title: API連携および外部通信時のセキュリティ暗号化規約
+      statement: 既存社内基幹システムなどの外部API接続やデータ通信を伴う接続ポート/インターフェースは、必ず暗号化（HTTPS等）制約要件（BR-05/セキュリティポリシー）を satisfy すること。
+      severity: error
+    - id: RUL_f0a7
+      title: モデルレビューで整合性を確認する
+      statement: 要求-設計-振る舞い-検証の各レイヤ間で、未接続要素・矛盾・重複が無いか定期的に確認する。生成直後と統合直後は必須。
+      severity: info
+    - id: RUL_6b65
+      title: 命名は ElementType ごとの規約に従う
+      statement: Block は名詞句、Activity は動詞句、Requirement は『〜すること』、UseCase はアクター視点の価値表現で命名する (NamingConventions 参照)。
+      severity: info
+    - id: RUL_91c1
+      title: 振る舞いは実行主体へ allocate で割り当てる
+      statement: 主要な Activity は allocate 関係で実行主体の Block (Subsystem/Component) に割り当てる。割当が無い機能は実装責任が曖昧。
+      severity: warning
+    - id: RUL_fd37
+      title: 分解階層は 3 段までを目安とする
+      statement: System → Subsystem → Component の 3 段が標準。それ以上は粒度過剰の可能性。例外はパッケージで観点を分けて整理する。
+      severity: info
+    - id: RUL_bfd8
+      title: 構造分解は責務が重複しない粒度で行う
+      statement: System / Subsystem / Component の各階層で、子ブロック間の責務 (responsibility) が重複しないようにする。重複は再分解の合図。
+      severity: warning
+    - id: RUL_f793
+      title: 要求は設計要素または振る舞いへ追跡可能にする
+      statement: 主要要求は satisfy / refine / trace の少なくとも一つで下流成果物 (Block, Activity, UseCase) と接続する。孤立した要求を残さない。
+      severity: warning
+- className: Block
+  id: 94fd7daa-9467-4c71-b053-f429483c5237
+  name: システム
+  description: 検討対象となるシステム全体 (System-of-Interest)。境界の最上位ブロックで、外部アクター/外部システムと接する。1モデルにつき原則1つ。
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_001
+- className: Block
+  id: 786666b6-a9d2-445b-9f91-850c693aa2b9
+  name: サブシステム
+  description: システムを責務単位で分解した中間構造。複数のコンポーネントを束ねる。階層モデリングの中間層として使用。
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_002
+- className: Block
+  id: 27f34559-8861-474b-a96d-dbabf95ec98c
+  name: コンポーネント
+  description: サブシステムを構成する最小の構造単位 (HW/SW モジュール、ECU、サービスなど)。さらに分解しない実装単位。
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_003
+- className: Block
+  id: 97551697-8501-4923-959a-15a90c896cc8
+  name: MBSE
+  description: Model-Based Systems Engineering。モデルを中心に要求・設計・検証を統合するシステムズエンジニアリング手法。
+  stereotypes:
+  - term
+  conventions:
+    synonyms:
+    - Model-Based Systems Engineering
+    - モデルベースシステムズエンジニアリング
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: TERM.MBSE
+- className: Block
+  id: c8be69c6-a527-4969-92f7-136fdf527862
+  name: SysML
+  description: Systems Modeling Language。MBSE のためのモデリング言語。UML をベースに要求・パラメトリック制約を追加した OMG 標準。
+  stereotypes:
+  - term
+  conventions:
+    synonyms:
+    - Systems Modeling Language
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: TERM.SysML
+- className: Block
+  id: 75b73aec-45a7-4bf1-b4c7-24137b1c2868
+  name: トレーサビリティ
+  description: 要求・設計・振る舞い・検証成果物の対応関係を双方向に追跡できる性質。satisfy / verify / trace / deriveReqt / allocate などの関係で実現する。
+  stereotypes:
+  - term
+  conventions:
+    synonyms:
+    - traceability
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: TERM.トレーサビリティ
+- className: Block
+  id: b32a6aa6-0b78-4ab3-a7d1-9385c5b928d2
+  name: 機能割当
+  description: 振る舞いモデル (Activity) で定義した機能を、実行主体となる構造要素 (Block) へ allocate 関係で対応付けること。
+  stereotypes:
+  - term
+  conventions:
+    synonyms:
+    - allocation
+    - functional allocation
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: TERM.機能割当
+- className: Block
+  id: 42109d5b-55f3-4e1f-941b-57b8707f5115
+  name: 構成分解
+  description: システムを階層的なブロックへ分割し、責務と境界を明確化する活動。System → Subsystem → Component の階層を作る。
+  stereotypes:
+  - term
+  conventions:
+    synonyms:
+    - decomposition
+    - system decomposition
+    - アーキテクチャ分解
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: TERM.構成分解
+- className: Block
+  id: d0b65db0-bafe-4f7c-a62b-709eb98b47cd
+  name: 検証
+  description: 要求を満たしていることを試験・解析・検査・実証により確認する活動。verify 関係で TestCase と Requirement を結ぶ。
+  stereotypes:
+  - term
+  conventions:
+    synonyms:
+    - verification
+    - V&V
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: TERM.検証
+- className: Block
+  id: 1d040f6c-5698-4ab6-a5cd-636823404a74
+  name: 妥当性確認
+  description: システムが本来の意図 (ステークホルダーのニーズ) を満たしているかを確認する活動。検証 (verification) と区別する。
+  stereotypes:
+  - term
+  conventions:
+    synonyms:
+    - validation
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: TERM.妥当性確認
+- className: Block
+  id: 8ec74881-e7ed-4c24-b8e9-7e7fa4e86789
+  name: ステークホルダ
+  description: システムに利害関係を持つ主体 (顧客・運用者・規制機関等)。Actor として表現することが多い。
+  stereotypes:
+  - term
+  conventions:
+    synonyms:
+    - stakeholder
+    - 利害関係者
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: TERM.ステークホルダ
+- className: Block
+  id: 105cb0ff-6a02-47a5-b158-d0503d0611cb
+  name: アーキテクチャ
+  description: システムの構成要素・関係・配置・原則の集合。論理 (logical) と物理 (physical) の2層で扱うことが多い。
+  stereotypes:
+  - term
+  conventions:
+    synonyms:
+    - architecture
+    - system architecture
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: TERM.アーキテクチャ
+- className: Block
+  id: 292432f3-75b6-41b3-8b32-213337d4dd23
+  name: ポート
+  description: ブロックの外部接続点 (in/out/inout)。signal や itemFlow の出入口。SysML では Property の一種で stereotype 'port' で表す。
+  stereotypes:
+  - term
+  conventions:
+    synonyms:
+    - port
+    - 接続点
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: TERM.ポート
+- className: Block
+  id: 4606921c-4cc0-429c-a361-ce153fa7bedc
+  name: フロー
+  description: ブロック間で受け渡される信号 (signal) または物理量 (item)。SysML では Connector で表現される。
+  stereotypes:
+  - term
+  conventions:
+    synonyms:
+    - flow
+    - itemFlow
+    - signal flow
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: TERM.フロー
+- className: Block
+  id: 2872e611-67ca-478d-943b-46733ee37f94
+  name: ユースケースシナリオ
+  description: ユースケースの実行ステップ列。基本シナリオ (主成功シナリオ) と代替/例外シナリオがある。詳細化は Activity で行う。
+  stereotypes:
+  - term
+  conventions:
+    synonyms:
+    - scenario
+    - use case scenario
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: TERM.ユースケースシナリオ
+- className: Block
+  id: 1b2f1efe-945f-468e-a8f8-ce9de60a3505
+  name: 現場オペレーター
+  description: データの入力や日々の処理を担当するユーザーロール。入力の簡易化やミスの自動検知にメリットを享受する。
+  stereotypes:
+  - term
+  conventions:
+    synonyms:
+    - オペレーター
+    - 現場担当者
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: TERM.現場オペレーター
+- className: Block
+  id: 58b1f839-9c73-4be8-bdb9-fb107ff484f6
+  name: 管理者
+  description: 進捗の承認やステータス監視を担当するユーザーロール。承認フローの迅速化とボトルネック可視化のメリットを追求する。
+  stereotypes:
+  - term
+  conventions:
+    synonyms:
+    - 承認権限者
+    - マネージャー
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: TERM.管理者
+- className: Block
+  id: a1280276-2930-4d75-9adc-aa6100c28428
+  name: 取引データインポート
+  description: CSVファイルをドラッグ＆ドロップでシステムに一括登録する機能・プロセス。
+  stereotypes:
+  - term
+  conventions:
+    synonyms:
+    - 一括登録
+    - CSVインポート
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: TERM.取引データインポート
+- className: Block
+  id: c749d755-5da0-4a65-b19e-9cc2de399f76
+  name: リアルタイムチェック
+  description: CSVデータアップロード時に、必須項目や型エラーを即時検知する入力ミス防止機能。
+  stereotypes:
+  - term
+  conventions:
+    synonyms:
+    - リアルタイム検知
+    - エラー検証
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: TERM.リアルタイムチェック
+- className: Block
+  id: 0025e8b0-3c14-4c91-84a1-2dd522bd5cc2
+  name: 承認ワークフロー
+  description: 作成者から一次承認者、最終承認者へと多段階でデジタル承認を進める処理プロセス。
+  stereotypes:
+  - term
+  conventions:
+    synonyms:
+    - 多段階フロー
+    - デジタル承認
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: TERM.承認ワークフロー
+- className: Block
+  id: 0b9ccfee-4251-4082-9603-63ef91dde979
+  name: 既存社内基幹システム
+  description: 今回の新システムとAPI接続で連携することが義務付けられている、前提条件となる接続対象システム。
+  stereotypes:
+  - term
+  conventions:
+    synonyms:
+    - 基幹システム
+    - レガシーシステム
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: TERM.既存社内基幹システム
+- className: Block
+  id: ac090abd-744a-4248-b777-262054b70bd2
+  name: HTTPS
+  description: データ通信を全て暗号化するためのセキュアな通信プロトコル制約。
+  stereotypes:
+  - term
+  conventions:
+    synonyms:
+    - 通信暗号化
+    - HTTPS暗号化
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: TERM.HTTPS
+- className: Package
+  id: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  name: Property 共通規約
+  isReferenceModel: false
+  conventions:
+    naming:
+      pattern: インターフェース (port) は『信号名 + 方向』または『接続先+データ種別』。Part は型ブロック名と整合させる。先頭は小文字 (camelCase) が推奨。
+      examples:
+        good:
+        - transactionCsv_in
+        - importResult_out
+        - apiConnectionPort
+      severity: warning
+    rules:
+    - id: RUL_d0fe
+      title: API連携および外部通信時のセキュリティ暗号化規約
+      statement: 既存社内基幹システムなどの外部API接続やデータ通信を伴う接続ポート/インターフェースは、必ず暗号化（HTTPS等）制約要件（BR-05/セキュリティポリシー）を satisfy すること。
+      severity: error
+    - id: RUL_5491
+      title: インターフェースは方向と型を必ず指定する
+      statement: Property (port/part) として表現するインターフェースは direction (in/out/inout) と type を必ず設定する。
+      severity: warning
+- className: Property
+  id: 2d5ede77-55ba-41ff-95a4-be1c340e75eb
+  name: purpose
+  description: システムの目的・存在意義。1〜2文で簡潔に。
+  type: string
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_001.purpose
+- className: Property
+  id: 3c83a4cf-cd5f-4e42-997c-a3e3da9789a1
+  name: scope
+  description: 対象範囲・境界 (システムが扱う/扱わないものの明示)。
+  type: string
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_001.scope
+- className: Property
+  id: 9ada1991-1f4a-42c1-895f-8856a9e739de
+  name: operationalContext
+  description: 運用環境・使用条件 (温度/電源/通信環境など)。
+  type: string
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_001.operationalContext
+- className: Property
+  id: 8ed951b1-2eb2-4268-a512-796912027164
+  name: responsibility
+  description: サブシステムが担う責務・機能領域 (1文)。
+  type: string
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_002.responsibility
+- className: Property
+  id: 5eacdf34-eaa3-4ece-ac11-32542e86c04c
+  name: criticality
+  description: 重要度。high/medium/low。安全性・可用性に影響する場合は high。
+  type: enum
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_002.criticality
+- className: Property
+  id: 04407052-a9d3-4a3e-b054-b1cbc91a1df7
+  name: category
+  description: 種別。hardware/software/mechanical/service/external。
+  type: enum
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_003.category
+- className: Property
+  id: 6dd3a034-8e7c-4330-b153-10eaf5792c4c
+  name: supplier
+  description: 供給元 (内製/外部ベンダー名)。任意。
+  type: string
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_003.supplier
+- className: Property
+  id: fdbcde6b-5c64-43c1-b2ee-76c7392ddd6e
+  name: インターフェース
+  description: ブロック間で情報・エネルギー・物理接続を受け渡す接点 (port/part)。signal/itemFlow の発生源となる。方向 (in/out/inout) を必ず指定する。
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_004
+- className: Property
+  id: 33c3a289-b407-44eb-ad81-825af11e2f3f
+  name: type
+  description: 受け渡す対象の型 (Block ID または プリミティブ型名)。
+  type: string
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_004.type
+- className: Property
+  id: 3795f4ae-dc25-4b29-9ffd-9db70ee89274
+  name: direction
+  description: 入出力方向。in/out/inout。
+  type: enum
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_004.direction
+- className: Property
+  id: efe03d24-77a9-496a-99b6-f43c4904c217
+  name: multiplicity
+  description: '多重度 (例: ''1'', ''0..1'', ''*'', ''1..*'')。省略時は ''1''。'
+  type: string
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_004.multiplicity
+- className: Property
+  id: 306d6bcf-6ca9-4a78-b76b-bd23471967dc
+  name: defaultValue
+  description: 既定値 (任意)。
+  type: string
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_004.defaultValue
+- className: Property
+  id: cbc0e210-c1a2-457e-bc09-621d4720b7d2
+  name: text
+  description: 要求本文。曖昧語を避け、検証可能な単一文で記述する。
+  type: string
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_005.text
+- className: Property
+  id: 5383eb5c-86ea-42ce-b675-f1454c93d4f1
+  name: priority
+  description: 優先度。must/should/may（またはMust/Want）。
+  type: enum
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_005.priority
+- className: Property
+  id: 88943b3c-baba-4b9c-9a30-b5d0817912a9
+  name: status
+  description: ライフサイクル状態。proposed/approved/implemented/verified/rejected。
+  type: enum
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_005.status
+- className: Property
+  id: 51d20dcc-56ea-48b8-80f6-01679ec69c5d
+  name: source
+  description: 出典 (ビジネス要求書、規格名、ユースケース、ステークホルダ名など)。
+  type: string
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_005.source
+- className: Property
+  id: ea834c4d-8076-40a4-9392-23088448b7f8
+  name: verificationMethod
+  description: 検証方法。test/analysis/inspection/demonstration。
+  type: enum
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_005.verificationMethod
+- className: Property
+  id: 85bf5c0f-72c8-4590-83bc-e660ec47b21e
+  name: risk
+  description: リスク評価。
+  type: string
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_005.risk
+- className: Property
+  id: 8bf9deb8-1eab-4ff6-a8ef-580d9a555f80
+  name: primaryActor
+  description: 主アクター (このユースケースを起動するアクター名)。
+  type: string
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_006.primaryActor
+- className: Property
+  id: cd246d90-0836-48ba-87f8-a66d1c6a85f5
+  name: preconditions
+  description: 事前条件のリスト。
+  type: array
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_006.preconditions
+- className: Property
+  id: df3dc1c5-26c3-4bc6-9d73-147409205a3d
+  name: postconditions
+  description: 事後条件のリスト。
+  type: array
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_006.postconditions
+- className: Property
+  id: 290573b4-e760-40b5-a2ca-5fd9d7c704e9
+  name: mainScenario
+  description: 基本シナリオの手順 (1ステップ=1文)。
+  type: array
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_006.mainScenario
+- className: Property
+  id: 710981cb-57ac-4776-a0d5-eb924f89dd1f
+  name: role
+  description: 役割の説明 (このアクターが果たす機能・立場)。
+  type: string
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_007.role
+- className: Property
+  id: 59d797b6-aeec-4efe-a2d2-ad7719f88668
+  name: actorKind
+  description: 種別。human/external_system/external_device/organization。
+  type: enum
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_007.actorKind
+- className: Property
+  id: fed27db4-633e-45be-a4a1-989278a2ad7f
+  name: primary
+  description: 主アクターか副アクターか (true=主)。
+  type: boolean
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_007.primary
+- className: Property
+  id: dbc1c2b2-386d-4815-bf5e-9e06242021be
+  name: purpose
+  description: この振る舞いが達成する目的・成果。
+  type: string
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_008.purpose
+- className: Property
+  id: 5840adcc-868b-4dc0-bda0-d72fb6d29fcf
+  name: trigger
+  description: 起動条件・トリガ。
+  type: string
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_008.trigger
+- className: Property
+  id: 76372a37-26fd-4c5c-b078-aa8283a4160a
+  name: preconditions
+  description: 事前条件。
+  type: string
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_008.preconditions
+- className: Property
+  id: ea9dbdb1-c4ae-4726-8662-6c23b0a93ee4
+  name: postconditions
+  description: 事後条件。
+  type: string
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_008.postconditions
+- className: Property
+  id: be94f54f-2fad-4aac-b079-5b30f38fc404
+  name: stateType
+  description: 状態種別。initial/normal/final。
+  type: enum
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_009.stateType
+- className: Property
+  id: a6ab2751-5bd7-4e65-b054-a5234e2033e4
+  name: entryAction
+  description: 状態に入った直後に実行されるアクション。
+  type: string
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_009.entryAction
+- className: Property
+  id: 164b7bb2-0ebe-4af6-9669-025239a5d9da
+  name: exitAction
+  description: 状態から出る直前に実行されるアクション。
+  type: string
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_009.exitAction
+- className: Property
+  id: 6074fd88-4f9d-42bd-9b77-c39067b4e0f5
+  name: objective
+  description: 検証目的 (何を確認するか)。
+  type: string
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_010.objective
+- className: Property
+  id: 343197ee-29fd-46d5-841f-dd48b0714eae
+  name: preConditions
+  description: 試験前提条件のリスト。
+  type: array
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_010.preConditions
+- className: Property
+  id: 8b74b8f0-96d8-4cc0-9871-349e49846959
+  name: expectedResults
+  description: 期待結果のリスト (合否判定基準)。
+  type: array
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_010.expectedResults
+- className: Property
+  id: f39fe827-fd0e-418b-acb7-97fe7e4a33b5
+  name: postConditions
+  description: 事後条件のリスト。
+  type: array
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_010.postConditions
+- className: Property
+  id: f0b58de1-d083-40c3-9877-cd5977cb4054
+  name: method
+  description: 実施方法。test/analysis/inspection/demonstration。
+  type: enum
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_010.method
+- className: Property
+  id: 2f3dc37d-fc88-446f-891a-07357e9d3e9d
+  name: testSteps
+  description: 個別の試験ステップ列。
+  type: array
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_010.testSteps
+- className: Property
+  id: a652b155-3080-4ef3-ac1a-20e84a3813d6
+  name: returnType
+  description: 戻り値の型。
+  type: string
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_012.returnType
+- className: Property
+  id: 2ffd948b-7ca1-4d34-bf35-8ae5edd55165
+  name: method
+  description: 実装を担う Activity の ID 配列。
+  type: array
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_012.method
+- className: Property
+  id: 6a9d9d48-3891-45ef-802c-18866e1df4e8
+  name: visibility
+  description: 可視性。public/protected/private。
+  type: enum
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_012.visibility
+- className: Property
+  id: 68501d4b-819e-4d78-8a37-5a2f69c95612
+  name: パラメータ
+  description: Operation や Activity の入出力。CSVファイル、暗号化データなどの取引データ等。
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_013
+- className: Property
+  id: 7ba6ebd6-db74-4791-a301-2f4154d121be
+  name: type
+  description: 型。
+  type: string
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_013.type
+- className: Property
+  id: 447d993b-222a-4e10-8931-9452fb768cfe
+  name: direction
+  description: 入出力方向。in/out/inout/return。
+  type: enum
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_013.direction
+- className: Property
+  id: c721976a-ad77-4951-b84f-93f11bd5b903
+  name: multiplicity
+  description: 多重度。
+  type: string
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_013.multiplicity
+- className: Property
+  id: 1bfb5005-5017-4773-8d1f-7b1b3ad96f5c
+  name: viewpoint
+  description: 観点。requirements/structure/behavior/usecase/verification/architecture/domain。
+  type: enum
+  metaData:
+    version: 1.0
+    createdBy: null
+    createdDate: null
+    ref: CLS_014.viewpoint
 Relationships:
-  # ── 構造分解 (composition / aggregation) ──
-  - Source: "CLS_001"
-    RelationType: "composition"
-    Target: "CLS_002"
-    Description: "システムはサブシステムで構成される (whole-part, ライフサイクル共有)。"
-
-  - Source: "CLS_002"
-    RelationType: "composition"
-    Target: "CLS_003"
-    Description: "サブシステムは複数のコンポーネントから構成される。"
-
-  - Source: "CLS_002"
-    RelationType: "aggregation"
-    Target: "CLS_002"
-    Description: "サブシステム同士の弱い所有関係 (独立存続)。"
-
-  # ── インターフェース・ポート保持 ──
-  - Source: "CLS_002"
-    RelationType: "composition"
-    Target: "CLS_004"
-    Description: "サブシステムは外部接続用または既存社内基幹システム接続用のインターフェースを持つ。"
-
-  - Source: "CLS_003"
-    RelationType: "composition"
-    Target: "CLS_004"
-    Description: "コンポーネントはインターフェース（API等）を持つ。"
-
-  # ── 操作とパラメータ ──
-  - Source: "CLS_002"
-    RelationType: "composition"
-    Target: "CLS_012"
-    Description: "サブシステムは操作 (Operation) を提供する。"
-
-  - Source: "CLS_003"
-    RelationType: "composition"
-    Target: "CLS_012"
-    Description: "コンポーネントは操作を提供する。"
-
-  - Source: "CLS_012"
-    RelationType: "composition"
-    Target: "CLS_013"
-    Description: "操作はパラメータ (引数・戻り値) を持つ。"
-
-  - Source: "CLS_008"
-    RelationType: "composition"
-    Target: "CLS_013"
-    Description: "アクティビティはパラメータ (入出力) を持つ。"
-
-  # ── 汎化・実現 ──
-  - Source: "CLS_003"
-    RelationType: "generalization"
-    Target: "CLS_003"
-    Description: "コンポーネントは特化-汎化の関係を持ちうる。"
-
-  - Source: "CLS_003"
-    RelationType: "realization"
-    Target: "CLS_004"
-    Description: "コンポーネントは定義されたインターフェース仕様（APIなど）を実現する。"
-
-  # ── ユースケース ──
-  - Source: "CLS_007"
-    RelationType: "association"
-    Target: "CLS_006"
-    Description: "アクター（現場オペレーター、管理者）はユースケース（インポート、承認等）を起動または利用する。"
-
-  - Source: "CLS_006"
-    RelationType: "include"
-    Target: "CLS_006"
-    Description: "ユースケースは共通の下位ユースケースを包含する。"
-
-  - Source: "CLS_006"
-    RelationType: "extend"
-    Target: "CLS_006"
-    Description: "ユースケースは別のユースケースを条件付きで拡張する。"
-
-  - Source: "CLS_006"
-    RelationType: "trace"
-    Target: "CLS_005"
-    Description: "ユースケースはビジネス要求（BR-01〜04など）の実現意図にトレースされる。"
-
-  # ── 振る舞いと割当 ──
-  - Source: "CLS_008"
-    RelationType: "refine"
-    Target: "CLS_006"
-    Description: "アクティビティ（承認ワークフロー手順、チェック処理など）はユースケースの基本シナリオを詳細化する。"
-
-  - Source: "CLS_008"
-    RelationType: "refine"
-    Target: "CLS_008"
-    Description: "アクティビティは抽象から詳細へ階層的に精緻化する。"
-
-  - Source: "CLS_008"
-    RelationType: "allocate"
-    Target: "CLS_002"
-    Description: "アクティビティをサブシステムに割り当てる。"
-
-  - Source: "CLS_008"
-    RelationType: "allocate"
-    Target: "CLS_003"
-    Description: "アクティビティを実行主体のコンポーネントに割り当てる。"
-
-  # ── 要求の充足 (satisfy) ──
-  - Source: "CLS_001"
-    RelationType: "satisfy"
-    Target: "CLS_005"
-    Description: "システム全体としての設計が要求（ビジネス要求・セキュリティ制約）を充足する。"
-
-  - Source: "CLS_002"
-    RelationType: "satisfy"
-    Target: "CLS_005"
-    Description: "サブシステムは要求を充足する設計要素である。"
-
-  - Source: "CLS_003"
-    RelationType: "satisfy"
-    Target: "CLS_005"
-    Description: "コンポーネントは要求（リアルタイム型チェック、暗号化処理など）を充足する。"
-
-  - Source: "CLS_008"
-    RelationType: "satisfy"
-    Target: "CLS_005"
-    Description: "アクティビティ（多段階承認フロー、インポート自動化等）は要求を充足する。"
-
-  # ── 要求の派生 / 精緻化 ──
-  - Source: "CLS_005"
-    RelationType: "deriveReqt"
-    Target: "CLS_005"
-    Description: "上位要求（ビジネス要求BR）から下位のシステム要求（機能仕様、セキュリティ仕様）を導出する。"
-
-  - Source: "CLS_005"
-    RelationType: "refine"
-    Target: "CLS_005"
-    Description: "抽象的なビジネス要求を実装可能なシステム要件へ精緻化する。"
-
-  # ── 検証 (verify) ──
-  - Source: "CLS_010"
-    RelationType: "verify"
-    Target: "CLS_005"
-    Description: "テストケースは要求を検証する。"
-
-  - Source: "CLS_010"
-    RelationType: "trace"
-    Target: "CLS_006"
-    Description: "テストケースは検証対象のユースケースシナリオへトレースされうる。"
-
-  # ── 依存 ──
-  - Source: "CLS_002"
-    RelationType: "dependency"
-    Target: "CLS_002"
-    Description: "サブシステム（例：新規システムと既存基幹システム）間の変更影響伝搬を伴う依存関係。"
-
-  - Source: "CLS_003"
-    RelationType: "dependency"
-    Target: "CLS_003"
-    Description: "コンポーネント間の変更影響伝搬を伴う依存関係。"
-
-# ─────────────────────────────────────────────────────────────────────
-# Terminology — プロジェクト固有専門用語・MBSE/SysML標準用語
-# ─────────────────────────────────────────────────────────────────────
-Terminology:
-  - Term: "MBSE"
-    Definition: "Model-Based Systems Engineering。モデルを中心に要求・設計・検証を統合するシステムズエンジニアリング手法。"
-    RelatedClasses: ["CLS_001", "CLS_005", "CLS_010"]
-    Synonyms: ["Model-Based Systems Engineering", "モデルベースシステムズエンジニアリング"]
-
-  - Term: "SysML"
-    Definition: "Systems Modeling Language。MBSE のためのモデリング言語。UML をベースに要求・パラメトリック制約を追加した OMG 標準。"
-    RelatedClasses: ["CLS_001", "CLS_005"]
-    Synonyms: ["Systems Modeling Language"]
-
-  - Term: "トレーサビリティ"
-    Definition: "要求・設計・振る舞い・検証成果物の対応関係を双方向に追跡できる性質。satisfy / verify / trace / deriveReqt / allocate などの関係で実現する。"
-    RelatedClasses: ["CLS_005", "CLS_006", "CLS_008", "CLS_010"]
-    Synonyms: ["traceability"]
-
-  - Term: "機能割当"
-    Definition: "振る舞いモデル (Activity) で定義した機能を、実行主体となる構造要素 (Block) へ allocate 関係で対応付けること。"
-    RelatedClasses: ["CLS_002", "CLS_003", "CLS_008"]
-    Synonyms: ["allocation", "functional allocation"]
-
-  - Term: "構成分解"
-    Definition: "システムを階層的なブロックへ分割し、責務と境界を明確化する活動。System → Subsystem → Component の階層を作る。"
-    RelatedClasses: ["CLS_001", "CLS_002", "CLS_003", "CLS_014"]
-    Synonyms: ["decomposition", "system decomposition", "アーキテクチャ分解"]
-
-  - Term: "検証"
-    Definition: "要求を満たしていることを試験・解析・検査・実証により確認する活動。verify 関係で TestCase と Requirement を結ぶ。"
-    RelatedClasses: ["CLS_005", "CLS_010"]
-    Synonyms: ["verification", "V&V"]
-
-  - Term: "妥当性確認"
-    Definition: "システムが本来の意図 (ステークホルダーのニーズ) を満たしているかを確認する活動。検証 (verification) と区別する。"
-    RelatedClasses: ["CLS_005", "CLS_006"]
-    Synonyms: ["validation"]
-
-  - Term: "ステークホルダ"
-    Definition: "システムに利害関係を持つ主体 (顧客・運用者・規制機関等)。Actor として表現することが多い。"
-    RelatedClasses: ["CLS_007"]
-    Synonyms: ["stakeholder", "利害関係者"]
-
-  - Term: "アーキテクチャ"
-    Definition: "システムの構成要素・関係・配置・原則の集合。論理 (logical) と物理 (physical) の2層で扱うことが多い。"
-    RelatedClasses: ["CLS_001", "CLS_002", "CLS_003"]
-    Synonyms: ["architecture", "system architecture"]
-
-  - Term: "ポート"
-    Definition: "ブロックの外部接続点 (in/out/inout)。signal や itemFlow の出入口。SysML では Property の一種で stereotype 'port' で表す。"
-    RelatedClasses: ["CLS_004"]
-    Synonyms: ["port", "接続点"]
-
-  - Term: "フロー"
-    Definition: "ブロック間で受け渡される信号 (signal) または物理量 (item)。SysML では Connector で表現される。"
-    RelatedClasses: ["CLS_004"]
-    Synonyms: ["flow", "itemFlow", "signal flow"]
-
-  - Term: "ユースケースシナリオ"
-    Definition: "ユースケースの実行ステップ列。基本シナリオ (主成功シナリオ) と代替/例外シナリオがある。詳細化は Activity で行う。"
-    RelatedClasses: ["CLS_006", "CLS_008"]
-    Synonyms: ["scenario", "use case scenario"]
-
-  - Term: "現場オペレーター"
-    Definition: "データの入力や日々の処理を担当するユーザーロール。入力の簡易化やミスの自動検知にメリットを享受する。"
-    RelatedClasses: ["CLS_007"]
-    Synonyms: ["オペレーター", "現場担当者"]
-
-  - Term: "管理者"
-    Definition: "進捗の承認やステータス監視を担当するユーザーロール。承認フローの迅速化とボトルネック可視化のメリットを追求する。"
-    RelatedClasses: ["CLS_007"]
-    Synonyms: ["承認権限者", "マネージャー"]
-
-  - Term: "取引データインポート"
-    Definition: "CSVファイルをドラッグ＆ドロップでシステムに一括登録する機能・プロセス。"
-    RelatedClasses: ["CLS_005", "CLS_006", "CLS_008"]
-    Synonyms: ["一括登録", "CSVインポート"]
-
-  - Term: "リアルタイムチェック"
-    Definition: "CSVデータアップロード時に、必須項目や型エラーを即時検知する入力ミス防止機能。"
-    RelatedClasses: ["CLS_005", "CLS_008"]
-    Synonyms: ["リアルタイム検知", "エラー検証"]
-
-  - Term: "承認ワークフロー"
-    Definition: "作成者から一次承認者、最終承認者へと多段階でデジタル承認を進める処理プロセス。"
-    RelatedClasses: ["CLS_005", "CLS_006", "CLS_008", "CLS_009"]
-    Synonyms: ["多段階フロー", "デジタル承認"]
-
-  - Term: "既存社内基幹システム"
-    Definition: "今回の新システムとAPI接続で連携することが義務付けられている、前提条件となる接続対象システム。"
-    RelatedClasses: ["CLS_001", "CLS_002", "CLS_004"]
-    Synonyms: ["基幹システム", "レガシーシステム"]
-
-  - Term: "HTTPS"
-    Definition: "データ通信を全て暗号化するためのセキュアな通信プロトコル制約。"
-    RelatedClasses: ["CLS_004", "CLS_005"]
-    Synonyms: ["通信暗号化", "HTTPS暗号化"]
-
-# ─────────────────────────────────────────────────────────────────────
-# ModelingRules — MBSE モデリングの標準・プロジェクト固有ルール
-# ─────────────────────────────────────────────────────────────────────
-ModelingRules:
-  - Name: "要求は検証可能な単一文で記述する"
-    Procedure: "RequirementsAnalysis"
-    Description: "Requirement の text は『〜すること』形式の単一要求とし、'適切な'/'十分な'/'なるべく' 等の曖昧語を使わない。複合要求は分割する。"
-    Severity: "warning"
-    AppliesTo: ["Requirement"]
-
-  - Name: "要求には優先度と検証方法を必ず付与する"
-    Procedure: "RequirementsAnalysis"
-    Description: "priority (must/should/may、またはMust/Want) と verificationMethod を欠落させない。"
-    Severity: "info"
-    AppliesTo: ["Requirement"]
-
-  - Name: "要求は設計要素または振る舞いへ追跡可能にする"
-    Procedure: "TraceabilityManagement"
-    Description: "主要要求は satisfy / refine / trace の少なくとも一つで下流成果物 (Block, Activity, UseCase) と接続する。孤立した要求を残さない。"
-    Severity: "warning"
-    AppliesTo: ["Requirement", "Block", "Activity"]
-
-  - Name: "要求は必ずテストケースで検証する"
-    Procedure: "VerificationPlanning"
-    Description: "priority=must/Must の要求は少なくとも 1 つの TestCase と verify 関係で接続する。verify の無い must 要求はカバレッジ不足。"
-    Severity: "warning"
-    AppliesTo: ["Requirement", "TestCase"]
-
-  - Name: "テストケースには合否基準と前提条件を記述する"
-    Procedure: "VerificationPlanning"
-    Description: "TestCase は objective, preConditions, expectedResults を必ず記述。expectedResults 欠落のテストは合否判定不能。"
-    Severity: "warning"
-    AppliesTo: ["TestCase"]
-
-  - Name: "構造分解は責務が重複しない粒度で行う"
-    Procedure: "SystemDecomposition"
-    Description: "System / Subsystem / Component の各階層で、子ブロック間の責務 (responsibility) が重複しないようにする。重複は再分解の合図。"
-    Severity: "warning"
-    AppliesTo: ["Block"]
-
-  - Name: "分解階層は 3 段までを目安とする"
-    Procedure: "SystemDecomposition"
-    Description: "System → Subsystem → Component の 3 段が標準。それ以上は粒度過剰の可能性。例外はパッケージで観点を分けて整理する。"
-    Severity: "info"
-    AppliesTo: ["Block", "Package"]
-
-  - Name: "振る舞いは実行主体へ allocate で割り当てる"
-    Procedure: "FunctionalAllocation"
-    Description: "主要な Activity は allocate 関係で実行主体の Block (Subsystem/Component) に割り当てる。割当が無い機能は実装責任が曖昧。"
-    Severity: "warning"
-    AppliesTo: ["Activity", "Block"]
-
-  - Name: "ユースケースは最低 1 つのアクターを持つ"
-    Procedure: "BehaviorModeling"
-    Description: "UseCase は association で最低 1 アクターと接続。アクター無しのユースケースはシステム外部からの起動契機が不明。"
-    Severity: "warning"
-    AppliesTo: ["UseCase", "Actor"]
-
-  - Name: "ユースケースは Activity で詳細化する"
-    Procedure: "BehaviorModeling"
-    Description: "主要 UseCase は refine 関係で Activity と接続し、シナリオを詳細化する。テキスト記述のみのユースケースは検証困難。"
-    Severity: "info"
-    AppliesTo: ["UseCase", "Activity"]
-
-  - Name: "インターフェースは方向と型を必ず指定する"
-    Procedure: "InterfaceDefinition"
-    Description: "Property (port/part) として表現するインターフェースは direction (in/out/inout) と type を必ず設定する。"
-    Severity: "warning"
-    AppliesTo: ["Property"]
-
-  - Name: "状態遷移は初期状態と最終状態を含める"
-    Procedure: "BehaviorModeling"
-    Description: "State Machine を作成する場合は stateType=initial の状態を 1 つ用意する。終了する振る舞いには stateType=final を含める。"
-    Severity: "info"
-    AppliesTo: ["State"]
-
-  - Name: "モデルは観点ごとにパッケージで整理する"
-    Procedure: "ModelOrganization"
-    Description: "要求 / 構造 / 振る舞い / ユースケース / 検証 を別々のパッケージ (viewpoint) に分けて整理する。1 パッケージに混在させない。"
-    Severity: "info"
-    AppliesTo: ["Package"]
-
-  - Name: "命名は ElementType ごとの規約に従う"
-    Procedure: "ModelOrganization"
-    Description: "Block は名詞句、Activity は動詞句、Requirement は『〜すること』、UseCase はアクター視点の価値表現で命名する (NamingConventions 参照)。"
-    Severity: "info"
-    AppliesTo: ["Block", "Activity", "Requirement", "UseCase", "TestCase", "Package"]
-
-  - Name: "モデルレビューで整合性を確認する"
-    Procedure: "ModelReview"
-    Description: "要求-設計-振る舞い-検証の各レイヤ間で、未接続要素・矛盾・重複が無いか定期的に確認する。生成直後と統合直後は必須。"
-    Severity: "info"
-    AppliesTo: ["Requirement", "Block", "Activity", "UseCase", "TestCase"]
-
-  - Name: "API連携および外部通信時のセキュリティ暗号化規約"
-    Procedure: "InterfaceDefinition"
-    Description: "既存社内基幹システムなどの外部API接続やデータ通信を伴う接続ポート/インターフェースは、必ず暗号化（HTTPS等）制約要件（BR-05/セキュリティポリシー）を satisfy すること。"
-    Severity: "error"
-    AppliesTo: ["Property", "Block"]
-
-  - Name: "ビジネス要件のフェージング（スコープ外）制御"
-    Procedure: "RequirementsAnalysis"
-    Description: "AIエラー予測、モバイルネイティブアプリ等の将来展望項目（スコープ外）は、今回の開発フェーズパッケージ（フェーズ1）からは除外し、バックログまたは将来フェーズパッケージ（フェーズ2）に明確に隔離してモデリングすること。"
-    Severity: "warning"
-    AppliesTo: ["Requirement", "Package"]
-
-# ─────────────────────────────────────────────────────────────────────
-# NamingConventions — モデル要素の命名規約
-# ─────────────────────────────────────────────────────────────────────
-NamingConventions:
-  - ElementType: "Requirement"
-    Pattern: "検証可能な要求文。末尾は『〜すること』『〜できること』『〜以下とすること』等の断定形で統一する。ビジネス要求ID（BR-XXなど）をプレフィックスに含める。"
-    Examples:
-      - "BR-01 取引データをCSVのドラッグ＆ドロップにより一括登録できること"
-      - "BR-02 CSVアップロード時に必須項目や型エラーをリアルタイムで検知すること"
-      - "BR-05 データ通信はすべてHTTPSにより暗号化すること"
-
-  - ElementType: "Block"
-    Pattern: "名詞句で役割・対象を表す。階層に応じた粒度 (System=全体, Subsystem=機能領域, Component=モジュール)。"
-    Examples:
-      - "バッテリー取引管理システム"
-      - "ワークフロー管理サブシステム"
-      - "既存社内基幹システム"
-      - "CSVデータ検証コンポーネント"
-
-  - ElementType: "Activity"
-    Pattern: "動詞 (+ 目的語) で機能を表す。何をする振る舞いか一読で分かるようにする。受動態は避ける。"
-    Examples:
-      - "取引データをCSVから一括インポートする"
-      - "アップロードデータをリアルタイム検証する"
-      - "多段階承認を処理する"
-      - "通信データを暗号化する"
-
-  - ElementType: "UseCase"
-    Pattern: "アクター視点の価値表現。動詞句または短文。システム内部の処理ではなくアクターが得る成果を表す。"
-    Examples:
-      - "取引データをインポートする"
-      - "承認進捗を確認する"
-      - "多段階承認を実行する"
-      - "処理状況をダッシュボードで監視する"
-
-  - ElementType: "Actor"
-    Pattern: "外部主体の役割名。人間アクターは肩書きで、外部システムはシステム名+役割で命名。"
-    Examples:
-      - "現場オペレーター"
-      - "管理者"
-      - "既存社内基幹システム"
-
-  - ElementType: "TestCase"
-    Pattern: "『検証対象 + 観点』または『要求ID + 検証内容』。何を検証するテストか一意に分かる名前にする。"
-    Examples:
-      - "BR-01 取引データ一括インポート検証"
-      - "BR-02 CSVリアルタイムバリデーションテスト"
-      - "HTTPS通信暗号化監査テスト"
-
-  - ElementType: "Property"
-    Pattern: "インターフェース (port) は『信号名 + 方向』または『接続先+データ種別』。Part は型ブロック名と整合させる。先頭は小文字 (camelCase) が推奨。"
-    Examples:
-      - "transactionCsv_in"
-      - "importResult_out"
-      - "apiConnectionPort"
-
-  - ElementType: "Operation"
-    Pattern: "動詞 (+ 目的語) の camelCase。Getter は get*, Setter は set*, 状態確認 is*/has*。"
-    Examples:
-      - "importCsvData"
-      - "validateFields"
-      - "approveStep"
-      - "encryptPayload"
-
-  - ElementType: "State"
-    Pattern: "形容詞 / 動名詞 / 名詞で状態を表す。'〜中' '〜状態' '〜済' 等で完了/進行/結果を区別する。"
-    Examples:
-      - "インポート処理中"
-      - "一時承認待ち"
-      - "最終承認済"
-      - "エラー検知状態"
-
-  - ElementType: "Package"
-    Pattern: "観点 (viewpoint) または開発フェーズを考慮した分類名。同じプロジェクト内で命名スタイルを統一する。"
-    Examples:
-      - "フェーズ1コア要求"
-      - "既存基幹システム接続物理アーキテクチャ"
-      - "将来フェーズバックログ"
+- className: Relationship
+  id: 45ceded3-9775-492a-8390-b08fed570c99
+  description: システムはサブシステムで構成される (whole-part, ライフサイクル共有)。
+  type: composition
+  sourceId: 94fd7daa-9467-4c71-b053-f429483c5237
+  targetId: 786666b6-a9d2-445b-9f91-850c693aa2b9
+  stereotypes: []
+- className: Relationship
+  id: b728a38c-fec7-4ea9-baf5-919fb169c930
+  description: サブシステムは複数のコンポーネントから構成される。
+  type: composition
+  sourceId: 786666b6-a9d2-445b-9f91-850c693aa2b9
+  targetId: 27f34559-8861-474b-a96d-dbabf95ec98c
+  stereotypes: []
+- className: Relationship
+  id: b20d7811-361d-454e-b748-893fbb502b68
+  description: サブシステムは外部接続用または既存社内基幹システム接続用のインターフェースを持つ。
+  type: composition
+  sourceId: 786666b6-a9d2-445b-9f91-850c693aa2b9
+  targetId: fdbcde6b-5c64-43c1-b2ee-76c7392ddd6e
+  stereotypes: []
+- className: Relationship
+  id: 9cd0f152-bb77-498b-bb32-b9acc401fc85
+  description: コンポーネントはインターフェース（API等）を持つ。
+  type: composition
+  sourceId: 27f34559-8861-474b-a96d-dbabf95ec98c
+  targetId: fdbcde6b-5c64-43c1-b2ee-76c7392ddd6e
+  stereotypes: []
+- className: Relationship
+  id: 28dd4e7d-5b6f-4f61-88dd-d308003dce80
+  description: サブシステムは操作 (Operation) を提供する。
+  type: composition
+  sourceId: 786666b6-a9d2-445b-9f91-850c693aa2b9
+  targetId: 41ccc932-ea8b-41ae-8adb-623237a473b3
+  stereotypes: []
+- className: Relationship
+  id: 245912a4-1347-4630-a2bd-0bbac21f67e5
+  description: コンポーネントは操作を提供する。
+  type: composition
+  sourceId: 27f34559-8861-474b-a96d-dbabf95ec98c
+  targetId: 41ccc932-ea8b-41ae-8adb-623237a473b3
+  stereotypes: []
+- className: Relationship
+  id: 8f65c25a-075d-4f68-adfb-7cf54e91d4d4
+  description: 操作はパラメータ (引数・戻り値) を持つ。
+  type: composition
+  sourceId: 41ccc932-ea8b-41ae-8adb-623237a473b3
+  targetId: 68501d4b-819e-4d78-8a37-5a2f69c95612
+  stereotypes: []
+- className: Relationship
+  id: 070fd30f-fc71-47c0-9347-3ee8329d1688
+  description: アクティビティはパラメータ (入出力) を持つ。
+  type: composition
+  sourceId: 34097f46-1dbd-44ac-afe2-3d1ba5de2466
+  targetId: 68501d4b-819e-4d78-8a37-5a2f69c95612
+  stereotypes: []
+- className: Relationship
+  id: 9f323bce-1052-405f-bd27-db5ec12f882e
+  description: コンポーネントは定義されたインターフェース仕様（APIなど）を実現する。
+  type: realization
+  sourceId: 27f34559-8861-474b-a96d-dbabf95ec98c
+  targetId: fdbcde6b-5c64-43c1-b2ee-76c7392ddd6e
+  stereotypes: []
+- className: Relationship
+  id: 8737cc6a-3582-4cf4-90cb-da791a12a0c6
+  description: アクター（現場オペレーター、管理者）はユースケース（インポート、承認等）を起動または利用する。
+  type: association
+  sourceId: 508936b5-ac44-4b9e-9b0d-35380c85484e
+  targetId: 04c27c67-fbc8-4210-8fc2-917fde2c8ecd
+  stereotypes: []
+- className: Relationship
+  id: b8d915ac-b062-4d4f-945e-9d5c05c272c0
+  description: ユースケースはビジネス要求（BR-01〜04など）の実現意図にトレースされる。
+  type: trace
+  sourceId: 04c27c67-fbc8-4210-8fc2-917fde2c8ecd
+  targetId: 17326236-31b6-4e4b-8c4c-fe261e645d25
+  stereotypes: []
+- className: Relationship
+  id: ac0f2186-b3a2-4618-8add-1343ab650c65
+  description: アクティビティ（承認ワークフロー手順、チェック処理など）はユースケースの基本シナリオを詳細化する。
+  type: refine
+  sourceId: 34097f46-1dbd-44ac-afe2-3d1ba5de2466
+  targetId: 04c27c67-fbc8-4210-8fc2-917fde2c8ecd
+  stereotypes: []
+- className: Relationship
+  id: 3dca485f-11db-4019-8ef7-00f54a420c99
+  description: アクティビティをサブシステムに割り当てる。
+  type: allocate
+  sourceId: 34097f46-1dbd-44ac-afe2-3d1ba5de2466
+  targetId: 786666b6-a9d2-445b-9f91-850c693aa2b9
+  stereotypes: []
+- className: Relationship
+  id: 24832ba1-4123-45f8-8aee-f1e631f4e9c6
+  description: アクティビティを実行主体のコンポーネントに割り当てる。
+  type: allocate
+  sourceId: 34097f46-1dbd-44ac-afe2-3d1ba5de2466
+  targetId: 27f34559-8861-474b-a96d-dbabf95ec98c
+  stereotypes: []
+- className: Relationship
+  id: f28b14b8-ad35-4a95-a930-a1287cb32379
+  description: システム全体としての設計が要求（ビジネス要求・セキュリティ制約）を充足する。
+  type: satisfy
+  sourceId: 94fd7daa-9467-4c71-b053-f429483c5237
+  targetId: 17326236-31b6-4e4b-8c4c-fe261e645d25
+  stereotypes: []
+- className: Relationship
+  id: 0b45eb95-6cf8-45a7-a356-04e6aecdae05
+  description: サブシステムは要求を充足する設計要素である。
+  type: satisfy
+  sourceId: 786666b6-a9d2-445b-9f91-850c693aa2b9
+  targetId: 17326236-31b6-4e4b-8c4c-fe261e645d25
+  stereotypes: []
+- className: Relationship
+  id: 2876d633-39b9-40e1-be56-628bf75e8e12
+  description: コンポーネントは要求（リアルタイム型チェック、暗号化処理など）を充足する。
+  type: satisfy
+  sourceId: 27f34559-8861-474b-a96d-dbabf95ec98c
+  targetId: 17326236-31b6-4e4b-8c4c-fe261e645d25
+  stereotypes: []
+- className: Relationship
+  id: e54de89b-362b-41b4-a275-6dd2eb0e9113
+  description: アクティビティ（多段階承認フロー、インポート自動化等）は要求を充足する。
+  type: satisfy
+  sourceId: 34097f46-1dbd-44ac-afe2-3d1ba5de2466
+  targetId: 17326236-31b6-4e4b-8c4c-fe261e645d25
+  stereotypes: []
+- className: Relationship
+  id: 450e81e1-068f-4b3a-9b7d-268389044394
+  description: テストケースは要求を検証する。
+  type: verify
+  sourceId: 7bf4480b-d140-4ed3-8b69-176e23aa1923
+  targetId: 17326236-31b6-4e4b-8c4c-fe261e645d25
+  stereotypes: []
+- className: Relationship
+  id: 2c3042c0-594d-4e3a-beb5-7e0287263bf6
+  description: テストケースは検証対象のユースケースシナリオへトレースされうる。
+  type: trace
+  sourceId: 7bf4480b-d140-4ed3-8b69-176e23aa1923
+  targetId: 04c27c67-fbc8-4210-8fc2-917fde2c8ecd
+  stereotypes: []
+- className: Relationship
+  id: a0847fd3-2c24-468c-bf25-a999382ccf8d
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 97551697-8501-4923-959a-15a90c896cc8
+  targetId: 94fd7daa-9467-4c71-b053-f429483c5237
+  stereotypes: []
+- className: Relationship
+  id: 7c69a478-4b6e-4635-bada-7c2f324fd9b7
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 97551697-8501-4923-959a-15a90c896cc8
+  targetId: 17326236-31b6-4e4b-8c4c-fe261e645d25
+  stereotypes: []
+- className: Relationship
+  id: 49df63d3-14b4-4f0d-8ef3-90503b3dfc26
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 97551697-8501-4923-959a-15a90c896cc8
+  targetId: 7bf4480b-d140-4ed3-8b69-176e23aa1923
+  stereotypes: []
+- className: Relationship
+  id: 0ed6762b-15fe-4233-bb97-210c506cd298
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: c8be69c6-a527-4969-92f7-136fdf527862
+  targetId: 94fd7daa-9467-4c71-b053-f429483c5237
+  stereotypes: []
+- className: Relationship
+  id: a7d473bc-5dff-4adf-ade3-637815f9676e
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: c8be69c6-a527-4969-92f7-136fdf527862
+  targetId: 17326236-31b6-4e4b-8c4c-fe261e645d25
+  stereotypes: []
+- className: Relationship
+  id: 529e4baf-bd31-4d3e-ac7c-7c9013a5d0ce
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 75b73aec-45a7-4bf1-b4c7-24137b1c2868
+  targetId: 17326236-31b6-4e4b-8c4c-fe261e645d25
+  stereotypes: []
+- className: Relationship
+  id: 62751bea-3d43-4981-8307-dcfd76e93b85
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 75b73aec-45a7-4bf1-b4c7-24137b1c2868
+  targetId: 04c27c67-fbc8-4210-8fc2-917fde2c8ecd
+  stereotypes: []
+- className: Relationship
+  id: 5acab4c8-650d-4a20-9232-167c161c4460
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 75b73aec-45a7-4bf1-b4c7-24137b1c2868
+  targetId: 34097f46-1dbd-44ac-afe2-3d1ba5de2466
+  stereotypes: []
+- className: Relationship
+  id: 929e29b6-34fc-43f4-83ed-d0a065c4daaa
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 75b73aec-45a7-4bf1-b4c7-24137b1c2868
+  targetId: 7bf4480b-d140-4ed3-8b69-176e23aa1923
+  stereotypes: []
+- className: Relationship
+  id: d3b3d7c1-6ca3-406c-bdf9-b876eb0b55db
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: b32a6aa6-0b78-4ab3-a7d1-9385c5b928d2
+  targetId: 786666b6-a9d2-445b-9f91-850c693aa2b9
+  stereotypes: []
+- className: Relationship
+  id: 7c6fc95c-3245-4f28-8626-6109284e8f73
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: b32a6aa6-0b78-4ab3-a7d1-9385c5b928d2
+  targetId: 27f34559-8861-474b-a96d-dbabf95ec98c
+  stereotypes: []
+- className: Relationship
+  id: 431bf0e0-0c57-4d1e-9a73-caef211bde9a
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: b32a6aa6-0b78-4ab3-a7d1-9385c5b928d2
+  targetId: 34097f46-1dbd-44ac-afe2-3d1ba5de2466
+  stereotypes: []
+- className: Relationship
+  id: 1229f070-0711-4d9b-ac7e-20249ff8b5e6
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 42109d5b-55f3-4e1f-941b-57b8707f5115
+  targetId: 94fd7daa-9467-4c71-b053-f429483c5237
+  stereotypes: []
+- className: Relationship
+  id: 1b4a2617-003c-42a6-95d8-a34c61eb7422
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 42109d5b-55f3-4e1f-941b-57b8707f5115
+  targetId: 786666b6-a9d2-445b-9f91-850c693aa2b9
+  stereotypes: []
+- className: Relationship
+  id: 048ea0f8-402b-4529-aa3d-ef5d5e9428e1
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 42109d5b-55f3-4e1f-941b-57b8707f5115
+  targetId: 27f34559-8861-474b-a96d-dbabf95ec98c
+  stereotypes: []
+- className: Relationship
+  id: 8a6fdbbb-6c1c-48da-b2b6-ca1c00056ed7
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 42109d5b-55f3-4e1f-941b-57b8707f5115
+  targetId: bc4291c3-b7ff-4827-84d9-7e3a2e91fa14
+  stereotypes: []
+- className: Relationship
+  id: 70934b85-7d85-4020-8bd8-d2160626c756
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: d0b65db0-bafe-4f7c-a62b-709eb98b47cd
+  targetId: 17326236-31b6-4e4b-8c4c-fe261e645d25
+  stereotypes: []
+- className: Relationship
+  id: da54aab3-318e-478f-82d1-60cf73f199d3
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: d0b65db0-bafe-4f7c-a62b-709eb98b47cd
+  targetId: 7bf4480b-d140-4ed3-8b69-176e23aa1923
+  stereotypes: []
+- className: Relationship
+  id: 01ca50b9-140e-4b0f-a5e0-24667f983435
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 1d040f6c-5698-4ab6-a5cd-636823404a74
+  targetId: 17326236-31b6-4e4b-8c4c-fe261e645d25
+  stereotypes: []
+- className: Relationship
+  id: c658ce4b-0cf3-4855-a453-15a695c81024
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 1d040f6c-5698-4ab6-a5cd-636823404a74
+  targetId: 04c27c67-fbc8-4210-8fc2-917fde2c8ecd
+  stereotypes: []
+- className: Relationship
+  id: 903bcff3-5c27-48dc-a7e3-56659ddb9cc9
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 8ec74881-e7ed-4c24-b8e9-7e7fa4e86789
+  targetId: 508936b5-ac44-4b9e-9b0d-35380c85484e
+  stereotypes: []
+- className: Relationship
+  id: 29f75957-70fd-480e-aabd-63644be0bf65
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 105cb0ff-6a02-47a5-b158-d0503d0611cb
+  targetId: 94fd7daa-9467-4c71-b053-f429483c5237
+  stereotypes: []
+- className: Relationship
+  id: 8cd3f59f-8a03-424d-9b3b-949eb68bc7b6
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 105cb0ff-6a02-47a5-b158-d0503d0611cb
+  targetId: 786666b6-a9d2-445b-9f91-850c693aa2b9
+  stereotypes: []
+- className: Relationship
+  id: 6ba3d676-9ddd-4e74-8fcc-829109c42f4f
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 105cb0ff-6a02-47a5-b158-d0503d0611cb
+  targetId: 27f34559-8861-474b-a96d-dbabf95ec98c
+  stereotypes: []
+- className: Relationship
+  id: 654830e2-d2a0-45dc-ae2c-e88d0913711d
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 292432f3-75b6-41b3-8b32-213337d4dd23
+  targetId: fdbcde6b-5c64-43c1-b2ee-76c7392ddd6e
+  stereotypes: []
+- className: Relationship
+  id: 3da14139-19c8-4744-aea3-4e9b8d1d961c
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 4606921c-4cc0-429c-a361-ce153fa7bedc
+  targetId: fdbcde6b-5c64-43c1-b2ee-76c7392ddd6e
+  stereotypes: []
+- className: Relationship
+  id: d062bbdc-bf35-4055-a3f1-71b3a7bfd660
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 2872e611-67ca-478d-943b-46733ee37f94
+  targetId: 04c27c67-fbc8-4210-8fc2-917fde2c8ecd
+  stereotypes: []
+- className: Relationship
+  id: 55ede9fc-ee93-40e0-b3b8-ee8ea4691df7
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 2872e611-67ca-478d-943b-46733ee37f94
+  targetId: 34097f46-1dbd-44ac-afe2-3d1ba5de2466
+  stereotypes: []
+- className: Relationship
+  id: ac0e4f68-f65a-4f34-9fef-90ed720201c3
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 1b2f1efe-945f-468e-a8f8-ce9de60a3505
+  targetId: 508936b5-ac44-4b9e-9b0d-35380c85484e
+  stereotypes: []
+- className: Relationship
+  id: e9353fd3-10df-4a83-9e91-4265426013e0
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 58b1f839-9c73-4be8-bdb9-fb107ff484f6
+  targetId: 508936b5-ac44-4b9e-9b0d-35380c85484e
+  stereotypes: []
+- className: Relationship
+  id: fe82be30-22e7-4512-83cc-a5019645e32f
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: a1280276-2930-4d75-9adc-aa6100c28428
+  targetId: 17326236-31b6-4e4b-8c4c-fe261e645d25
+  stereotypes: []
+- className: Relationship
+  id: 3528ca20-a7f8-49b1-891b-bf5e8ff30b70
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: a1280276-2930-4d75-9adc-aa6100c28428
+  targetId: 04c27c67-fbc8-4210-8fc2-917fde2c8ecd
+  stereotypes: []
+- className: Relationship
+  id: 0a2631a1-0d29-43f9-bd7c-0ba47c07d258
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: a1280276-2930-4d75-9adc-aa6100c28428
+  targetId: 34097f46-1dbd-44ac-afe2-3d1ba5de2466
+  stereotypes: []
+- className: Relationship
+  id: c11da9df-09e0-4f8c-9b88-c2f250626b25
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: c749d755-5da0-4a65-b19e-9cc2de399f76
+  targetId: 17326236-31b6-4e4b-8c4c-fe261e645d25
+  stereotypes: []
+- className: Relationship
+  id: e1de6ac4-aae7-40ca-afa2-794c71fb9375
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: c749d755-5da0-4a65-b19e-9cc2de399f76
+  targetId: 34097f46-1dbd-44ac-afe2-3d1ba5de2466
+  stereotypes: []
+- className: Relationship
+  id: 0539cdbb-5979-4670-be98-1a7464f71698
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 0025e8b0-3c14-4c91-84a1-2dd522bd5cc2
+  targetId: 17326236-31b6-4e4b-8c4c-fe261e645d25
+  stereotypes: []
+- className: Relationship
+  id: 7c34d4e3-f236-414c-9b08-39d92e46221c
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 0025e8b0-3c14-4c91-84a1-2dd522bd5cc2
+  targetId: 04c27c67-fbc8-4210-8fc2-917fde2c8ecd
+  stereotypes: []
+- className: Relationship
+  id: a5836898-1f0b-471e-b1d0-e17f53a1383f
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 0025e8b0-3c14-4c91-84a1-2dd522bd5cc2
+  targetId: 34097f46-1dbd-44ac-afe2-3d1ba5de2466
+  stereotypes: []
+- className: Relationship
+  id: 8f9ae4c0-08ae-43cb-b90e-700278ebeb44
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 0025e8b0-3c14-4c91-84a1-2dd522bd5cc2
+  targetId: 0c4b4bb0-de0c-44f6-8a13-7c675dae69fb
+  stereotypes: []
+- className: Relationship
+  id: 58572527-c342-4f53-9ff3-702fdd1d14b9
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 0b9ccfee-4251-4082-9603-63ef91dde979
+  targetId: 94fd7daa-9467-4c71-b053-f429483c5237
+  stereotypes: []
+- className: Relationship
+  id: d37097ad-2a35-43bd-a494-731c302c2833
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 0b9ccfee-4251-4082-9603-63ef91dde979
+  targetId: 786666b6-a9d2-445b-9f91-850c693aa2b9
+  stereotypes: []
+- className: Relationship
+  id: 2ad2dd35-6886-4a23-9dfa-12063d1d3c39
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: 0b9ccfee-4251-4082-9603-63ef91dde979
+  targetId: fdbcde6b-5c64-43c1-b2ee-76c7392ddd6e
+  stereotypes: []
+- className: Relationship
+  id: 5bdafb8b-7b95-4306-965f-5166e557e3d9
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: ac090abd-744a-4248-b777-262054b70bd2
+  targetId: fdbcde6b-5c64-43c1-b2ee-76c7392ddd6e
+  stereotypes: []
+- className: Relationship
+  id: 47b7ee54-0d10-44a2-8fff-51482da0b2fb
+  description: 用語関連（移行により自動生成）
+  type: association
+  sourceId: ac090abd-744a-4248-b777-262054b70bd2
+  targetId: 17326236-31b6-4e4b-8c4c-fe261e645d25
+  stereotypes: []
+- className: Relationship
+  id: 518a99e0-a428-49da-8f3d-f500f5e22fd4
+  type: containment
+  sourceId: a527e7c4-89f3-4015-a9f2-0b13fca19936
+  targetId: 94fd7daa-9467-4c71-b053-f429483c5237
+  stereotypes: []
+- className: Relationship
+  id: 7d13eec2-7ab9-4a53-8d65-552c3e552e90
+  type: containment
+  sourceId: a527e7c4-89f3-4015-a9f2-0b13fca19936
+  targetId: 786666b6-a9d2-445b-9f91-850c693aa2b9
+  stereotypes: []
+- className: Relationship
+  id: bc90311d-53cf-48a7-9fc4-12e4338cb865
+  type: containment
+  sourceId: a527e7c4-89f3-4015-a9f2-0b13fca19936
+  targetId: 27f34559-8861-474b-a96d-dbabf95ec98c
+  stereotypes: []
+- className: Relationship
+  id: 352467fc-fcf3-45bc-aba6-63d46dd5808d
+  type: containment
+  sourceId: a527e7c4-89f3-4015-a9f2-0b13fca19936
+  targetId: 97551697-8501-4923-959a-15a90c896cc8
+  stereotypes: []
+- className: Relationship
+  id: b6e2cf4b-7f7d-46a8-a70f-ef4c301b50d1
+  type: containment
+  sourceId: a527e7c4-89f3-4015-a9f2-0b13fca19936
+  targetId: c8be69c6-a527-4969-92f7-136fdf527862
+  stereotypes: []
+- className: Relationship
+  id: ecdbf8f5-7b6b-47e7-b171-dfba68ed4a20
+  type: containment
+  sourceId: a527e7c4-89f3-4015-a9f2-0b13fca19936
+  targetId: 75b73aec-45a7-4bf1-b4c7-24137b1c2868
+  stereotypes: []
+- className: Relationship
+  id: c2b8d92f-fad6-425c-8504-04bb4a2e9fad
+  type: containment
+  sourceId: a527e7c4-89f3-4015-a9f2-0b13fca19936
+  targetId: b32a6aa6-0b78-4ab3-a7d1-9385c5b928d2
+  stereotypes: []
+- className: Relationship
+  id: 882f4fae-09ae-419e-884d-26e50a29ade2
+  type: containment
+  sourceId: a527e7c4-89f3-4015-a9f2-0b13fca19936
+  targetId: 42109d5b-55f3-4e1f-941b-57b8707f5115
+  stereotypes: []
+- className: Relationship
+  id: d1d7872d-124e-4d37-8b05-5c83a1e02143
+  type: containment
+  sourceId: a527e7c4-89f3-4015-a9f2-0b13fca19936
+  targetId: d0b65db0-bafe-4f7c-a62b-709eb98b47cd
+  stereotypes: []
+- className: Relationship
+  id: 1c75041e-a366-4743-8ee8-bbf6e14cf908
+  type: containment
+  sourceId: a527e7c4-89f3-4015-a9f2-0b13fca19936
+  targetId: 1d040f6c-5698-4ab6-a5cd-636823404a74
+  stereotypes: []
+- className: Relationship
+  id: 546b9962-de0c-4ec4-874f-7065985d6fd3
+  type: containment
+  sourceId: a527e7c4-89f3-4015-a9f2-0b13fca19936
+  targetId: 8ec74881-e7ed-4c24-b8e9-7e7fa4e86789
+  stereotypes: []
+- className: Relationship
+  id: f9de8fa4-a68f-4240-862b-56f97d16a833
+  type: containment
+  sourceId: a527e7c4-89f3-4015-a9f2-0b13fca19936
+  targetId: 105cb0ff-6a02-47a5-b158-d0503d0611cb
+  stereotypes: []
+- className: Relationship
+  id: 57464d35-2e4e-4108-9b2c-47179e90e4ba
+  type: containment
+  sourceId: a527e7c4-89f3-4015-a9f2-0b13fca19936
+  targetId: 292432f3-75b6-41b3-8b32-213337d4dd23
+  stereotypes: []
+- className: Relationship
+  id: 40df7683-8830-4a20-8a2e-8bfd74681acb
+  type: containment
+  sourceId: a527e7c4-89f3-4015-a9f2-0b13fca19936
+  targetId: 4606921c-4cc0-429c-a361-ce153fa7bedc
+  stereotypes: []
+- className: Relationship
+  id: f92366b1-299d-43a4-9eb5-c30cf63c0d03
+  type: containment
+  sourceId: a527e7c4-89f3-4015-a9f2-0b13fca19936
+  targetId: 2872e611-67ca-478d-943b-46733ee37f94
+  stereotypes: []
+- className: Relationship
+  id: b631fa55-c13e-4b06-b0fd-050e3d23f7b1
+  type: containment
+  sourceId: a527e7c4-89f3-4015-a9f2-0b13fca19936
+  targetId: 1b2f1efe-945f-468e-a8f8-ce9de60a3505
+  stereotypes: []
+- className: Relationship
+  id: d7a86ee5-b7a0-4565-9ff0-e81448b314eb
+  type: containment
+  sourceId: a527e7c4-89f3-4015-a9f2-0b13fca19936
+  targetId: 58b1f839-9c73-4be8-bdb9-fb107ff484f6
+  stereotypes: []
+- className: Relationship
+  id: a2713cb5-ba4f-4986-9e55-6df6de35a158
+  type: containment
+  sourceId: a527e7c4-89f3-4015-a9f2-0b13fca19936
+  targetId: a1280276-2930-4d75-9adc-aa6100c28428
+  stereotypes: []
+- className: Relationship
+  id: 5fe0eb94-fa9d-4311-93b9-7a64bad30209
+  type: containment
+  sourceId: a527e7c4-89f3-4015-a9f2-0b13fca19936
+  targetId: c749d755-5da0-4a65-b19e-9cc2de399f76
+  stereotypes: []
+- className: Relationship
+  id: 803f8008-62f1-40ee-ab4c-ac6a7fa7a7e9
+  type: containment
+  sourceId: a527e7c4-89f3-4015-a9f2-0b13fca19936
+  targetId: 0025e8b0-3c14-4c91-84a1-2dd522bd5cc2
+  stereotypes: []
+- className: Relationship
+  id: 7ea4622a-98b9-4df8-8024-11d0a3efe3a8
+  type: containment
+  sourceId: a527e7c4-89f3-4015-a9f2-0b13fca19936
+  targetId: 0b9ccfee-4251-4082-9603-63ef91dde979
+  stereotypes: []
+- className: Relationship
+  id: 10b8ff48-28b3-4331-9882-09981edfef08
+  type: containment
+  sourceId: a527e7c4-89f3-4015-a9f2-0b13fca19936
+  targetId: ac090abd-744a-4248-b777-262054b70bd2
+  stereotypes: []
+- className: Relationship
+  id: c92adc3e-600b-4438-86a9-a9b0e460e92f
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 2d5ede77-55ba-41ff-95a4-be1c340e75eb
+  stereotypes: []
+- className: Relationship
+  id: 2d497855-afaf-4224-8f7a-28821fbbbd1d
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 3c83a4cf-cd5f-4e42-997c-a3e3da9789a1
+  stereotypes: []
+- className: Relationship
+  id: c69aaa5d-170a-473a-8505-0484747e22b1
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 9ada1991-1f4a-42c1-895f-8856a9e739de
+  stereotypes: []
+- className: Relationship
+  id: a67a62d7-577b-4b38-9483-88d69ad217fc
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 8ed951b1-2eb2-4268-a512-796912027164
+  stereotypes: []
+- className: Relationship
+  id: 07c4a1f4-1d20-4e2e-bb11-39abc55183a3
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 5eacdf34-eaa3-4ece-ac11-32542e86c04c
+  stereotypes: []
+- className: Relationship
+  id: 252a1bd2-9feb-4fae-87ea-9f4a03b410e9
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 04407052-a9d3-4a3e-b054-b1cbc91a1df7
+  stereotypes: []
+- className: Relationship
+  id: 3953f9ac-d070-494f-9812-a3d6b81712ea
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 6dd3a034-8e7c-4330-b153-10eaf5792c4c
+  stereotypes: []
+- className: Relationship
+  id: 86147877-03ff-40d1-bee1-45805048d8e7
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: fdbcde6b-5c64-43c1-b2ee-76c7392ddd6e
+  stereotypes: []
+- className: Relationship
+  id: cc29ff74-0045-4c9b-bcd2-3d3e4d913bb0
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 33c3a289-b407-44eb-ad81-825af11e2f3f
+  stereotypes: []
+- className: Relationship
+  id: 7a1b9007-5706-43d8-af9f-fbda4822f219
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 3795f4ae-dc25-4b29-9ffd-9db70ee89274
+  stereotypes: []
+- className: Relationship
+  id: f8ac14e7-12df-4621-b6a0-c5dc7c3368e5
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: efe03d24-77a9-496a-99b6-f43c4904c217
+  stereotypes: []
+- className: Relationship
+  id: 58755f95-46db-45b8-94b0-1db5bab12569
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 306d6bcf-6ca9-4a78-b76b-bd23471967dc
+  stereotypes: []
+- className: Relationship
+  id: 82ad0b54-528d-4133-8e12-45e15c043e79
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: cbc0e210-c1a2-457e-bc09-621d4720b7d2
+  stereotypes: []
+- className: Relationship
+  id: c3665b49-c7bb-4125-88ed-4dab4d37fab9
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 5383eb5c-86ea-42ce-b675-f1454c93d4f1
+  stereotypes: []
+- className: Relationship
+  id: 24057fe3-b4a1-46f6-a33a-13a1547e3d82
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 88943b3c-baba-4b9c-9a30-b5d0817912a9
+  stereotypes: []
+- className: Relationship
+  id: fec68417-4e93-4d44-8d07-dc7ab757b322
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 51d20dcc-56ea-48b8-80f6-01679ec69c5d
+  stereotypes: []
+- className: Relationship
+  id: aa82168e-00aa-4b82-b0b7-b763d443e66b
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: ea834c4d-8076-40a4-9392-23088448b7f8
+  stereotypes: []
+- className: Relationship
+  id: 0e2a1a0c-9797-44d3-80eb-ece9bfc55194
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 85bf5c0f-72c8-4590-83bc-e660ec47b21e
+  stereotypes: []
+- className: Relationship
+  id: 7db44e57-4a66-4f91-af15-69f9a9936678
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 8bf9deb8-1eab-4ff6-a8ef-580d9a555f80
+  stereotypes: []
+- className: Relationship
+  id: 2d52c9a5-ee88-4994-a298-5ad0aa85c8a5
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: cd246d90-0836-48ba-87f8-a66d1c6a85f5
+  stereotypes: []
+- className: Relationship
+  id: 22d22733-4d8b-4a1c-8eaf-2311fbeb9ab1
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: df3dc1c5-26c3-4bc6-9d73-147409205a3d
+  stereotypes: []
+- className: Relationship
+  id: 89632cd3-902f-477e-afae-e7ec78bbb6ee
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 290573b4-e760-40b5-a2ca-5fd9d7c704e9
+  stereotypes: []
+- className: Relationship
+  id: 032f938b-979d-4ace-9a6b-5db4e7cc062c
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 710981cb-57ac-4776-a0d5-eb924f89dd1f
+  stereotypes: []
+- className: Relationship
+  id: 15314ee8-0f8c-4c17-8541-e3d58346d59b
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 59d797b6-aeec-4efe-a2d2-ad7719f88668
+  stereotypes: []
+- className: Relationship
+  id: 247d7560-d55f-4822-8db8-0c325bf1e922
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: fed27db4-633e-45be-a4a1-989278a2ad7f
+  stereotypes: []
+- className: Relationship
+  id: 349b8ddf-7090-463a-b66f-6c2b6d1464ed
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: dbc1c2b2-386d-4815-bf5e-9e06242021be
+  stereotypes: []
+- className: Relationship
+  id: 4b8ca449-a0cb-406d-a44a-3b609852ea9a
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 5840adcc-868b-4dc0-bda0-d72fb6d29fcf
+  stereotypes: []
+- className: Relationship
+  id: 6e6f2b31-e809-44ef-bd08-2ddeb6027c66
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 76372a37-26fd-4c5c-b078-aa8283a4160a
+  stereotypes: []
+- className: Relationship
+  id: 911dd106-4346-4a84-9328-97f6a2ec6c1a
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: ea9dbdb1-c4ae-4726-8662-6c23b0a93ee4
+  stereotypes: []
+- className: Relationship
+  id: d9051112-17e1-4544-a34b-bb681fe3047b
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: be94f54f-2fad-4aac-b079-5b30f38fc404
+  stereotypes: []
+- className: Relationship
+  id: af77fae4-05ef-420d-8fdb-41db91cd1651
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: a6ab2751-5bd7-4e65-b054-a5234e2033e4
+  stereotypes: []
+- className: Relationship
+  id: 612d2f97-731a-4f3a-9750-fc2103906348
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 164b7bb2-0ebe-4af6-9669-025239a5d9da
+  stereotypes: []
+- className: Relationship
+  id: 9edc6ab8-367d-4813-bafd-1bce75c2bd45
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 6074fd88-4f9d-42bd-9b77-c39067b4e0f5
+  stereotypes: []
+- className: Relationship
+  id: 5bb813f0-f6b1-4591-8ded-648a98b5c701
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 343197ee-29fd-46d5-841f-dd48b0714eae
+  stereotypes: []
+- className: Relationship
+  id: 6f01d2de-d2f4-4239-b9c5-9a3093ef377c
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 8b74b8f0-96d8-4cc0-9871-349e49846959
+  stereotypes: []
+- className: Relationship
+  id: 44efc922-62fd-434b-bf11-ddc57e156b49
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: f39fe827-fd0e-418b-acb7-97fe7e4a33b5
+  stereotypes: []
+- className: Relationship
+  id: 2713d0e6-5c02-4c46-81ea-9efa65574e16
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: f0b58de1-d083-40c3-9877-cd5977cb4054
+  stereotypes: []
+- className: Relationship
+  id: 36e88bf4-11bb-4cf7-a7e5-dc6070f8a213
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 2f3dc37d-fc88-446f-891a-07357e9d3e9d
+  stereotypes: []
+- className: Relationship
+  id: a8d809f0-2309-4a13-9f9b-17f896e9473c
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: a652b155-3080-4ef3-ac1a-20e84a3813d6
+  stereotypes: []
+- className: Relationship
+  id: 916b4674-6e1c-4b3a-af9d-1f8cc97957a9
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 2ffd948b-7ca1-4d34-bf35-8ae5edd55165
+  stereotypes: []
+- className: Relationship
+  id: 4d1f9c85-6ba5-437d-9b38-271b2911d3f1
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 6a9d9d48-3891-45ef-802c-18866e1df4e8
+  stereotypes: []
+- className: Relationship
+  id: 7dc44413-44d5-4b6e-978e-c3e15a552a84
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 68501d4b-819e-4d78-8a37-5a2f69c95612
+  stereotypes: []
+- className: Relationship
+  id: 2e991b3b-7dc3-47a6-8670-08422518796e
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 7ba6ebd6-db74-4791-a301-2f4154d121be
+  stereotypes: []
+- className: Relationship
+  id: fe9f076d-c41f-49cd-9909-d037dbfad305
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 447d993b-222a-4e10-8931-9452fb768cfe
+  stereotypes: []
+- className: Relationship
+  id: e8385123-9496-4b95-9454-4bd57eb62299
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: c721976a-ad77-4951-b84f-93f11bd5b903
+  stereotypes: []
+- className: Relationship
+  id: 48d17b00-d3ce-4ef0-bc6d-d59b0e99ed77
+  type: containment
+  sourceId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  targetId: 1bfb5005-5017-4773-8d1f-7b1b3ad96f5c
+  stereotypes: []
+- className: Relationship
+  id: b34a58a2-5f98-4494-a36c-2d30d10ead5b
+  type: containment
+  sourceId: b05b09b9-37a4-4af2-8fb3-5b1cd7a4b9bb
+  targetId: bc4291c3-b7ff-4827-84d9-7e3a2e91fa14
+  stereotypes: []
+- className: Relationship
+  id: b6c4330f-ac2e-4bcc-a94a-0d117bb5ce35
+  type: containment
+  sourceId: b05b09b9-37a4-4af2-8fb3-5b1cd7a4b9bb
+  targetId: 8d394dde-5d53-4550-9872-d2f94ae3b1bf
+  stereotypes: []
+- className: Relationship
+  id: 9f1fbb21-8991-40f8-93f3-56d88a718ee8
+  type: containment
+  sourceId: b05b09b9-37a4-4af2-8fb3-5b1cd7a4b9bb
+  targetId: a527e7c4-89f3-4015-a9f2-0b13fca19936
+  stereotypes: []
+- className: Relationship
+  id: b366e50c-d985-4601-b15d-0734c2d0e977
+  type: containment
+  sourceId: b05b09b9-37a4-4af2-8fb3-5b1cd7a4b9bb
+  targetId: 724d060b-5ebe-4882-91b1-8d78fa9b3328
+  stereotypes: []

@@ -347,7 +347,7 @@
     ],
     "show_outgoing": true,
     "show_incoming": true,
-    "row_header_width": 180,
-    "col_header_height": 120,
+    "row_header_width": 247,
+    "col_header_height": 279,
     "cell_size": 40
 }

@@ -1,53 +1,42 @@
 {
-    "id": "7ef1c4c8-bdbc-4698-8096-a5282d49edd8",
-    "name": "絶縁カバー-システム性能要求マトリクス",
+    "id": "028fab96-9f7a-447d-a70f-ad344426d4b9",
+    "name": "絶縁カバー CTR-BATs トレーサビリティマトリクス",
     "class_name": "FreeMatrix",
-    "description": "",
+    "description": "絶縁カバーに関するCTR（PKG30）と、対応するシステム要求（BATs）との間の allocate 依存関係を示すトレーサビリティマトリクス。ユーザー提示指示に従って検証できるように全CTR要求と関連BATs要求を行列スコープとして配置。",
     "vertical_scope_el_ids": [
-        "dfee9968-ddb6-4879-be6f-36304df9a428"
+        "cfcb364e-7491-4244-9119-3813b56a5247"
     ],
     "horizontal_scope_el_ids": [
         "835145bc-3af4-4da8-9744-35372b33307f"
     ],
     "vertical_types": [
-        "Block"
+        "Requirement"
     ],
     "horizontal_types": [
         "Requirement"
     ],
     "rel_filter_types": [
+        "containment",
+        "dependency",
+        "association",
+        "generalization",
+        "realization",
+        "composition",
+        "aggregation",
+        "allocation",
+        "merge",
+        "trace",
+        "refine",
         "satisfy",
+        "verify",
         "deriveReqt",
-        "trace"
+        "include",
+        "extend"
     ],
     "row_scope_config": {
         "roots": [
             {
-                "rootId": "dfee9968-ddb6-4879-be6f-36304df9a428",
-                "includeRoot": true,
-                "includeIntermediates": true,
-                "queries": [
-                    {
-                        "relationType": "containment",
-                        "direction": "outgoing",
-                        "nodeType": "Package"
-                    },
-                    {
-                        "relationType": "containment",
-                        "direction": "outgoing",
-                        "nodeType": "Block",
-                        "mergeWithPrevious": true
-                    }
-                ],
-                "recursive": true
-            }
-        ],
-        "directElementIds": []
-    },
-    "col_scope_config": {
-        "roots": [
-            {
-                "rootId": "835145bc-3af4-4da8-9744-35372b33307f",
+                "rootId": "b15a8c13-6392-4290-8d50-a3a27c14a51a",
                 "includeRoot": true,
                 "includeIntermediates": true,
                 "queries": [
@@ -68,7 +57,31 @@
         ],
         "directElementIds": []
     },
-    "direction_filter": "outgoing",
+    "col_scope_config": {
+        "roots": [
+            {
+                "rootId": "cfcb364e-7491-4244-9119-3813b56a5247",
+                "includeRoot": true,
+                "includeIntermediates": true,
+                "queries": [
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Package"
+                    },
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Requirement",
+                        "mergeWithPrevious": true
+                    }
+                ],
+                "recursive": true
+            }
+        ],
+        "directElementIds": []
+    },
+    "direction_filter": "both",
     "create_relation_type": "__all__",
     "include_implied": true,
     "implied_edge_config": {
@@ -326,15 +339,17 @@
         ]
     },
     "row_expanded_ids": [
-        "dfee9968-ddb6-4879-be6f-36304df9a428",
-        "d8cf2e37-c4c2-4ead-8de0-1121f655a327"
+        "b15a8c13-6392-4290-8d50-a3a27c14a51a"
     ],
     "col_expanded_ids": [
-        "835145bc-3af4-4da8-9744-35372b33307f"
+        "bf55740f-da0a-4abe-b9a3-b5ff20ee3dff",
+        "cfcb364e-7491-4244-9119-3813b56a5247",
+        "b15a8c13-6392-4290-8d50-a3a27c14a51a",
+        "44f9f2b3-a52d-43ee-ad95-02bd30305960"
     ],
     "show_outgoing": true,
     "show_incoming": true,
-    "row_header_width": 198,
-    "col_header_height": 248,
+    "row_header_width": 180,
+    "col_header_height": 120,
     "cell_size": 40
 }
