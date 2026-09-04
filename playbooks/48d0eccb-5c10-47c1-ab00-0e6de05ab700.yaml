@@ -1,0 +1,29 @@
+id: ''
+name: モデル整理（SysMLオントロジー.yaml）
+slash_command: migrated-modelorganization
+description: 'オントロジー「SysMLオントロジー.yaml」の v2 → v3 移行により自動生成された手順書です。
+
+  旧 ModelingRules の Procedure="ModelOrganization" に該当する 2 件の規約を手順として書き起こしています。
+
+
+  注意:
+
+  - 各ステップの内容は規約の文面をそのまま転記したものです。実際の作業手順として読めるように整理してください。
+
+  - 同じ内容はオントロジー側の規約 (conventions.rules) にも設定されています。'
+use_when: モデル整理に関する作業を行うとき。
+steps:
+- 'no': 1
+  title: モデルは観点ごとにパッケージで整理する
+  instruction: 要求 / 構造 / 振る舞い / ユースケース / 検証 を別々のパッケージ (viewpoint) に分けて整理する。1 パッケージに混在させない。
+  tools: []
+  done_when: ''
+- 'no': 2
+  title: 命名は ElementType ごとの規約に従う
+  instruction: Block は名詞句、Activity は動詞句、Requirement は『〜すること』、UseCase はアクター視点の価値表現で命名する
+    (NamingConventions 参照)。
+  tools: []
+  done_when: ''
+strict: false
+allow_skip: true
+max_steps_per_stage: 12

@@ -1,0 +1,28 @@
+id: ''
+name: システム分解（SysMLオントロジー.yaml）
+slash_command: migrated-systemdecomposition
+description: 'オントロジー「SysMLオントロジー.yaml」の v2 → v3 移行により自動生成された手順書です。
+
+  旧 ModelingRules の Procedure="SystemDecomposition" に該当する 2 件の規約を手順として書き起こしています。
+
+
+  注意:
+
+  - 各ステップの内容は規約の文面をそのまま転記したものです。実際の作業手順として読めるように整理してください。
+
+  - 同じ内容はオントロジー側の規約 (conventions.rules) にも設定されています。'
+use_when: システム分解に関する作業を行うとき。
+steps:
+- 'no': 1
+  title: 構造分解は責務が重複しない粒度で行う
+  instruction: System / Subsystem / Component の各階層で、子ブロック間の責務 (responsibility) が重複しないようにする。重複は再分解の合図。
+  tools: []
+  done_when: ''
+- 'no': 2
+  title: 分解階層は 3 段までを目安とする
+  instruction: System → Subsystem → Component の 3 段が標準。それ以上は粒度過剰の可能性。例外はパッケージで観点を分けて整理する。
+  tools: []
+  done_when: ''
+strict: false
+allow_skip: true
+max_steps_per_stage: 12

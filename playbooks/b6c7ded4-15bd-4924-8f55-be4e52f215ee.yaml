@@ -1,0 +1,23 @@
+id: ''
+name: モデルレビュー（SysMLオントロジー.yaml）
+slash_command: migrated-modelreview
+description: 'オントロジー「SysMLオントロジー.yaml」の v2 → v3 移行により自動生成された手順書です。
+
+  旧 ModelingRules の Procedure="ModelReview" に該当する 1 件の規約を手順として書き起こしています。
+
+
+  注意:
+
+  - 各ステップの内容は規約の文面をそのまま転記したものです。実際の作業手順として読めるように整理してください。
+
+  - 同じ内容はオントロジー側の規約 (conventions.rules) にも設定されています。'
+use_when: モデルレビューに関する作業を行うとき。
+steps:
+- 'no': 1
+  title: モデルレビューで整合性を確認する
+  instruction: 要求-設計-振る舞い-検証の各レイヤ間で、未接続要素・矛盾・重複が無いか定期的に確認する。生成直後と統合直後は必須。
+  tools: []
+  done_when: ''
+strict: false
+allow_skip: true
+max_steps_per_stage: 12

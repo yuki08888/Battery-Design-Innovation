@@ -1,0 +1,49 @@
+id: ""
+name: 要求ツリー整備
+slash_command: req-tree
+description: |
+  ユーザー要望から要求ツリー（上位要求→下位要求）を構築し、
+  deriveReqt 関係と satisfy 関係を整備する手順。
+  要求の新規作成・再構成を依頼されたときに使用する。
+use_when: |
+  ユーザーが「要求を整理」「要求ツリーを作って」「要求の親子関係を見直す」
+  等を依頼したとき。
+steps:
+  - no: 1
+    title: 既存要求の棚卸し
+    instruction: |
+      対象パッケージ配下の Requirement を search_item / read_package_contents で
+      すべて列挙し、名前・text・既存の deriveReqt 関係を把握する。
+    tools:
+      - search_item
+      - read_package_contents
+      - get_related_elements
+    done_when: 対象範囲の全 Requirement について短縮ID・名前・要求文・既存 deriveReqt の親子を一覧化し、親を持たない要求も識別できている
+  - no: 2
+    title: 階層構造の設計
+    instruction: |
+      ユーザー要望と既存要求から、3 階層以内の要求ツリー案を作る。
+      オントロジーの命名規則に必ず従うこと。
+    done_when: 各要求に上位要求または最上位である旨が定まり、階層が3段以内かつ循環・重複要求0件のツリー案になっている
+  - no: 3
+    title: 要求の作成・更新
+    instruction: |
+      create_requirement / update_requirement で要求を作成・更新する。
+      親子は create_relationship(deriveReqt) で張る。
+    tools:
+      - create_requirement
+      - update_requirement
+      - create_relationship
+    done_when: ツリー案の全 Requirement が名前・要求文付きで存在し、全ての非最上位要求から上位要求へ deriveReqt が1本以上存在する
+  - no: 4
+    title: 整合性検査
+    instruction: |
+      作成・更新した要素の短縮IDを validate_model の elementIds に列挙して実行する。
+      違反があれば修正し、**最大 2 回まで**再検証する。
+      それでも直らない違反はリトライを止め、最終報告で「未解決の課題」として報告する。
+    tools:
+      - validate_model
+    done_when: 変更要素を validate_model で検証し、error 0件、または最大2回の修正後に残る各違反へ ruleId・要素ID・未解決理由を記録した
+strict: true
+allow_skip: false
+max_steps_per_stage: 12

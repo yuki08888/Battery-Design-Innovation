@@ -1,0 +1,34 @@
+id: ''
+name: 振る舞いモデリング（SysMLオントロジー.yaml）
+slash_command: migrated-behaviormodeling
+description: 'オントロジー「SysMLオントロジー.yaml」の v2 → v3 移行により自動生成された手順書です。
+
+  旧 ModelingRules の Procedure="BehaviorModeling" に該当する 3 件の規約を手順として書き起こしています。
+
+
+  注意:
+
+  - 各ステップの内容は規約の文面をそのまま転記したものです。実際の作業手順として読めるように整理してください。
+
+  - 同じ内容はオントロジー側の規約 (conventions.rules) にも設定されています。'
+use_when: 振る舞いモデリングに関する作業を行うとき。
+steps:
+- 'no': 1
+  title: ユースケースは最低 1 つのアクターを持つ
+  instruction: UseCase は association で最低 1 アクターと接続。アクター無しのユースケースはシステム外部からの起動契機が不明。
+  tools: []
+  done_when: ''
+- 'no': 2
+  title: ユースケースは Activity で詳細化する
+  instruction: 主要 UseCase は refine 関係で Activity と接続し、シナリオを詳細化する。テキスト記述のみのユースケースは検証困難。
+  tools: []
+  done_when: ''
+- 'no': 3
+  title: 状態遷移は初期状態と最終状態を含める
+  instruction: State Machine を作成する場合は stateType=initial の状態を 1 つ用意する。終了する振る舞いには stateType=final
+    を含める。
+  tools: []
+  done_when: ''
+strict: false
+allow_skip: true
+max_steps_per_stage: 12

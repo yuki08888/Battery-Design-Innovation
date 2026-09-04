@@ -1,0 +1,24 @@
+id: ''
+name: トレーサビリティ管理（SysMLオントロジー.yaml）
+slash_command: migrated-traceabilitymanagement
+description: 'オントロジー「SysMLオントロジー.yaml」の v2 → v3 移行により自動生成された手順書です。
+
+  旧 ModelingRules の Procedure="TraceabilityManagement" に該当する 1 件の規約を手順として書き起こしています。
+
+
+  注意:
+
+  - 各ステップの内容は規約の文面をそのまま転記したものです。実際の作業手順として読めるように整理してください。
+
+  - 同じ内容はオントロジー側の規約 (conventions.rules) にも設定されています。'
+use_when: トレーサビリティ管理に関する作業を行うとき。
+steps:
+- 'no': 1
+  title: 要求は設計要素または振る舞いへ追跡可能にする
+  instruction: 主要要求は satisfy / refine / trace の少なくとも一つで下流成果物 (Block, Activity, UseCase)
+    と接続する。孤立した要求を残さない。
+  tools: []
+  done_when: ''
+strict: false
+allow_skip: true
+max_steps_per_stage: 12

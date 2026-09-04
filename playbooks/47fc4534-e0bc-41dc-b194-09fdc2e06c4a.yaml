@@ -1,0 +1,30 @@
+id: ''
+name: インターフェース定義（SysMLオントロジー.yaml）
+slash_command: migrated-interfacedefinition
+description: 'オントロジー「SysMLオントロジー.yaml」の v2 → v3 移行により自動生成された手順書です。
+
+  旧 ModelingRules の Procedure="InterfaceDefinition" に該当する 2 件の規約を手順として書き起こしています。
+
+
+  注意:
+
+  - 各ステップの内容は規約の文面をそのまま転記したものです。実際の作業手順として読めるように整理してください。
+
+  - 同じ内容はオントロジー側の規約 (conventions.rules) にも設定されています。'
+use_when: インターフェース定義に関する作業を行うとき。
+steps:
+- 'no': 1
+  title: インターフェースは方向と型を必ず指定する
+  instruction: Property (port/part) として表現するインターフェースは direction (in/out/inout) と type
+    を必ず設定する。
+  tools: []
+  done_when: ''
+- 'no': 2
+  title: API連携および外部通信時のセキュリティ暗号化規約
+  instruction: 既存社内基幹システムなどの外部API接続やデータ通信を伴う接続ポート/インターフェースは、必ず暗号化（HTTPS等）制約要件（BR-05/セキュリティポリシー）を
+    satisfy すること。
+  tools: []
+  done_when: ''
+strict: false
+allow_skip: true
+max_steps_per_stage: 12
