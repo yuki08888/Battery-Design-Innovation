@@ -1,0 +1,45 @@
+id: ""
+name: 内部構造展開（IBD）
+slash_command: ibd-expand
+description: |
+  対象 Block の内部構造を part / port / connector で展開し、
+  内部ブロック図（IBD）として整理する手順。
+  Block の内部を詳細化する依頼のときに使用する。
+use_when: |
+  ユーザーが「この Block の内部を展開して」「内部構造を作って」
+  「IBD を作成」等を依頼したとき。
+steps:
+  - no: 1
+    title: 対象 Block の把握
+    instruction: |
+      対象 Block とその既存 part / port / 関連 Block を
+      read / get_related_elements で把握する。
+    tools:
+      - read
+      - get_related_elements
+      - search_item
+    done_when: 対象 Block の短縮IDと、既存 part / port / connector の名称・型・端点を0件の場合も含めて列挙し、再利用対象と重複候補を判定できている
+  - no: 2
+    title: 内部要素の設計
+    instruction: |
+      構成する part（内部ブロック）・port・connector の構成を設計する。
+      命名はオントロジーの規則に従うこと。
+    done_when: 作成または再利用する全 part / port / connector について、名称・型・接続端点が一覧化され、既存要素との重複がない
+  - no: 3
+    title: 内部構造の作成
+    instruction: |
+      create_internal_model_elements で part / port / connector を一括生成する。
+    tools:
+      - create_internal_model_elements
+    done_when: 設計一覧の全 part / port / connector が対象 Block 配下に存在し、各 connector の両端が実在する part または port に解決できる
+  - no: 4
+    title: IBD の生成
+    instruction: |
+      create_internal_block_diagram で内部ブロック図を作成し、レイアウトを整える。
+    tools:
+      - create_internal_block_diagram
+      - update_diagram_layout
+    done_when: 対象 Block の IBD が存在し、設計対象の全 part / port / connector が欠落・未配置0件で表示されている
+strict: true
+allow_skip: false
+max_steps_per_stage: 12

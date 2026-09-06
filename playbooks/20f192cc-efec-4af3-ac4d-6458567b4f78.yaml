@@ -1,0 +1,36 @@
+id: ""
+name: モデルレビュー
+slash_command: model-review
+description: |
+  対象範囲のモデルを検証し、命名規則・関係の整合性・孤立要素を点検して
+  問題点を報告する手順。編集は行わず、指摘のみをまとめる。
+use_when: |
+  ユーザーが「モデルをレビューして」「問題点を洗い出して」
+  「整合性をチェック」等を依頼したとき。
+steps:
+  - no: 1
+    title: 対象範囲の把握
+    instruction: |
+      レビュー対象のパッケージ／要素を search_item / read_package_contents で
+      列挙し、構成を把握する。
+    tools:
+      - search_item
+      - read_package_contents
+    done_when: レビュー範囲を Package または要素IDで確定し、対象要素を className 別の件数とともに列挙できている
+  - no: 2
+    title: 検証の実行
+    instruction: |
+      レビュー対象の要素の短縮IDを validate_model の elementIds に列挙して
+      1 回だけ実行し、命名規則違反・関係の不整合を収集する。
+    tools:
+      - validate_model
+    done_when: 対象要素IDを指定した validate_model を1回実行し、各違反の ruleId・要素ID・内容を取得した（違反0件の場合も明記した）
+  - no: 3
+    title: 指摘のまとめ
+    instruction: |
+      検証結果と目視確認から、重要度順に指摘事項を整理し、
+      finalize で改善提案とともに報告する。
+    done_when: 各指摘に重要度・対象要素ID・根拠・具体的な改善案があり、指摘0件の場合もその旨を最終報告できる
+strict: false
+allow_skip: true
+max_steps_per_stage: 10

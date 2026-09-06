@@ -1,8 +1,8 @@
 {
-    "id": "c4725d55-8fcc-4455-b31d-c46fd8f2d370",
-    "name": "部品×性能マトリクス",
+    "id": "8983b8ef-769b-48d8-ac21-2a13b733baef",
+    "name": "熱拡散検証 VER-要求検証マトリクス",
     "class_name": "FreeMatrix",
-    "description": "部品（ブロック）と要求（CTR・上位要求）の追跡・満足関係を可視化するマトリクス",
+    "description": "Package「熱拡散検証」PKG33配下の全18 TestCase（VER）を行、各TestCaseからverify関係で結ばれたRequirementを列として表示する検証対応マトリクス。",
     "vertical_scope_el_ids": [
         "8ab892dd-004e-42bf-a4c6-6329962b1e16"
     ],
@@ -21,7 +21,7 @@
         "3e756dd8-e55d-4f81-9902-07637410fb9b"
     ],
     "vertical_types": [
-        "Block"
+        "TestCase"
     ],
     "horizontal_types": [
         "Requirement"
@@ -32,46 +32,17 @@
     "row_scope_config": {
         "roots": [
             {
-                "rootId": "94c51eaf-c85c-4bd3-afb5-501ff41284c8",
+                "rootId": "8ab892dd-004e-42bf-a4c6-6329962b1e16",
                 "includeRoot": true,
-                "includeIntermediates": false,
+                "includeIntermediates": true,
                 "queries": [
                     {
-                        "relationType": "all",
-                        "direction": "both",
-                        "nodeType": "all",
-                        "mergeWithPrevious": false
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "TestCase"
                     }
                 ],
-                "recursive": false
-            },
-            {
-                "rootId": "50d0d2ac-9465-4376-b381-ed65c75ae5e4",
-                "includeRoot": true,
-                "includeIntermediates": false,
-                "queries": [
-                    {
-                        "relationType": "all",
-                        "direction": "both",
-                        "nodeType": "all",
-                        "mergeWithPrevious": false
-                    }
-                ],
-                "recursive": false
-            },
-            {
-                "rootId": "5862d70a-116a-4c03-b0f2-11b3f5287bfe",
-                "includeRoot": true,
-                "includeIntermediates": false,
-                "queries": [
-                    {
-                        "relationType": "all",
-                        "direction": "both",
-                        "nodeType": "all",
-                        "mergeWithPrevious": false
-                    }
-                ],
-                "recursive": false
+                "recursive": true
             }
         ],
         "directElementIds": []
@@ -79,7 +50,7 @@
     "col_scope_config": {
         "roots": [
             {
-                "rootId": "760bc253-1ea0-4fdb-b108-26abf5eeb037",
+                "rootId": "858d6b58-6cb3-49d8-8304-0c24211086aa",
                 "includeRoot": true,
                 "includeIntermediates": true,
                 "queries": [
@@ -96,6 +67,257 @@
                     }
                 ],
                 "recursive": true
+            },
+            {
+                "rootId": "9858a7b6-12d8-460f-8cb9-822a63af58e3",
+                "includeRoot": true,
+                "includeIntermediates": true,
+                "queries": [
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Package"
+                    },
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Requirement",
+                        "mergeWithPrevious": true
+                    }
+                ],
+                "recursive": true
+            },
+            {
+                "rootId": "0a46cb49-f2b4-4c6d-a087-dcb8ab622fb3",
+                "includeRoot": true,
+                "includeIntermediates": true,
+                "queries": [
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Package"
+                    },
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Requirement",
+                        "mergeWithPrevious": true
+                    }
+                ],
+                "recursive": true
+            },
+            {
+                "rootId": "b82403c2-bc92-4756-a1d2-b72327ff5108",
+                "includeRoot": true,
+                "includeIntermediates": true,
+                "queries": [
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Package"
+                    },
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Requirement",
+                        "mergeWithPrevious": true
+                    }
+                ],
+                "recursive": true
+            },
+            {
+                "rootId": "7e2dcd51-7dcf-48ba-be11-0ca64f20de4f",
+                "includeRoot": true,
+                "includeIntermediates": true,
+                "queries": [
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Package"
+                    },
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Requirement",
+                        "mergeWithPrevious": true
+                    }
+                ],
+                "recursive": true
+            },
+            {
+                "rootId": "37b688fd-3fed-4d82-9f35-5d03ac536ce8",
+                "includeRoot": true,
+                "includeIntermediates": true,
+                "queries": [
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Package"
+                    },
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Requirement",
+                        "mergeWithPrevious": true
+                    }
+                ],
+                "recursive": true
+            },
+            {
+                "rootId": "9cfe88d5-f284-46db-b77b-ca5c5505f561",
+                "includeRoot": true,
+                "includeIntermediates": true,
+                "queries": [
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Package"
+                    },
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Requirement",
+                        "mergeWithPrevious": true
+                    }
+                ],
+                "recursive": true
+            },
+            {
+                "rootId": "18be9438-c09b-40c4-97b7-1c1674d59f3c",
+                "includeRoot": true,
+                "includeIntermediates": true,
+                "queries": [
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Package"
+                    },
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Requirement",
+                        "mergeWithPrevious": true
+                    }
+                ],
+                "recursive": true
+            },
+            {
+                "rootId": "125ecd70-ff60-4c87-bb9e-befc9ed9f9dc",
+                "includeRoot": true,
+                "includeIntermediates": true,
+                "queries": [
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Package"
+                    },
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Requirement",
+                        "mergeWithPrevious": true
+                    }
+                ],
+                "recursive": true
+            },
+            {
+                "rootId": "240f7f13-8c30-42b1-862c-aa63a4d0ed91",
+                "includeRoot": true,
+                "includeIntermediates": true,
+                "queries": [
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Package"
+                    },
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Requirement",
+                        "mergeWithPrevious": true
+                    }
+                ],
+                "recursive": true
+            },
+            {
+                "rootId": "0a6f99b9-738e-4fed-845a-a46056fb904e",
+                "includeRoot": true,
+                "includeIntermediates": true,
+                "queries": [
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Package"
+                    },
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Requirement",
+                        "mergeWithPrevious": true
+                    }
+                ],
+                "recursive": true
+            },
+            {
+                "rootId": "3e756dd8-e55d-4f81-9902-07637410fb9b",
+                "includeRoot": true,
+                "includeIntermediates": true,
+                "queries": [
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Package"
+                    },
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Requirement",
+                        "mergeWithPrevious": true
+                    }
+                ],
+                "recursive": true
+            },
+            {
+                "rootId": "84dce2d8-43fb-4cfa-a8bd-26d5968d6bd1",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "2164e247-a449-408f-9c4d-fbaf6da8dae8",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "ee74ab23-13e5-4172-a483-3e738a251844",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "62123e84-3963-4967-b029-5b8648f32f24",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "f389daba-0dde-4666-b612-d09d91a4d579",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "0c895fc0-0099-4e75-ac31-551ed7277c8d",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "c63fb839-b65f-4392-808a-0af8d6790907",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
             }
         ],
         "directElementIds": []
@@ -358,19 +580,12 @@
         ]
     },
     "row_expanded_ids": [
-        "b15a8c13-6392-4290-8d50-a3a27c14a51a",
-        "94c51eaf-c85c-4bd3-afb5-501ff41284c8"
+        "8ab892dd-004e-42bf-a4c6-6329962b1e16"
     ],
-    "col_expanded_ids": [
-        "bf55740f-da0a-4abe-b9a3-b5ff20ee3dff",
-        "cfcb364e-7491-4244-9119-3813b56a5247",
-        "44f9f2b3-a52d-43ee-ad95-02bd30305960",
-        "b15a8c13-6392-4290-8d50-a3a27c14a51a",
-        "760bc253-1ea0-4fdb-b108-26abf5eeb037"
-    ],
+    "col_expanded_ids": [],
     "show_outgoing": true,
     "show_incoming": false,
-    "row_header_width": 180,
-    "col_header_height": 120,
+    "row_header_width": 282,
+    "col_header_height": 333,
     "cell_size": 40
 }

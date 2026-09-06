@@ -4,10 +4,21 @@
     "class_name": "FreeMatrix",
     "description": "絶縁カバーに関するCTR（PKG30）と、対応するシステム要求（BATs）との間の allocate 依存関係を示すトレーサビリティマトリクス。ユーザー提示指示に従って検証できるように全CTR要求と関連BATs要求を行列スコープとして配置。",
     "vertical_scope_el_ids": [
-        "cfcb364e-7491-4244-9119-3813b56a5247"
+        "8ab892dd-004e-42bf-a4c6-6329962b1e16"
     ],
     "horizontal_scope_el_ids": [
-        "835145bc-3af4-4da8-9744-35372b33307f"
+        "858d6b58-6cb3-49d8-8304-0c24211086aa",
+        "9858a7b6-12d8-460f-8cb9-822a63af58e3",
+        "0a46cb49-f2b4-4c6d-a087-dcb8ab622fb3",
+        "b82403c2-bc92-4756-a1d2-b72327ff5108",
+        "7e2dcd51-7dcf-48ba-be11-0ca64f20de4f",
+        "37b688fd-3fed-4d82-9f35-5d03ac536ce8",
+        "9cfe88d5-f284-46db-b77b-ca5c5505f561",
+        "18be9438-c09b-40c4-97b7-1c1674d59f3c",
+        "125ecd70-ff60-4c87-bb9e-befc9ed9f9dc",
+        "240f7f13-8c30-42b1-862c-aa63a4d0ed91",
+        "0a6f99b9-738e-4fed-845a-a46056fb904e",
+        "3e756dd8-e55d-4f81-9902-07637410fb9b"
     ],
     "vertical_types": [
         "Requirement"
@@ -16,22 +27,7 @@
         "Requirement"
     ],
     "rel_filter_types": [
-        "containment",
-        "dependency",
-        "association",
-        "generalization",
-        "realization",
-        "composition",
-        "aggregation",
-        "allocation",
-        "merge",
-        "trace",
-        "refine",
-        "satisfy",
-        "verify",
-        "deriveReqt",
-        "include",
-        "extend"
+        "verify"
     ],
     "row_scope_config": {
         "roots": [
@@ -81,9 +77,9 @@
         ],
         "directElementIds": []
     },
-    "direction_filter": "both",
+    "direction_filter": "outgoing",
     "create_relation_type": "__all__",
-    "include_implied": true,
+    "include_implied": false,
     "implied_edge_config": {
         "customRules": [
             {
@@ -348,7 +344,7 @@
         "44f9f2b3-a52d-43ee-ad95-02bd30305960"
     ],
     "show_outgoing": true,
-    "show_incoming": true,
+    "show_incoming": false,
     "row_header_width": 180,
     "col_header_height": 120,
     "cell_size": 40

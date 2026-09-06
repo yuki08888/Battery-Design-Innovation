@@ -1,0 +1,73 @@
+id: ""
+name: ブロック階層の整理
+slash_command: block-hierarchy
+description: |
+  Block の分解階層（composition）と型階層（generalization）を整理し、
+  共通の特徴を抽象 Block に括り出して再利用性を高める手順。
+  Block が増えて構造が見通しづらくなったときに使用する。
+use_when: |
+  ユーザーが「ブロック構成を整理して」「共通化したい」「階層を見直して」
+  「抽象化して」等を依頼したとき。
+steps:
+  - no: 1
+    title: 既存 Block 構成の棚卸し
+    instruction: |
+      対象範囲の Block を列挙し、それぞれの Property / Operation と、
+      composition / generalization 関係を把握する。
+      graph_query で階層を一括取得すると効率が良い。
+    tools:
+      - search_item
+      - read_package_contents
+      - graph_query
+      - get_related_elements
+      - read
+    done_when: 対象範囲の全 Block について短縮ID・Property・Operation・composition・generalization の接続先を0件の場合も含めて一覧化できている
+  - no: 2
+    title: 分解階層と型階層の区別
+    instruction: |
+      「全体—部分（composition）」と「一般—特殊（generalization）」を
+      取り違えていないか点検する。
+      part であるべきものが generalization になっている、
+      またはその逆になっている箇所を洗い出す。
+    done_when: 対象の全 composition / generalization を正当・要修正のいずれかに分類し、要修正には関係ID・誤りの根拠・正しい関係種が記録されている
+  - no: 3
+    title: 共通特徴の抽出
+    instruction: |
+      複数の Block に重複して現れる Property / Operation を見つけ、
+      抽象 Block（共通基底）へ括り出す案を作る。
+      抽象化しすぎて意味が薄れないよう、2 つ以上の具体 Block で
+      共有される特徴のみを対象とすること。
+    done_when: 各共通 Block 案に共有 Property / Operation と2件以上の具体 Block が対応し、共通化しない重複には理由が記録されている
+  - no: 4
+    title: 階層の再構成
+    instruction: |
+      抽象 Block を作成し、generalization で具体 Block と接続する。
+      重複していたメンバーは具体 Block から削除する。
+      分解階層の誤りも composition / aggregation へ修正する。
+    tools:
+      - create_block
+      - create_property
+      - create_operation
+      - create_relationship
+      - update_block
+      - update_relationship
+      - delete_model
+    done_when: 再構成案の全 Block・メンバー・composition・generalization がモデルに存在し、移動済みメンバーの具体 Block 側の重複が0件である
+    referenceConventions:
+      - Block
+      - Property
+  - no: 5
+    title: 影響確認と検証
+    instruction: |
+      階層変更により satisfy / allocate 等の既存トレースが
+      切れていないかを get_related_elements で確認する。
+      その後 validate_model で検証し、違反があれば修正する
+      （最大 2 回まで再検証し、残るものは未解決として報告する）。
+    tools:
+      - get_related_elements
+      - diff_model
+      - validate_model
+    done_when: 変更前から存在した satisfy / allocate 等の全関係端点が実在要素へ解決し、validate_model が error 0件、または残る各違反を理由付きで記録した
+strict: true
+allow_skip: false
+max_steps_per_stage: 12
