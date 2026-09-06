@@ -1678,9 +1678,9 @@
             "routing": "bezier"
         }
     ],
-    "scale": 0.5333333333333334,
-    "offset_x": 588.1950344595652,
-    "offset_y": 36.02198009466298,
+    "scale": 0.4666666666666667,
+    "offset_x": 454.7159420289855,
+    "offset_y": -192.1526655482786,
     "relationship_type": "containment",
     "visible_relation_types": [
         "containment",
