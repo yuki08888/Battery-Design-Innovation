@@ -1,0 +1,20 @@
+{
+    "id": "179df906-062b-4c0f-bdb8-1f9233f663b3",
+    "name": "新しいドキュメント — ユースケース図",
+    "class_name": "FreeDiagram",
+    "nodes": [
+        {
+            "class_name": "DiagramNode",
+            "id": "bb4365fb-eaea-4e7a-811f-c24edfe39f53",
+            "element_id": "bb4365fb-eaea-4e7a-811f-c24edfe39f53",
+            "x": 60.0,
+            "y": 40.0,
+            "width": 120,
+            "height": 80
+        }
+    ],
+    "edges": [],
+    "scale": 1.0,
+    "offset_x": 0.0,
+    "offset_y": 0.0
+}

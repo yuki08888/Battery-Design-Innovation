@@ -5,7 +5,7 @@
         {
             "id": "e531df8c-8553-45bf-b857-b1eb65caa6b9",
             "title": "",
-            "content": "<p></p>",
+            "content": "<p><a target=\"_blank\" rel=\"noopener nofollow\" class=\"external-link\" href=\"https://toyotajp.sharepoint.com/:x:/r/sites/msspo_Next-Generation_Battery-System/Shared%20Documents/02_%E8%A6%81%E7%B4%A0%E6%8A%80%E8%A1%93%E3%80%90%E3%83%97%E3%83%AD%E3%83%91%E9%99%90%E3%80%91/03_%E7%86%B1%E6%8B%A1%E6%95%A3/%E7%B5%B6%E7%B8%81%E3%82%AB%E3%83%90%E3%83%BC/%E3%80%90%E9%9A%8F%E6%99%82%E6%9B%B4%E6%96%B0%E3%80%91%E5%90%84%E4%BB%95%E5%85%A5%E5%85%88%E3%81%AE%E6%80%A7%E8%83%BD%E9%81%94%E6%88%90%E7%8A%B6%E6%B3%81.xlsx?d=w1381ab9b28d043799591d09b59ab2cdc&amp;csf=1&amp;web=1&amp;e=xFKRVz\">【随時更新】各仕入先の性能達成状況.xlsx</a></p>",
             "references": [],
             "sourceImagePath": null,
             "thumbnailPath": null,
@@ -17,11 +17,11 @@
     "references": [],
     "sourceFilePath": null,
     "createdAt": "2026-07-06T01:23:59.129Z",
-    "updatedAt": "2026-07-06T01:23:59.129Z",
+    "updatedAt": "2026-09-07T14:12:10.882184",
     "skeleton": {
         "documentId": "20a1d7c7-f25c-4d6a-ad4b-5da8fa411f39",
         "roots": [],
-        "updatedAt": 1783301037340,
+        "updatedAt": 1788757126323,
         "isComplete": true
     },
     "headingRules": {
@@ -32,5 +32,95 @@
             "fillMissingNumbers": true,
             "preserveContentExactly": true
         }
+    },
+    "digest": {
+        "overview": {
+            "summary": "本ドキュメントは、「各仕入先の性能達成状況.xlsx」という管理用Excelファイルについて記載したものです。このファイルは、各仕入先における性能の達成状況を管理するために作成されています。提示されている情報は随時更新されることが示されています。",
+            "documentKind": "other",
+            "purpose": "各仕入先の性能達成状況を管理するファイル「各仕入先の性能達成状況.xlsx」を提示し、情報が随時更新されることを示すこと。",
+            "scope": "「各仕入先の性能達成状況.xlsx」という管理ファイルの存在およびその更新方針。",
+            "keyTopics": [
+                "各仕入先の性能達成状況の管理"
+            ],
+            "keyTerms": [
+                {
+                    "term": "各仕入先の性能達成状況.xlsx",
+                    "definition": "各仕入先における性能達成状況を記録・管理するためのExcelファイル。"
+                }
+            ],
+            "targetSystem": "各仕入先の性能達成状況.xlsx"
+        },
+        "outline": [
+            {
+                "id": "5d398f34-8112-41d6-83e9-d983b8c8f1ae",
+                "title": "【随時更新】各仕入先の性能達成状況.xlsx",
+                "level": 1,
+                "summary": "各仕入先における性能達成状況を管理するためのExcelファイル「各仕入先の性能達成状況.xlsx」のタイトルが提示されており、随時更新されることが示されています。",
+                "keywords": [
+                    "仕入先",
+                    "性能達成状況",
+                    "Excel",
+                    "進捗管理"
+                ],
+                "pageIds": [
+                    "e531df8c-8553-45bf-b857-b1eb65caa6b9"
+                ],
+                "children": []
+            }
+        ],
+        "sourceHash": "4ad00b4c792c788cbaf0ad00ecf5501e53fc87b3",
+        "generatedAt": "2026-09-07T14:03:33.074566",
+        "pageCount": 1,
+        "schemaVersion": 1,
+        "generator": "ai"
+    },
+    "coverage": {
+        "schemaVersion": 1,
+        "sourceHash": "4ad00b4c792c788cbaf0ad00ecf5501e53fc87b3",
+        "generatedAt": "2026-09-07T14:05:00.079232",
+        "rounds": 0,
+        "stoppedReason": "converged",
+        "segments": [
+            {
+                "id": "seg-6fb008b2b069b40c",
+                "pageId": "e531df8c-8553-45bf-b857-b1eb65caa6b9",
+                "quote": "【随時更新】各仕入先の性能達成状況.xlsx",
+                "status": "covered",
+                "reason": "生成された要素の根拠として使われた記述",
+                "exclusionKind": "",
+                "elementIds": [
+                    "11580d46-7447-47fd-a1b1-9d25197c6abf",
+                    "86af25b0-4511-46e7-80bb-02c155fce483",
+                    "33c0c56e-47ed-4ad5-a77b-f098e284cb13",
+                    "1de76571-4f37-419c-b980-d971cf1f392a",
+                    "05ab047e-ba37-47b1-8bb8-837d9c62262b",
+                    "bc3fa70d-68ec-42f2-9291-e2e0312108e0"
+                ],
+                "order": 0,
+                "suggestedTypes": []
+            }
+        ],
+        "stats": {
+            "total": 1,
+            "covered": 1,
+            "excluded": 0,
+            "uncovered": 0,
+            "coverageRate": 1.0,
+            "modeledRate": 1.0
+        }
+    },
+    "modelBinding": {
+        "rootPackageId": "77df3c4d-e796-4d42-9eba-e45eb8ec93a1",
+        "typePackages": {
+            "Actor": "277e4978-76e2-411e-850f-feafd1e88b65",
+            "UseCase": "2434a506-739d-4d7d-8602-0bf3480004c8",
+            "Requirement": "291f12aa-f64f-4c6a-9f00-04e68bc7aee9",
+            "Block": "5f2a92b2-ee4e-4337-8578-a152ac8c2ac0",
+            "State": "a58fe23a-d6f1-4b5d-93cf-6a3a1badf427",
+            "ConstraintBlock": "ebe8fcc0-9ce5-47f6-b026-14f2abea6ea6",
+            "TestCase": "679960cb-d127-4333-aa96-355137c43e82",
+            "Activity": "49352717-9cf4-46d8-8d6d-3b302256af63"
+        },
+        "updatedAt": "2026-09-07T14:03:38.561047"
     }
 }

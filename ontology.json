@@ -10,6 +10,14 @@
       "order": 0,
       "domain": "Battery Design Innovationプロジェクトにおけるビジネス要求（取引データの自動化、承認ワークフロー等）およびMBSEの汎用的なモデリング概念・関係・命名規則・ルールを定義する統合オントロジー。",
       "version": "3.0.0"
+    },
+    {
+      "id": "836d778e-eda0-45a9-8b82-61fc71f9c435",
+      "name": "絶縁カバー検証.yaml",
+      "item_type": "ontology",
+      "parent_id": null,
+      "reference_level": "non-standard",
+      "order": 1
     }
   ]
 }

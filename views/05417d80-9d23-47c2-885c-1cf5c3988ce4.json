@@ -1,0 +1,29 @@
+{
+    "id": "05417d80-9d23-47c2-885c-1cf5c3988ce4",
+    "name": "新しいドキュメント — ユースケース図",
+    "class_name": "FreeDiagram",
+    "nodes": [
+        {
+            "class_name": "DiagramNode",
+            "id": "11580d46-7447-47fd-a1b1-9d25197c6abf",
+            "element_id": "11580d46-7447-47fd-a1b1-9d25197c6abf",
+            "x": 60.0,
+            "y": 40.0,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "86af25b0-4511-46e7-80bb-02c155fce483",
+            "element_id": "86af25b0-4511-46e7-80bb-02c155fce483",
+            "x": 230.0,
+            "y": 40.0,
+            "width": 120,
+            "height": 80
+        }
+    ],
+    "edges": [],
+    "scale": 1.0,
+    "offset_x": 0.0,
+    "offset_y": 0.0
+}
