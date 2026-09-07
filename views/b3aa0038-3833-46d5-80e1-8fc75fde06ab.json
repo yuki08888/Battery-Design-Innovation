@@ -1,0 +1,20 @@
+{
+    "id": "b3aa0038-3833-46d5-80e1-8fc75fde06ab",
+    "name": "新しいドキュメント — アクティビティ図",
+    "class_name": "FreeDiagram",
+    "nodes": [
+        {
+            "class_name": "DiagramNode",
+            "id": "1de76571-4f37-419c-b980-d971cf1f392a",
+            "element_id": "1de76571-4f37-419c-b980-d971cf1f392a",
+            "x": 60.0,
+            "y": 40.0,
+            "width": 120,
+            "height": 80
+        }
+    ],
+    "edges": [],
+    "scale": 1.0,
+    "offset_x": 0.0,
+    "offset_y": 0.0
+}

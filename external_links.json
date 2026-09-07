@@ -11,5 +11,194 @@
             "sourceQuote": null,
             "targetKind": "element"
         }
+    ],
+    "20a1d7c7-f25c-4d6a-ad4b-5da8fa411f39": [
+        {
+            "id": "dd80b81b-90f6-421f-97ec-e052cd04bea4",
+            "sourceType": "page",
+            "sourceId": "e531df8c-8553-45bf-b857-b1eb65caa6b9",
+            "targetElementId": "bb4365fb-eaea-4e7a-811f-c24edfe39f53",
+            "linkType": "derives",
+            "description": "自動生成: UseCase — 仕入先の性能達成状況を確認する",
+            "createdAt": "2026-09-07T14:02:06.319925",
+            "sourceQuote": "随時更新】各仕入先の性能達成状況.xlsx",
+            "targetKind": "element"
+        },
+        {
+            "id": "355c20bc-0c95-4809-8676-5b3c5488d214",
+            "sourceType": "page",
+            "sourceId": "e531df8c-8553-45bf-b857-b1eb65caa6b9",
+            "targetElementId": "4d469b25-56ee-44aa-8dbf-6c6d0d3e6765",
+            "linkType": "derives",
+            "description": "自動生成: Activity — 各仕入先の性能達成状況を更新する",
+            "createdAt": "2026-09-07T14:02:07.107521",
+            "sourceQuote": "随時更新】各仕入先の性能達成状況.xlsx",
+            "targetKind": "element"
+        },
+        {
+            "id": "07efc6fc-d826-422e-aaf1-2f908ded65d4",
+            "sourceType": "ontology",
+            "sourceId": "18ae3915-9a06-4ae3-8129-9fce7891a423",
+            "targetElementId": "bb4365fb-eaea-4e7a-811f-c24edfe39f53",
+            "linkType": "derives",
+            "description": "オントロジー「SysMLオントロジー.yaml」を根拠に自動生成: UseCase — 仕入先の性能達成状況を確認する",
+            "createdAt": "2026-09-07T14:02:23.363536",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "95117e2a-75c9-46c7-b900-ede24624dfa6",
+            "sourceType": "ontology",
+            "sourceId": "18ae3915-9a06-4ae3-8129-9fce7891a423",
+            "targetElementId": "4d469b25-56ee-44aa-8dbf-6c6d0d3e6765",
+            "linkType": "derives",
+            "description": "オントロジー「SysMLオントロジー.yaml」を根拠に自動生成: Activity — 各仕入先の性能達成状況を更新する",
+            "createdAt": "2026-09-07T14:02:23.363553",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "dbd1828b-1ec0-4335-b7e3-a6c2c72df29a",
+            "sourceType": "document",
+            "sourceId": "20a1d7c7-f25c-4d6a-ad4b-5da8fa411f39",
+            "targetElementId": "9e9ae958-1096-494b-a104-bb891b2997dd",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-07T14:03:01.282721",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "b453bc55-29db-4cb9-ade7-082469f09f45",
+            "sourceType": "page",
+            "sourceId": "e531df8c-8553-45bf-b857-b1eb65caa6b9",
+            "targetElementId": "11580d46-7447-47fd-a1b1-9d25197c6abf",
+            "linkType": "derives",
+            "description": "自動生成: Actor — 仕入先",
+            "createdAt": "2026-09-07T14:04:22.524082",
+            "sourceQuote": "随時更新】各仕入先の性能達成状況.xlsx",
+            "targetKind": "element"
+        },
+        {
+            "id": "99360216-005e-4a5b-b364-3d283bfeea08",
+            "sourceType": "page",
+            "sourceId": "e531df8c-8553-45bf-b857-b1eb65caa6b9",
+            "targetElementId": "86af25b0-4511-46e7-80bb-02c155fce483",
+            "linkType": "derives",
+            "description": "自動生成: UseCase — 仕入先ごとの性能達成状況を管理する",
+            "createdAt": "2026-09-07T14:04:22.721153",
+            "sourceQuote": "随時更新】各仕入先の性能達成状況.xlsx",
+            "targetKind": "element"
+        },
+        {
+            "id": "c86e15e8-7f7a-404e-80c2-fb46dfdb7981",
+            "sourceType": "page",
+            "sourceId": "e531df8c-8553-45bf-b857-b1eb65caa6b9",
+            "targetElementId": "33c0c56e-47ed-4ad5-a77b-f098e284cb13",
+            "linkType": "derives",
+            "description": "自動生成: State — 性能達成状況",
+            "createdAt": "2026-09-07T14:04:22.908521",
+            "sourceQuote": "随時更新】各仕入先の性能達成状況.xlsx",
+            "targetKind": "element"
+        },
+        {
+            "id": "9ae76324-959f-4460-83a0-e9810cca6d00",
+            "sourceType": "page",
+            "sourceId": "e531df8c-8553-45bf-b857-b1eb65caa6b9",
+            "targetElementId": "1de76571-4f37-419c-b980-d971cf1f392a",
+            "linkType": "derives",
+            "description": "自動生成: Activity — 各仕入先の性能達成状況を更新する",
+            "createdAt": "2026-09-07T14:04:23.864339",
+            "sourceQuote": "随時更新】各仕入先の性能達成状況.xlsx",
+            "targetKind": "element"
+        },
+        {
+            "id": "afee62b4-7e58-40ec-881b-9d3d69746d51",
+            "sourceType": "page",
+            "sourceId": "e531df8c-8553-45bf-b857-b1eb65caa6b9",
+            "targetElementId": "e0261ecd-029e-4db7-8d7e-21816c40cdf9",
+            "linkType": "derives",
+            "description": "自動生成 (関係): trace — trace",
+            "createdAt": "2026-09-07T14:05:00.091034",
+            "sourceQuote": "各仕入先の性",
+            "targetKind": "relationship"
+        },
+        {
+            "id": "6c5cd5fa-d268-484b-b38a-986171e7bc2b",
+            "sourceType": "page",
+            "sourceId": "e531df8c-8553-45bf-b857-b1eb65caa6b9",
+            "targetElementId": "05ab047e-ba37-47b1-8bb8-837d9c62262b",
+            "linkType": "derives",
+            "description": "自動生成 (関係): trace — 性能達成状況による絶縁カバー検証の追跡",
+            "createdAt": "2026-09-07T14:05:00.091059",
+            "sourceQuote": "随時更新】各仕入先の性能達成状況.xlsx",
+            "targetKind": "relationship"
+        },
+        {
+            "id": "f4e695c4-085a-46ea-a8c0-39dd81ee34c3",
+            "sourceType": "page",
+            "sourceId": "e531df8c-8553-45bf-b857-b1eb65caa6b9",
+            "targetElementId": "bc3fa70d-68ec-42f2-9291-e2e0312108e0",
+            "linkType": "derives",
+            "description": "自動生成 (関係): trace — trace",
+            "createdAt": "2026-09-07T14:05:00.091072",
+            "sourceQuote": "随時更新】各仕入先の性能達成状況.xlsx",
+            "targetKind": "relationship"
+        },
+        {
+            "id": "ba77b4b3-2924-4161-bebc-16f7a98a7db8",
+            "sourceType": "ontology",
+            "sourceId": "18ae3915-9a06-4ae3-8129-9fce7891a423",
+            "targetElementId": "11580d46-7447-47fd-a1b1-9d25197c6abf",
+            "linkType": "derives",
+            "description": "オントロジー「SysMLオントロジー.yaml」を根拠に自動生成: Actor — 仕入先",
+            "createdAt": "2026-09-07T14:05:00.091959",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "ee0b3aa6-a33a-4627-bf26-fde483837b0d",
+            "sourceType": "ontology",
+            "sourceId": "18ae3915-9a06-4ae3-8129-9fce7891a423",
+            "targetElementId": "86af25b0-4511-46e7-80bb-02c155fce483",
+            "linkType": "derives",
+            "description": "オントロジー「SysMLオントロジー.yaml」を根拠に自動生成: UseCase — 仕入先ごとの性能達成状況を管理する",
+            "createdAt": "2026-09-07T14:05:00.091969",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "0f93099b-021c-4980-8d7e-ab261a248903",
+            "sourceType": "ontology",
+            "sourceId": "18ae3915-9a06-4ae3-8129-9fce7891a423",
+            "targetElementId": "33c0c56e-47ed-4ad5-a77b-f098e284cb13",
+            "linkType": "derives",
+            "description": "オントロジー「SysMLオントロジー.yaml」を根拠に自動生成: State — 性能達成状況",
+            "createdAt": "2026-09-07T14:05:00.091975",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "07d81e85-650e-4fcd-9563-f27e4a5aadd3",
+            "sourceType": "ontology",
+            "sourceId": "18ae3915-9a06-4ae3-8129-9fce7891a423",
+            "targetElementId": "1de76571-4f37-419c-b980-d971cf1f392a",
+            "linkType": "derives",
+            "description": "オントロジー「SysMLオントロジー.yaml」を根拠に自動生成: Activity — 各仕入先の性能達成状況を更新する",
+            "createdAt": "2026-09-07T14:05:00.091979",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "230bbeea-90a1-40ea-b2bb-c5f58cc3b74c",
+            "sourceType": "document",
+            "sourceId": "20a1d7c7-f25c-4d6a-ad4b-5da8fa411f39",
+            "targetElementId": "72179c98-cacc-4ef1-a442-3595342030df",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-07T14:12:05.938256",
+            "sourceQuote": null,
+            "targetKind": "element"
+        }
     ]
 }

@@ -111,12 +111,56 @@
             "parent_id": "8ab892dd-004e-42bf-a4c6-6329962b1e16",
             "icon_key": "GridOnOutlined",
             "icon_color": null
+        },
+        {
+            "id": "66c42c62-6235-4322-a082-bebda241291e",
+            "name": "新しいドキュメント",
+            "parent_id": "",
+            "icon_key": "DescriptionOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "6a6856a9-4d68-40f9-b80d-0a84cf311abc",
+            "name": "ビジネス要求書",
+            "parent_id": "",
+            "icon_key": "DescriptionOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "179df906-062b-4c0f-bdb8-1f9233f663b3",
+            "name": "新しいドキュメント — ユースケース図",
+            "parent_id": "77df3c4d-e796-4d42-9eba-e45eb8ec93a1",
+            "icon_key": "HubOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "50dd3bb1-47e8-4e2b-b79d-a3fe6968f06f",
+            "name": "新しいドキュメント — アクティビティ図",
+            "parent_id": "77df3c4d-e796-4d42-9eba-e45eb8ec93a1",
+            "icon_key": "HubOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "05417d80-9d23-47c2-885c-1cf5c3988ce4",
+            "name": "新しいドキュメント — ユースケース図",
+            "parent_id": "77df3c4d-e796-4d42-9eba-e45eb8ec93a1",
+            "icon_key": "HubOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "b3aa0038-3833-46d5-80e1-8fc75fde06ab",
+            "name": "新しいドキュメント — アクティビティ図",
+            "parent_id": "77df3c4d-e796-4d42-9eba-e45eb8ec93a1",
+            "icon_key": "HubOutlined",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [
-        "8983b8ef-769b-48d8-ac21-2a13b733baef"
+        "8983b8ef-769b-48d8-ac21-2a13b733baef",
+        "66c42c62-6235-4322-a082-bebda241291e",
+        "6a6856a9-4d68-40f9-b80d-0a84cf311abc"
     ],
-    "current_view_id": "8983b8ef-769b-48d8-ac21-2a13b733baef",
+    "current_view_id": "66c42c62-6235-4322-a082-bebda241291e",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,
