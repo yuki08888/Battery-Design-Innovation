@@ -2,6 +2,7 @@
   "items": [],
   "version": 1,
   "default_by_target": {
-    "model": "builtin:orchestrator"
+    "model": "builtin:orchestrator",
+    "document": "builtin:orchestrator_readonly"
   }
 }

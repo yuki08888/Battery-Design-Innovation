@@ -5,7 +5,7 @@
         {
             "id": "e531df8c-8553-45bf-b857-b1eb65caa6b9",
             "title": "",
-            "content": "<p><a target=\"_blank\" rel=\"noopener nofollow\" class=\"external-link\" href=\"https://toyotajp.sharepoint.com/:x:/r/sites/msspo_Next-Generation_Battery-System/Shared%20Documents/02_%E8%A6%81%E7%B4%A0%E6%8A%80%E8%A1%93%E3%80%90%E3%83%97%E3%83%AD%E3%83%91%E9%99%90%E3%80%91/03_%E7%86%B1%E6%8B%A1%E6%95%A3/%E7%B5%B6%E7%B8%81%E3%82%AB%E3%83%90%E3%83%BC/%E3%80%90%E9%9A%8F%E6%99%82%E6%9B%B4%E6%96%B0%E3%80%91%E5%90%84%E4%BB%95%E5%85%A5%E5%85%88%E3%81%AE%E6%80%A7%E8%83%BD%E9%81%94%E6%88%90%E7%8A%B6%E6%B3%81.xlsx?d=w1381ab9b28d043799591d09b59ab2cdc&amp;csf=1&amp;web=1&amp;e=xFKRVz\">【随時更新】各仕入先の性能達成状況.xlsx</a></p>",
+            "content": "<p><a target=\"_blank\" rel=\"noopener nofollow\" class=\"external-link\" href=\"https://toyotajp.sharepoint.com/:x:/r/sites/msspo_Next-Generation_Battery-System/Shared%20Documents/02_%E8%A6%81%E7%B4%A0%E6%8A%80%E8%A1%93%E3%80%90%E3%83%97%E3%83%AD%E3%83%91%E9%99%90%E3%80%91/03_%E7%86%B1%E6%8B%A1%E6%95%A3/%E7%B5%B6%E7%B8%81%E3%82%AB%E3%83%90%E3%83%BC/%E3%80%90%E9%9A%8F%E6%99%82%E6%9B%B4%E6%96%B0%E3%80%91%E5%90%84%E4%BB%95%E5%85%A5%E5%85%88%E3%81%AE%E6%80%A7%E8%83%BD%E9%81%94%E6%88%90%E7%8A%B6%E6%B3%81.xlsx?d=w1381ab9b28d043799591d09b59ab2cdc&amp;csf=1&amp;web=1&amp;e=xFKRVz\">【随時更新】各仕入先の性能達成状況.xlsx</a></p><p></p><p></p><pre><code>items:\nitem: \"電気\\n特性\"status: \"絶縁抵抗\"target_value: \"≧100MΩ\"\nitem: \"電気\\n特性\"status: \"絶縁抵抗\"target_value: \"↑\"\nitem: \"電気\\n特性\"status: \"絶縁抵抗\"target_value: \"↑\"\nitem: \"電気\\n特性\"status: \"個体体積抵抗値\"target_value: \"≧9.05×108Ω・cm\"\nitem: \"電気\\n特性\"status: \"個体体積抵抗値\"target_value: \"↑\"\nitem: \"電気\\n特性\"status: \"個体体積抵抗値\"target_value: \"↑\"\nitem: \"電気\\n特性\"status: \"絶縁破壊電圧\"target_value: \"≧3kV\"\nitem: \"電気\\n特性\"status: \"絶縁破壊電圧\"target_value: \"↑\"\nitem: \"電気\\n特性\"status: \"絶縁破壊電圧\"target_value: \"↑\"\nitem: \"電気\\n特性\"status: \"CTI\"target_value: \"≧400V\"\nitem: \"電気\\n特性\"status: \"CTI\"target_value: \"↑\"\nitem: \"電気\\n特性\"status: \"CTI\"target_value: \"↑\"\nitem: \"機械\\n特性\"status: \"耐衝撃\"target_value: \"締結点への入力加速度30G×12ms×10回で\\n割れ・亀裂なきこと\"\nitem: \"機械\\n特性\"status: \"振動固有値\"target_value: \"固定点共振周波数より1次共振が高いこと\"\nitem: \"機械\\n特性\"status: \"たわみ量\"target_value: \"反対側の締結点のたわみ量≦○mm以下のこと\\n(仕入先や形状が絞り込まれた段階で工場へ打診予定)\"\nitem: \"機械\\n特性\"status: \"圧縮降伏応力\"target_value: \"≧188MPa\"\nitem: \"機械\\n特性\"status: \"変形\"target_value: \"TSZ2202G PTCおよび\\nTSZ2305G GCを満足すること\"\nitem: \"信頼性\"status: \"吸水\"target_value: \"絶縁抵抗≧100MΩ\"\nitem: \"信頼性\"status: \"吸水\"target_value: \"個体体積低効率≧9.05×108Ω・cm\"\nitem: \"信頼性\"status: \"吸水\"target_value: \"絶縁破壊電圧≧4kV\"\nitem: \"信頼性\"status: \"吸水\"target_value: \"CTI≧400V\"\nitem: \"信頼性\"status: \"吸水\"target_value: \"締結点への入力加速度30G×12ms×10回で\\n割れ・亀裂なきこと\"\nitem: \"信頼性\"status: \"吸水\"target_value: \"締結点への入力加速度3G×共振周波数×200万回で\\n割れ・亀裂なきこと\"\nitem: \"信頼性\"status: \"吸水\"target_value: \"反対側の締結点のたわみ量≦○mm以下のこと\\n(仕入先や形状が絞り込まれた段階で工場へ打診？)\"\nitem: \"信頼性\"status: \"吸水\"target_value: \"≧188MPa\"\nitem: \"信頼性\"status: \"吸水\"target_value: \"TSZ2202G PTCおよび\\nTSZ2305G GCを満足すること\"\nitem: \"信頼性\"status: \"高温放置\"target_value: \"絶縁抵抗≧100MΩ\"\nitem: \"信頼性\"status: \"高温放置\"target_value: \"個体体積低効率≧9.05×108Ω・cm\"\nitem: \"信頼性\"status: \"高温放置\"target_value: \"絶縁破壊電圧≧4kV\"\nitem: \"信頼性\"status: \"高温放置\"target_value: \"CTI≧400V\"\nitem: \"信頼性\"status: \"高温放置\"target_value: \"締結点への入力加速度30G×12ms×10回で\\n割れ・亀裂なきこと\"\nitem: \"信頼性\"status: \"高温放置\"target_value: \"締結点への入力加速度3G×共振周波数×200万回で\\n割れ・亀裂なきこと\"\nitem: \"信頼性\"status: \"高温放置\"target_value: \"反対側の締結点のたわみ量≦○mm以下のこと\\n(仕入先や形状が絞り込まれた段階で工場へ打診？)\"\nitem: \"信頼性\"status: \"高温放置\"target_value: \"≧188MPa\"\nitem: \"信頼性\"status: \"高温放置\"target_value: \"TSZ2202G PTCおよび\\nTSZ2305G GCを満足すること\"\nitem: \"信頼性\"status: \"低温放置\"target_value: \"絶縁抵抗≧100MΩ\"\nitem: \"信頼性\"status: \"低温放置\"target_value: \"個体体積低効率≧9.05×108Ω・cm\"\nitem: \"信頼性\"status: \"低温放置\"target_value: \"絶縁破壊電圧≧4kV\"\nitem: \"信頼性\"status: \"低温放置\"target_value: \"CTI≧400V\"\nitem: \"信頼性\"status: \"低温放置\"target_value: \"締結点への入力加速度30G×12ms×10回で\\n割れ・亀裂なきこと\"\nitem: \"信頼性\"status: \"低温放置\"target_value: \"締結点への入力加速度3G×共振周波数×200万回で\\n割れ・亀裂なきこと\"\nitem: \"信頼性\"status: \"低温放置\"target_value: \"反対側の締結点のたわみ量≦○mm以下のこと\\n(仕入先や形状が絞り込まれた段階で工場へ打診？)\"\nitem: \"信頼性\"status: \"低温放置\"target_value: \"≧188MPa\"\nitem: \"信頼性\"status: \"低温放置\"target_value: \"TSZ2202G PTCおよび\\nTSZ2305G GCを満足すること\"\nitem: \"信頼性\"status: \"熱衝撃\"target_value: \"絶縁抵抗≧100MΩ\"\nitem: \"信頼性\"status: \"熱衝撃\"target_value: \"個体体積低効率≧9.05×108Ω・cm\"\nitem: \"信頼性\"status: \"熱衝撃\"target_value: \"絶縁破壊電圧≧4kV\"\nitem: \"信頼性\"status: \"熱衝撃\"target_value: \"CTI≧400V\"\nitem: \"信頼性\"status: \"熱衝撃\"target_value: \"締結点への入力加速度30G×12ms×10回で\\n割れ・亀裂なきこと\"\nitem: \"信頼性\"status: \"熱衝撃\"target_value: \"締結点への入力加速度3G×共振周波数×200万回で\\n割れ・亀裂なきこと\"\nitem: \"信頼性\"status: \"熱衝撃\"target_value: \"反対側の締結点のたわみ量≦○mm以下のこと\\n(仕入先や形状が絞り込まれた段階で工場へ打診？)\"\nitem: \"信頼性\"status: \"熱衝撃\"target_value: \"≧188MPa\"\nitem: \"信頼性\"status: \"熱衝撃\"target_value: \"TSZ2202G PTCおよび\\nTSZ2305G GCを満足すること\"\nitem: \"信頼性\"status: \"温湿度サイクル\"target_value: \"絶縁抵抗≧100MΩ\"\nitem: \"信頼性\"status: \"温湿度サイクル\"target_value: \"個体体積低効率≧9.05×108Ω・cm\"\nitem: \"信頼性\"status: \"温湿度サイクル\"target_value: \"絶縁破壊電圧≧4kV\"\nitem: \"信頼性\"status: \"温湿度サイクル\"target_value: \"CTI≧400V\"\nitem: \"信頼性\"status: \"温湿度サイクル\"target_value: \"締結点への入力加速度30G×12ms×10回で\\n割れ・亀裂なきこと\"\nitem: \"信頼性\"status: \"温湿度サイクル\"target_value: \"締結点への入力加速度3G×共振周波数×200万回で\\n割れ・亀裂なきこと\"\nitem: \"信頼性\"status: \"温湿度サイクル\"target_value: \"反対側の締結点のたわみ量≦○mm以下のこと\\n(仕入先や形状が絞り込まれた段階で工場へ打診？)\"\nitem: \"信頼性\"status: \"温湿度サイクル\"target_value: \"≧188MPa\"\nitem: \"信頼性\"status: \"温湿度サイクル\"target_value: \"TSZ2202G PTCおよび\\nTSZ2305G GCを満足すること\"\nitem: \"信頼性\"status: \"耐振動\"target_value: \"外観の割れ・亀裂・穴あきの破損なきこと\"\nitem: \"信頼性\"status: \"\"target_value: \"絶縁抵抗≧100MΩ\"\nitem: \"信頼性\"status: \"ミニモジュール熱拡散試験\"target_value: \"外観の割れ・亀裂・穴あきの破損なきこと\"\nitem: \"信頼性\"status: \"\"target_value: \"絶縁抵抗≧100MΩ\"\nitem: \"信頼性\"status: \"パック熱拡散試験\"target_value: \"外観の割れ・亀裂・穴あきの破損なきこと\"\nitem: \"信頼性\"status: \"\"target_value: \"絶縁抵抗≧100MΩ\"\nitem: \"信頼性\"status: \"熱伝導率\"target_value: \"≦0.2W/m・K\"\nitem: \"信頼性\"status: \"難燃性\"target_value: \"V-0相当\"\nitem: \"信頼性\"status: \"低分子シロキサン\\n・ステアリン酸・硫黄含有率\"target_value: \"0wt%\"\n</code></pre><p></p>",
             "references": [],
             "sourceImagePath": null,
             "thumbnailPath": null,
@@ -17,11 +17,11 @@
     "references": [],
     "sourceFilePath": null,
     "createdAt": "2026-07-06T01:23:59.129Z",
-    "updatedAt": "2026-09-07T14:12:10.882184",
+    "updatedAt": "2026-09-12T15:54:59.398179",
     "skeleton": {
         "documentId": "20a1d7c7-f25c-4d6a-ad4b-5da8fa411f39",
         "roots": [],
-        "updatedAt": 1788757126323,
+        "updatedAt": 1789195874731,
         "isComplete": true
     },
     "headingRules": {
@@ -35,32 +35,43 @@
     },
     "digest": {
         "overview": {
-            "summary": "本ドキュメントは、「各仕入先の性能達成状況.xlsx」という管理用Excelファイルについて記載したものです。このファイルは、各仕入先における性能の達成状況を管理するために作成されています。提示されている情報は随時更新されることが示されています。",
-            "documentKind": "other",
-            "purpose": "各仕入先の性能達成状況を管理するファイル「各仕入先の性能達成状況.xlsx」を提示し、情報が随時更新されることを示すこと。",
-            "scope": "「各仕入先の性能達成状況.xlsx」という管理ファイルの存在およびその更新方針。",
+            "summary": "本ドキュメントは、各仕入先の性能達成状況に関するExcelシートの情報をまとめたものです。製品の評価項目における具体的なターゲット値や要求条件が示されています。対象となる評価には、電気特性や機械特性に加えて、吸水、高温放置、低温放置、熱衝撃、温湿度サイクル、耐振動、熱拡散といった各種信頼性試験が含まれています。",
+            "documentKind": "design_doc",
+            "purpose": "各仕入先における製品の性能達成状況を評価するための基準や要求条件を整理すること。",
+            "scope": "電気特性、機械特性、および各種信頼性試験（吸水、高温放置、低温放置、熱衝撃、温湿度サイクル、耐振動、熱拡散など）における具体的なターゲット値。",
             "keyTopics": [
-                "各仕入先の性能達成状況の管理"
+                "仕入先の性能達成状況",
+                "評価項目とターゲット値",
+                "電気特性・機械特性",
+                "信頼性試験基準"
             ],
             "keyTerms": [
                 {
-                    "term": "各仕入先の性能達成状況.xlsx",
-                    "definition": "各仕入先における性能達成状況を記録・管理するためのExcelファイル。"
+                    "term": "ターゲット値",
+                    "definition": "製品の評価における目標となる基準値や要求条件。"
+                },
+                {
+                    "term": "信頼性試験",
+                    "definition": "製品の評価項目として挙げられている、吸水、高温放置、低温放置、熱衝撃、温湿度サイクル、耐振動、熱拡散などの試験。"
                 }
             ],
-            "targetSystem": "各仕入先の性能達成状況.xlsx"
+            "targetSystem": "仕入先製品"
         },
         "outline": [
             {
-                "id": "5d398f34-8112-41d6-83e9-d983b8c8f1ae",
-                "title": "【随時更新】各仕入先の性能達成状況.xlsx",
+                "id": "67987283-a6ca-4c0c-8754-93c9e96c38f4",
+                "title": "各仕入先の性能達成状況",
                 "level": 1,
-                "summary": "各仕入先における性能達成状況を管理するためのExcelファイル「各仕入先の性能達成状況.xlsx」のタイトルが提示されており、随時更新されることが示されています。",
+                "summary": "「各仕入先の性能達成状況」に関するExcelシートに記載された、製品の評価項目とターゲット値をまとめています。電気特性、機械特性、および各種信頼性試験（吸水、高温放置、低温放置、熱衝撃、温湿度サイクル、耐振動、熱拡散など）における具体的な基準値や要求条件が示されています。",
                 "keywords": [
                     "仕入先",
                     "性能達成状況",
-                    "Excel",
-                    "進捗管理"
+                    "電気特性",
+                    "機械特性",
+                    "信頼性",
+                    "ターゲット値",
+                    "絶縁抵抗",
+                    "TSZ2202G"
                 ],
                 "pageIds": [
                     "e531df8c-8553-45bf-b857-b1eb65caa6b9"
@@ -68,8 +79,8 @@
                 "children": []
             }
         ],
-        "sourceHash": "4ad00b4c792c788cbaf0ad00ecf5501e53fc87b3",
-        "generatedAt": "2026-09-07T14:03:33.074566",
+        "sourceHash": "31071c7bcecf9b07b0f06dbe9423ead9b98765b3",
+        "generatedAt": "2026-09-12T15:56:00.788329",
         "pageCount": 1,
         "schemaVersion": 1,
         "generator": "ai"
@@ -121,6 +132,6 @@
             "TestCase": "679960cb-d127-4333-aa96-355137c43e82",
             "Activity": "49352717-9cf4-46d8-8d6d-3b302256af63"
         },
-        "updatedAt": "2026-09-07T14:03:38.561047"
+        "updatedAt": "2026-09-12T15:57:41.884879"
     }
 }
