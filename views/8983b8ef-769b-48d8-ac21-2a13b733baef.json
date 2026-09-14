@@ -27,22 +27,118 @@
         "Requirement"
     ],
     "rel_filter_types": [
-        "verify"
+        "verify",
+        "trace"
     ],
     "row_scope_config": {
         "roots": [
             {
-                "rootId": "8ab892dd-004e-42bf-a4c6-6329962b1e16",
+                "rootId": "cb56b014-24dc-451e-b3be-367ac8d44fb2",
                 "includeRoot": true,
-                "includeIntermediates": true,
-                "queries": [
-                    {
-                        "relationType": "containment",
-                        "direction": "outgoing",
-                        "nodeType": "TestCase"
-                    }
-                ],
-                "recursive": true
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "8d37fd90-3f2b-4000-9b35-57872031eac2",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "efd7ee05-d194-48b5-8cd8-054ab7e3debc",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "26f876e2-8824-448b-bbda-25bbd4d2d251",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "8fa67e92-2a19-4b86-b6f1-d618d40d2553",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "c7d85c01-71e1-4c1e-aa94-f3812e91d6d9",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "a697f094-0e79-4291-a9f8-3b813162d9cb",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "f3306082-6125-4114-a397-6eb2ce0bfa52",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "eb8a4a7b-e748-497e-9401-f8527fcc623a",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "c78b9959-7276-4b6d-8088-1bb833174981",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "21bc3b5f-4f99-4857-8965-4c001aa1e340",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "5ad183b1-6d64-4882-9070-37d8b0e4dde3",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "457a22ca-ca2f-433f-bd5c-f5facf0dc4f6",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "ab108bd7-6ea3-4317-a8b2-f82cfb196346",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "0f330fd9-8456-43b9-a55b-d340e30ccd62",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "d44a0dde-7bb7-4351-baed-138f3f6d3044",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "b54557fd-869a-433e-81f4-5502f8ffcef6",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "59ad3e39-ead8-4cb2-8b6e-7fc4225ff4d0",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
             }
         ],
         "directElementIds": []
@@ -323,7 +419,7 @@
         "directElementIds": []
     },
     "direction_filter": "outgoing",
-    "create_relation_type": "__all__",
+    "create_relation_type": "trace",
     "include_implied": false,
     "implied_edge_config": {
         "customRules": [
@@ -585,7 +681,7 @@
     "col_expanded_ids": [],
     "show_outgoing": true,
     "show_incoming": false,
-    "row_header_width": 282,
+    "row_header_width": 342,
     "col_header_height": 333,
     "cell_size": 40
 }
