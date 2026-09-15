@@ -174,12 +174,20 @@
             "parent_id": "",
             "icon_key": "DescriptionOutlined",
             "icon_color": null
+        },
+        {
+            "id": "7de507e6-6597-4a3d-acae-4c768a52fa8f",
+            "name": "熱拡散防止サブシステムBATs - 部品マトリクス",
+            "parent_id": "760bc253-1ea0-4fdb-b108-26abf5eeb037",
+            "icon_key": "GridOnOutlined",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [
-        "8983b8ef-769b-48d8-ac21-2a13b733baef"
+        "8983b8ef-769b-48d8-ac21-2a13b733baef",
+        "7de507e6-6597-4a3d-acae-4c768a52fa8f"
     ],
-    "current_view_id": "8983b8ef-769b-48d8-ac21-2a13b733baef",
+    "current_view_id": "7de507e6-6597-4a3d-acae-4c768a52fa8f",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,
