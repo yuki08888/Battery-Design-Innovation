@@ -1,0 +1,1 @@
+{"id": "a5be2878-601b-46a5-ba34-1aa0e49ba094", "name": "02_業務・運用コンテキスト参照", "description": "業務フロー、利用シナリオ、運用条件、ステークホルダー関係など、開発対象を取り巻く利用文脈の参照モデルを整理するパッケージ。", "isReferenceModel": false, "metaData": null, "className": "Package"}

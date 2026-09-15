@@ -1,0 +1,31 @@
+{
+    "id": "2ad2b7ef-3734-4840-95c8-6ef890ceb32c",
+    "name": "テーブル",
+    "class_name": "FreeTable",
+    "description": "",
+    "root_ids": [
+        "cfcb364e-7491-4244-9119-3813b56a5247"
+    ],
+    "columns": [
+        {
+            "id": "8qt6javmhli",
+            "name": "要求",
+            "sourceColumnId": null,
+            "type": "element",
+            "relationQueries": [
+                [
+                    {
+                        "relationType": "all",
+                        "direction": "outgoing",
+                        "nodeType": "all"
+                    }
+                ]
+            ]
+        }
+    ],
+    "expanded_keys": [
+        "cfcb364e-7491-4244-9119-3813b56a5247-root"
+    ],
+    "hidden_columns": [],
+    "column_widths": {}
+}
