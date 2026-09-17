@@ -111,6 +111,13 @@
       "item_type": "file",
       "parent_id": null,
       "order": 15
+    },
+    {
+      "id": "885e5d06-dfb5-4a99-a484-3b6916c0ce2f",
+      "name": "構想からモデルへ（アイデアの段階的具体化）",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 16
     }
   ],
   "version": 2,
@@ -120,6 +127,7 @@
     "functional-flow",
     "hazard-safety",
     "ibd-expand",
+    "ideation-to-model",
     "interface-definition",
     "model-review",
     "parametric-analysis",
@@ -227,6 +235,12 @@
       "item_id": "7b04664d-0d2e-4b37-9aac-bbd2ee9da102",
       "name": "検証計画（V&V）",
       "content_hash": "e07c96f1d5544c105388005d4de70cf5ba602da7ecac1259a99f30886fca66ef",
+      "managed": true
+    },
+    "ideation-to-model": {
+      "item_id": "885e5d06-dfb5-4a99-a484-3b6916c0ce2f",
+      "name": "構想からモデルへ（アイデアの段階的具体化）",
+      "content_hash": "0840cb59c4a19d011713e1a4d7db35aa49398a077d717bf6217d5aa8d10b0cca",
       "managed": true
     }
   }
