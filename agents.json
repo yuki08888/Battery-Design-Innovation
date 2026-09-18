@@ -1,8 +1,5 @@
 {
   "items": [],
   "version": 1,
-  "default_by_target": {
-    "model": "builtin:orchestrator",
-    "document": "builtin:orchestrator_readonly"
-  }
+  "default_agent_id": "builtin:orchestrator"
 }

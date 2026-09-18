@@ -111,15 +111,31 @@
       "item_type": "file",
       "parent_id": null,
       "order": 15
+    },
+    {
+      "id": "ec8a5561-ad25-4292-b9bf-221923b810b3",
+      "name": "添付ファイルの分析と変換",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 16
+    },
+    {
+      "id": "ee82f3b7-ff9f-4713-9da8-a208b53e2b86",
+      "name": "構想からモデルへ（アイデアの段階的具体化）",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 17
     }
   ],
   "version": 2,
   "seeded_templates": [
     "block-hierarchy",
     "change-impact",
+    "file-handling",
     "functional-flow",
     "hazard-safety",
     "ibd-expand",
+    "ideation-to-model",
     "interface-definition",
     "model-review",
     "parametric-analysis",
@@ -227,6 +243,18 @@
       "item_id": "7b04664d-0d2e-4b37-9aac-bbd2ee9da102",
       "name": "検証計画（V&V）",
       "content_hash": "e07c96f1d5544c105388005d4de70cf5ba602da7ecac1259a99f30886fca66ef",
+      "managed": true
+    },
+    "file-handling": {
+      "item_id": "ec8a5561-ad25-4292-b9bf-221923b810b3",
+      "name": "添付ファイルの分析と変換",
+      "content_hash": "021254336a638660716f252b94dab47240b99e98cf2cde73cb3896ca32aee448",
+      "managed": true
+    },
+    "ideation-to-model": {
+      "item_id": "ee82f3b7-ff9f-4713-9da8-a208b53e2b86",
+      "name": "構想からモデルへ（アイデアの段階的具体化）",
+      "content_hash": "0840cb59c4a19d011713e1a4d7db35aa49398a077d717bf6217d5aa8d10b0cca",
       "managed": true
     }
   }
