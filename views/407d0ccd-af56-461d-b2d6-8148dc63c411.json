@@ -2,11 +2,21 @@
     "id": "407d0ccd-af56-461d-b2d6-8148dc63c411",
     "name": "関係性",
     "class_name": "FreeDiagram",
-    "nodes": [],
+    "nodes": [
+        {
+            "class_name": "DiagramNode",
+            "id": "cfcb364e-7491-4244-9119-3813b56a5247",
+            "element_id": "cfcb364e-7491-4244-9119-3813b56a5247",
+            "x": 501.6071428571429,
+            "y": 267.79364867437454,
+            "width": 120,
+            "height": 80
+        }
+    ],
     "edges": [],
-    "scale": 1.2000000000000002,
-    "offset_x": -174.92857142857156,
-    "offset_y": -73.68571428571437,
+    "scale": 0.2,
+    "offset_x": 134.5098845598845,
+    "offset_y": 251.29126772199356,
     "relationship_type": "containment",
     "visible_relation_types": [
         "containment",
