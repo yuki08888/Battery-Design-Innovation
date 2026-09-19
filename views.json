@@ -127,34 +127,6 @@
             "icon_color": null
         },
         {
-            "id": "179df906-062b-4c0f-bdb8-1f9233f663b3",
-            "name": "新しいドキュメント — ユースケース図",
-            "parent_id": "77df3c4d-e796-4d42-9eba-e45eb8ec93a1",
-            "icon_key": "HubOutlined",
-            "icon_color": null
-        },
-        {
-            "id": "50dd3bb1-47e8-4e2b-b79d-a3fe6968f06f",
-            "name": "新しいドキュメント — アクティビティ図",
-            "parent_id": "77df3c4d-e796-4d42-9eba-e45eb8ec93a1",
-            "icon_key": "HubOutlined",
-            "icon_color": null
-        },
-        {
-            "id": "05417d80-9d23-47c2-885c-1cf5c3988ce4",
-            "name": "新しいドキュメント — ユースケース図",
-            "parent_id": "77df3c4d-e796-4d42-9eba-e45eb8ec93a1",
-            "icon_key": "HubOutlined",
-            "icon_color": null
-        },
-        {
-            "id": "b3aa0038-3833-46d5-80e1-8fc75fde06ab",
-            "name": "新しいドキュメント — アクティビティ図",
-            "parent_id": "77df3c4d-e796-4d42-9eba-e45eb8ec93a1",
-            "icon_key": "HubOutlined",
-            "icon_color": null
-        },
-        {
             "id": "cbfdcd0e-048f-412d-b236-a4908d4f432e",
             "name": "UNR100j.md",
             "parent_id": "",
@@ -181,14 +153,21 @@
             "parent_id": "760bc253-1ea0-4fdb-b108-26abf5eeb037",
             "icon_key": "GridOnOutlined",
             "icon_color": null
+        },
+        {
+            "id": "dfe52c73-7733-465d-9e5d-ba0415e52256",
+            "name": "BBM要求仕様書_241209改訂",
+            "parent_id": "",
+            "icon_key": "DescriptionOutlined",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [
         "8983b8ef-769b-48d8-ac21-2a13b733baef",
         "7de507e6-6597-4a3d-acae-4c768a52fa8f",
-        "2ad2b7ef-3734-4840-95c8-6ef890ceb32c"
+        "6a6856a9-4d68-40f9-b80d-0a84cf311abc"
     ],
-    "current_view_id": "2ad2b7ef-3734-4840-95c8-6ef890ceb32c",
+    "current_view_id": "6a6856a9-4d68-40f9-b80d-0a84cf311abc",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,
