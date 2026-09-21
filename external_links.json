@@ -82,6 +82,17 @@
             "createdAt": "2026-09-19T14:22:01.966711",
             "sourceQuote": "TTIMに記載の要項は、本要求仕様書に記載がなくても満足すること",
             "targetKind": "element"
+        },
+        {
+            "id": "01a259f5-e42b-422d-bb50-af2dfbe2a332",
+            "sourceType": "document",
+            "sourceId": "2bbc8b71-e60f-401f-be02-1e1d0ecba96a",
+            "targetElementId": "4c7c82a4-6f8e-4a66-9b6c-d3ba1250953c",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-21T09:15:16.673637",
+            "sourceQuote": null,
+            "targetKind": "element"
         }
     ]
 }
