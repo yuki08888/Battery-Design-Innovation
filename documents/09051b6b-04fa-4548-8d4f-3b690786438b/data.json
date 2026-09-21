@@ -1,0 +1,250 @@
+{
+    "id": "09051b6b-04fa-4548-8d4f-3b690786438b",
+    "title": "絶縁カバー要求仕様",
+    "pages": [
+        {
+            "id": "0d1e7ac4-2e2d-47c2-8275-fe4236ab5d7d",
+            "title": "",
+            "content": "<pre class=\"document-code-block\"><code class=\"language-yaml\"># 絶縁カバー 仕様書\n# 出典: 【随時更新】絶縁カバー各仕入先の性能達成状況.xlsx シート\"260824\"\n# 記載内容: 項目・条件・目標値（仕入先達成状況は含まない）\nmeta:\n  部品名: 絶縁カバー\n  板厚: t1.0\n  出典: 各仕入先の性能達成状況.xlsx (260824)\n  版数: \"1.0\"\n  最終更新: 2026-09-21\n\nchangelog:\n  - 版数: \"1.0\"\n    日付: 2026-09-21\n    変更内容:\n      - 初版作成（出典: 260824シート）\n      - 絶縁破壊電圧を全条件で ≧3kV に統一\n        （根拠: 3kVはサージ電圧であり、一般電気部品の規格より妥当と判断）\n\n# 信頼性試験後に共通で要求される合格基準\nreliability_criteria: &amp;reliability_criteria\n  - 絶縁抵抗≧100MΩ\n  - 体積固有抵抗率≧9.05×10^8 Ω・cm\n  - 絶縁破壊電圧≧3kV\n  - CTI≧400V\n  - 締結点への入力加速度30G×12ms×10回で割れ・亀裂なきこと\n  - 締結点への入力加速度3G×共振周波数×200万回で割れ・亀裂なきこと\n  - 反対側の締結点のたわみ量≦○mm以下のこと\n  - 圧縮降伏応力≧188MPa\n  - TSZ2202G(PTC)およびTSZ2305G(GC)を満足すること\n\n電気特性:\n  - 項目: 絶縁抵抗\n    要求:\n      - 条件: 初期\n        目標値: ≧100MΩ\n      - 条件: 800℃×45s＋600℃×600s（真空高温炉）\n        目標値: ≧100MΩ\n      - 条件: 60mm×(15sトーチ＋5sグリッド) 1サイクル\n        目標値: ≧100MΩ\n  - 項目: 体積固有抵抗率\n    要求:\n      - 条件: 初期\n        目標値: ≧9.05×10^8 Ω・cm\n      - 条件: 800℃×45s＋600℃×600s（真空高温炉）\n        目標値: ≧9.05×10^8 Ω・cm\n      - 条件: 60mm×(15sトーチ＋5sグリッド) 1サイクル\n        目標値: ≧9.05×10^8 Ω・cm\n  - 項目: 絶縁破壊電圧\n    要求:\n      - 条件: 初期\n        目標値: ≧3kV\n      - 条件: 800℃×45s＋600℃×600s（真空高温炉）\n        目標値: ≧3kV\n      - 条件: 60mm×(15sトーチ＋5sグリッド) 1サイクル\n        目標値: ≧3kV\n  - 項目: CTI\n    要求:\n      - 条件: 初期\n        目標値: ≧400V\n      - 条件: 800℃×45s＋600℃×600s（真空高温炉）\n        目標値: ≧400V\n      - 条件: 60mm×(15sトーチ＋5sグリッド) 1サイクル\n        目標値: ≧400V\n\n機械特性:\n  - 項目: 耐衝撃\n    条件: 初期\n    目標値: 締結点への入力加速度30G×12ms×10回で割れ・亀裂なきこと\n  - 項目: 振動固有値\n    条件: 初期・耐久\n    目標値: 固定点共振周波数より1次共振が高いこと\n  - 項目: たわみ量\n    条件: 初期\n    目標値: 反対側の締結点のたわみ量≦○mm以下のこと（仕入先や形状が絞り込まれた段階で工場へ打診予定）\n  - 項目: 圧縮降伏応力\n    条件: 初期\n    目標値: ≧188MPa\n  - 項目: 変形\n    条件: 初期\n    目標値: TSZ2202G(PTC)およびTSZ2305G(GC)を満足すること\n\n信頼性:\n  - 項目: 吸水\n    条件: 最大吸水状態\n    目標値: *reliability_criteria\n  - 項目: 高温放置\n    条件: 65℃×750h\n    目標値: *reliability_criteria\n  - 項目: 低温放置\n    条件: -40℃×500h\n    目標値: *reliability_criteria\n  - 項目: 熱衝撃\n    条件: 65℃⇔-40℃ 100サイクル（各温度で10min以上保持）\n    目標値: *reliability_criteria\n  - 項目: 温湿度サイクル\n    条件: 65℃×15.5h→-40℃×7.5h→65℃×93%RH×17.5h→-40℃×7.5h 7サイクル\n    目標値: *reliability_criteria\n  - 項目: 耐振動\n    条件: 固有値振動周波数 各軸200万回\n    目標値:\n      - 外観の割れ・亀裂・穴あきの破損なきこと\n      - 絶縁抵抗≧100MΩ\n  - 項目: ミニモジュール熱拡散試験\n    条件: 5セル\n    目標値:\n      - 外観の割れ・亀裂・穴あきの破損なきこと\n      - 絶縁抵抗≧100MΩ\n  - 項目: パック熱拡散試験\n    条件: 法規条件\n    目標値:\n      - 外観の割れ・亀裂・穴あきの破損なきこと\n      - 絶縁抵抗≧100MΩ\n  - 項目: 熱伝導率\n    条件: 初期\n    目標値: ≦0.2W/m・K\n  - 項目: 難燃性\n    条件: 初期\n    目標値: V-0相当\n  - 項目: 低分子シロキサン・ステアリン酸・硫黄含有率\n    条件: 初期\n    目標値: 0wt%\n\nnotes:\n  - 元シートの「体積低効率」は「体積固有抵抗率」の誤記と判断し補正\n  - 「≦○mm」の○は元資料で未確定（工場打診後に確定予定）\n  - 信頼性試験の目標値は試験前後で共通の合格基準（reliability_criteria）を参照\n  - 絶縁破壊電圧は全条件で ≧3kV（v1.0で統一）。3kVはサージ電圧であり、一般電気部品の規格より妥当と判断\n  - 本仕様に定義する既存要求をCTR要求として適用する\n\n\n# 追跡可能な要求仕様（既存仕様値を要求として構造化）\nrequirements:\n  - id: SYS-001\n    text: 絶縁カバーは、本仕様に定める電気特性、機械特性、信頼性およびCTR要求を満足すること。\n    priority: must\n    verificationMethod: test\n    status: approved\n  - id: REQ-E-001\n    text: 絶縁カバーは、初期、真空高温炉およびトーチ・グリッドの各条件で絶縁抵抗が100MΩ以上であること。\n    priority: must\n    verificationMethod: test\n    status: approved\n    deriveReqt: SYS-001\n  - id: REQ-E-002\n    text: 絶縁カバーは、初期、真空高温炉およびトーチ・グリッドの各条件で体積固有抵抗率が9.05×10^8 Ω・cm以上であること。\n    priority: must\n    verificationMethod: test\n    status: approved\n    deriveReqt: SYS-001\n  - id: REQ-E-003\n    text: 絶縁カバーは、初期、真空高温炉およびトーチ・グリッドの各条件で絶縁破壊電圧が3kV以上であること。\n    priority: must\n    verificationMethod: test\n    status: approved\n    deriveReqt: SYS-001\n  - id: REQ-E-004\n    text: 絶縁カバーは、初期、真空高温炉およびトーチ・グリッドの各条件でCTIが400V以上であること。\n    priority: must\n    verificationMethod: test\n    status: approved\n    deriveReqt: SYS-001\n  - id: REQ-M-001\n    text: 絶縁カバーは、初期に締結点への入力加速度30G×12msを10回加えても割れまたは亀裂がないこと。\n    priority: must\n    verificationMethod: test\n    status: approved\n    deriveReqt: SYS-001\n  - id: REQ-M-002\n    text: 絶縁カバーは、初期および耐久後に1次共振周波数が固定点共振周波数より高いこと。\n    priority: must\n    verificationMethod: test\n    status: approved\n    deriveReqt: SYS-001\n  - id: REQ-M-003\n    text: 絶縁カバーは、初期に反対側の締結点のたわみ量が確定後の上限値以下であること。\n    priority: should\n    verificationMethod: test\n    status: proposed\n    deriveReqt: SYS-001\n  - id: REQ-M-004\n    text: 絶縁カバーは、初期に圧縮降伏応力が188MPa以上であること。\n    priority: must\n    verificationMethod: test\n    status: approved\n    deriveReqt: SYS-001\n  - id: REQ-M-005\n    text: 絶縁カバーは、初期にTSZ2202G(PTC)およびTSZ2305G(GC)を満足すること。\n    priority: should\n    verificationMethod: inspection\n    status: proposed\n    deriveReqt: SYS-001\n  - id: REQ-C-001\n    text: 絶縁カバーは、共通合格基準を適用する信頼性試験後に絶縁抵抗が100MΩ以上であること。\n    priority: must\n    verificationMethod: test\n    status: approved\n    deriveReqt: SYS-001\n  - id: REQ-C-002\n    text: 絶縁カバーは、共通合格基準を適用する信頼性試験後に体積固有抵抗率が9.05×10^8 Ω・cm以上であること。\n    priority: must\n    verificationMethod: test\n    status: approved\n    deriveReqt: SYS-001\n  - id: REQ-C-003\n    text: 絶縁カバーは、共通合格基準を適用する信頼性試験後に絶縁破壊電圧が3kV以上であること。\n    priority: must\n    verificationMethod: test\n    status: approved\n    deriveReqt: SYS-001\n  - id: REQ-C-004\n    text: 絶縁カバーは、共通合格基準を適用する信頼性試験後にCTIが400V以上であること。\n    priority: must\n    verificationMethod: test\n    status: approved\n    deriveReqt: SYS-001\n  - id: REQ-C-005\n    text: 絶縁カバーは、共通合格基準を適用する信頼性試験後に締結点への入力加速度30G×12msを10回加えても割れまたは亀裂がないこと。\n    priority: must\n    verificationMethod: test\n    status: approved\n    deriveReqt: SYS-001\n  - id: REQ-C-006\n    text: 絶縁カバーは、共通合格基準を適用する信頼性試験後に締結点への入力加速度3Gを共振周波数で200万回加えても割れまたは亀裂がないこと。\n    priority: must\n    verificationMethod: test\n    status: approved\n    deriveReqt: SYS-001\n  - id: REQ-C-007\n    text: 絶縁カバーは、共通合格基準を適用する信頼性試験後に反対側の締結点のたわみ量が確定後の上限値以下であること。\n    priority: should\n    verificationMethod: test\n    status: proposed\n    deriveReqt: SYS-001\n  - id: REQ-C-008\n    text: 絶縁カバーは、共通合格基準を適用する信頼性試験後に圧縮降伏応力が188MPa以上であること。\n    priority: must\n    verificationMethod: test\n    status: approved\n    deriveReqt: SYS-001\n  - id: REQ-C-009\n    text: 絶縁カバーは、共通合格基準を適用する信頼性試験後にTSZ2202G(PTC)およびTSZ2305G(GC)を満足すること。\n    priority: should\n    verificationMethod: inspection\n    status: proposed\n    deriveReqt: SYS-001\n  - id: REQ-R-001\n    text: 絶縁カバーは、最大吸水状態後に共通合格基準を満足すること。\n    priority: must\n    verificationMethod: test\n    status: approved\n    deriveReqt: SYS-001\n    trace: [REQ-C-001, REQ-C-002, REQ-C-003, REQ-C-004, REQ-C-005, REQ-C-006, REQ-C-007, REQ-C-008, REQ-C-009]\n  - id: REQ-R-002\n    text: 絶縁カバーは、65℃で750hの高温放置後に共通合格基準を満足すること。\n    priority: must\n    verificationMethod: test\n    status: approved\n    deriveReqt: SYS-001\n    trace: [REQ-C-001, REQ-C-002, REQ-C-003, REQ-C-004, REQ-C-005, REQ-C-006, REQ-C-007, REQ-C-008, REQ-C-009]\n  - id: REQ-R-003\n    text: 絶縁カバーは、-40℃で500hの低温放置後に共通合格基準を満足すること。\n    priority: must\n    verificationMethod: test\n    status: approved\n    deriveReqt: SYS-001\n    trace: [REQ-C-001, REQ-C-002, REQ-C-003, REQ-C-004, REQ-C-005, REQ-C-006, REQ-C-007, REQ-C-008, REQ-C-009]\n  - id: REQ-R-004\n    text: 絶縁カバーは、65℃⇔-40℃を100サイクル実施した熱衝撃後に共通合格基準を満足すること。\n    priority: must\n    verificationMethod: test\n    status: approved\n    deriveReqt: SYS-001\n    trace: [REQ-C-001, REQ-C-002, REQ-C-003, REQ-C-004, REQ-C-005, REQ-C-006, REQ-C-007, REQ-C-008, REQ-C-009]\n  - id: REQ-R-005\n    text: 絶縁カバーは、規定の温湿度サイクルを7サイクル実施した後に共通合格基準を満足すること。\n    priority: must\n    verificationMethod: test\n    status: approved\n    deriveReqt: SYS-001\n    trace: [REQ-C-001, REQ-C-002, REQ-C-003, REQ-C-004, REQ-C-005, REQ-C-006, REQ-C-007, REQ-C-008, REQ-C-009]\n  - id: REQ-R-006\n    text: 絶縁カバーは、固有値振動周波数で各軸200万回の耐振動後に外観の割れ、亀裂または穴あきがなく絶縁抵抗が100MΩ以上であること。\n    priority: must\n    verificationMethod: test\n    status: approved\n    deriveReqt: SYS-001\n  - id: REQ-R-007\n    text: 絶縁カバーは、5セルのミニモジュール熱拡散試験後に外観の割れ、亀裂または穴あきがなく絶縁抵抗が100MΩ以上であること。\n    priority: must\n    verificationMethod: test\n    status: approved\n    deriveReqt: SYS-001\n  - id: REQ-R-008\n    text: 絶縁カバーは、法規条件のパック熱拡散試験後に外観の割れ、亀裂または穴あきがなく絶縁抵抗が100MΩ以上であること。\n    priority: must\n    verificationMethod: test\n    status: approved\n    deriveReqt: SYS-001\n  - id: REQ-R-009\n    text: 絶縁カバーは、初期に熱伝導率が0.2W/m・K以下であること。\n    priority: must\n    verificationMethod: test\n    status: approved\n    deriveReqt: SYS-001\n  - id: REQ-R-010\n    text: 絶縁カバーは、初期に難燃性がV-0相当であること。\n    priority: must\n    verificationMethod: test\n    status: approved\n    deriveReqt: SYS-001\n  - id: REQ-R-011\n    text: 絶縁カバーは、初期に低分子シロキサン、ステアリン酸および硫黄の含有率がそれぞれ0wt%であること。\n    priority: must\n    verificationMethod: test\n    status: approved\n    deriveReqt: SYS-001\ndesign_elements:\n  - id: DES-001\n    type: コンポーネント\n    name: 絶縁カバー\n    category: mechanical\n    satisfy: [SYS-001, REQ-E-001, REQ-E-002, REQ-E-003, REQ-E-004, REQ-M-001, REQ-M-002, REQ-M-003, REQ-M-004, REQ-M-005, REQ-C-001, REQ-C-002, REQ-C-003, REQ-C-004, REQ-C-005, REQ-C-006, REQ-C-007, REQ-C-008, REQ-C-009, REQ-R-001, REQ-R-002, REQ-R-003, REQ-R-004, REQ-R-005, REQ-R-006, REQ-R-007, REQ-R-008, REQ-R-009, REQ-R-010, REQ-R-011]\n\ntestCases:\n  - id: TC-E-001\n    name: 絶縁抵抗検証\n    objective: REQ-E-001の絶縁抵抗を確認する。\n    preConditions: 初期、800℃×45s＋600℃×600s（真空高温炉）および60mm×(15sトーチ＋5sグリッド) 1サイクルの試料を準備する。\n    expectedResults: 各条件の絶縁抵抗が100MΩ以上である。\n    verificationMethod: test\n    verify: [REQ-E-001]\n  - id: TC-E-002\n    name: 体積固有抵抗率検証\n    objective: REQ-E-002の体積固有抵抗率を確認する。\n    preConditions: REQ-E-001と同一の3条件の試料を準備する。\n    expectedResults: 各条件の体積固有抵抗率が9.05×10^8 Ω・cm以上である。\n    verificationMethod: test\n    verify: [REQ-E-002]\n  - id: TC-E-003\n    name: 絶縁破壊電圧検証\n    objective: REQ-E-003の絶縁破壊電圧を確認する。\n    preConditions: REQ-E-001と同一の3条件の試料を準備する。\n    expectedResults: 各条件の絶縁破壊電圧が3kV以上である。\n    verificationMethod: test\n    verify: [REQ-E-003]\n  - id: TC-E-004\n    name: CTI検証\n    objective: REQ-E-004のCTIを確認する。\n    preConditions: REQ-E-001と同一の3条件の試料を準備する。\n    expectedResults: 各条件のCTIが400V以上である。\n    verificationMethod: test\n    verify: [REQ-E-004]\n  - id: TC-M-001\n    name: 初期機械特性検証\n    objective: REQ-M-001、REQ-M-002およびREQ-M-004を確認する。\n    preConditions: 初期試料および耐久後試料を準備する。\n    expectedResults: 衝撃後に割れまたは亀裂がなく、1次共振周波数が固定点共振周波数より高く、圧縮降伏応力が188MPa以上である。\n    verificationMethod: test\n    verify: [REQ-M-001, REQ-M-002, REQ-M-004]\n  - id: TC-M-002\n    name: たわみ量確認\n    objective: REQ-M-003を確認する。\n    preConditions: たわみ量上限値を工場打診後に確定し、初期試料を準備する。\n    expectedResults: 確定後の上限値に対する反対側締結点のたわみ量の適否を判定できる。\n    verificationMethod: test\n    verify: [REQ-M-003]\n  - id: TC-M-003\n    name: 変形適合確認\n    objective: REQ-M-005を確認する。\n    preConditions: TSZ2202G(PTC)およびTSZ2305G(GC)の具体的な判定条件を入手し、初期試料を準備する。\n    expectedResults: 入手した判定条件に対する適否を確認できる。\n    verificationMethod: inspection\n    verify: [REQ-M-005]\n  - id: TC-R-COMMON\n    name: 共通合格基準検証\n    objective: REQ-C-001からREQ-C-009を確認する。\n    preConditions: REQ-R-001からREQ-R-005の各信頼性試験後の試料を準備し、未確定項目は判定条件を確定する。\n    expectedResults: 絶縁抵抗、体積固有抵抗率、絶縁破壊電圧、CTI、衝撃、振動および圧縮降伏応力が各要求値を満足し、たわみ量およびTSZ適合は確定後の判定条件で適否を判定できる。\n    verificationMethod: test\n    verify: [REQ-C-001, REQ-C-002, REQ-C-003, REQ-C-004, REQ-C-005, REQ-C-006, REQ-C-007, REQ-C-008, REQ-C-009]\n  - id: TC-R-001\n    name: 吸水後共通合格基準検証\n    objective: REQ-R-001を確認する。\n    preConditions: 試料を最大吸水状態にする。\n    expectedResults: TC-R-COMMONにより共通合格基準への適合を確認できる。\n    verificationMethod: test\n    verify: [REQ-R-001]\n  - id: TC-R-002\n    name: 高温放置後共通合格基準検証\n    objective: REQ-R-002を確認する。\n    preConditions: 試料を65℃で750h放置する。\n    expectedResults: TC-R-COMMONにより共通合格基準への適合を確認できる。\n    verificationMethod: test\n    verify: [REQ-R-002]\n  - id: TC-R-003\n    name: 低温放置後共通合格基準検証\n    objective: REQ-R-003を確認する。\n    preConditions: 試料を-40℃で500h放置する。\n    expectedResults: TC-R-COMMONにより共通合格基準への適合を確認できる。\n    verificationMethod: test\n    verify: [REQ-R-003]\n  - id: TC-R-004\n    name: 熱衝撃後共通合格基準検証\n    objective: REQ-R-004を確認する。\n    preConditions: 試料に65℃⇔-40℃を100サイクル、各温度10min以上保持して実施する。\n    expectedResults: TC-R-COMMONにより共通合格基準への適合を確認できる。\n    verificationMethod: test\n    verify: [REQ-R-004]\n  - id: TC-R-005\n    name: 温湿度サイクル後共通合格基準検証\n    objective: REQ-R-005を確認する。\n    preConditions: 試料に規定の温湿度サイクルを7サイクル実施する。\n    expectedResults: TC-R-COMMONにより共通合格基準への適合を確認できる。\n    verificationMethod: test\n    verify: [REQ-R-005]\n  - id: TC-R-006\n    name: 耐振動検証\n    objective: REQ-R-006を確認する。\n    preConditions: 試料に固有値振動周波数で各軸200万回の振動を加える。\n    expectedResults: 外観の割れ、亀裂または穴あきがなく、絶縁抵抗が100MΩ以上である。\n    verificationMethod: test\n    verify: [REQ-R-006]\n  - id: TC-R-007\n    name: ミニモジュール熱拡散検証\n    objective: REQ-R-007を確認する。\n    preConditions: 5セルのミニモジュール熱拡散試験を実施する。\n    expectedResults: 外観の割れ、亀裂または穴あきがなく、絶縁抵抗が100MΩ以上である。\n    verificationMethod: test\n    verify: [REQ-R-007]\n  - id: TC-R-008\n    name: パック熱拡散検証\n    objective: REQ-R-008を確認する。\n    preConditions: 法規条件でパック熱拡散試験を実施する。\n    expectedResults: 外観の割れ、亀裂または穴あきがなく、絶縁抵抗が100MΩ以上である。\n    verificationMethod: test\n    verify: [REQ-R-008]\n  - id: TC-R-009\n    name: 熱伝導率検証\n    objective: REQ-R-009を確認する。\n    preConditions: 初期試料を準備する。\n    expectedResults: 熱伝導率が0.2W/m・K以下である。\n    verificationMethod: test\n    verify: [REQ-R-009]\n  - id: TC-R-010\n    name: 難燃性検証\n    objective: REQ-R-010を確認する。\n    preConditions: 初期試料を準備する。\n    expectedResults: 難燃性がV-0相当である。\n    verificationMethod: test\n    verify: [REQ-R-010]\n  - id: TC-R-011\n    name: 材料含有率検証\n    objective: REQ-R-011を確認する。\n    preConditions: 初期試料を準備する。\n    expectedResults: 低分子シロキサン、ステアリン酸および硫黄の含有率がそれぞれ0wt%である。\n    verificationMethod: test\n    verify: [REQ-R-011]\n\n  - id: TC-SYS-001\n    name: 総合要求適合確認\n    objective: SYS-001の電気特性、機械特性および信頼性要求への適合を確認する。\n    preConditions: TC-E-001からTC-R-011までの該当TestCaseを完了し、未解決事項の判定条件を確認する。\n    expectedResults: 全てのapproved要求が対応TestCaseで適合し、proposed要求は未解決事項として管理されている。\n    verificationMethod: inspection\n    verify: [SYS-001]\n\nrelationships:\n  - type: deriveReqt\n    parent: SYS-001\n    children: [REQ-E-001, REQ-E-002, REQ-E-003, REQ-E-004, REQ-M-001, REQ-M-002, REQ-M-003, REQ-M-004, REQ-M-005, REQ-C-001, REQ-C-002, REQ-C-003, REQ-C-004, REQ-C-005, REQ-C-006, REQ-C-007, REQ-C-008, REQ-C-009, REQ-R-001, REQ-R-002, REQ-R-003, REQ-R-004, REQ-R-005, REQ-R-006, REQ-R-007, REQ-R-008, REQ-R-009, REQ-R-010, REQ-R-011]\n  - type: satisfy\n    source: DES-001\n    target: [SYS-001, REQ-E-001, REQ-E-002, REQ-E-003, REQ-E-004, REQ-M-001, REQ-M-002, REQ-M-003, REQ-M-004, REQ-M-005, REQ-C-001, REQ-C-002, REQ-C-003, REQ-C-004, REQ-C-005, REQ-C-006, REQ-C-007, REQ-C-008, REQ-C-009, REQ-R-001, REQ-R-002, REQ-R-003, REQ-R-004, REQ-R-005, REQ-R-006, REQ-R-007, REQ-R-008, REQ-R-009, REQ-R-010, REQ-R-011]\n  - type: trace\n    source: [REQ-R-001, REQ-R-002, REQ-R-003, REQ-R-004, REQ-R-005]\n    target: [REQ-C-001, REQ-C-002, REQ-C-003, REQ-C-004, REQ-C-005, REQ-C-006, REQ-C-007, REQ-C-008, REQ-C-009]\n  - type: verify\n    source: TC-SYS-001\n    target: SYS-001\n  - type: verify\n    source: [TC-E-001, TC-E-002, TC-E-003, TC-E-004, TC-M-001, TC-M-002, TC-M-003, TC-R-COMMON, TC-R-001, TC-R-002, TC-R-003, TC-R-004, TC-R-005, TC-R-006, TC-R-007, TC-R-008, TC-R-009, TC-R-010, TC-R-011]\n    target: [REQ-E-001, REQ-E-002, REQ-E-003, REQ-E-004, REQ-M-001, REQ-M-002, REQ-M-003, REQ-M-004, REQ-M-005, REQ-C-001, REQ-C-002, REQ-C-003, REQ-C-004, REQ-C-005, REQ-C-006, REQ-C-007, REQ-C-008, REQ-C-009, REQ-R-001, REQ-R-002, REQ-R-003, REQ-R-004, REQ-R-005, REQ-R-006, REQ-R-007, REQ-R-008, REQ-R-009, REQ-R-010, REQ-R-011]\n\nopen_issues:\n  - id: OI-001\n    relatedRequirements: [REQ-M-003, REQ-C-007]\n    description: たわみ量の上限値「≦○mm」は元資料で未確定であり、工場打診後に確定するまで合否判定を保留する。\n  - id: OI-002\n    relatedRequirements: [REQ-M-005, REQ-C-009]\n    description: TSZ2202G(PTC)およびTSZ2305G(GC)の具体的な判定条件は元資料に未記載であり、条件入手後に適合判定を確定する。\n</code></pre><p></p>",
+            "references": [],
+            "sourceImagePath": null,
+            "thumbnailPath": null,
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        }
+    ],
+    "references": [],
+    "sourceFilePath": null,
+    "createdAt": "2026-09-20T22:44:09.835Z",
+    "updatedAt": "2026-09-21T07:50:59.742370",
+    "skeleton": {
+        "documentId": "09051b6b-04fa-4548-8d4f-3b690786438b",
+        "roots": [
+            {
+                "id": "4d0a6dde-f644-448a-89a8-19a3ae9c0eff",
+                "title": "出典: 【随時更新】絶縁カバー各仕入先の性能達成状況.xlsx シート\"260824\"",
+                "level": 1,
+                "sectionType": "reference",
+                "pageId": "0d1e7ac4-2e2d-47c2-8275-fe4236ab5d7d",
+                "startLine": 2,
+                "endLine": 2,
+                "children": [],
+                "linkedElementIds": [],
+                "pageIndex": 0,
+                "pageIds": [
+                    "0d1e7ac4-2e2d-47c2-8275-fe4236ab5d7d"
+                ],
+                "pageIndices": [
+                    0
+                ]
+            },
+            {
+                "id": "128ddbe2-b6c9-4507-b1ca-3bc70023a611",
+                "title": "記載内容: 項目・条件・目標値（仕入先達成状況は含まない）",
+                "level": 1,
+                "sectionType": "amendment",
+                "pageId": "0d1e7ac4-2e2d-47c2-8275-fe4236ab5d7d",
+                "startLine": 3,
+                "endLine": 18,
+                "children": [],
+                "linkedElementIds": [],
+                "pageIndex": 0,
+                "pageIds": [
+                    "0d1e7ac4-2e2d-47c2-8275-fe4236ab5d7d"
+                ],
+                "pageIndices": [
+                    0
+                ]
+            },
+            {
+                "id": "875a1108-056c-4d1e-a13b-a36838ab2d6d",
+                "title": "信頼性試験後に共通で要求される合格基準",
+                "level": 1,
+                "sectionType": "requirement",
+                "pageId": "0d1e7ac4-2e2d-47c2-8275-fe4236ab5d7d",
+                "startLine": 19,
+                "endLine": 128,
+                "children": [],
+                "linkedElementIds": [],
+                "pageIndex": 0,
+                "pageIds": [
+                    "0d1e7ac4-2e2d-47c2-8275-fe4236ab5d7d"
+                ],
+                "pageIndices": [
+                    0
+                ]
+            }
+        ],
+        "updatedAt": 1789944632954,
+        "isComplete": true
+    },
+    "headingRules": {
+        "ruleEntries": [],
+        "commonRules": {
+            "blankLineBeforeHeading": true,
+            "mergeSameLevelHeadings": true,
+            "fillMissingNumbers": true,
+            "preserveContentExactly": true
+        }
+    },
+    "digest": {
+        "overview": {
+            "summary": "板厚t1.0の絶縁カバーに対する性能要求を、電気特性・機械特性・信頼性・CTRの観点から整理した要求仕様書である。絶縁抵抗、体積固有抵抗率、絶縁破壊電圧、CTI、圧縮降伏応力などの目標値と、初期・高温炉・トーチ／グリッド条件および信頼性試験後の共通合格基準を定めている。さらに、衝撃・振動後の割れや亀裂、締結点のたわみ、TSZ2202G(PTC)およびTSZ2305G(GC)への適合も要求している。SYS-001を起点に要求を電気・機械・共通合格基準・信頼性・CTRへ構造化し、絶縁カバーDES-001および各テストケースとの追跡関係を示す一方、たわみ量上限やCTR判定条件など未確定・提案中の事項も含む。",
+            "documentKind": "requirement_spec",
+            "purpose": "板厚t1.0の絶縁カバーについて、性能目標、信頼性試験後の合格基準、および検証・設計への追跡可能な要求構造を定義する。",
+            "scope": "絶縁カバーの電気特性、機械特性、信頼性、CTRに関する項目・試験条件・目標値、共通合格基準、要求と設計・テストケースのトレースを扱う。仕入先達成状況そのものは記載対象に含めないが、出典と未確定・提案中の要求事項は含む。",
+            "keyTopics": [
+                "電気特性要求",
+                "機械特性要求",
+                "信頼性試験要求",
+                "CTR要求",
+                "信頼性試験後の共通合格基準",
+                "要求の追跡可能性",
+                "設計・テストケースとのトレース",
+                "未確定・提案中の要求事項"
+            ],
+            "keyTerms": [
+                {
+                    "term": "絶縁破壊電圧",
+                    "definition": "絶縁カバーに対して全条件で3kV以上を要求する電気特性項目。"
+                },
+                {
+                    "term": "体積固有抵抗率",
+                    "definition": "絶縁カバーに対して9.05×10^8Ω・cm以上を要求する電気特性項目。"
+                },
+                {
+                    "term": "CTI",
+                    "definition": "絶縁カバーに対して400V以上を要求する電気特性項目。"
+                },
+                {
+                    "term": "圧縮降伏応力",
+                    "definition": "信頼性試験後に188MPa以上を要求する機械特性項目。"
+                },
+                {
+                    "term": "TSZ2202G(PTC)",
+                    "definition": "信頼性試験後の共通合格基準として満足を要求する規格・判定項目。"
+                },
+                {
+                    "term": "TSZ2305G(GC)",
+                    "definition": "信頼性試験後の共通合格基準として満足を要求する規格・判定項目。"
+                },
+                {
+                    "term": "SYS-001",
+                    "definition": "絶縁カバー要求を統括する上位要求ID。"
+                },
+                {
+                    "term": "REQ-E",
+                    "definition": "絶縁カバーの電気特性要求を示す要求ID群。"
+                },
+                {
+                    "term": "REQ-M",
+                    "definition": "絶縁カバーの機械特性要求を示す要求ID群。"
+                },
+                {
+                    "term": "REQ-C",
+                    "definition": "信頼性試験後の共通合格基準を示す要求ID群。"
+                },
+                {
+                    "term": "REQ-R",
+                    "definition": "絶縁カバーの信頼性要求を示す要求ID群。"
+                },
+                {
+                    "term": "REQ-CTR",
+                    "definition": "絶縁カバーのCTR要求を示す要求ID群。"
+                },
+                {
+                    "term": "DES-001",
+                    "definition": "要求充足関係の対象として記載された絶縁カバー設計ID。"
+                }
+            ],
+            "targetSystem": "絶縁カバー"
+        },
+        "outline": [
+            {
+                "id": "15f26047-3b1f-4086-a1e5-4a97d8b944ca",
+                "title": "出典: 【随時更新】絶縁カバー各仕入先の性能達成状況.xlsx シート\"260824\"",
+                "level": 1,
+                "summary": "絶縁カバー仕様書の出典を示しており、対象部品は板厚t1.0の絶縁カバー、版数は1.0、最終更新日は2026-09-21である。初版作成および絶縁破壊電圧を全条件で3kV以上に統一した変更履歴も記載している。",
+                "keywords": [
+                    "絶縁カバー",
+                    "260824",
+                    "性能達成状況.xlsx",
+                    "板厚t1.0",
+                    "版数1.0"
+                ],
+                "pageIds": [
+                    "0d1e7ac4-2e2d-47c2-8275-fe4236ab5d7d"
+                ],
+                "children": []
+            },
+            {
+                "id": "f3eb1e1a-b67d-4765-86e8-18e59f7cbc04",
+                "title": "記載内容: 項目・条件・目標値（仕入先達成状況は含まない）",
+                "level": 1,
+                "summary": "仕入先達成状況を含めず、電気特性、機械特性、信頼性、CTRについて項目・試験条件・目標値を整理している。電気特性では絶縁抵抗100MΩ以上、体積固有抵抗率9.05×10^8Ω・cm以上、絶縁破壊電圧3kV以上、CTI400V以上を初期・高温炉・トーチ／グリッド条件で要求し、機械・信頼性・CTRの判定条件も記載している。",
+                "keywords": [
+                    "電気特性",
+                    "機械特性",
+                    "信頼性",
+                    "CTR",
+                    "絶縁抵抗",
+                    "絶縁破壊電圧",
+                    "CTI",
+                    "トーチ・グリッド"
+                ],
+                "pageIds": [
+                    "0d1e7ac4-2e2d-47c2-8275-fe4236ab5d7d"
+                ],
+                "children": []
+            },
+            {
+                "id": "393cac59-69cd-4421-86be-10251cbf90ba",
+                "title": "信頼性試験後に共通で要求される合格基準",
+                "level": 1,
+                "summary": "信頼性試験後の共通合格基準として、絶縁抵抗100MΩ以上、体積固有抵抗率9.05×10^8Ω・cm以上、絶縁破壊電圧3kV以上、CTI400V以上、圧縮降伏応力188MPa以上を要求している。さらに、30G×12ms×10回および3G×共振周波数×200万回で割れ・亀裂がないこと、反対側締結点のたわみ量が上限以下であること、TSZ2202G(PTC)およびTSZ2305G(GC)を満足することを定めている。",
+                "keywords": [
+                    "reliability_criteria",
+                    "共通合格基準",
+                    "絶縁抵抗",
+                    "体積固有抵抗率",
+                    "3kV",
+                    "CTI",
+                    "30G",
+                    "200万回"
+                ],
+                "pageIds": [
+                    "0d1e7ac4-2e2d-47c2-8275-fe4236ab5d7d"
+                ],
+                "children": []
+            },
+            {
+                "id": "6fd4c39d-8ea7-4328-8f73-84cf72271c47",
+                "title": "追跡可能な要求仕様（既存仕様値を要求として構造化）",
+                "level": 1,
+                "summary": "SYS-001を上位要求として、電気特性REQ-E、機械特性REQ-M、共通合格基準REQ-C、信頼性REQ-R、CTR要求REQ-CTRに分解し、priority、verificationMethod、status、導出元および一部のtraceを付与している。絶縁カバーDES-001との要求充足関係、ならびに各要求を検証する電気・機械・信頼性のテストケースも記載しており、たわみ量上限やCTR判定条件など未確定・提案中の事項も含む。",
+                "keywords": [
+                    "requirements",
+                    "SYS-001",
+                    "REQ-E",
+                    "REQ-M",
+                    "REQ-C",
+                    "REQ-R",
+                    "REQ-CTR",
+                    "DES-001"
+                ],
+                "pageIds": [
+                    "0d1e7ac4-2e2d-47c2-8275-fe4236ab5d7d"
+                ],
+                "children": []
+            }
+        ],
+        "sourceHash": "744104bf1a487ca74c1b2aaec022a9abff041375",
+        "generatedAt": "2026-09-21T08:14:44.754448",
+        "pageCount": 1,
+        "schemaVersion": 1,
+        "generator": "ai"
+    },
+    "coverage": null,
+    "modelBinding": null
+}

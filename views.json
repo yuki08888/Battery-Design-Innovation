@@ -160,12 +160,21 @@
             "parent_id": "",
             "icon_key": "DescriptionOutlined",
             "icon_color": null
+        },
+        {
+            "id": "43f4d071-ea21-4c66-9f88-55da09326154",
+            "name": "絶縁カバー要求仕様",
+            "parent_id": "",
+            "icon_key": "DescriptionOutlined",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [
-        "8983b8ef-769b-48d8-ac21-2a13b733baef"
+        "8983b8ef-769b-48d8-ac21-2a13b733baef",
+        "43f4d071-ea21-4c66-9f88-55da09326154",
+        "dfe52c73-7733-465d-9e5d-ba0415e52256"
     ],
-    "current_view_id": "8983b8ef-769b-48d8-ac21-2a13b733baef",
+    "current_view_id": "43f4d071-ea21-4c66-9f88-55da09326154",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,
