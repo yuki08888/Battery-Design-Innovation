@@ -1,0 +1,54 @@
+{
+    "id": "407d0ccd-af56-461d-b2d6-8148dc63c411",
+    "name": "関係性",
+    "class_name": "FreeDiagram",
+    "nodes": [
+        {
+            "class_name": "DiagramNode",
+            "id": "cfcb364e-7491-4244-9119-3813b56a5247",
+            "element_id": "cfcb364e-7491-4244-9119-3813b56a5247",
+            "x": 501.6071428571429,
+            "y": 267.79364867437454,
+            "width": 120,
+            "height": 80
+        }
+    ],
+    "edges": [],
+    "scale": 0.2,
+    "offset_x": 134.5098845598845,
+    "offset_y": 251.29126772199356,
+    "relationship_type": "containment",
+    "visible_relation_types": [
+        "containment",
+        "association",
+        "aggregation",
+        "composition",
+        "generalization",
+        "dependency",
+        "realization",
+        "satisfy",
+        "deriveReqt",
+        "trace",
+        "refine",
+        "allocate",
+        "merge",
+        "extend",
+        "include",
+        "verify"
+    ],
+    "visible_node_types": [
+        "Activity",
+        "ActivityNode",
+        "ActivityEdge",
+        "Actor",
+        "Block",
+        "Operation",
+        "Property",
+        "Parameter",
+        "Package",
+        "Requirement",
+        "TestCase",
+        "TestStep",
+        "UseCase"
+    ]
+}
