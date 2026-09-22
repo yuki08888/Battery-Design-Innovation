@@ -1,0 +1,570 @@
+{
+    "id": "95bb29d3-494d-46d0-a7d8-fbd41cc5939a",
+    "title": "熱拡散機能ブロック図yaml 隣接セルへの熱伝導",
+    "pages": [
+        {
+            "id": "32df4323-a15a-4fed-8b21-811e31528f7f",
+            "title": "",
+            "content": "<h1>4BV<em>2</em>セル間熱連鎖 機能ブロック図 — 正本(このファイルだけを編集する)</h1><h1></h1><h1>構成:</h1><h1>blocks … 機能ブロック(関数)。formula と入力(port別)・出力・issue を1箇所に集約</h1><h1>variables … 変数ノード(設計パラメータ・温度など)</h1><h1>annotations … 注記(要求事項ラベル)。annotation_target で対象ブロックを指す</h1><h1></h1><h1>ポートと kind:</h1><h1>top=設計パラメータ(param) / bottom=ばらつき・劣化(uncertainty) /</h1><h1>left=上流温度(chain)とparamの混在 / output=出力温度(各ブロック1本)</h1><h1></h1><h1>派生物(graph.json / nodes.csv / edges.csv)は下記で再生成する。手で編集しない。</h1><h1>python graph_<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://yaml.py\">yaml.py</a> to-artifacts</h1><h1>graph.json から本ファイルを起こし直す場合:</h1><h1>python graph_<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://yaml.py\">yaml.py</a> to-yaml</h1><h1></h1><h1>eid はエッジID。source(既定 image)/confidence(既定 high)/note は非既定時のみ記載。</h1><p>meta:<br>title: 4BV<em>2</em>セル間熱連鎖 機能ブロック図<br>source<em>csv: C:\\Users\\1584550\\Downloads\\4BV_2</em>セル間熱連鎖.csv<br>source_csv_encoding: utf-8-sig<br>source_csv_rows: 177<br>id_rule: 元CSV行番号 - 1 を3桁ゼロ埋め (row2 -&gt; N001, row177 -&gt; N176)<br>edge_recovery_method: 機能ブロック図の画像11枚を、各枚ごとに既知ラベル3点以上でアフィン変換(image = CSV * scale + offset)を確定させ、読み取った配線端点を一意のノードIDへ写像した。座標のみの幾何ルールによる自動結線は採用していない(N003 が Δy=231 で left ポート、N018/N019 がパラメータで left ポート等、幾何ルールで復元不能な反例が複数存在するため)。<br>port_convention:<br>top: 設計パラメータ<br>bottom: 'ばらつき／劣化要因 (例外: N003-&gt;N012 は温度連鎖が下辺バスに合流)'<br>left: 上流温度とパラメータが混在。y位置では kind を判別できない<br>right: 出力温度 (各ブロック1本)<br>multi_row_rule: 下辺の多段配置ノードは全てブロック底部に直結。3段配置はラベル衝突回避のみで階層構造ではない (N012 の9ノードで確認)。<br>anchor_rule: type=2 の x は矩形左端、type 0/1 は文字中心 (注記3件で一律 +143 CSV単位のずれを確認)<br>block_color_rule: グレー塗り = 数式未定義、橙塗り = 数式定義済み<br>affine_transforms_verified:</p><ul><li><p>crop: 1 (cluster A 左2/3)<br>scale: 1.1<br>offset:</p><ul><li><p>-118</p></li><li><p>-86<br>max_err_px: 24</p></li></ul></li><li><p>crop: 2 (cluster A 右 + B)<br>scale: 1.08<br>offset:</p><ul><li><p>-1726</p></li><li><p>-95<br>max_err_px: 24</p></li></ul></li><li><p>crop: 3 (cluster B + C)<br>scale: 0.909<br>offset:</p><ul><li><p>-1831</p></li><li><p>-217<br>max_err_px: 19</p></li></ul></li><li><p>crop: 4 (cluster D + E/F 先頭)<br>scale: 0.784<br>offset:</p><ul><li><p>-662</p></li><li><p>-811<br>max_err_px: 20</p></li></ul></li><li><p>crop: 5 (cluster E + F + I)<br>scale: 0.736<br>offset:</p><ul><li><p>-1659</p></li><li><p>-999<br>max_err_px: 25</p></li></ul></li><li><p>crop: 6 (cluster G)<br>scale: 0.74<br>offset: null<br>max_err_px: 25</p></li><li><p>crop: 7 (cluster H)<br>scale: 0.775<br>offset:</p><ul><li><p>-197</p></li><li><p>-1587<br>max_err_px: 25</p></li></ul></li><li><p>crop: 8 (cluster I + 長距離線)<br>scale: 0.737<br>offset:</p><ul><li><p>-1970</p></li><li><p>-676<br>max_err_px: 20</p></li></ul></li><li><p>crop: 9 (cluster D 高倍率)<br>scale: 0.891<br>offset:</p><ul><li><p>-591</p></li><li><p>-865<br>max_err_px: 6</p></li></ul></li><li><p>crop: '10 (K: x2280-2440 縦長)'<br>scale: 0.755<br>offset:</p><ul><li><p>-1218</p></li><li><p>-305<br>max_err_px: 22</p></li></ul></li><li><p>crop: '11 (L: x3580-3740 縦長)'<br>scale: 1.001<br>offset:</p><ul><li><p>-2765</p></li><li><p>-380<br>max_err_px: 30</p></li></ul></li><li><p>crop: '12 (K 再撮影: x2200-4000 / y400-1750)'<br>scale: 0.684<br>offset:</p><ul><li><p>-926</p></li><li><p>-230<br>max_err_px: 26<br>counts:<br>nodes_total: 187<br>nodes_by_type:<br>0_variable: 157<br>1_block: 22<br>2_annotation: 8<br>blocks_with_formula: 22<br>blocks_without_formula: 0<br>edges_total: 187<br>edges_by_kind:<br>param: 71<br>chain: 31<br>uncertainty: 63<br>output: 22<br>edges_by_port:<br>top: 64<br>left: 38<br>bottom: 63<br>right: 22<br>edges_by_confidence:<br>high: 183<br>med: 4<br>open_ports: 3<br>unresolved_edges: []<br>resolved_edges:</p></li></ul></li><li><p>edge_id: E027<br>from_id: N025<br>from_name: トリガーセルの温度<br>to_id: N012<br>to_name: ガスの温度を決める働き<br>channel_csv_x: 2306<br>resolution: クロップ12(倍率0.684)で、CSV x≈2306 の縦線が y=1316 と y=1500 の間で連続していることを確認。縦線は y=1316(セル初期温度)を貫通しており、平行な2本目も存在しないため、起点は y=1500(トリガーセルの温度)側と確定した。<br>correction: 当初はクロップ9(倍率0.891)で CSV(2297,1313) を折れ点と判定し N003 セル初期温度 -&gt; N012 として登録していたが、これは単純交差の誤読であった。クロップ12で訂正し当該エッジを削除、N025 -&gt; N012 に置き換えた。<br>out_of_scope:</p></li><li><p>データクレンジング(重複名のサフィックス付与、undefined 除去、バスバーの面積の修正、<br>正規化)は行わない。検出のみ issue 列と <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"http://REVIEW.md\">REVIEW.md</a> に記録<br>blocks:<br>N002:<br>name: 隣接セルの温度<br>を決める働き<br>cluster: I<br>formula: U1(T48-T)+U2(T45-T)+U3(T56-T)+U4(T87-T)+U5(T98-T)=0<br>has_formula: 'true'<br>inputs:<br>top:<br>- {id: N177, name: 断熱材経路の熱コンダクタンス, kind: param, eid: E177, source: design}<br>- {id: N178, name: バスバー経路の熱コンダクタンス, kind: param, eid: E178, source: design}<br>- {id: N179, name: TIM経路の熱コンダクタンス, kind: param, eid: E179, source: design}<br>- {id: N180, name: 雰囲気対流の熱コンダクタンス, kind: param, eid: E180, source: design}<br>- {id: N181, name: デブリ接触の熱コンダクタンス, kind: param, eid: E181, source: design}<br>left:<br>- {id: N048, name: 弾性断熱材の温度, kind: chain, eid: E169, note: CSV x≈4328 の収集チャネル経由}<br>- {id: N045, name: バスバーの温度, kind: chain, eid: E170, note: CSV x≈4328 の収集チャネル経由}<br>- {id: N056, name: 熱伝導材の温度, kind: chain, eid: E171, note: CSV x≈4328 の収集チャネル経由}<br>- {id: N098, name: デブリの温度, kind: chain, eid: E172, note: CSV x≈4328 の収集チャネル経由}<br>- {id: N087, name: セル上面の雰囲気温度, kind: chain, eid: E173, confidence: med, note: 'セル上面の雰囲気温度: x≈888 の下降とは別に右へ延び CSV x≈4322 で下降。束の重畳により med'}<br>bottom:<br>- {id: N171, name: セル個体ばらつき, kind: uncertainty, eid: E174}<br>- {id: N170, name: セル内部温度分布, kind: uncertainty, eid: E175}<br>output: {id: N001, name: 隣接セルの温度, kind: output, eid: E176}<br>x: 4591.778291066488<br>y: 1889.7084331512451<br>notes: 【推奨条件】<br>断熱・遮熱性能を最適化し放熱を確保すること<br>【注意事項】<br>ガス中微粉の熱容量を過小評価しないこと<br>N006:<br>name: セル初期温度<br>を決める働き<br>cluster: D<br>formula: hA(T1-T2)<br>has_formula: 'true'<br>inputs:<br>top:<br>- {id: N009, name: セルの熱伝導率, kind: param, eid: E061}<br>- {id: N118, name: セルの放熱面積, kind: param, eid: E062}<br>left:<br>- {id: N008, name: 放置時間, kind: param, eid: E063}<br>- {id: N007, name: 環境温度, kind: chain, eid: E064, note: '環境温度: CSV x≈1058 の縦チャネルを下降。左ポートに矢印2本を視認'}<br>bottom:<br>- {id: N010, name: 外気温度変動, kind: uncertainty, eid: E065}<br>- {id: N011, name: 冷却器の動作状態, kind: uncertainty, eid: E066}<br>- {id: N135, name: セル間温度ばらつき, kind: uncertainty, eid: E067}<br>output: {id: N003, name: セル初期温度, kind: output, eid: E068}<br>x: 1266.5973218282065<br>y: 1209.3750508626304<br>notes: 【推奨条件】<br>使用環境の外気温度を正確に測定し、放置時間を一定に保つこと<br>【注意事項】<br>初期温度が高いと熱暴走リスクが増加するため、外気温度管理が重要<br>N012:<br>name: ガスの温度<br>を決める働き<br>cluster: B<br>formula: mc(Tgas-Tenv)=m<em>Hc+hA(Ttrig-Tgas)<br>has_formula: 'true'<br>inputs:<br>top:<br>- {id: N102, name: セルの種類, kind: param, eid: E021}<br>- {id: N103, name: 安全弁の設計, kind: param, eid: E022}<br>- {id: N182, name: ガスの比熱, kind: param, eid: E182, source: design}<br>- {id: N183, name: ガスの燃焼熱, kind: param, eid: E183, source: design}<br>- {id: N184, name: 受熱コンダクタンス, kind: param, eid: E184, source: design}<br>left:<br>- {id: N101, name: 発煙時間, kind: param, eid: E023}<br>- {id: N014, name: ガス流量, kind: param, eid: E024}<br>- {id: N013, name: ガス組成, kind: param, eid: E025}<br>- {id: N007, name: 環境温度, kind: chain, eid: E026, note: '環境温度: CSV x≈2200 の縦チャネル経由'}<br>bottom:<br>- {id: N025, name: トリガーセルの温度, kind: chain, eid: E027, note: 'トリガーセルの温度: CSV x≈2306 の縦線が y=1316 と y=1500 の間で連続しているため起点は y=1500 側と確定。温度連鎖だが下辺バスに合流'}<br>- {id: N104, name: セルばらつき, kind: uncertainty, eid: E028}<br>- {id: N105, name: SOC, kind: uncertainty, eid: E029}<br>- {id: N015, name: 発煙速度, kind: uncertainty, eid: E030}<br>- {id: N016, name: ガスの拡散経路, kind: uncertainty, eid: E031}<br>- {id: N126, name: ラプチャー状態, kind: uncertainty, eid: E032}<br>- {id: N127, name: 安全弁開口状態, kind: uncertainty, eid: E033}<br>- {id: N128, name: 発煙タイミング, kind: uncertainty, eid: E034}<br>- {id: N129, name: ガス組成変動, kind: uncertainty, eid: E035}<br>- {id: N131, name: ガス燃焼状態, kind: uncertainty, eid: E036}<br>output: {id: N004, name: ガスの温度, kind: output, eid: E037}<br>x: 2354.5973014831543<br>y: 533.9027913411459<br>notes: 【推奨条件】<br>発煙セルの温度とガス流量をリアルタイムで監視し、異常を早期検知すること<br>【注意事項】<br>発煙ガスの熱量はセル間の熱伝達に大きく影響するため、過大評価を避ける<br>N017:<br>name: デブリの熱容量<br>を決める働き<br>cluster: C<br>formula: mc<br>has_formula: 'true'<br>inputs:<br>left:<br>- {id: N018, name: デブリの質量, kind: param, eid: E045}<br>- {id: N019, name: デブリの比熱, kind: param, eid: E046}<br>bottom:<br>- {id: N139, name: デブリの質量ばらつき, kind: uncertainty, eid: E047}<br>- {id: N020, name: デブリの凝集状態, kind: uncertainty, eid: E048}<br>- {id: N130, name: デブリの粒径分布, kind: uncertainty, eid: E049}<br>output: {id: N005, name: デブリの熱容量, kind: output, eid: E050}<br>x: 3286.9170443216963<br>y: 985.8888753255209<br>notes: 【推奨条件】<br>微粉の粒径と濃度を定期的に評価し、熱容量計算に反映させること<br>【注意事項】<br>微粉の熱容量は熱伝達に影響するため、正確な物性値取得が必要<br>issue: open_port(top)<br>N021:<br>name: トリガーセルの温度<br>を決める働き<br>cluster: D<br>formula: QTR+UhAh(Th-T)=UlA(T-Tinit); QTR=SOC</em>C*dH<br>has_formula: 'true'<br>inputs:<br>top:<br>- {id: N039, name: セル種類, kind: param, eid: E075}<br>- {id: N040, name: 電極構成, kind: param, eid: E076}<br>- {id: N041, name: SOC, kind: param, eid: E077}<br>- {id: N042, name: セル容量, kind: param, eid: E078}<br>- {id: N185, name: 熱暴走反応熱係数, kind: param, eid: E185, source: design}<br>- {id: N186, name: ヒーター接触コンダクタンス, kind: param, eid: E186, source: design}<br>- {id: N187, name: 放熱コンダクタンス, kind: param, eid: E187, source: design}<br>left:<br>- {id: N003, name: セル初期温度, kind: chain, eid: E079, note: CSV x≈1682 の縦チャネルで収集。Δy=231 だが left ポート}<br>- {id: N134, name: セル間温度ばらつき, kind: uncertainty, eid: E080, note: 'セル間温度ばらつき: 左ポート入力'}<br>- {id: N023, name: ヒーター温度, kind: chain, eid: E081}<br>- {id: N026, name: SOC, kind: param, eid: E082}<br>bottom:<br>- {id: N043, name: セル個体ばらつき, kind: uncertainty, eid: E083}<br>- {id: N044, name: 劣化状態, kind: uncertainty, eid: E084}<br>- {id: N138, name: 熱暴走位置, kind: uncertainty, eid: E085}<br>output: {id: N025, name: トリガーセルの温度, kind: output, eid: E086}<br>x: 1876.5140088399253<br>y: 1547.8750356038413<br>N029:<br>name: アッパーケースの温度<br>を決める働き<br>cluster: A<br>formula: kA(T1-T2)/L<br>has_formula: 'true'<br>inputs:<br>top:<br>- {id: N088, name: アッパーケースの熱伝導率, kind: param, eid: E007}<br>- {id: N089, name: アッパーケースの厚み, kind: param, eid: E008}<br>- {id: N090, name: アッパーケースの面積, kind: param, eid: E009}<br>left:<br>- {id: N097, name: アッパーケースの周辺の雰囲気温度, kind: chain, eid: E010}<br>bottom:<br>- {id: N122, name: 熱による破損, kind: uncertainty, eid: E011}<br>output: {id: N028, name: アッパーケースの温度, kind: output, eid: E012}<br>x: 1473.9723014831543<br>y: 288.38877360026044<br>N030:<br>name: ロアケースの温度<br>を決める働き<br>cluster: F<br>formula: kA(T1-T2)/L<br>has_formula: 'true'<br>inputs:<br>top:<br>- {id: N031, name: ロアケースの熱伝導率, kind: param, eid: E112}<br>- {id: N032, name: ロアケースの厚み, kind: param, eid: E113}<br>- {id: N033, name: ロアケースの面積, kind: param, eid: E114}<br>left:<br>- {id: N050, name: 熱伝導材の温度, kind: chain, eid: E115, note: セル側TIM (上方)}<br>- {id: N068, name: 熱伝導材の温度, kind: chain, eid: E116, note: 冷却器側TIM (下方)}<br>bottom:<br>- {id: N155, name: ロアケースの変形, kind: uncertainty, eid: E117}<br>output: {id: N027, name: ロアケースの温度, kind: output, eid: E118}<br>x: 3097.1947542826338<br>y: 2161.7778523763022<br>N034:<br>name: 冷却器の温度<br>を決める働き<br>cluster: G<br>formula: kA(T1-T2)/L<br>has_formula: 'true'<br>inputs:<br>top:<br>- {id: N035, name: 冷却器の熱伝導率, kind: param, eid: E134}<br>- {id: N036, name: 冷却器の厚み, kind: param, eid: E135}<br>- {id: N037, name: 冷却器の面積, kind: param, eid: E136}<br>left:<br>- {id: N073, name: LLCの温度, kind: chain, eid: E137}<br>- {id: N078, name: 冷却器周辺の雰囲気温度, kind: chain, eid: E138, note: '冷却器周辺の雰囲気温度: CSV x≈1930 を上昇'}<br>bottom:<br>- {id: N159, name: 接触状態, kind: uncertainty, eid: E139}<br>- {id: N160, name: 流量ばらつき, kind: uncertainty, eid: E140}<br>output: {id: N038, name: 冷却器の温度, kind: output, eid: E141}<br>x: 2211.930675506592<br>y: 2471.0278828938804<br>N046:<br>name: バスバーの温度<br>を決める働き<br>cluster: E<br>formula: kA(T1-T2)/L<br>has_formula: 'true'<br>inputs:<br>top:<br>- {id: N064, name: バスバーの熱伝導率, kind: param, eid: E096}<br>- {id: N065, name: バスバーの厚み, kind: param, eid: E097}<br>- {id: N066, name: 熱伝導材の面積, kind: param, eid: E098, note: 'ラベル誤記: 図では「熱伝導材の面積」。正しくは「バスバーの面積」'}<br>left:<br>- {id: N025, name: トリガーセルの温度, kind: chain, eid: E099, note: CSV x≈2400 の共通縦チャネル経由}<br>bottom:<br>- {id: N145, name: ボルト締結・溶接状態, kind: uncertainty, eid: E100}<br>- {id: N146, name: 接触抵抗, kind: uncertainty, eid: E101}<br>- {id: N147, name: 変形による浮き, kind: uncertainty, eid: E102}<br>output: {id: N045, name: バスバーの温度, kind: output, eid: E103}<br>x: 2589.9028841654463<br>y: 1810.2777290344238<br>N047:<br>name: 弾性断熱材の温度<br>を決める働き<br>cluster: E<br>formula: kA(T1-T2)/L<br>has_formula: 'true'<br>inputs:<br>top:<br>- {id: N060, name: 弾性断熱材の熱伝導率, kind: param, eid: E087}<br>- {id: N061, name: 弾性断熱材の厚み, kind: param, eid: E088}<br>- {id: N062, name: 弾性断熱材の面積, kind: param, eid: E089}<br>left:<br>- {id: N025, name: トリガーセルの温度, kind: chain, eid: E090, note: CSV x≈2400 の共通縦チャネル経由}<br>bottom:<br>- {id: N142, name: 圧縮状態, kind: uncertainty, eid: E091}<br>- {id: N143, name: 接触状態, kind: uncertainty, eid: E092}<br>- {id: N144, name: 破損状態, kind: uncertainty, eid: E093}<br>- {id: N154, name: 経年劣化, kind: uncertainty, eid: E094}<br>output: {id: N048, name: 弾性断熱材の温度, kind: output, eid: E095}<br>x: 2589.6251742045088<br>y: 1557.3194630940757<br>N049:<br>name: 熱伝導材の温度<br>を決める働き<br>cluster: F<br>formula: kA(T1-T2)/L<br>has_formula: 'true'<br>inputs:<br>top:<br>- {id: N052, name: 熱伝導材の熱伝導率, kind: param, eid: E104}<br>- {id: N053, name: 熱伝導材の厚み, kind: param, eid: E105}<br>- {id: N054, name: 熱伝導材の面積, kind: param, eid: E106}<br>left:<br>- {id: N025, name: トリガーセルの温度, kind: chain, eid: E107, note: CSV x≈2400 の共通縦チャネル経由}<br>bottom:<br>- {id: N148, name: 接触状態, kind: uncertainty, eid: E108}<br>- {id: N149, name: 接触圧の変化, kind: uncertainty, eid: E109}<br>- {id: N150, name: 経年劣化, kind: uncertainty, eid: E110}<br>output: {id: N050, name: 熱伝導材の温度, kind: output, eid: E111}<br>x: 2579.1250928243003<br>y: 2161.7778523763022<br>N051:<br>name: ヒーターの温度<br>を決める働き<br>cluster: D<br>formula: I^2R<br>has_formula: 'true'<br>inputs:<br>top:<br>- {id: N024, name: ヒーター電圧, kind: param, eid: E069}<br>- {id: N022, name: ヒーター電流, kind: param, eid: E070}<br>bottom:<br>- {id: N136, name: セルとの接触状態, kind: uncertainty, eid: E071}<br>- {id: N120, name: ヒーターの内部抵抗ばらつき, kind: uncertainty, eid: E072}<br>- {id: N137, name: セルとの接触状態, kind: uncertainty, eid: E073}<br>output: {id: N023, name: ヒーター温度, kind: output, eid: E074}<br>x: 1265.5417188008628<br>y: 1605.4166158040366<br>notes: 【推奨条件】<br>使用環境の外気温度を正確に測定し、放置時間を一定に保つこと<br>【注意事項】<br>初期温度が高いと熱暴走リスクが増加するため、外気温度管理が重要<br>issue: 'open_port(left); notes_copy_paste: N006 と同一文言'<br>N055:<br>name: 熱伝導材の温度<br>を決める働き<br>cluster: F<br>formula: kA(T1-T2)/L<br>has_formula: 'true'<br>inputs:<br>top:<br>- {id: N057, name: 熱伝導材の熱伝導率, kind: param, eid: E119}<br>- {id: N058, name: 熱伝導材の厚み, kind: param, eid: E120}<br>- {id: N059, name: 熱伝導材の面積, kind: param, eid: E121}<br>left:<br>- {id: N027, name: ロアケースの温度, kind: chain, eid: E122}<br>bottom:<br>- {id: N151, name: 接触状態, kind: uncertainty, eid: E123}<br>- {id: N152, name: 接触圧の変化, kind: uncertainty, eid: E124}<br>- {id: N153, name: 経年劣化, kind: uncertainty, eid: E125}<br>output: {id: N056, name: 熱伝導材の温度, kind: output, eid: E126}<br>x: 3624.0833854675293<br>y: 2161.7778523763022<br>N063:<br>name: デブリの温度<br>を決める働き<br>cluster: C<br>formula: hA(T1-T2)<br>has_formula: 'true'<br>inputs:<br>top:<br>- {id: N107, name: 熱伝達率, kind: param, eid: E051}<br>- {id: N108, name: 受熱面積, kind: param, eid: E052}<br>left:<br>- {id: N005, name: デブリの熱容量, kind: chain, eid: E053}<br>- {id: N087, name: セル上面の雰囲気温度, kind: chain, eid: E054, note: 'セル上面の雰囲気温度: CSV(3649,547) の折れ点を視認し x≈3649 を下降'}<br>- {id: N003, name: セル初期温度, kind: chain, eid: E055, confidence: med, note: 'セル初期温度: y=1317 の水平幹線が x≈3647 で終端。消去法により N063 左ポートと判定(演繹)'}<br>- {id: N025, name: トリガーセルの温度, kind: chain, eid: E056, confidence: med, note: 'トリガーセルの温度: y=1493 の水平幹線が x≈3647 で終端。消去法により N063 左ポートと判定(演繹)'}<br>bottom:<br>- {id: N106, name: 流速変動, kind: uncertainty, eid: E057}<br>- {id: N140, name: 噴出速度, kind: uncertainty, eid: E058}<br>- {id: N141, name: 飛散距離, kind: uncertainty, eid: E059}<br>output: {id: N098, name: デブリの温度, kind: output, eid: E060}<br>x: 3781.0418001810713<br>y: 985.4165649414062<br>notes: 【推奨条件】<br>発煙セルの温度とガス流量をリアルタイムで監視し、異常を早期検知すること<br>【注意事項】<br>発煙ガスの熱量はセル間の熱伝達に大きく影響するため、過大評価を避ける<br>N067:<br>name: 熱伝導材の温度<br>を決める働き<br>cluster: G<br>formula: kA(T1-T2)/L<br>has_formula: 'true'<br>inputs:<br>top:<br>- {id: N069, name: 熱伝導材の熱伝導率, kind: param, eid: E142}<br>- {id: N070, name: 熱伝導材の厚み, kind: param, eid: E143}<br>- {id: N071, name: 熱伝導材の面積, kind: param, eid: E144}<br>left:<br>- {id: N038, name: 冷却器の温度, kind: chain, eid: E145}<br>bottom:<br>- {id: N114, name: 接触状態, kind: uncertainty, eid: E146}<br>- {id: N161, name: 接触圧の変化, kind: uncertainty, eid: E147}<br>- {id: N162, name: 経年劣化, kind: uncertainty, eid: E148}<br>output: {id: N068, name: 熱伝導材の温度, kind: output, eid: E149}<br>x: 2677.041759490967<br>y: 2471.0278828938804<br>N072:<br>name: LLCの温度<br>を決める働き<br>cluster: G<br>formula: mc(Tout-Tin)<br>has_formula: 'true'<br>inputs:<br>top:<br>- {id: N074, name: LLCの比熱, kind: param, eid: E127}<br>- {id: N075, name: LLCの質量流量, kind: param, eid: E128}<br>- {id: N076, name: LLCの入り口温度, kind: param, eid: E129}<br>bottom:<br>- {id: N156, name: 流量脈動, kind: uncertainty, eid: E130}<br>- {id: N157, name: 気泡混入, kind: uncertainty, eid: E131}<br>- {id: N158, name: 入り口温度ばらつき, kind: uncertainty, eid: E132}<br>output: {id: N073, name: LLCの温度, kind: output, eid: E133}<br>x: 1834.2361768086753<br>y: 2473.0278523763022<br>issue: 'open_port(left): mc(Tout-Tin) の Tout が未接続。冷却回路が閉じていない'<br>N077:<br>name: 冷却器周辺の雰囲気温度<br>を決める働き<br>cluster: H<br>formula: hA(T1-T2)<br>has_formula: 'true'<br>inputs:<br>top:<br>- {id: N079, name: 熱伝達係数, kind: param, eid: E163}<br>- {id: N080, name: 放熱面積, kind: param, eid: E164}<br>left:<br>- {id: N081, name: シェアパネルの温度, kind: chain, eid: E165}<br>bottom:<br>- {id: N168, name: 自然対流状態, kind: uncertainty, eid: E166}<br>- {id: N169, name: 冷却器表面状態, kind: uncertainty, eid: E167}<br>output: {id: N078, name: 冷却器周辺の雰囲気温度, kind: output, eid: E168}<br>x: 1684.569632212321<br>y: 2860.8196004231772<br>N082:<br>name: シェアパネルの温度<br>を決める働き<br>cluster: H<br>formula: kA(T1-T2)/L<br>has_formula: 'true'<br>inputs:<br>top:<br>- {id: N083, name: シェアパネルの熱伝導率, kind: param, eid: E156}<br>- {id: N084, name: シェアパネルの厚み, kind: param, eid: E157}<br>- {id: N085, name: シェアパネルの放熱面積, kind: param, eid: E158}<br>left:<br>- {id: N119, name: シェアパネル周辺の雰囲気温度, kind: chain, eid: E159}<br>bottom:<br>- {id: N166, name: 接触状態, kind: uncertainty, eid: E160}<br>- {id: N167, name: シェアパネルの変形, kind: uncertainty, eid: E161}<br>output: {id: N081, name: シェアパネルの温度, kind: output, eid: E162}<br>x: 1210.3473218282065<br>y: 2858.8333129882812<br>N086:<br>name: セル上面の雰囲気温度<br>を決める働き<br>cluster: B<br>formula: hA(T1-T2)<br>has_formula: 'true'<br>inputs:<br>top:<br>- {id: N099, name: 熱伝達係数, kind: param, eid: E038}<br>- {id: N100, name: 放熱面積, kind: param, eid: E039}<br>left:<br>- {id: N109, name: 断熱シートの温度, kind: chain, eid: E040, note: '断熱シートの温度: CSV x≈2885 で下降'}<br>- {id: N004, name: ガスの温度, kind: chain, eid: E041}<br>bottom:<br>- {id: N132, name: ガス流れ方向, kind: uncertainty, eid: E042}<br>- {id: N133, name: ガス対流状態, kind: uncertainty, eid: E043}<br>output: {id: N087, name: セル上面の雰囲気温度, kind: output, eid: E044}<br>x: 2977.9861768086753<br>y: 522.1387736002605<br>notes: 【推奨条件】<br>発煙セルの温度とガス流量をリアルタイムで監視し、異常を早期検知すること<br>【注意事項】<br>発煙ガスの熱量はセル間の熱伝達に大きく影響するため、過大評価を避ける<br>N091:<br>name: シェアパネル周辺の雰囲気温度<br>を決める働き<br>cluster: H<br>formula: hA(T1-T2)<br>has_formula: 'true'<br>inputs:<br>top:<br>- {id: N092, name: 熱伝達係数, kind: param, eid: E150}<br>- {id: N093, name: 放熱面積, kind: param, eid: E151}<br>left:<br>- {id: N007, name: 環境温度, kind: chain, eid: E152, confidence: med, note: '環境温度: CSV x≈405 の縦チャネルを下降。幹線の起点側が未撮影のため med'}<br>bottom:<br>- {id: N164, name: 自然対流の不安定性, kind: uncertainty, eid: E153}<br>- {id: N165, name: 発煙ガスの影響, kind: uncertainty, eid: E154}<br>output: {id: N119, name: シェアパネル周辺の雰囲気温度, kind: output, eid: E155}<br>x: 586.5139071146648<br>y: 2860.8196004231772<br>N094:<br>name: アッパーケース周辺の雰囲気温度<br>を決める働き<br>cluster: A<br>formula: hA(T1-T2)<br>has_formula: 'true'<br>inputs:<br>top:<br>- {id: N095, name: 熱伝達係数, kind: param, eid: E001}<br>- {id: N096, name: 放熱面積, kind: param, eid: E002}<br>left:<br>- {id: N007, name: 環境温度, kind: chain, eid: E003}<br>bottom:<br>- {id: N121, name: 自然対流の不安定性, kind: uncertainty, eid: E004}<br>- {id: N163, name: 発煙ガスの影響, kind: uncertainty, eid: E005}<br>output: {id: N097, name: アッパーケースの周辺の雰囲気温度, kind: output, eid: E006}<br>x: 891.902904510498<br>y: 290.3887939453125<br>N110:<br>name: 断熱シートの温度<br>を決める働き<br>cluster: A<br>formula: kA(T1-T2)/L<br>has_formula: 'true'<br>inputs:<br>top:<br>- {id: N111, name: 断熱シートの熱伝導率, kind: param, eid: E013}<br>- {id: N112, name: 断熱シートの厚み, kind: param, eid: E014}<br>- {id: N113, name: 断熱シートの面積, kind: param, eid: E015}<br>left:<br>- {id: N028, name: アッパーケースの温度, kind: chain, eid: E016}<br>bottom:<br>- {id: N123, name: 密着状態, kind: uncertainty, eid: E017}<br>- {id: N124, name: 厚みばらつき, kind: uncertainty, eid: E018}<br>- {id: N125, name: 経年劣化, kind: uncertainty, eid: E019}<br>output: {id: N109, name: 断熱シートの温度, kind: output, eid: E020}<br>x: 1976.2222607930503<br>y: 288.38877360026044<br>variables:<br>N001: {name: 隣接セルの温度, cluster: I, x: 4887.250296274821, y: 1901.3193988800049, notes: 電池パックにはLi電池が4スタック搭載されています。1スタックは24セル構成で、中間に中間Pという樹脂部品があります。セルは、樹脂枠で前後から挟まれて積層されています。スタックは、エンドプレートでロアケースに締結されています。ロアケースの上には樹脂のアッパーケースで蓋がされており、樹脂シールとボルト締結で密閉されています。スタックの中間P手前12セルの中央から発煙し、中間Pまで連鎖発煙していきます。中間Pは前後に断熱材が搭載されており、その断熱材によって中間Pより先のセルに熱伝導する熱を下げています。 また、スタック間には遮熱版が搭載されており、トリガーとなるスタックからの放射熱を防止する対策がはいっています。それぞれのスタックの下面には熱伝導材が塗布され、スタックの下方に設定されている冷却器と接地しています。冷却器とロアケースは直接接しておらず、エンドプレートの当たりでロアケースと締結されています。冷却器はアルミです。 ロアケースは鉄です。アッパーケースは樹脂(難燃性)です。 トリガーセルの発煙は外部ヒーターを活用します。 使用するセルは新品想定です。劣化のパラメーターは不要です。 セルの初期温度は放置中の外気温度で定義します。 セルからは高温のガスが噴出します。そのガスには微粉となったデブリが混流しており、それが熱容量を持っています。ガスによる熱伝達によるセルの温度上昇と、微粉が持つ熱容量からの熱伝導を考慮する必要があります。 また、ロアケース、アッパーケースからは大気中に放熱が行われるためその因子も電池パック内の雰囲気温度を下げる要素として入れる必要があります。, issue: 'premise_conflict: notes に「新品想定。劣化のパラメーターは不要」とあるが N044 劣化状態 / 経年劣化x4 / セル個体ばらつきx2 が実在'}<br>N003: {name: セル初期温度, cluster: C|D, x: 1478.6250114440918, y: 1316.0833231608074}<br>N004: {name: ガスの温度, cluster: B, x: 2712.7916781107588, y: 546.6665649414062}<br>N005: {name: デブリの熱容量, cluster: C, x: 3512.8057161966963, y: 1009.9166870117188}<br>N007: {name: 環境温度, cluster: A|B|D|H, x: 171.66667302449545, y: 846.8888346354167}<br>N008: {name: 放置時間, cluster: D, x: 898.9445304870605, y: 1277.0833841959636}<br>N009: {name: セルの熱伝導率, cluster: D, x: 1174.6112378438315, y: 1100.361073811849}<br>N010: {name: 外気温度変動, cluster: D, x: 1044.888947804769, y: 1372.5416564941406}<br>N011: {name: 冷却器の動作状態, cluster: D, x: 1156.4445304870605, y: 1372.4444071451824}<br>N013: {name: ガス組成, cluster: B, x: 2043.9582633972168, y: 598.9861043294271}<br>N014: {name: ガス流量, cluster: B, x: 2046.9306755065918, y: 540.04150390625}<br>N015: {name: 発煙速度, cluster: B, x: 2500.4444694519043, y: 681.7221069335938}<br>N016: {name: ガスの拡散経路, cluster: B, x: 2602.4028841654463, y: 681.7221069335938}<br>N018: {name: デブリの質量, cluster: C, x: 3022.041759490967, y: 978.0833943684896}<br>N019: {name: デブリの比熱, cluster: C, x: 3022.1390088399253, y: 1047.2500101725261}<br>N020: {name: デブリの凝集状態, cluster: C, x: 3279.9584261576338, y: 1151.361083984375}<br>N022: {name: ヒーター電流, cluster: D, x: 1329.3751335144043, y: 1483.236083984375}<br>N023: {name: ヒーター温度, cluster: D, x: 1485.819632212321, y: 1530.4166158040366}<br>N024: {name: ヒーター電圧, cluster: D, x: 1209.9584261576335, y: 1486.8194325764975}<br>N025: {name: トリガーセルの温度, cluster: B|C|D|E|F, x: 2199.0835889180503, y: 1500.2222188313804}<br>N026: {name: SOC, cluster: D, x: 1508.666820526123, y: 1595.6249491373699}<br>N027: {name: ロアケースの温度, cluster: F, x: 3324.9999300638838, y: 2188.333282470703}<br>N028: {name: アッパーケースの温度, cluster: A, x: 1703.430716196696, y: 314.87497965494794}<br>N031: {name: ロアケースの熱伝導率, cluster: F, x: 2960.166759490967, y: 2024.9999618530273}<br>N032: {name: ロアケースの厚み, cluster: F, x: 3126.7919222513838, y: 2024.9999618530273}<br>N033: {name: ロアケースの面積, cluster: F, x: 3259.7915967305503, y: 2024.9999618530273}<br>N035: {name: 冷却器の熱伝導率, cluster: G, x: 2102.2500928243003, y: 2366.902821858724}<br>N036: {name: 冷却器の厚み, cluster: G, x: 2214.513886769613, y: 2366.902821858724}<br>N037: {name: 冷却器の面積, cluster: G, x: 2331.819591522217, y: 2366.902821858724}<br>N038: {name: 冷却器の温度, cluster: G, x: 2429.6666781107588, y: 2497.513885498047}<br>N039: {name: セル種類, cluster: D, x: 1798.2083447774253, y: 1399.5694478352866, notes: undefined, issue: notes_value_undefined}<br>N040: {name: 電極構成, cluster: D, x: 1901.5001742045085, y: 1399.5694478352866, notes: undefined, issue: notes_value_undefined}<br>N041: {name: SOC, cluster: D, x: 2010.0833447774253, y: 1399.5694478352866}<br>N042: {name: セル容量, cluster: D, x: 2083.847382863363, y: 1399.5694478352866}<br>N043: {name: セル個体ばらつき, cluster: D, x: 1761.6250928243003, y: 1693.9445368448894}<br>N044: {name: 劣化状態, cluster: D, x: 1989.7500928243003, y: 1697.2916158040366, notes: undefined, issue: notes_value_undefined}<br>N045: {name: バスバーの温度, cluster: E|I, x: 4038.583710988363, y: 1836.7917664845786}<br>N048: {name: 弾性断熱材の温度, cluster: E|I, x: 3999.0833854675293, y: 1583.805643717448}<br>N050: {name: 熱伝導材の温度, cluster: F, x: 2835.8611361185713, y: 2291.263885498047}<br>N052: {name: 熱伝導材の熱伝導率, cluster: F, x: 2449.1250928243003, y: 2037.3473230997722}<br>N053: {name: 熱伝導材の厚み, cluster: F, x: 2625.347423553467, y: 2024.9999618530273}<br>N054: {name: 熱伝導材の面積, cluster: F, x: 2750.055675506592, y: 2024.9999618530273}<br>N056: {name: 熱伝導材の温度, cluster: F|I, x: 4028.5002962748213, y: 2188.333282470703}<br>N057: {name: 熱伝導材の熱伝導率, cluster: F, x: 3484.0003776550293, y: 2024.9999618530273}<br>N058: {name: 熱伝導材の厚み, cluster: F, x: 3660.1116243998213, y: 2024.9999618530273}<br>N059: {name: 熱伝導材の面積, cluster: F, x: 3784.916718800863, y: 2024.9999618530273}<br>N060: {name: 弾性断熱材の熱伝導率, cluster: E, x: 2478.8197135925293, y: 1398.0416870117188}<br>N061: {name: 弾性断熱材の厚み, cluster: E, x: 2644.2778841654463, y: 1399.5694478352866}<br>N062: {name: 弾性断熱材の面積, cluster: E, x: 2769.0416781107588, y: 1399.5694478352866}<br>N064: {name: バスバーの熱伝導率, cluster: E, x: 2477.4584261576338, y: 1732.4444325764975}<br>N065: {name: バスバーの厚み, cluster: E, x: 2665.2640088399253, y: 1732.4444325764975}<br>N066: {name: 熱伝導材の面積, cluster: E, x: 2804.028046925863, y: 1732.4444325764975, issue: 'label_mismatch: 図の表記「熱伝導材の面積」は誤り。kA/L の A はバスバー面積であるべき'}<br>N068: {name: 熱伝導材の温度, cluster: F|G, x: 2888.250255584717, y: 2497.513885498047}<br>N069: {name: 熱伝導材の熱伝導率, cluster: G, x: 2524.2363802591963, y: 2366.902821858724}<br>N070: {name: 熱伝導材の厚み, cluster: G, x: 2700.3750928243003, y: 2366.902821858724}<br>N071: {name: 熱伝導材の面積, cluster: G, x: 2825.1946322123213, y: 2366.902821858724}<br>N073: {name: LLCの温度, cluster: G, x: 2059.2361768086753, y: 2497.513885498047}<br>N074: {name: LLCの比熱, cluster: G, x: 1706.263968149821, y: 2356.888885498047}<br>N075: {name: LLCの質量流量, cluster: G, x: 1816.4167594909668, y: 2356.888885498047}<br>N076: {name: LLCの入り口温度, cluster: G, x: 1935.8332633972168, y: 2356.888885498047}<br>N078: {name: 冷却器周辺の雰囲気温度, cluster: G|H, x: 1958.8056755065918, y: 2885.333455403646}<br>N079: {name: 熱伝達係数, cluster: H, x: 1628.5416984558105, y: 2738.638916015625}<br>N080: {name: 放熱面積, cluster: H, x: 1814.7362581888835, y: 2738.638916015625}<br>N081: {name: シェアパネルの温度, cluster: H, x: 1446.1526807149253, y: 2885.333455403646}<br>N083: {name: シェアパネルの熱伝導率, cluster: H, x: 997.4027824401855, y: 2738.638916015625}<br>N084: {name: シェアパネルの厚み, cluster: H, x: 1184.9167188008628, y: 2738.638916015625}<br>N085: {name: シェアパネルの放熱面積, cluster: H, x: 1319.9027824401855, y: 2738.638916015625}<br>N087: {name: セル上面の雰囲気温度, cluster: B|C|I, x: 3332.6114209493003, y: 546.6665649414062}<br>N088: {name: アッパーケースの熱伝導率, cluster: A, x: 1310.8473014831543, y: 139.68058268229169}<br>N089: {name: アッパーケースの厚み, cluster: A, x: 1493.8472811381023, y: 139.68058268229169}<br>N090: {name: アッパーケースの面積, cluster: A, x: 1635.5972607930503, y: 139.68058268229169}<br>N092: {name: 熱伝達係数, cluster: H, x: 561.5833346048992, y: 2730.972391764323}<br>N093: {name: 放熱面積, cluster: H, x: 747.7638562520345, y: 2730.972391764323}<br>N095: {name: 熱伝達係数, cluster: A, x: 863.472220102946, y: 139.68058268229169}<br>N096: {name: 放熱面積, cluster: A, x: 1049.6944491068523, y: 139.68058268229169}<br>N097: {name: アッパーケースの周辺の雰囲気温度, cluster: A, x: 1156.7500114440918, y: 314.87497965494794}<br>N098: {name: デブリの温度, cluster: C|I, x: 4071.388886769613, y: 1009.9166870117188}<br>N099: {name: 熱伝達係数, cluster: B, x: 2910.1529248555503, y: 436.9859822591146}<br>N100: {name: 放熱面積, cluster: B, x: 3080.0835482279463, y: 436.9859822591146}<br>N101: {name: 発煙時間, cluster: B, x: 2038.9582633972168, y: 476.38885498046875}<br>N102: {name: セルの種類, cluster: B, x: 2306.5001742045088, y: 425.15279134114587}<br>N103: {name: 安全弁の設計, cluster: B, x: 2395.3335889180503, y: 425.15279134114587}<br>N104: {name: セルばらつき, cluster: B, x: 2359.472382863363, y: 681.7221069335938}<br>N105: {name: SOC, cluster: B, x: 2451.1528841654463, y: 681.7221069335938}<br>N106: {name: 流速変動, cluster: C, x: 3711.0002962748213, y: 1144.5833841959636}<br>N107: {name: 熱伝達率, cluster: C, x: 3734.1252962748213, y: 894.1805013020834}<br>N108: {name: 受熱面積, cluster: C, x: 3854.1252962748213, y: 896.2916056315105}<br>N109: {name: 断熱シートの温度, cluster: A|B, x: 2211.1805534362793, y: 314.87497965494794}<br>N111: {name: 断熱シートの熱伝導率, cluster: A, x: 1852.513968149821, y: 141.20829264322919}<br>N112: {name: 断熱シートの厚み, cluster: A, x: 2035.5140495300293, y: 141.20829264322919}<br>N113: {name: 断熱シートの面積, cluster: A, x: 2177.2500928243003, y: 141.20829264322919}<br>N114: {name: 接触状態, cluster: G, x: 2580.3750928243003, y: 2599.6111551920576}<br>N118: {name: セルの放熱面積, cluster: D, x: 1357.0278231302898, y: 1100.361073811849}<br>N119: {name: シェアパネル周辺の雰囲気温度, cluster: H, x: 891.7917188008627, y: 2885.333455403646}<br>N120: {name: ヒーターの内部抵抗ばらつき, cluster: D, x: 1227.8194491068523, y: 1737.861099243164}<br>N121: {name: 自然対流の不安定性, cluster: A, x: 829.7916984558105, y: 429.97212727864587, notes: undefined, issue: notes_value_undefined}<br>N122: {name: 熱による破損, cluster: A, x: 1495.2640088399253, y: 423.5277303059896}<br>N123: {name: 密着状態, cluster: A, x: 1870.1252555847168, y: 425.43050130208337}<br>N124: {name: 厚みばらつき, cluster: A, x: 1991.6389274597168, y: 424.30552164713544}<br>N125: {name: 経年劣化, cluster: A, x: 2139.0416781107588, y: 425.43050130208337}<br>N126: {name: ラプチャー状態, cluster: B, x: 2359.2640495300293, y: 747.388916015625}<br>N127: {name: 安全弁開口状態, cluster: B, x: 2494.069550832113, y: 746.6665649414062}<br>N128: {name: 発煙タイミング, cluster: B, x: 2655.5557568868003, y: 742.9444376627605}<br>N129: {name: ガス組成変動, cluster: B, x: 2356.277802785238, y: 805.166727701823}<br>N130: {name: デブリの粒径分布, cluster: C, x: 3456.014130910238, y: 1150.4722086588542}<br>N131: {name: ガス燃焼状態, cluster: B, x: 2502.9029655456543, y: 817.0000203450521}<br>N132: {name: ガス流れ方向, cluster: B, x: 2942.7361361185713, y: 681.8194580078125}<br>N133: {name: ガス対流状態, cluster: B, x: 3096.3614209493003, y: 687.2777303059896}<br>N134: {name: セル間温度ばらつき, cluster: D, x: 1578.819408416748, y: 1501.4861297607422}<br>N135: {name: セル間温度ばらつき, cluster: D, x: 1336.3333447774253, y: 1372.5833129882812}<br>N136: {name: セルとの接触状態, cluster: D, x: 1082.7083651224773, y: 1739.9999491373699}<br>N137: {name: セルとの接触状態, cluster: D, x: 1441.8194897969565, y: 1738.166732788086}<br>N138: {name: 熱暴走位置, cluster: D, x: 2120.902843475342, y: 1699.0695063273113}<br>N139: {name: デブリの質量ばらつき, cluster: C, x: 3131.3195101420088, y: 1150.4722086588542}<br>N140: {name: 噴出速度, cluster: C, x: 3829.3055534362793, y: 1144.1944885253906}<br>N141: {name: 飛散距離, cluster: C, x: 3949.3336296081543, y: 1144.5833841959636}<br>N142: {name: 圧縮状態, cluster: E, x: 2486.194591522217, y: 1680.7916895548503}<br>N143: {name: 接触状態, cluster: E, x: 2622.041759490967, y: 1680.7916895548503}<br>N144: {name: 破損状態, cluster: E, x: 2818.513927459717, y: 1680.7916895548503}<br>N145: {name: ボルト締結・溶接状態, cluster: E, x: 2463.7501335144043, y: 1949.6250661214194}<br>N146: {name: 接触抵抗, cluster: E, x: 2661.013927459717, y: 1949.6250661214194}<br>N147: {name: 変形による浮き, cluster: E, x: 2791.347382863363, y: 1949.6250661214194}<br>N148: {name: 接触状態, cluster: F, x: 2404.7918001810713, y: 2287.1666717529297}<br>N149: {name: 接触圧の変化, cluster: F, x: 2525.5972607930503, y: 2287.1666717529297}<br>N150: {name: 経年劣化, cluster: F, x: 2676.7919222513838, y: 2287.1666717529297}<br>N151: {name: 接触状態, cluster: F, x: 3610.611298878988, y: 2289.138946533203}<br>N152: {name: 接触圧の変化, cluster: F, x: 3731.4031283060713, y: 2289.138946533203}<br>N153: {name: 経年劣化, cluster: F, x: 3882.597382863363, y: 2289.138946533203}<br>N154: {name: 経年劣化, cluster: E, x: 2985.5834261576338, y: 1680.7916895548503}<br>N155: {name: ロアケースの変形, cluster: F, x: 3257.8057161966963, y: 2255.194549560547}<br>N156: {name: 流量脈動, cluster: G, x: 1747.402884165446, y: 2596.305643717448}<br>N157: {name: 気泡混入, cluster: G, x: 1877.0279248555503, y: 2599.986216227214}<br>N158: {name: 入り口温度ばらつき, cluster: G, x: 1984.4168408711753, y: 2597.7779134114585}<br>N159: {name: 接触状態, cluster: G, x: 2200.722382863363, y: 2600.333455403646}<br>N160: {name: 流量ばらつき, cluster: G, x: 2303.7639681498213, y: 2598.111216227214}<br>N161: {name: 接触圧の変化, cluster: G, x: 2704.4168408711753, y: 2599.6111551920576}<br>N162: {name: 経年劣化, cluster: G, x: 2856.277802785238, y: 2599.6111551920576}<br>N163: {name: 発煙ガスの影響, cluster: A, x: 1049.263947804769, y: 429.5554606119792}<br>N164: {name: 自然対流の不安定性, cluster: H, x: 513.3194796244304, y: 3023.611246744792, notes: undefined, issue: notes_value_undefined}<br>N165: {name: 発煙ガスの影響, cluster: H, x: 743.333314259847, y: 3023.194580078125}<br>N166: {name: 接触状態, cluster: H, x: 1132.7777417500815, y: 3020.8056640625}<br>N167: {name: シェアパネルの変形, cluster: H, x: 1308.3195304870605, y: 3024.444580078125}<br>N168: {name: 自然対流状態, cluster: H, x: 1630.000031789144, y: 3023.3334350585938}<br>N169: {name: 冷却器表面状態, cluster: H, x: 1818.4166781107585, y: 3025.0001017252607}<br>N170: {name: セル内部温度分布, cluster: I, x: 4665.889212290446, y: 2005.888989766439}<br>N171: {name: セル個体ばらつき, cluster: I, x: 4507.000052134196, y: 2005.888989766439}<br>N177: {name: 断熱材経路の熱コンダクタンス, cluster: I, x: 4291.0, y: 1720.0}<br>N178: {name: バスバー経路の熱コンダクタンス, cluster: I, x: 4441.0, y: 1720.0}<br>N179: {name: TIM経路の熱コンダクタンス, cluster: I, x: 4591.0, y: 1720.0}<br>N180: {name: 雰囲気対流の熱コンダクタンス, cluster: I, x: 4741.0, y: 1720.0}<br>N181: {name: デブリ接触の熱コンダクタンス, cluster: I, x: 4891.0, y: 1720.0}<br>N182: {name: ガスの比熱, cluster: B, x: 2214.0, y: 360.0}<br>N183: {name: ガスの燃焼熱, cluster: B, x: 2354.0, y: 360.0}<br>N184: {name: 受熱コンダクタンス, cluster: B, x: 2494.0, y: 360.0}<br>N185: {name: 熱暴走反応熱係数, cluster: D, x: 1726.0, y: 1300.0}<br>N186: {name: ヒーター接触コンダクタンス, cluster: D, x: 1876.0, y: 1300.0}<br>N187: {name: 放熱コンダクタンス, cluster: D, x: 2026.0, y: 1300.0}<br>annotations:<br>N115: {name: 8．セル×冷却器の接触を維持すること, cluster: G, x: 2521.347382863363, y: 2669.4722493489585, annotation_target: N067}<br>N116: {name: 7．セル安全弁からの安定した発煙<br>（ラプチャさせないこと）, cluster: D, x: 1719.0416781107585, y: 1782.2500292460124, annotation_target: N021}<br>N117: {name: 2．セル間熱連鎖, cluster: I, x: 4525.986461639404, y: 2133.625005086263, annotation_target: N002}<br>N172: {name: コリレーション難易度：高, cluster: B, x: 3156.861298878988, y: 806.0555013020834, annotation_target: N086}<br>N173: {name: コリレーション難易度：高, cluster: C, x: 3723.111298878988, y: 802.5693766276042, annotation_target: N063}<br>N174: {name: コリレーション難易度：高, cluster: D, x: 1789.9862988789878, y: 1241.8055725097656, annotation_target: N006}<br>N175: {name: コリレーション難易度：高, cluster: A, x: 2244.9999300638838, y: 354.29158528645837, annotation_target: N110}<br>N176: {name: コリレーション難易度：高, cluster: I, x: 4471.444632212321, y: 1730.708325703939, annotation_target: N002}</p></li></ul><p></p>",
+            "references": [],
+            "sourceImagePath": null,
+            "thumbnailPath": null,
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        }
+    ],
+    "references": [],
+    "sourceFilePath": null,
+    "createdAt": "2026-09-22T00:31:49.100Z",
+    "updatedAt": "2026-09-22T09:35:38.315636",
+    "skeleton": {
+        "documentId": "95bb29d3-494d-46d0-a7d8-fbd41cc5939a",
+        "roots": [
+            {
+                "id": "c9ce93c8-8fd0-4ec9-b2da-4f6dfec4d18b",
+                "title": "4BV2セル間熱連鎖 機能ブロック図 — 正本(このファイルだけを編集する)",
+                "level": 1,
+                "sectionType": "specification",
+                "pageId": "32df4323-a15a-4fed-8b21-811e31528f7f",
+                "startLine": 1,
+                "endLine": 0,
+                "children": [],
+                "linkedElementIds": [],
+                "pageIndex": 0,
+                "pageIds": [
+                    "32df4323-a15a-4fed-8b21-811e31528f7f"
+                ],
+                "pageIndices": [
+                    0
+                ]
+            },
+            {
+                "id": "c2881bf7-c71a-4a79-a0e7-77d652f13362",
+                "title": "構成:",
+                "level": 1,
+                "sectionType": "general",
+                "pageId": "32df4323-a15a-4fed-8b21-811e31528f7f",
+                "startLine": 1,
+                "endLine": 0,
+                "children": [],
+                "linkedElementIds": [],
+                "pageIndex": 0,
+                "pageIds": [
+                    "32df4323-a15a-4fed-8b21-811e31528f7f"
+                ],
+                "pageIndices": [
+                    0
+                ]
+            },
+            {
+                "id": "d4fcd55a-3064-4562-b4e4-6b9cf9af600e",
+                "title": "blocks … 機能ブロック(関数)。formula と入力(port別)・出力・issue を1箇所に集約",
+                "level": 1,
+                "sectionType": "definition",
+                "pageId": "32df4323-a15a-4fed-8b21-811e31528f7f",
+                "startLine": 1,
+                "endLine": 0,
+                "children": [],
+                "linkedElementIds": [],
+                "pageIndex": 0,
+                "pageIds": [
+                    "32df4323-a15a-4fed-8b21-811e31528f7f"
+                ],
+                "pageIndices": [
+                    0
+                ]
+            },
+            {
+                "id": "8d8649f0-de07-4fb6-b570-222d3360d8dc",
+                "title": "variables … 変数ノード(設計パラメータ・温度など)",
+                "level": 1,
+                "sectionType": "definition",
+                "pageId": "32df4323-a15a-4fed-8b21-811e31528f7f",
+                "startLine": 1,
+                "endLine": 0,
+                "children": [],
+                "linkedElementIds": [],
+                "pageIndex": 0,
+                "pageIds": [
+                    "32df4323-a15a-4fed-8b21-811e31528f7f"
+                ],
+                "pageIndices": [
+                    0
+                ]
+            },
+            {
+                "id": "69d9b59e-f176-4b42-8a02-f45b15b22230",
+                "title": "annotations … 注記(要求事項ラベル)。annotation_target で対象ブロックを指す",
+                "level": 1,
+                "sectionType": "definition",
+                "pageId": "32df4323-a15a-4fed-8b21-811e31528f7f",
+                "startLine": 1,
+                "endLine": 0,
+                "children": [],
+                "linkedElementIds": [],
+                "pageIndex": 0,
+                "pageIds": [
+                    "32df4323-a15a-4fed-8b21-811e31528f7f"
+                ],
+                "pageIndices": [
+                    0
+                ]
+            },
+            {
+                "id": "4d99f26c-21e8-4900-88a4-76528f5c1851",
+                "title": "ポートと kind:",
+                "level": 1,
+                "sectionType": "specification",
+                "pageId": "32df4323-a15a-4fed-8b21-811e31528f7f",
+                "startLine": 1,
+                "endLine": 0,
+                "children": [],
+                "linkedElementIds": [],
+                "pageIndex": 0,
+                "pageIds": [
+                    "32df4323-a15a-4fed-8b21-811e31528f7f"
+                ],
+                "pageIndices": [
+                    0
+                ]
+            },
+            {
+                "id": "3363564c-9c8c-48e8-bd54-4941b065640b",
+                "title": "top=設計パラメータ(param) / bottom=ばらつき・劣化(uncertainty) /",
+                "level": 1,
+                "sectionType": "specification",
+                "pageId": "32df4323-a15a-4fed-8b21-811e31528f7f",
+                "startLine": 1,
+                "endLine": 0,
+                "children": [],
+                "linkedElementIds": [],
+                "pageIndex": 0,
+                "pageIds": [
+                    "32df4323-a15a-4fed-8b21-811e31528f7f"
+                ],
+                "pageIndices": [
+                    0
+                ]
+            },
+            {
+                "id": "f3dd0774-4749-4518-bb11-b6188c0c2c10",
+                "title": "left=上流温度(chain)とparamの混在 / output=出力温度(各ブロック1本)",
+                "level": 1,
+                "sectionType": "specification",
+                "pageId": "32df4323-a15a-4fed-8b21-811e31528f7f",
+                "startLine": 1,
+                "endLine": 0,
+                "children": [],
+                "linkedElementIds": [],
+                "pageIndex": 0,
+                "pageIds": [
+                    "32df4323-a15a-4fed-8b21-811e31528f7f"
+                ],
+                "pageIndices": [
+                    0
+                ]
+            },
+            {
+                "id": "d5b0c560-81b2-49d7-b371-6108a7303cec",
+                "title": "派生物(graph.json / nodes.csv / edges.csv)は下記で再生成する。手で編集しない。",
+                "level": 1,
+                "sectionType": "procedure",
+                "pageId": "32df4323-a15a-4fed-8b21-811e31528f7f",
+                "startLine": 1,
+                "endLine": 0,
+                "children": [],
+                "linkedElementIds": [],
+                "pageIndex": 0,
+                "pageIds": [
+                    "32df4323-a15a-4fed-8b21-811e31528f7f"
+                ],
+                "pageIndices": [
+                    0
+                ]
+            },
+            {
+                "id": "a9b0ff32-c99b-4eb7-bcb1-5b3359aee665",
+                "title": "python graph_yaml.py to-artifacts",
+                "level": 1,
+                "sectionType": "procedure",
+                "pageId": "32df4323-a15a-4fed-8b21-811e31528f7f",
+                "startLine": 1,
+                "endLine": 0,
+                "children": [],
+                "linkedElementIds": [],
+                "pageIndex": 0,
+                "pageIds": [
+                    "32df4323-a15a-4fed-8b21-811e31528f7f"
+                ],
+                "pageIndices": [
+                    0
+                ]
+            },
+            {
+                "id": "9ceb2adc-0fe7-4507-ac26-433ce61cfb8a",
+                "title": "graph.json から本ファイルを起こし直す場合:",
+                "level": 1,
+                "sectionType": "procedure",
+                "pageId": "32df4323-a15a-4fed-8b21-811e31528f7f",
+                "startLine": 1,
+                "endLine": 0,
+                "children": [],
+                "linkedElementIds": [],
+                "pageIndex": 0,
+                "pageIds": [
+                    "32df4323-a15a-4fed-8b21-811e31528f7f"
+                ],
+                "pageIndices": [
+                    0
+                ]
+            },
+            {
+                "id": "90e708cf-f119-49fd-8317-f859aeb69b6b",
+                "title": "python graph_yaml.py to-yaml",
+                "level": 1,
+                "sectionType": "procedure",
+                "pageId": "32df4323-a15a-4fed-8b21-811e31528f7f",
+                "startLine": 1,
+                "endLine": 0,
+                "children": [],
+                "linkedElementIds": [],
+                "pageIndex": 0,
+                "pageIds": [
+                    "32df4323-a15a-4fed-8b21-811e31528f7f"
+                ],
+                "pageIndices": [
+                    0
+                ]
+            },
+            {
+                "id": "669037ef-6792-47da-b434-c5d0e31ba315",
+                "title": "eid はエッジID。source(既定 image)/confidence(既定 high)/note は非既定時のみ記載。",
+                "level": 1,
+                "sectionType": "specification",
+                "pageId": "32df4323-a15a-4fed-8b21-811e31528f7f",
+                "startLine": 1,
+                "endLine": 1,
+                "children": [],
+                "linkedElementIds": [],
+                "pageIndex": 0,
+                "pageIds": [
+                    "32df4323-a15a-4fed-8b21-811e31528f7f"
+                ],
+                "pageIndices": [
+                    0
+                ]
+            }
+        ],
+        "updatedAt": 1790037125338,
+        "isComplete": true
+    },
+    "headingRules": {
+        "ruleEntries": [],
+        "commonRules": {
+            "blankLineBeforeHeading": true,
+            "mergeSameLevelHeadings": true,
+            "fillMissingNumbers": true,
+            "preserveContentExactly": true
+        }
+    },
+    "digest": {
+        "overview": {
+            "summary": "本ドキュメントは、4BVにおける2セル間の熱連鎖（隣接セルへの熱伝導）を表す機能ブロック図のYAML正本を説明する。機能ブロック、変数ノード、要求事項ラベルなどの構成と、ポート種別ごとの接続ルールおよびノード・エッジ数を定義している。22個の機能ブロックに数式、入力、出力、issueを集約し、設計パラメータ、ばらつき・劣化、上流温度、出力温度の接続関係を扱う。graph.json、nodes.csv、edges.csvはYAMLまたはgraph.jsonから所定のPythonコマンドで再生成する派生物として位置付けられ、エッジIDや既定メタ情報の記法も示されている。",
+            "documentKind": "design_doc",
+            "purpose": "4BVの2セル間熱連鎖を表す機能ブロック図の正本YAMLの構成、接続ルール、派生物の再生成方法を明確にする。",
+            "scope": "blocks、variables、annotationsからなる機能ブロック図のデータ構成、ポートとkindの対応、エッジメタ情報、およびgraph.json・nodes.csv・edges.csvの相互生成手順を扱う。",
+            "keyTopics": [
+                "2セル間熱連鎖の機能ブロック図",
+                "YAML正本とデータ構成",
+                "機能ブロックの数式・入出力・issue",
+                "変数ノードと注記ノード",
+                "ポート種別と接続情報のkind",
+                "派生アーティファクトの再生成",
+                "エッジIDとメタ情報"
+            ],
+            "keyTerms": [
+                {
+                    "term": "4BV 2セル間熱連鎖",
+                    "definition": "4BVにおける2セル間の熱連鎖を表す機能ブロック図の対象領域。"
+                },
+                {
+                    "term": "blocks",
+                    "definition": "機能ブロックごとのformula、ポート別入力、出力、issueを集約するデータ構成。"
+                },
+                {
+                    "term": "variables",
+                    "definition": "設計パラメータや温度などの変数ノードを格納するデータ構成。"
+                },
+                {
+                    "term": "annotations",
+                    "definition": "要求事項ラベルなどの注記ノードを格納し、annotation_targetで対象ブロックを指定するデータ構成。"
+                },
+                {
+                    "term": "annotation_target",
+                    "definition": "注記が対象とする機能ブロックを指定する項目。"
+                },
+                {
+                    "term": "kind",
+                    "definition": "ポートに接続される情報の種類を表す分類。"
+                },
+                {
+                    "term": "param",
+                    "definition": "設計パラメータを表すkind。"
+                },
+                {
+                    "term": "uncertainty",
+                    "definition": "ばらつき・劣化を表すkind。"
+                },
+                {
+                    "term": "chain",
+                    "definition": "上流温度を表すkind。"
+                },
+                {
+                    "term": "eid",
+                    "definition": "エッジを識別するID。"
+                },
+                {
+                    "term": "graph.json",
+                    "definition": "機能ブロック図から生成される、またはYAML再生成の入力となる派生ファイル。"
+                },
+                {
+                    "term": "to-artifacts",
+                    "definition": "YAMLからgraph.json、nodes.csv、edges.csvを再生成する処理。"
+                },
+                {
+                    "term": "to-yaml",
+                    "definition": "graph.jsonから本ファイルを再生成する処理。"
+                }
+            ],
+            "targetSystem": "4BV"
+        },
+        "outline": [
+            {
+                "id": "6bb2c878-3735-4bd0-a957-38c1314ccf22",
+                "title": "4BV 2 セル間熱連鎖 機能ブロック図 — 正本(このファイルだけを編集する)",
+                "level": 1,
+                "summary": "4BVの2セル間熱連鎖を表す機能ブロック図であり、このファイルだけを編集する正本である。メタ情報としてCSV由来のノード・エッジ数、復元方法、各種ルールが記録されている。",
+                "keywords": [
+                    "4BV",
+                    "2セル間熱連鎖",
+                    "機能ブロック図",
+                    "正本"
+                ],
+                "pageIds": [
+                    "32df4323-a15a-4fed-8b21-811e31528f7f"
+                ],
+                "children": []
+            },
+            {
+                "id": "17581f7f-3bab-42e8-a9de-83926b587a1a",
+                "title": "構成:",
+                "level": 1,
+                "summary": "データ構成として、機能ブロック、変数ノード、注記をそれぞれ blocks、variables、annotations に集約することを示している。",
+                "keywords": [
+                    "blocks",
+                    "variables",
+                    "annotations",
+                    "データ構成"
+                ],
+                "pageIds": [
+                    "32df4323-a15a-4fed-8b21-811e31528f7f"
+                ],
+                "children": []
+            },
+            {
+                "id": "1ddc80bc-803e-42b4-b251-7630b88ec610",
+                "title": "blocks … 機能ブロック(関数)。formula と入力(port別)・出力・issue を1箇所に集約",
+                "level": 1,
+                "summary": "blocks には機能ブロックごとの formula、ポート別入力、出力、issue を集約する。本文では22ブロックすべてに数式があり、例としてセル初期温度、ガスの温度、トリガーセルの温度、各部材の温度などの入出力と数式が記載されている。",
+                "keywords": [
+                    "blocks",
+                    "機能ブロック",
+                    "formula",
+                    "入力",
+                    "出力",
+                    "issue"
+                ],
+                "pageIds": [
+                    "32df4323-a15a-4fed-8b21-811e31528f7f"
+                ],
+                "children": []
+            },
+            {
+                "id": "68e3bb99-c587-49b9-ab66-98de247a84e5",
+                "title": "variables … 変数ノード(設計パラメータ・温度など)",
+                "level": 1,
+                "summary": "variables は設計パラメータ、温度などの変数ノードを表す。ノード総数187のうち、変数ノードは157件である。",
+                "keywords": [
+                    "variables",
+                    "変数ノード",
+                    "設計パラメータ",
+                    "温度",
+                    "ノード"
+                ],
+                "pageIds": [
+                    "32df4323-a15a-4fed-8b21-811e31528f7f"
+                ],
+                "children": []
+            },
+            {
+                "id": "3fd77519-7349-428a-953a-960461001940",
+                "title": "annotations … 注記(要求事項ラベル)。annotation_target で対象ブロックを指す",
+                "level": 1,
+                "summary": "annotations は要求事項ラベルなどの注記を表し、annotation_target によって対象ブロックを指定する。注記ノードは8件として集計されている。",
+                "keywords": [
+                    "annotations",
+                    "注記",
+                    "要求事項ラベル",
+                    "annotation_target"
+                ],
+                "pageIds": [
+                    "32df4323-a15a-4fed-8b21-811e31528f7f"
+                ],
+                "children": []
+            },
+            {
+                "id": "02e7c28f-d6f3-4218-9d38-59aa9272afa2",
+                "title": "ポートと kind:",
+                "level": 1,
+                "summary": "機能ブロックのポート種別と接続される情報の種類を定義している。top、bottom、left、output の各ポートについて、設計パラメータ、ばらつき・劣化、上流温度、出力温度の対応を示す。",
+                "keywords": [
+                    "ポート",
+                    "kind",
+                    "top",
+                    "bottom",
+                    "left",
+                    "output"
+                ],
+                "pageIds": [
+                    "32df4323-a15a-4fed-8b21-811e31528f7f"
+                ],
+                "children": []
+            },
+            {
+                "id": "3c68a969-f822-4163-8c4c-93973cbd50d0",
+                "title": "top=設計パラメータ(param) / bottom=ばらつき・劣化(uncertainty) /",
+                "level": 1,
+                "summary": "top ポートは設計パラメータ(param)、bottom ポートはばらつき・劣化(uncertainty)を接続する。集計では top エッジ64件、bottom エッジ63件である。",
+                "keywords": [
+                    "top",
+                    "設計パラメータ",
+                    "param",
+                    "bottom",
+                    "ばらつき",
+                    "劣化",
+                    "uncertainty"
+                ],
+                "pageIds": [
+                    "32df4323-a15a-4fed-8b21-811e31528f7f"
+                ],
+                "children": []
+            },
+            {
+                "id": "45225d80-8375-4aba-875e-83777193ee83",
+                "title": "left=上流温度(chain)とparamの混在 / output=出力温度(各ブロック1本)",
+                "level": 1,
+                "summary": "left ポートには上流温度(chain)とパラメータ(param)が混在し、output は各ブロック1本の出力温度である。本文の集計では left エッジ38件、right エッジ22件で、出力温度は22ブロック分となっている。",
+                "keywords": [
+                    "left",
+                    "chain",
+                    "param",
+                    "output",
+                    "出力温度",
+                    "上流温度"
+                ],
+                "pageIds": [
+                    "32df4323-a15a-4fed-8b21-811e31528f7f"
+                ],
+                "children": []
+            },
+            {
+                "id": "6581d11a-1dea-4864-8536-e603974323cc",
+                "title": "派生物(graph.json / nodes.csv / edges.csv)は下記で再生成する。手で編集しない。",
+                "level": 1,
+                "summary": "graph.json、nodes.csv、edges.csv は下記の手順で再生成する派生物であり、手作業で編集しない。",
+                "keywords": [
+                    "graph.json",
+                    "nodes.csv",
+                    "edges.csv",
+                    "派生物",
+                    "再生成"
+                ],
+                "pageIds": [
+                    "32df4323-a15a-4fed-8b21-811e31528f7f"
+                ],
+                "children": []
+            },
+            {
+                "id": "0478f5b5-d8cb-4454-9134-49219b871719",
+                "title": "python graph_ yaml.py to-artifacts",
+                "level": 1,
+                "summary": "派生物を再生成するコマンドとして python graph_ yaml.py to-artifacts を示している。",
+                "keywords": [
+                    "python",
+                    "graph_ yaml.py",
+                    "to-artifacts"
+                ],
+                "pageIds": [
+                    "32df4323-a15a-4fed-8b21-811e31528f7f"
+                ],
+                "children": []
+            },
+            {
+                "id": "0978ffab-ba4c-4b09-a3c7-96460e642d46",
+                "title": "graph.json から本ファイルを起こし直す場合:",
+                "level": 1,
+                "summary": "graph.json から本ファイルを再生成する場合の手順を示す見出しである。",
+                "keywords": [
+                    "graph.json",
+                    "本ファイル",
+                    "再生成"
+                ],
+                "pageIds": [
+                    "32df4323-a15a-4fed-8b21-811e31528f7f"
+                ],
+                "children": []
+            },
+            {
+                "id": "881effd8-bae7-4b46-8923-0a5532556479",
+                "title": "python graph_ yaml.py to-yaml",
+                "level": 1,
+                "summary": "graph.json から本ファイルを起こし直すコマンドとして python graph_ yaml.py to-yaml を示している。",
+                "keywords": [
+                    "python",
+                    "graph_ yaml.py",
+                    "to-yaml"
+                ],
+                "pageIds": [
+                    "32df4323-a15a-4fed-8b21-811e31528f7f"
+                ],
+                "children": []
+            },
+            {
+                "id": "deb2d908-1f25-4b28-b09e-1633266aa645",
+                "title": "eid はエッジID。source(既定 image)/confidence(既定 high)/note は非既定時のみ記載。",
+                "level": 1,
+                "summary": "eid はエッジIDを表す。source の既定値は image、confidence の既定値は high であり、note は既定値でない場合のみ記載する。",
+                "keywords": [
+                    "eid",
+                    "エッジID",
+                    "source",
+                    "confidence",
+                    "note"
+                ],
+                "pageIds": [
+                    "32df4323-a15a-4fed-8b21-811e31528f7f"
+                ],
+                "children": []
+            }
+        ],
+        "sourceHash": "be139c9babc3510c4c2c979b235b4d4ddfcfd3c6",
+        "textHash": "58d3d6fd527e914e6db9d5fa3e9ac1f98547e7e7",
+        "generatedAt": "2026-09-22T09:36:00.124473",
+        "pageCount": 1,
+        "schemaVersion": 1,
+        "generator": "ai"
+    },
+    "coverage": null,
+    "modelBinding": null
+}

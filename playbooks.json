@@ -125,12 +125,20 @@
       "item_type": "file",
       "parent_id": null,
       "order": 17
+    },
+    {
+      "id": "a3e33582-1311-4d1d-b467-a245c46e31ae",
+      "name": "カスタムUIの作成と改善",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 18
     }
   ],
   "version": 2,
   "seeded_templates": [
     "block-hierarchy",
     "change-impact",
+    "custom-ui",
     "file-handling",
     "functional-flow",
     "hazard-safety",
@@ -255,6 +263,12 @@
       "item_id": "ee82f3b7-ff9f-4713-9da8-a208b53e2b86",
       "name": "構想からモデルへ（アイデアの段階的具体化）",
       "content_hash": "0840cb59c4a19d011713e1a4d7db35aa49398a077d717bf6217d5aa8d10b0cca",
+      "managed": true
+    },
+    "custom-ui": {
+      "item_id": "a3e33582-1311-4d1d-b467-a245c46e31ae",
+      "name": "カスタムUIの作成と改善",
+      "content_hash": "758117e38b9fcf2e04f8f9a956ef27bba35bf8d53a875ec87b368bfcfb3be1e5",
       "managed": true
     }
   }
