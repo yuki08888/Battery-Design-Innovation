@@ -51,17 +51,6 @@
             "targetKind": "element"
         },
         {
-            "id": "bb8a3d40-def8-492f-a8da-5e82d43188d8",
-            "sourceType": "page",
-            "sourceId": "2ecc251c-b5b3-44e0-a815-e46770954802",
-            "targetElementId": "fa69ae01-87d3-4d18-a359-449369579eec",
-            "linkType": "relates",
-            "description": "BBM要求仕様書の全体表題であり、統合モデルのBBMトップ要求REQ-BBM-001および部品検証要求REQ-VAL-BBM-001の根拠記述として紐づけ。",
-            "createdAt": "2026-09-19T14:21:57.918099",
-            "sourceQuote": "BBM（バスバーモジュール）要求仕様書",
-            "targetKind": "element"
-        },
-        {
             "id": "b7a8a0e9-3546-4633-b71c-ed3827478051",
             "sourceType": "page",
             "sourceId": "2ecc251c-b5b3-44e0-a815-e46770954802",
@@ -70,17 +59,6 @@
             "description": "BBM要求仕様書の全体表題であり、統合モデルのBBMトップ要求REQ-BBM-001および部品検証要求REQ-VAL-BBM-001の根拠記述として紐づけ。",
             "createdAt": "2026-09-19T14:21:57.918143",
             "sourceQuote": "BBM（バスバーモジュール）要求仕様書",
-            "targetKind": "element"
-        },
-        {
-            "id": "c954bb10-7d12-4fb9-9d00-2ce3069c7686",
-            "sourceType": "page",
-            "sourceId": "2ecc251c-b5b3-44e0-a815-e46770954802",
-            "targetElementId": "fdd91844-4d09-45d1-b074-ef9cb11b22a6",
-            "linkType": "derives",
-            "description": "TTIM準拠および前提条件の根拠記述としてREQ-BBM-002に紐づけ。",
-            "createdAt": "2026-09-19T14:22:01.966711",
-            "sourceQuote": "TTIMに記載の要項は、本要求仕様書に記載がなくても満足すること",
             "targetKind": "element"
         },
         {
