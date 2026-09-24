@@ -1618,8 +1618,8 @@
         }
     ],
     "scale": 0.7155555513699852,
-    "offset_x": 611.113583961546,
-    "offset_y": 89.9921598418486,
+    "offset_x": 534.113583961546,
+    "offset_y": 25.992159841848604,
     "relationship_type": "containment",
     "visible_relation_types": [
         "satisfy",
