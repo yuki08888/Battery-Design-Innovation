@@ -1,0 +1,47 @@
+{
+    "id": "d3fc9ef0-ad8d-4755-a239-1814c595f751",
+    "name": "熱拡散機能ブロック図yaml 隣接セルへの熱伝導 — 要求図",
+    "class_name": "FreeDiagram",
+    "nodes": [
+        {
+            "class_name": "DiagramNode",
+            "id": "0d0b16d9-2385-4717-b3de-bc44904899ed",
+            "element_id": "0d0b16d9-2385-4717-b3de-bc44904899ed",
+            "x": 60.0,
+            "y": 40.0,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "5202f861-f61a-4ed6-9547-c3fc7ed1f2f8",
+            "element_id": "5202f861-f61a-4ed6-9547-c3fc7ed1f2f8",
+            "x": 230.0,
+            "y": 40.0,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "8ebb8bca-23d7-42d2-aadd-b1752a03d2e6",
+            "element_id": "8ebb8bca-23d7-42d2-aadd-b1752a03d2e6",
+            "x": 400.0,
+            "y": 40.0,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "bf7583ae-89d0-483a-92fc-b252b77eb69b",
+            "element_id": "bf7583ae-89d0-483a-92fc-b252b77eb69b",
+            "x": 570.0,
+            "y": 40.0,
+            "width": 120,
+            "height": 80
+        }
+    ],
+    "edges": [],
+    "scale": 1.0,
+    "offset_x": 0.0,
+    "offset_y": 0.0
+}

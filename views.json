@@ -167,44 +167,14 @@
             "parent_id": "",
             "icon_key": "DescriptionOutlined",
             "icon_color": null
-        },
-        {
-            "id": "811a5d13-5c40-4c7e-a9e8-c565458f470d",
-            "name": "熱拡散機能ブロック図yaml 隣接セルへの熱伝導",
-            "parent_id": "",
-            "icon_key": "DescriptionOutlined",
-            "icon_color": null
-        },
-        {
-            "id": "d3fc9ef0-ad8d-4755-a239-1814c595f751",
-            "name": "熱拡散機能ブロック図yaml 隣接セルへの熱伝導 — 要求図",
-            "parent_id": "153c662e-bc5f-4712-89e4-f2471afe5f58",
-            "icon_key": "HubOutlined",
-            "icon_color": null
-        },
-        {
-            "id": "8db5db99-aaf9-42bb-bb3b-115f4e03c57d",
-            "name": "熱拡散機能ブロック図yaml 隣接セルへの熱伝導 — 構造図",
-            "parent_id": "153c662e-bc5f-4712-89e4-f2471afe5f58",
-            "icon_key": "HubOutlined",
-            "icon_color": null
-        },
-        {
-            "id": "3c170a75-1b99-4c04-8420-8c683b4c5c53",
-            "name": "熱拡散機能ブロック図yaml 隣接セルへの熱伝導 — アクティビティ図",
-            "parent_id": "153c662e-bc5f-4712-89e4-f2471afe5f58",
-            "icon_key": "HubOutlined",
-            "icon_color": null
         }
     ],
     "current_tab_ids": [
         "8983b8ef-769b-48d8-ac21-2a13b733baef",
         "43f4d071-ea21-4c66-9f88-55da09326154",
-        "811a5d13-5c40-4c7e-a9e8-c565458f470d",
-        "1cd78055-5e06-4d32-a95d-10190de8b9fb",
-        "c935be1f-a1ed-4eec-933d-1cd7b7f6a167"
+        "dfe52c73-7733-465d-9e5d-ba0415e52256"
     ],
-    "current_view_id": "c935be1f-a1ed-4eec-933d-1cd7b7f6a167",
+    "current_view_id": "dfe52c73-7733-465d-9e5d-ba0415e52256",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,

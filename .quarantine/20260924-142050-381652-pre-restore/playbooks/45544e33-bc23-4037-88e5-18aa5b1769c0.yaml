@@ -1,0 +1,67 @@
+id: ""
+name: 状態遷移設計
+slash_command: state-machine
+description: |
+  Block の状態（State）と遷移（Transition）を設計し、
+  ステートマシン図として整理する手順。
+  モード遷移や動作モードを持つ制御対象のモデル化に使用する。
+use_when: |
+  ユーザーが「状態遷移を作って」「ステートマシンを設計」
+  「動作モードを整理」等を依頼したとき。
+steps:
+  - no: 1
+    title: 対象 Block と既存状態の確認
+    instruction: |
+      状態遷移を定義する Block と、既存の State / Transition を確認する。
+      その Block が持つ Operation / Port も把握し、
+      イベント源となりうるものを洗い出す。
+    tools:
+      - search_item
+      - read_package_contents
+      - get_related_elements
+      - read
+    done_when: 対象 Block の短縮IDと、既存 State・Transition の端点・guard、およびイベント源となる Operation / Port を0件の場合も含めて一覧化できている
+  - no: 2
+    title: 状態の識別
+    instruction: |
+      対象が取りうる状態を列挙する。
+      状態は「観測可能に振る舞いが変わる区間」として定義し、
+      単なる瞬間的なイベントを状態にしないこと。
+      初期状態と終了状態（あれば）も明示する。
+    done_when: 各状態に観測可能な振る舞いまたは不変条件があり、初期状態が1件、終了状態の有無と理由が定まり、意味の重複する状態0件である
+  - no: 3
+    title: 遷移とガード条件の設計
+    instruction: |
+      状態間の遷移について、トリガーイベント・ガード条件・
+      遷移時のアクションを定義する。
+      「どの状態からも抜けられない状態（デッドロック）」や
+      「入れない状態（到達不能）」がないか確認すること。
+    done_when: 全遷移に source・target・トリガーがあり、条件分岐にはguard、必要な遷移にはアクションが定まり、同一状態・同一トリガーで競合するguard 0件である
+  - no: 4
+    title: 状態遷移の生成
+    instruction: |
+      create_internal_model_elements（structureType=state_machine）で
+      State と Transition を一括生成する。
+      ガード条件は遷移の属性として設定すること。
+    tools:
+      - create_internal_model_elements
+      - create_state
+      - create_relationship
+    done_when: 設計した全 State / Transition がモデルに存在し、実件数が設計件数と一致し、各 Transition の端点・guard が設計内容と一致する
+    referenceConventions:
+      - State
+      - Block
+  - no: 5
+    title: 網羅性の点検と検証
+    instruction: |
+      到達不能な状態・出られない状態・未定義の遷移がないかを
+      graph_query で点検する。
+      その後 validate_model で検証し、違反があれば修正する。
+    tools:
+      - graph_query
+      - get_related_elements
+      - validate_model
+    done_when: 初期状態から全状態へ到達でき、終了状態以外は退出可能で、到達不能・デッドロック0件か例外理由があり、validate_model の残存errorも理由付きで記録した
+strict: true
+allow_skip: false
+max_steps_per_stage: 12

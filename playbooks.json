@@ -127,7 +127,7 @@
       "order": 17
     },
     {
-      "id": "a3e33582-1311-4d1d-b467-a245c46e31ae",
+      "id": "3f74e7c3-984a-4aea-92d8-d551d1dd6f3c",
       "name": "カスタムUIの作成と改善",
       "item_type": "file",
       "parent_id": null,
@@ -266,7 +266,7 @@
       "managed": true
     },
     "custom-ui": {
-      "item_id": "a3e33582-1311-4d1d-b467-a245c46e31ae",
+      "item_id": "3f74e7c3-984a-4aea-92d8-d551d1dd6f3c",
       "name": "カスタムUIの作成と改善",
       "content_hash": "758117e38b9fcf2e04f8f9a956ef27bba35bf8d53a875ec87b368bfcfb3be1e5",
       "managed": true
