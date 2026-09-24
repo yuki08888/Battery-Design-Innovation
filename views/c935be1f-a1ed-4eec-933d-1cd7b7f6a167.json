@@ -1608,7 +1608,12 @@
         },
         {
             "class_name": "DiagramEdge",
-            "element_id": "b5c2ac63-5ed6-4f4b-b898-5e8f26090102",
+            "element_id": "f1064a97-6421-4bc0-8177-8aebaff349b3",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "2409077c-becc-4b20-8119-23e2e9557da3",
             "routing": "bezier"
         }
     ],
