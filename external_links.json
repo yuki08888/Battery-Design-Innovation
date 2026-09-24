@@ -40,17 +40,6 @@
     ],
     "2bbc8b71-e60f-401f-be02-1e1d0ecba96a": [
         {
-            "id": "bb8a3d40-def8-492f-a8da-5e82d43188d8",
-            "sourceType": "page",
-            "sourceId": "2ecc251c-b5b3-44e0-a815-e46770954802",
-            "targetElementId": "fa69ae01-87d3-4d18-a359-449369579eec",
-            "linkType": "relates",
-            "description": "BBM要求仕様書の全体表題であり、統合モデルのBBMトップ要求REQ-BBM-001および部品検証要求REQ-VAL-BBM-001の根拠記述として紐づけ。",
-            "createdAt": "2026-09-19T14:21:57.918099",
-            "sourceQuote": "BBM（バスバーモジュール）要求仕様書",
-            "targetKind": "element"
-        },
-        {
             "id": "01a259f5-e42b-422d-bb50-af2dfbe2a332",
             "sourceType": "document",
             "sourceId": "2bbc8b71-e60f-401f-be02-1e1d0ecba96a",
@@ -60,15 +49,17 @@
             "createdAt": "2026-09-21T09:15:16.673637",
             "sourceQuote": null,
             "targetKind": "element"
-        },
+        }
+    ],
+    "09051b6b-04fa-4548-8d4f-3b690786438b": [
         {
-            "id": "0dbbee9b-70a2-419b-ade4-cc93b7bf07dc",
+            "id": "f02cafd1-d95d-46c1-9915-21559a4f8ebc",
             "sourceType": "document",
-            "sourceId": "2bbc8b71-e60f-401f-be02-1e1d0ecba96a",
-            "targetElementId": "c71ffaef-137c-482a-83f8-05eddba038ce",
+            "sourceId": "09051b6b-04fa-4548-8d4f-3b690786438b",
+            "targetElementId": "159d04fd-d94b-4355-9df9-795ce512f7f7",
             "linkType": "relates",
             "description": null,
-            "createdAt": "2026-09-21T15:31:34.290694",
+            "createdAt": "2026-09-24T21:22:47.962976",
             "sourceQuote": null,
             "targetKind": "element"
         }
