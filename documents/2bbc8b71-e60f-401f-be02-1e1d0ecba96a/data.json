@@ -4,8 +4,8 @@
     "pages": [
         {
             "id": "2ecc251c-b5b3-44e0-a815-e46770954802",
-            "title": "",
-            "content": "<h1>BBM（バスバーモジュール）要求仕様書</h1><h1>出典: RSS_EG6H-00QT.pdf（外設申No. EG6H-00QTに添付／全15ページ）</h1><h1>版種: 要素技術試作用</h1><h1>注記: [A][B] 形式は原文の選択式記載、<strong>*</strong> は原文のマスク箇所</h1><h1>※「原文記載のまま」とあるものは、原文の誤記・不整合をそのまま転記</h1><p>document:<br>title: バスバーモジュール要求仕様書<br>document_type: 要素技術試作用<br>spec_no: EG6H-00QU<br>attached_to: 外設申No. EG6H-00QT<br>issued_date: 2026/05/28<br>issuer:<br>company: トヨタ自動車株式会社<br>center: CN開発センター<br>department: 電池パック開発部<br>section: 第2電池機能設計室<br>group: 6G<br>addressee: 住友電工株式会社 御中<br>confidentiality: PROTECTED / 関係者外秘<br>charge: 近藤 # 担当<br>preconditions:<br>- TTIMに記載の要項は、本要求仕様書に記載がなくても満足すること<br>- TTIMと本要求仕様書の内容が異なる場合は、本要求仕様書を優先すること<br>- バスバーモジュール（BBM）とは、バスバー、樹脂ケース、配線部品等を組み合わせた状態を指す<br>applicable_parts:<br>- part_no: DEG66-10034<br>part_name: MODULE, TRACTION BATTERY BUSBAR, NO.3<br>- part_no: DEG66-10035<br>part_name: MODULE, TRACTION BATTERY BUSBAR, NO.4<br>- part_no: DEG66-10036<br>part_name: MODULE, TRACTION BATTERY BUSBAR, NO.3<br>- part_no: DEG66-10037<br>part_name: MODULE, TRACTION BATTERY BUSBAR, NO.4<br>revision_history:<br>- rev: \"-\"<br>change: 新設<br>trial_plan_no: 0003V93060<br>date: 20026/5/28 # 原文記載のまま（2026/5/28の誤記と思われる）<br>changed_by: 近藤</p><p>table_of_contents:</p><ul><li><p>\"1. 設計前提\"</p></li><li><p>\"2. 要求仕様\"</p></li><li><p>\"2.1. BBM一般\"</p></li><li><p>\"2.2. バスバー\"</p></li><li><p>\"2.3. 樹脂ケース\"</p></li><li><p>\"2.4. 配線部品一般\"</p></li><li><p>\"2.5. ヒューズ\"</p></li><li><p>\"2.6. サーミスタ\"</p></li><li><p>\"2.7. サブWH\"</p></li><li><p>\"2.8. コネクタ\"</p></li><li><p>\"付図. 結線図・コネクタピン配列\"</p></li><li><p>\"3. 信頼性評価\"</p></li><li><p>\"3.1. 確認項目および判定条件\" # 原文の見出しは 3.5. 確認項目および判定条件</p></li><li><p>\"4. 要求事項一覧表\"</p></li></ul><p>design_premises: # 1. 設計前提（主担当: すべてTMC）<br>owner: TMC<br>destinations: [日本, 北米, 欧州, 中国, その他一般国]<br>part_functions:<br>- セル端子間の接続<br>- モジュール端セル端子－モジュール総端子間の接続<br>- 電池電圧検出回路の形成<br>- 電池温度検出回路の形成<br>- 監視IC電源供給回路の形成<br>- 電池判別回路の形成<br>- 高圧遮断時の回路遮断<br>mounting_position: 床下搭載の電池パック<br>environment:<br>storage_temp: -40～85℃<br>operating_temp: -30～80℃<br>operating_humidity: 0～95%RH（ただし結露を伴う）<br>cell_count:<br>series: 112セル直列接続（各セル間を直列接続）<br>note: 28セルスタックを4個接続する構造とする<br>pack_voltage_P_N:<br>rated: 281.2V（3.7V×112セル） ※参考 # 原文記載のまま（電圧値と計算式が不整合）<br>normal_upper: 317.3V（4.175V×112セル）<br>momentary_upper: 422.56V（5.56V×112セル） ※～100ms<br>normal_lower: 205.2V（2.7V×112セル）<br>momentary_lower: 146.68V（1.93V×112セル） ※～100ms<br>pack_overvoltage_P_GND:<br>ground_fault: 918V<br>lv_power_connection: 2,500V<br>system_max_current:<br>- 306.3A×10ms（力行）※参考<br>- 200A×2s<br>- 176.3A×10s<br>- -200A×5s（回生）<br>system_thermal_current:<br>- 51A連続 ※参考<br>- 130A×90s<br>wiring_max_current:<br>value: 150mA<br>scope: 電池電圧検出回路、電池温度検出回路、監視IC電源供給回路、電池判別回路</p><p>requirements: # 2. 要求仕様</p><p>bbm_general: # 2.1. BBM一般<br>- item: 基本構造<br>owner: 仕入先<br>specs:<br>- DEG66-10034,10036は、バスバー、配線部品、真空成型品を含む構造とすること<br>- DEG66-10035,10037は、バスバー、配線部品、シート品を含む構造とすること<br>- 配線部品は、ヒューズ、サーミスタ、コネクタを含む構造とすること<br>- DEG66-10034,10036は車両LH側3,4スタック用とすること<br>- DEG66-10035,10037は車両RH側3,4スタック用とすること<br>- スタックの構成は、計画図および3Dモデルを参照のこと<br>- 構成部品を追加・変更する場合は、設計要件をTMC設計と事前に合意すること</p><pre class=\"document-code-block\"><code>- item: 高電圧活電部 直接接触保護\n  owner: 仕入先\n  specs:\n    - BBMコネクタ部（周辺部品がない状態）で、IEC 60529規定のIPXXB保護等級を満足すること\n    - IPXXB+α指モデルが高電圧活電部に直接接触しないこと\n    - IPXXBについては、荷重：10N±10%の条件で検証を行うこと\n    - BBM単体で満足不可能な場合は、TMC設計に対象部位を提示し対策要否を協議して合意すること\n    - 仕入先は机上と実機の検証結果をTMC設計へ報告し、合意すること\n\n- item: 搭載隙\n  owner: 仕入先\n  specs:\n    - 製品ばらつき、組付ガタおよび変形を考慮し、周辺部品との静隙を確保すること\n    - 周辺搭載は計画図および参考3Dモデルを参照すること\n    - 設計成立性をTMC設計に報告の上、合意すること\n\n- item: セル間変位に対する強度\n  owner: 仕入先\n  specs:\n    - 市場での隣接セル間変位のストレス（下表参照）を受けても、亀裂や機能不具合を生じないこと\n    - 設計成立性をTMC設計に報告の上、評価で問題ないことを確認して報告すること\n  cell_displacement_stress:\n    - direction: W\n      factor: 振動\n      amplitude: ±0.045mm\n      cycles: 2,000,000回\n    - direction: W\n      factor: 突起\n      amplitude: ±0.8mm\n      cycles: 5回\n    - direction: W\n      factor: 熱膨張(放置)\n      amplitude: ±0.15mm\n      cycles: 2,000回\n    - direction: W\n      factor: 熱膨張(走行)\n      amplitude: ±0.15mm\n      cycles: 2,000回\n    - direction: W\n      factor: SOC\n      amplitude: ±0.15mm\n      cycles: 2,000回\n    - direction: L\n      factor: 振動\n      amplitude: ±0.06mm\n      cycles: 2,000,000回\n    - direction: L\n      factor: 突起\n      amplitude: ±0.612mm\n      cycles: 5回\n    - direction: H\n      factor: 振動\n      amplitude: ±0.15mm\n      cycles: 2,000,000回\n    - direction: H\n      factor: 突起\n      amplitude: ±1.9mm\n      cycles: 5回\n\n- item: 結露水への配慮\n  owner: 仕入先\n  specs:\n    - 車両搭載状態で、発生した結露による凝縮水が配線部品を伝ってコネクタ端子に流れない構造とすること\n\n- item: 絶縁距離\n  owner: 仕入先\n  specs:\n    - IEC 60664-1に従い、基礎絶縁を行うこと\n    - 空間距離の設計前提は下表のとおりとすること\n    - 沿面距離の設計前提は下表のとおりとすること\n  definitions:\n    高圧部: バスバー、電池電圧検出線、監視IC電源供給線 等\n    低圧部: 電池温度検出線、電池判別線 等\n  clearance:              # 空間距離\n    - region: 高圧部～低圧部/車両GND部\n      電圧実効値: 2500V（定格インパルス電圧）\n      標高: 5,000m\n      汚損等級: 汚損度3\n      必要距離: 2.22mm以上\n    - region: パック・モジュール/PN端子間\n      電圧実効値: 1200V（MG誘導気電圧）\n      標高: 5,000m\n      汚損等級: \"-\"\n      必要距離: 0.6216mm以上\n    - region: セル間\n      電圧実効値: 10.8V\n      標高: 5,000m\n      汚損等級: \"-\"\n      必要距離: 0.00148mm以上\n    notes:\n      - 必要な空間距離が低圧電源接続時過電圧から決まる場合、標高補正は5,000mで可とする\n      - TMC設計の合意を得た上で、特定の部位に対して汚損等級を上げることも可（例. コネクタ内部など）\n  creepage:               # 沿面距離\n    - region: 高圧部～低圧部/車両GND部\n      電圧実効値: 560V\n      汚損等級: 汚損度2\n    - region: 隣接電圧検出線間\n      電圧実効値: 918V\n      汚損等級: 汚損度3\n    - region: 隣接バスバー間\n      電圧実効値: 560V\n      汚損等級: 汚損度3\n    - region: UFT（ヒューズ）\n      電圧実効値: 10V\n      汚損等級: 汚損度3\n    notes:\n      - 材料グループはIIIを基本とするが、自給部品はTMC設計の合意を得た上でI・IIも適用可\n      - TMC設計の合意を得た上で、特定の部位に対して汚損等級を上げることも可（例. コネクタ内部など）\n      - ヒューズ溶断後に、バスバ接続端子～電線圧着端子間で再導通無きこと\n\n- item: 樹脂・ゴムの難燃性\n  owner: 仕入先\n  specs:\n    - 使用する樹脂・ゴム材料の難燃性は、UL94 HB規格に適合のこと\n    - ただし、支給部品は除く\n\n- item: シリコン系材料\n  owner: 仕入先\n  specs:\n    - シリコン系の材料を使用する場合は、TMC設計の合意を得ること\n\n- item: 非金属材におい\n  owner: 仕入先\n  specs:\n    - TSM0505Gを満足すること\n\n- item: 品質\n  owner: 仕入先\n  specs:\n    - 試作出荷前に検査項目と検査基準をTMCと合意すること\n    - 全製品の全検査データをTMCに提出して合意をとること\n\n- item: コーティング材\n  owner: 仕入先\n  specs:\n    - ヒューズ、電池温度検出端子の露出防止にコーティング材を用いる場合は下記特性を満足すること\n    - 絶縁破壊電圧：600V以上\n</code></pre><p>busbar: # 2.2. バスバー<br>- item: バスバー仕様<br>owner: 仕入先<br>specs:<br>- バスバーの要求仕様は計画図を参照すること</p><p>resin_case: # 2.3. 樹脂ケース<br>- item: 材料色<br>owner: 仕入先<br>specs:<br>- DEG66-10034,10036の本体はPP、PCの真空成型とすること<br>- DEG66-10035,10037の本体はPVCとすること<br>- 使用する樹脂材料の色は、TMC設計と協議の上決定のこと<br>- item: サーミスタ保持<br>owner: 仕入先<br>specs:<br>- バスバーはサーミスタを保持する構造とすること<br>- item: バスバー溶接工程配慮<br>owner: 仕入先<br>specs:<br>- セル端子とバスバーの溶接時、マスク治具とBBMの干渉なきこと（マスク治具侵入範囲は計画図参照）<br>- セル端子とバスバーの溶接時、レーザーを遮断しないこと（レーザー照射範囲は計画図参照）<br>- セル端子とバスバーの溶接時に飛散したスパッタから、配線部品を保護できる構造とすること<br>- item: スタック識別用記号<br>owner: 仕入先<br>specs:<br>- 上から視認できる位置に識別記号を設けること<br>- 識別記号サイズ、位置などの詳細に関しては、TMC設計と協議の上決定のこと</p><p>wiring_parts_general: # 2.4. 配線部品一般<br>- item: 基本構造<br>owner: 仕入先<br>specs:<br>- 配線部品は、電池電圧検出線、電池温度検出線、監視IC電源供給線、電池判別線を含む構造とすること<br>- 結線図およびコネクタピン配列に従って配策すること<br>- 配策に関するDRを行い、TMC設計の合意を得てから製造を進めること<br>- セル熱暴走時の排煙経路上部を避けて配策すること（排煙経路は計画図参照）<br>- item: はんだ外観品質<br>owner: 仕入先<br>specs:<br>- \"[はんだ付け部の外観品質はTSC0001Gに従うこと]\"<br>- \"[はんだ付け部の外観品質はIPC-A-610およびIPC-A-610AA クラス3に従うこと]\"<br>- 参照するIPC規格は、最新のリビジョンのものを使用すること<br>- 図面注記に下記を記載すること<br>drawing_notes:<br>japanese: TSC0001G を遵守すること<br>english: THIS PART SHALL COMPLY WITH TSC0001G<br>- item: 電池電圧検出線<br>owner: 仕入先<br>specs:<br>- 結線図に従って、電位順に配策すること<br>- すべての電池電圧検出線にヒューズを設定すること<br>- 各線の抵抗は、1320mΩ以下@60℃となるように設計すること<br>- 60℃の抵抗値については常温の実機評価結果に基づいた計算値でも可とする（算出方法はTMCと合意すること）<br>- ヒューズの抵抗は、初期：150mΩ以下（温度条件無し）、通電後：初期値の±20%とすること<br>- 設計値（MAX・MIN・TYP）をTMC設計に提示すること（提示値は使用環境温度の範囲で10℃刻み）<br>- 抵抗測定のポイントは評価判定条件を参照<br>- バスバーとの接続は、全バスバーで共通の部位で行うこと<br>- 搭載制約などで共通にできない場合、TMC設計の合意を得ること<br>- 下記電流条件で、発煙、発火、機能不具合等無きこと<br>current_conditions:<br>- 常時150mA<br>- 4A×9s<br>- item: 電池温度検出線<br>owner: 仕入先<br>specs:<br>- すべての電池温度検出線にサーミスタを設定すること<br>- サーミスタの搭載箇所は、計画図を参照すること<br>- item: 監視IC電源供給線<br>owner: 仕入先<br>specs:<br>- すべての監視IC電源供給線にヒューズを設定すること<br>- item: 電池判別線<br>owner: 仕入先<br>specs:<br>- 電池判別線の抵抗仕様は下記とすること<br>resistance_spec:<br>DEG66-10034,10036: オープン<br>DEG66-10035,10037: オープン</p><p>fuse: # 2.5. ヒューズ<br>- item: 品番<br>owner: 仕入先<br>specs:<br>- 使用するヒューズの品番は、G3828-28010とする<br>- item: 取扱規定<br>owner: 仕入先<br>specs:<br>- ヒューズ仕入先が発行する取扱規定を満足すること（詳細はTMC設計に確認）<br>- ヒューズ実装部のランドひずみは、1,700μST以下とすること<br>- item: 搭載要件<br>owner: 仕入先<br>specs:<br>- バスバー側部品～ランド：0.7mm以上確保のこと<br>- 隣接コネクタ側ランド：0.7mm以上確保のこと</p><p>thermistor: # 2.6. サーミスタ<br>- item: 素子特性<br>owner: 仕入先<br>specs:<br>- 公称抵抗値：10kΩ±1%（25℃での素子抵抗）<br>- B定数：3435K±1%（25℃－85℃間のB定数）<br>- item: 応答性<br>owner: 仕入先<br>specs:<br>- 熱時定数は30s以下を満足すること（25℃→85℃の熱時定数）<br>- item: 測温誤差<br>owner: 仕入先<br>specs:<br>- 下表に示す測温誤差要求値を満たすこと<br>- 集熱面が点接触または線接触状態でも要求満足すること<br>- 測温面温度許容誤差：±3℃<br>temperature_error_spec: # 雰囲気温度25℃時、測温面温度[℃]に対する許容測温誤差[℃]（素子誤差を含む）<br>25: ±0.8<br>30: ±1.4<br>35: ±1.9<br>40: ±2.5<br>45: ±3.0<br>55: ±4.2<br>60: ±4.7<br>65: ±5.3<br>75: ±6.4<br>85: ±7.5<br>90: ±8.1<br>95: ±8.6<br>105: ±9.8<br>115: ±10.8<br>125: ±12.0</p><p>wiring_sub_wh: # 2.7. サブWH<br>- item: 搭載要件<br>owner: 仕入先<br>specs:<br>- TMC側要望クランプ固定位置、固定側形状は計画図、添付3Dデータを参照<br>- 車両組付け時に誤組しない構造とすること<br>- WH径は計画図、添付3Dデータの経路に合わせて保護材を設定すること（詳細はTMCと協議の上決定）<br>- item: 接続相手機器<br>owner: 仕入先<br>specs:<br>- 接続相手機器はTMCと協議の上、決定する<br>- item: 使用クランプ<br>owner: 仕入先<br>specs:<br>- TMC側要望クランプ固定位置、固定側形状は計画図、添付3Dデータを参照<br>- クランプ品番はTMCと協議の上、決定すること<br>- item: 配線保護<br>owner: 仕入先<br>specs:<br>- 計画図、添付3Dデータの経路に合わせて保護材を設定すること（詳細はTMCと協議の上決定）<br>- 設定する保護材は「2. 要求性能 (a)」保護材性能を満足すること<br>- 保護材はTSC1151Gを満足すること<br>- item: 色<br>owner: 仕入先<br>specs:<br>- 高圧部 保護材色：オレンジ（SAE 8.75R 5.75/2.5）<br>- 指定がない部位は、任意で決定すること</p><p>connector: # 2.8. コネクタ<br>- item: 品番<br>owner: 仕入先<br>specs:<br>- DEG66-10034,10035に使用するコネクタ品番：G92SF-42430, 90980-12366<br>- DEG66-10036,10037に使用するコネクタ品番：90980-12388<br>- item: 搭載位置<br>owner: 仕入先<br>specs:<br>- 配線部品と相手部品を接続できる位置に、コネクタを搭載すること<br>- 相手部品の位置は、計画図を参照すること<br>- 詳細はTMCと協議の上、決定すること<br>- item: 取扱規定<br>owner: 仕入先<br>specs:<br>- コネクタ図面に記載の取扱規定を満足すること<br>- item: 端子名称<br>owner: TMC<br>terminals:<br>- name: SR<br>io: 出力<br>usage: 監視IC電源用端子<br>- name: GSR<br>io: 出力<br>usage: 監視IC電源用端子<br>- name: V<br>io: 出力<br>usage: セル電圧検出端子<br>- name: G<br>io: 出力<br>usage: セル電圧検出端子<br>- name: TB<br>io: 出力<br>usage: セル温度サーミスタ<br>- name: CD<br>io: 出力<br>usage: セル種類判別端子<br>- name: GB<br>io: 出力<br>usage: シグナルGND<br>- item: 端子<br>owner: 仕入先<br>specs:<br>- 端子品番：G92SG-42040, 90980-09895（参考）</p><p>wiring_diagram: # 付図. 結線図・コネクタピン配列<br>- target: DEG66-10034,10036（スタック3,4 LH）<br>cells: cell29～cell56<br>connectors:<br>- name: 13セル間コネクタ（スタック3）<br>related_parts: [DEG66-10034（G96G3-10020 嵌合面視／2号機以外）, DEG66-10036（G92SF-42430 嵌合面視／2号機）]<br>- name: 15セル間コネクタ（スタック4）<br>related_parts: [DEG66-10034（G96G3-10040 嵌合面視／2号機以外）, DEG66-10036（90980-12366 嵌合面視／2号機）]<br>note: 端子名横の数値は、GA0を基準として、5V/セルとしたときの電位を表す<br>- target: DEG66-10035,10037（スタック3,4 RH）<br>cells: cell57～cell84<br>connectors:<br>- name: 15セル間コネクタ（スタック3）<br>related_parts: [DEG66-10035（G96G3-10020 嵌合面視／2号機以外）, DEG66-10037（G92SF-42430 嵌合面視／2号機）]<br>- name: 13セル間コネクタ（スタック4）<br>related_parts: [DEG66-10035（G96G3-10040 嵌合面視／2号機以外）, DEG66-10037（90980-12366 嵌合面視／2号機）]<br>note: 端子名横の数値は、GA0を基準として、5V/セルとしたときの電位を表す<br>detection_circuit: 5V－10kΩ－TB<em>／GB</em>－コンデンサC－検出回路（BBM側にサーミスタ、検出部品側に検出回路）</p><p>reliability<em>evaluation: # 3. 信頼性評価<br>acceptance_criteria: # 3.5. 確認項目および判定条件<br>- name: ヒューズ特性<br>owner: 仕入先<br>method:<br>- ヒューズを含む線に電流を流す<br>- 雰囲気温度：25±5℃<br>- 印加電圧：32V<br>conditions:<br>条件1</em>最大電流で溶断しないことの評価:<br>通電電流: 最大電流（設計前提参照）<br>通電時間: ヒューズ部温度飽和まで（温度変化率：±3℃/min.以下）<br>条件2_溶断特性評価:<br>通電電流: [4A, 8A, 12A, 16A]<br>通電時間: ヒューズ溶断するまで<br>criteria:<br>- 発煙・発火・焼損なきこと（①②共通）<br>- ヒューズが溶断しないこと（①のみ）<br>- 通電電流の波形をTMC設計に提示し、内容について合意を得ること（②のみ）</p><p>general_notes:<br>- 指示なき事項は協議して決定する<br>- 仕様の変更を希望する場合は必ず理由と根拠を明確にしてTMCに申し入れ、協議の上決定する</p><p>deliverables: # 4. 要求事項一覧表<br>description: トヨタが仕入先選定段階からSOPまでに仕入先に提出を求める事項<br>columns: [指定帳票, 仕入先選定, 試作, 号口]<br>items:<br>- name: トヨタ要求事項確認連絡票<br>指定帳票: true<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: IATF16949 DFMEA / DRBFM / FTA（部品階層図・相互影響マトリクス・気づきシート含む）<br>指定帳票: false<br>仕入先選定: true<br>試作: true<br>号口: true<br>notes:<br>- 部品階層図で機能一覧を示すこと<br>- ○新部品はDFMEA実施<br>- category: 仕入先担当者リスト、仕入先組織表<br>children:<br>- name: 仕入先担当者リスト<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: 仕入先組織表<br>仕入先選定: true<br>試作: true<br>号口: true<br>- category: 要求仕様を満足する仕入先案<br>children:<br>- name: 要求仕様に対する提案仕様<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: VE提案リスト(技術説明)<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: 承認図相当もしくは同等の技術情報記載の説明図<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: 要求仕様未達成項目・対応案説明書<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: 過去不具合の対策とその検証結果<br>仕入先選定: true<br>試作: true<br>号口: true<br>- category: 新規点、変更点、変化点リスト<br>children:<br>- name: 号口部品に対する新規点、変更点、変化点リスト<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: 仕入先選定時からの新規点、変更点、変化点リスト、コスト変動額<br>仕入先選定: false<br>試作: true<br>号口: true<br>- name: 試作品、本型暫定工程品、号口品の仕様違いリスト<br>仕入先選定: false<br>試作: true<br>号口: true<br>- category: 開発計画、実績<br>children:<br>- name: 開発計画書<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: 開発責任分担表(TMC提示の分担案に対する確認)<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: 評価設備能力・評価設備確保状況確認<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: 部品評価/検証計画<br>仕入先選定: true<br>試作: true<br>号口: true<br>- category: 製造、工程情報<br>children:<br>- name: 部品の製造拠点と実績表<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: サプライチェーン表(全構成部品)<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: 2次仕入先情報<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: 「1拠点生産」又は、トヨタが特定した生産工程情報(特殊工程)、特殊仕様、特殊材料情報<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: RSAM及びトヨタ設計の要求する資料<br>仕入先選定: true<br>試作: true<br>号口: true</p><p>confirmation_form: # トヨタ要求事項確認連絡票<br>purpose: 仕入先は部品を製品化するために、RDDP、TTIM または要求仕様書の要求事項を受け入れることができるかどうかを確認すること<br>instruction: 対象となる市場において高品質であるために、RDDPに不足している項目がないか仕入先のノウハウを基に確認すること<br>submission: 設計確認書/RFQ回答に添付ください<br>checkboxes:<br>- label: RDDP、TTIM の内容に従って開発することに同意する<br>- label: RDDP、TTIM の内容に従って開発することに同意できない<br>table_columns: [ページ, 項目, 要求事項, 合意できない箇所の詳細説明]<br>- label: RDDPの要求事項に追加情報が必要です<br>table_columns: [ページ, 項目, 要求事項, 追加情報の詳細説明]<br>- label: 対象となる市場において高品質であるために、仕入先の自動車部品開発におけるノウハウに基づき、RDDPの中に不足している要求事項がある<br>table_columns: [不測の要求事項, 要求事項の不足により市場で起こりうるリスク]<br>fields:<br>- 対象部品名<br>- RDDP No.又は品番/品名<br>- 会社名<br>- 役職(プロジェクト担当責任者)<br>- 氏名<br>- 回答日</p>",
+            "title": "1. BBM要求仕様書_241209改訂",
+            "content": "<h1>1. BBM（バスバーモジュール）要求仕様書</h1><h2>出典: RSS_EG6H-00QT.pdf（外設申No. EG6H-00QTに添付／全15ページ）</h2><h2>版種: 要素技術試作用</h2><h2>注記: [A][B] 形式は原文の選択式記載、<strong>*</strong> は原文のマスク箇所</h2><h2>※「原文記載のまま」とあるものは、原文の誤記・不整合をそのまま転記</h2><p>document:<br>title: バスバーモジュール要求仕様書<br>document_type: 要素技術試作用<br>spec_no: EG6H-00QU<br>attached_to: 外設申No. EG6H-00QT<br>issued_date: 2026/05/28<br>issuer:<br>company: トヨタ自動車株式会社<br>center: CN開発センター<br>department: 電池パック開発部<br>section: 第2電池機能設計室<br>group: 6G<br>addressee: 住友電工株式会社 御中<br>confidentiality: PROTECTED / 関係者外秘<br>charge: 近藤 # 担当<br>preconditions:<br>- TTIMに記載の要項は、本要求仕様書に記載がなくても満足すること<br>- TTIMと本要求仕様書の内容が異なる場合は、本要求仕様書を優先すること<br>- バスバーモジュール（BBM）とは、バスバー、樹脂ケース、配線部品等を組み合わせた状態を指す<br>applicable_parts:<br>- part_no: DEG66-10034<br>part_name: MODULE, TRACTION BATTERY BUSBAR, NO.3<br>- part_no: DEG66-10035<br>part_name: MODULE, TRACTION BATTERY BUSBAR, NO.4<br>- part_no: DEG66-10036<br>part_name: MODULE, TRACTION BATTERY BUSBAR, NO.3<br>- part_no: DEG66-10037<br>part_name: MODULE, TRACTION BATTERY BUSBAR, NO.4<br>revision_history:<br>- rev: \"-\"<br>change: 新設<br>trial_plan_no: 0003V93060<br>date: 20026/5/28 # 原文記載のまま（2026/5/28の誤記と思われる）<br>changed_by: 近藤</p><p>table_of_contents:</p><ul><li><p>\"1. 設計前提\"</p></li><li><p>\"2. 要求仕様\"</p></li><li><p>\"2.1. BBM一般\"</p></li><li><p>\"2.2. バスバー\"</p></li><li><p>\"2.3. 樹脂ケース\"</p></li><li><p>\"2.4. 配線部品一般\"</p></li><li><p>\"2.5. ヒューズ\"</p></li><li><p>\"2.6. サーミスタ\"</p></li><li><p>\"2.7. サブWH\"</p></li><li><p>\"2.8. コネクタ\"</p></li><li><p>\"付図. 結線図・コネクタピン配列\"</p></li><li><p>\"3. 信頼性評価\"</p></li><li><p>\"3.1. 確認項目および判定条件\" # 原文の見出しは 3.5. 確認項目および判定条件</p></li><li><p>\"4. 要求事項一覧表\"</p></li></ul><p>design_premises: # 1. 設計前提（主担当: すべてTMC）<br>owner: TMC<br>destinations: [日本, 北米, 欧州, 中国, その他一般国]<br>part_functions:<br>- セル端子間の接続<br>- モジュール端セル端子－モジュール総端子間の接続<br>- 電池電圧検出回路の形成<br>- 電池温度検出回路の形成<br>- 監視IC電源供給回路の形成<br>- 電池判別回路の形成<br>- 高圧遮断時の回路遮断<br>mounting_position: 床下搭載の電池パック<br>environment:<br>storage_temp: -40～85℃<br>operating_temp: -30～80℃<br>operating_humidity: 0～95%RH（ただし結露を伴う）<br>cell_count:<br>series: 112セル直列接続（各セル間を直列接続）<br>note: 28セルスタックを4個接続する構造とする<br>pack_voltage_P_N:<br>rated: 281.2V（3.7V×112セル） ※参考 # 原文記載のまま（電圧値と計算式が不整合）<br>normal_upper: 317.3V（4.175V×112セル）<br>momentary_upper: 422.56V（5.56V×112セル） ※～100ms<br>normal_lower: 205.2V（2.7V×112セル）<br>momentary_lower: 146.68V（1.93V×112セル） ※～100ms<br>pack_overvoltage_P_GND:<br>ground_fault: 918V<br>lv_power_connection: 2,500V<br>system_max_current:<br>- 306.3A×10ms（力行）※参考<br>- 200A×2s<br>- 176.3A×10s<br>- -200A×5s（回生）<br>system_thermal_current:<br>- 51A連続 ※参考<br>- 130A×90s<br>wiring_max_current:<br>value: 150mA<br>scope: 電池電圧検出回路、電池温度検出回路、監視IC電源供給回路、電池判別回路</p><p>requirements: # 2. 要求仕様</p><p>bbm_general: # 2.1. BBM一般<br>- item: 基本構造<br>owner: 仕入先<br>specs:<br>- DEG66-10034,10036は、バスバー、配線部品、真空成型品を含む構造とすること<br>- DEG66-10035,10037は、バスバー、配線部品、シート品を含む構造とすること<br>- 配線部品は、ヒューズ、サーミスタ、コネクタを含む構造とすること<br>- DEG66-10034,10036は車両LH側3,4スタック用とすること<br>- DEG66-10035,10037は車両RH側3,4スタック用とすること<br>- スタックの構成は、計画図および3Dモデルを参照のこと<br>- 構成部品を追加・変更する場合は、設計要件をTMC設計と事前に合意すること</p><pre class=\"document-code-block\"><code>- item: 高電圧活電部 直接接触保護\n  owner: 仕入先\n  specs:\n    - BBMコネクタ部（周辺部品がない状態）で、IEC 60529規定のIPXXB保護等級を満足すること\n    - IPXXB+α指モデルが高電圧活電部に直接接触しないこと\n    - IPXXBについては、荷重：10N±10%の条件で検証を行うこと\n    - BBM単体で満足不可能な場合は、TMC設計に対象部位を提示し対策要否を協議して合意すること\n    - 仕入先は机上と実機の検証結果をTMC設計へ報告し、合意すること\n\n- item: 搭載隙\n  owner: 仕入先\n  specs:\n    - 製品ばらつき、組付ガタおよび変形を考慮し、周辺部品との静隙を確保すること\n    - 周辺搭載は計画図および参考3Dモデルを参照すること\n    - 設計成立性をTMC設計に報告の上、合意すること\n\n- item: セル間変位に対する強度\n  owner: 仕入先\n  specs:\n    - 市場での隣接セル間変位のストレス（下表参照）を受けても、亀裂や機能不具合を生じないこと\n    - 設計成立性をTMC設計に報告の上、評価で問題ないことを確認して報告すること\n  cell_displacement_stress:\n    - direction: W\n      factor: 振動\n      amplitude: ±0.045mm\n      cycles: 2,000,000回\n    - direction: W\n      factor: 突起\n      amplitude: ±0.8mm\n      cycles: 5回\n    - direction: W\n      factor: 熱膨張(放置)\n      amplitude: ±0.15mm\n      cycles: 2,000回\n    - direction: W\n      factor: 熱膨張(走行)\n      amplitude: ±0.15mm\n      cycles: 2,000回\n    - direction: W\n      factor: SOC\n      amplitude: ±0.15mm\n      cycles: 2,000回\n    - direction: L\n      factor: 振動\n      amplitude: ±0.06mm\n      cycles: 2,000,000回\n    - direction: L\n      factor: 突起\n      amplitude: ±0.612mm\n      cycles: 5回\n    - direction: H\n      factor: 振動\n      amplitude: ±0.15mm\n      cycles: 2,000,000回\n    - direction: H\n      factor: 突起\n      amplitude: ±1.9mm\n      cycles: 5回\n\n- item: 結露水への配慮\n  owner: 仕入先\n  specs:\n    - 車両搭載状態で、発生した結露による凝縮水が配線部品を伝ってコネクタ端子に流れない構造とすること\n\n- item: 絶縁距離\n  owner: 仕入先\n  specs:\n    - IEC 60664-1に従い、基礎絶縁を行うこと\n    - 空間距離の設計前提は下表のとおりとすること\n    - 沿面距離の設計前提は下表のとおりとすること\n  definitions:\n    高圧部: バスバー、電池電圧検出線、監視IC電源供給線 等\n    低圧部: 電池温度検出線、電池判別線 等\n  clearance:              # 空間距離\n    - region: 高圧部～低圧部/車両GND部\n      電圧実効値: 2500V（定格インパルス電圧）\n      標高: 5,000m\n      汚損等級: 汚損度3\n      必要距離: 2.22mm以上\n    - region: パック・モジュール/PN端子間\n      電圧実効値: 1200V（MG誘導気電圧）\n      標高: 5,000m\n      汚損等級: \"-\"\n      必要距離: 0.6216mm以上\n    - region: セル間\n      電圧実効値: 10.8V\n      標高: 5,000m\n      汚損等級: \"-\"\n      必要距離: 0.00148mm以上\n    notes:\n      - 必要な空間距離が低圧電源接続時過電圧から決まる場合、標高補正は5,000mで可とする\n      - TMC設計の合意を得た上で、特定の部位に対して汚損等級を上げることも可（例. コネクタ内部など）\n  creepage:               # 沿面距離\n    - region: 高圧部～低圧部/車両GND部\n      電圧実効値: 560V\n      汚損等級: 汚損度2\n    - region: 隣接電圧検出線間\n      電圧実効値: 918V\n      汚損等級: 汚損度3\n    - region: 隣接バスバー間\n      電圧実効値: 560V\n      汚損等級: 汚損度3\n    - region: UFT（ヒューズ）\n      電圧実効値: 10V\n      汚損等級: 汚損度3\n    notes:\n      - 材料グループはIIIを基本とするが、自給部品はTMC設計の合意を得た上でI・IIも適用可\n      - TMC設計の合意を得た上で、特定の部位に対して汚損等級を上げることも可（例. コネクタ内部など）\n      - ヒューズ溶断後に、バスバ接続端子～電線圧着端子間で再導通無きこと\n\n- item: 樹脂・ゴムの難燃性\n  owner: 仕入先\n  specs:\n    - 使用する樹脂・ゴム材料の難燃性は、UL94 HB規格に適合のこと\n    - ただし、支給部品は除く\n\n- item: シリコン系材料\n  owner: 仕入先\n  specs:\n    - シリコン系の材料を使用する場合は、TMC設計の合意を得ること\n\n- item: 非金属材におい\n  owner: 仕入先\n  specs:\n    - TSM0505Gを満足すること\n\n- item: 品質\n  owner: 仕入先\n  specs:\n    - 試作出荷前に検査項目と検査基準をTMCと合意すること\n    - 全製品の全検査データをTMCに提出して合意をとること\n\n- item: コーティング材\n  owner: 仕入先\n  specs:\n    - ヒューズ、電池温度検出端子の露出防止にコーティング材を用いる場合は下記特性を満足すること\n    - 絶縁破壊電圧：600V以上\n</code></pre><p>busbar: # 2.2. バスバー<br>- item: バスバー仕様<br>owner: 仕入先<br>specs:<br>- バスバーの要求仕様は計画図を参照すること</p><p>resin_case: # 2.3. 樹脂ケース<br>- item: 材料色<br>owner: 仕入先<br>specs:<br>- DEG66-10034,10036の本体はPP、PCの真空成型とすること<br>- DEG66-10035,10037の本体はPVCとすること<br>- 使用する樹脂材料の色は、TMC設計と協議の上決定のこと<br>- item: サーミスタ保持<br>owner: 仕入先<br>specs:<br>- バスバーはサーミスタを保持する構造とすること<br>- item: バスバー溶接工程配慮<br>owner: 仕入先<br>specs:<br>- セル端子とバスバーの溶接時、マスク治具とBBMの干渉なきこと（マスク治具侵入範囲は計画図参照）<br>- セル端子とバスバーの溶接時、レーザーを遮断しないこと（レーザー照射範囲は計画図参照）<br>- セル端子とバスバーの溶接時に飛散したスパッタから、配線部品を保護できる構造とすること<br>- item: スタック識別用記号<br>owner: 仕入先<br>specs:<br>- 上から視認できる位置に識別記号を設けること<br>- 識別記号サイズ、位置などの詳細に関しては、TMC設計と協議の上決定のこと</p><p>wiring_parts_general: # 2.4. 配線部品一般<br>- item: 基本構造<br>owner: 仕入先<br>specs:<br>- 配線部品は、電池電圧検出線、電池温度検出線、監視IC電源供給線、電池判別線を含む構造とすること<br>- 結線図およびコネクタピン配列に従って配策すること<br>- 配策に関するDRを行い、TMC設計の合意を得てから製造を進めること<br>- セル熱暴走時の排煙経路上部を避けて配策すること（排煙経路は計画図参照）<br>- item: はんだ外観品質<br>owner: 仕入先<br>specs:<br>- \"[はんだ付け部の外観品質はTSC0001Gに従うこと]\"<br>- \"[はんだ付け部の外観品質はIPC-A-610およびIPC-A-610AA クラス3に従うこと]\"<br>- 参照するIPC規格は、最新のリビジョンのものを使用すること<br>- 図面注記に下記を記載すること<br>drawing_notes:<br>japanese: TSC0001G を遵守すること<br>english: THIS PART SHALL COMPLY WITH TSC0001G<br>- item: 電池電圧検出線<br>owner: 仕入先<br>specs:<br>- 結線図に従って、電位順に配策すること<br>- すべての電池電圧検出線にヒューズを設定すること<br>- 各線の抵抗は、1320mΩ以下@60℃となるように設計すること<br>- 60℃の抵抗値については常温の実機評価結果に基づいた計算値でも可とする（算出方法はTMCと合意すること）<br>- ヒューズの抵抗は、初期：150mΩ以下（温度条件無し）、通電後：初期値の±20%とすること<br>- 設計値（MAX・MIN・TYP）をTMC設計に提示すること（提示値は使用環境温度の範囲で10℃刻み）<br>- 抵抗測定のポイントは評価判定条件を参照<br>- バスバーとの接続は、全バスバーで共通の部位で行うこと<br>- 搭載制約などで共通にできない場合、TMC設計の合意を得ること<br>- 下記電流条件で、発煙、発火、機能不具合等無きこと<br>current_conditions:<br>- 常時150mA<br>- 4A×9s<br>- item: 電池温度検出線<br>owner: 仕入先<br>specs:<br>- すべての電池温度検出線にサーミスタを設定すること<br>- サーミスタの搭載箇所は、計画図を参照すること<br>- item: 監視IC電源供給線<br>owner: 仕入先<br>specs:<br>- すべての監視IC電源供給線にヒューズを設定すること<br>- item: 電池判別線<br>owner: 仕入先<br>specs:<br>- 電池判別線の抵抗仕様は下記とすること<br>resistance_spec:<br>DEG66-10034,10036: オープン<br>DEG66-10035,10037: オープン</p><p>fuse: # 2.5. ヒューズ<br>- item: 品番<br>owner: 仕入先<br>specs:<br>- 使用するヒューズの品番は、G3828-28010とする<br>- item: 取扱規定<br>owner: 仕入先<br>specs:<br>- ヒューズ仕入先が発行する取扱規定を満足すること（詳細はTMC設計に確認）<br>- ヒューズ実装部のランドひずみは、1,700μST以下とすること<br>- item: 搭載要件<br>owner: 仕入先<br>specs:<br>- バスバー側部品～ランド：0.7mm以上確保のこと<br>- 隣接コネクタ側ランド：0.7mm以上確保のこと</p><p>thermistor: # 2.6. サーミスタ<br>- item: 素子特性<br>owner: 仕入先<br>specs:<br>- 公称抵抗値：10kΩ±1%（25℃での素子抵抗）<br>- B定数：3435K±1%（25℃－85℃間のB定数）<br>- item: 応答性<br>owner: 仕入先<br>specs:<br>- 熱時定数は30s以下を満足すること（25℃→85℃の熱時定数）<br>- item: 測温誤差<br>owner: 仕入先<br>specs:<br>- 下表に示す測温誤差要求値を満たすこと<br>- 集熱面が点接触または線接触状態でも要求満足すること<br>- 測温面温度許容誤差：±3℃<br>temperature_error_spec: # 雰囲気温度25℃時、測温面温度[℃]に対する許容測温誤差[℃]（素子誤差を含む）<br>25: ±0.8<br>30: ±1.4<br>35: ±1.9<br>40: ±2.5<br>45: ±3.0<br>55: ±4.2<br>60: ±4.7<br>65: ±5.3<br>75: ±6.4<br>85: ±7.5<br>90: ±8.1<br>95: ±8.6<br>105: ±9.8<br>115: ±10.8<br>125: ±12.0</p><p>wiring_sub_wh: # 2.7. サブWH<br>- item: 搭載要件<br>owner: 仕入先<br>specs:<br>- TMC側要望クランプ固定位置、固定側形状は計画図、添付3Dデータを参照<br>- 車両組付け時に誤組しない構造とすること<br>- WH径は計画図、添付3Dデータの経路に合わせて保護材を設定すること（詳細はTMCと協議の上決定）<br>- item: 接続相手機器<br>owner: 仕入先<br>specs:<br>- 接続相手機器はTMCと協議の上、決定する<br>- item: 使用クランプ<br>owner: 仕入先<br>specs:<br>- TMC側要望クランプ固定位置、固定側形状は計画図、添付3Dデータを参照<br>- クランプ品番はTMCと協議の上、決定すること<br>- item: 配線保護<br>owner: 仕入先<br>specs:<br>- 計画図、添付3Dデータの経路に合わせて保護材を設定すること（詳細はTMCと協議の上決定）<br>- 設定する保護材は「2. 要求性能 (a)」保護材性能を満足すること<br>- 保護材はTSC1151Gを満足すること<br>- item: 色<br>owner: 仕入先<br>specs:<br>- 高圧部 保護材色：オレンジ（SAE 8.75R 5.75/2.5）<br>- 指定がない部位は、任意で決定すること</p><p>connector: # 2.8. コネクタ<br>- item: 品番<br>owner: 仕入先<br>specs:<br>- DEG66-10034,10035に使用するコネクタ品番：G92SF-42430, 90980-12366<br>- DEG66-10036,10037に使用するコネクタ品番：90980-12388<br>- item: 搭載位置<br>owner: 仕入先<br>specs:<br>- 配線部品と相手部品を接続できる位置に、コネクタを搭載すること<br>- 相手部品の位置は、計画図を参照すること<br>- 詳細はTMCと協議の上、決定すること<br>- item: 取扱規定<br>owner: 仕入先<br>specs:<br>- コネクタ図面に記載の取扱規定を満足すること<br>- item: 端子名称<br>owner: TMC<br>terminals:<br>- name: SR<br>io: 出力<br>usage: 監視IC電源用端子<br>- name: GSR<br>io: 出力<br>usage: 監視IC電源用端子<br>- name: V<br>io: 出力<br>usage: セル電圧検出端子<br>- name: G<br>io: 出力<br>usage: セル電圧検出端子<br>- name: TB<br>io: 出力<br>usage: セル温度サーミスタ<br>- name: CD<br>io: 出力<br>usage: セル種類判別端子<br>- name: GB<br>io: 出力<br>usage: シグナルGND<br>- item: 端子<br>owner: 仕入先<br>specs:<br>- 端子品番：G92SG-42040, 90980-09895（参考）</p><p>wiring_diagram: # 付図. 結線図・コネクタピン配列<br>- target: DEG66-10034,10036（スタック3,4 LH）<br>cells: cell29～cell56<br>connectors:<br>- name: 13セル間コネクタ（スタック3）<br>related_parts: [DEG66-10034（G96G3-10020 嵌合面視／2号機以外）, DEG66-10036（G92SF-42430 嵌合面視／2号機）]<br>- name: 15セル間コネクタ（スタック4）<br>related_parts: [DEG66-10034（G96G3-10040 嵌合面視／2号機以外）, DEG66-10036（90980-12366 嵌合面視／2号機）]<br>note: 端子名横の数値は、GA0を基準として、5V/セルとしたときの電位を表す<br>- target: DEG66-10035,10037（スタック3,4 RH）<br>cells: cell57～cell84<br>connectors:<br>- name: 15セル間コネクタ（スタック3）<br>related_parts: [DEG66-10035（G96G3-10020 嵌合面視／2号機以外）, DEG66-10037（G92SF-42430 嵌合面視／2号機）]<br>- name: 13セル間コネクタ（スタック4）<br>related_parts: [DEG66-10035（G96G3-10040 嵌合面視／2号機以外）, DEG66-10037（90980-12366 嵌合面視／2号機）]<br>note: 端子名横の数値は、GA0を基準として、5V/セルとしたときの電位を表す<br>detection_circuit: 5V－10kΩ－TB<em>／GB</em>－コンデンサC－検出回路（BBM側にサーミスタ、検出部品側に検出回路）</p><p>reliability<em>evaluation: # 3. 信頼性評価<br>acceptance_criteria: # 3.5. 確認項目および判定条件<br>- name: ヒューズ特性<br>owner: 仕入先<br>method:<br>- ヒューズを含む線に電流を流す<br>- 雰囲気温度：25±5℃<br>- 印加電圧：32V<br>conditions:<br>条件1</em>最大電流で溶断しないことの評価:<br>通電電流: 最大電流（設計前提参照）<br>通電時間: ヒューズ部温度飽和まで（温度変化率：±3℃/min.以下）<br>条件2_溶断特性評価:<br>通電電流: [4A, 8A, 12A, 16A]<br>通電時間: ヒューズ溶断するまで<br>criteria:<br>- 発煙・発火・焼損なきこと（①②共通）<br>- ヒューズが溶断しないこと（①のみ）<br>- 通電電流の波形をTMC設計に提示し、内容について合意を得ること（②のみ）</p><p>general_notes:<br>- 指示なき事項は協議して決定する<br>- 仕様の変更を希望する場合は必ず理由と根拠を明確にしてTMCに申し入れ、協議の上決定する</p><p>deliverables: # 4. 要求事項一覧表<br>description: トヨタが仕入先選定段階からSOPまでに仕入先に提出を求める事項<br>columns: [指定帳票, 仕入先選定, 試作, 号口]<br>items:<br>- name: トヨタ要求事項確認連絡票<br>指定帳票: true<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: IATF16949 DFMEA / DRBFM / FTA（部品階層図・相互影響マトリクス・気づきシート含む）<br>指定帳票: false<br>仕入先選定: true<br>試作: true<br>号口: true<br>notes:<br>- 部品階層図で機能一覧を示すこと<br>- ○新部品はDFMEA実施<br>- category: 仕入先担当者リスト、仕入先組織表<br>children:<br>- name: 仕入先担当者リスト<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: 仕入先組織表<br>仕入先選定: true<br>試作: true<br>号口: true<br>- category: 要求仕様を満足する仕入先案<br>children:<br>- name: 要求仕様に対する提案仕様<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: VE提案リスト(技術説明)<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: 承認図相当もしくは同等の技術情報記載の説明図<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: 要求仕様未達成項目・対応案説明書<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: 過去不具合の対策とその検証結果<br>仕入先選定: true<br>試作: true<br>号口: true<br>- category: 新規点、変更点、変化点リスト<br>children:<br>- name: 号口部品に対する新規点、変更点、変化点リスト<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: 仕入先選定時からの新規点、変更点、変化点リスト、コスト変動額<br>仕入先選定: false<br>試作: true<br>号口: true<br>- name: 試作品、本型暫定工程品、号口品の仕様違いリスト<br>仕入先選定: false<br>試作: true<br>号口: true<br>- category: 開発計画、実績<br>children:<br>- name: 開発計画書<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: 開発責任分担表(TMC提示の分担案に対する確認)<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: 評価設備能力・評価設備確保状況確認<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: 部品評価/検証計画<br>仕入先選定: true<br>試作: true<br>号口: true<br>- category: 製造、工程情報<br>children:<br>- name: 部品の製造拠点と実績表<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: サプライチェーン表(全構成部品)<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: 2次仕入先情報<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: 「1拠点生産」又は、トヨタが特定した生産工程情報(特殊工程)、特殊仕様、特殊材料情報<br>仕入先選定: true<br>試作: true<br>号口: true<br>- name: RSAM及びトヨタ設計の要求する資料<br>仕入先選定: true<br>試作: true<br>号口: true</p><p>confirmation_form: # トヨタ要求事項確認連絡票<br>purpose: 仕入先は部品を製品化するために、RDDP、TTIM または要求仕様書の要求事項を受け入れることができるかどうかを確認すること<br>instruction: 対象となる市場において高品質であるために、RDDPに不足している項目がないか仕入先のノウハウを基に確認すること<br>submission: 設計確認書/RFQ回答に添付ください<br>checkboxes:<br>- label: RDDP、TTIM の内容に従って開発することに同意する<br>- label: RDDP、TTIM の内容に従って開発することに同意できない<br>table_columns: [ページ, 項目, 要求事項, 合意できない箇所の詳細説明]<br>- label: RDDPの要求事項に追加情報が必要です<br>table_columns: [ページ, 項目, 要求事項, 追加情報の詳細説明]<br>- label: 対象となる市場において高品質であるために、仕入先の自動車部品開発におけるノウハウに基づき、RDDPの中に不足している要求事項がある<br>table_columns: [不測の要求事項, 要求事項の不足により市場で起こりうるリスク]<br>fields:<br>- 対象部品名<br>- RDDP No.又は品番/品名<br>- 会社名<br>- 役職(プロジェクト担当責任者)<br>- 氏名<br>- 回答日</p>",
             "references": [],
             "sourceImagePath": null,
             "thumbnailPath": null,
@@ -126,74 +126,99 @@
     },
     "digest": {
         "overview": {
-            "summary": "本書は、トヨタ自動車株式会社が発行する要素技術試作用のBBM（バスバーモジュール）要求仕様書であり、バスバー、樹脂ケース、配線部品、ヒューズ、サーミスタ、サブWH、コネクタの要求を定める。日本、北米、欧州、中国などを対象に、床下搭載、環境条件、112セル直列の電池構成、電気特性、絶縁・難燃性・構造・識別などの設計前提および一般要求を示す。付図ではスタック3・4に接続するLH/RH側の結線図とコネクタピン配列を示し、信頼性評価ではヒューズの通電・溶断特性および判定条件を規定する。さらに、仕入先選定からSOPまでに提出すべき帳票・資料を要求事項一覧表として整理している。",
+            "summary": "本書は、BBM（バスバーモジュール）を対象とする要素技術試作用の要求仕様書であり、対象品番DEG66-10034～DEG66-10037、文書番号EG6H-00QUとして、設計前提と製品要求を定める。112セル直列構成、搭載位置、環境条件、電圧・電流条件を前提に、BBM一般、バスバー、樹脂ケース、配線部品、ヒューズ、サーミスタ、サブWH、コネクタの構造・材料・絶縁・安全・電気特性・搭載条件を規定している。付図では品番別のセル範囲、結線、コネクタピン配列、検出回路を示し、信頼性評価ではヒューズ特性を含む確認項目と判定条件を定める。さらに、仕入先選定から試作・号口までに提出すべき品質・設計・評価・供給体制関連資料と、各種要求仕様への同意確認事項を一覧化している。",
             "documentKind": "requirement_spec",
-            "purpose": "BBMの要素技術試作に向けた設計・部品・電気特性・信頼性評価の要求を定義し、仕入先への提出資料を明確化する。",
-            "scope": "BBM本体、バスバー、樹脂ケース、配線部品、ヒューズ、サーミスタ、サブWH、コネクタ、結線図・ピン配列、ヒューズ信頼性評価、および仕入先提出資料を対象とする。",
+            "purpose": "BBMの設計・製作・評価に必要な要求仕様と、仕入先が各開発段階で提出すべき事項を定める。",
+            "scope": "BBM本体および関連するバスバー、樹脂ケース、配線部品、ヒューズ、サーミスタ、サブWH、コネクタ、結線・ピン配列、信頼性評価、仕入先提出事項を扱う。対象品番はDEG66-10034～DEG66-10037で、設計対象地域は日本、北米、欧州、中国、その他一般国。",
             "keyTopics": [
-                "設計前提・搭載環境",
-                "BBM一般要求",
-                "バスバー・樹脂ケース",
-                "配線部品・検出回路",
-                "ヒューズ仕様",
-                "サーミスタ仕様",
-                "サブWH・コネクタ",
+                "設計前提と適用地域・使用環境",
+                "BBM一般の構造・安全・絶縁要求",
+                "バスバー・樹脂ケース仕様",
+                "配線部品・検出回路仕様",
+                "ヒューズ・サーミスタ仕様",
+                "サブWH・コネクタ仕様",
                 "結線図・コネクタピン配列",
-                "信頼性評価",
-                "仕入先提出資料"
+                "信頼性評価と判定条件",
+                "仕入先の設計・評価・品質提出事項"
             ],
             "keyTerms": [
                 {
                     "term": "BBM（バスバーモジュール）",
-                    "definition": "バスバー、樹脂ケース、配線部品などを組み合わせたモジュール。"
-                },
-                {
-                    "term": "TMC",
-                    "definition": "本仕様書で主担当および設計上の合意先として記載される組織。"
-                },
-                {
-                    "term": "サブWH",
-                    "definition": "計画図・3Dデータに基づきクランプ固定や保護材を適用する配線部品。"
-                },
-                {
-                    "term": "電池判別線",
-                    "definition": "電池の種類判別に用いる配線で、抵抗仕様が定められている。"
-                },
-                {
-                    "term": "監視IC電源供給線",
-                    "definition": "監視ICへ電源を供給する配線で、ヒューズ要求が定められている。"
-                },
-                {
-                    "term": "セル間変位",
-                    "definition": "セル間で生じる変位で、BBMの強度要求に関係する。"
-                },
-                {
-                    "term": "TSC1151G",
-                    "definition": "サブWHの保護材性能に関して適合が求められる規格・要求名。"
-                },
-                {
-                    "term": "GA0",
-                    "definition": "付図の端子電位を示す際の基準。"
+                    "definition": "バスバー、樹脂ケース、配線部品等を組み合わせたモジュール。"
                 },
                 {
                     "term": "要素技術試作用",
-                    "definition": "本書に記載された文書の版種。"
+                    "definition": "本書で示されている文書の版種。"
+                },
+                {
+                    "term": "EG6H-00QU",
+                    "definition": "本要求仕様書の文書番号。"
+                },
+                {
+                    "term": "DEG66-10034～DEG66-10037",
+                    "definition": "本書の対象品番。"
+                },
+                {
+                    "term": "EG6H-00QT",
+                    "definition": "本仕様書が添付される外設申No.。"
+                },
+                {
+                    "term": "112セル直列構成",
+                    "definition": "設計前提として示されるBBMのセル構成。"
+                },
+                {
+                    "term": "監視IC",
+                    "definition": "電池電圧・温度検出線や電源供給線に関連する監視用IC。"
+                },
+                {
+                    "term": "サブWH",
+                    "definition": "BBMに接続されるサブワイヤーハーネス。"
+                },
+                {
+                    "term": "TSC1151G",
+                    "definition": "サブWH保護材の適合対象として記載される規格・要求。"
+                },
+                {
+                    "term": "GA0",
+                    "definition": "付図の端子電位を示す基準。"
+                },
+                {
+                    "term": "RDDP",
+                    "definition": "仕入先への同意確認対象として記載される要求文書・仕組み。"
+                },
+                {
+                    "term": "TTIM",
+                    "definition": "仕入先への同意確認対象として記載される要求文書・仕組み。"
+                },
+                {
+                    "term": "DFMEA",
+                    "definition": "要求事項一覧表で提出対象とされる設計故障モード影響解析。"
+                },
+                {
+                    "term": "DRBFM",
+                    "definition": "要求事項一覧表で提出対象とされる設計変更に基づく未然防止資料。"
+                },
+                {
+                    "term": "FTA",
+                    "definition": "要求事項一覧表で提出対象とされる故障の木解析。"
                 }
             ],
             "targetSystem": "BBM（バスバーモジュール）"
         },
         "outline": [
             {
-                "id": "b56fb645-de1f-4beb-8d81-0bd86688da1b",
-                "title": "BBM（バスバーモジュール）要求仕様書",
+                "id": "99abccc0-c07f-4e2d-abcd-c8b824f82410",
+                "title": "1. BBM（バスバーモジュール）要求仕様書",
                 "level": 1,
-                "summary": "バスバー、樹脂ケース、配線部品等を組み合わせたBBMの要求仕様書である。文書種別は要素技術試作用で、仕様書番号はEG6H-00QU、発行日は2026/05/28、発行者はトヨタ自動車株式会社である。",
+                "summary": "BBM（バスバー、樹脂ケース、配線部品等を組み合わせた状態）の要求仕様書である。文書番号はEG6H-00QU、外設申No. EG6H-00QT添付、発行日は2026/05/28、対象品番はDEG66-10034～DEG66-10037である。",
                 "keywords": [
                     "BBM",
                     "バスバーモジュール",
-                    "要求仕様書",
                     "EG6H-00QU",
-                    "要素技術試作用"
+                    "DEG66-10034",
+                    "DEG66-10035",
+                    "DEG66-10036",
+                    "DEG66-10037"
                 ],
                 "pageIds": [
                     "2ecc251c-b5b3-44e0-a815-e46770954802"
@@ -201,10 +226,10 @@
                 "children": []
             },
             {
-                "id": "5829bf99-de10-4724-a6ad-f1955ca77c73",
+                "id": "63c67727-8ff1-4d86-bfa9-8459c3c916bf",
                 "title": "出典: RSS_EG6H-00QT.pdf（外設申No. EG6H-00QTに添付／全15ページ）",
                 "level": 1,
-                "summary": "本仕様書の出典はRSS_EG6H-00QT.pdfであり、外設申No. EG6H-00QTに添付された全15ページの文書である。",
+                "summary": "本仕様書の出典としてRSS_EG6H-00QT.pdfを示し、外設申No. EG6H-00QTに添付された全15ページの資料であることを記載している。",
                 "keywords": [
                     "RSS_EG6H-00QT.pdf",
                     "外設申No. EG6H-00QT",
@@ -216,13 +241,13 @@
                 "children": []
             },
             {
-                "id": "03378106-7fed-4c30-b4fa-20b2dc9a4f08",
+                "id": "4e353972-95a4-48fc-8250-b09c29190ef7",
                 "title": "版種: 要素技術試作用",
                 "level": 1,
-                "summary": "文書の版種を「要素技術試作用」として記載している。",
+                "summary": "文書の版種を「要素技術試作用」としている。",
                 "keywords": [
-                    "版種",
-                    "要素技術試作用"
+                    "要素技術試作用",
+                    "document_type"
                 ],
                 "pageIds": [
                     "2ecc251c-b5b3-44e0-a815-e46770954802"
@@ -230,14 +255,16 @@
                 "children": []
             },
             {
-                "id": "2ca9c27f-5d8a-455c-b4c9-cae92075d93a",
+                "id": "f693f2c4-8f11-45f4-9713-15ede10c3eec",
                 "title": "注記: [A][B] 形式は原文の選択式記載、 * は原文のマスク箇所",
                 "level": 1,
-                "summary": "本文中の[A][B]形式は原文の選択式記載を示し、アスタリスク（*）は原文のマスク箇所を示す。",
+                "summary": "[A][B]形式は原文の選択式記載を示し、アスタリスク（*）は原文のマスク箇所を示す。原文記載のままとされた事項は、原文の誤記・不整合をそのまま転記する。",
                 "keywords": [
-                    "選択式記載",
+                    "[A][B]",
+                    "原文",
                     "マスク箇所",
-                    "原文"
+                    "誤記",
+                    "不整合"
                 ],
                 "pageIds": [
                     "2ecc251c-b5b3-44e0-a815-e46770954802"
@@ -245,15 +272,15 @@
                 "children": []
             },
             {
-                "id": "60c86a7c-eac6-4763-b98b-29b4f7d086dc",
+                "id": "b2bb97ab-cec8-42f4-81c0-3e423848eda9",
                 "title": "※「原文記載のまま」とあるものは、原文の誤記・不整合をそのまま転記",
                 "level": 1,
-                "summary": "「原文記載のまま」と付された事項は、原文にある誤記や不整合を修正せず転記する。本文では日付「20026/5/28」や定格電圧と計算式の不整合が該当する。",
+                "summary": "「原文記載のまま」と注記された内容について、誤記や不整合を修正せず転記する方針を示している。本文中では、revision_historyの日付「20026/5/28」や定格電圧と計算式の不整合が該当する。",
                 "keywords": [
                     "原文記載のまま",
-                    "誤記",
-                    "不整合",
-                    "20026/5/28"
+                    "20026/5/28",
+                    "定格電圧",
+                    "計算式"
                 ],
                 "pageIds": [
                     "2ecc251c-b5b3-44e0-a815-e46770954802"
@@ -261,18 +288,17 @@
                 "children": []
             },
             {
-                "id": "1c68847c-1f19-4c23-9d95-31db392770e4",
+                "id": "162d7446-2159-43b0-8947-1f714ac86cc2",
                 "title": "1. 設計前提",
                 "level": 1,
-                "summary": "TMCを主担当とし、日本、北米、欧州、中国、その他一般国向けの設計前提を示す。床下搭載、-40～85℃の保存温度、-30～80℃の動作温度、0～95%RHの動作湿度、112セル直列、各種パック電圧・電流条件および配線最大電流150mAを定めている。",
+                "summary": "TMCを主担当とし、日本、北米、欧州、中国、その他一般国向けの設計前提を示す。BBMの機能、床下搭載位置、保存・作動環境、112セル直列構成、電圧・電流条件を規定している。",
                 "keywords": [
                     "設計前提",
                     "TMC",
                     "112セル",
                     "床下搭載",
-                    "パック電圧",
-                    "システム最大電流",
-                    "150mA"
+                    "動作温度",
+                    "最大電流"
                 ],
                 "pageIds": [
                     "2ecc251c-b5b3-44e0-a815-e46770954802"
@@ -280,13 +306,13 @@
                 "children": []
             },
             {
-                "id": "66062ce3-4929-4da2-88e1-d3fe3ea9d986",
+                "id": "c2d55d4f-4101-4bb3-b4b9-b652cc64da52",
                 "title": "2. 要求仕様",
                 "level": 1,
-                "summary": "BBMの一般要求、バスバー、樹脂ケース、配線部品、ヒューズ、サーミスタ、サブWH、コネクタに関する要求を定める。構造、絶縁、材料、配線、電気特性、搭載および識別に関する条件が含まれる。",
+                "summary": "BBM一般、バスバー、樹脂ケース、配線部品、ヒューズ、サーミスタ、サブWH、コネクタに関する要求仕様を定めている。構造、絶縁、安全、材料、抵抗、電流、部品品番、搭載・配策条件などを含む。",
                 "keywords": [
                     "要求仕様",
-                    "BBM",
+                    "BBM一般",
                     "バスバー",
                     "樹脂ケース",
                     "配線部品"
@@ -296,16 +322,16 @@
                 ],
                 "children": [
                     {
-                        "id": "a652ff80-df53-4b5b-92f5-fc852431c425",
+                        "id": "9a6bc8d5-8fb3-4a06-8d48-958ea745ddc6",
                         "title": "2.1. BBM一般",
                         "level": 2,
-                        "summary": "品番ごとの構造・搭載側、IPXXBによる高電圧活電部の直接接触保護、周辺部品との搭載隙、セル間変位への強度、結露水対策、絶縁距離、難燃性、シリコン系材料、におい、品質、コーティング材を規定する。空間距離は最大2.22mm以上、コーティング材の絶縁破壊電圧は600V以上などの条件がある。",
+                        "summary": "品番ごとの基本構造とLH/RH側スタック用途、高電圧活電部のIPXXB直接接触保護、搭載隙、セル間変位に対する強度、結露水対策、絶縁距離、材料難燃性・臭気、品質、コーティング材を規定している。絶縁距離ではIEC 60664-1、空間距離2.22mm以上などの条件を示す。",
                         "keywords": [
-                            "BBM一般",
                             "IPXXB",
+                            "IEC 60529",
+                            "IEC 60664-1",
                             "セル間変位",
                             "絶縁距離",
-                            "IEC 60664-1",
                             "UL94 HB",
                             "TSM0505G"
                         ],
@@ -315,7 +341,7 @@
                         "children": []
                     },
                     {
-                        "id": "a0a9f3a4-a7bc-4304-b7d2-c94950204aa0",
+                        "id": "b073b3a2-f375-424e-97ab-7bfc4cc2c794",
                         "title": "2.2. バスバー",
                         "level": 2,
                         "summary": "バスバーの要求仕様は計画図を参照することとしている。",
@@ -329,18 +355,18 @@
                         "children": []
                     },
                     {
-                        "id": "6608d12c-0b88-407d-a046-9c527457f9fa",
+                        "id": "db8db875-8bcb-4e30-9b6b-8d2e3eda5baa",
                         "title": "2.3. 樹脂ケース",
                         "level": 2,
-                        "summary": "品番に応じた本体材料（PP・PCの真空成型またはPVC）、材料色の協議、サーミスタ保持構造、溶接時のマスク治具・レーザー・スパッタへの配慮、上方から視認できるスタック識別記号を規定する。",
+                        "summary": "品番ごとの樹脂材料（PP・PCの真空成型またはPVC）、材料色、サーミスタ保持、バスバー溶接時の治具・レーザー・スパッタへの配慮、スタック識別記号を規定している。",
                         "keywords": [
                             "樹脂ケース",
                             "PP",
                             "PC",
                             "PVC",
+                            "サーミスタ保持",
                             "真空成型",
-                            "サーミスタ",
-                            "スタック識別"
+                            "スタック識別記号"
                         ],
                         "pageIds": [
                             "2ecc251c-b5b3-44e0-a815-e46770954802"
@@ -348,18 +374,19 @@
                         "children": []
                     },
                     {
-                        "id": "1a816703-d62e-4ba4-bb02-9c7c2aad2ac8",
+                        "id": "25ed6500-c261-44b4-8709-e3e8b4feb324",
                         "title": "2.4. 配線部品一般",
                         "level": 2,
-                        "summary": "電池電圧・温度検出線、監視IC電源供給線、電池判別線を含む配線構造とし、結線図・コネクタピン配列に従い、DRとTMC設計の合意後に製造することを求める。はんだ外観品質、電池電圧検出線のヒューズ・抵抗・電流条件、温度検出線のサーミスタ、監視IC電源線のヒューズ、電池判別線の抵抗仕様を定めている。",
+                        "summary": "電池電圧・温度検出線、監視IC電源供給線、電池判別線の構造と配策、DR実施、はんだ外観品質、各配線のヒューズ・サーミスタ設定、抵抗仕様および電流条件を規定している。電池電圧検出線は1320mΩ以下@60℃、常時150mAおよび4A×9sで発煙・発火・機能不具合がないことを求める。",
                         "keywords": [
-                            "配線部品一般",
-                            "結線図",
+                            "配線部品",
+                            "電池電圧検出線",
+                            "電池温度検出線",
+                            "監視IC電源供給線",
                             "TSC0001G",
                             "IPC-A-610",
-                            "電池電圧検出線",
-                            "監視IC電源供給線",
-                            "電池判別線"
+                            "1320mΩ",
+                            "4A×9s"
                         ],
                         "pageIds": [
                             "2ecc251c-b5b3-44e0-a815-e46770954802"
@@ -367,10 +394,10 @@
                         "children": []
                     },
                     {
-                        "id": "dc88b703-d9eb-4ce0-ba1c-4852ba747776",
+                        "id": "02f1b801-f343-44d8-b516-c2f7d88c8a5b",
                         "title": "2.5. ヒューズ",
                         "level": 2,
-                        "summary": "使用ヒューズの品番をG3828-28010とし、仕入先の取扱規定、実装部ランドひずみ1,700μST以下、周辺ランドとの距離0.7mm以上を要求する。",
+                        "summary": "使用ヒューズの品番をG3828-28010とし、仕入先の取扱規定、実装部ランドひずみ1,700μST以下、周辺ランドとの距離0.7mm以上を規定している。",
                         "keywords": [
                             "ヒューズ",
                             "G3828-28010",
@@ -384,10 +411,10 @@
                         "children": []
                     },
                     {
-                        "id": "b94a3b27-8ef4-4f1a-b839-acc5f82b397c",
+                        "id": "b1c37afb-8ede-4828-b1fe-115c3fc04b91",
                         "title": "2.6. サーミスタ",
                         "level": 2,
-                        "summary": "サーミスタの公称抵抗値を10kΩ±1%、B定数を3435K±1%、熱時定数を30s以下とする。測温誤差は測温面温度許容誤差±3℃を含む表で、25℃時±0.8℃から125℃時±12.0℃まで規定されている。",
+                        "summary": "サーミスタの公称抵抗値10kΩ±1%、B定数3435K±1%、熱時定数30s以下を規定している。測温誤差について、25℃～125℃の測温面温度ごとの許容値と、測温面温度許容誤差±3℃を示す。",
                         "keywords": [
                             "サーミスタ",
                             "10kΩ",
@@ -402,16 +429,15 @@
                         "children": []
                     },
                     {
-                        "id": "2558baaf-b8f3-4fbc-a77b-fc6db83d1c3a",
+                        "id": "c1e3f8c1-ddf9-4081-9a84-8631583f5559",
                         "title": "2.7. サブWH",
                         "level": 2,
-                        "summary": "計画図・添付3Dデータに基づくクランプ固定、誤組防止、WH径に応じた保護材、接続相手機器、クランプ品番、保護材性能・TSC1151G適合、高圧部保護材色オレンジを規定する。",
+                        "summary": "サブWHのクランプ固定位置、誤組防止、保護材、接続相手機器、クランプ品番、保護材性能・TSC1151G適合、高圧部の保護材色（オレンジ、SAE 8.75R 5.75/2.5）を規定している。",
                         "keywords": [
                             "サブWH",
                             "クランプ",
-                            "保護材",
+                            "配線保護",
                             "TSC1151G",
-                            "高圧部",
                             "SAE 8.75R 5.75/2.5"
                         ],
                         "pageIds": [
@@ -420,16 +446,17 @@
                         "children": []
                     },
                     {
-                        "id": "98951697-7e08-4107-bba1-084c7f2f2331",
+                        "id": "2fe341ca-4846-4f3d-b771-30195c10af56",
                         "title": "2.8. コネクタ",
                         "level": 2,
-                        "summary": "品番ごとのコネクタ品番、搭載位置、取扱規定、端子名称および端子品番を定める。端子にはSR、GSR、V、G、TB、CD、GBがあり、監視IC電源、セル電圧、セル温度、セル種類判別、シグナルGNDに使用する。",
+                        "summary": "品番ごとのコネクタ品番、搭載位置、取扱規定、端子名称と用途、端子品番を規定している。端子にはSR、GSR、V、G、TB、CD、GBがあり、監視IC電源、セル電圧・温度検出、セル種類判別、シグナルGNDに使用する。",
                         "keywords": [
                             "コネクタ",
                             "G92SF-42430",
                             "90980-12366",
                             "90980-12388",
                             "SR",
+                            "GSR",
                             "TB",
                             "CD"
                         ],
@@ -441,17 +468,18 @@
                 ]
             },
             {
-                "id": "17bb4911-ca63-4457-8ec0-df32f3b183a4",
+                "id": "cc77d881-a9ae-48da-b8b5-ffe3e06c0db2",
                 "title": "付図. 結線図・コネクタピン配列",
                 "level": 1,
-                "summary": "LH側品番DEG66-10034・10036はcell29～cell56、RH側品番DEG66-10035・10037はcell57～cell84を対象とし、スタック3・4のセル間コネクタと関連部品を示す。端子名横の数値はGA0基準・5V/セル時の電位を表し、サーミスタを含む検出回路の接続も記載している。",
+                "summary": "LH側品番DEG66-10034・DEG66-10036はcell29～cell56、RH側品番DEG66-10035・DEG66-10037はcell57～cell84を対象とし、スタックごとのセル間コネクタと関連部品を示す。端子名横の数値はGA0基準で5V/セルとした電位を表し、サーミスタを含む検出回路の構成も記載している。",
                 "keywords": [
                     "結線図",
                     "コネクタピン配列",
-                    "DEG66-10034",
-                    "DEG66-10035",
                     "cell29",
+                    "cell56",
                     "cell57",
+                    "cell84",
+                    "GA0",
                     "検出回路"
                 ],
                 "pageIds": [
@@ -460,10 +488,10 @@
                 "children": []
             },
             {
-                "id": "a543b14d-f153-4346-ae30-f18ce5ac2979",
+                "id": "8422d09b-d796-4f75-8ad5-1e78238a17fe",
                 "title": "3. 信頼性評価",
                 "level": 1,
-                "summary": "BBMの信頼性評価に関する確認項目および判定条件を示す。記載された評価はヒューズ特性で、25±5℃、印加電圧32Vの条件で最大電流通電および4A・8A・12A・16Aの溶断特性を確認する。",
+                "summary": "BBMの信頼性評価に関する確認項目および判定条件を定めている。本文ではヒューズ特性について、25±5℃、印加電圧32V、最大電流評価と4A・8A・12A・16Aでの溶断特性評価を示す。",
                 "keywords": [
                     "信頼性評価",
                     "ヒューズ特性",
@@ -476,18 +504,17 @@
                 ],
                 "children": [
                     {
-                        "id": "90ecc2de-bdef-47c5-ba85-c5bf6a1a5caf",
+                        "id": "eea36a66-d019-49ff-91c9-6ea1283bc8ea",
                         "title": "3.1. 確認項目および判定条件",
                         "level": 2,
-                        "summary": "目次上の見出しとして確認項目および判定条件を示すが、本文では原文見出しが「3.5. 確認項目および判定条件」と注記されている。ヒューズ評価では発煙・発火・焼損がなく、最大電流では溶断せず、溶断特性評価では通電電流波形をTMC設計に提示して合意を得ることを判定条件とする。",
+                        "summary": "目次上の見出しとして確認項目および判定条件を示しているが、原文の見出しは「3.5. 確認項目および判定条件」と注記されている。ヒューズ評価では発煙・発火・焼損がないこと、最大電流で溶断しないこと、通電波形をTMC設計に提示して合意を得ることを判定条件とする。",
                         "keywords": [
                             "確認項目",
                             "判定条件",
                             "3.5",
                             "発煙",
                             "発火",
-                            "焼損",
-                            "通電電流波形"
+                            "焼損"
                         ],
                         "pageIds": [
                             "2ecc251c-b5b3-44e0-a815-e46770954802"
@@ -497,19 +524,19 @@
                 ]
             },
             {
-                "id": "02413d27-821c-40de-8aad-cd9ac93ed14d",
+                "id": "9f83d2f4-2545-45d8-8616-0c1d4ac9f2df",
                 "title": "4. 要求事項一覧表",
                 "level": 1,
-                "summary": "仕入先選定段階からSOPまでに仕入先へ提出を求める帳票・資料を、指定帳票、仕入先選定、試作、号口の区分で整理する。要求事項確認連絡票、DFMEA・DRBFM・FTA、担当者・組織表、提案仕様、開発計画、評価計画、製造拠点・サプライチェーン情報などを含む。",
+                "summary": "仕入先選定、試作、号口の各段階でトヨタが仕入先に提出を求める事項を一覧化している。トヨタ要求事項確認連絡票、DFMEA・DRBFM・FTA、提案仕様、VE提案、開発計画、評価計画、製造拠点・サプライチェーン情報などを含み、RDDP・TTIM・要求仕様書への同意確認も求める。",
                 "keywords": [
                     "要求事項一覧表",
-                    "SOP",
                     "仕入先選定",
                     "試作",
                     "号口",
                     "DFMEA",
                     "DRBFM",
-                    "FTA"
+                    "FTA",
+                    "RDDP"
                 ],
                 "pageIds": [
                     "2ecc251c-b5b3-44e0-a815-e46770954802"
@@ -517,8 +544,9 @@
                 "children": []
             }
         ],
-        "sourceHash": "4d1f348dd3ad591a49371077810973aad1715024",
-        "generatedAt": "2026-09-19T14:18:53.001375",
+        "sourceHash": "f4c9dfe071aa01e06cc9fd758fff22bd7eb39ff4",
+        "textHash": "8483d5c3dd44d22c53fd925dcd57671041762a45",
+        "generatedAt": "2026-09-24T20:59:34.884346",
         "pageCount": 1,
         "schemaVersion": 1,
         "generator": "ai"
