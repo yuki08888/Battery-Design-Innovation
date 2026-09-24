@@ -64,20 +64,6 @@
             "icon_color": null
         },
         {
-            "id": "4b4b93c7-35a9-44a2-ae2b-3b121207a1d1",
-            "name": "排煙バルブ要求割当図",
-            "parent_id": "dfee9968-ddb6-4879-be6f-36304df9a428",
-            "icon_key": "HubOutlined",
-            "icon_color": null
-        },
-        {
-            "id": "539a223a-283a-4e3f-aaac-dd3c9da2e96e",
-            "name": "排煙バルブ設計要件表",
-            "parent_id": "dfee9968-ddb6-4879-be6f-36304df9a428",
-            "icon_key": "TableChartOutlined",
-            "icon_color": null
-        },
-        {
             "id": "5be77210-89b8-43ba-855a-c392ecdb5220",
             "name": "要求検証マッピングトレーサビリティ表",
             "parent_id": "70de7c67-9e1f-4f30-86b5-42413ecbdc60",
@@ -167,9 +153,10 @@
         "43f4d071-ea21-4c66-9f88-55da09326154",
         "dfe52c73-7733-465d-9e5d-ba0415e52256",
         "5be77210-89b8-43ba-855a-c392ecdb5220",
-        "7de507e6-6597-4a3d-acae-4c768a52fa8f"
+        "7de507e6-6597-4a3d-acae-4c768a52fa8f",
+        "c4725d55-8fcc-4455-b31d-c46fd8f2d370"
     ],
-    "current_view_id": "43f4d071-ea21-4c66-9f88-55da09326154",
+    "current_view_id": "c4725d55-8fcc-4455-b31d-c46fd8f2d370",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,
