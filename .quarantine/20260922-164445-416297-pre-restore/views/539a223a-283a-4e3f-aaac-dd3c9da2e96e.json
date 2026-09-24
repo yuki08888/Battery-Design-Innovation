@@ -1,0 +1,49 @@
+{
+    "id": "539a223a-283a-4e3f-aaac-dd3c9da2e96e",
+    "name": "排煙バルブ設計要件表",
+    "class_name": "FreeTable",
+    "description": "排煙バルブ(B1)に割り当てられている排煙バルブCTRパッケージ(PKG8)内の機能要求の一覧。各パラメータ（開弁圧力、耐熱温度、逆流防止など）の設計背景となる要件とその定義。",
+    "root_ids": [
+        "50d0d2ac-9465-4376-b381-ed65c75ae5e4"
+    ],
+    "columns": [
+        {
+            "id": "c1",
+            "name": "排煙バルブパラメータ",
+            "sourceColumnId": null,
+            "type": "property",
+            "propertyName": "name"
+        },
+        {
+            "id": "c2",
+            "name": "型",
+            "sourceColumnId": null,
+            "type": "property",
+            "propertyName": "type"
+        },
+        {
+            "id": "c3",
+            "name": "初期値",
+            "sourceColumnId": null,
+            "type": "property",
+            "propertyName": "defaultValue"
+        },
+        {
+            "id": "c4",
+            "name": "単位",
+            "sourceColumnId": null,
+            "type": "property",
+            "propertyName": "unit"
+        },
+        {
+            "id": "c5",
+            "name": "説明",
+            "sourceColumnId": null,
+            "type": "property",
+            "propertyName": "description"
+        }
+    ],
+    "expanded_keys": [],
+    "hidden_columns": [],
+    "column_widths": {}
+}

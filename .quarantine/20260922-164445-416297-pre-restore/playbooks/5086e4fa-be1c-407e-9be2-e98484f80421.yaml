@@ -1,0 +1,66 @@
+id: ""
+name: トレーサビリティ監査
+slash_command: trace-audit
+description: |
+  要求 → 設計 → 検証のトレースリンク（satisfy / allocate / verify /
+  deriveReqt）の抜け漏れを網羅的に洗い出し、
+  カバレッジ表として報告する手順。編集は行わない。
+use_when: |
+  ユーザーが「トレーサビリティを確認」「要求のカバレッジを見たい」
+  「リンク漏れを探して」「V&V の抜けを確認」等を依頼したとき。
+steps:
+  - no: 1
+    title: 監査対象の確定
+    instruction: |
+      監査範囲の Requirement / Block / TestCase / Activity を
+      すべて列挙する。範囲が曖昧な場合はユーザーの指定を
+      パッケージ単位に読み替えて確定する。
+    tools:
+      - search_item
+      - read_package_contents
+      - read
+    done_when: 監査範囲をPackageまたは要素IDで確定し、Requirement / Block / TestCase / Activity の全短縮IDとclassName別件数を一覧化できている
+  - no: 2
+    title: satisfy カバレッジの確認
+    instruction: |
+      各 Requirement に satisfy する設計要素（Block 等）が
+      存在するかを graph_query / get_related_elements で確認する。
+      satisfy が無い要求（未実装要求）を列挙する。
+    tools:
+      - graph_query
+      - get_related_elements
+      - pincer_search
+    done_when: 全 Requirement を satisfy 有無で分類し、要求総数・接続済み件数・欠落件数・カバレッジ率と、欠落要求の短縮ID一覧を報告できる
+  - no: 3
+    title: verify カバレッジの確認
+    instruction: |
+      各 Requirement に verify する TestCase が存在するかを確認する。
+      検証手段が無い要求（未検証要求）を列挙する。
+      逆に、どの要求も検証していない孤立 TestCase も洗い出す。
+    tools:
+      - graph_query
+      - get_related_elements
+    done_when: 全 Requirement の verify 有無と全 TestCase の検証先有無を確認し、未検証要求・孤立TestCaseの短縮ID、件数、verifyカバレッジ率を報告できる
+  - no: 4
+    title: allocate と派生階層の確認
+    instruction: |
+      機能（Activity）が Block に allocate されているか、
+      および deriveReqt の階層に断絶や循環がないかを確認する。
+    tools:
+      - graph_query
+      - get_related_elements
+    done_when: 全 Activity の allocate 有無と全 deriveReqt の端点・循環を確認し、未割当Activity・親なし下位要求・循環の各ID一覧を0件の場合も含めて報告できる
+  - no: 5
+    title: カバレッジ表の作成と報告
+    instruction: |
+      確認結果をカバレッジ表（要求 × satisfy / verify / allocate）として
+      整理する。必要であれば create_free_matrix でトレーサビリティ
+      マトリクスを作成する。
+      最後に、欠落の重要度と対処案を添えて finalize で報告する。
+    tools:
+      - create_free_matrix
+      - create_free_table
+    done_when: 全監査対象Requirementを行に含む satisfy / verify / allocate カバレッジ表があり、各欠落に重要度・対象ID・推奨対処が対応し、集計値と表の件数が一致する
+strict: false
+allow_skip: true
+max_steps_per_stage: 14

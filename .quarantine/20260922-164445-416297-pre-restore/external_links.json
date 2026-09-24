@@ -1,0 +1,142 @@
+{
+    "4fee6958-f064-4cf8-9777-2fa6fcb3c887": [
+        {
+            "id": "868fe52c-1fb4-4718-8949-3509977a79fb",
+            "sourceType": "document",
+            "sourceId": "4fee6958-f064-4cf8-9777-2fa6fcb3c887",
+            "targetElementId": "cfcb364e-7491-4244-9119-3813b56a5247",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-07T19:09:19.633830",
+            "sourceQuote": null,
+            "targetKind": "element"
+        }
+    ],
+    "6a218b48-6d4f-466b-88f4-6f214ebf4490": [
+        {
+            "id": "a6f9a192-b45c-4fe8-bdc4-d2061070addd",
+            "sourceType": "document",
+            "sourceId": "6a218b48-6d4f-466b-88f4-6f214ebf4490",
+            "targetElementId": "cfcb364e-7491-4244-9119-3813b56a5247",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-07T19:22:09.198093",
+            "sourceQuote": null,
+            "targetKind": "element"
+        }
+    ],
+    "6d242417-9e35-4022-89c5-5658f40a05cc": [
+        {
+            "id": "4e5c94c6-bf0d-4c5f-82e5-6d8cfd7ff280",
+            "sourceType": "document",
+            "sourceId": "6d242417-9e35-4022-89c5-5658f40a05cc",
+            "targetElementId": "cfcb364e-7491-4244-9119-3813b56a5247",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-07T19:22:20.662893",
+            "sourceQuote": null,
+            "targetKind": "element"
+        }
+    ],
+    "2bbc8b71-e60f-401f-be02-1e1d0ecba96a": [
+        {
+            "id": "3fd33e24-b3ad-407d-927f-9b5782053700",
+            "sourceType": "document",
+            "sourceId": "2bbc8b71-e60f-401f-be02-1e1d0ecba96a",
+            "targetElementId": "817d4eea-993a-4886-856e-5efa1262bcb2",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-19T13:00:42.114156",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "bb8a3d40-def8-492f-a8da-5e82d43188d8",
+            "sourceType": "page",
+            "sourceId": "2ecc251c-b5b3-44e0-a815-e46770954802",
+            "targetElementId": "fa69ae01-87d3-4d18-a359-449369579eec",
+            "linkType": "relates",
+            "description": "BBM要求仕様書の全体表題であり、統合モデルのBBMトップ要求REQ-BBM-001および部品検証要求REQ-VAL-BBM-001の根拠記述として紐づけ。",
+            "createdAt": "2026-09-19T14:21:57.918099",
+            "sourceQuote": "BBM（バスバーモジュール）要求仕様書",
+            "targetKind": "element"
+        },
+        {
+            "id": "b7a8a0e9-3546-4633-b71c-ed3827478051",
+            "sourceType": "page",
+            "sourceId": "2ecc251c-b5b3-44e0-a815-e46770954802",
+            "targetElementId": "817d4eea-993a-4886-856e-5efa1262bcb2",
+            "linkType": "relates",
+            "description": "BBM要求仕様書の全体表題であり、統合モデルのBBMトップ要求REQ-BBM-001および部品検証要求REQ-VAL-BBM-001の根拠記述として紐づけ。",
+            "createdAt": "2026-09-19T14:21:57.918143",
+            "sourceQuote": "BBM（バスバーモジュール）要求仕様書",
+            "targetKind": "element"
+        },
+        {
+            "id": "c954bb10-7d12-4fb9-9d00-2ce3069c7686",
+            "sourceType": "page",
+            "sourceId": "2ecc251c-b5b3-44e0-a815-e46770954802",
+            "targetElementId": "fdd91844-4d09-45d1-b074-ef9cb11b22a6",
+            "linkType": "derives",
+            "description": "TTIM準拠および前提条件の根拠記述としてREQ-BBM-002に紐づけ。",
+            "createdAt": "2026-09-19T14:22:01.966711",
+            "sourceQuote": "TTIMに記載の要項は、本要求仕様書に記載がなくても満足すること",
+            "targetKind": "element"
+        },
+        {
+            "id": "01a259f5-e42b-422d-bb50-af2dfbe2a332",
+            "sourceType": "document",
+            "sourceId": "2bbc8b71-e60f-401f-be02-1e1d0ecba96a",
+            "targetElementId": "4c7c82a4-6f8e-4a66-9b6c-d3ba1250953c",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-21T09:15:16.673637",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "0dbbee9b-70a2-419b-ade4-cc93b7bf07dc",
+            "sourceType": "document",
+            "sourceId": "2bbc8b71-e60f-401f-be02-1e1d0ecba96a",
+            "targetElementId": "c71ffaef-137c-482a-83f8-05eddba038ce",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-21T15:31:34.290694",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "7e1d84c7-dc9d-447e-ae96-52dba5245060",
+            "sourceType": "document",
+            "sourceId": "2bbc8b71-e60f-401f-be02-1e1d0ecba96a",
+            "targetElementId": "a7ca9526-83c9-4cee-879a-c7a8028c5afd",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-21T18:36:29.687853",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "5123c48a-f906-4102-9573-28e813bfda1a",
+            "sourceType": "document",
+            "sourceId": "2bbc8b71-e60f-401f-be02-1e1d0ecba96a",
+            "targetElementId": "25455e71-d33c-49e0-8803-3d8532e6f226",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-21T18:36:38.443575",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "a46b0fb2-2b6f-42e5-8cb2-1589d412cb3e",
+            "sourceType": "document",
+            "sourceId": "2bbc8b71-e60f-401f-be02-1e1d0ecba96a",
+            "targetElementId": "590acdb1-d323-4564-ba09-da5f65eb5ccc",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-21T18:36:46.154420",
+            "sourceQuote": null,
+            "targetKind": "element"
+        }
+    ]
+}

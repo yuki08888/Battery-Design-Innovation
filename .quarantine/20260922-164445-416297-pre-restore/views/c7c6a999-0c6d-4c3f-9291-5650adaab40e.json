@@ -1,0 +1,82 @@
+{
+    "id": "c7c6a999-0c6d-4c3f-9291-5650adaab40e",
+    "name": "法規適合・熱拡散安全性性能マトリクス",
+    "class_name": "FreeMatrix",
+    "description": "熱拡散安全性能（BAT-020〜BAT-025）と法規要件（BS35/36/37）のトレーサビリティを示します。",
+    "vertical_scope_el_ids": [
+        "cfcb364e-7491-4244-9119-3813b56a5247"
+    ],
+    "horizontal_scope_el_ids": [
+        "835145bc-3af4-4da8-9744-35372b33307f"
+    ],
+    "vertical_types": [
+        "Requirement"
+    ],
+    "horizontal_types": [
+        "Requirement"
+    ],
+    "rel_filter_types": [
+        "deriveReqt",
+        "refine"
+    ],
+    "row_scope_config": {
+        "roots": [
+            {
+                "rootId": "cfcb364e-7491-4244-9119-3813b56a5247",
+                "includeRoot": true,
+                "includeIntermediates": true,
+                "queries": [
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Package"
+                    },
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Requirement",
+                        "mergeWithPrevious": true
+                    }
+                ],
+                "recursive": true
+            }
+        ],
+        "directElementIds": []
+    },
+    "col_scope_config": {
+        "roots": [
+            {
+                "rootId": "835145bc-3af4-4da8-9744-35372b33307f",
+                "includeRoot": true,
+                "includeIntermediates": true,
+                "queries": [
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Package"
+                    },
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Requirement",
+                        "mergeWithPrevious": true
+                    }
+                ],
+                "recursive": true
+            }
+        ],
+        "directElementIds": []
+    },
+    "direction_filter": "both",
+    "row_expanded_ids": [
+        "cfcb364e-7491-4244-9119-3813b56a5247"
+    ],
+    "col_expanded_ids": [
+        "835145bc-3af4-4da8-9744-35372b33307f",
+        "135db228-4565-4391-a789-8dcf54a82d7c",
+        "fb71180f-6f4d-41f9-bfa4-4810cbc9b19f",
+        "05c79587-2c75-413c-99bf-d884a3df139a"
+    ],
+    "show_outgoing": true,
+    "show_incoming": true
+}

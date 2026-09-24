@@ -1,0 +1,175 @@
+{
+    "id": "8db5db99-aaf9-42bb-bb3b-115f4e03c57d",
+    "name": "熱拡散機能ブロック図yaml 隣接セルへの熱伝導 — 構造図",
+    "class_name": "FreeDiagram",
+    "nodes": [
+        {
+            "class_name": "DiagramNode",
+            "id": "3791de40-51b9-42fe-bfb5-0467784cd22b",
+            "element_id": "3791de40-51b9-42fe-bfb5-0467784cd22b",
+            "x": 60.0,
+            "y": 40.0,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "1163b938-3d8f-4196-88eb-1a5a1f5ed104",
+            "element_id": "1163b938-3d8f-4196-88eb-1a5a1f5ed104",
+            "x": -430.0,
+            "y": 200.0,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "df1c1ede-62c7-4bb7-9080-758c0ddb49d8",
+            "element_id": "df1c1ede-62c7-4bb7-9080-758c0ddb49d8",
+            "x": -80.0,
+            "y": 200.0,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "cfe3c6f8-4acb-4c15-b07d-e3f8e72329e4",
+            "element_id": "cfe3c6f8-4acb-4c15-b07d-e3f8e72329e4",
+            "x": 270.0,
+            "y": 200.0,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "9194131f-33c3-42b9-a421-b5ac2621cae5",
+            "element_id": "9194131f-33c3-42b9-a421-b5ac2621cae5",
+            "x": 410.0,
+            "y": 200.0,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "a94f7229-0e3f-44d1-8c4f-8b77e0b7752e",
+            "element_id": "a94f7229-0e3f-44d1-8c4f-8b77e0b7752e",
+            "x": 550.0,
+            "y": 200.0,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "649bf439-99cc-4f89-abdd-bc8dc9b4d95f",
+            "element_id": "649bf439-99cc-4f89-abdd-bc8dc9b4d95f",
+            "x": -290.0,
+            "y": 360.0,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "bc0ca239-ce89-42b1-9b76-49b79016e6d0",
+            "element_id": "bc0ca239-ce89-42b1-9b76-49b79016e6d0",
+            "x": -150.0,
+            "y": 360.0,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "dbabd595-25c1-404d-9455-6572672a135c",
+            "element_id": "dbabd595-25c1-404d-9455-6572672a135c",
+            "x": -10.0,
+            "y": 360.0,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "7a8a47d3-3b00-4d64-a406-5d03ec4e19ad",
+            "element_id": "7a8a47d3-3b00-4d64-a406-5d03ec4e19ad",
+            "x": 130.0,
+            "y": 360.0,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "cff45aab-a91a-47fe-861c-3b0c45b5eb0b",
+            "element_id": "cff45aab-a91a-47fe-861c-3b0c45b5eb0b",
+            "x": -10.0,
+            "y": 520.0,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "d3c5e505-7b64-4faf-a617-1f258884921a",
+            "element_id": "d3c5e505-7b64-4faf-a617-1f258884921a",
+            "x": 410.0,
+            "y": 360.0,
+            "width": 120,
+            "height": 80
+        }
+    ],
+    "edges": [
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "d75fbd60-60b7-4bed-bea4-d56b6827d71b",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "fe1155f7-9a8e-4529-895b-9639cf390582",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "ec1baf30-a820-446a-9665-3561c2e69dfe",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "d188e364-ec2c-4e07-9213-e81a320a989e",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "957356d4-e2c9-40c7-9678-15728ab19d8f",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "d44e7c37-cdb9-4844-b9c6-2f6ac5c00340",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "84dc0290-7d02-4786-ba1d-c6f63af89a17",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "550c1ae0-74d7-408f-8194-27267128179e",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "81a4023b-14c2-4d1c-9434-93b7e0b92369",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "e43620c0-8380-45d4-b168-e3a3a08c030e",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "97e09700-12df-4bf9-8b1e-8ff6517ff5b8",
+            "routing": "bezier"
+        }
+    ],
+    "scale": 1.0,
+    "offset_x": 0.0,
+    "offset_y": 0.0
+}
