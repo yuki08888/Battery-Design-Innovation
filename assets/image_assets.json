@@ -1,4 +1,27 @@
 {
   "schemaVersion": 1,
-  "items": []
+  "items": [
+    {
+      "id": "9b5649b4-8413-44eb-9df9-fa366b0efc60",
+      "itemType": "asset",
+      "name": "20260924_電池性能 要求マトリクス_中田.xlsx",
+      "parentId": null,
+      "order": 0,
+      "description": "",
+      "assetKind": "tabular",
+      "sha1": "91b42ac59756ea32af14fdd6b94c815825cfaf1a",
+      "ext": "xlsx",
+      "mimeType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "width": 0,
+      "height": 0,
+      "byteSize": 593500,
+      "createdAt": "2026-09-24T17:13:04.421121",
+      "updatedAt": "2026-09-24T17:13:04.446585",
+      "aiStatus": "skipped",
+      "origin": {
+        "kind": "chat_attachment",
+        "fileName": "20260924_電池性能 要求マトリクス_中田.xlsx"
+      }
+    }
+  ]
 }
