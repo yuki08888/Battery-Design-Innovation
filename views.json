@@ -15,13 +15,6 @@
             "icon_color": null
         },
         {
-            "id": "407d0ccd-af56-461d-b2d6-8148dc63c411",
-            "name": "関係性",
-            "parent_id": "cfcb364e-7491-4244-9119-3813b56a5247",
-            "icon_key": "HubOutlined",
-            "icon_color": null
-        },
-        {
             "id": "2ad2b7ef-3734-4840-95c8-6ef890ceb32c",
             "name": "テーブル",
             "parent_id": "cfcb364e-7491-4244-9119-3813b56a5247",
@@ -40,13 +33,6 @@
             "name": "SysMLオントロジー.yaml",
             "parent_id": "",
             "icon_key": "AccountTreeOutlined",
-            "icon_color": null
-        },
-        {
-            "id": "c935be1f-a1ed-4eec-933d-1cd7b7f6a167",
-            "name": "関係",
-            "parent_id": "835145bc-3af4-4da8-9744-35372b33307f",
-            "icon_key": "HubOutlined",
             "icon_color": null
         },
         {
@@ -162,9 +148,11 @@
         "5be77210-89b8-43ba-855a-c392ecdb5220",
         "7de507e6-6597-4a3d-acae-4c768a52fa8f",
         "c4725d55-8fcc-4455-b31d-c46fd8f2d370",
-        "49c3fa3d-880b-4d0f-97b6-81df90f6bdc5"
+        "49c3fa3d-880b-4d0f-97b6-81df90f6bdc5",
+        "c7c6a999-0c6d-4c3f-9291-5650adaab40e",
+        "e56c667f-1cb9-43fb-915c-2f18fbd0d261"
     ],
-    "current_view_id": "49c3fa3d-880b-4d0f-97b6-81df90f6bdc5",
+    "current_view_id": "c7c6a999-0c6d-4c3f-9291-5650adaab40e",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,
