@@ -22,6 +22,50 @@
         "kind": "chat_attachment",
         "fileName": "20260924_電池性能 要求マトリクス_中田.xlsx"
       }
+    },
+    {
+      "id": "829d167b-7281-4334-bfb6-16de8b9bd957",
+      "itemType": "asset",
+      "name": "es_Requirements.md",
+      "parentId": null,
+      "order": 1,
+      "description": "",
+      "assetKind": "image",
+      "sha1": "26b79da3763a21911cf2cef9898ba14b0e6cc103",
+      "ext": "png",
+      "mimeType": "image/png",
+      "width": 0,
+      "height": 0,
+      "byteSize": 13008,
+      "createdAt": "2026-09-28T12:05:30.531924",
+      "updatedAt": "2026-09-28T12:05:30.598837",
+      "aiStatus": "skipped",
+      "origin": {
+        "kind": "chat_attachment",
+        "fileName": "es_Requirements.md"
+      }
+    },
+    {
+      "id": "bf7d467e-c9a3-4713-807d-ccb7b625473a",
+      "itemType": "asset",
+      "name": "es_Requirements.pdf",
+      "parentId": null,
+      "order": 2,
+      "description": "",
+      "assetKind": "document",
+      "sha1": "e8d5f4de6f4a9353a6832d913800f78746f14316",
+      "ext": "pdf",
+      "mimeType": "application/pdf",
+      "width": 0,
+      "height": 0,
+      "byteSize": 196271,
+      "createdAt": "2026-09-28T13:22:48.372556",
+      "updatedAt": "2026-09-28T13:22:48.373726",
+      "aiStatus": "skipped",
+      "origin": {
+        "kind": "chat_attachment",
+        "fileName": "es_Requirements.pdf"
+      }
     }
   ]
 }

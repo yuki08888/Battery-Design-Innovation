@@ -146,6 +146,13 @@
             "parent_id": "",
             "icon_key": "DescriptionOutlined",
             "icon_color": null
+        },
+        {
+            "id": "49c3fa3d-880b-4d0f-97b6-81df90f6bdc5",
+            "name": "es_Requirements.pdf",
+            "parent_id": "",
+            "icon_key": "DescriptionOutlined",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [
@@ -154,9 +161,10 @@
         "dfe52c73-7733-465d-9e5d-ba0415e52256",
         "5be77210-89b8-43ba-855a-c392ecdb5220",
         "7de507e6-6597-4a3d-acae-4c768a52fa8f",
-        "c4725d55-8fcc-4455-b31d-c46fd8f2d370"
+        "c4725d55-8fcc-4455-b31d-c46fd8f2d370",
+        "49c3fa3d-880b-4d0f-97b6-81df90f6bdc5"
     ],
-    "current_view_id": "c4725d55-8fcc-4455-b31d-c46fd8f2d370",
+    "current_view_id": "49c3fa3d-880b-4d0f-97b6-81df90f6bdc5",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,

@@ -10,6 +10,17 @@
             "createdAt": "2026-09-07T19:09:19.633830",
             "sourceQuote": null,
             "targetKind": "element"
+        },
+        {
+            "id": "156aa11d-b61c-440a-b811-f784f078981e",
+            "sourceType": "document",
+            "sourceId": "4fee6958-f064-4cf8-9777-2fa6fcb3c887",
+            "targetElementId": "67ae32b1-63e3-4485-bab6-e5253d770f7e",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-28T15:07:36.484292",
+            "sourceQuote": null,
+            "targetKind": "element"
         }
     ],
     "6a218b48-6d4f-466b-88f4-6f214ebf4490": [
@@ -34,6 +45,17 @@
             "linkType": "relates",
             "description": null,
             "createdAt": "2026-09-07T19:22:20.662893",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "c89d1b11-19e2-489e-a796-757d2c64bc0f",
+            "sourceType": "document",
+            "sourceId": "6d242417-9e35-4022-89c5-5658f40a05cc",
+            "targetElementId": "67ae32b1-63e3-4485-bab6-e5253d770f7e",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-28T15:07:36.509729",
             "sourceQuote": null,
             "targetKind": "element"
         }
