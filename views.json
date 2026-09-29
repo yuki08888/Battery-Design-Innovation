@@ -139,6 +139,13 @@
             "parent_id": "",
             "icon_key": "DescriptionOutlined",
             "icon_color": null
+        },
+        {
+            "id": "546b6422-bfd9-4fa5-bf96-0b01b190020f",
+            "name": "外部短絡システム要求・部品関連マトリクス",
+            "parent_id": "ba859834-feab-4b42-985f-77263937f5e9",
+            "icon_key": "GridOnOutlined",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [

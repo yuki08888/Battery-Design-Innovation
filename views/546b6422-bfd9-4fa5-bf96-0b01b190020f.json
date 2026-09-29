@@ -1,0 +1,363 @@
+{
+    "id": "546b6422-bfd9-4fa5-bf96-0b01b190020f",
+    "name": "外部短絡システム要求・部品関連マトリクス",
+    "class_name": "FreeMatrix",
+    "description": "外部短絡システム要求（BATs-067〜BATs-082）と対象部品（高圧回路・機器等のBlock）のトレーサビリティを確認・編集・把握するためのマトリクスです。",
+    "vertical_scope_el_ids": [
+        "ba859834-feab-4b42-985f-77263937f5e9"
+    ],
+    "horizontal_scope_el_ids": [
+        "7af3fe1a-51bf-4d7a-b208-ebf918c85c8b",
+        "4e1ec7bb-e6c1-47a2-adab-991bb4dcf8e1"
+    ],
+    "vertical_types": [
+        "Requirement"
+    ],
+    "horizontal_types": [
+        "Block"
+    ],
+    "rel_filter_types": [
+        "satisfy",
+        "trace",
+        "refine"
+    ],
+    "row_scope_config": {
+        "roots": [
+            {
+                "rootId": "ba859834-feab-4b42-985f-77263937f5e9",
+                "includeRoot": true,
+                "includeIntermediates": true,
+                "queries": [
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Package"
+                    },
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Requirement",
+                        "mergeWithPrevious": true
+                    }
+                ],
+                "recursive": true
+            }
+        ],
+        "directElementIds": []
+    },
+    "col_scope_config": {
+        "roots": [
+            {
+                "rootId": "7af3fe1a-51bf-4d7a-b208-ebf918c85c8b",
+                "includeRoot": true,
+                "includeIntermediates": true,
+                "queries": [
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Package"
+                    },
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Block",
+                        "mergeWithPrevious": true
+                    }
+                ],
+                "recursive": true
+            },
+            {
+                "rootId": "4e1ec7bb-e6c1-47a2-adab-991bb4dcf8e1",
+                "includeRoot": true,
+                "includeIntermediates": true,
+                "queries": [
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Package"
+                    },
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Block",
+                        "mergeWithPrevious": true
+                    }
+                ],
+                "recursive": true
+            },
+            {
+                "rootId": "ec2dcd30-72cc-4659-acd1-ed3d4afd4d25",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            }
+        ],
+        "directElementIds": []
+    },
+    "direction_filter": "both",
+    "create_relation_type": "__all__",
+    "include_implied": true,
+    "implied_edge_config": {
+        "customRules": [
+            {
+                "id": "default-generalization",
+                "name": "汎化の継承",
+                "enabled": true,
+                "isDefault": true,
+                "bridgeRelType": "generalization",
+                "propagateRelTypes": [
+                    "satisfy",
+                    "verify",
+                    "trace",
+                    "refine",
+                    "allocate",
+                    "include",
+                    "extend",
+                    "dependency",
+                    "association",
+                    "aggregation",
+                    "composition",
+                    "containment"
+                ],
+                "resolvedType": "__inherit__",
+                "direction": "forward",
+                "bridgePivot": "target",
+                "propagatePivot": "source",
+                "resultSource": "anchor"
+            },
+            {
+                "id": "default-realization",
+                "name": "実現の継承",
+                "enabled": true,
+                "isDefault": true,
+                "bridgeRelType": "realization",
+                "propagateRelTypes": [
+                    "satisfy",
+                    "verify",
+                    "trace",
+                    "refine",
+                    "allocate",
+                    "include",
+                    "extend",
+                    "dependency",
+                    "association",
+                    "aggregation",
+                    "composition",
+                    "containment"
+                ],
+                "resolvedType": "__inherit__",
+                "direction": "forward",
+                "bridgePivot": "target",
+                "propagatePivot": "source",
+                "resultSource": "anchor"
+            },
+            {
+                "id": "default-include",
+                "name": "包含(include)の継承",
+                "enabled": true,
+                "isDefault": true,
+                "bridgeRelType": "include",
+                "propagateRelTypes": [
+                    "satisfy",
+                    "verify",
+                    "trace",
+                    "refine"
+                ],
+                "resolvedType": "__inherit__",
+                "direction": "forward",
+                "bridgePivot": "target",
+                "propagatePivot": "source",
+                "resultSource": "anchor"
+            },
+            {
+                "id": "default-merge",
+                "name": "マージ元の継承",
+                "enabled": true,
+                "isDefault": true,
+                "bridgeRelType": "merge",
+                "propagateRelTypes": [
+                    "satisfy",
+                    "verify",
+                    "trace",
+                    "refine",
+                    "allocate",
+                    "include",
+                    "extend",
+                    "dependency",
+                    "association",
+                    "aggregation",
+                    "composition",
+                    "containment"
+                ],
+                "resolvedType": "__inherit__",
+                "direction": "forward",
+                "bridgePivot": "source",
+                "propagatePivot": "source",
+                "resultSource": "anchor"
+            },
+            {
+                "id": "default-derive-satisfy",
+                "name": "派生要求の逆トレース(satisfy)",
+                "enabled": true,
+                "isDefault": true,
+                "bridgeRelType": "deriveReqt",
+                "propagateRelTypes": [
+                    "satisfy"
+                ],
+                "resolvedType": "trace",
+                "direction": "backward",
+                "bridgePivot": "target",
+                "propagatePivot": "target",
+                "resultSource": "far"
+            },
+            {
+                "id": "default-derive-verify",
+                "name": "派生要求の逆トレース(verify)",
+                "enabled": true,
+                "isDefault": true,
+                "bridgeRelType": "deriveReqt",
+                "propagateRelTypes": [
+                    "verify"
+                ],
+                "resolvedType": "trace",
+                "direction": "backward",
+                "bridgePivot": "target",
+                "propagatePivot": "target",
+                "resultSource": "far"
+            },
+            {
+                "id": "default-extend-satisfy",
+                "name": "拡張のトレース(satisfy)",
+                "enabled": true,
+                "isDefault": true,
+                "bridgeRelType": "extend",
+                "propagateRelTypes": [
+                    "satisfy"
+                ],
+                "resolvedType": "trace",
+                "direction": "forward",
+                "bridgePivot": "source",
+                "propagatePivot": "source",
+                "resultSource": "anchor"
+            },
+            {
+                "id": "default-extend-verify",
+                "name": "拡張のトレース(verify)",
+                "enabled": true,
+                "isDefault": true,
+                "bridgeRelType": "extend",
+                "propagateRelTypes": [
+                    "verify"
+                ],
+                "resolvedType": "trace",
+                "direction": "forward",
+                "bridgePivot": "source",
+                "propagatePivot": "source",
+                "resultSource": "anchor"
+            },
+            {
+                "id": "default-dependency-trace",
+                "name": "依存のトレース",
+                "enabled": true,
+                "isDefault": true,
+                "bridgeRelType": "dependency",
+                "propagateRelTypes": [
+                    "satisfy",
+                    "verify"
+                ],
+                "resolvedType": "trace",
+                "direction": "forward",
+                "bridgePivot": "target",
+                "propagatePivot": "source",
+                "resultSource": "anchor"
+            },
+            {
+                "id": "default-association-trace",
+                "name": "関連のトレース",
+                "enabled": true,
+                "isDefault": true,
+                "bridgeRelType": "association",
+                "propagateRelTypes": [
+                    "satisfy",
+                    "verify"
+                ],
+                "resolvedType": "trace",
+                "direction": "forward",
+                "bidirectional": true,
+                "bridgePivot": "target",
+                "propagatePivot": "source",
+                "resultSource": "anchor"
+            },
+            {
+                "id": "default-partwhole-satisfy",
+                "name": "部品→全体 satisfy昇格",
+                "enabled": false,
+                "isDefault": true,
+                "bridgeRelType": "composition",
+                "propagateRelTypes": [
+                    "satisfy"
+                ],
+                "resolvedType": "__inherit__",
+                "direction": "forward",
+                "bridgePivot": "target",
+                "propagatePivot": "source",
+                "resultSource": "anchor"
+            },
+            {
+                "id": "default-partwhole-verify",
+                "name": "部品→全体 verify昇格",
+                "enabled": false,
+                "isDefault": true,
+                "bridgeRelType": "composition",
+                "propagateRelTypes": [
+                    "verify"
+                ],
+                "resolvedType": "__inherit__",
+                "direction": "forward",
+                "bridgePivot": "target",
+                "propagatePivot": "source",
+                "resultSource": "anchor"
+            },
+            {
+                "id": "default-allocate-satisfy",
+                "name": "割り当ての satisfy双方向",
+                "enabled": false,
+                "isDefault": true,
+                "bridgeRelType": "allocate",
+                "propagateRelTypes": [
+                    "satisfy"
+                ],
+                "resolvedType": "satisfy",
+                "direction": "forward",
+                "bidirectional": true,
+                "bridgePivot": "source",
+                "propagatePivot": "source",
+                "resultSource": "anchor"
+            },
+            {
+                "id": "default-refine-satisfy",
+                "name": "refine satisfy昇格",
+                "enabled": false,
+                "isDefault": true,
+                "bridgeRelType": "refine",
+                "propagateRelTypes": [
+                    "satisfy"
+                ],
+                "resolvedType": "satisfy",
+                "direction": "forward",
+                "bridgePivot": "source",
+                "propagatePivot": "source",
+                "resultSource": "anchor"
+            }
+        ]
+    },
+    "row_expanded_ids": [
+        "ba859834-feab-4b42-985f-77263937f5e9"
+    ],
+    "col_expanded_ids": [
+        "4e1ec7bb-e6c1-47a2-adab-991bb4dcf8e1",
+        "7af3fe1a-51bf-4d7a-b208-ebf918c85c8b"
+    ],
+    "show_outgoing": true,
+    "show_incoming": true
+}
