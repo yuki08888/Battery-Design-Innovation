@@ -149,16 +149,9 @@
         }
     ],
     "current_tab_ids": [
-        "8983b8ef-769b-48d8-ac21-2a13b733baef",
-        "43f4d071-ea21-4c66-9f88-55da09326154",
-        "dfe52c73-7733-465d-9e5d-ba0415e52256",
-        "5be77210-89b8-43ba-855a-c392ecdb5220",
-        "7de507e6-6597-4a3d-acae-4c768a52fa8f",
-        "c4725d55-8fcc-4455-b31d-c46fd8f2d370",
-        "546b6422-bfd9-4fa5-bf96-0b01b190020f",
-        "62e09133-06ca-4f60-b5dd-7204e3d7c661"
+        "8983b8ef-769b-48d8-ac21-2a13b733baef"
     ],
-    "current_view_id": "62e09133-06ca-4f60-b5dd-7204e3d7c661",
+    "current_view_id": "8983b8ef-769b-48d8-ac21-2a13b733baef",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,
