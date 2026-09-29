@@ -89,13 +89,20 @@
                 "rootId": "ec2dcd30-72cc-4659-acd1-ed3d4afd4d25",
                 "includeRoot": true,
                 "includeIntermediates": false,
+                "queries": [],
+                "recursive": false
+            },
+            {
+                "rootId": "54530f3c-1f57-4d43-877e-3e62190dd63a",
+                "includeRoot": true,
+                "includeIntermediates": false,
                 "queries": []
             }
         ],
         "directElementIds": []
     },
     "direction_filter": "both",
-    "create_relation_type": "__all__",
+    "create_relation_type": "satisfy",
     "include_implied": true,
     "implied_edge_config": {
         "customRules": [

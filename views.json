@@ -57,13 +57,6 @@
             "icon_color": null
         },
         {
-            "id": "889f5b2b-f2ec-425c-a79a-568e611e842b",
-            "name": "セル間断熱材 - 内部ブロック図",
-            "parent_id": "5862d70a-116a-4c03-b0f2-11b3f5287bfe",
-            "icon_key": "DashboardOutlined",
-            "icon_color": null
-        },
-        {
             "id": "028fab96-9f7a-447d-a70f-ad344426d4b9",
             "name": "絶縁カバー CTR-BATs トレーサビリティマトリクス",
             "parent_id": "b15a8c13-6392-4290-8d50-a3a27c14a51a",
@@ -146,6 +139,13 @@
             "parent_id": "ba859834-feab-4b42-985f-77263937f5e9",
             "icon_key": "GridOnOutlined",
             "icon_color": null
+        },
+        {
+            "id": "62e09133-06ca-4f60-b5dd-7204e3d7c661",
+            "name": "電池パックASSY - 内部ブロック図",
+            "parent_id": "54530f3c-1f57-4d43-877e-3e62190dd63a",
+            "icon_key": "DashboardOutlined",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [
@@ -155,11 +155,10 @@
         "5be77210-89b8-43ba-855a-c392ecdb5220",
         "7de507e6-6597-4a3d-acae-4c768a52fa8f",
         "c4725d55-8fcc-4455-b31d-c46fd8f2d370",
-        "49c3fa3d-880b-4d0f-97b6-81df90f6bdc5",
-        "c7c6a999-0c6d-4c3f-9291-5650adaab40e",
-        "e56c667f-1cb9-43fb-915c-2f18fbd0d261"
+        "546b6422-bfd9-4fa5-bf96-0b01b190020f",
+        "62e09133-06ca-4f60-b5dd-7204e3d7c661"
     ],
-    "current_view_id": "c7c6a999-0c6d-4c3f-9291-5650adaab40e",
+    "current_view_id": "62e09133-06ca-4f60-b5dd-7204e3d7c661",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,
