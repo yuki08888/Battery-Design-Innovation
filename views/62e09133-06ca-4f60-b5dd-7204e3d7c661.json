@@ -250,8 +250,8 @@
             "class_name": "DiagramNode",
             "id": "69509d8a-0375-4d86-82d3-1cdd192a2f4e",
             "element_id": "69509d8a-0375-4d86-82d3-1cdd192a2f4e",
-            "x": 1320,
-            "y": 230,
+            "x": 995.5005577288458,
+            "y": -193.83600623171156,
             "width": 160,
             "height": 60
         },
@@ -1415,9 +1415,9 @@
             "routing": "bezier"
         }
     ],
-    "scale": 0.8883423338808714,
-    "offset_x": -86.6147994033272,
-    "offset_y": -148.25579263299096,
+    "scale": 0.7550090018191038,
+    "offset_x": 57.65917003992536,
+    "offset_y": 254.15180189956698,
     "relationship_type": "containment",
     "visible_relation_types": [
         "containment",
