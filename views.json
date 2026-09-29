@@ -146,12 +146,20 @@
             "parent_id": "54530f3c-1f57-4d43-877e-3e62190dd63a",
             "icon_key": "DashboardOutlined",
             "icon_color": null
+        },
+        {
+            "id": "9e0999fe-899e-4d7f-b690-ce16f028758b",
+            "name": "熱拡散　隣接セル　yaml",
+            "parent_id": "",
+            "icon_key": "DescriptionOutlined",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [
-        "8983b8ef-769b-48d8-ac21-2a13b733baef"
+        "8983b8ef-769b-48d8-ac21-2a13b733baef",
+        "9e0999fe-899e-4d7f-b690-ce16f028758b"
     ],
-    "current_view_id": "8983b8ef-769b-48d8-ac21-2a13b733baef",
+    "current_view_id": "9e0999fe-899e-4d7f-b690-ce16f028758b",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,

@@ -268,7 +268,323 @@
             "preserveContentExactly": true
         }
     },
-    "digest": null,
+    "digest": {
+        "overview": {
+            "summary": "本書は、4BV 2のセル間熱連鎖を表す機能ブロック図を定義するYAML正本である。機能ブロック、変数ノード、要求事項ラベル、ポート位置とkindの対応を整理し、隣接セルの温度やセル初期温度、ガスの温度などのブロックについて数式・入出力・注記を記載する。設計パラメータ、ばらつき・劣化要因、上流温度、出力温度の扱いと、エッジIDの属性ルールも定めている。graph.json、nodes.csv、edges.csvは派生物として指定コマンドで生成・再生成し、手編集しない運用とする。",
+            "documentKind": "design_doc",
+            "purpose": "4BV 2のセル間熱連鎖に関する機能ブロック図を一元的に定義・管理し、派生グラフ成果物を再生成できるようにする。",
+            "scope": "機能ブロック、変数ノード、要求事項ラベル、ポート種別、エッジ属性、およびgraph.json・nodes.csv・edges.csvの生成・再生成手順を扱う。",
+            "keyTopics": [
+                "セル間熱連鎖の機能ブロック図",
+                "機能ブロック・変数・注記の構成",
+                "ポート位置とkindの対応",
+                "設計パラメータとばらつき・劣化要因の扱い",
+                "派生グラフ成果物の生成・再生成",
+                "エッジIDと属性の記載ルール"
+            ],
+            "keyTerms": [
+                {
+                    "term": "4BV 2",
+                    "definition": "セル間熱連鎖の機能ブロック図が対象とする名称。"
+                },
+                {
+                    "term": "セル間熱連鎖",
+                    "definition": "本書で機能ブロック図として表現する熱連鎖。"
+                },
+                {
+                    "term": "blocks",
+                    "definition": "formula、ポート別入力、出力、issueを集約して記載する機能ブロックの集合。"
+                },
+                {
+                    "term": "variables",
+                    "definition": "設計パラメータや温度などの変数ノードの集合。"
+                },
+                {
+                    "term": "annotations",
+                    "definition": "要求事項ラベルとしての注記の集合で、annotation_targetにより対象ブロックを指定する。"
+                },
+                {
+                    "term": "param",
+                    "definition": "設計パラメータまたは上流温度とともに扱われるポートのkind。"
+                },
+                {
+                    "term": "uncertainty",
+                    "definition": "ばらつき・劣化要因を表すポートのkind。"
+                },
+                {
+                    "term": "chain",
+                    "definition": "上流温度を表すポートのkind。"
+                },
+                {
+                    "term": "annotation_target",
+                    "definition": "注記が対象とするブロックを指定する項目。"
+                },
+                {
+                    "term": "eid",
+                    "definition": "エッジを識別するID。"
+                },
+                {
+                    "term": "graph.json",
+                    "definition": "機能ブロック図から生成される派生グラフ成果物。"
+                },
+                {
+                    "term": "nodes.csv",
+                    "definition": "機能ブロック図から生成されるノード一覧の派生成果物。"
+                },
+                {
+                    "term": "edges.csv",
+                    "definition": "機能ブロック図から生成されるエッジ一覧の派生成果物。"
+                },
+                {
+                    "term": "to-artifacts",
+                    "definition": "派生物を生成するgraph_yaml.pyの操作。"
+                },
+                {
+                    "term": "to-yaml",
+                    "definition": "graph.jsonから本ファイルを再作成するgraph_yaml.pyの操作。"
+                }
+            ],
+            "targetSystem": "4BV 2"
+        },
+        "outline": [
+            {
+                "id": "b75056d9-64e8-49dd-9587-accb42d81bc4",
+                "title": "4BV 2 セル間熱連鎖 機能ブロック図 — 正本(このファイルだけを編集する)",
+                "level": 1,
+                "summary": "4BV 2のセル間熱連鎖に関する機能ブロック図であり、このファイルだけを編集する正本である。メタ情報として、CSV由来のノード数・エッジ数、画像からのエッジ復元方法、各種変換検証結果、ブロック定義が記載されている。",
+                "keywords": [
+                    "4BV 2",
+                    "セル間熱連鎖",
+                    "機能ブロック図",
+                    "正本",
+                    "graph.json",
+                    "nodes.csv",
+                    "edges.csv"
+                ],
+                "pageIds": [
+                    "fa89530d-cff7-4ce2-86cd-77532dd038d7"
+                ],
+                "children": []
+            },
+            {
+                "id": "16edc49f-a539-4a0e-a4b4-89d537acba6f",
+                "title": "構成:",
+                "level": 1,
+                "summary": "文書の構成要素として、機能ブロックをまとめるblocks、変数ノードをまとめるvariables、要求事項ラベルをまとめるannotationsを定義している。",
+                "keywords": [
+                    "blocks",
+                    "variables",
+                    "annotations",
+                    "機能ブロック",
+                    "変数ノード",
+                    "要求事項ラベル"
+                ],
+                "pageIds": [
+                    "fa89530d-cff7-4ce2-86cd-77532dd038d7"
+                ],
+                "children": []
+            },
+            {
+                "id": "35623045-3a41-414d-9645-2efa776c1d29",
+                "title": "blocks … 機能ブロック(関数)。formula と入力(port別)・出力・issue を1箇所に集約",
+                "level": 1,
+                "summary": "blocksには機能ブロック（関数）を記載し、formula、ポート別入力、出力、issueを1箇所に集約する。本文では、例えば「隣接セルの温度」「セル初期温度」「ガスの温度」などのブロックについて、数式、入力ノード、出力ノード、座標、注記が示されている。",
+                "keywords": [
+                    "blocks",
+                    "formula",
+                    "入力",
+                    "出力",
+                    "issue",
+                    "隣接セルの温度",
+                    "セル初期温度",
+                    "ガスの温度"
+                ],
+                "pageIds": [
+                    "fa89530d-cff7-4ce2-86cd-77532dd038d7"
+                ],
+                "children": []
+            },
+            {
+                "id": "53b806dc-7970-44b7-aed3-6d8e392202db",
+                "title": "variables … 変数ノード(設計パラメータ・温度など)",
+                "level": 1,
+                "summary": "variablesには、設計パラメータや温度などの変数ノードを記載する。本文のブロック入力には、熱伝導率、温度、質量、比熱、SOC、ばらつき要因などの変数が含まれている。",
+                "keywords": [
+                    "variables",
+                    "変数ノード",
+                    "設計パラメータ",
+                    "温度",
+                    "熱伝導率",
+                    "SOC"
+                ],
+                "pageIds": [
+                    "fa89530d-cff7-4ce2-86cd-77532dd038d7"
+                ],
+                "children": []
+            },
+            {
+                "id": "5bcb92bb-ca1d-4e1f-af5d-a3652653c8a6",
+                "title": "annotations … 注記(要求事項ラベル)。annotation_target で対象ブロックを指す",
+                "level": 1,
+                "summary": "annotationsには要求事項ラベルとしての注記を記載し、annotation_targetで対象ブロックを指定する。ブロック注記には、推奨条件や注意事項が含まれている。",
+                "keywords": [
+                    "annotations",
+                    "要求事項ラベル",
+                    "annotation_target",
+                    "推奨条件",
+                    "注意事項"
+                ],
+                "pageIds": [
+                    "fa89530d-cff7-4ce2-86cd-77532dd038d7"
+                ],
+                "children": []
+            },
+            {
+                "id": "7462370e-8d14-4472-8f76-6aab23f82217",
+                "title": "ポートと kind:",
+                "level": 1,
+                "summary": "ポートの位置とkindの対応を定義している。top、bottom、left、outputについて、設計パラメータ、ばらつき・劣化、上流温度やパラメータ、出力温度の役割を示している。",
+                "keywords": [
+                    "ポート",
+                    "kind",
+                    "top",
+                    "bottom",
+                    "left",
+                    "output"
+                ],
+                "pageIds": [
+                    "fa89530d-cff7-4ce2-86cd-77532dd038d7"
+                ],
+                "children": []
+            },
+            {
+                "id": "d3d97345-e430-467d-8038-9ba88895d20b",
+                "title": "top=設計パラメータ(param) / bottom=ばらつき・劣化(uncertainty) /",
+                "level": 1,
+                "summary": "topポートは設計パラメータ(param)、bottomポートはばらつき・劣化要因(uncertainty)として扱う。本文の各ブロックでは、熱伝導率や面積などがtopに、接触状態や経年劣化などがbottomに配置されている。",
+                "keywords": [
+                    "top",
+                    "bottom",
+                    "param",
+                    "uncertainty",
+                    "設計パラメータ",
+                    "ばらつき",
+                    "劣化"
+                ],
+                "pageIds": [
+                    "fa89530d-cff7-4ce2-86cd-77532dd038d7"
+                ],
+                "children": []
+            },
+            {
+                "id": "bef56d67-0eca-4ed7-9beb-f0b1d196b57f",
+                "title": "left=上流温度(chain)とparamの混在 / output=出力温度(各ブロック1本)",
+                "level": 1,
+                "summary": "leftポートには上流温度(chain)とparamが混在し、y位置だけではkindを判別できない。outputは出力温度で、各ブロックに1本だけ設定される。",
+                "keywords": [
+                    "left",
+                    "output",
+                    "chain",
+                    "param",
+                    "出力温度",
+                    "上流温度"
+                ],
+                "pageIds": [
+                    "fa89530d-cff7-4ce2-86cd-77532dd038d7"
+                ],
+                "children": []
+            },
+            {
+                "id": "aa1e9ab5-77d0-4eee-8b36-273a0b5a8f4b",
+                "title": "派生物(graph.json / nodes.csv / edges.csv)は下記で再生成する。手で編集しない。",
+                "level": 1,
+                "summary": "graph.json、nodes.csv、edges.csvは派生物であり、手で編集せず、指定されたコマンドで再生成する。本文にはノード総数187、エッジ総数187、未解決エッジ0、オープンポート3などの集計も記載されている。",
+                "keywords": [
+                    "graph.json",
+                    "nodes.csv",
+                    "edges.csv",
+                    "派生物",
+                    "再生成",
+                    "nodes_total",
+                    "edges_total"
+                ],
+                "pageIds": [
+                    "fa89530d-cff7-4ce2-86cd-77532dd038d7"
+                ],
+                "children": []
+            },
+            {
+                "id": "cafcd8e3-30fc-4c52-ad61-0dfdb4f8714e",
+                "title": "python graph_ yaml.py to-artifacts",
+                "level": 1,
+                "summary": "派生物を生成するコマンドとして、python graph_ yaml.py to-artifactsが示されている。",
+                "keywords": [
+                    "python",
+                    "graph_ yaml.py",
+                    "to-artifacts"
+                ],
+                "pageIds": [
+                    "fa89530d-cff7-4ce2-86cd-77532dd038d7"
+                ],
+                "children": []
+            },
+            {
+                "id": "5204d11f-8ba5-4c78-b859-809af059728b",
+                "title": "graph.json から本ファイルを起こし直す場合:",
+                "level": 1,
+                "summary": "graph.jsonから本ファイルを再作成する場合の手順を示している。",
+                "keywords": [
+                    "graph.json",
+                    "本ファイル",
+                    "再作成"
+                ],
+                "pageIds": [
+                    "fa89530d-cff7-4ce2-86cd-77532dd038d7"
+                ],
+                "children": []
+            },
+            {
+                "id": "a98347a1-e582-4dff-ab50-e5d960978f77",
+                "title": "python graph_ yaml.py to-yaml",
+                "level": 1,
+                "summary": "graph.jsonから本ファイルを起こし直すためのコマンドとして、python graph_ yaml.py to-yamlが示されている。",
+                "keywords": [
+                    "python",
+                    "graph_ yaml.py",
+                    "to-yaml"
+                ],
+                "pageIds": [
+                    "fa89530d-cff7-4ce2-86cd-77532dd038d7"
+                ],
+                "children": []
+            },
+            {
+                "id": "3cadb933-cfc7-4293-b7f3-76b6f367ed91",
+                "title": "eid はエッジID。source(既定 image)/confidence(既定 high)/note は非既定時のみ記載。",
+                "level": 1,
+                "summary": "eidはエッジIDを表す。sourceの既定値はimage、confidenceの既定値はhighで、noteは既定値でない場合にだけ記載する。",
+                "keywords": [
+                    "eid",
+                    "エッジID",
+                    "source",
+                    "confidence",
+                    "note",
+                    "image",
+                    "high"
+                ],
+                "pageIds": [
+                    "fa89530d-cff7-4ce2-86cd-77532dd038d7"
+                ],
+                "children": []
+            }
+        ],
+        "sourceHash": "be139c9babc3510c4c2c979b235b4d4ddfcfd3c6",
+        "textHash": "58d3d6fd527e914e6db9d5fa3e9ac1f98547e7e7",
+        "generatedAt": "2026-09-29T18:51:02.149402",
+        "pageCount": 1,
+        "schemaVersion": 1,
+        "generator": "ai"
+    },
     "coverage": null,
     "modelBinding": null
 }
