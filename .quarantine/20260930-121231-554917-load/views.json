@@ -157,9 +157,14 @@
     ],
     "current_tab_ids": [
         "546b6422-bfd9-4fa5-bf96-0b01b190020f",
+<<<<<<< HEAD
+        "c7c6a999-0c6d-4c3f-9291-5650adaab40e",
+        "8983b8ef-769b-48d8-ac21-2a13b733baef"
+=======
         "62e09133-06ca-4f60-b5dd-7204e3d7c661"
+>>>>>>> 58d3705f32d6810026ce98873d86ba86946a7bd3
     ],
-    "current_view_id": "546b6422-bfd9-4fa5-bf96-0b01b190020f",
+    "current_view_id": "8983b8ef-769b-48d8-ac21-2a13b733baef",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,
