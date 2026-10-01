@@ -2,7 +2,7 @@ id: ""
 name: 状態遷移設計
 slash_command: state-machine
 description: |
-  Block の状態（State）と遷移（Transition）を設計し、
+  Block または複合 State の直下の状態（State）と遷移（Transition）を設計し、
   ステートマシン図として整理する手順。
   モード遷移や動作モードを持つ制御対象のモデル化に使用する。
 use_when: |
@@ -12,15 +12,15 @@ steps:
   - no: 1
     title: 対象 Block と既存状態の確認
     instruction: |
-      状態遷移を定義する Block と、既存の State / Transition を確認する。
-      その Block が持つ Operation / Port も把握し、
+      状態遷移を定義する Block または複合 State と、直下の State / Transition を確認する。
+      親 Block が持つ Operation / Port も把握し、
       イベント源となりうるものを洗い出す。
     tools:
       - search_item
       - read_package_contents
       - get_related_elements
       - read
-    done_when: 対象 Block の短縮IDと、既存 State・Transition の端点・guard、およびイベント源となる Operation / Port を0件の場合も含めて一覧化できている
+    done_when: 対象 Block / State の短縮IDと、直下の State・Transition の端点・guard、およびイベント源となる Operation / Port を0件の場合も含めて一覧化できている
   - no: 2
     title: 状態の識別
     instruction: |
@@ -28,6 +28,7 @@ steps:
       状態は「観測可能に振る舞いが変わる区間」として定義し、
       単なる瞬間的なイベントを状態にしないこと。
       初期状態と終了状態（あれば）も明示する。
+      複合 State の場合はその直下だけを対象とし、各階層の初期状態を独立に設計する。
     done_when: 各状態に観測可能な振る舞いまたは不変条件があり、初期状態が1件、終了状態の有無と理由が定まり、意味の重複する状態0件である
   - no: 3
     title: 遷移とガード条件の設計
@@ -43,6 +44,7 @@ steps:
       create_internal_model_elements（structureType=state_machine）で
       State と Transition を一括生成する。
       ガード条件は遷移の属性として設定すること。
+      複合 State 配下の要素は親 State の短縮IDを指定して生成する。
     tools:
       - create_internal_model_elements
       - create_state

@@ -1,0 +1,52 @@
+id: ""
+name: SQL クエリシートの作成・修正
+slash_command: sql-query
+description: ユーザーが欲しいデータを、参照元の表と実際の値を調べたうえで SQL にし、試行・検証してから対象の SQL クエリシートへ設定する
+use_when: SQL クエリシートのクエリを新しく作る・既存のクエリを修正するよう依頼された場合。集計結果を 1 回答えるだけなら query_sheets_sql で足りる
+steps:
+  - no: 1
+    title: 対象シートと依頼の把握
+    instruction: |
+      文脈の「編集対象の SQL クエリシート」を最優先の対象にする。無ければ list_workbooks で対象を特定する。
+      describe_sheet で対象シートの現在の SQL・結果列・件数・説明を確認する。
+      依頼を「行の単位 (1 行が何を表すか)」「欲しい列」「絞り込み条件」「並び順」「集計の有無」に分解する。
+      既存の SQL がある場合は修正依頼として扱い、依頼と関係ない列・条件・並び順は保つ。
+      新しいシートは作らない。対象シートの query を書き換える。
+    tools: [describe_sheet, list_workbooks]
+    done_when: 対象シートの sheetId と、行の単位・欲しい列・条件・並び順が記録されている
+  - no: 2
+    title: 参照元の調査
+    instruction: |
+      describe_query_sources で参照できる表 (シート・取り込み表・モデル仮想表) の SQL 参照名と列・説明を確認する。
+      表が多いときは keyword で絞り込む。表名・列名は推測せず、返ってきた sqlName と列名だけを使う。
+      条件や結合に使う列は profile_data で値の分布・表記ゆれ・欠損を確認し、
+      必要なら query_sheets_sql で実際の値 (DISTINCT や件数) を少数だけ確かめる。
+      モデル要素と結びつける場合は model_elements / model_data_links などのモデル仮想表を使う。
+    tools: [describe_query_sources, profile_data, query_sheets_sql]
+    done_when: 使う表の sqlName と各列が describe_query_sources の一覧に存在し、結合キー・条件に使う値の実例が確認済みである
+  - no: 3
+    title: クエリの作成と試行
+    instruction: |
+      SELECT / WITH だけで SQL を組む。表名・列名は二重引用符で囲み、結果列には分かりやすい別名 (AS) を付ける。
+      SELECT * は使わず列を明示し、表示順が意味を持つので ORDER BY を付ける。
+      validate_sheet_query に expectColumns (欲しい列) を渡して試行し、件数・サンプル行・列ごとの非 NULL 数・warnings を確認する。
+      0 件・全 NULL 列・期待列の欠落などの warning は原因を調べて SQL を直し、再度試行する。
+      修正依頼では comparedToCurrent で追加・削除された列と件数の変化が意図どおりか確認する。
+    tools: [validate_sheet_query, query_sheets_sql]
+    done_when: validate_sheet_query の検証が valid=true を返し、残った各 warnings に解消済みか許容理由がある
+  - no: 4
+    title: シートへ設定
+    instruction: |
+      検証した SQL と同じ文字列を update_sheet の query に設定する。対象は手順 1 の sheetId に限る。
+      クエリの意味 (行の単位・条件・参照元) が説明に無い、または古くなった場合は description も更新する。
+      シート名はユーザーが依頼した場合だけ変える。
+    tools: [update_sheet]
+    done_when: update_sheet が success=true を返し、設定した SQL が検証済みの SQL と一致している
+  - no: 5
+    title: 結果の確認と報告
+    instruction: |
+      describe_sheet で設定後の結果列・件数・サンプル行を読み、依頼どおりのデータになっていることを確かめる。
+      報告では、設定した SQL の要点 (参照した表・条件・並び順)、結果の件数と列、
+      変更前との違い (修正時)、残った注意点や未確認事項を簡潔に示す。件数は実行結果の値だけを書く。
+    tools: [describe_sheet]
+    done_when: 設定後の件数と結果列が確認され、報告に SQL の要点と注意点が含まれている

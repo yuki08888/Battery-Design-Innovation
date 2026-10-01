@@ -132,6 +132,13 @@
       "item_type": "file",
       "parent_id": null,
       "order": 18
+    },
+    {
+      "id": "1ccb3339-7923-47fa-a815-6c8ea7150206",
+      "name": "SQL クエリシートの作成・修正",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 19
     }
   ],
   "version": 2,
@@ -139,6 +146,7 @@
     "block-hierarchy",
     "change-impact",
     "custom-ui",
+    "database-query",
     "file-handling",
     "functional-flow",
     "hazard-safety",
@@ -226,7 +234,7 @@
     "state-machine": {
       "item_id": "45544e33-bc23-4037-88e5-18aa5b1769c0",
       "name": "状態遷移設計",
-      "content_hash": "ad6353ad890a2129ec45f25cbecd95037cbcb05613a4bb21384672bde418bed8",
+      "content_hash": "9d982c2335db3aa9e405a1f3ff98707fb187e355b44654dd8c351358cb47ab8c",
       "managed": true
     },
     "system-context": {
@@ -269,6 +277,12 @@
       "item_id": "3f74e7c3-984a-4aea-92d8-d551d1dd6f3c",
       "name": "カスタムUIの作成と改善",
       "content_hash": "758117e38b9fcf2e04f8f9a956ef27bba35bf8d53a875ec87b368bfcfb3be1e5",
+      "managed": true
+    },
+    "database-query": {
+      "item_id": "1ccb3339-7923-47fa-a815-6c8ea7150206",
+      "name": "SQL クエリシートの作成・修正",
+      "content_hash": "e8b744d984dbf8556cdc69448082ef01b2b725c0618241b2806911c421077bc8",
       "managed": true
     }
   }
