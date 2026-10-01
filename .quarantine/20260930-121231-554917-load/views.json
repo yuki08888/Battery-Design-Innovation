@@ -153,34 +153,18 @@
             "parent_id": "",
             "icon_key": "DescriptionOutlined",
             "icon_color": null
-        },
-        {
-            "id": "afaab3cf-b15b-4680-93b0-ab4dd9ca277e",
-            "name": "国際標準",
-            "parent_id": "",
-            "icon_key": "DescriptionOutlined",
-            "icon_color": null
-        },
-        {
-            "id": "2dedfefd-0349-4558-97da-5a93ba164c36",
-            "name": "Manual of Tests and Criteria - Eighth revised edition",
-            "parent_id": "",
-            "icon_key": "DescriptionOutlined",
-            "icon_color": null
-        },
-        {
-            "id": "546bdb1b-79f3-4770-b174-b7e7af6a757c",
-            "name": "外部短絡-システム要求テストケースマトリクス",
-            "parent_id": "d7ccfda4-bcd9-4bd2-a2ad-d909fcd616ef",
-            "icon_key": "GridOnOutlined",
-            "icon_color": null
         }
     ],
     "current_tab_ids": [
-        "62e09133-06ca-4f60-b5dd-7204e3d7c661",
-        "546bdb1b-79f3-4770-b174-b7e7af6a757c"
+        "546b6422-bfd9-4fa5-bf96-0b01b190020f",
+<<<<<<< HEAD
+        "c7c6a999-0c6d-4c3f-9291-5650adaab40e",
+        "8983b8ef-769b-48d8-ac21-2a13b733baef"
+=======
+        "62e09133-06ca-4f60-b5dd-7204e3d7c661"
+>>>>>>> 58d3705f32d6810026ce98873d86ba86946a7bd3
     ],
-    "current_view_id": "546bdb1b-79f3-4770-b174-b7e7af6a757c",
+    "current_view_id": "8983b8ef-769b-48d8-ac21-2a13b733baef",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,

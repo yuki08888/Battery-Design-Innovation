@@ -21,6 +21,94 @@
             "createdAt": "2026-09-28T15:07:36.484292",
             "sourceQuote": null,
             "targetKind": "element"
+        },
+        {
+            "id": "5ff325ec-4b1f-4f51-a98a-fd753e4e2af6",
+            "sourceType": "document",
+            "sourceId": "4fee6958-f064-4cf8-9777-2fa6fcb3c887",
+            "targetElementId": "314824e7-0eb2-4199-b4e9-3fb6896a2548",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:07:41.327627",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "40634378-419f-4017-adf8-a27f6ad9f4a5",
+            "sourceType": "document",
+            "sourceId": "4fee6958-f064-4cf8-9777-2fa6fcb3c887",
+            "targetElementId": "b30cde14-0e3f-4d55-9b1b-4bf656bf5d40",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:09:11.522257",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "eb334224-6ce7-4dfb-b757-b7e0ba3e69ba",
+            "sourceType": "document",
+            "sourceId": "4fee6958-f064-4cf8-9777-2fa6fcb3c887",
+            "targetElementId": "bcca9047-08e0-4bf5-80f7-ff1b7fe1c1dc",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:10:13.434774",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "eebc1f4c-c221-4aa9-8285-fa0fabadbfa6",
+            "sourceType": "document",
+            "sourceId": "4fee6958-f064-4cf8-9777-2fa6fcb3c887",
+            "targetElementId": "f8696691-ddda-48a7-9ccc-fc93fbe5027e",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:11:05.182699",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "50626dbc-92ff-4ea5-8fae-75f06de53aa4",
+            "sourceType": "document",
+            "sourceId": "4fee6958-f064-4cf8-9777-2fa6fcb3c887",
+            "targetElementId": "436fe0d7-6d19-42dd-bd08-a0bda5bcfdee",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:13:03.779582",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "7aab1041-a05b-4985-ba30-81b65b0db637",
+            "sourceType": "document",
+            "sourceId": "4fee6958-f064-4cf8-9777-2fa6fcb3c887",
+            "targetElementId": "45569ed4-1d23-4b8b-adbc-a298e3d709ac",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:13:50.649207",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "68ddd2ac-62ad-49f9-9ce9-33d349c85045",
+            "sourceType": "document",
+            "sourceId": "4fee6958-f064-4cf8-9777-2fa6fcb3c887",
+            "targetElementId": "b55437a2-f9ea-4df2-94c2-c1ef4c8038c0",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:15:15.112131",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "d8098101-0a48-4143-bde4-c160e2ea0b49",
+            "sourceType": "document",
+            "sourceId": "4fee6958-f064-4cf8-9777-2fa6fcb3c887",
+            "targetElementId": "c213e198-0b4f-4a51-91a9-08e3d80997f7",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:15:59.184399",
+            "sourceQuote": null,
+            "targetKind": "element"
         }
     ],
     "6a218b48-6d4f-466b-88f4-6f214ebf4490": [
@@ -32,6 +120,94 @@
             "linkType": "relates",
             "description": null,
             "createdAt": "2026-09-07T19:22:09.198093",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "edcd3a33-7939-4956-af7f-9dd7db1f642f",
+            "sourceType": "document",
+            "sourceId": "6a218b48-6d4f-466b-88f4-6f214ebf4490",
+            "targetElementId": "314824e7-0eb2-4199-b4e9-3fb6896a2548",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:07:41.368987",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "60325661-38b9-430d-9683-02c90b8e5b57",
+            "sourceType": "document",
+            "sourceId": "6a218b48-6d4f-466b-88f4-6f214ebf4490",
+            "targetElementId": "b30cde14-0e3f-4d55-9b1b-4bf656bf5d40",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:09:11.488539",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "dda40d82-1960-48ef-807b-0d4a93afe239",
+            "sourceType": "document",
+            "sourceId": "6a218b48-6d4f-466b-88f4-6f214ebf4490",
+            "targetElementId": "bcca9047-08e0-4bf5-80f7-ff1b7fe1c1dc",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:10:13.404245",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "e0295eba-513b-49c6-a251-f130e8070bd7",
+            "sourceType": "document",
+            "sourceId": "6a218b48-6d4f-466b-88f4-6f214ebf4490",
+            "targetElementId": "f8696691-ddda-48a7-9ccc-fc93fbe5027e",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:11:05.148640",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "79e734ad-cca0-4c7c-b8a8-dce4f82c42bd",
+            "sourceType": "document",
+            "sourceId": "6a218b48-6d4f-466b-88f4-6f214ebf4490",
+            "targetElementId": "436fe0d7-6d19-42dd-bd08-a0bda5bcfdee",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:13:03.748104",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "1270030c-d22f-43dc-905b-8f6e0b4af5e4",
+            "sourceType": "document",
+            "sourceId": "6a218b48-6d4f-466b-88f4-6f214ebf4490",
+            "targetElementId": "45569ed4-1d23-4b8b-adbc-a298e3d709ac",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:13:50.614591",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "bd482617-06b2-4a33-a0ea-ebbc2b7280e0",
+            "sourceType": "document",
+            "sourceId": "6a218b48-6d4f-466b-88f4-6f214ebf4490",
+            "targetElementId": "b55437a2-f9ea-4df2-94c2-c1ef4c8038c0",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:15:15.074667",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "91f5b221-047e-4f0b-9fd8-9899a55f0447",
+            "sourceType": "document",
+            "sourceId": "6a218b48-6d4f-466b-88f4-6f214ebf4490",
+            "targetElementId": "c213e198-0b4f-4a51-91a9-08e3d80997f7",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:15:59.149359",
             "sourceQuote": null,
             "targetKind": "element"
         }
@@ -56,6 +232,72 @@
             "linkType": "relates",
             "description": null,
             "createdAt": "2026-09-28T15:07:36.509729",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "507fdf1a-77de-433b-98ba-2332117d8b7b",
+            "sourceType": "document",
+            "sourceId": "6d242417-9e35-4022-89c5-5658f40a05cc",
+            "targetElementId": "314824e7-0eb2-4199-b4e9-3fb6896a2548",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:07:41.402833",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "b3ce65a7-549a-4e47-a694-484edfe29ff2",
+            "sourceType": "document",
+            "sourceId": "6d242417-9e35-4022-89c5-5658f40a05cc",
+            "targetElementId": "b30cde14-0e3f-4d55-9b1b-4bf656bf5d40",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:09:11.428071",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "0129cd77-1d18-40d9-8f1f-0c09b8c21a62",
+            "sourceType": "document",
+            "sourceId": "6d242417-9e35-4022-89c5-5658f40a05cc",
+            "targetElementId": "bcca9047-08e0-4bf5-80f7-ff1b7fe1c1dc",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:10:13.340741",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "85504c91-4f5c-4a61-894f-d591a1155366",
+            "sourceType": "document",
+            "sourceId": "6d242417-9e35-4022-89c5-5658f40a05cc",
+            "targetElementId": "436fe0d7-6d19-42dd-bd08-a0bda5bcfdee",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:13:03.670224",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "1779f0c7-d4cc-476b-8795-72426d613756",
+            "sourceType": "document",
+            "sourceId": "6d242417-9e35-4022-89c5-5658f40a05cc",
+            "targetElementId": "45569ed4-1d23-4b8b-adbc-a298e3d709ac",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:13:50.535065",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "488ada9b-4769-4862-9cd8-3593abf4ffbf",
+            "sourceType": "document",
+            "sourceId": "6d242417-9e35-4022-89c5-5658f40a05cc",
+            "targetElementId": "b55437a2-f9ea-4df2-94c2-c1ef4c8038c0",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:15:15.000046",
             "sourceQuote": null,
             "targetKind": "element"
         }
@@ -106,6 +348,535 @@
             "linkType": "relates",
             "description": null,
             "createdAt": "2026-09-29T18:47:10.434731",
+            "sourceQuote": null,
+            "targetKind": "element"
+        }
+    ],
+    "ca6c8abf-f3fb-4033-8b16-7b9d18673c1c": [
+        {
+            "id": "05153bd5-f2ba-4110-9797-4c37231c4f2b",
+            "sourceType": "document",
+            "sourceId": "ca6c8abf-f3fb-4033-8b16-7b9d18673c1c",
+            "targetElementId": "314824e7-0eb2-4199-b4e9-3fb6896a2548",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:07:41.436930",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "c0733c4b-f04b-4900-9ed6-52574d0630cc",
+            "sourceType": "document",
+            "sourceId": "ca6c8abf-f3fb-4033-8b16-7b9d18673c1c",
+            "targetElementId": "b30cde14-0e3f-4d55-9b1b-4bf656bf5d40",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:09:11.456070",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "90108bb0-42f4-4ce8-9de9-9c0b58e1e527",
+            "sourceType": "document",
+            "sourceId": "ca6c8abf-f3fb-4033-8b16-7b9d18673c1c",
+            "targetElementId": "bcca9047-08e0-4bf5-80f7-ff1b7fe1c1dc",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:10:13.372331",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "2fed1673-19dd-459c-a2c2-a9cbeda83bdb",
+            "sourceType": "document",
+            "sourceId": "ca6c8abf-f3fb-4033-8b16-7b9d18673c1c",
+            "targetElementId": "f8696691-ddda-48a7-9ccc-fc93fbe5027e",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:11:05.110292",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "5eb7502f-964f-48eb-8e6f-43901a315495",
+            "sourceType": "document",
+            "sourceId": "ca6c8abf-f3fb-4033-8b16-7b9d18673c1c",
+            "targetElementId": "436fe0d7-6d19-42dd-bd08-a0bda5bcfdee",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:13:03.714097",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "5b82433c-988b-4f74-b9ed-4f52706c0cf4",
+            "sourceType": "document",
+            "sourceId": "ca6c8abf-f3fb-4033-8b16-7b9d18673c1c",
+            "targetElementId": "45569ed4-1d23-4b8b-adbc-a298e3d709ac",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:13:50.576948",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "dd5165fb-737d-4323-9a74-c1e2c3b02684",
+            "sourceType": "document",
+            "sourceId": "ca6c8abf-f3fb-4033-8b16-7b9d18673c1c",
+            "targetElementId": "b55437a2-f9ea-4df2-94c2-c1ef4c8038c0",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:15:15.038261",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "61aa15de-af56-4315-9b8a-a4145e5ed26e",
+            "sourceType": "document",
+            "sourceId": "ca6c8abf-f3fb-4033-8b16-7b9d18673c1c",
+            "targetElementId": "c213e198-0b4f-4a51-91a9-08e3d80997f7",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:15:59.111668",
+            "sourceQuote": null,
+            "targetKind": "element"
+        }
+    ],
+    "58410990-d450-4b34-9881-db3e4ca50e04": [
+        {
+            "id": "ab5d6cb9-353b-4eaf-ac67-f03131338b22",
+            "sourceType": "document",
+            "sourceId": "58410990-d450-4b34-9881-db3e4ca50e04",
+            "targetElementId": "67ae32b1-63e3-4485-bab6-e5253d770f7e",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:06:04.477829",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "45e99151-9111-4752-a178-67268b834508",
+            "sourceType": "document",
+            "sourceId": "58410990-d450-4b34-9881-db3e4ca50e04",
+            "targetElementId": "314824e7-0eb2-4199-b4e9-3fb6896a2548",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:07:41.473010",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "f15537d1-e015-42b1-ac44-683b5e385529",
+            "sourceType": "document",
+            "sourceId": "58410990-d450-4b34-9881-db3e4ca50e04",
+            "targetElementId": "b30cde14-0e3f-4d55-9b1b-4bf656bf5d40",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:09:11.393299",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "195f7bfd-2bc5-4f10-a347-3877d21b3366",
+            "sourceType": "document",
+            "sourceId": "58410990-d450-4b34-9881-db3e4ca50e04",
+            "targetElementId": "bcca9047-08e0-4bf5-80f7-ff1b7fe1c1dc",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:10:13.305463",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "9198cac8-13fc-4f2d-9282-2b72b85850ee",
+            "sourceType": "document",
+            "sourceId": "58410990-d450-4b34-9881-db3e4ca50e04",
+            "targetElementId": "f8696691-ddda-48a7-9ccc-fc93fbe5027e",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:11:05.074453",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "40bf77c5-c2f5-4829-aaf3-b1840b84cb27",
+            "sourceType": "document",
+            "sourceId": "58410990-d450-4b34-9881-db3e4ca50e04",
+            "targetElementId": "436fe0d7-6d19-42dd-bd08-a0bda5bcfdee",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:13:03.628430",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "dbea4684-549b-44cf-8a07-f1567b48a474",
+            "sourceType": "document",
+            "sourceId": "58410990-d450-4b34-9881-db3e4ca50e04",
+            "targetElementId": "45569ed4-1d23-4b8b-adbc-a298e3d709ac",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:13:50.492658",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "08addfec-86aa-4c84-8d1f-296350056d56",
+            "sourceType": "document",
+            "sourceId": "58410990-d450-4b34-9881-db3e4ca50e04",
+            "targetElementId": "b55437a2-f9ea-4df2-94c2-c1ef4c8038c0",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:15:14.957474",
+            "sourceQuote": null,
+            "targetKind": "element"
+        }
+    ],
+    "9418aace-0281-4d41-ba43-349bd4135ea8": [
+        {
+            "id": "308b3729-1509-4990-83c3-36741d6e8b83",
+            "sourceType": "document",
+            "sourceId": "9418aace-0281-4d41-ba43-349bd4135ea8",
+            "targetElementId": "314824e7-0eb2-4199-b4e9-3fb6896a2548",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:07:41.511405",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "87c13352-5c17-4cc1-9cf1-025eac045fa1",
+            "sourceType": "document",
+            "sourceId": "9418aace-0281-4d41-ba43-349bd4135ea8",
+            "targetElementId": "b30cde14-0e3f-4d55-9b1b-4bf656bf5d40",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:09:11.557783",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "264989ce-0549-4363-b21b-b3747a136920",
+            "sourceType": "document",
+            "sourceId": "9418aace-0281-4d41-ba43-349bd4135ea8",
+            "targetElementId": "bcca9047-08e0-4bf5-80f7-ff1b7fe1c1dc",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:10:13.466765",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "f60d29f1-1d2e-44c5-8a0a-28ad0886fee4",
+            "sourceType": "document",
+            "sourceId": "9418aace-0281-4d41-ba43-349bd4135ea8",
+            "targetElementId": "f8696691-ddda-48a7-9ccc-fc93fbe5027e",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:11:05.254540",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "74a6b0a3-a49d-46f8-87ac-0b151d2094fb",
+            "sourceType": "document",
+            "sourceId": "9418aace-0281-4d41-ba43-349bd4135ea8",
+            "targetElementId": "436fe0d7-6d19-42dd-bd08-a0bda5bcfdee",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:13:03.822066",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "12574f3e-f453-4cfb-9b80-e64161777888",
+            "sourceType": "document",
+            "sourceId": "9418aace-0281-4d41-ba43-349bd4135ea8",
+            "targetElementId": "45569ed4-1d23-4b8b-adbc-a298e3d709ac",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:13:50.687390",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "46baaf72-33d4-4443-ae78-cfc2c5d7d6dd",
+            "sourceType": "document",
+            "sourceId": "9418aace-0281-4d41-ba43-349bd4135ea8",
+            "targetElementId": "b55437a2-f9ea-4df2-94c2-c1ef4c8038c0",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:15:15.195407",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "8fe3e0bb-b1d4-4b0e-be25-9db804dc3cbd",
+            "sourceType": "document",
+            "sourceId": "9418aace-0281-4d41-ba43-349bd4135ea8",
+            "targetElementId": "c213e198-0b4f-4a51-91a9-08e3d80997f7",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:15:59.219426",
+            "sourceQuote": null,
+            "targetKind": "element"
+        }
+    ],
+    "f3b9ab7a-52bb-4722-a35f-38499ad88ecc": [
+        {
+            "id": "e715cf8e-cfda-4719-823c-d01fbad62987",
+            "sourceType": "document",
+            "sourceId": "f3b9ab7a-52bb-4722-a35f-38499ad88ecc",
+            "targetElementId": "314824e7-0eb2-4199-b4e9-3fb6896a2548",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:07:41.549546",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "83486b4c-776d-4401-8931-8acfdd4e8565",
+            "sourceType": "document",
+            "sourceId": "f3b9ab7a-52bb-4722-a35f-38499ad88ecc",
+            "targetElementId": "b30cde14-0e3f-4d55-9b1b-4bf656bf5d40",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:09:11.590999",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "132a8d0a-f3d1-4d7d-be7e-39b144f210e9",
+            "sourceType": "document",
+            "sourceId": "f3b9ab7a-52bb-4722-a35f-38499ad88ecc",
+            "targetElementId": "bcca9047-08e0-4bf5-80f7-ff1b7fe1c1dc",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:10:13.496703",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "55d06f59-158f-4acc-9ebe-0d5123328e86",
+            "sourceType": "document",
+            "sourceId": "f3b9ab7a-52bb-4722-a35f-38499ad88ecc",
+            "targetElementId": "f8696691-ddda-48a7-9ccc-fc93fbe5027e",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:11:05.218417",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "ca5d453b-5128-4424-bc36-fc26e0b7e8ba",
+            "sourceType": "document",
+            "sourceId": "f3b9ab7a-52bb-4722-a35f-38499ad88ecc",
+            "targetElementId": "436fe0d7-6d19-42dd-bd08-a0bda5bcfdee",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:13:03.858433",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "278d78c4-1c72-450d-a5b3-02755da6c151",
+            "sourceType": "document",
+            "sourceId": "f3b9ab7a-52bb-4722-a35f-38499ad88ecc",
+            "targetElementId": "45569ed4-1d23-4b8b-adbc-a298e3d709ac",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:13:50.723002",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "cd0729d2-0952-4c1e-ba25-f21527371431",
+            "sourceType": "document",
+            "sourceId": "f3b9ab7a-52bb-4722-a35f-38499ad88ecc",
+            "targetElementId": "b55437a2-f9ea-4df2-94c2-c1ef4c8038c0",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:15:15.155943",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "0e02918c-541b-4de6-84a0-0559f5827e63",
+            "sourceType": "document",
+            "sourceId": "f3b9ab7a-52bb-4722-a35f-38499ad88ecc",
+            "targetElementId": "c213e198-0b4f-4a51-91a9-08e3d80997f7",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:15:59.256248",
+            "sourceQuote": null,
+            "targetKind": "element"
+        }
+    ],
+    "66fde844-0506-4fc8-afbe-286eaae76b5b": [
+        {
+            "id": "9f4ba6ed-83ad-45e3-89fc-f83cc697eb69",
+            "sourceType": "document",
+            "sourceId": "66fde844-0506-4fc8-afbe-286eaae76b5b",
+            "targetElementId": "67ae32b1-63e3-4485-bab6-e5253d770f7e",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:06:04.610122",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "4e0017e5-d28b-4427-acf5-c6b492af931f",
+            "sourceType": "document",
+            "sourceId": "66fde844-0506-4fc8-afbe-286eaae76b5b",
+            "targetElementId": "a845ea2c-5d15-495c-ada3-c38b71f53387",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:06:24.340309",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "059ccbb1-8859-4e3b-8e07-bc9a2779007a",
+            "sourceType": "document",
+            "sourceId": "66fde844-0506-4fc8-afbe-286eaae76b5b",
+            "targetElementId": "337050e7-16bb-4835-aa63-686352ac431e",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:06:39.845160",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "f933cab0-9b8f-4552-91fb-5097b328bfdc",
+            "sourceType": "document",
+            "sourceId": "66fde844-0506-4fc8-afbe-286eaae76b5b",
+            "targetElementId": "314824e7-0eb2-4199-b4e9-3fb6896a2548",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:07:41.586464",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "6bc44cf0-7df8-4b73-b70a-c301306df7ab",
+            "sourceType": "document",
+            "sourceId": "66fde844-0506-4fc8-afbe-286eaae76b5b",
+            "targetElementId": "b30cde14-0e3f-4d55-9b1b-4bf656bf5d40",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:09:11.623626",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "e07ce1c9-cffc-4d69-82ea-3650b9f00159",
+            "sourceType": "document",
+            "sourceId": "66fde844-0506-4fc8-afbe-286eaae76b5b",
+            "targetElementId": "bcca9047-08e0-4bf5-80f7-ff1b7fe1c1dc",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:10:13.530553",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "e965f2f5-c287-4f82-8af6-274d7e57f346",
+            "sourceType": "document",
+            "sourceId": "66fde844-0506-4fc8-afbe-286eaae76b5b",
+            "targetElementId": "436fe0d7-6d19-42dd-bd08-a0bda5bcfdee",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:13:03.896525",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "e37304ae-beb2-4789-8425-de4b1bfa3ba5",
+            "sourceType": "document",
+            "sourceId": "66fde844-0506-4fc8-afbe-286eaae76b5b",
+            "targetElementId": "45569ed4-1d23-4b8b-adbc-a298e3d709ac",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:13:50.762314",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "36f9ea6e-2d01-4490-85a2-15fa1fa3c508",
+            "sourceType": "document",
+            "sourceId": "66fde844-0506-4fc8-afbe-286eaae76b5b",
+            "targetElementId": "b55437a2-f9ea-4df2-94c2-c1ef4c8038c0",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:15:15.233070",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "793cf0a5-2a4c-42fe-9243-d9005b8b98b2",
+            "sourceType": "document",
+            "sourceId": "66fde844-0506-4fc8-afbe-286eaae76b5b",
+            "targetElementId": "c213e198-0b4f-4a51-91a9-08e3d80997f7",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:15:59.303855",
+            "sourceQuote": null,
+            "targetKind": "element"
+        }
+    ],
+    "41ebf05e-f08a-44e9-bb91-4ecf198566c6": [
+        {
+            "id": "0392d9f1-cba7-4dcd-8fba-8bd815dcea80",
+            "sourceType": "document",
+            "sourceId": "41ebf05e-f08a-44e9-bb91-4ecf198566c6",
+            "targetElementId": "da9a7690-e187-4ee4-828e-22349dc577b0",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:08:17.281026",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "1bad32ad-da84-40d8-8421-5a3b1b86d21a",
+            "sourceType": "document",
+            "sourceId": "41ebf05e-f08a-44e9-bb91-4ecf198566c6",
+            "targetElementId": "bcca9047-08e0-4bf5-80f7-ff1b7fe1c1dc",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:10:13.565486",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "c9710195-847d-4cd1-ba44-116333ce3ffd",
+            "sourceType": "document",
+            "sourceId": "41ebf05e-f08a-44e9-bb91-4ecf198566c6",
+            "targetElementId": "436fe0d7-6d19-42dd-bd08-a0bda5bcfdee",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:13:03.931932",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "33c13539-0f38-4047-a9eb-4527eb3c9a14",
+            "sourceType": "document",
+            "sourceId": "41ebf05e-f08a-44e9-bb91-4ecf198566c6",
+            "targetElementId": "2b5cd4a7-1438-49c6-a72b-83ce35878e14",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:14:01.236805",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "d667defa-31ac-4a84-a107-2f646bf49699",
+            "sourceType": "document",
+            "sourceId": "41ebf05e-f08a-44e9-bb91-4ecf198566c6",
+            "targetElementId": "caf45afb-eb00-4a6f-a18e-c0689ae227ab",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-09-30T16:14:11.469342",
             "sourceQuote": null,
             "targetKind": "element"
         }
