@@ -1,46 +1,101 @@
 {
-    "id": "546b6422-bfd9-4fa5-bf96-0b01b190020f",
-    "name": "外部短絡システム要求・部品関連マトリクス",
+    "id": "546bdb1b-79f3-4770-b174-b7e7af6a757c",
+    "name": "外部短絡-システム要求テストケースマトリクス",
     "class_name": "FreeMatrix",
-    "description": "外部短絡システム要求（BATs-067〜BATs-082）と対象部品（高圧回路・機器等のBlock）のトレーサビリティを確認・編集・把握するためのマトリクスです。",
-    "vertical_scope_el_ids": [
-        "ba859834-feab-4b42-985f-77263937f5e9"
-    ],
-    "horizontal_scope_el_ids": [
-        "7af3fe1a-51bf-4d7a-b208-ebf918c85c8b",
-        "4e1ec7bb-e6c1-47a2-adab-991bb4dcf8e1"
-    ],
-    "vertical_types": [
-        "Requirement"
-    ],
-    "horizontal_types": [
-        "Block"
-    ],
+    "description": "",
+    "vertical_scope_el_ids": [],
+    "horizontal_scope_el_ids": [],
+    "vertical_types": [],
+    "horizontal_types": [],
     "rel_filter_types": [
         "satisfy",
-        "trace",
-        "refine"
+        "verify"
     ],
     "row_scope_config": {
         "roots": [
             {
-                "rootId": "ba859834-feab-4b42-985f-77263937f5e9",
+                "rootId": "d7ccfda4-bcd9-4bd2-a2ad-d909fcd616ef",
                 "includeRoot": true,
-                "includeIntermediates": true,
-                "queries": [
-                    {
-                        "relationType": "containment",
-                        "direction": "outgoing",
-                        "nodeType": "Package"
-                    },
-                    {
-                        "relationType": "containment",
-                        "direction": "outgoing",
-                        "nodeType": "Requirement",
-                        "mergeWithPrevious": true
-                    }
-                ],
-                "recursive": true
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "b6cdc1ce-ad15-40c9-875b-d3f0a703a230",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "a520beb9-e18a-41d8-8aae-b51235117ed3",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "094d19bc-f656-46bb-9565-99dee89d9b42",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "e51e1127-3b4f-4d9f-b8f1-45967572bc4b",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "f6717f79-3e89-4944-a352-3e56507d086c",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "c02dd10f-ac23-4378-ace7-dc6417e1bbf5",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "b1e89f5a-46a9-4ca9-811d-2e83de8cf0d0",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "306f08fa-cc7f-4180-b6c1-c0b7f9744456",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "f126950f-aa63-4017-a9a4-dba12a10c019",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "67fab266-a853-4c70-8fd3-74a84e576495",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "5433a002-4a02-4a57-b9e5-b22ee5d6d653",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "8eeca4c4-2d7d-4da3-a430-6781fc91fccf",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "8a156f15-5dca-4d78-9634-afef863fa11c",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
             }
         ],
         "directElementIds": []
@@ -48,52 +103,97 @@
     "col_scope_config": {
         "roots": [
             {
-                "rootId": "7af3fe1a-51bf-4d7a-b208-ebf918c85c8b",
-                "includeRoot": true,
-                "includeIntermediates": true,
-                "queries": [
-                    {
-                        "relationType": "containment",
-                        "direction": "outgoing",
-                        "nodeType": "Package"
-                    },
-                    {
-                        "relationType": "containment",
-                        "direction": "outgoing",
-                        "nodeType": "Block",
-                        "mergeWithPrevious": true
-                    }
-                ],
-                "recursive": true
-            },
-            {
-                "rootId": "4e1ec7bb-e6c1-47a2-adab-991bb4dcf8e1",
-                "includeRoot": true,
-                "includeIntermediates": true,
-                "queries": [
-                    {
-                        "relationType": "containment",
-                        "direction": "outgoing",
-                        "nodeType": "Package"
-                    },
-                    {
-                        "relationType": "containment",
-                        "direction": "outgoing",
-                        "nodeType": "Block",
-                        "mergeWithPrevious": true
-                    }
-                ],
-                "recursive": true
-            },
-            {
-                "rootId": "ec2dcd30-72cc-4659-acd1-ed3d4afd4d25",
+                "rootId": "ba859834-feab-4b42-985f-77263937f5e9",
                 "includeRoot": true,
                 "includeIntermediates": false,
-                "queries": [],
-                "recursive": false
+                "queries": []
             },
             {
-                "rootId": "54530f3c-1f57-4d43-877e-3e62190dd63a",
+                "rootId": "67ae32b1-63e3-4485-bab6-e5253d770f7e",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "a845ea2c-5d15-495c-ada3-c38b71f53387",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "337050e7-16bb-4835-aa63-686352ac431e",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "314824e7-0eb2-4199-b4e9-3fb6896a2548",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "da9a7690-e187-4ee4-828e-22349dc577b0",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "b30cde14-0e3f-4d55-9b1b-4bf656bf5d40",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "bcca9047-08e0-4bf5-80f7-ff1b7fe1c1dc",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "f8696691-ddda-48a7-9ccc-fc93fbe5027e",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "436fe0d7-6d19-42dd-bd08-a0bda5bcfdee",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "45569ed4-1d23-4b8b-adbc-a298e3d709ac",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "2b5cd4a7-1438-49c6-a72b-83ce35878e14",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "caf45afb-eb00-4a6f-a18e-c0689ae227ab",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "b55437a2-f9ea-4df2-94c2-c1ef4c8038c0",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "c213e198-0b4f-4a51-91a9-08e3d80997f7",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "a8c80f45-1e5f-4b42-a2ee-d8b99440e288",
                 "includeRoot": true,
                 "includeIntermediates": false,
                 "queries": []
@@ -102,7 +202,7 @@
         "directElementIds": []
     },
     "direction_filter": "both",
-    "create_relation_type": "satisfy",
+    "create_relation_type": "verify",
     "include_implied": false,
     "implied_edge_config": {
         "customRules": [
@@ -358,13 +458,6 @@
             }
         ]
     },
-    "row_expanded_ids": [
-        "ba859834-feab-4b42-985f-77263937f5e9"
-    ],
-    "col_expanded_ids": [
-        "4e1ec7bb-e6c1-47a2-adab-991bb4dcf8e1",
-        "7af3fe1a-51bf-4d7a-b208-ebf918c85c8b"
-    ],
     "show_outgoing": true,
     "show_incoming": true
 }

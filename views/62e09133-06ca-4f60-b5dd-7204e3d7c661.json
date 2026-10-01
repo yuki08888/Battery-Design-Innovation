@@ -1379,6 +1379,31 @@
             "class_name": "DiagramEdge",
             "element_id": "33fd880c-cbc4-44d4-99fb-7e40d7f1d09d",
             "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "c593dea7-a47b-4d51-a466-6a405a390423",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "4001d58d-b5d8-4072-8747-6aeb36058d84",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "550e46ac-4391-4a11-bf8e-580771f75027",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "5bde0525-8bac-486b-8898-3b32bc17177f",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "c3857973-79f3-4e04-b562-0382b272b433",
+            "routing": "bezier"
         }
     ],
     "scale": 0.7550090018191038,
