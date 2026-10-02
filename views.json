@@ -181,14 +181,21 @@
             "parent_id": "5973d24e-444c-40cb-af30-239e610c1f61",
             "icon_key": "HubOutlined",
             "icon_color": null
+        },
+        {
+            "id": "e5625fd8-66f8-4efb-90cd-08d55ad2728d",
+            "name": "部品",
+            "parent_id": "cfcb364e-7491-4244-9119-3813b56a5247",
+            "icon_key": "TableChartOutlined",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [
-        "62e09133-06ca-4f60-b5dd-7204e3d7c661",
         "2ad2b7ef-3734-4840-95c8-6ef890ceb32c",
-        "8983b8ef-769b-48d8-ac21-2a13b733baef"
+        "e5625fd8-66f8-4efb-90cd-08d55ad2728d",
+        "62e09133-06ca-4f60-b5dd-7204e3d7c661"
     ],
-    "current_view_id": "2ad2b7ef-3734-4840-95c8-6ef890ceb32c",
+    "current_view_id": "62e09133-06ca-4f60-b5dd-7204e3d7c661",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,
