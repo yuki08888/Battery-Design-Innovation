@@ -134,7 +134,7 @@
       "order": 18
     },
     {
-      "id": "40aa951e-55cc-4ab6-b1a7-7d4c16af4932",
+      "id": "1ccb3339-7923-47fa-a815-6c8ea7150206",
       "name": "SQL クエリシートの作成・修正",
       "item_type": "file",
       "parent_id": null,
@@ -280,7 +280,7 @@
       "managed": true
     },
     "database-query": {
-      "item_id": "40aa951e-55cc-4ab6-b1a7-7d4c16af4932",
+      "item_id": "1ccb3339-7923-47fa-a815-6c8ea7150206",
       "name": "SQL クエリシートの作成・修正",
       "content_hash": "e8b744d984dbf8556cdc69448082ef01b2b725c0618241b2806911c421077bc8",
       "managed": true

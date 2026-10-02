@@ -174,13 +174,21 @@
             "parent_id": "d7ccfda4-bcd9-4bd2-a2ad-d909fcd616ef",
             "icon_key": "GridOnOutlined",
             "icon_color": null
+        },
+        {
+            "id": "6370073c-861c-480e-b65c-8d5337009abf",
+            "name": "4BV_2_セル間熱連鎖 機能ブロック図",
+            "parent_id": "5973d24e-444c-40cb-af30-239e610c1f61",
+            "icon_key": "HubOutlined",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [
         "62e09133-06ca-4f60-b5dd-7204e3d7c661",
-        "546bdb1b-79f3-4770-b174-b7e7af6a757c"
+        "546bdb1b-79f3-4770-b174-b7e7af6a757c",
+        "dfe52c73-7733-465d-9e5d-ba0415e52256"
     ],
-    "current_view_id": "546bdb1b-79f3-4770-b174-b7e7af6a757c",
+    "current_view_id": "62e09133-06ca-4f60-b5dd-7204e3d7c661",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,
