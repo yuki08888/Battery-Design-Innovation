@@ -66,6 +66,50 @@
         "kind": "chat_attachment",
         "fileName": "es_Requirements.pdf"
       }
+    },
+    {
+      "id": "79fa864c-14cf-44c6-bfb0-94fdcbd3384d",
+      "itemType": "asset",
+      "name": "jsonl詳細要求_対象部品.csv",
+      "parentId": null,
+      "order": 3,
+      "description": "",
+      "assetKind": "tabular",
+      "sha1": "7836d8e567ef325b07fedc025de795a4f54a291d",
+      "ext": "csv",
+      "mimeType": "text/csv",
+      "width": 0,
+      "height": 0,
+      "byteSize": 3215,
+      "createdAt": "2026-10-02T15:21:36.517783",
+      "updatedAt": "2026-10-02T15:21:36.534930",
+      "aiStatus": "skipped",
+      "origin": {
+        "kind": "chat_attachment",
+        "fileName": "jsonl詳細要求_対象部品.csv"
+      }
+    },
+    {
+      "id": "721d7757-1833-4e01-8c03-65bcba7c9002",
+      "itemType": "asset",
+      "name": "jsonl残り要求_対象部品.csv",
+      "parentId": null,
+      "order": 4,
+      "description": "",
+      "assetKind": "tabular",
+      "sha1": "685aea5152b448b018536a516572efde6dc96127",
+      "ext": "csv",
+      "mimeType": "text/csv",
+      "width": 0,
+      "height": 0,
+      "byteSize": 8885,
+      "createdAt": "2026-10-02T15:55:49.413462",
+      "updatedAt": "2026-10-02T15:55:49.415443",
+      "aiStatus": "skipped",
+      "origin": {
+        "kind": "chat_attachment",
+        "fileName": "jsonl残り要求_対象部品.csv"
+      }
     }
   ]
 }
