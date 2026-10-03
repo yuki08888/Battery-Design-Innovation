@@ -1,0 +1,2130 @@
+{
+    "id": "26497b35-a2dd-4a8c-b6d3-37dd188696f5",
+    "title": "2-1-2_品質基準_サービス解体作業_210331",
+    "pages": [
+        {
+            "id": "9086ece4-df1b-4b78-a662-2e1bd9b696f9",
+            "title": "ページ 1",
+            "content": "<u>各種</u>\n\n# 2－2 サービス等標準\n\n<u>制定／改定</u>\n\n<u>初回</u>　2021年3月31日\n\n> 本部内規は、当部、関係部署および関係会社の社員、協力会社を含みます。部外または社外に開示する場合には取扱いに十分留意してください。\n\nEHV電池設計部　電池パック設計室（3BV）\n\n| 承認 | 調査 | 作成 |\n|---|---|---|\n| 愛部 | 井上 | 磯谷 |",
+            "references": [],
+            "sourceImagePath": "414f9312-9327-423e-9745-e08ae21bb773.png",
+            "thumbnailPath": "thumb_414f9312-9327-423e-9745-e08ae21bb773.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "2a13fae1-bf78-4dbc-a539-8c1f82c66096",
+            "title": "ページ 2",
+            "content": "<h2>1. 適用範囲</h2>\n<p>駆動用バッテリ（車室外の電池パックのサービス・解体作業での運搬時を含む）の電池パックの漏電や、セル発煙につながるダメージを与えないための基本的な考え方を記載する。</p>\n<h2>2. サービス・解体作業での運搬時の電池パック保護に関する考え方</h2>\n<p>サービス時と解体作業時で考え方を分ける。</p>\n<h3>① サービス時の運搬に関する考え方</h3>\n<p>電池パックのサービス用台車の積載状態を確保する作業や装置を準備し作業では電池パックを損傷させてはいけないため、支持位置の限定は可能である。そのため、サービスでの運搬作業時に電池パックを一時保管する場合は、電池パックに支持構造を設け込み、位置を限定すること。</p>\n<h3>② 解体作業時の運搬に関する考え方</h3>\n<p>車両解体作業時に車両を床下からすくい上げるフォークリフトで持ち上げて電池パックが支持される。電池パックの安全性を確保する必要があるため、支持位置を限定することはできない。そのため、サービスでの運搬作業時に電池パック下面のどこを支持されても高電圧部品の漏電やセル発煙につながるダメージを与えないための保護構造を織り込むこと。</p>\n<h2>3. サービス・解体作業での運搬時の電池パック保護に関する目標</h2>\n<p>サービス時と解体作業時で考え方を分ける。</p>\n<h3>① サービス時の運搬に関する目標</h3>\n<p>電池セルへ入力がはみ出ない荷重部を支持できる構造にし、支持位置として限定すること。</p>\n<p>搬送時の電池パックの落下高さは、電池パック下面に車両パック下面と垂直な方向から電池パック下面に衝撃を与える評価条件とし、高さは2つに分ける。</p>\n<h3>② 解体作業時の運搬に関する目標</h3>\n<p>フォークリフトでの車両運搬時に電池パックを直接支持されることがないよう、アンダーボデー補強部材（ロッカーハウス等）下部より下側に電池パックが飛び出さないように配置すること。</p>\n<p>上記が満足できない場合、電池パックにサービス時の保護構造を織り込み、CAE及び実機評価にて安全性を確認すること。</p>\n<p>※目標例を次頁に示す。</p>",
+            "references": [],
+            "sourceImagePath": "e4690877-fe87-4142-b825-cfd406ce4737.png",
+            "thumbnailPath": "thumb_e4690877-fe87-4142-b825-cfd406ce4737.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "0470e947-bbc9-4459-9d3d-a073a9963e21",
+            "title": "ページ 3",
+            "content": "<h2>4. 具体例</h2>\n<h3>①－1 サービスでの運搬時の支持位置例（27PL）</h3>\n<p>LWRケース下面の骨格部を支持するよう限定。</p>\n<p>電池パック支持部（完成状態）</p>\n<p>支持・前後・荷重・移動時の位置を図示</p>\n<p>27PL T/S電池の支持</p>\n<p>LWRケース骨格<br />\nLWRケース下面の骨格</p>\n<p>セル下面を避け、LWRケースの内部と下面に骨格がある位置を</p>\n<p>図中寸法：353.1、349.6、349.6、132.7、123.6、80.3、80.3、80.3、54.2</p>",
+            "references": [],
+            "sourceImagePath": "b7392612-21e0-4028-aa14-6a4ee953f39e.png",
+            "thumbnailPath": "thumb_b7392612-21e0-4028-aa14-6a4ee953f39e.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "a0c32fe4-1ad0-44c3-a81b-211f662db598",
+            "title": "ページ 4",
+            "content": "<h3>①－2 重心マークの設定方法</h3>\n<p>・重心マークは車載状態で電池パック下面に設定すること。<br />\n・十分な□50mmとするが、それより小さくなる場合や、アンダーカバー等で設定が困難な場合は別途資料添付欄（確認事項欄）に図面を添付すること。<br />\n・見かけ重心は下面の中心に設定すること。<br />\n・見かけ重心は下記のように求めること。<br />\n・詳細は3B（ボディー寸法）→「サービス解体性」サービスシート→別紙Ⅱに記載があるので、必ず確認すること。</p>\n<p>（重心位置マーク）<br />\n（凹凸の成形方法等は設計一任）</p>\n<p>・ISO 7000 No.627<br />\n・JIS Z 0150　参照</p>\n<p>例1）710B</p>\n<p>・見かけ重心の求め方</p>\n<p>見かけ重心</p>\n<p>X＝SA＊xA＋SB＊xB／（SA＋SB）<br />\nY＝SA＊yA＋SB＊yB／（SA＋SB）</p>\n<p>A部 面積：SA mm²<br />\nA部 重心：xA, yA<br />\nB部 面積：SB mm²<br />\nB部 重心：xB, yB</p>\n<p>断面図</p>\n<p>見かけ重心：X,Y</p>\n<p>⊗：実重心<br />\n⊗：見かけ重心</p>\n<p>見かけ重心と実重心の距離</p>",
+            "references": [],
+            "sourceImagePath": "e00a82f8-026a-4090-a27e-31c19cd59465.png",
+            "thumbnailPath": "thumb_e00a82f8-026a-4090-a27e-31c19cd59465.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "6ce04c59-3160-48cd-b105-6fbb2e7c174b",
+            "title": "ページ 5",
+            "content": "<h3>②－1 解体作業でのフォークリフト運搬時の支持構造（2PL）</h3>\n<p>EA材（サブ部品より上に電池セルを配置し、さらに電池パック下面をシェル部品（下側部品）で覆うことで、フォークリフトで運搬されてもセルにフォークを当てない構造にしている。</p>\n<p>フォーク爪<br />\nEA材<br />\nセパレータ<br />\n電池パック最下端</p>\n<h3>②－1 解体作業でのフォークリフト運搬時の支持構造（2PL）</h3>\n<p>2PLは干渉部品を避けて電池パックを支持するため、<br />\n電池パックをフォーク下でのフォークハンドリング時の接触を防止し、<br />\nかつ、最悪アンダーで運搬した場合でも損傷はないことの確認を実施した。</p>\n<p>セル下端<br />\nEA材下端<br />\nセパレータ下端</p>\n<p>ボデー等の強度部材より上方向に配置すると電池内部を損傷する恐れあり</p>",
+            "references": [],
+            "sourceImagePath": "b3f1dc32-b6af-47cb-8eab-2083594283fa.png",
+            "thumbnailPath": "thumb_b3f1dc32-b6af-47cb-8eab-2083594283fa.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        }
+    ],
+    "references": [],
+    "sourceFilePath": "C:\\Users\\1584550\\AppData\\Roaming\\system_factory\\app_data\\projects\\0c47063b-31ef-45f7-9ab8-67833c1008e7\\documents\\26497b35-a2dd-4a8c-b6d3-37dd188696f5\\orgs\\90b96561-7e91-4d64-b760-3677c7ef41c8.pdf",
+    "createdAt": null,
+    "updatedAt": null,
+    "skeleton": null,
+    "headingRules": null,
+    "digest": {
+        "overview": {
+            "summary": "本書は、駆動用バッテリの電池パックについて、車室外でのサービス・解体作業時の運搬に伴う損傷を防ぐための品質基準を定めています。サービス時は支持位置を限定し、荷重部や落下衝撃に関する保護目標を設定する一方、解体時はフォークリフトによる支持位置を限定できない前提で、下面全体の保護または電池パックを直接支持させない配置を求めています。目標を満たせない場合の保護構造や、CAE・実機評価による安全性確認にも触れています。具体例として、サービス時の支持位置、重心マークの設定方法、解体時にフォークがセルへ当たらない支持構造を示しています。",
+            "documentKind": "design_doc",
+            "purpose": "サービス・解体作業での運搬時に、電池パックの損傷による漏電やセル発煙を防ぐための設計上の考え方と目標を示す。",
+            "scope": "駆動用バッテリの電池パックを対象に、車室外でのサービス・解体作業時の運搬と、その支持・保護構造を扱う。運搬時の安全目標、評価条件および具体的な支持・重心表示例を含む。",
+            "keyTopics": [
+                "適用範囲と文書管理情報",
+                "サービス時と解体時の運搬条件の違い",
+                "サービス時の支持位置限定と一時保管用支持構造",
+                "サービス時の荷重・落下評価目標",
+                "解体時の下面保護および電池パック非支持配置",
+                "CAE・実機による安全性確認",
+                "サービス時の支持位置例",
+                "重心マークおよび見かけ重心の設定",
+                "フォークリフト運搬時の支持構造例"
+            ],
+            "keyTerms": [
+                {
+                    "term": "見かけ重心",
+                    "definition": "電池パック下面の中心に設定する重心表示位置で、A部・B部の面積と各重心座標を用いた式で算出する。"
+                },
+                {
+                    "term": "LWRケース",
+                    "definition": "サービス時の支持位置例で、内部および下面に骨格がある箇所を支持する対象として記載されているケース。"
+                },
+                {
+                    "term": "EA材",
+                    "definition": "解体時の支持構造例で、サブ部品より上に電池セルを配置する構成要素として記載されている。"
+                }
+            ],
+            "targetSystem": "駆動用バッテリの電池パック"
+        },
+        "outline": [
+            {
+                "id": "6c962745-0aef-45b0-a33a-5e76dd34fd84",
+                "title": "2－2 サービス等標準",
+                "level": 1,
+                "summary": "制定／改定欄には初回制定日として2021年3月31日が記載されています。本部内規の対象は当部・関係部署・関係会社の社員および協力会社で、部外または社外に開示する際は取扱いに十分留意するよう記されています。所管はEHV電池設計部 電池パック設計室（3BV）で、承認・調査・作成者として愛部・井上・磯谷が記載されています。",
+                "keywords": [
+                    "サービス等標準",
+                    "2021年3月31日",
+                    "本部内規",
+                    "EHV電池設計部",
+                    "電池パック設計室",
+                    "3BV",
+                    "愛部",
+                    "井上"
+                ],
+                "pageIds": [
+                    "9086ece4-df1b-4b78-a662-2e1bd9b696f9"
+                ],
+                "children": [
+                    {
+                        "id": "4c3fc40e-ffaf-4f45-b913-3da5d53ee969",
+                        "title": "1. 適用範囲",
+                        "level": 2,
+                        "summary": "駆動用バッテリの電池パックについて、車室外でのサービス・解体作業時の運搬を含め、漏電やセル発煙につながるダメージを与えないための基本的な考え方を記載する。",
+                        "keywords": [
+                            "駆動用バッテリ",
+                            "電池パック",
+                            "サービス",
+                            "解体作業",
+                            "漏電",
+                            "セル発煙"
+                        ],
+                        "pageIds": [
+                            "2a13fae1-bf78-4dbc-a539-8c1f82c66096"
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "e57bc76e-d06f-44b1-8adf-fe5958ed7085",
+                        "title": "2. サービス・解体作業での運搬時の電池パック保護に関する考え方",
+                        "level": 2,
+                        "summary": "サービス時と解体作業時で考え方を分ける。サービス時は支持位置を限定して一時保管用の支持構造を設け、解体作業時は支持位置を限定できないため、電池パック下面のどこを支持されても高電圧部品の漏電やセル発煙につながる損傷を防ぐ保護構造を織り込む。",
+                        "keywords": [
+                            "電池パック保護",
+                            "運搬",
+                            "サービス",
+                            "解体作業",
+                            "支持位置",
+                            "支持構造",
+                            "高電圧部品"
+                        ],
+                        "pageIds": [
+                            "2a13fae1-bf78-4dbc-a539-8c1f82c66096"
+                        ],
+                        "children": [
+                            {
+                                "id": "c09ac508-af14-4d29-96fb-1b625894d616",
+                                "title": "① サービス時の運搬に関する考え方",
+                                "level": 3,
+                                "summary": "サービス用台車への積載状態を確保する作業や装置を準備し、作業中に電池パックを損傷させないため、支持位置を限定できる。一時保管時には電池パックに支持構造を設け、支持位置を限定する。",
+                                "keywords": [
+                                    "サービス用台車",
+                                    "積載状態",
+                                    "一時保管",
+                                    "支持構造",
+                                    "支持位置"
+                                ],
+                                "pageIds": [
+                                    "2a13fae1-bf78-4dbc-a539-8c1f82c66096"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "49e79d00-1fae-490d-94ec-5be89b313a66",
+                                "title": "② 解体作業時の運搬に関する考え方",
+                                "level": 3,
+                                "summary": "車両解体時は、床下から車両をすくい上げるフォークリフトで電池パックが支持されるため、支持位置を限定できない。電池パック下面のどこを支持されても、高電圧部品の漏電やセル発煙につながる損傷を防ぐ保護構造を織り込む。",
+                                "keywords": [
+                                    "車両解体作業",
+                                    "フォークリフト",
+                                    "電池パック下面",
+                                    "支持位置",
+                                    "高電圧部品",
+                                    "漏電",
+                                    "セル発煙",
+                                    "保護構造"
+                                ],
+                                "pageIds": [
+                                    "2a13fae1-bf78-4dbc-a539-8c1f82c66096"
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "b6208c85-56f5-484d-93fb-136b2c824c58",
+                        "title": "3. サービス・解体作業での運搬時の電池パック保護に関する目標",
+                        "level": 2,
+                        "summary": "サービス時と解体作業時で目標を分ける。サービス時は電池セルへの入力がはみ出ない荷重部を支持できる構造とし、支持位置を限定するほか、下面への垂直方向の衝撃を評価条件とし、落下高さを2つに分ける。解体作業時は電池パックを直接支持させない配置を基本とし、満足できない場合は保護構造を織り込み、CAEおよび実機評価で安全性を確認する。",
+                        "keywords": [
+                            "電池パック保護",
+                            "運搬",
+                            "目標",
+                            "電池セル",
+                            "荷重部",
+                            "落下高さ",
+                            "フォークリフト",
+                            "アンダーボデー補強部材"
+                        ],
+                        "pageIds": [
+                            "2a13fae1-bf78-4dbc-a539-8c1f82c66096"
+                        ],
+                        "children": [
+                            {
+                                "id": "b2b6b273-bdea-4efc-b210-45ef0e2677ba",
+                                "title": "① サービス時の運搬に関する目標",
+                                "level": 3,
+                                "summary": "電池セルへ入力がはみ出ない荷重部を支持できる構造とし、支持位置を限定する。搬送時の落下評価では、電池パック下面に対して垂直な方向から衝撃を与える条件とし、落下高さを2つに分ける。",
+                                "keywords": [
+                                    "電池セル",
+                                    "荷重部",
+                                    "支持位置",
+                                    "搬送",
+                                    "落下高さ",
+                                    "垂直方向",
+                                    "衝撃評価"
+                                ],
+                                "pageIds": [
+                                    "2a13fae1-bf78-4dbc-a539-8c1f82c66096"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "e2487ed6-0cea-420e-b801-af36f27cdf81",
+                                "title": "② 解体作業時の運搬に関する目標",
+                                "level": 3,
+                                "summary": "フォークリフトで車両を運搬する際に電池パックが直接支持されないよう、アンダーボデー補強部材（ロッカーハウス等）の下部より電池パックが下側へ飛び出さない配置とする。これを満足できない場合はサービス時の保護構造を織り込み、CAEおよび実機評価で安全性を確認する。目標例は次頁に示す。",
+                                "keywords": [
+                                    "フォークリフト",
+                                    "電池パック",
+                                    "アンダーボデー補強部材",
+                                    "ロッカーハウス",
+                                    "保護構造",
+                                    "CAE",
+                                    "実機評価"
+                                ],
+                                "pageIds": [
+                                    "2a13fae1-bf78-4dbc-a539-8c1f82c66096"
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "ed6e0e3a-059b-4297-a862-0c16aa726b4c",
+                        "title": "4. 具体例",
+                        "level": 2,
+                        "summary": "サービスで運搬する際の電池パックの支持位置例を示す。LWRケース下面の骨格部を支持するよう限定する内容が記載されている。",
+                        "keywords": [
+                            "サービス",
+                            "運搬",
+                            "電池パック",
+                            "LWRケース",
+                            "支持位置"
+                        ],
+                        "pageIds": [
+                            "0470e947-bbc9-4459-9d3d-a073a9963e21"
+                        ],
+                        "children": [
+                            {
+                                "id": "18b6efd4-5124-498c-aff7-e2d26fbacb25",
+                                "title": "①－1 サービスでの運搬時の支持位置例（27PL）",
+                                "level": 3,
+                                "summary": "27PL T/S電池について、完成状態の電池パック支持部と、支持・前後・荷重・移動時の位置を図示している。セル下面を避け、LWRケース内部と下面に骨格がある位置を支持し、寸法として353.1、349.6、349.6、132.7、123.6、80.3、80.3、80.3、54.2を記載している。",
+                                "keywords": [
+                                    "27PL",
+                                    "T/S電池",
+                                    "電池パック支持部",
+                                    "LWRケース骨格",
+                                    "セル下面",
+                                    "353.1",
+                                    "349.6",
+                                    "132.7"
+                                ],
+                                "pageIds": [
+                                    "0470e947-bbc9-4459-9d3d-a073a9963e21"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "c90d5d75-5d28-4774-b0d4-bfefd935b849",
+                                "title": "①－2 重心マークの設定方法",
+                                "level": 3,
+                                "summary": "重心マークは車載状態で電池パック下面に設定し、十分な□50mmを確保する。小さくなる場合やアンダーカバー等で設定困難な場合は確認事項欄に図面を添付し、見かけ重心は下面の中心に設定する。見かけ重心はA部・B部の面積と各重心座標から X＝(SA＊xA＋SB＊xB)／(SA＋SB)、Y＝(SA＊yA＋SB＊yB)／(SA＋SB)で求め、詳細は3B（ボディー寸法）の「サービス解体性」サービスシート別紙Ⅱを確認する。重心位置マークについてISO 7000 No.627およびJIS Z 0150を参照する。",
+                                "keywords": [
+                                    "重心マーク",
+                                    "見かけ重心",
+                                    "電池パック",
+                                    "□50mm",
+                                    "確認事項欄",
+                                    "3B（ボディー寸法）",
+                                    "サービス解体性",
+                                    "ISO 7000 No.627"
+                                ],
+                                "pageIds": [
+                                    "a0c32fe4-1ad0-44c3-a81b-211f662db598"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "4c9f5a11-310b-4295-b77d-cf1ddfb85dd2",
+                                "title": "②－1 解体作業でのフォークリフト運搬時の支持構造（2PL）",
+                                "level": 3,
+                                "summary": "EA材はサブ部品より上に電池セルを配置し、電池パック下面をシェル部品（下側部品）で覆うことで、フォークリフト運搬時にフォークがセルへ当たらない構造としている。図中にはフォーク爪、EA材、セパレータ、電池パック最下端が示されている。",
+                                "keywords": [
+                                    "EA材",
+                                    "電池セル",
+                                    "シェル部品",
+                                    "フォークリフト",
+                                    "フォーク爪",
+                                    "セパレータ",
+                                    "2PL",
+                                    "干渉部品",
+                                    "フォークハンドリング",
+                                    "アンダー運搬",
+                                    "セル下端",
+                                    "EA材下端",
+                                    "セパレータ下端",
+                                    "強度部材"
+                                ],
+                                "pageIds": [
+                                    "6ce04c59-3160-48cd-b105-6fbb2e7c174b"
+                                ],
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "sourceHash": "bfdb0e53cdd715639ad6ba0b2c4967a0a1d5cf72",
+        "textHash": "ef979b82edfea88c47bb9b484416a4f0bf55fdcc",
+        "generatedAt": "2026-10-03T14:27:17.120925",
+        "pageCount": 5,
+        "schemaVersion": 1,
+        "generator": "ai"
+    },
+    "coverage": {
+        "schemaVersion": 1,
+        "sourceHash": "bfdb0e53cdd715639ad6ba0b2c4967a0a1d5cf72",
+        "textHash": "ef979b82edfea88c47bb9b484416a4f0bf55fdcc",
+        "generatedAt": "2026-10-03T15:28:37.219056",
+        "rounds": 0,
+        "stoppedReason": "",
+        "segments": [
+            {
+                "id": "slu-219f63ef617dd5c85a1eee08cd2ccc52d01eef421d94ae9b8616e9da713ddb86",
+                "pageId": "9086ece4-df1b-4b78-a662-2e1bd9b696f9",
+                "quote": "<u>各種</u>",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 0,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 0,
+                        "end": 9,
+                        "occurrence": 0,
+                        "pageSourceHash": "0b46b34dd308ba7171b4e48b25ea6be7cf5c6f1c81237d8602bf3a4a2142b903"
+                    }
+                }
+            },
+            {
+                "id": "slu-f06d1187e20696d44f93d476c789ff95dc415ca2cf78a21755070823438c2740",
+                "pageId": "9086ece4-df1b-4b78-a662-2e1bd9b696f9",
+                "quote": "# 2－2 サービス等標準",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 1,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 11,
+                        "end": 24,
+                        "occurrence": 0,
+                        "pageSourceHash": "0b46b34dd308ba7171b4e48b25ea6be7cf5c6f1c81237d8602bf3a4a2142b903"
+                    }
+                }
+            },
+            {
+                "id": "slu-29f18c0df33d8f7ca2ee642d8080569829d059748d67c7a32c6a65e8a46ee7a7",
+                "pageId": "9086ece4-df1b-4b78-a662-2e1bd9b696f9",
+                "quote": "<u>制定／改定</u>",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 2,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 26,
+                        "end": 38,
+                        "occurrence": 0,
+                        "pageSourceHash": "0b46b34dd308ba7171b4e48b25ea6be7cf5c6f1c81237d8602bf3a4a2142b903"
+                    }
+                }
+            },
+            {
+                "id": "slu-8ceaa6924a19cd6513be249290b2ac8114e92410d0a475794c5bcb13ec421023",
+                "pageId": "9086ece4-df1b-4b78-a662-2e1bd9b696f9",
+                "quote": "<u>初回</u>　2021年3月31日",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 3,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 40,
+                        "end": 60,
+                        "occurrence": 0,
+                        "pageSourceHash": "0b46b34dd308ba7171b4e48b25ea6be7cf5c6f1c81237d8602bf3a4a2142b903"
+                    }
+                }
+            },
+            {
+                "id": "slu-b3535f30bb352aa2bef5529f691f86bd0a70ea0c53dbf5e6d149b128210f3555",
+                "pageId": "9086ece4-df1b-4b78-a662-2e1bd9b696f9",
+                "quote": "> 本部内規は、当部、関係部署および関係会社の社員、協力会社を含みます。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 4,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 62,
+                        "end": 98,
+                        "occurrence": 0,
+                        "pageSourceHash": "0b46b34dd308ba7171b4e48b25ea6be7cf5c6f1c81237d8602bf3a4a2142b903"
+                    }
+                }
+            },
+            {
+                "id": "slu-cc73a26267ea4682f7ffbc8cdfab6397406bdd3821da042c73993cc1cce778aa",
+                "pageId": "9086ece4-df1b-4b78-a662-2e1bd9b696f9",
+                "quote": "部外または社外に開示する場合には取扱いに十分留意してください。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 5,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 98,
+                        "end": 129,
+                        "occurrence": 0,
+                        "pageSourceHash": "0b46b34dd308ba7171b4e48b25ea6be7cf5c6f1c81237d8602bf3a4a2142b903"
+                    }
+                }
+            },
+            {
+                "id": "slu-fb61bbe26fe9a3f9b3ee83a963ad878101653c8f014e4bf73453d25cb3176995",
+                "pageId": "9086ece4-df1b-4b78-a662-2e1bd9b696f9",
+                "quote": "EHV電池設計部　電池パック設計室（3BV）",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 6,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 131,
+                        "end": 153,
+                        "occurrence": 0,
+                        "pageSourceHash": "0b46b34dd308ba7171b4e48b25ea6be7cf5c6f1c81237d8602bf3a4a2142b903"
+                    }
+                }
+            },
+            {
+                "id": "slu-5330ef2c89d7491d29948f245510d1716cc150f8c6e5730c60fbfcfd35675c50",
+                "pageId": "9086ece4-df1b-4b78-a662-2e1bd9b696f9",
+                "quote": "| 承認 | 調査 | 作成 |",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 7,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 155,
+                        "end": 171,
+                        "occurrence": 0,
+                        "pageSourceHash": "0b46b34dd308ba7171b4e48b25ea6be7cf5c6f1c81237d8602bf3a4a2142b903"
+                    }
+                }
+            },
+            {
+                "id": "slu-248ad70cba19db68254a1b7c5bf1881dfbe075b762b120099575ac690566b25f",
+                "pageId": "9086ece4-df1b-4b78-a662-2e1bd9b696f9",
+                "quote": "|---|---|---|",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 8,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 172,
+                        "end": 185,
+                        "occurrence": 0,
+                        "pageSourceHash": "0b46b34dd308ba7171b4e48b25ea6be7cf5c6f1c81237d8602bf3a4a2142b903"
+                    }
+                }
+            },
+            {
+                "id": "slu-a2b238337181fa430cb7d7a02ede693cf93abed73a80b41037c7d98c1dcce9ac",
+                "pageId": "9086ece4-df1b-4b78-a662-2e1bd9b696f9",
+                "quote": "| 愛部 | 井上 | 磯谷 |",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 9,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 186,
+                        "end": 202,
+                        "occurrence": 0,
+                        "pageSourceHash": "0b46b34dd308ba7171b4e48b25ea6be7cf5c6f1c81237d8602bf3a4a2142b903"
+                    }
+                }
+            },
+            {
+                "id": "slu-4027bb8b61c0009b2da675ac0c458acaaf54cee8b813ddd637425e66b3267b4f",
+                "pageId": "2a13fae1-bf78-4dbc-a539-8c1f82c66096",
+                "quote": "1. 適用範囲",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 0,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 1,
+                        "end": 8,
+                        "occurrence": 0,
+                        "pageSourceHash": "1caafd7e7929991b5ac91873c4e31355c96fc4f436810a8edce854a132cb6dfb"
+                    }
+                }
+            },
+            {
+                "id": "slu-235413016f14c32c933e9e94910aa3913d5ecadbd2d5d339992a75278c38740b",
+                "pageId": "2a13fae1-bf78-4dbc-a539-8c1f82c66096",
+                "quote": "駆動用バッテリ（車室外の電池パックのサービス・解体作業での運搬時を含む）の電池パックの漏電や、セル発煙につながるダメージを与えないための基本的な考え方を記載する。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 1,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 11,
+                        "end": 92,
+                        "occurrence": 0,
+                        "pageSourceHash": "1caafd7e7929991b5ac91873c4e31355c96fc4f436810a8edce854a132cb6dfb"
+                    }
+                }
+            },
+            {
+                "id": "slu-984f5c72eee25db1af1ea2d8e410d2e28240db3b503c16874b954653eecd5010",
+                "pageId": "2a13fae1-bf78-4dbc-a539-8c1f82c66096",
+                "quote": "2. サービス・解体作業での運搬時の電池パック保護に関する考え方",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 2,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 95,
+                        "end": 127,
+                        "occurrence": 0,
+                        "pageSourceHash": "1caafd7e7929991b5ac91873c4e31355c96fc4f436810a8edce854a132cb6dfb"
+                    }
+                }
+            },
+            {
+                "id": "slu-41c5b7592482b26ce764c1bf6257b04c1dece9daba44d2615079124d701ddffe",
+                "pageId": "2a13fae1-bf78-4dbc-a539-8c1f82c66096",
+                "quote": "サービス時と解体作業時で考え方を分ける。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 3,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 130,
+                        "end": 150,
+                        "occurrence": 0,
+                        "pageSourceHash": "1caafd7e7929991b5ac91873c4e31355c96fc4f436810a8edce854a132cb6dfb"
+                    }
+                }
+            },
+            {
+                "id": "slu-1b682ce1500d10c052d0691255badb14adf70817f0c4d53f5ec9bd301e8be171",
+                "pageId": "2a13fae1-bf78-4dbc-a539-8c1f82c66096",
+                "quote": "① サービス時の運搬に関する考え方",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 4,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 153,
+                        "end": 170,
+                        "occurrence": 0,
+                        "pageSourceHash": "1caafd7e7929991b5ac91873c4e31355c96fc4f436810a8edce854a132cb6dfb"
+                    }
+                }
+            },
+            {
+                "id": "slu-ba57f02663ca4829708d64a2fd98009b1bb1764871881fd89ea67a8fb31fc9eb",
+                "pageId": "2a13fae1-bf78-4dbc-a539-8c1f82c66096",
+                "quote": "電池パックのサービス用台車の積載状態を確保する作業や装置を準備し作業では電池パックを損傷させてはいけないため、支持位置の限定は可能である。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 5,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 173,
+                        "end": 242,
+                        "occurrence": 0,
+                        "pageSourceHash": "1caafd7e7929991b5ac91873c4e31355c96fc4f436810a8edce854a132cb6dfb"
+                    }
+                }
+            },
+            {
+                "id": "slu-041fdc3f5269039aae5d292de1ab56554fdc042c5061d74a505a567f88a5b0c9",
+                "pageId": "2a13fae1-bf78-4dbc-a539-8c1f82c66096",
+                "quote": "そのため、サービスでの運搬作業時に電池パックを一時保管する場合は、電池パックに支持構造を設け込み、位置を限定すること。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 6,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 242,
+                        "end": 301,
+                        "occurrence": 0,
+                        "pageSourceHash": "1caafd7e7929991b5ac91873c4e31355c96fc4f436810a8edce854a132cb6dfb"
+                    }
+                }
+            },
+            {
+                "id": "slu-edf045bf4127ca04e355d6060cb35ceb4d7090977cf6b3aaa70eaecc8c5e3594",
+                "pageId": "2a13fae1-bf78-4dbc-a539-8c1f82c66096",
+                "quote": "② 解体作業時の運搬に関する考え方",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 7,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 304,
+                        "end": 321,
+                        "occurrence": 0,
+                        "pageSourceHash": "1caafd7e7929991b5ac91873c4e31355c96fc4f436810a8edce854a132cb6dfb"
+                    }
+                }
+            },
+            {
+                "id": "slu-4e471cd539f901bf2c0336a6528ee154a0134590c9c1d1ae95a9a2e2f9db3f9e",
+                "pageId": "2a13fae1-bf78-4dbc-a539-8c1f82c66096",
+                "quote": "車両解体作業時に車両を床下からすくい上げるフォークリフトで持ち上げて電池パックが支持される。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 8,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 324,
+                        "end": 370,
+                        "occurrence": 0,
+                        "pageSourceHash": "1caafd7e7929991b5ac91873c4e31355c96fc4f436810a8edce854a132cb6dfb"
+                    }
+                }
+            },
+            {
+                "id": "slu-280d6b0bbc254aaadfc339ca358e82cf709a68c8e96c27aa1b4d8f49e8d805c2",
+                "pageId": "2a13fae1-bf78-4dbc-a539-8c1f82c66096",
+                "quote": "電池パックの安全性を確保する必要があるため、支持位置を限定することはできない。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 9,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 370,
+                        "end": 409,
+                        "occurrence": 0,
+                        "pageSourceHash": "1caafd7e7929991b5ac91873c4e31355c96fc4f436810a8edce854a132cb6dfb"
+                    }
+                }
+            },
+            {
+                "id": "slu-b10a5cf80e7bb65e4ce000bc220910e0852bd1223d1619b083658312a666622e",
+                "pageId": "2a13fae1-bf78-4dbc-a539-8c1f82c66096",
+                "quote": "そのため、サービスでの運搬作業時に電池パック下面のどこを支持されても高電圧部品の漏電やセル発煙につながるダメージを与えないための保護構造を織り込むこと。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 10,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 409,
+                        "end": 485,
+                        "occurrence": 0,
+                        "pageSourceHash": "1caafd7e7929991b5ac91873c4e31355c96fc4f436810a8edce854a132cb6dfb"
+                    }
+                }
+            },
+            {
+                "id": "slu-47e95dd702505eb042d37d860b733fc0fa60f354b704ee3d7ff89827a69d97ce",
+                "pageId": "2a13fae1-bf78-4dbc-a539-8c1f82c66096",
+                "quote": "3. サービス・解体作業での運搬時の電池パック保護に関する目標",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 11,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 488,
+                        "end": 519,
+                        "occurrence": 0,
+                        "pageSourceHash": "1caafd7e7929991b5ac91873c4e31355c96fc4f436810a8edce854a132cb6dfb"
+                    }
+                }
+            },
+            {
+                "id": "slu-abf192d08013b8c6422e20edbedd33eaf79d833772f11ef90963c20142d6361f",
+                "pageId": "2a13fae1-bf78-4dbc-a539-8c1f82c66096",
+                "quote": "サービス時と解体作業時で考え方を分ける。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 12,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 522,
+                        "end": 542,
+                        "occurrence": 1,
+                        "pageSourceHash": "1caafd7e7929991b5ac91873c4e31355c96fc4f436810a8edce854a132cb6dfb"
+                    }
+                }
+            },
+            {
+                "id": "slu-b9c391ea130f5d1c924e62c943cba1780598362f37df2beef219d48098f843be",
+                "pageId": "2a13fae1-bf78-4dbc-a539-8c1f82c66096",
+                "quote": "① サービス時の運搬に関する目標",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 13,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 545,
+                        "end": 561,
+                        "occurrence": 0,
+                        "pageSourceHash": "1caafd7e7929991b5ac91873c4e31355c96fc4f436810a8edce854a132cb6dfb"
+                    }
+                }
+            },
+            {
+                "id": "slu-4031ff9acc8fbb1d7149929881412be6fcfa2343f8a6a0db963572ae02aa5e24",
+                "pageId": "2a13fae1-bf78-4dbc-a539-8c1f82c66096",
+                "quote": "電池セルへ入力がはみ出ない荷重部を支持できる構造にし、支持位置として限定すること。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 14,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 564,
+                        "end": 605,
+                        "occurrence": 0,
+                        "pageSourceHash": "1caafd7e7929991b5ac91873c4e31355c96fc4f436810a8edce854a132cb6dfb"
+                    }
+                }
+            },
+            {
+                "id": "slu-68a497bdc8a63cbd6774d7ff169cc42fcace24c9c610d32b39eed3fc3ad0a0e3",
+                "pageId": "2a13fae1-bf78-4dbc-a539-8c1f82c66096",
+                "quote": "搬送時の電池パックの落下高さは、電池パック下面に車両パック下面と垂直な方向から電池パック下面に衝撃を与える評価条件とし、高さは2つに分ける。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 15,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 608,
+                        "end": 678,
+                        "occurrence": 0,
+                        "pageSourceHash": "1caafd7e7929991b5ac91873c4e31355c96fc4f436810a8edce854a132cb6dfb"
+                    }
+                }
+            },
+            {
+                "id": "slu-4cad67a40319e2d259beb7ab589cf548ec36b5e60d4276e66e4a62c81704c83b",
+                "pageId": "2a13fae1-bf78-4dbc-a539-8c1f82c66096",
+                "quote": "② 解体作業時の運搬に関する目標",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 16,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 681,
+                        "end": 697,
+                        "occurrence": 0,
+                        "pageSourceHash": "1caafd7e7929991b5ac91873c4e31355c96fc4f436810a8edce854a132cb6dfb"
+                    }
+                }
+            },
+            {
+                "id": "slu-92d753564a54902a8a115d72a5afd5dfbc432dc8279fc5411041f49c002d716f",
+                "pageId": "2a13fae1-bf78-4dbc-a539-8c1f82c66096",
+                "quote": "フォークリフトでの車両運搬時に電池パックを直接支持されることがないよう、アンダーボデー補強部材（ロッカーハウス等）下部より下側に電池パックが飛び出さないように配置すること。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 17,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 700,
+                        "end": 786,
+                        "occurrence": 0,
+                        "pageSourceHash": "1caafd7e7929991b5ac91873c4e31355c96fc4f436810a8edce854a132cb6dfb"
+                    }
+                }
+            },
+            {
+                "id": "slu-b8ab8584b7873ab65f21f275ce5457aacbad6d14ce6fd5bef8f49be53962739e",
+                "pageId": "2a13fae1-bf78-4dbc-a539-8c1f82c66096",
+                "quote": "上記が満足できない場合、電池パックにサービス時の保護構造を織り込み、CAE及び実機評価にて安全性を確認すること。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 18,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 789,
+                        "end": 845,
+                        "occurrence": 0,
+                        "pageSourceHash": "1caafd7e7929991b5ac91873c4e31355c96fc4f436810a8edce854a132cb6dfb"
+                    }
+                }
+            },
+            {
+                "id": "slu-0a9e3e4b0426e43ee99ec53cb9276ed9f243cc07e20d337a5d2886607aad9889",
+                "pageId": "2a13fae1-bf78-4dbc-a539-8c1f82c66096",
+                "quote": "※目標例を次頁に示す。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 19,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 848,
+                        "end": 859,
+                        "occurrence": 0,
+                        "pageSourceHash": "1caafd7e7929991b5ac91873c4e31355c96fc4f436810a8edce854a132cb6dfb"
+                    }
+                }
+            },
+            {
+                "id": "slu-c9f85ed033228f0e54cc5c25e0180ad979dcad12653e159a69914800bbcdc7b4",
+                "pageId": "0470e947-bbc9-4459-9d3d-a073a9963e21",
+                "quote": "4. 具体例",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 0,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 1,
+                        "end": 7,
+                        "occurrence": 0,
+                        "pageSourceHash": "89910a0dccf66041b9b93e0cc3da975e16852fc454b78b71968996242397232a"
+                    }
+                }
+            },
+            {
+                "id": "slu-e1fa1a7381e63571f359097d9fd006a3ab2515f970bd6f5f59a3a3f55e4b53a6",
+                "pageId": "0470e947-bbc9-4459-9d3d-a073a9963e21",
+                "quote": "①－1 サービスでの運搬時の支持位置例（27PL）",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 1,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 10,
+                        "end": 35,
+                        "occurrence": 0,
+                        "pageSourceHash": "89910a0dccf66041b9b93e0cc3da975e16852fc454b78b71968996242397232a"
+                    }
+                }
+            },
+            {
+                "id": "slu-37c14d9d78c0e62d2d1cb6b23a1b909b8663ed7b73fdba7314bffcbe5b99ec73",
+                "pageId": "0470e947-bbc9-4459-9d3d-a073a9963e21",
+                "quote": "LWRケース下面の骨格部を支持するよう限定。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 2,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 38,
+                        "end": 60,
+                        "occurrence": 0,
+                        "pageSourceHash": "89910a0dccf66041b9b93e0cc3da975e16852fc454b78b71968996242397232a"
+                    }
+                }
+            },
+            {
+                "id": "slu-d7c118fe0a54522e747af895c4fc1d9bebc6431f78ebcfbb6a7f720190d1ea1c",
+                "pageId": "0470e947-bbc9-4459-9d3d-a073a9963e21",
+                "quote": "電池パック支持部（完成状態）",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 3,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 63,
+                        "end": 77,
+                        "occurrence": 0,
+                        "pageSourceHash": "89910a0dccf66041b9b93e0cc3da975e16852fc454b78b71968996242397232a"
+                    }
+                }
+            },
+            {
+                "id": "slu-cd8a29f178da4fb5f194eb5925cbcaa8d0dd3adc6eca78bde0500df301c36909",
+                "pageId": "0470e947-bbc9-4459-9d3d-a073a9963e21",
+                "quote": "支持・前後・荷重・移動時の位置を図示",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 4,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 80,
+                        "end": 98,
+                        "occurrence": 0,
+                        "pageSourceHash": "89910a0dccf66041b9b93e0cc3da975e16852fc454b78b71968996242397232a"
+                    }
+                }
+            },
+            {
+                "id": "slu-d10bd6bd0cbf38a757e2a4f64c096323c49bcfc1bec2b9b29e2cbc521187dfc8",
+                "pageId": "0470e947-bbc9-4459-9d3d-a073a9963e21",
+                "quote": "27PL T/S電池の支持",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 5,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 101,
+                        "end": 114,
+                        "occurrence": 0,
+                        "pageSourceHash": "89910a0dccf66041b9b93e0cc3da975e16852fc454b78b71968996242397232a"
+                    }
+                }
+            },
+            {
+                "id": "slu-5105bf980fd4de05d4ca15218fa344289c7534c5581457bb44d086e54a2596f9",
+                "pageId": "0470e947-bbc9-4459-9d3d-a073a9963e21",
+                "quote": "LWRケース骨格",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 6,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 117,
+                        "end": 125,
+                        "occurrence": 0,
+                        "pageSourceHash": "89910a0dccf66041b9b93e0cc3da975e16852fc454b78b71968996242397232a"
+                    }
+                }
+            },
+            {
+                "id": "slu-5adafa2a2b7b933a5c35f5ccb61532b2d6b593c368c32c37d16c0b7ecabb4983",
+                "pageId": "0470e947-bbc9-4459-9d3d-a073a9963e21",
+                "quote": "LWRケース下面の骨格",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 7,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 127,
+                        "end": 138,
+                        "occurrence": 0,
+                        "pageSourceHash": "89910a0dccf66041b9b93e0cc3da975e16852fc454b78b71968996242397232a"
+                    }
+                }
+            },
+            {
+                "id": "slu-118f65854466ed3ad986d5152ab833ad6db9dbc62e3492f8d62f0b4bb4e693a9",
+                "pageId": "0470e947-bbc9-4459-9d3d-a073a9963e21",
+                "quote": "セル下面を避け、LWRケースの内部と下面に骨格がある位置を",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 8,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 141,
+                        "end": 170,
+                        "occurrence": 0,
+                        "pageSourceHash": "89910a0dccf66041b9b93e0cc3da975e16852fc454b78b71968996242397232a"
+                    }
+                }
+            },
+            {
+                "id": "slu-73c97176214c0f14b3c5369737b0c99a003f3716d5e88655ecc82d3288e42520",
+                "pageId": "0470e947-bbc9-4459-9d3d-a073a9963e21",
+                "quote": "図中寸法：353.1、349.6、349.6、132.7、123.6、80.3、80.3、80.3、54.2",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 9,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 173,
+                        "end": 227,
+                        "occurrence": 0,
+                        "pageSourceHash": "89910a0dccf66041b9b93e0cc3da975e16852fc454b78b71968996242397232a"
+                    }
+                }
+            },
+            {
+                "id": "slu-46f9d6362d75bcc82cb48151bb53d9c0b893284a333dca9f4c16b8441f758294",
+                "pageId": "a0c32fe4-1ad0-44c3-a81b-211f662db598",
+                "quote": "①－2 重心マークの設定方法",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 0,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 1,
+                        "end": 15,
+                        "occurrence": 0,
+                        "pageSourceHash": "ba45dee37de917e9f02acbe6e388a3479f52293571ca4f428f8b5a59d8a539be"
+                    }
+                }
+            },
+            {
+                "id": "slu-b1a77ec8e7402750a13061ec9b72a18579104a542401004445db68f503f5db06",
+                "pageId": "a0c32fe4-1ad0-44c3-a81b-211f662db598",
+                "quote": "・重心マークは車載状態で電池パック下面に設定すること。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 1,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 18,
+                        "end": 45,
+                        "occurrence": 0,
+                        "pageSourceHash": "ba45dee37de917e9f02acbe6e388a3479f52293571ca4f428f8b5a59d8a539be"
+                    }
+                }
+            },
+            {
+                "id": "slu-3c26f4e1ad24a000afc03c99e5d707aba6429e05c0f9ff4129885623e0286783",
+                "pageId": "a0c32fe4-1ad0-44c3-a81b-211f662db598",
+                "quote": "・十分な□50mmとするが、それより小さくなる場合や、アンダーカバー等で設定が困難な場合は別途資料添付欄（確認事項欄）に図面を添付すること。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 2,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 47,
+                        "end": 117,
+                        "occurrence": 0,
+                        "pageSourceHash": "ba45dee37de917e9f02acbe6e388a3479f52293571ca4f428f8b5a59d8a539be"
+                    }
+                }
+            },
+            {
+                "id": "slu-19eff0f86bb722c338836b82c5a72927df9a982ebc86e860871981594315b66f",
+                "pageId": "a0c32fe4-1ad0-44c3-a81b-211f662db598",
+                "quote": "・見かけ重心は下面の中心に設定すること。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 3,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 119,
+                        "end": 139,
+                        "occurrence": 0,
+                        "pageSourceHash": "ba45dee37de917e9f02acbe6e388a3479f52293571ca4f428f8b5a59d8a539be"
+                    }
+                }
+            },
+            {
+                "id": "slu-6fb6315641cea18237bd1e42cb747c3a40ac3aac87f8d3cb90838ab57e3a85a2",
+                "pageId": "a0c32fe4-1ad0-44c3-a81b-211f662db598",
+                "quote": "・見かけ重心は下記のように求めること。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 4,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 141,
+                        "end": 160,
+                        "occurrence": 0,
+                        "pageSourceHash": "ba45dee37de917e9f02acbe6e388a3479f52293571ca4f428f8b5a59d8a539be"
+                    }
+                }
+            },
+            {
+                "id": "slu-a96668eb6f6441444136b2c6d180b48edf2197ad119e70d818d9664374baa374",
+                "pageId": "a0c32fe4-1ad0-44c3-a81b-211f662db598",
+                "quote": "・詳細は3B（ボディー寸法）→「サービス解体性」サービスシート→別紙Ⅱに記載があるので、必ず確認すること。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 5,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 162,
+                        "end": 215,
+                        "occurrence": 0,
+                        "pageSourceHash": "ba45dee37de917e9f02acbe6e388a3479f52293571ca4f428f8b5a59d8a539be"
+                    }
+                }
+            },
+            {
+                "id": "slu-7a42d66f5b815bcacb15dcb95ff8d98e4186a994d36e97768bd8c9f06349174c",
+                "pageId": "a0c32fe4-1ad0-44c3-a81b-211f662db598",
+                "quote": "（重心位置マーク）",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 6,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 218,
+                        "end": 227,
+                        "occurrence": 0,
+                        "pageSourceHash": "ba45dee37de917e9f02acbe6e388a3479f52293571ca4f428f8b5a59d8a539be"
+                    }
+                }
+            },
+            {
+                "id": "slu-de279984528db2ec0bc4460ddf15110c3e6d1faaae45b056cd924d267564dc2c",
+                "pageId": "a0c32fe4-1ad0-44c3-a81b-211f662db598",
+                "quote": "（凹凸の成形方法等は設計一任）",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 7,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 229,
+                        "end": 244,
+                        "occurrence": 0,
+                        "pageSourceHash": "ba45dee37de917e9f02acbe6e388a3479f52293571ca4f428f8b5a59d8a539be"
+                    }
+                }
+            },
+            {
+                "id": "slu-3d9d67fd58767c3ae40b1d675f2b76a3044a432477cdedc16bff5cf7b7de6987",
+                "pageId": "a0c32fe4-1ad0-44c3-a81b-211f662db598",
+                "quote": "・ISO 7000 No.627",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 8,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 247,
+                        "end": 263,
+                        "occurrence": 0,
+                        "pageSourceHash": "ba45dee37de917e9f02acbe6e388a3479f52293571ca4f428f8b5a59d8a539be"
+                    }
+                }
+            },
+            {
+                "id": "slu-f1422463a9021953b7a857c910872cf5af6a68afdfcf939fba118d151d9c0c3c",
+                "pageId": "a0c32fe4-1ad0-44c3-a81b-211f662db598",
+                "quote": "・JIS Z 0150　参照",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 9,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 265,
+                        "end": 279,
+                        "occurrence": 0,
+                        "pageSourceHash": "ba45dee37de917e9f02acbe6e388a3479f52293571ca4f428f8b5a59d8a539be"
+                    }
+                }
+            },
+            {
+                "id": "slu-cec7777dc33a91e40c166d4614bc9c1d9e136402b99bfbd3f7bc099b83011b47",
+                "pageId": "a0c32fe4-1ad0-44c3-a81b-211f662db598",
+                "quote": "例1）710B",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 10,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 282,
+                        "end": 289,
+                        "occurrence": 0,
+                        "pageSourceHash": "ba45dee37de917e9f02acbe6e388a3479f52293571ca4f428f8b5a59d8a539be"
+                    }
+                }
+            },
+            {
+                "id": "slu-d47b4ad0fa6865054097edc51fa8babb6d05df6af781facc3fa32e6f1a8ec23c",
+                "pageId": "a0c32fe4-1ad0-44c3-a81b-211f662db598",
+                "quote": "・見かけ重心の求め方",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 11,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 292,
+                        "end": 302,
+                        "occurrence": 0,
+                        "pageSourceHash": "ba45dee37de917e9f02acbe6e388a3479f52293571ca4f428f8b5a59d8a539be"
+                    }
+                }
+            },
+            {
+                "id": "slu-820c5880ed39e463a9ae8d9683451871f98a82c7661b2e4792a09b5197210db4",
+                "pageId": "a0c32fe4-1ad0-44c3-a81b-211f662db598",
+                "quote": "見かけ重心",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 12,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 305,
+                        "end": 310,
+                        "occurrence": 0,
+                        "pageSourceHash": "ba45dee37de917e9f02acbe6e388a3479f52293571ca4f428f8b5a59d8a539be"
+                    }
+                }
+            },
+            {
+                "id": "slu-900c1f36c1c3a7d0a3f7baaafe99d07e071aff5cd53fc4d5f14ef8aa00ed4f88",
+                "pageId": "a0c32fe4-1ad0-44c3-a81b-211f662db598",
+                "quote": "X＝SA＊xA＋SB＊xB／（SA＋SB）",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 13,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 313,
+                        "end": 334,
+                        "occurrence": 0,
+                        "pageSourceHash": "ba45dee37de917e9f02acbe6e388a3479f52293571ca4f428f8b5a59d8a539be"
+                    }
+                }
+            },
+            {
+                "id": "slu-5322d7907836b3fbe8e347b61ec1e969df1355be337685ed80d9e1d0653acf0f",
+                "pageId": "a0c32fe4-1ad0-44c3-a81b-211f662db598",
+                "quote": "Y＝SA＊yA＋SB＊yB／（SA＋SB）",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 14,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 336,
+                        "end": 357,
+                        "occurrence": 0,
+                        "pageSourceHash": "ba45dee37de917e9f02acbe6e388a3479f52293571ca4f428f8b5a59d8a539be"
+                    }
+                }
+            },
+            {
+                "id": "slu-abb81e940664f2083aa30f5653a51f802759a07feb96b2440cde843728bc979f",
+                "pageId": "a0c32fe4-1ad0-44c3-a81b-211f662db598",
+                "quote": "A部 面積：SA mm²",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 15,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 360,
+                        "end": 372,
+                        "occurrence": 0,
+                        "pageSourceHash": "ba45dee37de917e9f02acbe6e388a3479f52293571ca4f428f8b5a59d8a539be"
+                    }
+                }
+            },
+            {
+                "id": "slu-5fece0048cf68934f9280bf33a97ba9ce4883bfaa66634e51b9b518804c31269",
+                "pageId": "a0c32fe4-1ad0-44c3-a81b-211f662db598",
+                "quote": "A部 重心：xA, yA",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 16,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 374,
+                        "end": 386,
+                        "occurrence": 0,
+                        "pageSourceHash": "ba45dee37de917e9f02acbe6e388a3479f52293571ca4f428f8b5a59d8a539be"
+                    }
+                }
+            },
+            {
+                "id": "slu-b3b815bffb5da0d66c6e31683f1af327a119633cbbf87860972baece67a29c71",
+                "pageId": "a0c32fe4-1ad0-44c3-a81b-211f662db598",
+                "quote": "B部 面積：SB mm²",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 17,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 388,
+                        "end": 400,
+                        "occurrence": 0,
+                        "pageSourceHash": "ba45dee37de917e9f02acbe6e388a3479f52293571ca4f428f8b5a59d8a539be"
+                    }
+                }
+            },
+            {
+                "id": "slu-e8f3585841a9af85c2ce207cd628c6dffbf6e8b67058ce48c9d121c112474f21",
+                "pageId": "a0c32fe4-1ad0-44c3-a81b-211f662db598",
+                "quote": "B部 重心：xB, yB",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 18,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 402,
+                        "end": 414,
+                        "occurrence": 0,
+                        "pageSourceHash": "ba45dee37de917e9f02acbe6e388a3479f52293571ca4f428f8b5a59d8a539be"
+                    }
+                }
+            },
+            {
+                "id": "slu-c8e8e1c0982520d84a739384e407924e22b54d11d394cfef9502b44b05a343fb",
+                "pageId": "a0c32fe4-1ad0-44c3-a81b-211f662db598",
+                "quote": "断面図",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 19,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 417,
+                        "end": 420,
+                        "occurrence": 0,
+                        "pageSourceHash": "ba45dee37de917e9f02acbe6e388a3479f52293571ca4f428f8b5a59d8a539be"
+                    }
+                }
+            },
+            {
+                "id": "slu-0d44e2e2f0276b8d5400cdbf082a9615cf65fa8ba6e3abb4255e81ef52467e75",
+                "pageId": "a0c32fe4-1ad0-44c3-a81b-211f662db598",
+                "quote": "見かけ重心：X,Y",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 20,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 423,
+                        "end": 432,
+                        "occurrence": 0,
+                        "pageSourceHash": "ba45dee37de917e9f02acbe6e388a3479f52293571ca4f428f8b5a59d8a539be"
+                    }
+                }
+            },
+            {
+                "id": "slu-2adf3697f52f25385923e983a205c7ca62bc9275709490c5ea5d43e23e07e268",
+                "pageId": "a0c32fe4-1ad0-44c3-a81b-211f662db598",
+                "quote": "⊗：実重心",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 21,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 435,
+                        "end": 440,
+                        "occurrence": 0,
+                        "pageSourceHash": "ba45dee37de917e9f02acbe6e388a3479f52293571ca4f428f8b5a59d8a539be"
+                    }
+                }
+            },
+            {
+                "id": "slu-c0c58ba43cf3ccc10d311402b189624c2ae8bb14191c4b41e2a7d4f81b13da1e",
+                "pageId": "a0c32fe4-1ad0-44c3-a81b-211f662db598",
+                "quote": "⊗：見かけ重心",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 22,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 442,
+                        "end": 449,
+                        "occurrence": 0,
+                        "pageSourceHash": "ba45dee37de917e9f02acbe6e388a3479f52293571ca4f428f8b5a59d8a539be"
+                    }
+                }
+            },
+            {
+                "id": "slu-62c6ce5e4b2bbdf6101be6e5fd029e437401fb89381e6f1b31dd3c903c4fd03e",
+                "pageId": "a0c32fe4-1ad0-44c3-a81b-211f662db598",
+                "quote": "見かけ重心と実重心の距離",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 23,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 452,
+                        "end": 464,
+                        "occurrence": 0,
+                        "pageSourceHash": "ba45dee37de917e9f02acbe6e388a3479f52293571ca4f428f8b5a59d8a539be"
+                    }
+                }
+            },
+            {
+                "id": "slu-4b90b3b70b800fbc41540be517959950c3c029b9ca71106756742bc5a795d113",
+                "pageId": "6ce04c59-3160-48cd-b105-6fbb2e7c174b",
+                "quote": "②－1 解体作業でのフォークリフト運搬時の支持構造（2PL）",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 0,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 1,
+                        "end": 31,
+                        "occurrence": 0,
+                        "pageSourceHash": "97e880866ad91b8a9625aca049f74ff8c73f52470c4632a0041160239668eadd"
+                    }
+                }
+            },
+            {
+                "id": "slu-40497511e27f8a50ac1b516ea697a4217f0e171f604eabbc59adf6907370d3d1",
+                "pageId": "6ce04c59-3160-48cd-b105-6fbb2e7c174b",
+                "quote": "EA材（サブ部品より上に電池セルを配置し、さらに電池パック下面をシェル部品（下側部品）で覆うことで、フォークリフトで運搬されてもセルにフォークを当てない構造にしている。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 1,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 34,
+                        "end": 118,
+                        "occurrence": 0,
+                        "pageSourceHash": "97e880866ad91b8a9625aca049f74ff8c73f52470c4632a0041160239668eadd"
+                    }
+                }
+            },
+            {
+                "id": "slu-6824bb258093c3d794b7170b0bab93f0cc0ddfb6801068e1fc17ebd36657d515",
+                "pageId": "6ce04c59-3160-48cd-b105-6fbb2e7c174b",
+                "quote": "フォーク爪",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 2,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 121,
+                        "end": 126,
+                        "occurrence": 0,
+                        "pageSourceHash": "97e880866ad91b8a9625aca049f74ff8c73f52470c4632a0041160239668eadd"
+                    }
+                }
+            },
+            {
+                "id": "slu-4a9700da05ac5380e92d672d47d4af7ec522478685015a67cd841d2a7ddff3f8",
+                "pageId": "6ce04c59-3160-48cd-b105-6fbb2e7c174b",
+                "quote": "EA材",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 3,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 128,
+                        "end": 131,
+                        "occurrence": 0,
+                        "pageSourceHash": "97e880866ad91b8a9625aca049f74ff8c73f52470c4632a0041160239668eadd"
+                    }
+                }
+            },
+            {
+                "id": "slu-b9ce80a6243d342d503169041eecd52a4436732e8c9c5a2f7c16596f4c277422",
+                "pageId": "6ce04c59-3160-48cd-b105-6fbb2e7c174b",
+                "quote": "セパレータ",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 4,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 133,
+                        "end": 138,
+                        "occurrence": 0,
+                        "pageSourceHash": "97e880866ad91b8a9625aca049f74ff8c73f52470c4632a0041160239668eadd"
+                    }
+                }
+            },
+            {
+                "id": "slu-f3fa8b10fdd977165cdc5065f8f0208e8441288ebe0b8468b037b3d5a29a9156",
+                "pageId": "6ce04c59-3160-48cd-b105-6fbb2e7c174b",
+                "quote": "電池パック最下端",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 5,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 140,
+                        "end": 148,
+                        "occurrence": 0,
+                        "pageSourceHash": "97e880866ad91b8a9625aca049f74ff8c73f52470c4632a0041160239668eadd"
+                    }
+                }
+            },
+            {
+                "id": "slu-f1bb4f742d6e8fee08bcef64fb0a0fa2c4bd8445155ccb84c2a15b43e6267333",
+                "pageId": "6ce04c59-3160-48cd-b105-6fbb2e7c174b",
+                "quote": "②－1 解体作業でのフォークリフト運搬時の支持構造（2PL）",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 6,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 151,
+                        "end": 181,
+                        "occurrence": 1,
+                        "pageSourceHash": "97e880866ad91b8a9625aca049f74ff8c73f52470c4632a0041160239668eadd"
+                    }
+                }
+            },
+            {
+                "id": "slu-bd0fbcbe0e8399f31a91c7610d5d9fb4ae63f4f09b0a94cefa5f721ddeb854e2",
+                "pageId": "6ce04c59-3160-48cd-b105-6fbb2e7c174b",
+                "quote": "2PLは干渉部品を避けて電池パックを支持するため、",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 7,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 184,
+                        "end": 209,
+                        "occurrence": 0,
+                        "pageSourceHash": "97e880866ad91b8a9625aca049f74ff8c73f52470c4632a0041160239668eadd"
+                    }
+                }
+            },
+            {
+                "id": "slu-e9f5aa48018b94ae1f2a1d6df79a5919494767743faeffaa6dbf35aedcef28c8",
+                "pageId": "6ce04c59-3160-48cd-b105-6fbb2e7c174b",
+                "quote": "電池パックをフォーク下でのフォークハンドリング時の接触を防止し、",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 8,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 211,
+                        "end": 243,
+                        "occurrence": 0,
+                        "pageSourceHash": "97e880866ad91b8a9625aca049f74ff8c73f52470c4632a0041160239668eadd"
+                    }
+                }
+            },
+            {
+                "id": "slu-840f04bfa668366cbebd3f9ea6945d6185c24d5d2bb3d2fd8b08b45721d815d1",
+                "pageId": "6ce04c59-3160-48cd-b105-6fbb2e7c174b",
+                "quote": "かつ、最悪アンダーで運搬した場合でも損傷はないことの確認を実施した。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 9,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 245,
+                        "end": 279,
+                        "occurrence": 0,
+                        "pageSourceHash": "97e880866ad91b8a9625aca049f74ff8c73f52470c4632a0041160239668eadd"
+                    }
+                }
+            },
+            {
+                "id": "slu-10e9e8b65a82b2bbe1e42c12887b051214b1b54aa022456e51e234c111200221",
+                "pageId": "6ce04c59-3160-48cd-b105-6fbb2e7c174b",
+                "quote": "セル下端",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 10,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 282,
+                        "end": 286,
+                        "occurrence": 0,
+                        "pageSourceHash": "97e880866ad91b8a9625aca049f74ff8c73f52470c4632a0041160239668eadd"
+                    }
+                }
+            },
+            {
+                "id": "slu-d7949ebbc3b885eff5f4a269164b93fa7559dd96c7dbfd457c94e9c230f066e7",
+                "pageId": "6ce04c59-3160-48cd-b105-6fbb2e7c174b",
+                "quote": "EA材下端",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 11,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 288,
+                        "end": 293,
+                        "occurrence": 0,
+                        "pageSourceHash": "97e880866ad91b8a9625aca049f74ff8c73f52470c4632a0041160239668eadd"
+                    }
+                }
+            },
+            {
+                "id": "slu-a71e0dbf8b468670a5a02f2ce1adc0021f7acd003afa9b88eb59f9fa7817dd7e",
+                "pageId": "6ce04c59-3160-48cd-b105-6fbb2e7c174b",
+                "quote": "セパレータ下端",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 12,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 295,
+                        "end": 302,
+                        "occurrence": 0,
+                        "pageSourceHash": "97e880866ad91b8a9625aca049f74ff8c73f52470c4632a0041160239668eadd"
+                    }
+                }
+            },
+            {
+                "id": "slu-235d71f40eefd3ddbbbc1ae9fdb46f3842be85c49edaca98cc2c7be8cb22da73",
+                "pageId": "6ce04c59-3160-48cd-b105-6fbb2e7c174b",
+                "quote": "ボデー等の強度部材より上方向に配置すると電池内部を損傷する恐れあり",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 13,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 305,
+                        "end": 338,
+                        "occurrence": 0,
+                        "pageSourceHash": "97e880866ad91b8a9625aca049f74ff8c73f52470c4632a0041160239668eadd"
+                    }
+                }
+            }
+        ],
+        "stats": {
+            "total": 78,
+            "covered": 0,
+            "excluded": 0,
+            "uncovered": 78,
+            "coverageRate": 0.0,
+            "modeledRate": 0.0
+        },
+        "metadata": {
+            "sourceLedger": {
+                "version": 1,
+                "segmentationVersion": 2,
+                "documentId": "26497b35-a2dd-4a8c-b6d3-37dd188696f5",
+                "runId": "fbc69723-0baf-4ae6-864e-198d40651dc6",
+                "selectedTypes": [
+                    "Actor",
+                    "UseCase",
+                    "Requirement",
+                    "Block",
+                    "State",
+                    "ConstraintBlock",
+                    "TestCase",
+                    "Activity"
+                ],
+                "pages": [
+                    {
+                        "pageId": "9086ece4-df1b-4b78-a662-2e1bd9b696f9",
+                        "content": "<u>各種</u>\n\n# 2－2 サービス等標準\n\n<u>制定／改定</u>\n\n<u>初回</u>　2021年3月31日\n\n> 本部内規は、当部、関係部署および関係会社の社員、協力会社を含みます。部外または社外に開示する場合には取扱いに十分留意してください。\n\nEHV電池設計部　電池パック設計室（3BV）\n\n| 承認 | 調査 | 作成 |\n|---|---|---|\n| 愛部 | 井上 | 磯谷 |",
+                        "text": "<u>各種</u>\n\n# 2－2 サービス等標準\n\n<u>制定／改定</u>\n\n<u>初回</u>　2021年3月31日\n\n> 本部内規は、当部、関係部署および関係会社の社員、協力会社を含みます。部外または社外に開示する場合には取扱いに十分留意してください。\n\nEHV電池設計部　電池パック設計室（3BV）\n\n| 承認 | 調査 | 作成 |\n|---|---|---|\n| 愛部 | 井上 | 磯谷 |",
+                        "sourceHash": "0b46b34dd308ba7171b4e48b25ea6be7cf5c6f1c81237d8602bf3a4a2142b903"
+                    },
+                    {
+                        "pageId": "2a13fae1-bf78-4dbc-a539-8c1f82c66096",
+                        "content": "<h2>1. 適用範囲</h2>\n<p>駆動用バッテリ（車室外の電池パックのサービス・解体作業での運搬時を含む）の電池パックの漏電や、セル発煙につながるダメージを与えないための基本的な考え方を記載する。</p>\n<h2>2. サービス・解体作業での運搬時の電池パック保護に関する考え方</h2>\n<p>サービス時と解体作業時で考え方を分ける。</p>\n<h3>① サービス時の運搬に関する考え方</h3>\n<p>電池パックのサービス用台車の積載状態を確保する作業や装置を準備し作業では電池パックを損傷させてはいけないため、支持位置の限定は可能である。そのため、サービスでの運搬作業時に電池パックを一時保管する場合は、電池パックに支持構造を設け込み、位置を限定すること。</p>\n<h3>② 解体作業時の運搬に関する考え方</h3>\n<p>車両解体作業時に車両を床下からすくい上げるフォークリフトで持ち上げて電池パックが支持される。電池パックの安全性を確保する必要があるため、支持位置を限定することはできない。そのため、サービスでの運搬作業時に電池パック下面のどこを支持されても高電圧部品の漏電やセル発煙につながるダメージを与えないための保護構造を織り込むこと。</p>\n<h2>3. サービス・解体作業での運搬時の電池パック保護に関する目標</h2>\n<p>サービス時と解体作業時で考え方を分ける。</p>\n<h3>① サービス時の運搬に関する目標</h3>\n<p>電池セルへ入力がはみ出ない荷重部を支持できる構造にし、支持位置として限定すること。</p>\n<p>搬送時の電池パックの落下高さは、電池パック下面に車両パック下面と垂直な方向から電池パック下面に衝撃を与える評価条件とし、高さは2つに分ける。</p>\n<h3>② 解体作業時の運搬に関する目標</h3>\n<p>フォークリフトでの車両運搬時に電池パックを直接支持されることがないよう、アンダーボデー補強部材（ロッカーハウス等）下部より下側に電池パックが飛び出さないように配置すること。</p>\n<p>上記が満足できない場合、電池パックにサービス時の保護構造を織り込み、CAE及び実機評価にて安全性を確認すること。</p>\n<p>※目標例を次頁に示す。</p>",
+                        "text": "\n1. 適用範囲\n\n\n駆動用バッテリ（車室外の電池パックのサービス・解体作業での運搬時を含む）の電池パックの漏電や、セル発煙につながるダメージを与えないための基本的な考え方を記載する。\n\n\n2. サービス・解体作業での運搬時の電池パック保護に関する考え方\n\n\nサービス時と解体作業時で考え方を分ける。\n\n\n① サービス時の運搬に関する考え方\n\n\n電池パックのサービス用台車の積載状態を確保する作業や装置を準備し作業では電池パックを損傷させてはいけないため、支持位置の限定は可能である。そのため、サービスでの運搬作業時に電池パックを一時保管する場合は、電池パックに支持構造を設け込み、位置を限定すること。\n\n\n② 解体作業時の運搬に関する考え方\n\n\n車両解体作業時に車両を床下からすくい上げるフォークリフトで持ち上げて電池パックが支持される。電池パックの安全性を確保する必要があるため、支持位置を限定することはできない。そのため、サービスでの運搬作業時に電池パック下面のどこを支持されても高電圧部品の漏電やセル発煙につながるダメージを与えないための保護構造を織り込むこと。\n\n\n3. サービス・解体作業での運搬時の電池パック保護に関する目標\n\n\nサービス時と解体作業時で考え方を分ける。\n\n\n① サービス時の運搬に関する目標\n\n\n電池セルへ入力がはみ出ない荷重部を支持できる構造にし、支持位置として限定すること。\n\n\n搬送時の電池パックの落下高さは、電池パック下面に車両パック下面と垂直な方向から電池パック下面に衝撃を与える評価条件とし、高さは2つに分ける。\n\n\n② 解体作業時の運搬に関する目標\n\n\nフォークリフトでの車両運搬時に電池パックを直接支持されることがないよう、アンダーボデー補強部材（ロッカーハウス等）下部より下側に電池パックが飛び出さないように配置すること。\n\n\n上記が満足できない場合、電池パックにサービス時の保護構造を織り込み、CAE及び実機評価にて安全性を確認すること。\n\n\n※目標例を次頁に示す。\n",
+                        "sourceHash": "1caafd7e7929991b5ac91873c4e31355c96fc4f436810a8edce854a132cb6dfb"
+                    },
+                    {
+                        "pageId": "0470e947-bbc9-4459-9d3d-a073a9963e21",
+                        "content": "<h2>4. 具体例</h2>\n<h3>①－1 サービスでの運搬時の支持位置例（27PL）</h3>\n<p>LWRケース下面の骨格部を支持するよう限定。</p>\n<p>電池パック支持部（完成状態）</p>\n<p>支持・前後・荷重・移動時の位置を図示</p>\n<p>27PL T/S電池の支持</p>\n<p>LWRケース骨格<br />\nLWRケース下面の骨格</p>\n<p>セル下面を避け、LWRケースの内部と下面に骨格がある位置を</p>\n<p>図中寸法：353.1、349.6、349.6、132.7、123.6、80.3、80.3、80.3、54.2</p>",
+                        "text": "\n4. 具体例\n\n\n①－1 サービスでの運搬時の支持位置例（27PL）\n\n\nLWRケース下面の骨格部を支持するよう限定。\n\n\n電池パック支持部（完成状態）\n\n\n支持・前後・荷重・移動時の位置を図示\n\n\n27PL T/S電池の支持\n\n\nLWRケース骨格\n\nLWRケース下面の骨格\n\n\nセル下面を避け、LWRケースの内部と下面に骨格がある位置を\n\n\n図中寸法：353.1、349.6、349.6、132.7、123.6、80.3、80.3、80.3、54.2\n",
+                        "sourceHash": "89910a0dccf66041b9b93e0cc3da975e16852fc454b78b71968996242397232a"
+                    },
+                    {
+                        "pageId": "a0c32fe4-1ad0-44c3-a81b-211f662db598",
+                        "content": "<h3>①－2 重心マークの設定方法</h3>\n<p>・重心マークは車載状態で電池パック下面に設定すること。<br />\n・十分な□50mmとするが、それより小さくなる場合や、アンダーカバー等で設定が困難な場合は別途資料添付欄（確認事項欄）に図面を添付すること。<br />\n・見かけ重心は下面の中心に設定すること。<br />\n・見かけ重心は下記のように求めること。<br />\n・詳細は3B（ボディー寸法）→「サービス解体性」サービスシート→別紙Ⅱに記載があるので、必ず確認すること。</p>\n<p>（重心位置マーク）<br />\n（凹凸の成形方法等は設計一任）</p>\n<p>・ISO 7000 No.627<br />\n・JIS Z 0150　参照</p>\n<p>例1）710B</p>\n<p>・見かけ重心の求め方</p>\n<p>見かけ重心</p>\n<p>X＝SA＊xA＋SB＊xB／（SA＋SB）<br />\nY＝SA＊yA＋SB＊yB／（SA＋SB）</p>\n<p>A部 面積：SA mm²<br />\nA部 重心：xA, yA<br />\nB部 面積：SB mm²<br />\nB部 重心：xB, yB</p>\n<p>断面図</p>\n<p>見かけ重心：X,Y</p>\n<p>⊗：実重心<br />\n⊗：見かけ重心</p>\n<p>見かけ重心と実重心の距離</p>",
+                        "text": "\n①－2 重心マークの設定方法\n\n\n・重心マークは車載状態で電池パック下面に設定すること。\n\n・十分な□50mmとするが、それより小さくなる場合や、アンダーカバー等で設定が困難な場合は別途資料添付欄（確認事項欄）に図面を添付すること。\n\n・見かけ重心は下面の中心に設定すること。\n\n・見かけ重心は下記のように求めること。\n\n・詳細は3B（ボディー寸法）→「サービス解体性」サービスシート→別紙Ⅱに記載があるので、必ず確認すること。\n\n\n（重心位置マーク）\n\n（凹凸の成形方法等は設計一任）\n\n\n・ISO 7000 No.627\n\n・JIS Z 0150　参照\n\n\n例1）710B\n\n\n・見かけ重心の求め方\n\n\n見かけ重心\n\n\nX＝SA＊xA＋SB＊xB／（SA＋SB）\n\nY＝SA＊yA＋SB＊yB／（SA＋SB）\n\n\nA部 面積：SA mm²\n\nA部 重心：xA, yA\n\nB部 面積：SB mm²\n\nB部 重心：xB, yB\n\n\n断面図\n\n\n見かけ重心：X,Y\n\n\n⊗：実重心\n\n⊗：見かけ重心\n\n\n見かけ重心と実重心の距離\n",
+                        "sourceHash": "ba45dee37de917e9f02acbe6e388a3479f52293571ca4f428f8b5a59d8a539be"
+                    },
+                    {
+                        "pageId": "6ce04c59-3160-48cd-b105-6fbb2e7c174b",
+                        "content": "<h3>②－1 解体作業でのフォークリフト運搬時の支持構造（2PL）</h3>\n<p>EA材（サブ部品より上に電池セルを配置し、さらに電池パック下面をシェル部品（下側部品）で覆うことで、フォークリフトで運搬されてもセルにフォークを当てない構造にしている。</p>\n<p>フォーク爪<br />\nEA材<br />\nセパレータ<br />\n電池パック最下端</p>\n<h3>②－1 解体作業でのフォークリフト運搬時の支持構造（2PL）</h3>\n<p>2PLは干渉部品を避けて電池パックを支持するため、<br />\n電池パックをフォーク下でのフォークハンドリング時の接触を防止し、<br />\nかつ、最悪アンダーで運搬した場合でも損傷はないことの確認を実施した。</p>\n<p>セル下端<br />\nEA材下端<br />\nセパレータ下端</p>\n<p>ボデー等の強度部材より上方向に配置すると電池内部を損傷する恐れあり</p>",
+                        "text": "\n②－1 解体作業でのフォークリフト運搬時の支持構造（2PL）\n\n\nEA材（サブ部品より上に電池セルを配置し、さらに電池パック下面をシェル部品（下側部品）で覆うことで、フォークリフトで運搬されてもセルにフォークを当てない構造にしている。\n\n\nフォーク爪\n\nEA材\n\nセパレータ\n\n電池パック最下端\n\n\n②－1 解体作業でのフォークリフト運搬時の支持構造（2PL）\n\n\n2PLは干渉部品を避けて電池パックを支持するため、\n\n電池パックをフォーク下でのフォークハンドリング時の接触を防止し、\n\nかつ、最悪アンダーで運搬した場合でも損傷はないことの確認を実施した。\n\n\nセル下端\n\nEA材下端\n\nセパレータ下端\n\n\nボデー等の強度部材より上方向に配置すると電池内部を損傷する恐れあり\n",
+                        "sourceHash": "97e880866ad91b8a9625aca049f74ff8c73f52470c4632a0041160239668eadd"
+                    }
+                ],
+                "inventoryHash": "266738a143d85c0b692d704ebe364b2d1f7ba4a8dc9735e38ce7d86e42ecfc7b"
+            },
+            "sourceOrchestration": {
+                "fbc69723-0baf-4ae6-864e-198d40651dc6": {
+                    "runId": "fbc69723-0baf-4ae6-864e-198d40651dc6",
+                    "sharedContext": null,
+                    "obligations": [],
+                    "boundaryReviews": [],
+                    "pageResults": {},
+                    "pageReviews": {},
+                    "events": [],
+                    "stage": "preflight",
+                    "conventionReviews": {},
+                    "ontologyTyping": {
+                        "ontologyIds": [
+                            "18ae3915-9a06-4ae3-8129-9fce7891a423"
+                        ],
+                        "ontologyNames": {
+                            "18ae3915-9a06-4ae3-8129-9fce7891a423": "SysMLオントロジー"
+                        },
+                        "conceptCount": 80,
+                        "conceptCountByKind": {
+                            "Activity": 1,
+                            "Actor": 1,
+                            "Block": 22,
+                            "Operation": 1,
+                            "Package": 5,
+                            "Property": 46,
+                            "Requirement": 1,
+                            "State": 1,
+                            "TestCase": 1,
+                            "UseCase": 1
+                        },
+                        "typedKinds": [
+                            "Activity",
+                            "Actor",
+                            "Block",
+                            "Requirement",
+                            "State",
+                            "TestCase",
+                            "UseCase"
+                        ],
+                        "kindsWithoutConcepts": [
+                            "ConstraintBlock"
+                        ]
+                    },
+                    "status": "cancelled",
+                    "message": "Source generation cancelled; partial changes retained"
+                },
+                "21767ed3-cb79-4591-9b4a-7fe6e70d361b": {
+                    "runId": "21767ed3-cb79-4591-9b4a-7fe6e70d361b",
+                    "sharedContext": {
+                        "context": "本ドキュメントは「2-1-2_品質基準_サービス解体作業_210331」と題する社内規定（EHV電池設計部 電池パック設計室）。対象システムは駆動用バッテリの電池パック。主題は、車室外でのサービス（一時保管・運搬）作業および車両解体作業（フォークリフトでの運搬）において、電池パックに漏電やセル発煙につながるダメージを与えないための設計要求・考え方・目標・具体例を規定すること。p1は表紙（適用範囲外の書誌情報）。p2は適用範囲、サービス時/解体時それぞれの運搬保護に関する基本的考え方と目標（要求の源泉）。p3〜p5はp2の目標・考え方を具体化した設計実装例（27PL型式での支持位置限定構造、重心マークの設定方法、2PL型式でのEA材・セパレータによる解体時保護構造）であり、p2の要求に対するsatisfy/trace候補となる設計要素（コンポーネント/構造）や検証観点を含む。",
+                        "terminology": [
+                            {
+                                "term": "電池パック",
+                                "meaning": "駆動用バッテリの電池パック本体。本規定のSystem-of-Interest。",
+                                "reason": "p2冒頭「駆動用バッテリ（車室外の電池パックの...）の電池パックの漏電や...」に基づく中心概念。全ページで共通。"
+                            },
+                            {
+                                "term": "サービス時の運搬",
+                                "meaning": "車両搭載状態でのサービス作業時、電池パックを台車等で一時保管・運搬する作業。支持位置を限定できる前提の運搬シナリオ。",
+                                "reason": "p2 2.①および3.①、p3の具体例(27PL)で一貫して使用される用語。"
+                            },
+                            {
+                                "term": "解体作業時の運搬",
+                                "meaning": "車両解体時にフォークリフトで車両床下からすくい上げて電池パックが（意図せず）支持される運搬シナリオ。支持位置を限定できない前提。",
+                                "reason": "p2 2.②および3.②、p5の具体例(2PL)で一貫して使用される用語。"
+                            },
+                            {
+                                "term": "27PL",
+                                "meaning": "サービス時運搬の支持位置限定構造の具体例に用いられる電池パック型式（LWRケース骨格を支持）。",
+                                "reason": "p3の見出し「①－1 サービスでの運搬時の支持位置例（27PL）」より。"
+                            },
+                            {
+                                "term": "2PL",
+                                "meaning": "解体作業時フォークリフト運搬の保護構造の具体例に用いられる電池パック型式（EA材・セパレータ・シェル部品でセルを保護）。",
+                                "reason": "p5の見出し「②－1 解体作業でのフォークリフト運搬時の支持構造（2PL）」より。"
+                            },
+                            {
+                                "term": "EA材",
+                                "meaning": "電池パック内でセルの上方に配置される緩衝・保護部品。フォークリフトのフォーク爪がセルに当たらないようにする構造部品。",
+                                "reason": "p5本文「EA材（サブ部品より上に電池セルを配置し...）」より。"
+                            },
+                            {
+                                "term": "重心マーク",
+                                "meaning": "電池パック下面に設定する、車両解体時のフォークリフト等の取扱い作業指標となる見かけ重心位置の表示。",
+                                "reason": "p4見出し「①－2 重心マークの設定方法」より。"
+                            }
+                        ],
+                        "reason": "5ページすべてを読了し、ページ横断で同一概念（27PL/2PL支持構造、サービス時/解体時の運搬保護要求）が複数ページにまたがって説明されているため、用語統一と義務追跡のためにプランを公開する。",
+                        "continuations": []
+                    },
+                    "obligations": [
+                        {
+                            "id": "ob1-req-to-design",
+                            "pageIds": [
+                                "2a13fae1-bf78-4dbc-a539-8c1f82c66096",
+                                "0470e947-bbc9-4459-9d3d-a073a9963e21"
+                            ],
+                            "description": "p2 3.①のサービス時運搬保護の目標（支持位置限定、荷重部支持構造）に対し、p3の27PL具体例（LWRケース骨格支持構造）がsatisfy/trace候補の設計実現である可能性。",
+                            "reason": "p2は要求レベルの目標記述、p3はその具体的実装例であり、両ページにまたがる要求-設計のトレーサビリティを確認する必要がある。",
+                            "status": "unresolved"
+                        },
+                        {
+                            "id": "ob2-req-to-design",
+                            "pageIds": [
+                                "2a13fae1-bf78-4dbc-a539-8c1f82c66096",
+                                "6ce04c59-3160-48cd-b105-6fbb2e7c174b"
+                            ],
+                            "description": "p2 3.②の解体作業時運搬保護の目標（支持位置限定不可、下面全面への保護構造織り込み）に対し、p5の2PL具体例（EA材・セパレータ・シェル部品による保護構造）がsatisfy/trace候補の設計実現である可能性。",
+                            "reason": "p2は要求レベルの目標記述、p5はその具体的実装例であり、両ページにまたがる要求-設計のトレーサビリティを確認する必要がある。",
+                            "status": "unresolved"
+                        },
+                        {
+                            "id": "ob3-centerofgravity",
+                            "pageIds": [
+                                "2a13fae1-bf78-4dbc-a539-8c1f82c66096",
+                                "a0c32fe4-1ad0-44c3-a81b-211f662db598"
+                            ],
+                            "description": "p4の重心マーク設定方法が、p2の解体作業時の運搬保護の考え方・目標（支持位置を限定できないフォークリフト運搬時の安全確保）に関連する補助設計要素かどうかの確認。",
+                            "reason": "p4は重心マークという独立した具体例セクションだが、解体作業時の取扱い安全に関連する可能性があり、ページ横断で関連性を検討する必要がある。",
+                            "status": "unresolved"
+                        }
+                    ],
+                    "boundaryReviews": [],
+                    "pageResults": {},
+                    "pageReviews": {},
+                    "events": [
+                        {
+                            "actor": "source:90dfb63a-e1d6-598e-b465-9a40bd48c80a",
+                            "kind": "sharedContext",
+                            "reason": "5ページすべてを読了し、ページ横断で同一概念（27PL/2PL支持構造、サービス時/解体時の運搬保護要求）が複数ページにまたがって説明されているため、用語統一と義務追跡のためにプランを公開する。"
+                        }
+                    ],
+                    "stage": "preflight",
+                    "conventionReviews": {},
+                    "ontologyTyping": {
+                        "ontologyIds": [
+                            "18ae3915-9a06-4ae3-8129-9fce7891a423"
+                        ],
+                        "ontologyNames": {
+                            "18ae3915-9a06-4ae3-8129-9fce7891a423": "SysMLオントロジー"
+                        },
+                        "conceptCount": 80,
+                        "conceptCountByKind": {
+                            "Activity": 1,
+                            "Actor": 1,
+                            "Block": 22,
+                            "Operation": 1,
+                            "Package": 5,
+                            "Property": 46,
+                            "Requirement": 1,
+                            "State": 1,
+                            "TestCase": 1,
+                            "UseCase": 1
+                        },
+                        "typedKinds": [
+                            "Activity",
+                            "Actor",
+                            "Block",
+                            "Requirement",
+                            "State",
+                            "TestCase",
+                            "UseCase"
+                        ],
+                        "kindsWithoutConcepts": [
+                            "ConstraintBlock"
+                        ]
+                    },
+                    "status": "cancelled",
+                    "message": "Source generation cancelled; partial changes retained"
+                },
+                "ee51f4b7-1d95-4779-b782-cf93e4358ad8": {
+                    "runId": "ee51f4b7-1d95-4779-b782-cf93e4358ad8",
+                    "sharedContext": null,
+                    "obligations": [],
+                    "boundaryReviews": [],
+                    "pageResults": {},
+                    "pageReviews": {},
+                    "events": [],
+                    "stage": "preflight",
+                    "conventionReviews": {},
+                    "ontologyTyping": {
+                        "ontologyIds": [
+                            "18ae3915-9a06-4ae3-8129-9fce7891a423"
+                        ],
+                        "ontologyNames": {
+                            "18ae3915-9a06-4ae3-8129-9fce7891a423": "SysMLオントロジー"
+                        },
+                        "conceptCount": 80,
+                        "conceptCountByKind": {
+                            "Activity": 1,
+                            "Actor": 1,
+                            "Block": 22,
+                            "Operation": 1,
+                            "Package": 5,
+                            "Property": 46,
+                            "Requirement": 1,
+                            "State": 1,
+                            "TestCase": 1,
+                            "UseCase": 1
+                        },
+                        "typedKinds": [
+                            "Activity",
+                            "Actor",
+                            "Block",
+                            "Requirement",
+                            "State",
+                            "TestCase",
+                            "UseCase"
+                        ],
+                        "kindsWithoutConcepts": [
+                            "ConstraintBlock"
+                        ]
+                    },
+                    "status": "cancelled",
+                    "message": "Source generation cancelled; partial changes retained"
+                }
+            }
+        }
+    },
+    "modelBinding": {
+        "rootPackageId": "34396ba8-ceb1-4e6f-9f7f-df2794e4847f",
+        "typePackages": {
+            "Actor": "99c3d66b-020d-4ab3-a3ec-bcb7e76e40af",
+            "UseCase": "b69003c7-4c9a-434e-ab39-6cc2f111db0e",
+            "Requirement": "6963be6b-d660-4167-8430-511247426166",
+            "Block": "f045587d-6a43-4ca9-ac52-ade23d2f20e0",
+            "State": "070b1a20-6d65-47ed-a06b-2f2140bbe8c1",
+            "TestCase": "e9d671a1-c845-48a7-8c6c-1585a95ef638",
+            "Activity": "0a602095-6b11-46a6-b2cd-a645263b1deb"
+        },
+        "updatedAt": "2026-10-03T15:40:58.016228"
+    }
+}

@@ -1245,7 +1245,7 @@
         {
             "class_name": "DiagramEdge",
             "element_id": "f11383ca-7876-4b75-8117-056b05c6bede",
-            "routing": "bezier"
+            "routing": "orthogonal"
         },
         {
             "class_name": "DiagramEdge",
@@ -1280,7 +1280,11 @@
         {
             "class_name": "DiagramEdge",
             "element_id": "65924bd5-3351-4c6f-97c7-2e885199f1ff",
-            "routing": "bezier"
+            "routing": "bezier",
+            "source_anchor": {
+                "x": 1022.0919799804688,
+                "y": 840
+            }
         },
         {
             "class_name": "DiagramEdge",
@@ -1295,7 +1299,11 @@
         {
             "class_name": "DiagramEdge",
             "element_id": "aaaa962a-2bf1-4074-91fd-54e59d95cd02",
-            "routing": "bezier"
+            "routing": "bezier",
+            "source_anchor": {
+                "x": 975.0209350585938,
+                "y": 40
+            }
         },
         {
             "class_name": "DiagramEdge",
@@ -1483,9 +1491,9 @@
             "routing": "bezier"
         }
     ],
-    "scale": 0.26444441662894336,
-    "offset_x": -28.82104445689032,
-    "offset_y": 153.96420395038786,
+    "scale": 0.5311110693083867,
+    "offset_x": 7.520117142779895,
+    "offset_y": 124.46584406178408,
     "relationship_type": "containment",
     "visible_relation_types": [
         "containment",
