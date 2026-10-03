@@ -169,10 +169,26 @@
     },
     {
         "id": "01201df8-fe42-42cd-a72c-382dc1921cd1",
-        "title": "BV-D-12",
+        "title": "BV-D-12　排煙バルブ",
         "sourceFilePath": "C:\\Users\\1584550\\AppData\\Roaming\\system_factory\\app_data\\projects\\0c47063b-31ef-45f7-9ab8-67833c1008e7\\documents\\01201df8-fe42-42cd-a72c-382dc1921cd1\\orgs\\9e392903-1329-4f45-8ecd-ca21f0ee916b.pdf",
         "createdAt": null,
         "updatedAt": null,
         "pageCount": 29
+    },
+    {
+        "id": "c732941a-a42d-4e5d-809e-bdae422b9541",
+        "title": "BEV/PHEVモジュール設計標準書（HVG9601-01）",
+        "sourceFilePath": null,
+        "createdAt": "2026-10-03T07:11:16.733Z",
+        "updatedAt": "2026-10-03T07:11:16.733Z",
+        "pageCount": 1
+    },
+    {
+        "id": "c19c375f-7283-452b-8940-a09a0bf002e2",
+        "title": "HVG9691-01_高圧バスバー設計標準書",
+        "sourceFilePath": null,
+        "createdAt": "2026-10-03T07:17:15.521Z",
+        "updatedAt": "2026-10-03T07:17:15.521Z",
+        "pageCount": 1
     }
 ]

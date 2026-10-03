@@ -286,6 +286,20 @@
             "parent_id": "",
             "icon_key": "DescriptionOutlined",
             "icon_color": null
+        },
+        {
+            "id": "63d4c60f-3cf7-460c-a938-1d7a0d726411",
+            "name": "BEV/PHEVモジュール設計標準書（HVG9601-01）",
+            "parent_id": "",
+            "icon_key": "DescriptionOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "4775478e-d839-42e8-b896-6af53c862b6f",
+            "name": "HVG9691-01_高圧バスバー設計標準書",
+            "parent_id": "",
+            "icon_key": "DescriptionOutlined",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [
@@ -308,9 +322,11 @@
         "5a1bb871-863c-49e3-a89f-fff2142b4963",
         "9e0999fe-899e-4d7f-b690-ce16f028758b",
         "43f4d071-ea21-4c66-9f88-55da09326154",
-        "dfe52c73-7733-465d-9e5d-ba0415e52256"
+        "dfe52c73-7733-465d-9e5d-ba0415e52256",
+        "63d4c60f-3cf7-460c-a938-1d7a0d726411",
+        "4775478e-d839-42e8-b896-6af53c862b6f"
     ],
-    "current_view_id": "d0e800b6-e244-44ed-8709-519dc122985e",
+    "current_view_id": "4775478e-d839-42e8-b896-6af53c862b6f",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,

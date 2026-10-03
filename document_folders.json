@@ -96,6 +96,22 @@
         "document_id": "41ebf05e-f08a-44e9-bb91-4ecf198566c6"
     },
     {
+        "id": "3fa9db92-d6a7-462f-8fb0-76df9bda52cf",
+        "name": "BEV/PHEVモジュール設計標準書（HVG9601-01）",
+        "item_type": "document",
+        "parent_id": "0f3161c4-597d-46b4-8bc5-caa583f2dc85",
+        "order": 0,
+        "document_id": "c732941a-a42d-4e5d-809e-bdae422b9541"
+    },
+    {
+        "id": "ce99c45d-49ed-4eff-a09e-b792ebb9661e",
+        "name": "HVG9691-01_高圧バスバー設計標準書",
+        "item_type": "document",
+        "parent_id": "e3be2160-d759-4b37-9b51-aadc1d110b6d",
+        "order": 0,
+        "document_id": "c19c375f-7283-452b-8940-a09a0bf002e2"
+    },
+    {
         "id": "c19bc1e1-cc56-4e23-bce8-1e12a1a736bf",
         "name": "0_品質基準_全体まとめ_210331",
         "item_type": "document",
@@ -169,7 +185,7 @@
     },
     {
         "id": "53880e7e-bfe2-4de1-bea9-eb20d6a2d964",
-        "name": "BV-D-12",
+        "name": "BV-D-12　排煙バルブ",
         "item_type": "document",
         "parent_id": "e3be2160-d759-4b37-9b51-aadc1d110b6d",
         "order": 11,

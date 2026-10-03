@@ -2139,5 +2139,75 @@
             "sourceQuote": null,
             "targetKind": "element"
         }
+    ],
+    "c732941a-a42d-4e5d-809e-bdae422b9541": [
+        {
+            "id": "802b8971-faeb-4e01-b3c4-c32778b6d0d5",
+            "sourceType": "page",
+            "sourceId": "cdc81595-601d-4f47-95be-3e1fc9172ef0",
+            "targetElementId": "54530f3c-1f57-4d43-877e-3e62190dd63a",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-10-03T16:14:32.122908",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "78f04a01-f7d0-41be-a1c0-9bac26b41d2e",
+            "sourceType": "page",
+            "sourceId": "cdc81595-601d-4f47-95be-3e1fc9172ef0",
+            "targetElementId": "67a11780-f0c0-41ee-a968-bcd5a5c44966",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-10-03T16:14:46.389407",
+            "sourceQuote": null,
+            "targetKind": "element"
+        }
+    ],
+    "c19c375f-7283-452b-8940-a09a0bf002e2": [
+        {
+            "id": "1ac2c8ce-cc4b-44ad-944f-54f3fed3ba7f",
+            "sourceType": "page",
+            "sourceId": "81e3590c-9611-40c6-9848-e34ef1ae65b9",
+            "targetElementId": "42e1c4c7-a1db-424b-b6cb-026cd374d2f5",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-10-03T16:18:02.602729",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "4f77055a-374f-454c-9ff6-68b1d249d4d4",
+            "sourceType": "page",
+            "sourceId": "81e3590c-9611-40c6-9848-e34ef1ae65b9",
+            "targetElementId": "cc70f18e-5422-4a16-b0d9-2c45ed6f8422",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-10-03T16:18:02.722236",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "a786fa34-2e65-4c49-ac70-a2593a778fbd",
+            "sourceType": "page",
+            "sourceId": "81e3590c-9611-40c6-9848-e34ef1ae65b9",
+            "targetElementId": "10b81eb5-b7a8-436d-9833-c03556d25b0b",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-10-03T16:18:02.812200",
+            "sourceQuote": null,
+            "targetKind": "element"
+        },
+        {
+            "id": "86864821-e139-42c7-90c3-37ab71190c9e",
+            "sourceType": "page",
+            "sourceId": "81e3590c-9611-40c6-9848-e34ef1ae65b9",
+            "targetElementId": "7eb21e5d-2fd0-4d4e-a420-476dea4714ea",
+            "linkType": "relates",
+            "description": null,
+            "createdAt": "2026-10-03T16:18:02.900963",
+            "sourceQuote": null,
+            "targetKind": "element"
+        }
     ]
 }
