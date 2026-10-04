@@ -1142,12 +1142,10 @@
                 "id": "slu-452afd60130f302db06f6ccdaf8c24c17e55a7ce6de8139ac74fb59a19adefb4",
                 "pageId": "540f38ba-1c02-4a35-abf8-cb9a82b28fd7",
                 "quote": "〈目次〉",
-                "status": "covered",
-                "reason": "目次見出し。目次体系全体を表すルート要求で代表させる。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "3883b9bf-a843-4765-ac15-d4d5f3c93f82"
-                ],
+                "elementIds": [],
                 "order": 0,
                 "suggestedTypes": [],
                 "metadata": {
@@ -1190,12 +1188,10 @@
                 "id": "slu-6edb1bc6c6debbdafae0aebc8a4e0fff7f5e60f2b9fc758faa7a4226d9baa91b",
                 "pageId": "540f38ba-1c02-4a35-abf8-cb9a82b28fd7",
                 "quote": "[1] 目的　・・・ 3",
-                "status": "covered",
-                "reason": "目次項目[1]目的の章立て",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "e1cda696-7217-49ea-b761-deafea3801f8"
-                ],
+                "elementIds": [],
                 "order": 1,
                 "suggestedTypes": [],
                 "metadata": {
@@ -1238,12 +1234,10 @@
                 "id": "slu-1477a8801fb3942ef2bc243d1faf71a9f6a1040ff35487b4bbd2cf794f960345",
                 "pageId": "540f38ba-1c02-4a35-abf8-cb9a82b28fd7",
                 "quote": "[2] 適用範囲　・・・ 3",
-                "status": "covered",
-                "reason": "目次項目[2]適用範囲の章立て",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "14b1267e-4ae2-41a1-9199-fe95407b61a6"
-                ],
+                "elementIds": [],
                 "order": 2,
                 "suggestedTypes": [],
                 "metadata": {
@@ -1286,12 +1280,10 @@
                 "id": "slu-7e81518b7f290d6ef6e04def983061b0c140d28cab50d796533553afe60a59b2",
                 "pageId": "540f38ba-1c02-4a35-abf8-cb9a82b28fd7",
                 "quote": "[3] 本品質基準の考え方　・・・ 3～",
-                "status": "covered",
-                "reason": "目次項目[3]本品質基準の考え方の章立て",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "0b21dee2-4695-48dd-a7bb-0a41750dc205"
-                ],
+                "elementIds": [],
                 "order": 3,
                 "suggestedTypes": [],
                 "metadata": {
@@ -1334,12 +1326,10 @@
                 "id": "slu-68428e334e788489155ee2ab1ea123d9ca9139fea6e25bf6166cc14d238f4af4",
                 "pageId": "540f38ba-1c02-4a35-abf8-cb9a82b28fd7",
                 "quote": "[4] 電池セル、パック発熱に対する品質基準　・・・ 各項別紙",
-                "status": "covered",
-                "reason": "目次項目[4]電池セル、パック発熱に対する品質基準の章立て",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "9c9c8c02-291e-4c88-8013-05c60d31157c"
-                ],
+                "elementIds": [],
                 "order": 4,
                 "suggestedTypes": [],
                 "metadata": {
@@ -1382,12 +1372,10 @@
                 "id": "slu-98de6486d414e845a6ee17463a668c760a279d89b4909eb9f4ea1aea878c7ecb",
                 "pageId": "540f38ba-1c02-4a35-abf8-cb9a82b28fd7",
                 "quote": "セル内発熱の保護基準",
-                "status": "covered",
-                "reason": "セル内発熱の保護基準の見出し",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "946d13af-a5cd-4fef-9dfe-08313e19b7ab"
-                ],
+                "elementIds": [],
                 "order": 5,
                 "suggestedTypes": [],
                 "metadata": {
@@ -1430,12 +1418,10 @@
                 "id": "slu-6dbb9ae2ac583a75a44c9c2c6c6139ce0d3c94712ec4104ba3774b378428e251",
                 "pageId": "540f38ba-1c02-4a35-abf8-cb9a82b28fd7",
                 "quote": "1-1-1 セル異物内発熱",
-                "status": "covered",
-                "reason": "品質基準項目1-1-1",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "bb26aeed-3908-4802-a156-bc96074b0186"
-                ],
+                "elementIds": [],
                 "order": 6,
                 "suggestedTypes": [],
                 "metadata": {
@@ -1478,12 +1464,10 @@
                 "id": "slu-be7f7e7189d2701c5fb89fd993cc25d3d979fbe53206bc0bbd4efe24c0ea97a6",
                 "pageId": "540f38ba-1c02-4a35-abf8-cb9a82b28fd7",
                 "quote": "1-1-2 電極寸法設計",
-                "status": "covered",
-                "reason": "品質基準項目1-1-2",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "9a086001-69da-4168-951c-f7b55fd16ebb"
-                ],
+                "elementIds": [],
                 "order": 7,
                 "suggestedTypes": [],
                 "metadata": {
@@ -1526,12 +1510,10 @@
                 "id": "slu-b45bd02a9d682e06c28f5222857440ef7d7c6970c657852eac4d1dc95f556bf2",
                 "pageId": "540f38ba-1c02-4a35-abf8-cb9a82b28fd7",
                 "quote": "1-1-3 短絡抵抗・発熱量による安全性確認",
-                "status": "covered",
-                "reason": "品質基準項目1-1-3",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "671614b4-484e-46c8-a0ee-01ba258fb022"
-                ],
+                "elementIds": [],
                 "order": 8,
                 "suggestedTypes": [],
                 "metadata": {
@@ -1574,12 +1556,10 @@
                 "id": "slu-79b070fd3aca7fbb2dfe546047bb6eee84ac98cca94a4dd14f0aeb94b5b3ac16",
                 "pageId": "540f38ba-1c02-4a35-abf8-cb9a82b28fd7",
                 "quote": "パック設計基準",
-                "status": "covered",
-                "reason": "パック設計基準の見出し",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "4f58c21f-b87e-43c4-9991-f5b3230bc142"
-                ],
+                "elementIds": [],
                 "order": 9,
                 "suggestedTypes": [],
                 "metadata": {
@@ -1622,12 +1602,10 @@
                 "id": "slu-da61dfbfd31a63c088af29d3c5997440f958260e4b627309b21f8f1b396ba18c",
                 "pageId": "540f38ba-1c02-4a35-abf8-cb9a82b28fd7",
                 "quote": "2-1.",
-                "status": "covered",
-                "reason": "2-1.区分番号",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "48cf59c4-5ed1-4aa3-b3c1-2b05d942d46d"
-                ],
+                "elementIds": [],
                 "order": 10,
                 "suggestedTypes": [],
                 "metadata": {
@@ -1670,12 +1648,10 @@
                 "id": "slu-96acedc23d946b1fe9300dc191ac7a5fdf390b12abaa5f8c3b824053383a59e4",
                 "pageId": "540f38ba-1c02-4a35-abf8-cb9a82b28fd7",
                 "quote": "内部入力/水侵入対策",
-                "status": "covered",
-                "reason": "内部入力/水侵入対策（2-1区分の名称）",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "48cf59c4-5ed1-4aa3-b3c1-2b05d942d46d"
-                ],
+                "elementIds": [],
                 "order": 11,
                 "suggestedTypes": [],
                 "metadata": {
@@ -1718,12 +1694,10 @@
                 "id": "slu-c07a55afcfcb21f0634de34b61ed16272f0506e8f2497bd80d17a3089767d6b0",
                 "pageId": "540f38ba-1c02-4a35-abf8-cb9a82b28fd7",
                 "quote": "2-1-1 路面干渉対策",
-                "status": "covered",
-                "reason": "品質基準項目2-1-1",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "c0436870-6168-4d19-9d07-bd330e1edda5"
-                ],
+                "elementIds": [],
                 "order": 12,
                 "suggestedTypes": [],
                 "metadata": {
@@ -1766,12 +1740,10 @@
                 "id": "slu-f8839eddb1ed24f1d7db5c2fefe622102e7211048032e07200074b437a08ec42",
                 "pageId": "540f38ba-1c02-4a35-abf8-cb9a82b28fd7",
                 "quote": "2-1-2 サービス解体作業",
-                "status": "covered",
-                "reason": "品質基準項目2-1-2",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "d0b45656-c53e-4676-9ceb-25f38e74bfbb"
-                ],
+                "elementIds": [],
                 "order": 13,
                 "suggestedTypes": [],
                 "metadata": {
@@ -1814,12 +1786,10 @@
                 "id": "slu-8f3b81abd52a1245d0bbe0296f7b98388b07e75bea19b91689c031e8a2d194b8",
                 "pageId": "540f38ba-1c02-4a35-abf8-cb9a82b28fd7",
                 "quote": "2-1-3 パック防塵",
-                "status": "covered",
-                "reason": "品質基準項目2-1-3",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "a5dd34a1-2c80-489d-bc44-1df90576d6b6"
-                ],
+                "elementIds": [],
                 "order": 14,
                 "suggestedTypes": [],
                 "metadata": {
@@ -1862,12 +1832,10 @@
                 "id": "slu-45185d93053a1bef7a25b66381f512f35db12b7902ea8eaa4cf5c8eb3017a046",
                 "pageId": "540f38ba-1c02-4a35-abf8-cb9a82b28fd7",
                 "quote": "2-1-4 パック防水",
-                "status": "covered",
-                "reason": "品質基準項目2-1-4",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "d3e1cd30-68c1-4924-a8b0-555360ce3a46"
-                ],
+                "elementIds": [],
                 "order": 15,
                 "suggestedTypes": [],
                 "metadata": {
@@ -1910,12 +1878,10 @@
                 "id": "slu-bd5c4b0bb616f3fd9553732597c2470f70a0030976fa76d55a719fd5431867d1",
                 "pageId": "540f38ba-1c02-4a35-abf8-cb9a82b28fd7",
                 "quote": "2-2.",
-                "status": "covered",
-                "reason": "2-2.区分番号",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "ee2e2929-7492-4f8f-95fd-7cc478ffb15a"
-                ],
+                "elementIds": [],
                 "order": 16,
                 "suggestedTypes": [],
                 "metadata": {
@@ -1958,12 +1924,10 @@
                 "id": "slu-a985dc3736f1f74c46f2e573c2a8b7bb18c57dbb6384f2439b4b9535ffe3e63c",
                 "pageId": "540f38ba-1c02-4a35-abf8-cb9a82b28fd7",
                 "quote": "内部水発生対策",
-                "status": "covered",
-                "reason": "内部水発生対策（2-2区分の名称）",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "ee2e2929-7492-4f8f-95fd-7cc478ffb15a"
-                ],
+                "elementIds": [],
                 "order": 17,
                 "suggestedTypes": [],
                 "metadata": {
@@ -2006,12 +1970,10 @@
                 "id": "slu-97e6b36565b3d3ab3fac65efee175766e0544d83efecc0cc2305ff0195cdf121",
                 "pageId": "540f38ba-1c02-4a35-abf8-cb9a82b28fd7",
                 "quote": "2-2-1 内部水発生対策",
-                "status": "covered",
-                "reason": "品質基準項目2-2-1",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "98ac6952-1c71-43c7-b4cb-b838f1636056"
-                ],
+                "elementIds": [],
                 "order": 18,
                 "suggestedTypes": [],
                 "metadata": {
@@ -2054,12 +2016,10 @@
                 "id": "slu-ec316010e1b4725d5b38a31d965b51ee436af54c8c17e847c1ff296a521be0e9",
                 "pageId": "540f38ba-1c02-4a35-abf8-cb9a82b28fd7",
                 "quote": "制御",
-                "status": "covered",
-                "reason": "制御区分の見出し",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "a19092d0-b0e6-4288-ad88-eb05edae2cb1"
-                ],
+                "elementIds": [],
                 "order": 19,
                 "suggestedTypes": [],
                 "metadata": {
@@ -2102,12 +2062,10 @@
                 "id": "slu-958493e11b618cbe475488825b617a0ef91f6d74f50aaa03399e817046be5501",
                 "pageId": "540f38ba-1c02-4a35-abf8-cb9a82b28fd7",
                 "quote": "3-1-1 電池制御",
-                "status": "covered",
-                "reason": "品質基準項目3-1-1",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "aff43ec3-9a79-49e0-876a-52779175b4d2"
-                ],
+                "elementIds": [],
                 "order": 20,
                 "suggestedTypes": [],
                 "metadata": {
@@ -2150,12 +2108,10 @@
                 "id": "slu-2b5923637e4ae4d1fb6ccfbe53c6d586a9997f0a65d024c5ff28f22725164331",
                 "pageId": "540f38ba-1c02-4a35-abf8-cb9a82b28fd7",
                 "quote": "複合評価基準",
-                "status": "covered",
-                "reason": "複合評価基準の見出し",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "30950e8c-1fa7-4322-9d62-c3a8e4a78919"
-                ],
+                "elementIds": [],
                 "order": 21,
                 "suggestedTypes": [],
                 "metadata": {
@@ -2198,12 +2154,10 @@
                 "id": "slu-5b91242caf78529e9fdda09d6f561b1a2415775b3cbbb4447399761fadbf2bcd",
                 "pageId": "540f38ba-1c02-4a35-abf8-cb9a82b28fd7",
                 "quote": "2-4-1 複合評価基準",
-                "status": "covered",
-                "reason": "品質基準項目2-4-1",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "a493c90f-b281-4c1e-9cd4-8428e51d674d"
-                ],
+                "elementIds": [],
                 "order": 22,
                 "suggestedTypes": [],
                 "metadata": {
@@ -2246,12 +2200,10 @@
                 "id": "slu-3dc3ee9cb941b1a2c8b21a73706f0182860a1c380500dd5257cba55f03ca3183",
                 "pageId": "f7ade4e9-c748-4c55-806f-1ea35166a2b7",
                 "quote": "[1]目的",
-                "status": "covered",
-                "reason": "見出し「[1]目的」はQS-00の章タイトルとして反映。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "62f54f89-1d29-47d6-9a0f-061fbd7d5f7b"
-                ],
+                "elementIds": [],
                 "order": 0,
                 "suggestedTypes": [],
                 "metadata": {
@@ -2294,12 +2246,10 @@
                 "id": "slu-5915215dc0399f449d7e860f7bc4b45d17d33f1315338fd7b8a22b27b403b46d",
                 "pageId": "f7ade4e9-c748-4c55-806f-1ea35166a2b7",
                 "quote": "本品質基準は電池セル／モジュール／パック製造工程で考えられる不具合モード（異物混入など）も含む、「パック外に発煙/火災等を及ぼさない」状態とし、以下に基準化する。",
-                "status": "covered",
-                "reason": "本品質基準の目的文そのもの。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "62f54f89-1d29-47d6-9a0f-061fbd7d5f7b"
-                ],
+                "elementIds": [],
                 "order": 1,
                 "suggestedTypes": [],
                 "metadata": {
@@ -2342,12 +2292,10 @@
                 "id": "slu-a8d1a634ef37d03dd90dd0166af491042066d0196eac2861216f781d05e5f336",
                 "pageId": "f7ade4e9-c748-4c55-806f-1ea35166a2b7",
                 "quote": "[2]適用範囲",
-                "status": "covered",
-                "reason": "見出し「[2]適用範囲」はQS-01の章タイトルとして反映。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "0edeb4f2-13dd-40c3-a3e6-faf28345b7ef"
-                ],
+                "elementIds": [],
                 "order": 2,
                 "suggestedTypes": [],
                 "metadata": {
@@ -2390,12 +2338,10 @@
                 "id": "slu-de2fc2c51153ff2cd0f68d929ae8e19d3767af4884884b071e03149338076ae3",
                 "pageId": "f7ade4e9-c748-4c55-806f-1ea35166a2b7",
                 "quote": "駆動用電池パック部品（車室外）の電池セル、パック発煙にともなう不具合モードをBOL～EOLまで抑え込むための基本的な考え方を記述する。",
-                "status": "covered",
-                "reason": "適用範囲の基本的考え方（BOL〜EOL抑制）。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "0edeb4f2-13dd-40c3-a3e6-faf28345b7ef"
-                ],
+                "elementIds": [],
                 "order": 3,
                 "suggestedTypes": [],
                 "metadata": {
@@ -2438,12 +2384,10 @@
                 "id": "slu-7e3d951292d8ecfc727ac53ce756a4f5d7e6e313b6f96e3eabd248897bf2337a",
                 "pageId": "f7ade4e9-c748-4c55-806f-1ea35166a2b7",
                 "quote": "更には「安心・安全」を高める観点で、車室外搭載の駆動用電池パックに適用する。",
-                "status": "covered",
-                "reason": "安心・安全の観点・車室外搭載駆動用電池パックへの適用。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "0edeb4f2-13dd-40c3-a3e6-faf28345b7ef"
-                ],
+                "elementIds": [],
                 "order": 4,
                 "suggestedTypes": [],
                 "metadata": {
@@ -2486,12 +2430,10 @@
                 "id": "slu-f0acd7e01a71e6df913e66df0499a8af5a7131c008978e1a1d61092250d4d458",
                 "pageId": "f7ade4e9-c748-4c55-806f-1ea35166a2b7",
                 "quote": "[3]品質基準の考え方",
-                "status": "covered",
-                "reason": "見出し「[3]品質基準の考え方」はQS-02系の章立て。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "37baebdf-b575-42b4-986b-20d1ef02c0af"
-                ],
+                "elementIds": [],
                 "order": 5,
                 "suggestedTypes": [],
                 "metadata": {
@@ -2534,12 +2476,10 @@
                 "id": "slu-480f2f33c5e23c962dc04070778a3e0c8a431d42c0dc0b4a4dc7c032a27cfd6a",
                 "pageId": "f7ade4e9-c748-4c55-806f-1ea35166a2b7",
                 "quote": "1)電池開発の大方針",
-                "status": "covered",
-                "reason": "小見出し「1)電池開発の大方針」。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "37baebdf-b575-42b4-986b-20d1ef02c0af"
-                ],
+                "elementIds": [],
                 "order": 6,
                 "suggestedTypes": [],
                 "metadata": {
@@ -2582,12 +2522,10 @@
                 "id": "slu-b698ab79d3977e95966b28ed594dbf9ffed89d6499397e43b3445ff94aa6dcaf",
                 "pageId": "f7ade4e9-c748-4c55-806f-1ea35166a2b7",
                 "quote": "電池セル、パック発煙させないために「2重故障でもHI無きこと」を前提とする。",
-                "status": "covered",
-                "reason": "2重故障でもHI無きことを前提とする大方針。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "37baebdf-b575-42b4-986b-20d1ef02c0af"
-                ],
+                "elementIds": [],
                 "order": 7,
                 "suggestedTypes": [],
                 "metadata": {
@@ -2630,15 +2568,10 @@
                 "id": "slu-297466d8bae94c6095f14c3631217ee4af4c2cb0d81361e54c92bcb0c44259c2",
                 "pageId": "f7ade4e9-c748-4c55-806f-1ea35166a2b7",
                 "quote": "発煙／発火の要因 \t対応",
-                "status": "covered",
-                "reason": "表ヘッダー「発煙/発火の要因・対応」は4要因個別要求群の表の見出し。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "212fb409-8f82-4499-be10-5ba42d9b528c",
-                    "98974a44-7299-4e90-98a2-f155cb2843f4",
-                    "0b62846c-a705-4cf7-a1b1-6ce94996bf20",
-                    "13f3df4a-a76a-4e9a-9ec8-fa59c1c0b164"
-                ],
+                "elementIds": [],
                 "order": 8,
                 "suggestedTypes": [],
                 "metadata": {
@@ -2696,12 +2629,10 @@
                 "id": "slu-75969fc976831702b99199535fc5ba252b1f4e180b171a50037b7845f8e43aae",
                 "pageId": "f7ade4e9-c748-4c55-806f-1ea35166a2b7",
                 "quote": "①内部短絡 \t単セルの ・製品設計 ・工程での発生防止/流出防止で対応",
-                "status": "covered",
-                "reason": "①内部短絡の対応方針（表内容）。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "212fb409-8f82-4499-be10-5ba42d9b528c"
-                ],
+                "elementIds": [],
                 "order": 9,
                 "suggestedTypes": [],
                 "metadata": {
@@ -2744,12 +2675,10 @@
                 "id": "slu-026872cc0d5a40d10b35e9811e4eb3b12b2a2068550fe0512fdaca3baacb07fb",
                 "pageId": "f7ade4e9-c748-4c55-806f-1ea35166a2b7",
                 "quote": "②過充電 \t各セルによる 異常検出/制御多重系で対応",
-                "status": "covered",
-                "reason": "②過充電の対応方針（表内容）。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "98974a44-7299-4e90-98a2-f155cb2843f4"
-                ],
+                "elementIds": [],
                 "order": 10,
                 "suggestedTypes": [],
                 "metadata": {
@@ -2792,12 +2721,10 @@
                 "id": "slu-87e2905e1547644c2fe7be6a0760172c29e7ab76be205b99c9776af3d762a8cf",
                 "pageId": "f7ade4e9-c748-4c55-806f-1ea35166a2b7",
                 "quote": "③過熱 \t各セルによる 異常検出/制御多重系で対応",
-                "status": "covered",
-                "reason": "③過熱の対応方針（表内容）。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "0b62846c-a705-4cf7-a1b1-6ce94996bf20"
-                ],
+                "elementIds": [],
                 "order": 11,
                 "suggestedTypes": [],
                 "metadata": {
@@ -2840,12 +2767,10 @@
                 "id": "slu-dd7b1d638032fb4a9424d4378ae8f4ff1ad5ac769270af02133a7e7a143b07a8",
                 "pageId": "f7ade4e9-c748-4c55-806f-1ea35166a2b7",
                 "quote": "④外部短絡 \t電池パックの ・製品設計／評価 ・工程での発生防止/流出防止で対応",
-                "status": "covered",
-                "reason": "④外部短絡の対応方針（表内容）。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "13f3df4a-a76a-4e9a-9ec8-fa59c1c0b164"
-                ],
+                "elementIds": [],
                 "order": 12,
                 "suggestedTypes": [],
                 "metadata": {
@@ -3088,12 +3013,10 @@
                 "id": "slu-de06553d9575bcdd678e981691c01891404601714adaffb7cdbb18a8ed63570e",
                 "pageId": "f7ade4e9-c748-4c55-806f-1ea35166a2b7",
                 "quote": "①内部短絡",
-                "status": "covered",
-                "reason": "小見出し「①内部短絡」とその詳細説明の開始。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "212fb409-8f82-4499-be10-5ba42d9b528c"
-                ],
+                "elementIds": [],
                 "order": 18,
                 "suggestedTypes": [],
                 "metadata": {
@@ -3136,12 +3059,10 @@
                 "id": "slu-e973b96b1c6d197260d99a9465b47479afd6c88be2c0e25f83fca4cc0be46864",
                 "pageId": "f7ade4e9-c748-4c55-806f-1ea35166a2b7",
                 "quote": "異物以外の発煙モード（正負極短絡・外力による変形）に対応しては「2重故障でもHI無きこと」を前提とする。",
-                "status": "covered",
-                "reason": "異物以外の発煙モード（正負極短絡・外力変形）に対する2重故障でもHI無きことの前提。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "212fb409-8f82-4499-be10-5ba42d9b528c"
-                ],
+                "elementIds": [],
                 "order": 19,
                 "suggestedTypes": [],
                 "metadata": {
@@ -3184,12 +3105,10 @@
                 "id": "slu-7b6eca595b0d5275abaa2ab2cdf6925f3b8a6bd3ecb9662ea8a5395aaa2598bc",
                 "pageId": "f7ade4e9-c748-4c55-806f-1ea35166a2b7",
                 "quote": "製品設計と工程による発生防止、製造検査による流出防止を行う。",
-                "status": "covered",
-                "reason": "製品設計・工程による発生防止、製造検査による流出防止。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "212fb409-8f82-4499-be10-5ba42d9b528c"
-                ],
+                "elementIds": [],
                 "order": 20,
                 "suggestedTypes": [],
                 "metadata": {
@@ -3272,12 +3191,10 @@
                 "id": "slu-d97d1f79f54d6507606956ffef0a5b61371dbe508947649cce04d4a97bff02b6",
                 "pageId": "f7ade4e9-c748-4c55-806f-1ea35166a2b7",
                 "quote": "②過充電",
-                "status": "covered",
-                "reason": "小見出し「②過充電」。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "98974a44-7299-4e90-98a2-f155cb2843f4"
-                ],
+                "elementIds": [],
                 "order": 22,
                 "suggestedTypes": [],
                 "metadata": {
@@ -3320,12 +3237,10 @@
                 "id": "slu-2b135b100df4136d15fb7f70041932f9c80b96dbe29979a4402527f98fd276b7",
                 "pageId": "f7ade4e9-c748-4c55-806f-1ea35166a2b7",
                 "quote": "：電池制御にて2重故障でもHI無きこと",
-                "status": "covered",
-                "reason": "電池制御にて2重故障でもHI無きこと。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "98974a44-7299-4e90-98a2-f155cb2843f4"
-                ],
+                "elementIds": [],
                 "order": 23,
                 "suggestedTypes": [],
                 "metadata": {
@@ -3408,12 +3323,10 @@
                 "id": "slu-db48de8005164529c699f8e0e9762237af898bf006433ce85dd21dbfedec1108",
                 "pageId": "f7ade4e9-c748-4c55-806f-1ea35166a2b7",
                 "quote": "③過熱",
-                "status": "covered",
-                "reason": "小見出し「③過熱」。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "0b62846c-a705-4cf7-a1b1-6ce94996bf20"
-                ],
+                "elementIds": [],
                 "order": 25,
                 "suggestedTypes": [],
                 "metadata": {
@@ -3456,12 +3369,10 @@
                 "id": "slu-caf37ff3a6ac67645d364d3023836150a0d9baf2cb81f744dbd3a0d8053df3f2",
                 "pageId": "f7ade4e9-c748-4c55-806f-1ea35166a2b7",
                 "quote": "：↑",
-                "status": "covered",
-                "reason": "「：↑」は②過充電と同一対応内容を指す記号的表記。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "0b62846c-a705-4cf7-a1b1-6ce94996bf20"
-                ],
+                "elementIds": [],
                 "order": 26,
                 "suggestedTypes": [],
                 "metadata": {
@@ -3504,12 +3415,10 @@
                 "id": "slu-a2965bf8773b3e3c72e2a2c9098318937b358c97d1bd7ee47f93e1264cc41eac",
                 "pageId": "f7ade4e9-c748-4c55-806f-1ea35166a2b7",
                 "quote": "④外部短絡",
-                "status": "covered",
-                "reason": "小見出し「④外部短絡」。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "13f3df4a-a76a-4e9a-9ec8-fa59c1c0b164"
-                ],
+                "elementIds": [],
                 "order": 27,
                 "suggestedTypes": [],
                 "metadata": {
@@ -3552,12 +3461,10 @@
                 "id": "slu-fbaeb8be790ddf4327fd401647a3742a153bd20a5870db64e105ec638cec4229",
                 "pageId": "f7ade4e9-c748-4c55-806f-1ea35166a2b7",
                 "quote": "路面干渉などの外部入力、車両設計などの入力による発煙は、F/Hが発生しないように製品設計、製造検査（工程での発生/流出防止）にて多重系保護を行う。",
-                "status": "covered",
-                "reason": "路面干渉等の外部入力による発煙へのF/H対応（多重系保護）。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "13f3df4a-a76a-4e9a-9ec8-fa59c1c0b164"
-                ],
+                "elementIds": [],
                 "order": 28,
                 "suggestedTypes": [],
                 "metadata": {
@@ -3640,12 +3547,10 @@
                 "id": "slu-4227a50b85bc5513c9333f99ae51a019bfe807894704d6290d3a972e519b80d4",
                 "pageId": "b7da17a3-4005-4419-8128-febba1397552",
                 "quote": "2)発煙、発火に至るまでに保護すべき状態の定義",
-                "status": "covered",
-                "reason": "「2)発煙、発火に至るまでに保護すべき状態の定義」という見出しは、保護すべき状態の定義全体を束ねる上位要求として表現。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "38dc9390-1b34-47b5-aecb-eeaaf8bc28cc"
-                ],
+                "elementIds": [],
                 "order": 0,
                 "suggestedTypes": [],
                 "metadata": {
@@ -3688,12 +3593,10 @@
                 "id": "slu-7196a9a2e3a5a53a9547cbbda27ad55026215f9d98ea584d42efe665291c0c61",
                 "pageId": "b7da17a3-4005-4419-8128-febba1397552",
                 "quote": "「初期状態」は、パック本体にダメージがあるが、パック内部にダメージがなく、パック内部に一つの潜在的な異常が発生しても、万が一の事象発生でも発煙、発火に至らない状態を保護すること。",
-                "status": "covered",
-                "reason": "「初期状態」の定義文をそのまま要求化。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "939a743e-5587-4b36-b0c8-53d407d3d9e7"
-                ],
+                "elementIds": [],
                 "order": 1,
                 "suggestedTypes": [],
                 "metadata": {
@@ -3736,12 +3639,10 @@
                 "id": "slu-4b024c3b4364f5f2488553333dc65c05940998e9d2e9bab5974b76ee00507561",
                 "pageId": "b7da17a3-4005-4419-8128-febba1397552",
                 "quote": "「通常使用前状態（ダメージ試験後）」は、電池パック性能企画書で破損保証（強度、寿命、信頼性）および要望する耐久試験後（強度、寿命、信頼性）の状態にて、パック本体へのダメージが無い状態を保護すること。",
-                "status": "covered",
-                "reason": "「通常使用前状態（ダメージ試験後）」定義文の前半。p4-u3と合わせて1つの要求に統合。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "45c42859-e6c6-498f-acc6-602f645b0fa7"
-                ],
+                "elementIds": [],
                 "order": 2,
                 "suggestedTypes": [],
                 "metadata": {
@@ -3784,12 +3685,10 @@
                 "id": "slu-b5eca7076087844eef3baa379454d38de48804b388a7162fde4a7d79bafee2e3",
                 "pageId": "b7da17a3-4005-4419-8128-febba1397552",
                 "quote": "また、ダメージが加わった状態でも発煙、発火に至らない状態を保護すること。",
-                "status": "covered",
-                "reason": "「また、ダメージが加わった状態でも発煙、発火に至らない状態を保護すること」はp4-u2と同一段落の後続文であり、同じ保護状態（通常使用前状態）に関する要求の一部。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "45c42859-e6c6-498f-acc6-602f645b0fa7"
-                ],
+                "elementIds": [],
                 "order": 3,
                 "suggestedTypes": [],
                 "metadata": {
@@ -3832,12 +3731,10 @@
                 "id": "slu-440b51ac1501e3ceab35749d0004abcbd0b388c2cd22d90f63f524134d4a419c",
                 "pageId": "b7da17a3-4005-4419-8128-febba1397552",
                 "quote": "「誤使用/異常使用まで（特殊試験後）」は、電池パック性能企画書で特殊試験項目に挙げた事象レベルの試験後の状態において、さらに液体侵入に対する保護をしなくても発煙、発火に至らない状態を保護すること。",
-                "status": "covered",
-                "reason": "「誤使用/異常使用まで（特殊試験後）」定義文の前半。p4-u5と合わせて1つの要求に統合。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "84936982-1985-4010-8be0-51b85891c977"
-                ],
+                "elementIds": [],
                 "order": 4,
                 "suggestedTypes": [],
                 "metadata": {
@@ -3880,12 +3777,10 @@
                 "id": "slu-b4f1d71b60825ac41586190c251f9285e42d79d91b148276a15caed45cabd9ad",
                 "pageId": "b7da17a3-4005-4419-8128-febba1397552",
                 "quote": "なお、ダメージ試験後では、液体侵入の状態において、さらに液体侵入に対する保護をしなくても発煙、発火に至らない状態を保護すること。",
-                "status": "covered",
-                "reason": "「なお、ダメージ試験後では、液体侵入の状態において、…」はp4-u4と同一段落の後続文であり、同じ保護状態区分に関する付帯要求。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "84936982-1985-4010-8be0-51b85891c977"
-                ],
+                "elementIds": [],
                 "order": 5,
                 "suggestedTypes": [],
                 "metadata": {
@@ -3928,12 +3823,10 @@
                 "id": "slu-e4dde0f7588ef137abc4eb00ab085e25a99e4b385c2cb6e837e9743e4c42b11b",
                 "pageId": "b7da17a3-4005-4419-8128-febba1397552",
                 "quote": "＜発煙、発火のシナリオ＞",
-                "status": "covered",
-                "reason": "「＜発煙、発火のシナリオ＞」という見出しは、以降のシナリオ表全体を束ねる要求の見出しとして表現。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "62cec3f9-663b-47a2-bb97-dabc5fb1955f"
-                ],
+                "elementIds": [],
                 "order": 6,
                 "suggestedTypes": [],
                 "metadata": {
@@ -3976,12 +3869,10 @@
                 "id": "slu-90b05d986e2af7c8a10765f7a7081f2102be483e3c80aa5374877fb31e386f07",
                 "pageId": "b7da17a3-4005-4419-8128-febba1397552",
                 "quote": "凡例：○ 機能保証",
-                "status": "covered",
-                "reason": "「凡例：○ 機能保証」は表の記号の意味を定義する注記であり、各シナリオ要求の文言（機能保証する）に反映済み。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "62cec3f9-663b-47a2-bb97-dabc5fb1955f"
-                ],
+                "elementIds": [],
                 "order": 7,
                 "suggestedTypes": [],
                 "metadata": {
@@ -4024,12 +3915,10 @@
                 "id": "slu-74b93aeb5da88263c291ce76b68fc4375f57c86cfc8983e4149927b2160d8069",
                 "pageId": "b7da17a3-4005-4419-8128-febba1397552",
                 "quote": "発煙、発火のシナリオ \t初期状態 \t通常使用前（ダメージ試験後） \t誤使用/異常使用前（特殊試験後）",
-                "status": "covered",
-                "reason": "表のヘッダー行（シナリオ名と3つの保護状態列）は、各Lv.要求が共通して参照する列構造であり、親要求発煙・発火シナリオごとに各保護状態での機能保証を定義することの本文に3保護状態への言及として反映。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "62cec3f9-663b-47a2-bb97-dabc5fb1955f"
-                ],
+                "elementIds": [],
                 "order": 8,
                 "suggestedTypes": [],
                 "metadata": {
@@ -4072,12 +3961,10 @@
                 "id": "slu-5eff8317e49faa03c4636c39ce87ac4f6239870849b420d608f3d773d583811c",
                 "pageId": "b7da17a3-4005-4419-8128-febba1397552",
                 "quote": "Lv.1 放置時に発煙 \t○ \t○ \t○",
-                "status": "covered",
-                "reason": "Lv.1行の内容（放置時発煙、全列○）をそのまま要求化。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "194b3583-6e17-4d54-8fd6-a8c64206bbd5"
-                ],
+                "elementIds": [],
                 "order": 9,
                 "suggestedTypes": [],
                 "metadata": {
@@ -4120,12 +4007,10 @@
                 "id": "slu-3472889fbdfb453d03eb27627f3541944965c193d12d389801eca1a9a06a1fe5",
                 "pageId": "b7da17a3-4005-4419-8128-febba1397552",
                 "quote": "Lv.2 充電時に発煙 \t○ \t○ \t○",
-                "status": "covered",
-                "reason": "Lv.2行の内容（充電時発煙、全列○）をそのまま要求化。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "29317718-76ed-4582-ad0b-8fd648722c6b"
-                ],
+                "elementIds": [],
                 "order": 10,
                 "suggestedTypes": [],
                 "metadata": {
@@ -4168,12 +4053,10 @@
                 "id": "slu-f363c9d8356ead0496c03ab41fa9403c67bfe2703cbfb462b1d93c280c988ddd",
                 "pageId": "b7da17a3-4005-4419-8128-febba1397552",
                 "quote": "Lv.3 走行中にダメージ ⇒ ガレージ内で冠水発煙 \t○ \t○ \t○",
-                "status": "covered",
-                "reason": "Lv.3行の内容（走行中ダメージ⇒ガレージ内冠水発煙、全列○）をそのまま要求化。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "468d15f3-cf7e-4533-b6c3-bde716e66937"
-                ],
+                "elementIds": [],
                 "order": 11,
                 "suggestedTypes": [],
                 "metadata": {
@@ -4216,12 +4099,10 @@
                 "id": "slu-69da6814cbaa35f2c4146780961dca9e0ada93a6fdd6c84780ec4cef24022680",
                 "pageId": "b7da17a3-4005-4419-8128-febba1397552",
                 "quote": "Lv.4 アンダーパス等で浸水 ⇒ ガレージ内で冠水発煙 \t○ \t○ \t○",
-                "status": "covered",
-                "reason": "Lv.4行の内容（アンダーパス等浸水⇒ガレージ内冠水発煙、全列○）をそのまま要求化。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "754316ef-202f-4e82-907d-06f40ca2b8b0"
-                ],
+                "elementIds": [],
                 "order": 12,
                 "suggestedTypes": [],
                 "metadata": {
@@ -4264,12 +4145,10 @@
                 "id": "slu-8e2ff10b08affabcd1a32f73ae90b78f9a03a8d63c3193e5b1231a6e3191893a",
                 "pageId": "b7da17a3-4005-4419-8128-febba1397552",
                 "quote": "Lv.5 走行中にダメージ ⇒ アンダーパス等で浸水 ⇒ ガレージ内で冠水発煙 \t○ \t○ \tー（浸水検知によるお知らせ）",
-                "status": "covered",
-                "reason": "Lv.5行の内容（走行中ダメージ⇒浸水⇒ガレージ内冠水発煙、特殊試験後は代替措置）をそのまま要求化。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "de45e886-a486-4b53-ae27-e1558e72dab8"
-                ],
+                "elementIds": [],
                 "order": 13,
                 "suggestedTypes": [],
                 "metadata": {
@@ -4312,12 +4191,10 @@
                 "id": "slu-b7a087045510b7ab62a55b834f92649870f493223e1f146c4fed37baaa7d1f49",
                 "pageId": "b7da17a3-4005-4419-8128-febba1397552",
                 "quote": "Lv.6 浸水等でガレージ内で浸水 \t○ \t○ \tー（全水没による放電）",
-                "status": "covered",
-                "reason": "Lv.6行の内容（浸水等でガレージ内浸水、特殊試験後は代替措置）をそのまま要求化。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "3651ab5e-461e-4134-b6fe-722f23439d69"
-                ],
+                "elementIds": [],
                 "order": 14,
                 "suggestedTypes": [],
                 "metadata": {
@@ -4360,12 +4237,10 @@
                 "id": "slu-db34ca3ddb194329c7bdf2e402ec4193109ca15d27380399cdb65225360771c1",
                 "pageId": "b7da17a3-4005-4419-8128-febba1397552",
                 "quote": "Lv.7 ガレージ内に流入等 \t○ \t○ \t○",
-                "status": "covered",
-                "reason": "Lv.7行の内容（ガレージ内流入等、全列○）をそのまま要求化。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "61fb9702-4d34-4d3e-a692-3eecc554d2a7"
-                ],
+                "elementIds": [],
                 "order": 15,
                 "suggestedTypes": [],
                 "metadata": {
@@ -4528,12 +4403,10 @@
                 "id": "slu-8750e34da026d8bec3745305bea8d95d4f3de40d0390f2f40be8928d457b62cf",
                 "pageId": "4c84b90d-53fc-4190-b7d7-5c7e45d36f92",
                 "quote": "電池システム 安全、品質基準",
-                "status": "covered",
-                "reason": "「電池システム 安全、品質基準」は品質基準項目ツリー図のルートラベルであり、p2目次由来の既存要求『[4] 電池セル、パック発熱に対する品質基準』（各項別紙にて規定）に対応する。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "9c9c8c02-291e-4c88-8013-05c60d31157c"
-                ],
+                "elementIds": [],
                 "order": 3,
                 "suggestedTypes": [],
                 "metadata": {
@@ -4576,12 +4449,10 @@
                 "id": "slu-b2c86602f4b938ae83ef230b16312ce23a848d7adb689d059e42c230bfeaa594",
                 "pageId": "4c84b90d-53fc-4190-b7d7-5c7e45d36f92",
                 "quote": "1 セル内短絡保護思想",
-                "status": "covered",
-                "reason": "「1 セル内短絡保護思想」はp2目次由来の既存要求『セル内発熱の保護基準』（1-1-1〜1-1-3を規定）と同一の区分（品質基準番号体系1）を指す。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "946d13af-a5cd-4fef-9dfe-08313e19b7ab"
-                ],
+                "elementIds": [],
                 "order": 4,
                 "suggestedTypes": [],
                 "metadata": {
@@ -4624,12 +4495,10 @@
                 "id": "slu-074b8cf5a8cc1ea4154f77c4d7f296020d8926f08a00f248ea61472efd9dae6f",
                 "pageId": "4c84b90d-53fc-4190-b7d7-5c7e45d36f92",
                 "quote": "セル異物内短",
-                "status": "covered",
-                "reason": "「セル異物内短」はセル異物による内部短絡を指し、p2目次由来の既存要求『1-1-1 セル異物内発熱』と同一の品質基準項目1-1-1を表す。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "bb26aeed-3908-4802-a156-bc96074b0186"
-                ],
+                "elementIds": [],
                 "order": 5,
                 "suggestedTypes": [],
                 "metadata": {
@@ -4672,12 +4541,10 @@
                 "id": "slu-eeee366b605270e52763444f472c92a0bbf9885574d7088227507f12306178e3",
                 "pageId": "4c84b90d-53fc-4190-b7d7-5c7e45d36f92",
                 "quote": "電極寸法設計",
-                "status": "covered",
-                "reason": "「電極寸法設計」はp2目次由来の既存要求『1-1-2 電極寸法設計』と完全一致する品質基準項目。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "9a086001-69da-4168-951c-f7b55fd16ebb"
-                ],
+                "elementIds": [],
                 "order": 6,
                 "suggestedTypes": [],
                 "metadata": {
@@ -4720,12 +4587,10 @@
                 "id": "slu-c8c4e429a192bb3b09c8dae98a92ffc7cc95006e3f846c0e1e8cbe8e9bb68d9f",
                 "pageId": "4c84b90d-53fc-4190-b7d7-5c7e45d36f92",
                 "quote": "短絡抵抗・発熱量による安全性確認",
-                "status": "covered",
-                "reason": "「短絡抵抗・発熱量による安全性確認」はp2目次由来の既存要求『1-1-3 短絡抵抗・発熱量による安全性確認』と完全一致する品質基準項目。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "671614b4-484e-46c8-a0ee-01ba258fb022"
-                ],
+                "elementIds": [],
                 "order": 7,
                 "suggestedTypes": [],
                 "metadata": {
@@ -4768,12 +4633,10 @@
                 "id": "slu-521023db3ce7cf3b5fca5eea133a5cdc71aaef4dc8342201f7a2839b5753d711",
                 "pageId": "4c84b90d-53fc-4190-b7d7-5c7e45d36f92",
                 "quote": "2 パック設計基準",
-                "status": "covered",
-                "reason": "「2 パック設計基準」はp2目次由来の既存要求『パック設計基準』と同一の区分（品質基準番号体系2）を指す。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "4f58c21f-b87e-43c4-9991-f5b3230bc142"
-                ],
+                "elementIds": [],
                 "order": 8,
                 "suggestedTypes": [],
                 "metadata": {
@@ -4816,12 +4679,10 @@
                 "id": "slu-1d1fd6cd7d934836ca6a67f525a3b386803ee2b95e42c1cf86e745a2398ca728",
                 "pageId": "4c84b90d-53fc-4190-b7d7-5c7e45d36f92",
                 "quote": "2-1 外部入力／水侵入対策",
-                "status": "covered",
-                "reason": "「2-1 外部入力／水侵入対策」はp2目次由来の既存要求『2-1. 内部入力/水侵入対策』と同一の品質基準項目2-1区分を指す（入力の向き表記の差異はあるが同一番号体系）。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "48cf59c4-5ed1-4aa3-b3c1-2b05d942d46d"
-                ],
+                "elementIds": [],
                 "order": 9,
                 "suggestedTypes": [],
                 "metadata": {
@@ -4864,12 +4725,10 @@
                 "id": "slu-df8c4a3a99997d727d37582ca6d242a37db085854b66e1389e826d6e51a21329",
                 "pageId": "4c84b90d-53fc-4190-b7d7-5c7e45d36f92",
                 "quote": "路面干渉保護",
-                "status": "covered",
-                "reason": "「路面干渉保護」はp2目次由来の既存要求『2-1-1 路面干渉対策』と同一の品質基準項目2-1-1を表す。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "c0436870-6168-4d19-9d07-bd330e1edda5"
-                ],
+                "elementIds": [],
                 "order": 10,
                 "suggestedTypes": [],
                 "metadata": {
@@ -4912,12 +4771,10 @@
                 "id": "slu-65a0064fa7355df0da00850c2f5806cdbbef3855a50ba4f332b2fd2012125d81",
                 "pageId": "4c84b90d-53fc-4190-b7d7-5c7e45d36f92",
                 "quote": "サービス、解体作業性",
-                "status": "covered",
-                "reason": "「サービス、解体作業性」はp2目次由来の既存要求『2-1-2 サービス解体作業』と同一の品質基準項目2-1-2を表す。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "d0b45656-c53e-4676-9ceb-25f38e74bfbb"
-                ],
+                "elementIds": [],
                 "order": 11,
                 "suggestedTypes": [],
                 "metadata": {
@@ -4960,12 +4817,10 @@
                 "id": "slu-0846ca5d21f57ec990a75644e9d9bb3f537fcb1faf4ef56d1d988d02dda0e4bc",
                 "pageId": "4c84b90d-53fc-4190-b7d7-5c7e45d36f92",
                 "quote": "パック防滴",
-                "status": "covered",
-                "reason": "「パック防滴」はp2目次由来の既存要求『2-1-3 パック防塵』と同一の品質基準番号2-1-3に位置する防護性能項目（表記揺れとして同一番号体系で統一管理）。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "a5dd34a1-2c80-489d-bc44-1df90576d6b6"
-                ],
+                "elementIds": [],
                 "order": 12,
                 "suggestedTypes": [],
                 "metadata": {
@@ -5008,12 +4863,10 @@
                 "id": "slu-1ddf5b717dde93c3aff95feef5b70addbe0aee54903a2522df932478b8d4c880",
                 "pageId": "4c84b90d-53fc-4190-b7d7-5c7e45d36f92",
                 "quote": "パック防水、検査基準",
-                "status": "covered",
-                "reason": "「パック防水、検査基準」はp2目次由来の既存要求『2-1-4 パック防水』と同一の品質基準項目2-1-4を表す。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "d3e1cd30-68c1-4924-a8b0-555360ce3a46"
-                ],
+                "elementIds": [],
                 "order": 13,
                 "suggestedTypes": [],
                 "metadata": {
@@ -5056,12 +4909,10 @@
                 "id": "slu-0c54702ad2adfff18d6d0017a35f3747c07579440a862869e4ea69fa4d18ba73",
                 "pageId": "4c84b90d-53fc-4190-b7d7-5c7e45d36f92",
                 "quote": "2-2 内部水発生対策",
-                "status": "covered",
-                "reason": "「2-2 内部水発生対策」はp2目次由来の既存要求『2-2. 内部水発生対策』と同一の品質基準項目2-2区分を表す。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "ee2e2929-7492-4f8f-95fd-7cc478ffb15a"
-                ],
+                "elementIds": [],
                 "order": 14,
                 "suggestedTypes": [],
                 "metadata": {
@@ -5104,12 +4955,10 @@
                 "id": "slu-66a1698b0ca9f0cf9be4cddd781f597f1277f22d3f94f6618647967db167aaf2",
                 "pageId": "4c84b90d-53fc-4190-b7d7-5c7e45d36f92",
                 "quote": "結露コントロール",
-                "status": "covered",
-                "reason": "「結露コントロール」は2-2内部水発生対策の具体的対策であり、p2目次由来の既存要求『2-2-1 内部水発生対策』に包含される内容。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "98ac6952-1c71-43c7-b4cb-b838f1636056"
-                ],
+                "elementIds": [],
                 "order": 15,
                 "suggestedTypes": [],
                 "metadata": {
@@ -5152,12 +5001,10 @@
                 "id": "slu-d672b2b2add0eccbaf64bd662e9876c4dbb446a09eec00ab99f64db53d2d2fc4",
                 "pageId": "4c84b90d-53fc-4190-b7d7-5c7e45d36f92",
                 "quote": "冷却器搭載／LLC",
-                "status": "covered",
-                "reason": "「冷却器搭載／LLC」は2-2内部水発生対策の具体的対策であり、p2目次由来の既存要求『2-2-1 内部水発生対策』に包含される内容。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "98ac6952-1c71-43c7-b4cb-b838f1636056"
-                ],
+                "elementIds": [],
                 "order": 16,
                 "suggestedTypes": [],
                 "metadata": {
@@ -5200,12 +5047,10 @@
                 "id": "slu-88a36870b76209093811b2569c0ad3a74003d92f96ce6f407edc4fca033e5522",
                 "pageId": "4c84b90d-53fc-4190-b7d7-5c7e45d36f92",
                 "quote": "2-3 水入り耐性",
-                "status": "covered",
-                "reason": "「2-3 水入り耐性」はp2由来の既存要求ツリー（パック設計基準配下は2-1・2-2・2-4のみで2-3が存在しない）には無い新規の品質基準区分であり、本ページで新規作成したRequirementで表現した。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "351219ef-6019-4a60-a8ca-0bb3dafa07a4"
-                ],
+                "elementIds": [],
                 "order": 17,
                 "suggestedTypes": [],
                 "metadata": {
@@ -5248,12 +5093,10 @@
                 "id": "slu-55e23c79a7fbe0bcab4232a5c2678beb244a9d6e5c3d59f4ae23702e6f5db513",
                 "pageId": "4c84b90d-53fc-4190-b7d7-5c7e45d36f92",
                 "quote": "スタック／セルフィルム",
-                "status": "covered",
-                "reason": "「スタック／セルフィルム」は2-3水入り耐性区分の具体的な品質基準項目で、既存モデルに対応要素が無いため新規作成した。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "89bf4640-4c14-4a7a-9460-e9547f1972a4"
-                ],
+                "elementIds": [],
                 "order": 18,
                 "suggestedTypes": [],
                 "metadata": {
@@ -5296,12 +5139,10 @@
                 "id": "slu-26882436dcfdd4bbabbaf90b11ad084e81d9990a08bd29ca01c302bebf17e762",
                 "pageId": "4c84b90d-53fc-4190-b7d7-5c7e45d36f92",
                 "quote": "J/B設計基準（レイアウト、絶縁距離、水入り検知）",
-                "status": "covered",
-                "reason": "「J/B設計基準（レイアウト、絶縁距離、水入り検知）」は2-3水入り耐性区分の具体的な品質基準項目で、既存モデルに対応要素が無いため新規作成した。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "1aeff6a3-16c1-46e9-bb6f-8bcdb2108112"
-                ],
+                "elementIds": [],
                 "order": 19,
                 "suggestedTypes": [],
                 "metadata": {
@@ -5344,12 +5185,10 @@
                 "id": "slu-546d96a160395a2f8030e3d6abc07f9206c9b6031285f1b3f286a858167f1bef",
                 "pageId": "4c84b90d-53fc-4190-b7d7-5c7e45d36f92",
                 "quote": "水入り検知",
-                "status": "covered",
-                "reason": "「水入り検知」は2-3水入り耐性区分の具体的な品質基準項目（3-1-1制御区分の『水入り検知、表示』とは別の文脈）で、既存モデルに対応要素が無いため新規作成した。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "c98dcc85-f268-490a-98ce-89da8af8a02f"
-                ],
+                "elementIds": [],
                 "order": 20,
                 "suggestedTypes": [],
                 "metadata": {
@@ -5392,12 +5231,10 @@
                 "id": "slu-262e77c569930bbd50509bd538742c671dd2d99fff5a18f193b005032e5a50b7",
                 "pageId": "4c84b90d-53fc-4190-b7d7-5c7e45d36f92",
                 "quote": "2-4 複合評価基準",
-                "status": "covered",
-                "reason": "「2-4 複合評価基準」はp2目次由来の既存要求『複合評価基準』と同一の品質基準項目2-4区分を表す。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "30950e8c-1fa7-4322-9d62-c3a8e4a78919"
-                ],
+                "elementIds": [],
                 "order": 21,
                 "suggestedTypes": [],
                 "metadata": {
@@ -5440,12 +5277,10 @@
                 "id": "slu-5237ce2d19b68f81afa3ba9ec0974e8b3f9f08cf24d7e65b7bb9e9c75b22a9fb",
                 "pageId": "4c84b90d-53fc-4190-b7d7-5c7e45d36f92",
                 "quote": "ダメージ試験（路面干渉、軽衝突）＋水入り",
-                "status": "covered",
-                "reason": "「ダメージ試験（路面干渉、軽衝突）＋水入り」は2-4複合評価基準の具体的な評価シナリオで、p2目次由来の既存要求『2-4-1 複合評価基準』に包含される内容。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "a493c90f-b281-4c1e-9cd4-8428e51d674d"
-                ],
+                "elementIds": [],
                 "order": 22,
                 "suggestedTypes": [],
                 "metadata": {
@@ -5488,12 +5323,10 @@
                 "id": "slu-e213a174167ac7e4724b4fc1f230d8fe7d41ba402d77c64331a9c389ba61bed8",
                 "pageId": "4c84b90d-53fc-4190-b7d7-5c7e45d36f92",
                 "quote": "特殊試験（路面干渉、高波路、圧壊）＋水入り",
-                "status": "covered",
-                "reason": "「特殊試験（路面干渉、高波路、圧壊）＋水入り」は2-4複合評価基準の具体的な評価シナリオで、p2目次由来の既存要求『2-4-1 複合評価基準』に包含される内容。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "a493c90f-b281-4c1e-9cd4-8428e51d674d"
-                ],
+                "elementIds": [],
                 "order": 23,
                 "suggestedTypes": [],
                 "metadata": {
@@ -5536,12 +5369,10 @@
                 "id": "slu-b335c476aaf4684626584e50db8dad4471066982f6ba1e5dce06e0f7b7ccde03",
                 "pageId": "4c84b90d-53fc-4190-b7d7-5c7e45d36f92",
                 "quote": "3 制御",
-                "status": "covered",
-                "reason": "「3 制御」はp2目次由来の既存要求『制御』と同一の品質基準項目3区分を表す。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "a19092d0-b0e6-4288-ad88-eb05edae2cb1"
-                ],
+                "elementIds": [],
                 "order": 24,
                 "suggestedTypes": [],
                 "metadata": {
@@ -5584,12 +5415,10 @@
                 "id": "slu-d51a1d18724bbd735abdeb1c6b42bfd4873fe4ee8c23e4bb1076e089690a7d5e",
                 "pageId": "4c84b90d-53fc-4190-b7d7-5c7e45d36f92",
                 "quote": "水入り検知、表示",
-                "status": "covered",
-                "reason": "「水入り検知、表示」は3-1-1電池制御の具体的な制御対応項目で、既存モデルに対応する詳細要素が無いため新規作成した。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "f0c1866a-3673-4b44-8b10-9b824e154d13"
-                ],
+                "elementIds": [],
                 "order": 25,
                 "suggestedTypes": [],
                 "metadata": {
@@ -5632,12 +5461,10 @@
                 "id": "slu-c3660127760c3b58d95c8a550d4ace74abacb38c952c662680c3f0533b724e3a",
                 "pageId": "4c84b90d-53fc-4190-b7d7-5c7e45d36f92",
                 "quote": "過充電",
-                "status": "covered",
-                "reason": "「過充電」は3-1-1電池制御の具体的な制御対応項目で、既存モデルに対応する詳細要素が無いため新規作成した。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "af6fcb53-4fe9-443f-8945-433d1a5818b7"
-                ],
+                "elementIds": [],
                 "order": 26,
                 "suggestedTypes": [],
                 "metadata": {
@@ -5680,12 +5507,10 @@
                 "id": "slu-6e7ff4db6e392719aef4c75142b651ee99eeb993b416dedb243b7220e3258755",
                 "pageId": "4c84b90d-53fc-4190-b7d7-5c7e45d36f92",
                 "quote": "過熱",
-                "status": "covered",
-                "reason": "「過熱」は3-1-1電池制御の具体的な制御対応項目で、既存モデルに対応する詳細要素が無いため新規作成した。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "dbe8eefb-27a6-4cf3-beda-0b247c811f9b"
-                ],
+                "elementIds": [],
                 "order": 27,
                 "suggestedTypes": [],
                 "metadata": {
@@ -6361,12 +6186,10 @@
                 "id": "slu-fa4ea7c1974b922f68f31ad4f926a4ad50acbbefc82587b0c9422d680c3e8c49",
                 "pageId": "5b445c64-7349-4d2b-98db-ccaa1ebfe205",
                 "quote": "セル・電池パックで保護・防止する状態 \t1-1-1 \t設計標準を考慮した電極設計",
-                "status": "covered",
-                "reason": "セル・電池パックで保護・防止する状態の品質基準項目1-1-1『設計標準を考慮した電極設計』。既存の目次由来要求『1-1-1 セル異物内発熱』(1-1-1 セル異物内発熱)を同一番号体系の要求として維持しつつ、本文の詳細内容を子要求として追加した。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "a19a39c5-525b-48a0-8786-1a67bbec2acb"
-                ],
+                "elementIds": [],
                 "order": 3,
                 "suggestedTypes": [],
                 "metadata": {
@@ -6409,12 +6232,10 @@
                 "id": "slu-91c91a88903aa755bd91827b9cc8adb8141d90dde1eb246482ca6796311228d3",
                 "pageId": "5b445c64-7349-4d2b-98db-ccaa1ebfe205",
                 "quote": "1-1-2 \t設計標準を考慮した電極寸法設計",
-                "status": "covered",
-                "reason": "品質基準項目1-1-2『設計標準を考慮した電極寸法設計』。既存要求『1-1-2 電極寸法設計』(1-1-2 電極寸法設計)の子要求として詳細内容を追加。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "d1ba8597-1849-4b59-be02-769d578590af"
-                ],
+                "elementIds": [],
                 "order": 4,
                 "suggestedTypes": [],
                 "metadata": {
@@ -6457,12 +6278,10 @@
                 "id": "slu-5cf9e2bd31d3d8b5aba16ac4a1458b1057c22db03c5fdcc8e913789e962af171",
                 "pageId": "5b445c64-7349-4d2b-98db-ccaa1ebfe205",
                 "quote": "1-1-3 \t立体形状・発生量による安全性確認",
-                "status": "covered",
-                "reason": "品質基準項目1-1-3『立体形状・発生量による安全性確認』。既存要求『1-1-3 短絡抵抗・発熱量による安全性確認』(1-1-3 短絡抵抗・発熱量による安全性確認)の子要求として詳細内容を追加。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "7850e367-0d10-4ca0-8a12-19ee3ca85339"
-                ],
+                "elementIds": [],
                 "order": 5,
                 "suggestedTypes": [],
                 "metadata": {
@@ -6505,12 +6324,10 @@
                 "id": "slu-e951925733e84dbd218bfc44fdca8d900aff3345e9231020ec43152046ea0508",
                 "pageId": "5b445c64-7349-4d2b-98db-ccaa1ebfe205",
                 "quote": "1-1-4 \tセルベース電気安全性",
-                "status": "covered",
-                "reason": "品質基準項目1-1-4『セルベース電気安全性』。p6で新規に定義される項目で、既存要求『セル内発熱の保護基準』(セル内発熱の保護基準、1-1-1〜1-1-3を規定)の子要求として追加した。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "370ed442-1838-4486-ac30-530c26a5f115"
-                ],
+                "elementIds": [],
                 "order": 6,
                 "suggestedTypes": [],
                 "metadata": {
@@ -6553,12 +6370,10 @@
                 "id": "slu-f2b4ea7fd29bb87465ba9a0ae42e975bfea0b72c71b27c7930aa5e403aa98936",
                 "pageId": "5b445c64-7349-4d2b-98db-ccaa1ebfe205",
                 "quote": "工程での発生・流出防止 \t \t画像検査による発生防止・流出防止 \t \t異物サイズと検査員の関係を考慮した検査",
-                "status": "covered",
-                "reason": "1-1-4セルベース電気安全性の工程での対応策（画像検査による発生・流出防止、異物サイズと検査員の関係を考慮した検査）。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "c1e2cf43-fa97-4b24-afa1-5df6612e9bc0"
-                ],
+                "elementIds": [],
                 "order": 7,
                 "suggestedTypes": [],
                 "metadata": {
@@ -6761,12 +6576,10 @@
                 "id": "slu-1a8ec609b52128e213b4917473f3a54f188cc2c5d97463f3339a4cc0c6c401ec",
                 "pageId": "5b445c64-7349-4d2b-98db-ccaa1ebfe205",
                 "quote": "1-1-1：セルの発生",
-                "status": "covered",
-                "reason": "品質基準項目1-1-1の物理現象側面『セルの発生』。品質基準項目1-1-1（既存要求『1-1-1 セル異物内発熱』1-1-1 セル異物内発熱、その子要求1-1-1 設計標準を考慮した電極設計）が扱うTOP事象/物理現象としての説明。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "a19a39c5-525b-48a0-8786-1a67bbec2acb"
-                ],
+                "elementIds": [],
                 "order": 12,
                 "suggestedTypes": [],
                 "metadata": {
@@ -6809,12 +6622,10 @@
                 "id": "slu-7e45bc181a0d69a397f759b76628a0306af0e22bc7e34c95a229dd3bd0809e49",
                 "pageId": "5b445c64-7349-4d2b-98db-ccaa1ebfe205",
                 "quote": "1-1-2：異物セルの発生",
-                "status": "covered",
-                "reason": "品質基準項目1-1-2の物理現象側面『異物セルの発生』。品質基準項目1-1-2（既存要求1-1-2 電極寸法設計、その子要求1-1-2 設計標準を考慮した電極寸法設計）が扱うTOP事象/物理現象としての説明。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "d1ba8597-1849-4b59-be02-769d578590af"
-                ],
+                "elementIds": [],
                 "order": 13,
                 "suggestedTypes": [],
                 "metadata": {
@@ -6857,12 +6668,10 @@
                 "id": "slu-9162a55a07176188ceb52eb8e415f9a969962a771af59ea851d13d53b1891718",
                 "pageId": "5b445c64-7349-4d2b-98db-ccaa1ebfe205",
                 "quote": "1-1-3：セル破損",
-                "status": "covered",
-                "reason": "品質基準項目1-1-3の物理現象側面『セル破損』。品質基準項目1-1-3（既存要求1-1-3 短絡抵抗・発熱量による安全性確認、その子要求1-1-3 立体形状・発生量による安全性確認）が扱うTOP事象/物理現象としての説明。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "7850e367-0d10-4ca0-8a12-19ee3ca85339"
-                ],
+                "elementIds": [],
                 "order": 14,
                 "suggestedTypes": [],
                 "metadata": {
@@ -6905,12 +6714,10 @@
                 "id": "slu-cde57086585dda438cdfbefa9010256ea3226e0573cf79c7120b7a471ccb7090",
                 "pageId": "5b445c64-7349-4d2b-98db-ccaa1ebfe205",
                 "quote": "1-1-4：セル破損による電気的短絡",
-                "status": "covered",
-                "reason": "品質基準項目1-1-4の物理現象側面『セル破損による電気的短絡』。新規要求1-1-4 セルベース電気安全性が表す対象と同一。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "370ed442-1838-4486-ac30-530c26a5f115"
-                ],
+                "elementIds": [],
                 "order": 15,
                 "suggestedTypes": [],
                 "metadata": {
@@ -6953,12 +6760,10 @@
                 "id": "slu-368b4036010d69e47487a784173bf058d15ad5615891f71f74fe82641c624160",
                 "pageId": "5b445c64-7349-4d2b-98db-ccaa1ebfe205",
                 "quote": "※1-1-4について",
-                "status": "covered",
-                "reason": "注記見出し『※1-1-4について』。直後のu17の本文とあわせて1-1-4要求の正式な要求文の導入部。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "370ed442-1838-4486-ac30-530c26a5f115"
-                ],
+                "elementIds": [],
                 "order": 16,
                 "suggestedTypes": [],
                 "metadata": {
@@ -7001,12 +6806,10 @@
                 "id": "slu-5dd203543c03770b11e7960332188c166f98a9f4e1ec44129ab369dc1733bde3",
                 "pageId": "5b445c64-7349-4d2b-98db-ccaa1ebfe205",
                 "quote": "事象で想定される状態入力に対して、セル破損による電気的な短絡が発生し、セルの安全性基準を満足すること。",
-                "status": "covered",
-                "reason": "1-1-4要求の本文そのもの『事象で想定される状態入力に対して、セル破損による電気的な短絡が発生し、セルの安全性基準を満足すること。』。",
+                "status": "uncovered",
+                "reason": "対応するモデル要素が削除されたため、再モデル化が必要です",
                 "exclusionKind": "",
-                "elementIds": [
-                    "370ed442-1838-4486-ac30-530c26a5f115"
-                ],
+                "elementIds": [],
                 "order": 17,
                 "suggestedTypes": [],
                 "metadata": {
@@ -8340,11 +8143,11 @@
         ],
         "stats": {
             "total": 202,
-            "covered": 97,
+            "covered": 0,
             "excluded": 37,
-            "uncovered": 68,
-            "coverageRate": 0.6634,
-            "modeledRate": 0.4802
+            "uncovered": 165,
+            "coverageRate": 0.1832,
+            "modeledRate": 0.0
         },
         "metadata": {
             "sourceLedger": {

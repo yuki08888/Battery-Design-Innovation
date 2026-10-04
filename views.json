@@ -300,6 +300,27 @@
             "parent_id": "",
             "icon_key": "DescriptionOutlined",
             "icon_color": null
+        },
+        {
+            "id": "081f4a09-e68f-4b31-b1b5-990e0db5711c",
+            "name": "HVG9280-01__",
+            "parent_id": "",
+            "icon_key": "DescriptionOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "73e7e90d-641d-449e-9a93-a0329771adaf",
+            "name": "HVG96N6-01",
+            "parent_id": "",
+            "icon_key": "DescriptionOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "f409a5f7-f5b3-4b07-a3f7-a1e7443df025",
+            "name": "HVG96N6-01",
+            "parent_id": "",
+            "icon_key": "DescriptionOutlined",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [
@@ -323,10 +344,10 @@
         "9e0999fe-899e-4d7f-b690-ce16f028758b",
         "43f4d071-ea21-4c66-9f88-55da09326154",
         "dfe52c73-7733-465d-9e5d-ba0415e52256",
-        "63d4c60f-3cf7-460c-a938-1d7a0d726411",
-        "4775478e-d839-42e8-b896-6af53c862b6f"
+        "081f4a09-e68f-4b31-b1b5-990e0db5711c",
+        "f409a5f7-f5b3-4b07-a3f7-a1e7443df025"
     ],
-    "current_view_id": "4775478e-d839-42e8-b896-6af53c862b6f",
+    "current_view_id": "081f4a09-e68f-4b31-b1b5-990e0db5711c",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,
