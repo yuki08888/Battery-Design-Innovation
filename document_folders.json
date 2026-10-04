@@ -3,96 +3,244 @@
         "id": "44bdc825-c38f-48fa-9544-396e448f1264",
         "name": "UNR100j.md",
         "item_type": "document",
-        "parent_id": null,
-        "order": 1,
+        "parent_id": "3aa8ae56-0a7c-4ae5-a9e9-71727f3d8159",
+        "order": 0,
         "document_id": "4fee6958-f064-4cf8-9777-2fa6fcb3c887"
     },
     {
         "id": "8ac77d97-380a-42a3-83cd-1497404e0a91",
         "name": "SH25-0018(FMVSS305a).md",
         "item_type": "document",
-        "parent_id": null,
-        "order": 2,
+        "parent_id": "3aa8ae56-0a7c-4ae5-a9e9-71727f3d8159",
+        "order": 0,
         "document_id": "6a218b48-6d4f-466b-88f4-6f214ebf4490"
     },
     {
         "id": "272ea8f6-0a95-4b4b-baed-3a55a226b0f0",
         "name": "GB38031-2025.md",
         "item_type": "document",
-        "parent_id": null,
-        "order": 3,
+        "parent_id": "3aa8ae56-0a7c-4ae5-a9e9-71727f3d8159",
+        "order": 0,
         "document_id": "6d242417-9e35-4022-89c5-5658f40a05cc"
     },
     {
         "id": "da9d1404-825b-4040-9e12-c55f3e3fdacb",
         "name": "BBM要求仕様書_241209改訂",
         "item_type": "document",
-        "parent_id": null,
-        "order": 4,
+        "parent_id": "0f3161c4-597d-46b4-8bc5-caa583f2dc85",
+        "order": 0,
         "document_id": "2bbc8b71-e60f-401f-be02-1e1d0ecba96a"
     },
     {
         "id": "83f5cde3-5be2-4489-9252-263f803eb389",
         "name": "絶縁カバー要求仕様",
         "item_type": "document",
-        "parent_id": null,
-        "order": 5,
+        "parent_id": "0f3161c4-597d-46b4-8bc5-caa583f2dc85",
+        "order": 0,
         "document_id": "09051b6b-04fa-4548-8d4f-3b690786438b"
     },
     {
         "id": "76c32e80-40ee-4b83-a0c2-5e690cb03b2c",
         "name": "熱拡散　隣接セル　yaml",
         "item_type": "document",
-        "parent_id": null,
-        "order": 7,
+        "parent_id": "0101e8af-39e4-411c-ba32-ade36c42ba5f",
+        "order": 0,
         "document_id": "7c515b23-3fa6-479c-9111-cef1bf0556aa"
     },
     {
         "id": "e2b77c68-6a23-43c0-8ec6-91c2ab8b80f9",
         "name": "KMVSS_外部短絡_48.7.4",
         "item_type": "document",
-        "parent_id": null,
-        "order": 8,
+        "parent_id": "3aa8ae56-0a7c-4ae5-a9e9-71727f3d8159",
+        "order": 0,
         "document_id": "ca6c8abf-f3fb-4033-8b16-7b9d18673c1c"
     },
     {
         "id": "00ac883a-0053-438d-8e72-6697293b2d55",
         "name": "AIS 038 Revision 02 Draft Amendment 04_December 09th 2024_EN",
         "item_type": "document",
-        "parent_id": null,
-        "order": 9,
+        "parent_id": "3aa8ae56-0a7c-4ae5-a9e9-71727f3d8159",
+        "order": 0,
         "document_id": "58410990-d450-4b34-9881-db3e4ca50e04"
     },
     {
         "id": "d5d9f1b1-48d9-45e6-a4b2-f7aacf7dcfe2",
         "name": "UAE法規原文(英語)_2026",
         "item_type": "document",
-        "parent_id": null,
-        "order": 10,
+        "parent_id": "3aa8ae56-0a7c-4ae5-a9e9-71727f3d8159",
+        "order": 0,
         "document_id": "9418aace-0281-4d41-ba43-349bd4135ea8"
     },
     {
         "id": "0b22cfe2-350b-4640-bfa0-07f27dade1d9",
         "name": "SASO法規原文(英語)_2026",
         "item_type": "document",
-        "parent_id": null,
-        "order": 11,
+        "parent_id": "3aa8ae56-0a7c-4ae5-a9e9-71727f3d8159",
+        "order": 0,
         "document_id": "f3b9ab7a-52bb-4722-a35f-38499ad88ecc"
     },
     {
         "id": "19c7d34f-0569-4b78-b3ae-026c047696c8",
         "name": "ISO6469-1",
         "item_type": "document",
-        "parent_id": null,
-        "order": 12,
+        "parent_id": "3aa8ae56-0a7c-4ae5-a9e9-71727f3d8159",
+        "order": 0,
         "document_id": "66fde844-0506-4fc8-afbe-286eaae76b5b"
     },
     {
         "id": "cd121852-2d52-484d-8a90-64d2dde6f06c",
         "name": "UN 38.3 Li 輸送法規",
         "item_type": "document",
-        "parent_id": null,
-        "order": 13,
+        "parent_id": "3aa8ae56-0a7c-4ae5-a9e9-71727f3d8159",
+        "order": 0,
         "document_id": "41ebf05e-f08a-44e9-bb91-4ecf198566c6"
+    },
+    {
+        "id": "3fa9db92-d6a7-462f-8fb0-76df9bda52cf",
+        "name": "BEV/PHEVモジュール設計標準書（HVG9601-01）",
+        "item_type": "document",
+        "parent_id": "0f3161c4-597d-46b4-8bc5-caa583f2dc85",
+        "order": 0,
+        "document_id": "c732941a-a42d-4e5d-809e-bdae422b9541"
+    },
+    {
+        "id": "ce99c45d-49ed-4eff-a09e-b792ebb9661e",
+        "name": "HVG9691-01_高圧バスバー設計標準書",
+        "item_type": "document",
+        "parent_id": "e3be2160-d759-4b37-9b51-aadc1d110b6d",
+        "order": 0,
+        "document_id": "c19c375f-7283-452b-8940-a09a0bf002e2"
+    },
+    {
+        "id": "c19bc1e1-cc56-4e23-bce8-1e12a1a736bf",
+        "name": "0_品質基準_全体まとめ_210331",
+        "item_type": "document",
+        "parent_id": "e3be2160-d759-4b37-9b51-aadc1d110b6d",
+        "order": 1,
+        "document_id": "a24b60bb-baf9-4608-bfa9-d4db34420284"
+    },
+    {
+        "id": "74456eff-b11a-4239-975c-f77a8d21aae1",
+        "name": "2-1-1_品質基準_路面干渉_210331",
+        "item_type": "document",
+        "parent_id": "e3be2160-d759-4b37-9b51-aadc1d110b6d",
+        "order": 2,
+        "document_id": "9f22c0a7-4c6a-476c-b62b-d78d182785d4"
+    },
+    {
+        "id": "b2c649e9-c928-4f49-a18f-d6f6a29af1da",
+        "name": "2-1-2_品質基準_サービス解体作業_210331",
+        "item_type": "document",
+        "parent_id": "e3be2160-d759-4b37-9b51-aadc1d110b6d",
+        "order": 3,
+        "document_id": "26497b35-a2dd-4a8c-b6d3-37dd188696f5"
+    },
+    {
+        "id": "ef372012-6d73-489f-8bb4-3024b7382a9f",
+        "name": "2-1-3_品質基準_パック防錆_210331",
+        "item_type": "document",
+        "parent_id": "e3be2160-d759-4b37-9b51-aadc1d110b6d",
+        "order": 4,
+        "document_id": "859cfd19-94fd-41be-931e-7a8ea78af8ce"
+    },
+    {
+        "id": "7f59b49a-71a7-4e93-92f4-1be668350520",
+        "name": "2-1-4_品質基準_パック防水_210331",
+        "item_type": "document",
+        "parent_id": "e3be2160-d759-4b37-9b51-aadc1d110b6d",
+        "order": 5,
+        "document_id": "90043522-7036-4eb1-947c-300f7d577df8"
+    },
+    {
+        "id": "649a5af7-6b7b-4232-a183-470e8c3883c9",
+        "name": "2-4-1_品質基準_複合評価基準_210331",
+        "item_type": "document",
+        "parent_id": "e3be2160-d759-4b37-9b51-aadc1d110b6d",
+        "order": 6,
+        "document_id": "f22926a3-191f-4f06-98f2-6aff832d0c05"
+    },
+    {
+        "id": "567c7dd8-93d7-4594-87ae-b67a860779c8",
+        "name": "BV-D-05電池パック強度・安全評価　設計標準書",
+        "item_type": "document",
+        "parent_id": "e3be2160-d759-4b37-9b51-aadc1d110b6d",
+        "order": 7,
+        "document_id": "cda71b45-5bb7-4621-b7b7-1bdafef28542"
+    },
+    {
+        "id": "7524fe4c-f2a4-4d72-b1d8-aec781555239",
+        "name": "BV-D-11　アッパー断熱",
+        "item_type": "document",
+        "parent_id": "e3be2160-d759-4b37-9b51-aadc1d110b6d",
+        "order": 8,
+        "document_id": "fd979ada-ee8c-4537-9563-9e3fa5789ffb"
+    },
+    {
+        "id": "7e89fdb7-e727-4f15-bd2d-88b9dde7c1b0",
+        "name": "2-3-3_品質基準_水入り検知_210331",
+        "item_type": "document",
+        "parent_id": "e3be2160-d759-4b37-9b51-aadc1d110b6d",
+        "order": 10,
+        "document_id": "3a6575cb-e57c-466a-90c9-019b0e717c99"
+    },
+    {
+        "id": "53880e7e-bfe2-4de1-bea9-eb20d6a2d964",
+        "name": "BV-D-12　排煙バルブ",
+        "item_type": "document",
+        "parent_id": "e3be2160-d759-4b37-9b51-aadc1d110b6d",
+        "order": 11,
+        "document_id": "01201df8-fe42-42cd-a72c-382dc1921cd1"
+    },
+    {
+        "id": "e372de0a-031f-403e-a606-719950611ae5",
+        "name": "HVG9280-01__",
+        "item_type": "document",
+        "parent_id": "e3be2160-d759-4b37-9b51-aadc1d110b6d",
+        "order": 12,
+        "document_id": "a71c9717-5f17-44a9-ad9e-a9c1bfc24408"
+    },
+    {
+        "id": "b6530dcb-c622-4520-9e2f-2cac623d3f07",
+        "name": "HVG96N6-01",
+        "item_type": "document",
+        "parent_id": "e3be2160-d759-4b37-9b51-aadc1d110b6d",
+        "order": 14,
+        "document_id": "cda224d6-05a2-4e70-bb3e-ad2359122266"
+    },
+    {
+        "id": "3aa8ae56-0a7c-4ae5-a9e9-71727f3d8159",
+        "name": "法規",
+        "item_type": "folder",
+        "parent_id": null,
+        "order": 15
+    },
+    {
+        "id": "f7be037d-1d04-42ec-8283-6f2d89de0af2",
+        "name": "HVG928G-01",
+        "item_type": "document",
+        "parent_id": "e3be2160-d759-4b37-9b51-aadc1d110b6d",
+        "order": 15,
+        "document_id": "fce2062a-3c0d-42eb-98ed-38f6f5f609b5"
+    },
+    {
+        "id": "0f3161c4-597d-46b4-8bc5-caa583f2dc85",
+        "name": "要求仕様",
+        "item_type": "folder",
+        "parent_id": null,
+        "order": 16
+    },
+    {
+        "id": "e3be2160-d759-4b37-9b51-aadc1d110b6d",
+        "name": "標準",
+        "item_type": "folder",
+        "parent_id": null,
+        "order": 17
+    },
+    {
+        "id": "0101e8af-39e4-411c-ba32-ade36c42ba5f",
+        "name": "機能ブロック図",
+        "item_type": "folder",
+        "parent_id": null,
+        "order": 18
     }
 ]

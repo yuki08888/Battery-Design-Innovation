@@ -1,1 +1,58 @@
-[]
+[
+    {
+        "id": "del-2778cb231bea",
+        "deletedAt": "2026-10-02T19:40:55.177471",
+        "operator": "ai",
+        "actor": null,
+        "reasoning": null,
+        "session": {
+            "id": "chat:e9424366-127a-4751-8e10-a24b6ad0ee86",
+            "kind": "chat",
+            "label": "SMRをJ/Bの構成部品に設定してください。",
+            "startedAt": "2026-10-02T19:39:50.805187"
+        },
+        "reviewed": false,
+        "elements": [
+            {
+                "id": "e55bb2d1-2837-4e70-a9f0-4e33efcaadc6",
+                "name": "SMR",
+                "description": "",
+                "type": "part",
+                "multiplicity": "",
+                "defaultValue": "",
+                "direction": null,
+                "stereotypes": [],
+                "metaData": {
+                    "version": 1.0,
+                    "createdBy": "yuki08888",
+                    "createdDate": "2026-10-02T19:36:14.246737",
+                    "ref": null,
+                    "createdOperator": "user"
+                },
+                "className": "Property"
+            },
+            {
+                "id": "d360a703-794b-49c1-bc3f-12bc41fe0f4b",
+                "type": "containment",
+                "sourceId": "6930764b-e76a-425b-ac9c-bf5749edf5cb",
+                "targetId": "e55bb2d1-2837-4e70-a9f0-4e33efcaadc6",
+                "name": null,
+                "description": null,
+                "stereotypes": [],
+                "metaData": {
+                    "version": 1.0,
+                    "createdBy": "yuki08888",
+                    "createdDate": "2026-10-02T19:36:14.346918",
+                    "ref": null,
+                    "createdOperator": "user"
+                },
+                "connectorType": null,
+                "flowType": null,
+                "guard": null,
+                "edgeType": null,
+                "sequenceOrder": null,
+                "className": "Relationship"
+            }
+        ]
+    }
+]
