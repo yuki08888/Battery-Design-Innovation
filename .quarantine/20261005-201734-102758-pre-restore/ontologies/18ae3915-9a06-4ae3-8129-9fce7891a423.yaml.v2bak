@@ -1,0 +1,660 @@
+OntologyName: "標準 SysML/MBSE オントロジー (Battery Design Innovation 拡張版)"
+Version: "2.1.0"
+Domain: "Battery Design Innovationプロジェクトにおけるビジネス要求（取引データの自動化、承認ワークフロー等）およびMBSEの汎用的なモデリング概念・関係・命名規則・ルールを定義する統合オントロジー。"
+
+# ─────────────────────────────────────────────────────────────────────
+# Classes — ドメイン概念と SysML 要素タイプのマッピング
+# ─────────────────────────────────────────────────────────────────────
+Classes:
+  - ClassId: "CLS_001"
+    Name: "システム"
+    ElementType: "Block"
+    Description: "検討対象となるシステム全体 (System-of-Interest)。境界の最上位ブロックで、外部アクター/外部システムと接する。1モデルにつき原則1つ。"
+    Attributes:
+      - key: "purpose"
+        type: "string"
+        description: "システムの目的・存在意義。1〜2文で簡潔に。"
+      - key: "scope"
+        type: "string"
+        description: "対象範囲・境界 (システムが扱う/扱わないものの明示)。"
+      - key: "operationalContext"
+        type: "string"
+        description: "運用環境・使用条件 (温度/電源/通信環境など)。"
+
+  - ClassId: "CLS_002"
+    Name: "サブシステム"
+    ElementType: "Block"
+    Description: "システムを責務単位で分解した中間構造。複数のコンポーネントを束ねる。階層モデリングの中間層として使用。"
+    Attributes:
+      - key: "responsibility"
+        type: "string"
+        description: "サブシステムが担う責務・機能領域 (1文)。"
+      - key: "criticality"
+        type: "enum"
+        description: "重要度。high/medium/low。安全性・可用性に影響する場合は high。"
+
+  - ClassId: "CLS_003"
+    Name: "コンポーネント"
+    ElementType: "Block"
+    Description: "サブシステムを構成する最小の構造単位 (HW/SW モジュール、ECU、サービスなど)。さらに分解しない実装単位。"
+    Attributes:
+      - key: "category"
+        type: "enum"
+        description: "種別。hardware/software/mechanical/service/external。"
+      - key: "supplier"
+        type: "string"
+        description: "供給元 (内製/外部ベンダー名)。任意。"
+
+  - ClassId: "CLS_004"
+    Name: "インターフェース"
+    ElementType: "Property"
+    Description: "ブロック間で情報・エネルギー・物理接続を受け渡す接点 (port/part)。signal/itemFlow の発生源となる。方向 (in/out/inout) を必ず指定する。"
+    Attributes:
+      - key: "type"
+        type: "string"
+        description: "受け渡す対象の型 (Block ID または プリミティブ型名)。"
+      - key: "direction"
+        type: "enum"
+        description: "入出力方向。in/out/inout。"
+      - key: "multiplicity"
+        type: "string"
+        description: "多重度 (例: '1', '0..1', '*', '1..*')。省略時は '1'。"
+      - key: "defaultValue"
+        type: "string"
+        description: "既定値 (任意)。"
+
+  - ClassId: "CLS_005"
+    Name: "要求"
+    ElementType: "Requirement"
+    Description: "システムが満たすべき機能要求・性能要求・制約・非機能要求 (品質要求)。ビジネス要求書等から導出され、検証可能 (testable) な単一要求として記述する。"
+    Attributes:
+      - key: "text"
+        type: "string"
+        description: "要求本文。曖昧語を避け、検証可能な単一文で記述する。"
+      - key: "priority"
+        type: "enum"
+        description: "優先度。must/should/may（またはMust/Want）。"
+      - key: "status"
+        type: "enum"
+        description: "ライフサイクル状態。proposed/approved/implemented/verified/rejected。"
+      - key: "source"
+        type: "string"
+        description: "出典 (ビジネス要求書、規格名、ユースケース、ステークホルダ名など)。"
+      - key: "verificationMethod"
+        type: "enum"
+        description: "検証方法。test/analysis/inspection/demonstration。"
+      - key: "risk"
+        type: "string"
+        description: "リスク評価。"
+
+  - ClassId: "CLS_006"
+    Name: "ユースケース"
+    ElementType: "UseCase"
+    Description: "アクター視点でシステムが提供する価値ある一連の振る舞い。ビジネス目標や自動化シナリオを表現する。"
+    Attributes:
+      - key: "primaryActor"
+        type: "string"
+        description: "主アクター (このユースケースを起動するアクター名)。"
+      - key: "preconditions"
+        type: "array"
+        description: "事前条件のリスト。"
+      - key: "postconditions"
+        type: "array"
+        description: "事後条件のリスト。"
+      - key: "mainScenario"
+        type: "array"
+        description: "基本シナリオの手順 (1ステップ=1文)。"
+
+  - ClassId: "CLS_007"
+    Name: "アクター"
+    ElementType: "Actor"
+    Description: "システムと相互作用する外部主体 (現場オペレーター、管理者、外部基幹システムなど)。"
+    Attributes:
+      - key: "role"
+        type: "string"
+        description: "役割の説明 (このアクターが果たす機能・立場)。"
+      - key: "actorKind"
+        type: "enum"
+        description: "種別。human/external_system/external_device/organization。"
+      - key: "primary"
+        type: "boolean"
+        description: "主アクターか副アクターか (true=主)。"
+
+  - ClassId: "CLS_008"
+    Name: "アクティビティ"
+    ElementType: "Activity"
+    Description: "システムまたはサブシステムが実行する処理の流れ (インポート自動化、承認ワークフロー、リアルタイムエラーチェックなど)。"
+    Attributes:
+      - key: "purpose"
+        type: "string"
+        description: "この振る舞いが達成する目的・成果。"
+      - key: "trigger"
+        type: "string"
+        description: "起動条件・トリガ。"
+      - key: "preconditions"
+        type: "string"
+        description: "事前条件。"
+      - key: "postconditions"
+        type: "string"
+        description: "事後条件。"
+
+  - ClassId: "CLS_009"
+    Name: "状態"
+    ElementType: "State"
+    Description: "ブロックや取引データ、承認ワークフローが取りうる動作モード・内部状態（例：インポート中、承認待ち、承認済、差し戻し中など）。"
+    Attributes:
+      - key: "stateType"
+        type: "enum"
+        description: "状態種別。initial/normal/final。"
+      - key: "entryAction"
+        type: "string"
+        description: "状態に入った直後に実行されるアクション。"
+      - key: "exitAction"
+        type: "string"
+        description: "状態から出る直前に実行されるアクション。"
+
+  - ClassId: "CLS_010"
+    Name: "テストケース"
+    ElementType: "TestCase"
+    Description: "要求（リアルタイムチェック、インポート、暗号化通信等）を検証するための試験観点・手順・合否基準。"
+    Attributes:
+      - key: "objective"
+        type: "string"
+        description: "検証目的 (何を確認するか)。"
+      - key: "preConditions"
+        type: "array"
+        description: "試験前提条件のリスト。"
+      - key: "expectedResults"
+        type: "array"
+        description: "期待結果のリスト (合否判定基準)。"
+      - key: "postConditions"
+        type: "array"
+        description: "事後条件のリスト。"
+      - key: "method"
+        type: "enum"
+        description: "実施方法。test/analysis/inspection/demonstration。"
+      - key: "testSteps"
+        type: "array"
+        description: "個別の試験ステップ列。"
+
+  - ClassId: "CLS_012"
+    Name: "操作"
+    ElementType: "Operation"
+    Description: "ブロックが提供する操作・メソッド・サービス（API連携メソッド、暗号化処理、インポート処理等）。"
+    Attributes:
+      - key: "returnType"
+        type: "string"
+        description: "戻り値の型。"
+      - key: "method"
+        type: "array"
+        description: "実装を担う Activity の ID 配列。"
+      - key: "visibility"
+        type: "enum"
+        description: "可視性。public/protected/private。"
+
+  - ClassId: "CLS_013"
+    Name: "パラメータ"
+    ElementType: "Property"
+    Description: "Operation や Activity の入出力。CSVファイル、暗号化データなどの取引データ等。"
+    Attributes:
+      - key: "type"
+        type: "string"
+        description: "型。"
+      - key: "direction"
+        type: "enum"
+        description: "入出力方向。in/out/inout/return。"
+      - key: "multiplicity"
+        type: "string"
+        description: "多重度。"
+
+  - ClassId: "CLS_014"
+    Name: "パッケージ"
+    ElementType: "Package"
+    Description: "モデル要素を観点やビジネス目標、システム開発フェーズ（フェーズ1、フェーズ2など）ごとに整理するコンテナ。"
+    Attributes:
+      - key: "viewpoint"
+        type: "enum"
+        description: "観点。requirements/structure/behavior/usecase/verification/architecture/domain。"
+
+# ─────────────────────────────────────────────────────────────────────
+# Relationships — ドメイン概念間の関係定義
+# ─────────────────────────────────────────────────────────────────────
+Relationships:
+  # ── 構造分解 (composition / aggregation) ──
+  - Source: "CLS_001"
+    RelationType: "composition"
+    Target: "CLS_002"
+    Description: "システムはサブシステムで構成される (whole-part, ライフサイクル共有)。"
+
+  - Source: "CLS_002"
+    RelationType: "composition"
+    Target: "CLS_003"
+    Description: "サブシステムは複数のコンポーネントから構成される。"
+
+  - Source: "CLS_002"
+    RelationType: "aggregation"
+    Target: "CLS_002"
+    Description: "サブシステム同士の弱い所有関係 (独立存続)。"
+
+  # ── インターフェース・ポート保持 ──
+  - Source: "CLS_002"
+    RelationType: "composition"
+    Target: "CLS_004"
+    Description: "サブシステムは外部接続用または既存社内基幹システム接続用のインターフェースを持つ。"
+
+  - Source: "CLS_003"
+    RelationType: "composition"
+    Target: "CLS_004"
+    Description: "コンポーネントはインターフェース（API等）を持つ。"
+
+  # ── 操作とパラメータ ──
+  - Source: "CLS_002"
+    RelationType: "composition"
+    Target: "CLS_012"
+    Description: "サブシステムは操作 (Operation) を提供する。"
+
+  - Source: "CLS_003"
+    RelationType: "composition"
+    Target: "CLS_012"
+    Description: "コンポーネントは操作を提供する。"
+
+  - Source: "CLS_012"
+    RelationType: "composition"
+    Target: "CLS_013"
+    Description: "操作はパラメータ (引数・戻り値) を持つ。"
+
+  - Source: "CLS_008"
+    RelationType: "composition"
+    Target: "CLS_013"
+    Description: "アクティビティはパラメータ (入出力) を持つ。"
+
+  # ── 汎化・実現 ──
+  - Source: "CLS_003"
+    RelationType: "generalization"
+    Target: "CLS_003"
+    Description: "コンポーネントは特化-汎化の関係を持ちうる。"
+
+  - Source: "CLS_003"
+    RelationType: "realization"
+    Target: "CLS_004"
+    Description: "コンポーネントは定義されたインターフェース仕様（APIなど）を実現する。"
+
+  # ── ユースケース ──
+  - Source: "CLS_007"
+    RelationType: "association"
+    Target: "CLS_006"
+    Description: "アクター（現場オペレーター、管理者）はユースケース（インポート、承認等）を起動または利用する。"
+
+  - Source: "CLS_006"
+    RelationType: "include"
+    Target: "CLS_006"
+    Description: "ユースケースは共通の下位ユースケースを包含する。"
+
+  - Source: "CLS_006"
+    RelationType: "extend"
+    Target: "CLS_006"
+    Description: "ユースケースは別のユースケースを条件付きで拡張する。"
+
+  - Source: "CLS_006"
+    RelationType: "trace"
+    Target: "CLS_005"
+    Description: "ユースケースはビジネス要求（BR-01〜04など）の実現意図にトレースされる。"
+
+  # ── 振る舞いと割当 ──
+  - Source: "CLS_008"
+    RelationType: "refine"
+    Target: "CLS_006"
+    Description: "アクティビティ（承認ワークフロー手順、チェック処理など）はユースケースの基本シナリオを詳細化する。"
+
+  - Source: "CLS_008"
+    RelationType: "refine"
+    Target: "CLS_008"
+    Description: "アクティビティは抽象から詳細へ階層的に精緻化する。"
+
+  - Source: "CLS_008"
+    RelationType: "allocate"
+    Target: "CLS_002"
+    Description: "アクティビティをサブシステムに割り当てる。"
+
+  - Source: "CLS_008"
+    RelationType: "allocate"
+    Target: "CLS_003"
+    Description: "アクティビティを実行主体のコンポーネントに割り当てる。"
+
+  # ── 要求の充足 (satisfy) ──
+  - Source: "CLS_001"
+    RelationType: "satisfy"
+    Target: "CLS_005"
+    Description: "システム全体としての設計が要求（ビジネス要求・セキュリティ制約）を充足する。"
+
+  - Source: "CLS_002"
+    RelationType: "satisfy"
+    Target: "CLS_005"
+    Description: "サブシステムは要求を充足する設計要素である。"
+
+  - Source: "CLS_003"
+    RelationType: "satisfy"
+    Target: "CLS_005"
+    Description: "コンポーネントは要求（リアルタイム型チェック、暗号化処理など）を充足する。"
+
+  - Source: "CLS_008"
+    RelationType: "satisfy"
+    Target: "CLS_005"
+    Description: "アクティビティ（多段階承認フロー、インポート自動化等）は要求を充足する。"
+
+  # ── 要求の派生 / 精緻化 ──
+  - Source: "CLS_005"
+    RelationType: "deriveReqt"
+    Target: "CLS_005"
+    Description: "上位要求（ビジネス要求BR）から下位のシステム要求（機能仕様、セキュリティ仕様）を導出する。"
+
+  - Source: "CLS_005"
+    RelationType: "refine"
+    Target: "CLS_005"
+    Description: "抽象的なビジネス要求を実装可能なシステム要件へ精緻化する。"
+
+  # ── 検証 (verify) ──
+  - Source: "CLS_010"
+    RelationType: "verify"
+    Target: "CLS_005"
+    Description: "テストケースは要求を検証する。"
+
+  - Source: "CLS_010"
+    RelationType: "trace"
+    Target: "CLS_006"
+    Description: "テストケースは検証対象のユースケースシナリオへトレースされうる。"
+
+  # ── 依存 ──
+  - Source: "CLS_002"
+    RelationType: "dependency"
+    Target: "CLS_002"
+    Description: "サブシステム（例：新規システムと既存基幹システム）間の変更影響伝搬を伴う依存関係。"
+
+  - Source: "CLS_003"
+    RelationType: "dependency"
+    Target: "CLS_003"
+    Description: "コンポーネント間の変更影響伝搬を伴う依存関係。"
+
+# ─────────────────────────────────────────────────────────────────────
+# Terminology — プロジェクト固有専門用語・MBSE/SysML標準用語
+# ─────────────────────────────────────────────────────────────────────
+Terminology:
+  - Term: "MBSE"
+    Definition: "Model-Based Systems Engineering。モデルを中心に要求・設計・検証を統合するシステムズエンジニアリング手法。"
+    RelatedClasses: ["CLS_001", "CLS_005", "CLS_010"]
+    Synonyms: ["Model-Based Systems Engineering", "モデルベースシステムズエンジニアリング"]
+
+  - Term: "SysML"
+    Definition: "Systems Modeling Language。MBSE のためのモデリング言語。UML をベースに要求・パラメトリック制約を追加した OMG 標準。"
+    RelatedClasses: ["CLS_001", "CLS_005"]
+    Synonyms: ["Systems Modeling Language"]
+
+  - Term: "トレーサビリティ"
+    Definition: "要求・設計・振る舞い・検証成果物の対応関係を双方向に追跡できる性質。satisfy / verify / trace / deriveReqt / allocate などの関係で実現する。"
+    RelatedClasses: ["CLS_005", "CLS_006", "CLS_008", "CLS_010"]
+    Synonyms: ["traceability"]
+
+  - Term: "機能割当"
+    Definition: "振る舞いモデル (Activity) で定義した機能を、実行主体となる構造要素 (Block) へ allocate 関係で対応付けること。"
+    RelatedClasses: ["CLS_002", "CLS_003", "CLS_008"]
+    Synonyms: ["allocation", "functional allocation"]
+
+  - Term: "構成分解"
+    Definition: "システムを階層的なブロックへ分割し、責務と境界を明確化する活動。System → Subsystem → Component の階層を作る。"
+    RelatedClasses: ["CLS_001", "CLS_002", "CLS_003", "CLS_014"]
+    Synonyms: ["decomposition", "system decomposition", "アーキテクチャ分解"]
+
+  - Term: "検証"
+    Definition: "要求を満たしていることを試験・解析・検査・実証により確認する活動。verify 関係で TestCase と Requirement を結ぶ。"
+    RelatedClasses: ["CLS_005", "CLS_010"]
+    Synonyms: ["verification", "V&V"]
+
+  - Term: "妥当性確認"
+    Definition: "システムが本来の意図 (ステークホルダーのニーズ) を満たしているかを確認する活動。検証 (verification) と区別する。"
+    RelatedClasses: ["CLS_005", "CLS_006"]
+    Synonyms: ["validation"]
+
+  - Term: "ステークホルダ"
+    Definition: "システムに利害関係を持つ主体 (顧客・運用者・規制機関等)。Actor として表現することが多い。"
+    RelatedClasses: ["CLS_007"]
+    Synonyms: ["stakeholder", "利害関係者"]
+
+  - Term: "アーキテクチャ"
+    Definition: "システムの構成要素・関係・配置・原則の集合。論理 (logical) と物理 (physical) の2層で扱うことが多い。"
+    RelatedClasses: ["CLS_001", "CLS_002", "CLS_003"]
+    Synonyms: ["architecture", "system architecture"]
+
+  - Term: "ポート"
+    Definition: "ブロックの外部接続点 (in/out/inout)。signal や itemFlow の出入口。SysML では Property の一種で stereotype 'port' で表す。"
+    RelatedClasses: ["CLS_004"]
+    Synonyms: ["port", "接続点"]
+
+  - Term: "フロー"
+    Definition: "ブロック間で受け渡される信号 (signal) または物理量 (item)。SysML では Connector で表現される。"
+    RelatedClasses: ["CLS_004"]
+    Synonyms: ["flow", "itemFlow", "signal flow"]
+
+  - Term: "ユースケースシナリオ"
+    Definition: "ユースケースの実行ステップ列。基本シナリオ (主成功シナリオ) と代替/例外シナリオがある。詳細化は Activity で行う。"
+    RelatedClasses: ["CLS_006", "CLS_008"]
+    Synonyms: ["scenario", "use case scenario"]
+
+  - Term: "現場オペレーター"
+    Definition: "データの入力や日々の処理を担当するユーザーロール。入力の簡易化やミスの自動検知にメリットを享受する。"
+    RelatedClasses: ["CLS_007"]
+    Synonyms: ["オペレーター", "現場担当者"]
+
+  - Term: "管理者"
+    Definition: "進捗の承認やステータス監視を担当するユーザーロール。承認フローの迅速化とボトルネック可視化のメリットを追求する。"
+    RelatedClasses: ["CLS_007"]
+    Synonyms: ["承認権限者", "マネージャー"]
+
+  - Term: "取引データインポート"
+    Definition: "CSVファイルをドラッグ＆ドロップでシステムに一括登録する機能・プロセス。"
+    RelatedClasses: ["CLS_005", "CLS_006", "CLS_008"]
+    Synonyms: ["一括登録", "CSVインポート"]
+
+  - Term: "リアルタイムチェック"
+    Definition: "CSVデータアップロード時に、必須項目や型エラーを即時検知する入力ミス防止機能。"
+    RelatedClasses: ["CLS_005", "CLS_008"]
+    Synonyms: ["リアルタイム検知", "エラー検証"]
+
+  - Term: "承認ワークフロー"
+    Definition: "作成者から一次承認者、最終承認者へと多段階でデジタル承認を進める処理プロセス。"
+    RelatedClasses: ["CLS_005", "CLS_006", "CLS_008", "CLS_009"]
+    Synonyms: ["多段階フロー", "デジタル承認"]
+
+  - Term: "既存社内基幹システム"
+    Definition: "今回の新システムとAPI接続で連携することが義務付けられている、前提条件となる接続対象システム。"
+    RelatedClasses: ["CLS_001", "CLS_002", "CLS_004"]
+    Synonyms: ["基幹システム", "レガシーシステム"]
+
+  - Term: "HTTPS"
+    Definition: "データ通信を全て暗号化するためのセキュアな通信プロトコル制約。"
+    RelatedClasses: ["CLS_004", "CLS_005"]
+    Synonyms: ["通信暗号化", "HTTPS暗号化"]
+
+# ─────────────────────────────────────────────────────────────────────
+# ModelingRules — MBSE モデリングの標準・プロジェクト固有ルール
+# ─────────────────────────────────────────────────────────────────────
+ModelingRules:
+  - Name: "要求は検証可能な単一文で記述する"
+    Procedure: "RequirementsAnalysis"
+    Description: "Requirement の text は『〜すること』形式の単一要求とし、'適切な'/'十分な'/'なるべく' 等の曖昧語を使わない。複合要求は分割する。"
+    Severity: "warning"
+    AppliesTo: ["Requirement"]
+
+  - Name: "要求には優先度と検証方法を必ず付与する"
+    Procedure: "RequirementsAnalysis"
+    Description: "priority (must/should/may、またはMust/Want) と verificationMethod を欠落させない。"
+    Severity: "info"
+    AppliesTo: ["Requirement"]
+
+  - Name: "要求は設計要素または振る舞いへ追跡可能にする"
+    Procedure: "TraceabilityManagement"
+    Description: "主要要求は satisfy / refine / trace の少なくとも一つで下流成果物 (Block, Activity, UseCase) と接続する。孤立した要求を残さない。"
+    Severity: "warning"
+    AppliesTo: ["Requirement", "Block", "Activity"]
+
+  - Name: "要求は必ずテストケースで検証する"
+    Procedure: "VerificationPlanning"
+    Description: "priority=must/Must の要求は少なくとも 1 つの TestCase と verify 関係で接続する。verify の無い must 要求はカバレッジ不足。"
+    Severity: "warning"
+    AppliesTo: ["Requirement", "TestCase"]
+
+  - Name: "テストケースには合否基準と前提条件を記述する"
+    Procedure: "VerificationPlanning"
+    Description: "TestCase は objective, preConditions, expectedResults を必ず記述。expectedResults 欠落のテストは合否判定不能。"
+    Severity: "warning"
+    AppliesTo: ["TestCase"]
+
+  - Name: "構造分解は責務が重複しない粒度で行う"
+    Procedure: "SystemDecomposition"
+    Description: "System / Subsystem / Component の各階層で、子ブロック間の責務 (responsibility) が重複しないようにする。重複は再分解の合図。"
+    Severity: "warning"
+    AppliesTo: ["Block"]
+
+  - Name: "分解階層は 3 段までを目安とする"
+    Procedure: "SystemDecomposition"
+    Description: "System → Subsystem → Component の 3 段が標準。それ以上は粒度過剰の可能性。例外はパッケージで観点を分けて整理する。"
+    Severity: "info"
+    AppliesTo: ["Block", "Package"]
+
+  - Name: "振る舞いは実行主体へ allocate で割り当てる"
+    Procedure: "FunctionalAllocation"
+    Description: "主要な Activity は allocate 関係で実行主体の Block (Subsystem/Component) に割り当てる。割当が無い機能は実装責任が曖昧。"
+    Severity: "warning"
+    AppliesTo: ["Activity", "Block"]
+
+  - Name: "ユースケースは最低 1 つのアクターを持つ"
+    Procedure: "BehaviorModeling"
+    Description: "UseCase は association で最低 1 アクターと接続。アクター無しのユースケースはシステム外部からの起動契機が不明。"
+    Severity: "warning"
+    AppliesTo: ["UseCase", "Actor"]
+
+  - Name: "ユースケースは Activity で詳細化する"
+    Procedure: "BehaviorModeling"
+    Description: "主要 UseCase は refine 関係で Activity と接続し、シナリオを詳細化する。テキスト記述のみのユースケースは検証困難。"
+    Severity: "info"
+    AppliesTo: ["UseCase", "Activity"]
+
+  - Name: "インターフェースは方向と型を必ず指定する"
+    Procedure: "InterfaceDefinition"
+    Description: "Property (port/part) として表現するインターフェースは direction (in/out/inout) と type を必ず設定する。"
+    Severity: "warning"
+    AppliesTo: ["Property"]
+
+  - Name: "状態遷移は初期状態と最終状態を含める"
+    Procedure: "BehaviorModeling"
+    Description: "State Machine を作成する場合は stateType=initial の状態を 1 つ用意する。終了する振る舞いには stateType=final を含める。"
+    Severity: "info"
+    AppliesTo: ["State"]
+
+  - Name: "モデルは観点ごとにパッケージで整理する"
+    Procedure: "ModelOrganization"
+    Description: "要求 / 構造 / 振る舞い / ユースケース / 検証 を別々のパッケージ (viewpoint) に分けて整理する。1 パッケージに混在させない。"
+    Severity: "info"
+    AppliesTo: ["Package"]
+
+  - Name: "命名は ElementType ごとの規約に従う"
+    Procedure: "ModelOrganization"
+    Description: "Block は名詞句、Activity は動詞句、Requirement は『〜すること』、UseCase はアクター視点の価値表現で命名する (NamingConventions 参照)。"
+    Severity: "info"
+    AppliesTo: ["Block", "Activity", "Requirement", "UseCase", "TestCase", "Package"]
+
+  - Name: "モデルレビューで整合性を確認する"
+    Procedure: "ModelReview"
+    Description: "要求-設計-振る舞い-検証の各レイヤ間で、未接続要素・矛盾・重複が無いか定期的に確認する。生成直後と統合直後は必須。"
+    Severity: "info"
+    AppliesTo: ["Requirement", "Block", "Activity", "UseCase", "TestCase"]
+
+  - Name: "API連携および外部通信時のセキュリティ暗号化規約"
+    Procedure: "InterfaceDefinition"
+    Description: "既存社内基幹システムなどの外部API接続やデータ通信を伴う接続ポート/インターフェースは、必ず暗号化（HTTPS等）制約要件（BR-05/セキュリティポリシー）を satisfy すること。"
+    Severity: "error"
+    AppliesTo: ["Property", "Block"]
+
+  - Name: "ビジネス要件のフェージング（スコープ外）制御"
+    Procedure: "RequirementsAnalysis"
+    Description: "AIエラー予測、モバイルネイティブアプリ等の将来展望項目（スコープ外）は、今回の開発フェーズパッケージ（フェーズ1）からは除外し、バックログまたは将来フェーズパッケージ（フェーズ2）に明確に隔離してモデリングすること。"
+    Severity: "warning"
+    AppliesTo: ["Requirement", "Package"]
+
+# ─────────────────────────────────────────────────────────────────────
+# NamingConventions — モデル要素の命名規約
+# ─────────────────────────────────────────────────────────────────────
+NamingConventions:
+  - ElementType: "Requirement"
+    Pattern: "検証可能な要求文。末尾は『〜すること』『〜できること』『〜以下とすること』等の断定形で統一する。ビジネス要求ID（BR-XXなど）をプレフィックスに含める。"
+    Examples:
+      - "BR-01 取引データをCSVのドラッグ＆ドロップにより一括登録できること"
+      - "BR-02 CSVアップロード時に必須項目や型エラーをリアルタイムで検知すること"
+      - "BR-05 データ通信はすべてHTTPSにより暗号化すること"
+
+  - ElementType: "Block"
+    Pattern: "名詞句で役割・対象を表す。階層に応じた粒度 (System=全体, Subsystem=機能領域, Component=モジュール)。"
+    Examples:
+      - "バッテリー取引管理システム"
+      - "ワークフロー管理サブシステム"
+      - "既存社内基幹システム"
+      - "CSVデータ検証コンポーネント"
+
+  - ElementType: "Activity"
+    Pattern: "動詞 (+ 目的語) で機能を表す。何をする振る舞いか一読で分かるようにする。受動態は避ける。"
+    Examples:
+      - "取引データをCSVから一括インポートする"
+      - "アップロードデータをリアルタイム検証する"
+      - "多段階承認を処理する"
+      - "通信データを暗号化する"
+
+  - ElementType: "UseCase"
+    Pattern: "アクター視点の価値表現。動詞句または短文。システム内部の処理ではなくアクターが得る成果を表す。"
+    Examples:
+      - "取引データをインポートする"
+      - "承認進捗を確認する"
+      - "多段階承認を実行する"
+      - "処理状況をダッシュボードで監視する"
+
+  - ElementType: "Actor"
+    Pattern: "外部主体の役割名。人間アクターは肩書きで、外部システムはシステム名+役割で命名。"
+    Examples:
+      - "現場オペレーター"
+      - "管理者"
+      - "既存社内基幹システム"
+
+  - ElementType: "TestCase"
+    Pattern: "『検証対象 + 観点』または『要求ID + 検証内容』。何を検証するテストか一意に分かる名前にする。"
+    Examples:
+      - "BR-01 取引データ一括インポート検証"
+      - "BR-02 CSVリアルタイムバリデーションテスト"
+      - "HTTPS通信暗号化監査テスト"
+
+  - ElementType: "Property"
+    Pattern: "インターフェース (port) は『信号名 + 方向』または『接続先+データ種別』。Part は型ブロック名と整合させる。先頭は小文字 (camelCase) が推奨。"
+    Examples:
+      - "transactionCsv_in"
+      - "importResult_out"
+      - "apiConnectionPort"
+
+  - ElementType: "Operation"
+    Pattern: "動詞 (+ 目的語) の camelCase。Getter は get*, Setter は set*, 状態確認 is*/has*。"
+    Examples:
+      - "importCsvData"
+      - "validateFields"
+      - "approveStep"
+      - "encryptPayload"
+
+  - ElementType: "State"
+    Pattern: "形容詞 / 動名詞 / 名詞で状態を表す。'〜中' '〜状態' '〜済' 等で完了/進行/結果を区別する。"
+    Examples:
+      - "インポート処理中"
+      - "一時承認待ち"
+      - "最終承認済"
+      - "エラー検知状態"
+
+  - ElementType: "Package"
+    Pattern: "観点 (viewpoint) または開発フェーズを考慮した分類名。同じプロジェクト内で命名スタイルを統一する。"
+    Examples:
+      - "フェーズ1コア要求"
+      - "既存基幹システム接続物理アーキテクチャ"
+      - "将来フェーズバックログ"

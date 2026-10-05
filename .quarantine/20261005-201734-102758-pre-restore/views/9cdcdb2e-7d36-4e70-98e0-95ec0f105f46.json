@@ -1,0 +1,384 @@
+{
+    "id": "9cdcdb2e-7d36-4e70-98e0-95ec0f105f46",
+    "name": "絶縁カバー・熱拡散安全性能関連図",
+    "class_name": "FreeDiagram",
+    "nodes": [
+        {
+            "class_name": "DiagramNode",
+            "id": "6e424939-4695-41ec-a2f2-d4b8b6ba148d",
+            "element_id": "6e424939-4695-41ec-a2f2-d4b8b6ba148d",
+            "x": 935.2940723434426,
+            "y": 86.92778752805938,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "9c05a211-2101-4ee7-bdaf-86509f2d3b7d",
+            "element_id": "9c05a211-2101-4ee7-bdaf-86509f2d3b7d",
+            "x": 944.5996278989978,
+            "y": 548.316676416949,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "01fa5ae8-26e6-4488-9996-368c8105cc73",
+            "element_id": "01fa5ae8-26e6-4488-9996-368c8105cc73",
+            "x": 585.2940723434426,
+            "y": 246.9277875280594,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "c327a7a5-679b-45f1-9aa1-612abf53294b",
+            "element_id": "c327a7a5-679b-45f1-9aa1-612abf53294b",
+            "x": 725.2940723434426,
+            "y": 246.9277875280594,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "d0e2f1be-40fa-4db6-9c62-b3e24edf37f0",
+            "element_id": "d0e2f1be-40fa-4db6-9c62-b3e24edf37f0",
+            "x": 165.29407234344262,
+            "y": 246.9277875280594,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "1ca7b569-ae5b-4f50-a168-e40e53b578b5",
+            "element_id": "1ca7b569-ae5b-4f50-a168-e40e53b578b5",
+            "x": 305.2940723434426,
+            "y": 246.9277875280594,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "57414a30-6f2e-4c74-b1e3-6eebd2272f5d",
+            "element_id": "57414a30-6f2e-4c74-b1e3-6eebd2272f5d",
+            "x": 1285.2940723434426,
+            "y": 246.9277875280594,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "74d2b135-b254-49ff-9e6b-db700957dbd5",
+            "element_id": "74d2b135-b254-49ff-9e6b-db700957dbd5",
+            "x": 445.2940723434426,
+            "y": 246.9277875280594,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "222567ec-70c3-4e4a-a968-cf3e83e96e6f",
+            "element_id": "222567ec-70c3-4e4a-a968-cf3e83e96e6f",
+            "x": 1705.2940723434426,
+            "y": 246.9277875280594,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "d85f53c1-5b85-4ab5-ad4f-ca0f89a6ea50",
+            "element_id": "d85f53c1-5b85-4ab5-ad4f-ca0f89a6ea50",
+            "x": 1425.2940723434426,
+            "y": 246.9277875280594,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "6851b3d3-3900-4fce-97b2-a02b7b36682c",
+            "element_id": "6851b3d3-3900-4fce-97b2-a02b7b36682c",
+            "x": 865.2940723434426,
+            "y": 246.9277875280594,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "95e7002e-aaf4-4252-a411-4b58b681574d",
+            "element_id": "95e7002e-aaf4-4252-a411-4b58b681574d",
+            "x": 1145.2940723434426,
+            "y": 246.9277875280594,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "ddb4d136-378e-4b68-bc6d-0dee3185e4fc",
+            "element_id": "ddb4d136-378e-4b68-bc6d-0dee3185e4fc",
+            "x": 1005.2940723434426,
+            "y": 246.9277875280594,
+            "width": 120,
+            "height": 80
+        },
+        {
+            "class_name": "DiagramNode",
+            "id": "7ce705c8-2a61-4cb1-8c81-61efa878cc88",
+            "element_id": "7ce705c8-2a61-4cb1-8c81-61efa878cc88",
+            "x": 1565.2940723434426,
+            "y": 246.9277875280594,
+            "width": 120,
+            "height": 80
+        }
+    ],
+    "edges": [
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "444f630b-440c-4fa7-9e2c-c100ecdb46d8",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "87787fd6-7341-42c8-bd11-a4f6319599aa",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "debde56b-9661-49c2-ad47-e089888ae92e",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "312a8618-052b-4e7a-ba53-584718fc2dce",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "0dc81d08-abce-44ff-bb9a-1ceea0243562",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "0335bd4d-16ec-4685-ab9c-66de6fc55818",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "b5d4079f-9f7b-4aa1-abd3-474aab07fba2",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "45bae27c-ef08-46cf-9dc2-d82f2173bfd6",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "ba426c86-cabc-4daa-8aeb-5dc151a838d3",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "df18d341-3cf3-46db-9688-704da04fb622",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "f2f76295-01ed-4ad0-8786-e9e2dbca2532",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "d68a9664-15ef-4cde-b3bf-55be1a83da81",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "5990850b-2510-45a7-b22c-b8dec667676f",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "4332995a-9575-4075-a722-e17b06b37e80",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "5f4e531f-ae7d-4127-8a15-9ec2b96a07a5",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "9ffa88fa-9a0e-4557-8bc0-2c99f1674d2d",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "f718d64e-249d-4069-9e74-012290e78840",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "7d7e5c6e-2d32-4f68-a4d4-130a7d7dc56a",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "e98fd36d-c1c6-49aa-bc99-03690e0932c4",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "78d8c4e7-0e3a-43f0-a6df-11fc9343258c",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "f78a070a-bf79-4964-aaaa-ff11be2ecdd9",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "ee081fa3-e503-4315-86fb-a14ec9783e98",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "29b39695-c396-4894-82f4-082c489372dd",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "9f2022d3-10d8-44e0-ac00-4226997369bd",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "02439734-4df7-4896-b2a4-1490ff6f7ac6",
+            "control_point": null,
+            "routing": "bezier",
+            "control_points": null,
+            "source_anchor": null,
+            "target_anchor": null
+        }
+    ],
+    "scale": 0.7999999999999986,
+    "offset_x": -61.98310898116097,
+    "offset_y": 127.34744032523525,
+    "relationship_type": "containment",
+    "visible_relation_types": [
+        "containment",
+        "dependency",
+        "satisfy"
+    ],
+    "visible_node_types": [
+        "Activity",
+        "ActivityNode",
+        "ActivityEdge",
+        "Actor",
+        "Block",
+        "Operation",
+        "Property",
+        "Parameter",
+        "Package",
+        "Requirement",
+        "TestCase",
+        "TestStep",
+        "UseCase"
+    ]
+}

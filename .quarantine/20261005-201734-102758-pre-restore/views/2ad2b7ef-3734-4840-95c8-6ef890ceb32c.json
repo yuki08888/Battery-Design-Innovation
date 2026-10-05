@@ -1,0 +1,156 @@
+{
+    "id": "2ad2b7ef-3734-4840-95c8-6ef890ceb32c",
+    "name": "テーブル",
+    "class_name": "FreeTable",
+    "description": "",
+    "root_ids": [
+        "cfcb364e-7491-4244-9119-3813b56a5247"
+    ],
+    "columns": [
+        {
+            "id": "8qt6javmhli",
+            "name": "要求",
+            "sourceColumnId": null,
+            "type": "element",
+            "relationQueries": [
+                [
+                    {
+                        "relationType": "all",
+                        "direction": "outgoing",
+                        "nodeType": "all"
+                    }
+                ]
+            ]
+        },
+        {
+            "id": "4q6e8uy57gu",
+            "name": "部品確認",
+            "sourceColumnId": "8qt6javmhli",
+            "type": "element",
+            "relationQueries": [
+                [
+                    {
+                        "relationType": "all",
+                        "direction": "outgoing",
+                        "nodeType": "Block"
+                    }
+                ]
+            ]
+        },
+        {
+            "id": "lk780lvtvl8",
+            "name": "所属",
+            "sourceColumnId": "4q6e8uy57gu",
+            "type": "element",
+            "relationQueries": [
+                [
+                    {
+                        "relationType": "all",
+                        "direction": "incoming",
+                        "nodeType": "Package"
+                    }
+                ]
+            ]
+        },
+        {
+            "id": "u135qposrgo",
+            "name": "上位所属",
+            "sourceColumnId": "lk780lvtvl8",
+            "type": "element",
+            "relationQueries": [
+                [
+                    {
+                        "relationType": "all",
+                        "direction": "incoming",
+                        "nodeType": "Package"
+                    }
+                ]
+            ]
+        },
+        {
+            "id": "hvak5s5d9u",
+            "name": "最上位所属",
+            "sourceColumnId": "u135qposrgo",
+            "type": "element",
+            "relationQueries": [
+                [
+                    {
+                        "relationType": "all",
+                        "direction": "incoming",
+                        "nodeType": "Package"
+                    }
+                ]
+            ]
+        }
+    ],
+    "expanded_keys": [
+        "cfcb364e-7491-4244-9119-3813b56a5247-root",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_4-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_5-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_0-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_1-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_7-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_9-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_10-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_11-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_17-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_18-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_19-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_21-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_22-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_24-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_31-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_32-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_33-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_34-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_36-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_37-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_44-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_50-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_51-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_54-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_26-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_2-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_3-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_6-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_8-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_12-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_13-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_14-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_20-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_23-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_25-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_27-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_28-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_29-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_30-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_35-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_38-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_39-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_40-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_42-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_45-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_46-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_47-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_49-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_52-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_53-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_55-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_56-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_57-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_59-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_60-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_63-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_65-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_66-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_67-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_68-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_61-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_62-8qt6javmhli",
+        "cfcb364e-7491-4244-9119-3813b56a5247_8qt6javmhli_69-8qt6javmhli"
+    ],
+    "hidden_columns": [],
+    "column_widths": {
+        "8qt6javmhli": 373
+    }
+}

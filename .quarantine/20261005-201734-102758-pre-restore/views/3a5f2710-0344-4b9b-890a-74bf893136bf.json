@@ -1,0 +1,30 @@
+{
+    "id": "3a5f2710-0344-4b9b-890a-74bf893136bf",
+    "name": "部品目標CTR-設計パラメータ定量評価適合表",
+    "class_name": "FreeTable",
+    "description": "セル間断熱材（B4）などの各主要部品目標（CTR）に対し、設計パラメータ（厚み、熱伝導率、密度、比熱、接触熱抵抗など）や、現時点で定量モデルが未確立の項目（噴出物量や飛散範囲など）に対する「評価不可」ステータス、および人によるレビュープロセスの要件を定義した部品・設計パラメータ定量評価適合表。",
+    "root_ids": [
+        "5862d70a-116a-4c03-b0f2-11b3f5287bfe",
+        "94c51eaf-c85c-4bd3-afb5-501ff41284c8",
+        "50d0d2ac-9465-4376-b381-ed65c75ae5e4"
+    ],
+    "columns": [
+        {
+            "id": "c1",
+            "name": "部品 (Block)",
+            "sourceColumnId": null,
+            "type": "property",
+            "propertyName": "name"
+        },
+        {
+            "id": "c2",
+            "name": "部品説明 / 設計パラメータ (厚み、熱伝導率、密度、比熱、接触熱抵抗、評価不可項目など)",
+            "sourceColumnId": null,
+            "type": "property",
+            "propertyName": "description"
+        }
+    ],
+    "expanded_keys": [],
+    "hidden_columns": [],
+    "column_widths": {}
+}

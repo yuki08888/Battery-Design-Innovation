@@ -1,0 +1,66 @@
+id: ""
+name: シナリオ（シーケンス）設計
+slash_command: sequence
+description: |
+  ユースケースの実現シナリオを、ライフライン間のメッセージ交換として
+  シーケンス図に展開する手順。
+  正常系だけでなく代替系・例外系も検討する。
+use_when: |
+  ユーザーが「シーケンス図を作って」「相互作用を設計」
+  「シナリオを展開して」等を依頼したとき。
+steps:
+  - no: 1
+    title: 対象ユースケースの把握
+    instruction: |
+      対象 UseCase と、それに関わる Actor / Block を確認する。
+      対応する要求や既存 Activity があれば併せて読み、
+      シナリオの前提条件と事後条件を把握する。
+    tools:
+      - search_item
+      - read_package_contents
+      - get_related_elements
+      - read
+    done_when: 対象 UseCase の短縮ID、参加 Actor / Block、関連 Requirement / Activity、および前提条件・正常終了時の事後条件を一覧化できている
+  - no: 2
+    title: ライフラインとメッセージの設計
+    instruction: |
+      シナリオに登場するライフライン（Actor / Block）を決め、
+      時系列に沿ったメッセージ列を設計する。
+      各メッセージには、呼び出す操作と渡す情報を明示すること。
+    done_when: 全ライフラインの型が定まり、各メッセージに一意な順序・送信元・受信先・Operation・入出力情報があり、端点または順序未定のメッセージ0件である
+  - no: 3
+    title: 代替系・例外系の検討
+    instruction: |
+      正常系に加え、想定される代替系（別ルート）と
+      例外系（失敗・タイムアウト・不正入力）を洗い出す。
+      検討したが対象外とするものは、その理由を記録する。
+    done_when: 正常系に加え、想定した全代替・失敗・タイムアウト・不正入力について発生条件と終了結果、または対象外理由が記録されている
+  - no: 4
+    title: シーケンスの生成
+    instruction: |
+      create_internal_model_elements（structureType=sequence）で
+      ライフライン Block / Operation / message 型 Relationship を生成し、
+      UseCase の message_order を設定する。
+    tools:
+      - create_internal_model_elements
+      - create_operation
+      - create_relationship
+    done_when: 設計した全ライフライン・Operation・message関係が存在し、UseCase の message_order の件数と順序が設計したメッセージ列に完全一致する
+    referenceConventions:
+      - UseCase
+      - Operation
+      - Block
+  - no: 5
+    title: 構造との整合確認と検証
+    instruction: |
+      メッセージが呼び出す Operation が、対応する Block に
+      実際に定義されているかを確認する。
+      不足している Operation を追加した上で validate_model で検証する。
+    tools:
+      - get_related_elements
+      - create_operation
+      - validate_model
+    done_when: 全メッセージの受信 Operation が対応 Block に存在し、全端点が解決し、validate_model が error 0件または残る各違反を理由付きで記録した
+strict: true
+allow_skip: false
+max_steps_per_stage: 12

@@ -1,0 +1,1193 @@
+{
+    "id": "cda71b45-5bb7-4621-b7b7-1bdafef28542",
+    "title": "BV-D-05電池パック強度・安全評価　設計標準書",
+    "pages": [
+        {
+            "id": "7acc8953-d31f-4e30-9f1c-74e147ed5646",
+            "title": "ページ 1",
+            "content": "<p>PROTECTED 関係者外秘</p>\n<h1>変更設計業務標準書</h1>\n<p>TOYOTA</p>\n<table>\n<thead>\n<tr>\n<th>審査</th>\n<th>BVD-05</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>部署</td>\n<td>電池パック開発部<br>第３電池パック開発室</td>\n</tr>\n</tbody>\n</table>\n<table>\n<thead>\n<tr>\n<th>承認</th>\n<th>調査</th>\n<th>作成</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>渡辺</td>\n<td>中屋敏</td>\n<td>中村</td>\n</tr>\n<tr>\n<td>'26/6/5</td>\n<td>'26/6/5</td>\n<td>'26/6/5</td>\n</tr>\n</tbody>\n</table>\n<table>\n<thead>\n<tr>\n<th>種別</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>電池パック強度・安全評価　設計標準書</td>\n</tr>\n</tbody>\n</table>\n<table>\n<thead>\n<tr>\n<th>主旨</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>電池パック開発における評価の標準的な業務手順を示す。</td>\n</tr>\n</tbody>\n</table>\n<table>\n<thead>\n<tr>\n<th style=\"text-align: right;\">No.</th>\n<th>発行／変更履歴</th>\n<th>承認</th>\n<th>調査</th>\n<th>作成</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td style=\"text-align: right;\">2</td>\n<td>・性能企画書　補助情報を追加</td>\n<td>渡辺<br>'26/8/25</td>\n<td>中屋敏<br>'26/8/25</td>\n<td>中村<br>'26/8/25</td>\n</tr>\n<tr>\n<td style=\"text-align: right;\">1</td>\n<td>・性能企画書　作成工程を修正<br>・組織変更に伴い、担当組織名修正</td>\n<td>渡辺<br>'26/8/5</td>\n<td>中屋敏<br>'26/8/5</td>\n<td>中村<br>'26/8/5</td>\n</tr>\n<tr>\n<td style=\"text-align: right;\"></td>\n<td>新設</td>\n<td>／</td>\n<td>／</td>\n<td>／</td>\n</tr>\n</tbody>\n</table>\n<table>\n<thead>\n<tr>\n<th>付号</th>\n<th>発行／変更履歴</th>\n<th>承認</th>\n<th>調査</th>\n<th>作成</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>| 開示先 | BP | BS |<br />\n|---|---|---|---|</p>",
+            "references": [],
+            "sourceImagePath": "3ef0f67f-b345-4412-a1c4-2bb382e02a28.png",
+            "thumbnailPath": "thumb_3ef0f67f-b345-4412-a1c4-2bb382e02a28.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "527f0dee-8b49-446e-a010-2cec39ce4ea7",
+            "title": "ページ 2",
+            "content": "<p><strong>目次</strong></p>\n<ul>\n<li>変更設計フロー …… 3</li>\n<li>概算開発フロー …… 4</li>\n<li>強度信頼性開発フロー …… 5</li>\n<li>意匠評価フロー …… 6</li>\n<li>波状路評価フロー …… 7</li>\n<li>実走フロー …… 8</li>\n<li>法規適合フロー …… 9</li>\n<li>性能企画書検討内容 …… 10</li>\n<li>仕向け地×法規　検索方法 …… 11</li>\n<li>車両とカテゴリー …… 12</li>\n</ul>",
+            "references": [],
+            "sourceImagePath": "b55227ee-0d6a-4ea3-9324-5bff22f41047.png",
+            "thumbnailPath": "thumb_b55227ee-0d6a-4ea3-9324-5bff22f41047.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "420688fd-248e-4eb2-9c8b-95c24e767bd1",
+            "title": "ページ 3",
+            "content": "<table>\n<thead>\n<tr>\n<th>期間</th>\n<th style=\"text-align: right;\">#</th>\n<th>工程</th>\n<th>インプット</th>\n<th>担当部署</th>\n<th>アウトプット</th>\n<th>担当部署</th>\n<th>品質条件</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>完了検討</td>\n<td style=\"text-align: right;\">1</td>\n<td>性能企画書作成<br>性能企画書検討内容（P10）<br>＜補助情報↓＞<br>車両カテゴリ（P12）<br>G-RIS操作（P11）</td>\n<td>車両仕様書<br>システム仕様書<br>他Pr開発情報<br>市場環境　GLOVE<br>法規対応　G-RIS<br>関連IS</td>\n<td>車両企画部署<br>PZ<br>BV評価</td>\n<td>BVQ</td>\n<td>車両企画部署</td>\n<td>評価項目と判定基準が明確<br>性能企画書発行</td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">2</td>\n<td>解析用モデル作成</td>\n<td>性能企画書<br>解析用構造情報</td>\n<td>BV評価</td>\n<td>解析用モデル<br>ボデー設計、BV</td>\n<td>CAE助図前相談会</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">3</td>\n<td>解析</td>\n<td>解析モデル<br>解析手順、条件</td>\n<td>BV設計、UI<br>BV評価、車両実験</td>\n<td>解析結果</td>\n<td>UI、BV</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">4</td>\n<td>AS構造決定</td>\n<td>解析結果</td>\n<td>UI、BV</td>\n<td>電池パック構造図</td>\n<td>BV設計</td>\n<td>開発提案</td>\n</tr>\n<tr>\n<td>開発試作（AS、CV共通）</td>\n<td style=\"text-align: right;\">5</td>\n<td>性能企画書 改訂<br>（必要に応じて）</td>\n<td>車両開発提案<br>電池パック構造図<br>システム仕様書<br>電池システム仕様書</td>\n<td>車両企画部署<br>BV設計、PZ<br>1MBV</td>\n<td>車両企画部署<br>BV設計<br>PZ</td>\n<td>BVQ</td>\n<td>車両仕様と必要な目標値決め</td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">6</td>\n<td>試作出図</td>\n<td>電池パック構造図</td>\n<td>BV設計</td>\n<td>試作出図</td>\n<td>BV設計</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">7</td>\n<td>評価計画</td>\n<td>試作日程<br>マルストーン日程<br>出図日程<br>開発大日程</td>\n<td>BV設計<br>BV設計<br>BV設計<br>車両企画部署、PZ</td>\n<td>試験計画</td>\n<td>BV評価</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">8</td>\n<td>試験準備、試験実施</td>\n<td>供試品パック<br>下記TS、手順書を元に必要部品を手配、試験条件決定<br>SW310<br>QA手順書<br>水入り手順書<br>検状要領手順書<br>挫状要領手順書<br>抑圧手順書<br>トラッキング手順書<br>塩水・水浸漬手順書<br>温水・浸入手順書<br>連着発煙手順書<br>TS発煙手順書<br>高圧充電<br>外部短絡</td>\n<td>BV設計<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価</td>\n<td>試験結果</td>\n<td>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">9</td>\n<td>試験結果解析</td>\n<td>試験結果</td>\n<td>BV評価</td>\n<td>良否判定<br>NG時は要因分析<br>評価結果エビデンス</td>\n<td>BV評価<br>BV評価<br>BV評価</td>\n<td>定量値で良否判定<br>BV評価<br>BV評価</td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">10</td>\n<td>対策検討</td>\n<td>要因解析結果</td>\n<td>BV評価</td>\n<td>対策立案</td>\n<td>BV、ボデー設計<br>関係部署</td>\n<td>対策まで含めて成立の目途あり</td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">11</td>\n<td>対策品強度予測</td>\n<td>対策構造</td>\n<td>BV設計</td>\n<td>予測結果（CAE、他計算、改善代等）</td>\n<td>UI、BV</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">12</td>\n<td>対策構造提案</td>\n<td>予測結果</td>\n<td>UI、BV</td>\n<td>新電池パック構造図</td>\n<td>BV設計</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">13</td>\n<td>品質窓口決裁</td>\n<td>評価結果エビデンス</td>\n<td>BV評価</td>\n<td>監27（CV移行）、監33（号試移行）</td>\n<td>BV評価</td>\n<td>性能企画書の要求をすべて満足している<br>CV移行（目途）、号試（評価結果）</td>\n</tr>\n</tbody>\n</table>",
+            "references": [],
+            "sourceImagePath": "c085ecdc-2630-4751-993a-e183c9291ff2.png",
+            "thumbnailPath": "thumb_c085ecdc-2630-4751-993a-e183c9291ff2.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "e8952e30-f375-4e42-a8ec-40cf8471d976",
+            "title": "ページ 4",
+            "content": "<p>変更設計業務フロー</p>\n<table>\n<thead>\n<tr>\n<th>時期</th>\n<th style=\"text-align: right;\">#</th>\n<th>工程</th>\n<th>インプット</th>\n<th>主担当者</th>\n<th>アウトプット</th>\n<th>担当者</th>\n<th>成果物</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>先行検討</td>\n<td style=\"text-align: right;\">1</td>\n<td>性能企画書作成</td>\n<td>性能企画書検討内容（P.10）<br>＜補助情報↓＞<br>車両カタログ（P1）<br>G-RIS操作（P11）</td>\n<td>車両企画部<br>PTZ<br>BV評価</td>\n<td>性能企画書<br>他PJ開発情報<br>市場環境 GLOVE<br>法規動向 車法<br>法規対応 G-RIS<br>関連TS<br>認証移行基準</td>\n<td>車両企画部<br>PTZ<br>BV評価</td>\n<td>評価項目と判定基準が明確</td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">2</td>\n<td>部品用モデル作成</td>\n<td>性能企画書<br>解析用構造情報</td>\n<td>BV評価<br>ボデー設計、BV</td>\n<td>電池解析モデル</td>\n<td>BV設計、UI</td>\n<td>CAE出図判断会</td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">3</td>\n<td>部品</td>\n<td>電池部品モデル<br>車両解析モデル<br>解析手順、条件</td>\n<td>BV設計、SG</td>\n<td>電池部品モデル<br>車両解析モデル<br>解析手順、条件</td>\n<td>BV設計、UI・BV</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">4</td>\n<td>構造提案</td>\n<td>解析結果</td>\n<td>UI、BV</td>\n<td>電池パック構造図</td>\n<td>BV設計</td>\n<td>開発提案</td>\n</tr>\n<tr>\n<td>開発時期（AS、FS）</td>\n<td style=\"text-align: right;\">5</td>\n<td>性能企画書 改訂（必要があれば）</td>\n<td>車両開発提案<br>電池パック構造図<br>システム仕様書<br>電池システム仕様書</td>\n<td>車両企画部<br>BV設計<br>BV設計<br>PTZ<br>IMBV</td>\n<td>性能企画書 改訂版</td>\n<td>BV評価</td>\n<td>車両性能と必要な目標値決め</td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">6</td>\n<td>試作出図</td>\n<td>新電池パック構造図</td>\n<td>BV設計</td>\n<td>試作出図</td>\n<td>BV設計</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">7</td>\n<td>部品用モデル作成</td>\n<td>性能企画書<br>解析用構造情報</td>\n<td>BV評価<br>ボデー設計、BV</td>\n<td>電池解析モデル</td>\n<td>BV設計、UI</td>\n<td>CAE出図判断会</td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">8</td>\n<td>部品</td>\n<td>電池部品モデル<br>車両解析モデル<br>解析条件</td>\n<td>BV設計、SG</td>\n<td>車両部品評価</td>\n<td>UI・BV</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">9</td>\n<td>評価計画</td>\n<td>車両解析結果<br>衝突試験日程作成<br>衝突試験日程決定</td>\n<td>SG</td>\n<td>供試電池パック仕様決定</td>\n<td>BV評価</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">10</td>\n<td>試験準備</td>\n<td>衝突手順書参照</td>\n<td>BV評価</td>\n<td>衝突車両へ電池パック供試</td>\n<td>BV評価</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">11</td>\n<td>試験</td>\n<td>衝突試験車両</td>\n<td>SG</td>\n<td>衝突試験後電池パック</td>\n<td>BV評価</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">12</td>\n<td>試験結果解析</td>\n<td>衝突試験結果データ<br>衝突試験後電池パック</td>\n<td>SG</td>\n<td>電池パック分析結果<br>NG時は要因分析<br>評価結果エビデンス</td>\n<td>BV評価<br>BV評価<br>BV評価</td>\n<td>電動エネルギーが上限同等以上<br>発火・爆発なし<br>IPXB、締結2点以上確保</td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">13</td>\n<td>対策検討</td>\n<td>要因解析結果</td>\n<td>BV評価</td>\n<td>対策立案<br>背反検討</td>\n<td>BV、ボデー設計、関係部署<br>BV、メンバー設計関係部署</td>\n<td>背反まで含めて成立の目途あり</td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">14</td>\n<td>対象品CAE解析</td>\n<td>対策提案</td>\n<td>BV設計</td>\n<td>電池モデル作成／解析結果<br>改善案</td>\n<td>UI<br>UI</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">15</td>\n<td>品総</td>\n<td>評価結果エビデンス</td>\n<td>BV評価</td>\n<td>監2（CV移行）、監33（方式移行）</td>\n<td>BV評価</td>\n<td>性能企画書の要求をすべて満足している<br>CV移行（目途）、号試（評価結果）</td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">16</td>\n<td>認証移行</td>\n<td>評価結果エビデンス</td>\n<td>BV評価</td>\n<td>認証移行会議資料</td>\n<td>BV評価</td>\n<td>認証移行会議</td>\n</tr>\n</tbody>\n</table>",
+            "references": [],
+            "sourceImagePath": "baadeaca-6a0f-48b7-b76c-fc3e4a9d595b.png",
+            "thumbnailPath": "thumb_baadeaca-6a0f-48b7-b76c-fc3e4a9d595b.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "e89dfede-c6bd-4c11-b949-290c7d29f09f",
+            "title": "ページ 5",
+            "content": "<h2>変更・簡素化 開発フロー</h2>\n<table>\n<thead>\n<tr>\n<th>時期</th>\n<th style=\"text-align: right;\">#</th>\n<th>工程</th>\n<th>インプット</th>\n<th>担当者</th>\n<th>アウトプット</th>\n<th>担当者</th>\n<th>判定基準・成果物</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>先行検討</td>\n<td style=\"text-align: right;\">1</td>\n<td>性能企画書作成</td>\n<td>性能企画書検討内容（P.10）<br><br>＜活用情報↓＞<br>車両カタログ（P1）<br>車両カタログ（P1）<br>G-RIS操作（P11）</td>\n<td></td>\n<td>車両仕様書<br>システム仕様書<br>他Pr開発情報<br>市場環境<br>G-RIS<br>関連IS</td>\n<td>車両企画部署<br>PTZ<br>BV評価</td>\n<td>BV<br>評価項目と判定基準が明確</td>\n</tr>\n<tr>\n<td>先行検討</td>\n<td style=\"text-align: right;\">2</td>\n<td>解析用モデル作成</td>\n<td>性能企画書<br>性能企画書 解析用構造情報</td>\n<td></td>\n<td>性能企画書<br>解析用構造情報</td>\n<td>BV評価<br>ホテー設計、BV</td>\n<td>BV評価</td>\n</tr>\n<tr>\n<td>先行検討</td>\n<td style=\"text-align: right;\">3</td>\n<td>解析</td>\n<td>電池解析モデル<br>車両解析モデル<br>解析手順、条件</td>\n<td></td>\n<td>解析結果</td>\n<td>BV設計、UI<br>SG<br>BV評価、車両実験</td>\n<td>BV設計、UI</td>\n</tr>\n<tr>\n<td>先行検討</td>\n<td style=\"text-align: right;\">4</td>\n<td>構造提案</td>\n<td>解析結果</td>\n<td></td>\n<td>電池パック構造図</td>\n<td>UI、BV</td>\n<td>BV設計<br>開発提案</td>\n</tr>\n<tr>\n<td>開発時期（AS、CV共通）</td>\n<td style=\"text-align: right;\">5</td>\n<td>性能企画書 改訂（必要があれば）</td>\n<td>性能企画書<br>車両開発提案<br>電池パック構造図<br>システム仕様書<br>電池システム仕様書</td>\n<td>車両企画部署</td>\n<td>車両企画部署<br>BV設計<br>PTZ<br>1MBV</td>\n<td>BV評価</td>\n<td>車両性能と必要な目標値決め</td>\n</tr>\n<tr>\n<td>開発時期（AS、CV共通）</td>\n<td style=\"text-align: right;\">6</td>\n<td>試作図</td>\n<td>電池パック構造図</td>\n<td></td>\n<td>試作図</td>\n<td>BV設計</td>\n<td></td>\n</tr>\n<tr>\n<td>開発時期（AS、CV共通）</td>\n<td style=\"text-align: right;\">7</td>\n<td>評価</td>\n<td>試作日程<br>マルストーン日程<br>出図日程<br>開発日程<br><br>下記IS、手順書を元に必要部品を手配、試験条件決定<br>TSW1309<br>可能車両手順書<br>路面走行手順書<br>落下物手法手順書<br>熱衝撃手順書<br>拘束具手順書<br>拘束具手順書</td>\n<td></td>\n<td>評価計画<br>試作計画書<br>開発日程</td>\n<td>BV設計<br>BV評価<br>BV設計<br>BV設計<br>BV評価<br>車両企画部署、PTZ</td>\n<td>BV評価<br>性能企画書の判定基準を満足する<br>余裕代が定量的に示されている<br>CV移行</td>\n</tr>\n<tr>\n<td>開発時期（AS、CV共通）</td>\n<td style=\"text-align: right;\">8</td>\n<td>試験結果解析</td>\n<td>試験結果</td>\n<td></td>\n<td>良否判定<br>NG時は原因分析<br>評価結果エビデンス</td>\n<td>BV評価<br>BV評価<br>BV評価</td>\n<td>定量値で良否判定</td>\n</tr>\n<tr>\n<td>開発時期（AS、CV共通）</td>\n<td style=\"text-align: right;\">9</td>\n<td>対策検討</td>\n<td>要因解析結果</td>\n<td></td>\n<td>対策案の立案<br>背反検討<br>性能企画書2</td>\n<td>BV設計<br>BV、ホテー設計関係部署<br>BV、ホテー設計関係部署</td>\n<td>対策案で含めて成立の目途を確認<br>BV評価をF/Bし、見直し必要な項目の更新（CV時は実施しない）</td>\n</tr>\n<tr>\n<td>開発時期（AS、CV共通）</td>\n<td style=\"text-align: right;\">10</td>\n<td>対策品強度予測</td>\n<td>対策構造</td>\n<td></td>\n<td>予測結果（CAE、他計算、改善代等）</td>\n<td>UI、BV</td>\n<td>対策品の結果で固定されている</td>\n</tr>\n<tr>\n<td>開発時期（AS、CV共通）</td>\n<td style=\"text-align: right;\">11</td>\n<td>対策構造提案</td>\n<td>予測結果</td>\n<td></td>\n<td>新電池パック構造</td>\n<td>BV設計</td>\n<td></td>\n</tr>\n<tr>\n<td>開発時期（AS、CV共通）</td>\n<td style=\"text-align: right;\">12</td>\n<td>品質総点検</td>\n<td>評価結果エビデンス</td>\n<td></td>\n<td>電27（CV移行）、電33（早試移行）<br>BV評価<br>性能企画書2</td>\n<td>BV評価<br>BV設計</td>\n<td>性能企画書の要求をすべて満足している<br>CV移行（目途）、早試（評価結果）</td>\n</tr>\n</tbody>\n</table>",
+            "references": [],
+            "sourceImagePath": "d8832c51-520a-4a25-a00c-c7c531645a7c.png",
+            "thumbnailPath": "thumb_d8832c51-520a-4a25-a00c-c7c531645a7c.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "28a865b5-3739-4658-88a8-ea7a4c3b98a3",
+            "title": "ページ 6",
+            "content": "<table>\n<thead>\n<tr>\n<th>時期</th>\n<th>#</th>\n<th>工程</th>\n<th>インプット</th>\n<th>担当者</th>\n<th>アウトプット</th>\n<th>担当者</th>\n<th>良品条件</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td>\n<td>6-1</td>\n<td>計画立案</td>\n<td>試作日程<br>車両入力最悪条件提示<br>他部署相乗り評価確認<br>ISW309（異客、参照<br>意匠寸法測定<br>電池システム仕様書</td>\n<td>BV設計<br>KG<br>BV評価<br>BV評価<br>BV計画<br>PBV</td>\n<td>試験車予約<br>CB制御要望<br>車両部品手配<br>相乗り評価可否決定<br>試験条件</td>\n<td>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td>6-2</td>\n<td>試験車使用</td>\n<td>試作日程<br>電池パックCAE解析</td>\n<td>BV設計</td>\n<td>計測位置、台数決定<br>計測器予約<br>試験手配<br>センサー手配<br>試験依頼書作成<br>テストコース予約<br>車両発注手配<br>（相乗り評価の場合）力主調整</td>\n<td>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価</td>\n<td>□設計と必要なアウトプットを合意。<br>合意したアウトプットを満たせる条件<br>計測位置、計測器であること</td>\n</tr>\n<tr>\n<td></td>\n<td>6-3</td>\n<td>実働入力測定</td>\n<td>試験条件で実行</td>\n<td>BVQ</td>\n<td>試験結果</td>\n<td>BVQ、試験結果</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td>6-4</td>\n<td>試験結果解析</td>\n<td>試験結果</td>\n<td>BV評価</td>\n<td>寿命解析結果<br>良否判定<br>NG時は要因分析<br>耐久試験可否判断</td>\n<td>BV評価<br>BV評価<br>BV評価<br>BV評価</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td>6-5</td>\n<td>耐久試験</td>\n<td>応力測定結果に合わせた入力条件</td>\n<td>BV評価</td>\n<td>悪路耐久結果</td>\n<td>BV評価</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td>6-6</td>\n<td>目標達成確認</td>\n<td>耐久試験データ</td>\n<td>BV評価</td>\n<td>量産、締結関係に負担等の有無<br>ひずみ等の変遷<br>漏液、発火有無<br>NG時の要因解析結果<br>TS改訂の必要性あれば、提案</td>\n<td>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価</td>\n<td>目標品質の要件を満たしている</td>\n</tr>\n</tbody>\n</table>",
+            "references": [],
+            "sourceImagePath": "58733949-f380-4b8b-9a63-08843d220eb8.png",
+            "thumbnailPath": "thumb_58733949-f380-4b8b-9a63-08843d220eb8.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "6b373710-b872-42f9-aac2-a49327abe8d9",
+            "title": "ページ 7",
+            "content": "<table>\n<thead>\n<tr>\n<th>期間</th>\n<th style=\"text-align: right;\">#</th>\n<th>工程</th>\n<th>インプット</th>\n<th>担当部者</th>\n<th>アウトプット</th>\n<th>担当部者</th>\n<th>良品条件</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">6-1</td>\n<td>計画立案</td>\n<td>車両計画<br>車両入力最悪条件提示<br>他部署相乗り評価確認<br>ISW1309（田原車没没）参照<br>目標没没仕様書<br>電池システム仕様書</td>\n<td></td>\n<td>試験車予約<br>車両部品手配<br>相乗り評価可否決定<br>試験条件</td>\n<td>BV設計<br>KG<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>PBV</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">6-2</td>\n<td>試験準備</td>\n<td>試験車使用<br>電池パックCAE解析</td>\n<td>BV設計<br>UI</td>\n<td>計測位置、台数決定<br>計測器予約<br>試験手配<br>センター手配<br>試験依頼書作成<br>テストコース予約<br>車両発送手配<br>相乗り評価の場合 分担調整</td>\n<td>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価</td>\n<td>口設計と必要なアウトプットを合意。<br>合意したアウトプットを満たせる条件<br>計測位置、計測器であること</td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">6-3</td>\n<td>実働入力測定</td>\n<td>試験条件で走行</td>\n<td></td>\n<td>試験結果</td>\n<td>BV評価</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">6-4</td>\n<td>試験結果解析</td>\n<td>試験結果</td>\n<td></td>\n<td>固有値解析結果<br>寿命解析結果<br>良否判定<br>NG時は要因分析<br>評価結果エビデンス</td>\n<td>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価</td>\n<td>固有値が車両共振点より十分に大きい</td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">6-5</td>\n<td>吸入試験</td>\n<td>能力測定結果に合わせた入力</td>\n<td></td>\n<td>波形合わせ入力結果</td>\n<td>BV評価</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">6-6</td>\n<td>結果まとめ</td>\n<td>耐久試験データ<br>筐体、締結関係に亀裂等の有無<br>ひずみ等の変遷<br>雨液、発火有無<br>NG時の要因解析結果<br>TS改訂の必要あれば、提案</td>\n<td></td>\n<td>性能企画書の要件を満たしている<br>NG時の要因調査と改善方法提案</td>\n<td>BV評価<br>BV評価<br>BV評価</td>\n<td></td>\n</tr>\n</tbody>\n</table>",
+            "references": [],
+            "sourceImagePath": "44ddba98-66a5-430e-8aaf-cf3147b57284.png",
+            "thumbnailPath": "thumb_44ddba98-66a5-430e-8aaf-cf3147b57284.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "b9943aed-ea3c-41ef-a93e-07e3b7561f50",
+            "title": "ページ 8",
+            "content": "<table>\n<thead>\n<tr>\n<th>期間</th>\n<th style=\"text-align: right;\">#</th>\n<th>工程</th>\n<th>インプット</th>\n<th>担当者</th>\n<th>アウトプット</th>\n<th>担当者</th>\n<th>製品条件</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td>\n<td style=\"text-align: right;\"></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">6-1</td>\n<td>計画立案</td>\n<td>計画入力要件提示<br>他部署相乗り評価確認<br>TSW1309（空記）参照<br>突起評価手順書<br>電池システム仕様書</td>\n<td>BV設計<br>KG<br>BV評価<br>BV評価<br>BV評価<br>FBV</td>\n<td>試作車予約<br>車両部品手配<br>相乗り評価可否決定<br>試験条件、試験計画</td>\n<td>BV評価<br>BV評価<br>BV評価<br>BV評価</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">6-2</td>\n<td>試験準備</td>\n<td>電池パックCAE解析</td>\n<td>BV設計<br>UI</td>\n<td>計測位置、点数決定<br>計測器予約<br>試験手配<br>センサー手配<br>試験依頼書作成<br>テストコース予約<br>車両発送手配<br>相乗り評価の場合）刃担当調査</td>\n<td>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価<br>BV評価</td>\n<td>合設計と必要なインプットを合意。<br>合意したアウトプットを満たせる条件<br>計測位置、計測器であること</td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">6-3</td>\n<td>実働応力測定</td>\n<td>試験条件で走行</td>\n<td>BV評価</td>\n<td>試験結果</td>\n<td>BV評価</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">6-4</td>\n<td>試験結果解析</td>\n<td>試験データ</td>\n<td>BV設計</td>\n<td>判定指定<br>NG時は要因分析<br>耐久試験可否判断<br>評価結果レビュー</td>\n<td>BV評価<br>BV評価<br>BV評価<br>BV評価</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">6-5</td>\n<td>突起耐久試験</td>\n<td>突起耐久試験</td>\n<td>BV評価</td>\n<td>耐久試験後電池パック</td>\n<td>BVQ</td>\n<td>最大荷重が与えられている</td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">6-6</td>\n<td>耐久試験後電池調査</td>\n<td>耐久試験後電池パック</td>\n<td>BV評価</td>\n<td>劣化調査結果</td>\n<td>BVQ</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td style=\"text-align: right;\">6-7</td>\n<td>結果まとめ</td>\n<td>応力測定解析結果<br>耐久試験評価解析結果</td>\n<td>BV評価<br>BV評価</td>\n<td>ひずみ等の変遷<br>漏液、発火有無<br>NG時の要因解析結果<br>TS改訂の必要あれば、提案</td>\n<td>BV評価<br>BV評価<br>BV評価<br>BV評価</td>\n<td>性能企画書の要件を満たしている<br>NG時の要因調査と改善方法提案</td>\n</tr>\n</tbody>\n</table>",
+            "references": [],
+            "sourceImagePath": "6d3e9243-5ee6-43fb-9e2f-83418ac11535.png",
+            "thumbnailPath": "thumb_6d3e9243-5ee6-43fb-9e2f-83418ac11535.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "3700bb59-151b-45fc-9d05-e38a0423856a",
+            "title": "ページ 9",
+            "content": "<h2>変更・簡素化 開発フロー</h2>\n<table>\n<thead>\n<tr>\n<th>時期</th>\n<th style=\"text-align: right;\">#</th>\n<th>工程</th>\n<th>インプット</th>\n<th>担当者</th>\n<th>アウトプット</th>\n<th>担当者</th>\n<th>良品条件</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>先行検討</td>\n<td style=\"text-align: right;\">1</td>\n<td>性能企画書作成</td>\n<td>車両仕様書<br>システム仕様書<br>他PJ開発情報<br>関連TS<br>認証移行基準</td>\n<td>PTZ<br>BV評価<br>BV評価<br>BV評価<br>BV評価</td>\n<td>性能企画書</td>\n<td>車両企画部署</td>\n<td></td>\n</tr>\n<tr>\n<td>先行検討</td>\n<td style=\"text-align: right;\">2</td>\n<td>解析用モデル作成</td>\n<td>性能企画書<br>件灯仕様書</td>\n<td></td>\n<td>性能企画書<br>件灯仕様書</td>\n<td>BV評価<br>小メー設計、BV</td>\n<td></td>\n</tr>\n<tr>\n<td>先行検討</td>\n<td style=\"text-align: right;\">3</td>\n<td>件灯モデル解析条件</td>\n<td>件灯モデル<br>解析条件</td>\n<td></td>\n<td>BV設計、UI<br>BVQ、車両実験</td>\n<td></td>\n<td></td>\n</tr>\n<tr>\n<td>先行検討</td>\n<td style=\"text-align: right;\">4</td>\n<td>AS適合決定</td>\n<td>件灯結果</td>\n<td></td>\n<td>UI、BV</td>\n<td>BV設計</td>\n<td>開発提案</td>\n</tr>\n<tr>\n<td>開発時期（AS、CV共通）</td>\n<td style=\"text-align: right;\">5</td>\n<td>性能企画書 改訂<br>（必要に応じて）</td>\n<td>車両開発提案<br>電池パック適合図<br>システム仕様書<br>電池システム仕様書</td>\n<td>PTZ<br>1MBV</td>\n<td>車両企画部署<br>BV設計<br>PTZ</td>\n<td>BV評価<br>車両性能と必要な目標値決め</td>\n<td></td>\n</tr>\n<tr>\n<td>開発時期（AS、CV共通）</td>\n<td style=\"text-align: right;\">6</td>\n<td>試作図</td>\n<td>電池パック構造図</td>\n<td>BV設計</td>\n<td>試作図</td>\n<td>BV設計</td>\n<td></td>\n</tr>\n<tr>\n<td>開発時期（AS、CV共通）</td>\n<td style=\"text-align: right;\">7</td>\n<td>評価計画</td>\n<td>試作日程<br>マイルストーン日程<br>出図日程<br>評価項目選定</td>\n<td>BV設計<br>BV設計<br>BV評価</td>\n<td>試験日程立案<br>試験工程立案</td>\n<td>BV評価</td>\n<td></td>\n</tr>\n<tr>\n<td>開発時期（AS、CV共通）</td>\n<td style=\"text-align: right;\">8</td>\n<td>物理条件の確認</td>\n<td>実験性能の提案<br>渉外の必要性検討、提案<br>機能主管DR（法規）<br>認証マイグレーション</td>\n<td>BV評価<br>BV評価<br>BV評価<br>CA、PC2</td>\n<td>実験性能の合意<br>渉外必要性、内容合意<br>適合手法の確認</td>\n<td>BV、PC2、BV<br>機能主管、BV</td>\n<td></td>\n</tr>\n<tr>\n<td>開発時期（AS、CV共通）</td>\n<td style=\"text-align: right;\">9</td>\n<td>試験準備、試験実施</td>\n<td>供試品パック<br>シン設計、完成<br>下記TSを元に必要部品を手配<br>を手配、試験条件決定<br>TSW138<br>TSW1384<br>TSW331</td>\n<td>BV設計<br>BV評価<br>BV評価<br>BV評価</td>\n<td>シン納入<br>試験結果</td>\n<td>BV評価<br>BV評価</td>\n<td></td>\n</tr>\n<tr>\n<td>開発時期（AS、CV共通）</td>\n<td style=\"text-align: right;\">10</td>\n<td>試験結果解析</td>\n<td>試験結果</td>\n<td>BV設計</td>\n<td>良否判定<br>NG時は要因分析</td>\n<td>BV評価</td>\n<td></td>\n</tr>\n<tr>\n<td>開発時期（AS、CV共通）</td>\n<td style=\"text-align: right;\">11</td>\n<td>対策検討</td>\n<td>要因解析結果</td>\n<td>BV評価</td>\n<td>対策立案<br>局反検討</td>\n<td>全員</td>\n<td>背反で含めて成立の目途あり</td>\n</tr>\n<tr>\n<td>開発時期（AS、CV共通）</td>\n<td style=\"text-align: right;\">12</td>\n<td>対策品強度予測</td>\n<td>対策構造</td>\n<td>BV設計</td>\n<td>予測実施（CAE、他計算等）<br>改善代</td>\n<td>UI、BV</td>\n<td></td>\n</tr>\n<tr>\n<td>開発時期（AS、CV共通）</td>\n<td style=\"text-align: right;\">13</td>\n<td>対策構造提案</td>\n<td>予測結果</td>\n<td>UI、BV</td>\n<td>新電池パック構造</td>\n<td>BV設計</td>\n<td></td>\n</tr>\n<tr>\n<td>開発時期（AS、CV共通）</td>\n<td style=\"text-align: right;\">14</td>\n<td>品熟</td>\n<td>評価結果エビデンス</td>\n<td>BV評価</td>\n<td>監?（CV移行）、量試（号試移行）</td>\n<td>BV評価</td>\n<td>性能企画書の要求をすべて満足している<br>品熟確認<br>CV移行（日程）、号試（評価結果）</td>\n</tr>\n<tr>\n<td>開発時期（AS、CV共通）</td>\n<td style=\"text-align: right;\">15</td>\n<td>認証移行会議</td>\n<td>評価結果エビデンス</td>\n<td>BV評価</td>\n<td>認証移行会議資料</td>\n<td>BV評価</td>\n<td>認証移行基準をすべて満足した<br>認証移行会議</td>\n</tr>\n</tbody>\n</table>",
+            "references": [],
+            "sourceImagePath": "a05b0bdc-da7d-4bd5-9219-5206deb392f9.png",
+            "thumbnailPath": "thumb_a05b0bdc-da7d-4bd5-9219-5206deb392f9.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "becdb8d7-db4f-45ac-8286-e7168496bcc6",
+            "title": "ページ 10",
+            "content": "<p>各パックごとの固有事象、部品に関しては関係者で議論して決定すること</p>\n<table>\n<thead>\n<tr>\n<th>大分類</th>\n<th>中分類</th>\n<th>小分類</th>\n<th>機能（試験条件）検討内容</th>\n<th>アイテム</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>強度</td>\n<td></td>\n<td>田原高速波状路</td>\n<td>波状路パターン選定</td>\n<td>TSA2601G 寒期<br>TSA2605G 寒期</td>\n</tr>\n<tr>\n<td>強度</td>\n<td>実働応力測定（機器部品耐久）</td>\n<td>田原悪路</td>\n<td>コース選定</td>\n<td>TSA2601G 寒期<br>TSA2605G 寒期</td>\n</tr>\n<tr>\n<td>強度</td>\n<td>実働応力測定（機器部品耐久）</td>\n<td>田原悪路</td>\n<td>コース選定</td>\n<td>TSA2601G 寒期<br>TSA2605G 寒期</td>\n</tr>\n<tr>\n<td>強度</td>\n<td>実働応力測定（機器部品耐久）</td>\n<td></td>\n<td>搭載予定車種の中から、サスペンション諸元上、乗り上げ時の上下入力が最も大きくなる車種を選定</td>\n<td>車両諸元</td>\n</tr>\n<tr>\n<td>強度</td>\n<td>設定乗り越し</td>\n<td></td>\n<td>（規定）</td>\n<td>TSW130G</td>\n</tr>\n<tr>\n<td>強度</td>\n<td>悪路擬似耐久</td>\n<td></td>\n<td>（規定）</td>\n<td>TSW130G</td>\n</tr>\n<tr>\n<td>強度</td>\n<td>高速波状路擬似耐久</td>\n<td></td>\n<td>（規定）</td>\n<td>TSW130G</td>\n</tr>\n<tr>\n<td>強度</td>\n<td>熱衝撃</td>\n<td></td>\n<td>サイクル数検討</td>\n<td>温度予測</td>\n</tr>\n<tr>\n<td>強度</td>\n<td>路面干渉</td>\n<td></td>\n<td>試験パターン選定</td>\n<td>仕向け（路面干渉ランク）<br>TSA2334G</td>\n</tr>\n<tr>\n<td>強度</td>\n<td>落下物干渉</td>\n<td></td>\n<td>車室外搭載パックのみ（規定）</td>\n<td>手順書</td>\n</tr>\n<tr>\n<td>強度</td>\n<td>飛び石</td>\n<td></td>\n<td>試験パターン選定</td>\n<td>仕向け（飛び石ランク）<br>TSA2333G</td>\n</tr>\n<tr>\n<td>強度</td>\n<td>耐荷重（静荷重）</td>\n<td>電池パック直上への締付け</td>\n<td>車室内搭載パックのみ（規定）</td>\n<td>TSW130G</td>\n</tr>\n<tr>\n<td>強度</td>\n<td>耐荷重（静荷重）</td>\n<td></td>\n<td>（規定）</td>\n<td>TSW130G</td>\n</tr>\n<tr>\n<td>強度</td>\n<td>耐荷重（衝撃荷重）</td>\n<td>物体落下想定</td>\n<td>試験条件選定</td>\n<td>搭載車種<br>TSW130G</td>\n</tr>\n<tr>\n<td>強度</td>\n<td>熱害</td>\n<td></td>\n<td>車室外搭載HEVのみ（パターン選択）</td>\n<td>TSA2720G</td>\n</tr>\n<tr>\n<td>安全</td>\n<td>衝突</td>\n<td>後突</td>\n<td>後突条件</td>\n<td>車両諸元、仕向け</td>\n</tr>\n<tr>\n<td>安全</td>\n<td>衝突</td>\n<td>側突</td>\n<td>側突条件</td>\n<td>車両諸元、仕向け</td>\n</tr>\n<tr>\n<td>安全</td>\n<td>衝突</td>\n<td>前突</td>\n<td>前突条件</td>\n<td>車両諸元、仕向け</td>\n</tr>\n<tr>\n<td>安全</td>\n<td>接触保護</td>\n<td></td>\n<td>（規定）</td>\n<td>UN-R100</td>\n</tr>\n<tr>\n<td>安全</td>\n<td>RQ検査</td>\n<td></td>\n<td>（規定）</td>\n<td>国際・国内・E車法適合基準書<br>（QSF124）</td>\n</tr>\n<tr>\n<td>安全</td>\n<td>水入り</td>\n<td>静的</td>\n<td>車室内搭載パックのみ（規定）</td>\n<td>TSW131G</td>\n</tr>\n<tr>\n<td>安全</td>\n<td>水入り</td>\n<td>動的</td>\n<td>車室内搭載パックのみ（規定）</td>\n<td>TSW131G</td>\n</tr>\n<tr>\n<td>安全</td>\n<td>水入り</td>\n<td>浸水路</td>\n<td>車室外搭載電池パックのみ。試験パターン選定</td>\n<td>TSA2720G<br>車両タイプ<br>仕向け（冠水ランク）</td>\n</tr>\n<tr>\n<td>安全</td>\n<td>水入り</td>\n<td>下部高圧洗車</td>\n<td>車室外搭載電池パックのみ</td>\n<td>TSA2341G<br>仕向け</td>\n</tr>\n<tr>\n<td>安全</td>\n<td>棒状異物</td>\n<td></td>\n<td>車室内搭載非密閉パックのみ（規定）</td>\n<td>TSW110G</td>\n</tr>\n<tr>\n<td>安全</td>\n<td>塩害</td>\n<td></td>\n<td>車室外搭載電池パックのみ（規定）</td>\n<td>TSA2310G</td>\n</tr>\n<tr>\n<td>安全</td>\n<td>凍結、着氷</td>\n<td></td>\n<td>車室外搭載電池パックのみ（規定）</td>\n<td>TSA2300G</td>\n</tr>\n<tr>\n<td>ユニット評価（TS、部内規）</td>\n<td>外部短絡</td>\n<td></td>\n<td>（規定）</td>\n<td>TSW131G</td>\n</tr>\n<tr>\n<td>ユニット評価（TS、部内規）</td>\n<td>トラッキング</td>\n<td></td>\n<td>（規定）</td>\n<td>TSW131G</td>\n</tr>\n<tr>\n<td>ユニット評価（TS、部内規）</td>\n<td>塩水・水中投入</td>\n<td>外部短絡</td>\n<td>車室内搭載パックのみ（規定）</td>\n<td>TSW131G</td>\n</tr>\n<tr>\n<td>ユニット評価（TS、部内規）</td>\n<td>塩水・水中投入</td>\n<td>トラッキング</td>\n<td>車室内搭載パックのみ（規定）</td>\n<td>TSW131G</td>\n</tr>\n<tr>\n<td>ユニット評価（TS、部内規）</td>\n<td>塩水・水中投入</td>\n<td>塩水・水中投入シール性能</td>\n<td>車室内搭載パックのみ（規定）</td>\n<td>TSW131G</td>\n</tr>\n<tr>\n<td>ユニット評価（TS、部内規）</td>\n<td>塩水・挟入り</td>\n<td>ブロア冷却電池パックのみ</td>\n<td>車室内搭載パックのみ（規定）</td>\n<td>TSW131G</td>\n</tr>\n<tr>\n<td>ユニット評価（TS、部内規）</td>\n<td>棒状異物</td>\n<td></td>\n<td>（規定）</td>\n<td>TSW131G</td>\n</tr>\n<tr>\n<td>ユニット評価（TS、部内規）</td>\n<td>温調結露</td>\n<td></td>\n<td>（規定）</td>\n<td>TSW131G</td>\n</tr>\n<tr>\n<td>ユニット評価（TS、部内規）</td>\n<td>連鎖発煙</td>\n<td></td>\n<td>（規定）</td>\n<td>TSW131G</td>\n</tr>\n<tr>\n<td>ユニット評価（TS、部内規）</td>\n<td>燃焼</td>\n<td></td>\n<td>（規定）</td>\n<td>TSW131G</td>\n</tr>\n</tbody>\n</table>",
+            "references": [],
+            "sourceImagePath": "a8cf26e1-4c2a-4513-bc51-20458f843174.png",
+            "thumbnailPath": "thumb_a8cf26e1-4c2a-4513-bc51-20458f843174.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "d77ceb24-aadc-44e9-982b-020ecf3719c4",
+            "title": "ページ 11",
+            "content": "<h2>法規件× 法規　検索方法</h2>\n<h3>法規要件調査方法</h3>\n<p><strong>G-RISで法規要件を確認する。</strong></p>\n<h4>G-RIS2.0 要件検索</h4>\n<ul>\n<li>▲検索条件</li>\n<li>法規　＋</li>\n<li>機能部位　＋</li>\n<li>車両カテゴリ　＋</li>\n<li>法規No、法規名を入力　（例）UN-R(ECE)13H</li>\n<li>問合せNo.</li>\n<li>キーワード　法規要件、設計要件の本文及び考え方</li>\n<li>□ あいまい検索　？</li>\n<li>検索条件クリア</li>\n</ul>\n<p>① 法規</p>\n<p><strong>選択画面</strong></p>\n<ul>\n<li>部から選択</li>\n<li>国から選択</li>\n<li>キーワードから選択</li>\n<li>全選択</li>\n<li>全解除</li>\n<li>分野</li>\n<li>大分類</li>\n<li>中分類</li>\n<li>国</li>\n<li>法規No.</li>\n<li>法規</li>\n</ul>\n<p>分野：<br />\n- EYP エンジン・HV<br />\n- V 駆動<br />\n- C シャシー<br />\n- B ボデー<br />\n- F 電装・HV<br />\n- G 評価<br />\n- D デザイン<br />\n- M 材技・その他</p>\n<p>大分類：<br />\n- エンジン本体<br />\n- エンジン・EV適合<br />\n- 機能<br />\n- HV・PHV・EV<br />\n- FC<br />\n- OBD</p>\n<p>中分類：<br />\n- 駆動用バッテリー<br />\n- 冷却プロ…<br />\n- 監視ユニット・電池ECU<br />\n- 高電圧機器部品</p>\n<p>国：<br />\n- 北米（米国属…）</p>\n<p>法規No.：<br />\n- FMVSS124<br />\n- FMVSS305<br />\n- FMVSS305a<br />\n- CMVSR<br />\n- FMVSS305</p>\n<p>法規：<br />\n- アクセル・コントロール［米国（属…］<br />\n- 電気自動車［米国（属領含む）］<br />\n- 電気自動車［米国（属領含む）］<br />\n- プラスチックリサイクルマーク［北米…］<br />\n- PFAS含有製品規制に関する州法…<br />\n- 側突MOU［カナダ］<br />\n- 免除関連のラベル要件［カナダ］<br />\n- 電気自動車［カナダ］<br />\n- フランス語警章［カナダ（ケベック）］</p>\n<p>② 部から選択</p>\n<p>③ EYP エンジン・HV<br />\n④ 駆動用バッテリー<br />\n⑤ 電池パック<br />\n⑥ 仕向け国を選択</p>",
+            "references": [],
+            "sourceImagePath": "f2832fe5-f10d-4d85-a3ba-77599bf840c2.png",
+            "thumbnailPath": "thumb_f2832fe5-f10d-4d85-a3ba-77599bf840c2.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "60e32613-b027-49be-9387-307c04e13b98",
+            "title": "ページ 12",
+            "content": "<h2>車両仕様によるカテゴリー</h2>\n<p>こちら</p>\n<p>2WD</p>\n<table>\n<thead>\n<tr>\n<th>カテゴリー</th>\n<th>仕様</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>H ベビー</td>\n<td>4WDベースで作られた車高の高い2WD</td>\n</tr>\n<tr>\n<td>L ライト</td>\n<td>上記以外の車高低い2WD</td>\n</tr>\n</tbody>\n</table>\n<p>4WD</p>\n<table>\n<thead>\n<tr>\n<th>カテゴリー</th>\n<th>仕様</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>H ベビー</td>\n<td>ランクル300、ランクル70</td>\n</tr>\n<tr>\n<td>MH ミディアムベビー</td>\n<td>ランクル250、GX、ハイラックス、フォーチュナー</td>\n</tr>\n<tr>\n<td>M ミディアム</td>\n<td>タコマ、4ランナー</td>\n</tr>\n<tr>\n<td>ML ミディアムライト</td>\n<td>LX、タンドラ、セコイア</td>\n</tr>\n<tr>\n<td>L ライト（乗用車系）</td>\n<td>ハリアー、RAV4、RX、NX、ハイランダー</td>\n</tr>\n</tbody>\n</table>\n<h2>路面干渉（オフロード系）カテゴリー</h2>\n<p>GLOVE</p>\n<table>\n<thead>\n<tr>\n<th>カテゴリー</th>\n<th>車種の例</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>乗用車（トヨタ）</td>\n<td></td>\n</tr>\n<tr>\n<td>乗用車（レクサス）</td>\n<td>ES、IS</td>\n</tr>\n<tr>\n<td>プレミアムクロスオーバー SUV</td>\n<td>RX、NX</td>\n</tr>\n<tr>\n<td>オフロードクロスオーバー SUV</td>\n<td>C-HR、ハリアー、カローラクロス、ヤリスクロス</td>\n</tr>\n<tr>\n<td>ライトオフロード SUV</td>\n<td>RAV4、ハイランダー</td>\n</tr>\n<tr>\n<td>ミニバン</td>\n<td>シエナ、ノア、ヴォクシー</td>\n</tr>\n<tr>\n<td>商用車用1BOXバン</td>\n<td>ハイエース、IMV、MV、プロボックス</td>\n</tr>\n<tr>\n<td>バス</td>\n<td>コースター</td>\n</tr>\n<tr>\n<td>トラック</td>\n<td>ダイナ、トヨエース</td>\n</tr>\n<tr>\n<td>フルトラベビーオフロードカー</td>\n<td>FJ70、LX、ランクル</td>\n</tr>\n<tr>\n<td>ヘビーデューティーオフロードカー</td>\n<td>IMV P/U (4×4)、タンドラ (4×4)、プラド、GX、FJクルーザー</td>\n</tr>\n<tr>\n<td>ライトデューティーオフロードカー</td>\n<td>IMV P/U (4×2)、タンドラ (4×2)、IMV SUV、セコイア (4×4)</td>\n</tr>\n<tr>\n<td>乗用車用途オフロードカー</td>\n<td>タコマ、セコイア (4×2)</td>\n</tr>\n</tbody>\n</table>",
+            "references": [],
+            "sourceImagePath": "5220e4d7-39b5-433e-9a53-8f022d15c28c.png",
+            "thumbnailPath": "thumb_5220e4d7-39b5-433e-9a53-8f022d15c28c.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        }
+    ],
+    "references": [],
+    "sourceFilePath": "C:\\Users\\1584550\\AppData\\Roaming\\system_factory\\app_data\\projects\\0c47063b-31ef-45f7-9ab8-67833c1008e7\\documents\\cda71b45-5bb7-4621-b7b7-1bdafef28542\\orgs\\d0e1ebc4-74b1-492f-84e6-d965fdd64489.pdf",
+    "createdAt": null,
+    "updatedAt": null,
+    "skeleton": null,
+    "headingRules": null,
+    "digest": {
+        "overview": {
+            "summary": "トヨタの「BV-D-05 電池パック強度・安全評価 設計標準書」は、電池パック開発における強度・安全評価の設計業務と標準的な工程をまとめた文書である。先行検討から試作・評価・対策・品質確認までのフローを示し、工程ごとのインプット、担当、アウトプット、判定条件を整理している。実働入力・応力測定、耐久試験、試験後調査などの評価手順に加え、強度・安全・ユニット評価の試験項目と参照規格を記載する。さらに、G-RISを用いた法規要件の検索方法、車両仕様や路面干渉に基づくカテゴリー分けも扱う。",
+            "documentKind": "design_doc",
+            "purpose": "電池パック開発における強度・安全評価の業務手順、評価条件および判定・品質確認の進め方を標準化して示す。",
+            "scope": "先行検討、開発時の試作・試験・解析・対策・品質決裁から、個別の強度・安全・ユニット評価、法規要件検索、車両・路面干渉カテゴリーまでを扱う。",
+            "keyTopics": [
+                "電池パック強度・安全評価の開発フロー",
+                "性能企画書と評価基準の作成・改訂",
+                "解析用モデル作成、解析、構造提案",
+                "試作出図、評価計画、試験準備・実施",
+                "試験結果解析、対策検討、強度予測",
+                "品質確認・決裁および認証移行",
+                "実働入力・応力測定と耐久試験",
+                "強度・安全・ユニット評価項目",
+                "法規要件のG-RIS検索手順",
+                "車両仕様・路面干渉カテゴリー"
+            ],
+            "keyTerms": [
+                {
+                    "term": "性能企画書",
+                    "definition": "電池パック評価項目と判定基準、および満たすべき性能要求を定める企画書。"
+                },
+                {
+                    "term": "BV評価",
+                    "definition": "本書の開発・評価工程で解析、試験、試験結果の判定やエビデンス作成などを担う担当として記載されている。"
+                },
+                {
+                    "term": "AS構造",
+                    "definition": "解析結果をもとに決定し、電池パック構造図に反映する構造として記載されている。"
+                },
+                {
+                    "term": "試験結果エビデンス",
+                    "definition": "試験結果の解析や良否判定を裏付ける評価結果の資料。"
+                },
+                {
+                    "term": "品質窓口決裁",
+                    "definition": "評価結果エビデンスをもとに、CV移行および号試移行に向けて決裁を進める工程。"
+                },
+                {
+                    "term": "G-RIS2.0",
+                    "definition": "法規・機能部位・車両カテゴリなどを指定して法規要件を検索する仕組み。"
+                },
+                {
+                    "term": "IPXB",
+                    "definition": "変更設計フローの試験結果確認項目として、締結確保などとともに記載されている要件。"
+                }
+            ],
+            "targetSystem": "電池パック"
+        },
+        "outline": [
+            {
+                "id": "63f549a8-917e-4f2f-8ad9-7acf433a42e2",
+                "title": "変更設計業務標準書",
+                "level": 1,
+                "summary": "トヨタの「電池パック強度・安全評価 設計標準書」で、電池パック開発における評価の標準的な業務手順を示す。審査番号はBVD-05、部署は電池パック開発部 第３電池パック開発室。発行／変更履歴には、性能企画書の補助情報追加（No.2、'26/8/25）と、作成工程および担当組織名の修正（No.1、'26/8/5）が記載されている。",
+                "keywords": [
+                    "トヨタ",
+                    "電池パック強度・安全評価",
+                    "設計標準書",
+                    "BVD-05",
+                    "電池パック開発部 第３電池パック開発室",
+                    "性能企画書",
+                    "発行／変更履歴"
+                ],
+                "pageIds": [
+                    "7acc8953-d31f-4e30-9f1c-74e147ed5646"
+                ],
+                "children": []
+            },
+            {
+                "id": "38e22683-6764-42c6-affb-2169aa6c6d94",
+                "title": "完了検討",
+                "level": 1,
+                "summary": "工程1〜4では、性能企画書の作成、解析用モデルの作成と解析、AS構造決定を行う。",
+                "keywords": [
+                    "完了検討",
+                    "性能企画書",
+                    "解析",
+                    "AS構造"
+                ],
+                "pageIds": [
+                    "420688fd-248e-4eb2-9c8b-95c24e767bd1"
+                ],
+                "children": [
+                    {
+                        "id": "3053b406-fe78-46c6-b666-2281cbb1100d",
+                        "title": "性能企画書作成",
+                        "level": 2,
+                        "summary": "性能企画書検討内容（P10）をもとに、車両仕様書・システム仕様書・市場環境・法規対応などをインプットとして車両企画部署が作成する。評価項目と判定基準を明確にし、性能企画書を発行する。",
+                        "keywords": [
+                            "性能企画書",
+                            "P10",
+                            "車両仕様書",
+                            "システム仕様書",
+                            "G-RIS",
+                            "GLOVE",
+                            "評価項目"
+                        ],
+                        "pageIds": [
+                            "420688fd-248e-4eb2-9c8b-95c24e767bd1"
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "e726748b-72bc-448f-a427-85b9ea951c27",
+                        "title": "解析用モデル作成",
+                        "level": 2,
+                        "summary": "性能企画書と解析用構造情報をインプットにBV評価が解析用モデルを作成し、ボデー設計・BVが担当する。CAE助図前相談会が記載されている。",
+                        "keywords": [
+                            "解析用モデル",
+                            "性能企画書",
+                            "解析用構造情報",
+                            "BV評価",
+                            "ボデー設計",
+                            "CAE助図前相談会"
+                        ],
+                        "pageIds": [
+                            "420688fd-248e-4eb2-9c8b-95c24e767bd1"
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "e9cc1be4-95db-40b1-a353-54c51d9d7340",
+                        "title": "解析",
+                        "level": 2,
+                        "summary": "解析モデルと解析手順・条件を用いて、BV設計・UI・BV評価・車両実験が解析し、解析結果をUI・BVが受け取る。",
+                        "keywords": [
+                            "解析モデル",
+                            "解析手順",
+                            "解析条件",
+                            "BV設計",
+                            "UI",
+                            "車両実験",
+                            "解析結果"
+                        ],
+                        "pageIds": [
+                            "420688fd-248e-4eb2-9c8b-95c24e767bd1"
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "88cc867b-0ca6-45e3-adf1-c4cad57ab773",
+                        "title": "AS構造決定",
+                        "level": 2,
+                        "summary": "解析結果をもとにUI・BVがAS構造を決定し、BV設計が電池パック構造図を作成する。工程欄には開発提案の記載がある。",
+                        "keywords": [
+                            "AS構造",
+                            "解析結果",
+                            "電池パック構造図",
+                            "BV設計",
+                            "開発提案"
+                        ],
+                        "pageIds": [
+                            "420688fd-248e-4eb2-9c8b-95c24e767bd1"
+                        ],
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": "378bc9dc-8243-4a9c-9a12-c3cea24a32f7",
+                "title": "開発試作（AS、CV共通）",
+                "level": 1,
+                "summary": "工程5〜13では、性能企画書改訂と試作出図、評価計画・試験、試験結果の解析、対策検討と予測、対策構造提案、品質窓口決裁を行う。",
+                "keywords": [
+                    "開発試作",
+                    "AS",
+                    "CV",
+                    "試作出図",
+                    "評価計画",
+                    "品質窓口決裁"
+                ],
+                "pageIds": [
+                    "420688fd-248e-4eb2-9c8b-95c24e767bd1"
+                ],
+                "children": [
+                    {
+                        "id": "ef2114e6-0199-43dc-add1-750e45c68825",
+                        "title": "性能企画書 改訂 （必要に応じて）",
+                        "level": 2,
+                        "summary": "車両開発提案、電池パック構造図、システム仕様書、電池システム仕様書を入力とし、車両企画部署・BV設計・PZなどが改訂する。車両仕様と必要な目標値を決める。",
+                        "keywords": [
+                            "性能企画書",
+                            "車両開発提案",
+                            "電池パック構造図",
+                            "システム仕様書",
+                            "電池システム仕様書",
+                            "目標値"
+                        ],
+                        "pageIds": [
+                            "420688fd-248e-4eb2-9c8b-95c24e767bd1"
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "3da667c0-16a3-424d-bc1c-3fb1772140ba",
+                        "title": "試作出図",
+                        "level": 2,
+                        "summary": "電池パック構造図を入力としてBV設計が試作出図を行う。",
+                        "keywords": [
+                            "試作出図",
+                            "電池パック構造図",
+                            "BV設計"
+                        ],
+                        "pageIds": [
+                            "420688fd-248e-4eb2-9c8b-95c24e767bd1"
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "1473f4c4-0f8e-4392-9b42-430191d0e241",
+                        "title": "評価計画",
+                        "level": 2,
+                        "summary": "試作日程、マルストーン日程、出図日程、開発大日程をもとにBV設計および車両企画部署・PZが試験計画を作成し、BV評価が担当する。",
+                        "keywords": [
+                            "評価計画",
+                            "試作日程",
+                            "マルストーン日程",
+                            "出図日程",
+                            "開発大日程",
+                            "試験計画"
+                        ],
+                        "pageIds": [
+                            "420688fd-248e-4eb2-9c8b-95c24e767bd1"
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "7fcb2053-6a6a-4d09-9c22-ebeb10dc9b72",
+                        "title": "試験準備、試験実施",
+                        "level": 2,
+                        "summary": "供試品パックを用意し、TS・手順書をもとに必要部品を手配して試験条件を決定し、BV設計・BV評価が試験を行う。記載された手順・試験にはSW310、QA手順書、水入り・検状・挫状・抑圧・トラッキング・塩水／水浸漬・温水／浸入・連着発煙・TS発煙手順書、高圧充電、外部短絡が含まれ、アウトプットは試験結果。",
+                        "keywords": [
+                            "供試品パック",
+                            "SW310",
+                            "QA手順書",
+                            "試験条件",
+                            "トラッキング",
+                            "塩水・水浸漬",
+                            "高圧充電",
+                            "外部短絡"
+                        ],
+                        "pageIds": [
+                            "420688fd-248e-4eb2-9c8b-95c24e767bd1"
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "b9453c88-2fe6-4643-841b-f6f17ebcf264",
+                        "title": "試験結果解析",
+                        "level": 2,
+                        "summary": "BV評価が試験結果を解析し、良否判定を行う。NG時は要因分析を行い、評価結果エビデンスを作成する。品質条件として定量値での良否判定が記載されている。",
+                        "keywords": [
+                            "試験結果",
+                            "良否判定",
+                            "NG",
+                            "要因分析",
+                            "評価結果エビデンス",
+                            "定量値"
+                        ],
+                        "pageIds": [
+                            "420688fd-248e-4eb2-9c8b-95c24e767bd1"
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "7274b11d-4e54-47cb-b78c-9629290b589c",
+                        "title": "対策検討",
+                        "level": 2,
+                        "summary": "要因解析結果をもとにBV評価が対策を立案し、BV・ボデー設計・関係部署が担当する。品質条件は、対策まで含めて成立の目途があること。",
+                        "keywords": [
+                            "対策検討",
+                            "要因解析結果",
+                            "対策立案",
+                            "BV",
+                            "ボデー設計"
+                        ],
+                        "pageIds": [
+                            "420688fd-248e-4eb2-9c8b-95c24e767bd1"
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "1a304e47-e2d9-415e-aa01-45dcba05128c",
+                        "title": "対策品強度予測",
+                        "level": 2,
+                        "summary": "対策構造を入力としてBV設計が強度を予測し、CAE・他計算・改善代などの予測結果をUI・BVが受け取る。",
+                        "keywords": [
+                            "対策品強度予測",
+                            "対策構造",
+                            "CAE",
+                            "他計算",
+                            "改善代",
+                            "予測結果"
+                        ],
+                        "pageIds": [
+                            "420688fd-248e-4eb2-9c8b-95c24e767bd1"
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "2fe332ac-9251-47bb-9108-0e8891b8a7be",
+                        "title": "対策構造提案",
+                        "level": 2,
+                        "summary": "予測結果をもとにUI・BVが対策構造を提案し、BV設計が新電池パック構造図を作成する。",
+                        "keywords": [
+                            "対策構造提案",
+                            "予測結果",
+                            "新電池パック構造図",
+                            "BV設計"
+                        ],
+                        "pageIds": [
+                            "420688fd-248e-4eb2-9c8b-95c24e767bd1"
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "7c897919-4885-4e10-8137-7892d19d4213",
+                        "title": "品質窓口決裁",
+                        "level": 2,
+                        "summary": "評価結果エビデンスをもとにBV評価が、監27（CV移行）および監33（号試移行）の決裁を進める。品質条件は性能企画書の要求をすべて満足することで、CV移行（目途）・号試（評価結果）が記載されている。",
+                        "keywords": [
+                            "品質窓口決裁",
+                            "評価結果エビデンス",
+                            "監27",
+                            "監33",
+                            "CV移行",
+                            "号試",
+                            "性能企画書"
+                        ],
+                        "pageIds": [
+                            "420688fd-248e-4eb2-9c8b-95c24e767bd1"
+                        ],
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": "666c21d5-1658-4880-a9e4-620c44c90291",
+                "title": "変更設計業務フロー",
+                "level": 1,
+                "summary": "変更設計業務を、時期・工程・インプット・主担当者・アウトプット・担当者・成果物の項目で整理したフロー。先行検討の工程1〜4と、開発時期（AS、FS）の工程5〜16が記載されている。",
+                "keywords": [
+                    "変更設計業務フロー",
+                    "工程",
+                    "インプット",
+                    "アウトプット",
+                    "主担当者",
+                    "成果物"
+                ],
+                "pageIds": [
+                    "e8952e30-f375-4e42-a8ec-40cf8471d976"
+                ],
+                "children": [
+                    {
+                        "id": "ecf93eef-8e08-4895-807a-1847c4ae152f",
+                        "title": "先行検討",
+                        "level": 2,
+                        "summary": "工程1〜4として、性能企画書作成、部品用モデル作成、部品モデル関連作業、構造提案を記載。性能企画書では評価項目と判定基準を明確にし、電池解析モデルの作成や解析を経て電池パック構造図を提案する。",
+                        "keywords": [
+                            "性能企画書",
+                            "評価項目",
+                            "判定基準",
+                            "部品用モデル",
+                            "電池解析モデル",
+                            "構造提案",
+                            "電池パック構造図",
+                            "CAE出図判断会"
+                        ],
+                        "pageIds": [
+                            "e8952e30-f375-4e42-a8ec-40cf8471d976"
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "77417241-061f-4246-ad5d-69d36622cc1b",
+                        "title": "開発時期（AS、FS）",
+                        "level": 2,
+                        "summary": "工程5〜16として、必要に応じた性能企画書改訂、試作出図、モデル作成・評価計画・衝突試験準備と実施、試験結果解析、対策検討、対象品CAE解析、品総、認証移行を記載。試験結果では電動エネルギーが上限同等以上、発火・爆発なし、IPXB・締結2点以上確保などを確認し、品総では性能企画書の要求をすべて満足することを成果条件としている。",
+                        "keywords": [
+                            "AS",
+                            "FS",
+                            "性能企画書改訂",
+                            "試作出図",
+                            "評価計画",
+                            "衝突試験",
+                            "試験結果解析",
+                            "対策検討"
+                        ],
+                        "pageIds": [
+                            "e8952e30-f375-4e42-a8ec-40cf8471d976"
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "a10eed4f-dda4-4e29-8fc7-e0dd6508063f",
+                        "title": "変更・簡素化 開発フロー",
+                        "level": 2,
+                        "summary": "先行検討の工程1〜4（性能企画書作成、解析用モデル作成、解析、構造提案）と、開発時期（AS、CV共通）の工程5〜12（性能企画書改訂、試作図、評価、試験結果解析、対策検討、対策品強度予測、対策構造提案、品質総点検）について、各工程の時期、インプット、担当者、アウトプット、判定基準・成果物を示す。評価では性能企画書の判定基準を満足し余裕代を定量的に示すこと、試験結果は定量値で良否判定すること、品質総点検では性能企画書の要求をすべて満足することなどが記載されている。",
+                        "keywords": [
+                            "開発フロー",
+                            "性能企画書",
+                            "先行検討",
+                            "解析用モデル",
+                            "BV評価",
+                            "対策品強度予測",
+                            "品質総点検",
+                            "AS、CV"
+                        ],
+                        "pageIds": [
+                            "e89dfede-c6bd-4c11-b949-290c7d29f09f"
+                        ],
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": "775753dc-4fad-4f84-a235-2c0d772762b9",
+                "title": "6-1 計画立案",
+                "level": 1,
+                "summary": "インプットは試作日程、車両入力最悪条件提示、他部署相乗り評価確認、ISW309（異客、参照）、意匠寸法測定、電池システム仕様書。アウトプットとして試験車予約、CB制御要望、車両部品手配、相乗り評価可否決定、試験条件を挙げている。",
+                "keywords": [
+                    "計画立案",
+                    "試作日程",
+                    "車両入力最悪条件",
+                    "相乗り評価",
+                    "ISW309",
+                    "意匠寸法測定",
+                    "電池システム仕様書",
+                    "試験条件"
+                ],
+                "pageIds": [
+                    "28a865b5-3739-4658-88a8-ea7a4c3b98a3"
+                ],
+                "children": []
+            },
+            {
+                "id": "a8d1afbd-6811-4ec1-8ae5-430eb0de31d1",
+                "title": "6-2 試験車使用",
+                "level": 1,
+                "summary": "インプットは試作日程と電池パックCAE解析。計測位置・台数の決定、計測器予約、試験手配、センサー手配、試験依頼書作成、テストコース予約、車両発注手配を行い、相乗り評価の場合は力主調整を行う。良品条件として、設計と必要なアウトプットを合意し、合意したアウトプットを満たせる条件・計測位置・計測器であることを記載している。",
+                "keywords": [
+                    "試験車使用",
+                    "電池パックCAE解析",
+                    "計測位置",
+                    "計測器",
+                    "センサー",
+                    "試験依頼書",
+                    "テストコース",
+                    "相乗り評価"
+                ],
+                "pageIds": [
+                    "28a865b5-3739-4658-88a8-ea7a4c3b98a3"
+                ],
+                "children": []
+            },
+            {
+                "id": "8a85beac-c0a5-4efd-b393-e5b24f95eb41",
+                "title": "6-3 実働入力測定",
+                "level": 1,
+                "summary": "試験条件で実行し、試験結果を得る工程。担当者としてBVQ、試験結果の担当者としてBVQが記載されている。",
+                "keywords": [
+                    "実働入力測定",
+                    "試験条件",
+                    "試験結果",
+                    "BVQ"
+                ],
+                "pageIds": [
+                    "28a865b5-3739-4658-88a8-ea7a4c3b98a3"
+                ],
+                "children": []
+            },
+            {
+                "id": "50e4eca4-a8c1-44da-8616-7aab699eb50c",
+                "title": "6-4 試験結果解析",
+                "level": 1,
+                "summary": "試験結果をインプットとして寿命解析結果を作成し、良否判定、NG時の要因分析、耐久試験可否判断を行う。",
+                "keywords": [
+                    "試験結果解析",
+                    "寿命解析",
+                    "良否判定",
+                    "要因分析",
+                    "耐久試験可否判断"
+                ],
+                "pageIds": [
+                    "28a865b5-3739-4658-88a8-ea7a4c3b98a3"
+                ],
+                "children": []
+            },
+            {
+                "id": "be10ecf0-d160-4f4c-be93-b7b4c17fd2d0",
+                "title": "6-5 耐久試験",
+                "level": 1,
+                "summary": "応力測定結果に合わせた入力条件で耐久試験を行い、悪路耐久結果を得る。",
+                "keywords": [
+                    "耐久試験",
+                    "応力測定結果",
+                    "入力条件",
+                    "悪路耐久結果"
+                ],
+                "pageIds": [
+                    "28a865b5-3739-4658-88a8-ea7a4c3b98a3"
+                ],
+                "children": []
+            },
+            {
+                "id": "332d13fc-1b0b-497f-a25a-1eb7e7f91ac8",
+                "title": "6-6 目標達成確認",
+                "level": 1,
+                "summary": "耐久試験データをもとに、量産・締結関係への負担の有無、ひずみ等の変遷、漏液・発火の有無、NG時の要因解析結果を確認し、TS改訂が必要であれば提案する。良品条件は目標品質の要件を満たしていること。",
+                "keywords": [
+                    "目標達成確認",
+                    "耐久試験データ",
+                    "締結",
+                    "ひずみ",
+                    "漏液",
+                    "発火",
+                    "TS改訂",
+                    "目標品質"
+                ],
+                "pageIds": [
+                    "28a865b5-3739-4658-88a8-ea7a4c3b98a3"
+                ],
+                "children": []
+            },
+            {
+                "id": "15f3c9a4-6a12-4dfc-8fd0-4ec0fe6ed95b",
+                "title": "6-1 計画立案",
+                "level": 1,
+                "summary": "インプットとして車両計画、車両入力最悪条件提示、他部署相乗り評価確認、ISW1309（田原車没没）参照、目標没没仕様書、電池システム仕様書が記載されている。アウトプットは試験車予約、車両部品手配、相乗り評価可否決定、試験条件で、担当部者欄にはBV設計、KG、BV評価、PBVが記載されている。",
+                "keywords": [
+                    "計画立案",
+                    "車両計画",
+                    "車両入力最悪条件",
+                    "相乗り評価",
+                    "ISW1309",
+                    "電池システム仕様書",
+                    "BV設計",
+                    "BV評価"
+                ],
+                "pageIds": [
+                    "6b373710-b872-42f9-aac2-a49327abe8d9"
+                ],
+                "children": []
+            },
+            {
+                "id": "1c931b8e-ae62-41d0-ba04-d918cd92a873",
+                "title": "6-2 試験準備",
+                "level": 1,
+                "summary": "試験車使用と電池パックCAE解析をインプットとして、計測位置・台数決定、計測器予約、試験手配、センター手配、試験依頼書作成、テストコース予約、車両発送手配を行う。相乗り評価の場合は分担を調整する。良品条件として、口設計と必要なアウトプットを合意し、合意したアウトプットを満たせる条件・計測位置・計測器であることが記載されている。",
+                "keywords": [
+                    "試験準備",
+                    "電池パックCAE解析",
+                    "計測位置",
+                    "計測器",
+                    "試験依頼書",
+                    "テストコース",
+                    "車両発送",
+                    "相乗り評価"
+                ],
+                "pageIds": [
+                    "6b373710-b872-42f9-aac2-a49327abe8d9"
+                ],
+                "children": []
+            },
+            {
+                "id": "a3f25e70-9939-4e07-8e52-932a4e0c2ec7",
+                "title": "6-3 実働入力測定",
+                "level": 1,
+                "summary": "試験条件で走行し、試験結果を得る工程として記載されている。担当部者はBV評価。",
+                "keywords": [
+                    "実働入力測定",
+                    "試験条件",
+                    "試験結果",
+                    "BV評価"
+                ],
+                "pageIds": [
+                    "6b373710-b872-42f9-aac2-a49327abe8d9"
+                ],
+                "children": []
+            },
+            {
+                "id": "a433347b-cace-4b1c-99e4-b23e77a7ca6b",
+                "title": "6-4 試験結果解析",
+                "level": 1,
+                "summary": "試験結果から固有値解析結果、寿命解析結果、良否判定、NG時の要因分析、評価結果エビデンスをまとめる。良品条件は、固有値が車両共振点より十分に大きいこと。担当部者欄はいずれもBV評価。",
+                "keywords": [
+                    "試験結果解析",
+                    "固有値解析",
+                    "寿命解析",
+                    "良否判定",
+                    "要因分析",
+                    "評価結果エビデンス",
+                    "車両共振点"
+                ],
+                "pageIds": [
+                    "6b373710-b872-42f9-aac2-a49327abe8d9"
+                ],
+                "children": []
+            },
+            {
+                "id": "58480b3f-2c23-4c94-84b8-af592b6c4998",
+                "title": "6-5 吸入試験",
+                "level": 1,
+                "summary": "能力測定結果に合わせた入力を行い、波形合わせ入力結果をアウトプットとする。担当部者はBV評価。",
+                "keywords": [
+                    "吸入試験",
+                    "能力測定結果",
+                    "波形合わせ入力結果",
+                    "BV評価"
+                ],
+                "pageIds": [
+                    "6b373710-b872-42f9-aac2-a49327abe8d9"
+                ],
+                "children": []
+            },
+            {
+                "id": "711e9c15-03aa-4f07-a6e7-932afc3291b3",
+                "title": "6-6 結果まとめ",
+                "level": 1,
+                "summary": "耐久試験データについて、筐体・締結関係の亀裂等の有無、ひずみ等の変遷、雨液・発火有無、NG時の要因解析結果を扱い、TS改訂が必要な場合は提案する。良品条件として性能企画書の要件を満たすこと、NG時の要因調査と改善方法提案が記載され、担当部者欄にはBV評価が記載されている。",
+                "keywords": [
+                    "結果まとめ",
+                    "耐久試験データ",
+                    "筐体",
+                    "締結",
+                    "ひずみ",
+                    "発火",
+                    "TS改訂",
+                    "性能企画書"
+                ],
+                "pageIds": [
+                    "6b373710-b872-42f9-aac2-a49327abe8d9"
+                ],
+                "children": []
+            },
+            {
+                "id": "269b2fd1-a318-469d-b302-30dff5835d05",
+                "title": "6-1 計画立案",
+                "level": 1,
+                "summary": "計画入力要件の提示、他部署との相乗り評価確認を行い、TSW1309（空記）、突起評価手順書、電池システム仕様書を参照する。試作車予約、車両部品手配、相乗り評価可否の決定を行い、試験条件と試験計画をアウトプットとする。",
+                "keywords": [
+                    "計画立案",
+                    "TSW1309",
+                    "突起評価手順書",
+                    "電池システム仕様書",
+                    "相乗り評価",
+                    "試験計画",
+                    "BV設計",
+                    "BV評価"
+                ],
+                "pageIds": [
+                    "b9943aed-ea3c-41ef-a93e-07e3b7561f50"
+                ],
+                "children": []
+            },
+            {
+                "id": "7dd1d282-41bd-47f0-9d4c-ad6bdb22cf4b",
+                "title": "6-2 試験準備",
+                "level": 1,
+                "summary": "電池パックCAE解析をインプットとして、計測位置・点数の決定、計測器予約、試験手配、センサー手配、試験依頼書作成、テストコース予約、車両発送手配などを行う。設計と必要なインプットを合意し、合意したアウトプットを満たせる条件・計測位置・計測器であることが条件として記載されている。相乗り評価の場合の担当調査に関する記載もある。",
+                "keywords": [
+                    "試験準備",
+                    "電池パックCAE解析",
+                    "計測位置",
+                    "計測器",
+                    "試験依頼書",
+                    "テストコース",
+                    "車両発送",
+                    "相乗り評価"
+                ],
+                "pageIds": [
+                    "b9943aed-ea3c-41ef-a93e-07e3b7561f50"
+                ],
+                "children": []
+            },
+            {
+                "id": "bdb64aa3-462f-4b7c-9105-5ba8ea5fd190",
+                "title": "6-3 実働応力測定",
+                "level": 1,
+                "summary": "試験条件で走行し、試験結果を得る工程として記載されている。担当者はいずれもBV評価。",
+                "keywords": [
+                    "実働応力測定",
+                    "試験条件",
+                    "走行",
+                    "試験結果",
+                    "BV評価"
+                ],
+                "pageIds": [
+                    "b9943aed-ea3c-41ef-a93e-07e3b7561f50"
+                ],
+                "children": []
+            },
+            {
+                "id": "6828a7e6-3238-4cb0-9d34-ec2c01490612",
+                "title": "6-4 試験結果解析",
+                "level": 1,
+                "summary": "試験データをインプットとして、判定指定、NG時の要因分析、耐久試験可否判断、評価結果レビューを行う。記載された担当者はBV設計およびBV評価。",
+                "keywords": [
+                    "試験結果解析",
+                    "試験データ",
+                    "判定指定",
+                    "NG",
+                    "要因分析",
+                    "耐久試験可否",
+                    "評価結果レビュー"
+                ],
+                "pageIds": [
+                    "b9943aed-ea3c-41ef-a93e-07e3b7561f50"
+                ],
+                "children": []
+            },
+            {
+                "id": "8d1c1491-1d0d-445b-a2c5-ad574aca800a",
+                "title": "6-5 突起耐久試験",
+                "level": 1,
+                "summary": "突起耐久試験を行い、耐久試験後の電池パックをアウトプットとする。最大荷重が与えられていることが条件として記載されている。",
+                "keywords": [
+                    "突起耐久試験",
+                    "耐久試験後電池パック",
+                    "最大荷重",
+                    "BV評価",
+                    "BVQ"
+                ],
+                "pageIds": [
+                    "b9943aed-ea3c-41ef-a93e-07e3b7561f50"
+                ],
+                "children": []
+            },
+            {
+                "id": "14b1c5df-a5b9-4f35-9667-d60cb06e0079",
+                "title": "6-6 耐久試験後電池調査",
+                "level": 1,
+                "summary": "耐久試験後の電池パックを調査し、劣化調査結果をアウトプットとする。",
+                "keywords": [
+                    "耐久試験後電池調査",
+                    "耐久試験後電池パック",
+                    "劣化調査結果",
+                    "BV評価",
+                    "BVQ"
+                ],
+                "pageIds": [
+                    "b9943aed-ea3c-41ef-a93e-07e3b7561f50"
+                ],
+                "children": []
+            },
+            {
+                "id": "92810ede-8269-4317-a950-6264b3238ff5",
+                "title": "6-7 結果まとめ",
+                "level": 1,
+                "summary": "応力測定解析結果と耐久試験評価解析結果をもとに、ひずみ等の変遷、漏液・発火の有無、NG時の要因解析結果をまとめる。TS改訂が必要な場合は提案し、性能企画書の要件を満たすこと、およびNG時の要因調査と改善方法の提案が記載されている。",
+                "keywords": [
+                    "結果まとめ",
+                    "応力測定解析結果",
+                    "耐久試験評価解析結果",
+                    "ひずみ",
+                    "漏液",
+                    "発火",
+                    "TS改訂",
+                    "性能企画書"
+                ],
+                "pageIds": [
+                    "b9943aed-ea3c-41ef-a93e-07e3b7561f50"
+                ],
+                "children": [
+                    {
+                        "id": "d1ae3bd6-26c4-46dd-ae45-729ba7c99079",
+                        "title": "変更・簡素化 開発フロー",
+                        "level": 2,
+                        "summary": "先行検討（工程1〜4）から、AS・CV共通の開発時期（工程5〜15）までの開発フローを表形式で示す。工程には性能企画書作成・解析用モデル作成・AS適合決定、試作図・評価計画・物理条件確認・試験実施と解析、対策検討・強度予測・構造提案、品熟・認証移行会議が含まれ、各工程のインプット、担当者、アウトプットおよび良品条件が記載されている。",
+                        "keywords": [
+                            "開発フロー",
+                            "先行検討",
+                            "AS",
+                            "CV",
+                            "性能企画書",
+                            "BV評価",
+                            "TSW1384",
+                            "認証移行基準"
+                        ],
+                        "pageIds": [
+                            "3700bb59-151b-45fc-9d05-e38a0423856a"
+                        ],
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": "a4e760e7-44fe-4698-a0de-a8019a1758d9",
+                "title": "各パックごとの固有事象・部品に関する決定",
+                "level": 1,
+                "summary": "各パック固有の事象や部品については、関係者で議論して決定すると記載されている。",
+                "keywords": [
+                    "パック",
+                    "固有事象",
+                    "部品",
+                    "関係者"
+                ],
+                "pageIds": [
+                    "becdb8d7-db4f-45ac-8286-e7168496bcc6"
+                ],
+                "children": []
+            },
+            {
+                "id": "f261b2cf-6123-4ee5-b93a-35bf06932126",
+                "title": "強度",
+                "level": 1,
+                "summary": "田原高速波状路・悪路のパターンやコース選定、搭載車種の選定のほか、設定乗り越し、悪路・高速波状路擬似耐久、熱衝撃、路面・落下物・飛び石干渉、耐荷重、熱害の試験条件検討項目を示す。車室内外搭載の別、規定試験、仕向けや搭載車種などの条件が記載され、参照先としてTSA2601G、TSA2605G、TSW130G、TSA2334G、TSA2333G、TSA2720G等が挙げられている。",
+                "keywords": [
+                    "田原高速波状路",
+                    "田原悪路",
+                    "実働応力測定",
+                    "熱衝撃",
+                    "路面干渉",
+                    "耐荷重",
+                    "TSW130G",
+                    "TSA2720G"
+                ],
+                "pageIds": [
+                    "becdb8d7-db4f-45ac-8286-e7168496bcc6"
+                ],
+                "children": []
+            },
+            {
+                "id": "cfde1f5c-5b2d-4233-8996-769e1da9a498",
+                "title": "安全",
+                "level": 1,
+                "summary": "後突・側突・前突の条件検討、接触保護、RQ検査、水入り（静的・動的・浸水路・下部高圧洗車）、棒状異物、塩害、凍結・着氷の項目を示す。車室内外搭載の別や仕向け・車両諸元などの条件があり、UN-R100、QSF124、TSW131G、TSA2720G、TSA2341G、TSA2310G、TSA2300G等を参照する。",
+                "keywords": [
+                    "衝突",
+                    "後突",
+                    "側突",
+                    "前突",
+                    "接触保護",
+                    "RQ検査",
+                    "水入り",
+                    "UN-R100"
+                ],
+                "pageIds": [
+                    "becdb8d7-db4f-45ac-8286-e7168496bcc6"
+                ],
+                "children": []
+            },
+            {
+                "id": "750fbd42-c5f6-4178-ad12-2ec12cfbb4c6",
+                "title": "ユニット評価（TS、部内規）",
+                "level": 1,
+                "summary": "外部短絡、トラッキング、塩水・水中投入に関する外部短絡・トラッキング・シール性能、塩水・挟入り、棒状異物、温調結露、連鎖発煙、燃焼の評価項目を示す。車室内搭載パックのみの規定やブロア冷却電池パックのみの条件があり、参照先はいずれもTSW131Gと記載されている。",
+                "keywords": [
+                    "ユニット評価",
+                    "外部短絡",
+                    "トラッキング",
+                    "塩水・水中投入",
+                    "塩水・挟入り",
+                    "温調結露",
+                    "連鎖発煙",
+                    "TSW131G"
+                ],
+                "pageIds": [
+                    "becdb8d7-db4f-45ac-8286-e7168496bcc6"
+                ],
+                "children": [
+                    {
+                        "id": "ee279363-d601-48a1-8c16-40b5081b8c2a",
+                        "title": "法規件× 法規 検索方法",
+                        "level": 2,
+                        "summary": "法規の検索方法を示す。",
+                        "keywords": [
+                            "法規検索"
+                        ],
+                        "pageIds": [
+                            "d77ceb24-aadc-44e9-982b-020ecf3719c4"
+                        ],
+                        "children": [
+                            {
+                                "id": "0b4f6d12-d551-450f-9e89-cce382e1ea71",
+                                "title": "法規要件調査方法",
+                                "level": 3,
+                                "summary": "G-RISで法規要件を確認する方法を示す。",
+                                "keywords": [
+                                    "G-RIS",
+                                    "法規要件"
+                                ],
+                                "pageIds": [
+                                    "d77ceb24-aadc-44e9-982b-020ecf3719c4"
+                                ],
+                                "children": [
+                                    {
+                                        "id": "7491fff9-5463-4e0a-beb7-4a8ea0ffd0c4",
+                                        "title": "G-RIS2.0 要件検索",
+                                        "level": 4,
+                                        "summary": "検索条件として法規・機能部位・車両カテゴリを指定し、法規No.または法規名（例：UN-R(ECE)13H）、問合せNo.、キーワードを入力する。キーワードは法規要件・設計要件の本文及び考え方を対象とし、あいまい検索、検索条件クリアの項目もある。",
+                                        "keywords": [
+                                            "G-RIS2.0",
+                                            "検索条件",
+                                            "法規No.",
+                                            "UN-R(ECE)13H",
+                                            "問合せNo.",
+                                            "あいまい検索"
+                                        ],
+                                        "pageIds": [
+                                            "d77ceb24-aadc-44e9-982b-020ecf3719c4"
+                                        ],
+                                        "children": [
+                                            {
+                                                "id": "9eee1b1b-04bf-4642-b604-6d5f4bd20aed",
+                                                "title": "① 法規 選択画面",
+                                                "level": 5,
+                                                "summary": "法規を部・国・キーワードから選択でき、全選択・全解除の項目もある。分野、大分類、中分類、国、法規No.、法規の各欄があり、分野にはEYP エンジン・HV、V 駆動、C シャシー、B ボデー、F 電装・HV、G 評価、D デザイン、M 材技・その他などが表示される。",
+                                                "keywords": [
+                                                    "法規選択画面",
+                                                    "分野",
+                                                    "大分類",
+                                                    "中分類",
+                                                    "国",
+                                                    "法規No.",
+                                                    "FMVSS124",
+                                                    "FMVSS305"
+                                                ],
+                                                "pageIds": [
+                                                    "d77ceb24-aadc-44e9-982b-020ecf3719c4"
+                                                ],
+                                                "children": []
+                                            },
+                                            {
+                                                "id": "3df45223-73d6-421d-b787-7ab54e56eaa8",
+                                                "title": "② 部から選択",
+                                                "level": 5,
+                                                "summary": "法規選択の手順として「部から選択」と表示されている。",
+                                                "keywords": [
+                                                    "部から選択"
+                                                ],
+                                                "pageIds": [
+                                                    "d77ceb24-aadc-44e9-982b-020ecf3719c4"
+                                                ],
+                                                "children": []
+                                            },
+                                            {
+                                                "id": "0c40a3dd-1ead-4c79-8872-cc95e5833a83",
+                                                "title": "③ EYP エンジン・HV",
+                                                "level": 5,
+                                                "summary": "選択手順の項目として「EYP エンジン・HV」が表示されている。",
+                                                "keywords": [
+                                                    "EYP",
+                                                    "エンジン・HV"
+                                                ],
+                                                "pageIds": [
+                                                    "d77ceb24-aadc-44e9-982b-020ecf3719c4"
+                                                ],
+                                                "children": []
+                                            },
+                                            {
+                                                "id": "f75235a7-53cf-4915-9d11-eeda0cc9e9db",
+                                                "title": "④ 駆動用バッテリー",
+                                                "level": 5,
+                                                "summary": "選択手順の項目として「駆動用バッテリー」が表示されている。",
+                                                "keywords": [
+                                                    "駆動用バッテリー"
+                                                ],
+                                                "pageIds": [
+                                                    "d77ceb24-aadc-44e9-982b-020ecf3719c4"
+                                                ],
+                                                "children": []
+                                            },
+                                            {
+                                                "id": "a4e160d7-bcac-43ac-b811-46aec6b85d41",
+                                                "title": "⑤ 電池パック",
+                                                "level": 5,
+                                                "summary": "選択手順の項目として「電池パック」が表示されている。",
+                                                "keywords": [
+                                                    "電池パック"
+                                                ],
+                                                "pageIds": [
+                                                    "d77ceb24-aadc-44e9-982b-020ecf3719c4"
+                                                ],
+                                                "children": []
+                                            },
+                                            {
+                                                "id": "6e10627a-bc15-441e-b40f-6beb6110e666",
+                                                "title": "⑥ 仕向け国を選択",
+                                                "level": 5,
+                                                "summary": "選択手順として仕向け国を選択する項目が示されている。",
+                                                "keywords": [
+                                                    "仕向け国"
+                                                ],
+                                                "pageIds": [
+                                                    "d77ceb24-aadc-44e9-982b-020ecf3719c4"
+                                                ],
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "61a7c3d7-80b8-4657-a174-cd3865b55046",
+                        "title": "車両仕様によるカテゴリー",
+                        "level": 2,
+                        "summary": "2WDと4WDを分け、カテゴリーごとの車両仕様を示す。2WDは「H ベビー」（4WDベースで作られた車高の高い2WD）と「L ライト」（それ以外の車高の低い2WD）、4WDはランクル300・70からタコマ、RAV4などまでをH、MH、M、ML、Lに分類している。",
+                        "keywords": [
+                            "2WD",
+                            "4WD",
+                            "H ベビー",
+                            "L ライト",
+                            "MH ミディアムベビー",
+                            "M ミディアム",
+                            "ML ミディアムライト",
+                            "車両仕様"
+                        ],
+                        "pageIds": [
+                            "60e32613-b027-49be-9387-307c04e13b98"
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "bc7171db-3891-4784-9dbb-134a95cc375a",
+                        "title": "路面干渉（オフロード系）カテゴリー",
+                        "level": 2,
+                        "summary": "乗用車、各種SUV、ミニバン、商用車用1BOXバン、バス、トラック、およびオフロードカーをカテゴリー分けし、車種例を列挙する。オフロードカーはフルトラベビー、ヘビーデューティー、ライトデューティー、乗用車用途に分かれ、例としてFJ70、IMV P/U、タンドラ、タコマなどが記載されている。",
+                        "keywords": [
+                            "GLOVE",
+                            "プレミアムクロスオーバー SUV",
+                            "ライトオフロード SUV",
+                            "フルトラベビーオフロードカー",
+                            "ヘビーデューティーオフロードカー",
+                            "ライトデューティーオフロードカー",
+                            "IMV P/U",
+                            "タンドラ"
+                        ],
+                        "pageIds": [
+                            "60e32613-b027-49be-9387-307c04e13b98"
+                        ],
+                        "children": []
+                    }
+                ]
+            }
+        ],
+        "sourceHash": "e77d5a2ef105c4974888ec04415fbedbd5e2b8c8",
+        "textHash": "d031d3fc4152e8304e7741b8654f3a0d96cd4415",
+        "generatedAt": "2026-10-03T14:46:44.789581",
+        "pageCount": 12,
+        "schemaVersion": 1,
+        "generator": "ai"
+    },
+    "coverage": null,
+    "modelBinding": null
+}

@@ -1,0 +1,80 @@
+{
+    "id": "5be77210-89b8-43ba-855a-c392ecdb5220",
+    "name": "要求検証マッピングトレーサビリティ表",
+    "class_name": "FreeTable",
+    "description": "検証パッケージ「05_検証」に含まれる検証ケース（TestCase）から、検証関係（verify）で結ばれた要求、および追跡関係（trace）で結ばれた関連コンポーネント（Block）を一覧化し、詳細な検証手段や合否基準（Description）をマッピングしたトレーサビリティテーブル。",
+    "root_ids": [
+        "70de7c67-9e1f-4f30-86b5-42413ecbdc60"
+    ],
+    "columns": [
+        {
+            "id": "c1",
+            "name": "検証ケース",
+            "sourceColumnId": null,
+            "type": "element",
+            "relationQueries": [
+                [
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "TestCase"
+                    }
+                ]
+            ]
+        },
+        {
+            "id": "c2",
+            "name": "対象要求",
+            "sourceColumnId": "c1",
+            "type": "element",
+            "relationQueries": [
+                [
+                    {
+                        "relationType": "verify",
+                        "direction": "outgoing",
+                        "nodeType": "Requirement"
+                    }
+                ]
+            ]
+        },
+        {
+            "id": "c3",
+            "name": "検証手段 (Type/Method/Criteria)",
+            "sourceColumnId": "c2",
+            "type": "property",
+            "propertyName": "description"
+        },
+        {
+            "id": "c4",
+            "name": "対象要求文",
+            "sourceColumnId": "c2",
+            "type": "property",
+            "propertyName": "text"
+        },
+        {
+            "id": "c5",
+            "name": "関連ブロック",
+            "sourceColumnId": "c2",
+            "type": "element",
+            "relationQueries": [
+                [
+                    {
+                        "relationType": "trace",
+                        "direction": "outgoing",
+                        "nodeType": "Block"
+                    }
+                ]
+            ]
+        },
+        {
+            "id": "c6",
+            "name": "ブロック名",
+            "sourceColumnId": "c5",
+            "type": "property",
+            "propertyName": "name"
+        }
+    ],
+    "expanded_keys": [],
+    "hidden_columns": [],
+    "column_widths": {}
+}
