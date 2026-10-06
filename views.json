@@ -321,6 +321,13 @@
             "parent_id": "",
             "icon_key": "DescriptionOutlined",
             "icon_color": null
+        },
+        {
+            "id": "5284d62f-04a4-4230-9768-0357754612e6",
+            "name": "要求",
+            "parent_id": "835145bc-3af4-4da8-9744-35372b33307f",
+            "icon_key": "HubOutlined",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [
@@ -343,9 +350,8 @@
         "5a1bb871-863c-49e3-a89f-fff2142b4963",
         "9e0999fe-899e-4d7f-b690-ce16f028758b",
         "43f4d071-ea21-4c66-9f88-55da09326154",
-        "dfe52c73-7733-465d-9e5d-ba0415e52256",
-        "081f4a09-e68f-4b31-b1b5-990e0db5711c",
-        "f409a5f7-f5b3-4b07-a3f7-a1e7443df025"
+        "5284d62f-04a4-4230-9768-0357754612e6",
+        "081f4a09-e68f-4b31-b1b5-990e0db5711c"
     ],
     "current_view_id": "081f4a09-e68f-4b31-b1b5-990e0db5711c",
     "split_tab_ids": [],
