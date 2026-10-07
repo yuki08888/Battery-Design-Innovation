@@ -96,6 +96,19 @@
                 "rootId": "54530f3c-1f57-4d43-877e-3e62190dd63a",
                 "includeRoot": true,
                 "includeIntermediates": false,
+                "queries": [],
+                "recursive": false
+            },
+            {
+                "rootId": "5117666d-c6f1-4328-9d3a-e3c56f85c20c",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "21da6225-62e4-48db-ba18-719a1cd5e350",
+                "includeRoot": true,
+                "includeIntermediates": false,
                 "queries": []
             }
         ],

@@ -328,6 +328,13 @@
             "parent_id": "835145bc-3af4-4da8-9744-35372b33307f",
             "icon_key": "HubOutlined",
             "icon_color": null
+        },
+        {
+            "id": "8f05bf36-6a74-4e4a-962d-2327913e53e5",
+            "name": "マトリクス",
+            "parent_id": "ba859834-feab-4b42-985f-77263937f5e9",
+            "icon_key": "TableChartOutlined",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [
@@ -351,9 +358,11 @@
         "9e0999fe-899e-4d7f-b690-ce16f028758b",
         "43f4d071-ea21-4c66-9f88-55da09326154",
         "5284d62f-04a4-4230-9768-0357754612e6",
-        "081f4a09-e68f-4b31-b1b5-990e0db5711c"
+        "081f4a09-e68f-4b31-b1b5-990e0db5711c",
+        "8f05bf36-6a74-4e4a-962d-2327913e53e5",
+        "546b6422-bfd9-4fa5-bf96-0b01b190020f"
     ],
-    "current_view_id": "081f4a09-e68f-4b31-b1b5-990e0db5711c",
+    "current_view_id": "546b6422-bfd9-4fa5-bf96-0b01b190020f",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,

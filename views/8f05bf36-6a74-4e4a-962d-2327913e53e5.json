@@ -1,0 +1,31 @@
+{
+    "id": "8f05bf36-6a74-4e4a-962d-2327913e53e5",
+    "name": "マトリクス",
+    "class_name": "FreeTable",
+    "description": "",
+    "root_ids": [
+        "ba859834-feab-4b42-985f-77263937f5e9"
+    ],
+    "columns": [
+        {
+            "id": "umzmg6oh69i",
+            "name": "要求",
+            "sourceColumnId": null,
+            "type": "element",
+            "relationQueries": [
+                [
+                    {
+                        "relationType": "all",
+                        "direction": "outgoing",
+                        "nodeType": "all"
+                    }
+                ]
+            ]
+        }
+    ],
+    "expanded_keys": [
+        "ba859834-feab-4b42-985f-77263937f5e9-root"
+    ],
+    "hidden_columns": [],
+    "column_widths": {}
+}
