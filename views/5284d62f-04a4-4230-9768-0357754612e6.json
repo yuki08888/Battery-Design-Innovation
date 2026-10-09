@@ -779,15 +779,6 @@
         },
         {
             "class_name": "DiagramNode",
-            "id": "a350d967-3b23-4a7c-b2b1-ff62ee7779e5",
-            "element_id": "a350d967-3b23-4a7c-b2b1-ff62ee7779e5",
-            "x": -201,
-            "y": 1451,
-            "width": 120,
-            "height": 80
-        },
-        {
-            "class_name": "DiagramNode",
             "id": "0a6f99b9-738e-4fed-845a-a46056fb904e",
             "element_id": "0a6f99b9-738e-4fed-845a-a46056fb904e",
             "x": -49,
@@ -1067,11 +1058,6 @@
         {
             "class_name": "DiagramEdge",
             "element_id": "6a658a08-9fd2-4f83-9563-66096016cbf8",
-            "routing": "bezier"
-        },
-        {
-            "class_name": "DiagramEdge",
-            "element_id": "3cb9660e-0633-49af-b48f-dfc74e8cbdeb",
             "routing": "bezier"
         },
         {
