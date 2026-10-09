@@ -1,0 +1,76 @@
+id: ""
+name: ハザード分析と安全要求
+slash_command: hazard
+description: |
+  機能の喪失・誤動作から生じるハザードを洗い出し、
+  安全要求を導出して設計要素・検証手段まで接続する手順。
+  機能安全の観点をモデルに取り込むときに使用する。
+use_when: |
+  ユーザーが「ハザード分析して」「安全要求を導出」
+  「故障モードを検討して」「FMEA 的な整理をしたい」等を依頼したとき。
+steps:
+  - no: 1
+    title: 分析対象機能の把握
+    instruction: |
+      分析対象の機能（Activity）と、それを実現する構造（Block）を
+      列挙する。既存の安全要求があれば併せて確認する。
+    tools:
+      - search_item
+      - read_package_contents
+      - get_related_elements
+      - read
+    done_when: 対象の全 Activity と実現 Block、既存安全 Requirement の短縮ID、および allocate / satisfy の接続先を0件の場合も含めて一覧化できている
+  - no: 2
+    title: 機能不全の類型化
+    instruction: |
+      各機能について、以下の類型で逸脱を洗い出す。
+      - 機能が提供されない（喪失）
+      - 意図せず提供される（誤作動）
+      - 遅すぎる / 早すぎる（タイミング）
+      - 過剰 / 過少（程度）
+      抽象論で終わらせず、対象システム固有の具体例に落とすこと。
+    done_when: 全対象機能について喪失・誤作動・タイミング・程度の4類型ごとに具体的逸脱または非該当理由があり、未評価の機能×類型0件である
+  - no: 3
+    title: ハザードと影響の評価
+    instruction: |
+      各逸脱が引き起こす危害（ハザード）と、その影響の
+      重大度・発生条件を整理する。
+      許容できないハザードを特定し、優先順位を付ける。
+    done_when: 各逸脱にハザード・危害・発生条件・重大度・許容可否が対応し、全非許容ハザードが重大度順に一意の識別子付きで並んでいる
+  - no: 4
+    title: 安全要求の作成
+    instruction: |
+      優先度の高いハザードに対する安全要求を作成する。
+      「検知する」「縮退運転に移行する」「遮断する」など
+      対策の性質が分かる要求文にし、判定可能な条件を含めること。
+      元の機能要求から deriveReqt で接続する。
+    tools:
+      - create_requirement
+      - create_multi_elements
+      - create_relationship
+    done_when: 全非許容ハザードに測定可能な安全 Requirement が1件以上あり、元の機能要求との deriveReqt が接続され、未対策ハザード0件である
+    referenceConventions:
+      - Requirement
+  - no: 5
+    title: 設計・検証への接続
+    instruction: |
+      各安全要求を満たす設計要素へ satisfy を張る。
+      対応する設計が未着手の場合は、その旨を記録する。
+      検証手段（TestCase）があれば verify も接続する。
+    tools:
+      - search_item
+      - create_relationship
+      - create_test_case
+    done_when: 全安全Requirementに設計要素へのsatisfyとTestCaseからのverifyがあるか、欠落ごとに対象ID・理由・対応予定が記録され、無記録の未対応0件である
+  - no: 6
+    title: 検証と報告
+    instruction: |
+      作成・更新した要素を validate_model で検証する。
+      未対応のハザードと安全要求は、最終報告で
+      「残存リスク」として必ず明示すること。
+    tools:
+      - validate_model
+    done_when: 変更要素の validate_model が error 0件または残る違反を理由付きで記録し、全残存リスクにハザードID・重大度・未完対策・受容判断者がある
+strict: true
+allow_skip: false
+max_steps_per_stage: 14

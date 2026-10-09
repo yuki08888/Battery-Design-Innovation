@@ -1,0 +1,371 @@
+SchemaVersion: 3
+OntologyName: 絶縁カバー検証
+Version: 3.0.0
+Elements:
+- className: Package
+  id: f5dc6b2e-3c8b-4b09-bafa-b64f5fb43281
+  name: 構造・関係概念
+  description: 電池開発対象と仕入先の構造的概念
+  isReferenceModel: false
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:22.765087'
+    ref: null
+    createdOperator: user
+- className: Package
+  id: 15a47697-d5b4-4d56-b26a-b32b8ba51be3
+  name: 要求・性能概念
+  description: 電池性能の目標および達成状況に関する概念
+  isReferenceModel: false
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:22.862972'
+    ref: null
+    createdOperator: user
+- className: Package
+  id: 0c1d6598-0c18-4bc9-91f3-818bd40b196d
+  name: 評価・管理概念
+  description: 性能評価結果と更新管理に関する概念
+  isReferenceModel: false
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:22.957976'
+    ref: null
+    createdOperator: user
+- className: Block
+  id: 7d057788-ef04-48e4-9a93-07ea27d78e53
+  name: Battery System
+  description: Battery-Design-Innovationプロジェクトが設計対象とする電池システム。
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:23.053983'
+    ref: null
+    createdOperator: user
+- className: Block
+  id: 98566254-39d4-42b6-9b0b-20e04ee7f2d5
+  name: Supplier
+  description: 電池または電池部品を供給し、性能達成状況の比較対象となる仕入先。
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:23.140615'
+    ref: null
+    createdOperator: user
+- className: Requirement
+  id: 9e8be090-2525-41eb-bce1-6fa0fa0543dc
+  name: Battery Performance Requirement
+  description: 電池システムが達成すべき性能目標または基準。
+  text: ''
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:23.317668'
+    ref: null
+    createdOperator: user
+- className: Activity
+  id: 67c73267-b62f-4123-8197-3aed4848a21c
+  name: Supplier Performance Evaluation
+  description: 仕入先から得た性能情報を要求値と比較し、達成状況を評価する活動。
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:23.506013'
+    ref: null
+    createdOperator: user
+- className: State
+  id: b56a6f8e-d9f8-4f93-8937-49e2413e16cb
+  name: Evaluation Status
+  description: '性能評価の状態。例: 未評価、評価中、達成、未達。'
+  stateType: normal
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:23.998141'
+    ref: null
+    createdOperator: user
+- className: TestCase
+  id: 76a98e2e-0ca2-4140-a8bd-09ec767e81c0
+  name: Battery Performance Verification
+  description: 電池性能が設定された性能要求を満たすことを検証する試験または評価。
+  preConditions: []
+  expectedResults: []
+  postConditions: []
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:23.591647'
+    ref: null
+    createdOperator: user
+- className: Package
+  id: 2b6270b9-f6ae-4190-a132-c632ba55c42e
+  name: Performance Achievement Spreadsheet
+  description: 随時更新される各仕入先の性能達成状況.xlsxに対応する情報管理概念。
+  isReferenceModel: false
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:23.690410'
+    ref: null
+    createdOperator: user
+- className: Property
+  id: 58dcdc3b-0a74-4684-b027-ac0ecc9cf47a
+  name: Supplier Performance Record
+  description: 仕入先ごとの性能値、達成判定、更新日などを保持する記録。
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:23.226327'
+    ref: null
+    createdOperator: user
+- className: Requirement
+  id: 5207ce21-1cd3-4a42-a6e9-83b0c281022b
+  name: Supplier Performance Achievement Status
+  description: 各仕入先の電池性能が要求・目標に対してどの程度達成されているかを示す管理対象。
+  text: ''
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:23.413715'
+    ref: null
+    createdOperator: user
+- className: Property
+  id: 90f67289-828c-4cf6-b0f4-b9f7090b17a2
+  name: Achievement Status
+  description: '性能指標に対する仕入先の達成状態。例: 達成、未達、評価中。'
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:23.892286'
+    ref: null
+    createdOperator: user
+Relationships:
+- className: Relationship
+  id: 9e4454c9-4b72-4873-8010-0ce81662d48a
+  type: containment
+  sourceId: 5207ce21-1cd3-4a42-a6e9-83b0c281022b
+  targetId: 90f67289-828c-4cf6-b0f4-b9f7090b17a2
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:24.206587'
+    ref: null
+    createdOperator: user
+- className: Relationship
+  id: 1439e464-cdef-4570-8e02-f80752294b62
+  type: containment
+  sourceId: 67c73267-b62f-4123-8197-3aed4848a21c
+  targetId: b56a6f8e-d9f8-4f93-8937-49e2413e16cb
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:24.325217'
+    ref: null
+    createdOperator: user
+- className: Relationship
+  id: 1ed4237d-9164-4615-b006-2db392d3571e
+  description: 電池システムは複数の性能要求で定義される。
+  type: composition
+  sourceId: 7d057788-ef04-48e4-9a93-07ea27d78e53
+  targetId: 9e8be090-2525-41eb-bce1-6fa0fa0543dc
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:24.420960'
+    ref: null
+    createdOperator: user
+- className: Relationship
+  id: 12bf2073-7138-46b6-bcf9-0e60bf141dbf
+  description: 仕入先は電池システムまたはその構成品を供給する。
+  type: association
+  sourceId: 98566254-39d4-42b6-9b0b-20e04ee7f2d5
+  targetId: 7d057788-ef04-48e4-9a93-07ea27d78e53
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:24.516580'
+    ref: null
+    createdOperator: user
+- className: Relationship
+  id: 8d1893d0-67ab-47eb-a60b-e34037d018a6
+  description: 仕入先は性能記録を提供・保持する。
+  type: association
+  sourceId: 98566254-39d4-42b6-9b0b-20e04ee7f2d5
+  targetId: 58dcdc3b-0a74-4684-b027-ac0ecc9cf47a
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:24.607235'
+    ref: null
+    createdOperator: user
+- className: Relationship
+  id: 6e8d53b0-f717-4a7b-b425-7dba6a0281e9
+  description: 達成状況は仕入先単位で管理される。
+  type: association
+  sourceId: 5207ce21-1cd3-4a42-a6e9-83b0c281022b
+  targetId: 98566254-39d4-42b6-9b0b-20e04ee7f2d5
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:24.695713'
+    ref: null
+    createdOperator: user
+- className: Relationship
+  id: 20548439-b71c-4439-90de-a5c50ade36fa
+  description: 仕入先別達成状況は電池性能要求に追跡される。
+  type: trace
+  sourceId: 5207ce21-1cd3-4a42-a6e9-83b0c281022b
+  targetId: 9e8be090-2525-41eb-bce1-6fa0fa0543dc
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:24.785583'
+    ref: null
+    createdOperator: user
+- className: Relationship
+  id: 14d27fe3-328f-4533-8327-e72225d3acff
+  description: 達成状況は仕入先性能記録に基づく。
+  type: trace
+  sourceId: 5207ce21-1cd3-4a42-a6e9-83b0c281022b
+  targetId: 58dcdc3b-0a74-4684-b027-ac0ecc9cf47a
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:24.890404'
+    ref: null
+    createdOperator: user
+- className: Relationship
+  id: 48e2a59c-6211-46c8-9b9b-c064e4d3719b
+  description: 仕入先性能評価活動を仕入先から提供される情報に割り当てる。
+  type: allocate
+  sourceId: 67c73267-b62f-4123-8197-3aed4848a21c
+  targetId: 98566254-39d4-42b6-9b0b-20e04ee7f2d5
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:24.974498'
+    ref: null
+    createdOperator: user
+- className: Relationship
+  id: 682beac8-1dbc-4bc6-af2e-f0a37c37d056
+  description: 評価活動は達成状況を具体化する。
+  type: refine
+  sourceId: 67c73267-b62f-4123-8197-3aed4848a21c
+  targetId: 5207ce21-1cd3-4a42-a6e9-83b0c281022b
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:25.061211'
+    ref: null
+    createdOperator: user
+- className: Relationship
+  id: 0613768c-8abc-4fca-8b3a-c36bfdf5c3be
+  description: 電池性能検証は性能要求を検証する。
+  type: verify
+  sourceId: 76a98e2e-0ca2-4140-a8bd-09ec767e81c0
+  targetId: 9e8be090-2525-41eb-bce1-6fa0fa0543dc
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:25.148553'
+    ref: null
+    createdOperator: user
+- className: Relationship
+  id: c95c4d4b-6c1a-4ec4-b319-d67d76af121e
+  description: 検証結果は仕入先別の達成状況判定を裏付ける。
+  type: verify
+  sourceId: 76a98e2e-0ca2-4140-a8bd-09ec767e81c0
+  targetId: 5207ce21-1cd3-4a42-a6e9-83b0c281022b
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:25.237572'
+    ref: null
+    createdOperator: user
+- className: Relationship
+  id: 899a5178-2a81-48f1-8150-5d0aa3165502
+  description: 性能評価活動は評価状態を更新する。
+  type: association
+  sourceId: 67c73267-b62f-4123-8197-3aed4848a21c
+  targetId: b56a6f8e-d9f8-4f93-8937-49e2413e16cb
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:25.324761'
+    ref: null
+    createdOperator: user
+- className: Relationship
+  id: b30b20f5-689e-4ef9-ac71-d259653ea7c8
+  description: 達成状況は達成状態を持つ。
+  type: association
+  sourceId: 5207ce21-1cd3-4a42-a6e9-83b0c281022b
+  targetId: 90f67289-828c-4cf6-b0f4-b9f7090b17a2
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:25.409212'
+    ref: null
+    createdOperator: user
+- className: Relationship
+  id: 8084845d-f055-4583-bfde-2759d4b88442
+  description: 性能達成状況スプレッドシートは仕入先別達成状況を管理する。
+  type: containment
+  sourceId: 2b6270b9-f6ae-4190-a132-c632ba55c42e
+  targetId: 5207ce21-1cd3-4a42-a6e9-83b0c281022b
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:25.501068'
+    ref: null
+    createdOperator: user
+- className: Relationship
+  id: c4bc2448-99a2-468d-a7d5-c8a3e57a29dc
+  description: 性能達成状況スプレッドシートは仕入先性能記録を格納する。
+  type: containment
+  sourceId: 2b6270b9-f6ae-4190-a132-c632ba55c42e
+  targetId: 58dcdc3b-0a74-4684-b027-ac0ecc9cf47a
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:25.591567'
+    ref: null
+    createdOperator: user
+- className: Relationship
+  id: bf4fe9e8-fb1d-42d6-abbb-1f3e8a7273b2
+  description: スプレッドシートは性能評価結果の更新に依存する。
+  type: dependency
+  sourceId: 2b6270b9-f6ae-4190-a132-c632ba55c42e
+  targetId: 67c73267-b62f-4123-8197-3aed4848a21c
+  stereotypes: []
+  metaData:
+    version: 1.0
+    createdBy: yuki08888
+    createdDate: '2026-09-07T13:59:25.684464'
+    ref: null
+    createdOperator: user

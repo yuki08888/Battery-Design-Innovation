@@ -1,0 +1,401 @@
+{
+  "version": 1,
+  "saved_at": "2026-10-05T20:16:05.988149",
+  "partitions": [
+    {
+      "key": "_metadata",
+      "file": "_metadata.jsonl",
+      "sha1": "187e01f3c6366da4cb8679faa64010dac33b7161"
+    },
+    {
+      "key": "01541267-5224-4216-9b98-2a327ee03b1d",
+      "file": "01541267-5224-4216-9b98-2a327ee03b1d.jsonl",
+      "sha1": "90c16924f2e5637971bdf869080783673d87f3e7"
+    },
+    {
+      "key": "0b08136c-c789-441d-a16e-5aa34e94a688",
+      "file": "0b08136c-c789-441d-a16e-5aa34e94a688.jsonl",
+      "sha1": "4c44f7fad9a9ccc0fa4ed8387b560fd85629a497"
+    },
+    {
+      "key": "0b0945af-ba07-400f-8210-3f3e76dbdd58",
+      "file": "0b0945af-ba07-400f-8210-3f3e76dbdd58.jsonl",
+      "sha1": "3d16e7255b13763184677eda82512c6149117305"
+    },
+    {
+      "key": "103378b0-4c1d-4167-b181-d09aa0c0e950",
+      "file": "103378b0-4c1d-4167-b181-d09aa0c0e950.jsonl",
+      "sha1": "dc695ee9ede39bc2a95594f36748bedf97dc3a9e"
+    },
+    {
+      "key": "1c70e3e0-4c60-4332-97ae-1ec8e17bf20c",
+      "file": "1c70e3e0-4c60-4332-97ae-1ec8e17bf20c.jsonl",
+      "sha1": "ef4ac55a0845ef7a95f393373a965a6d4a93cc5d"
+    },
+    {
+      "key": "a67b92a6-7523-4046-a081-085d990b675f",
+      "file": "a67b92a6-7523-4046-a081-085d990b675f.jsonl",
+      "sha1": "6b4bc32f944368ea8b66a4d248a15c9f5000dcf8"
+    },
+    {
+      "key": "1f4a4fef-8a36-416d-86fe-2e25ba67eb7c",
+      "file": "1f4a4fef-8a36-416d-86fe-2e25ba67eb7c.jsonl",
+      "sha1": "56631d3e6f920bdd293d1d0d30277c53b07b6155"
+    },
+    {
+      "key": "217c05af-aa6c-4cc6-aee8-163f5e1fc2a9",
+      "file": "217c05af-aa6c-4cc6-aee8-163f5e1fc2a9.jsonl",
+      "sha1": "4414995c4acb014b140806e6b39c25e965d2cab1"
+    },
+    {
+      "key": "2399bb06-8246-43b0-a0e7-ca0c45db8d9d",
+      "file": "2399bb06-8246-43b0-a0e7-ca0c45db8d9d.jsonl",
+      "sha1": "85cd805844ebc18628d948a4892efcb9a0f3d910"
+    },
+    {
+      "key": "27f82ea8-6bfe-40e4-a0b2-05cc48beadc5",
+      "file": "27f82ea8-6bfe-40e4-a0b2-05cc48beadc5.jsonl",
+      "sha1": "abee74aaa61f79cc211fc1e73f3eef2bebe48c3c"
+    },
+    {
+      "key": "28f40c39-ff41-49bd-b95b-8d92df2789bb",
+      "file": "28f40c39-ff41-49bd-b95b-8d92df2789bb.jsonl",
+      "sha1": "6ab1d33ddbedae25db8b026461e018ebe24f09d8"
+    },
+    {
+      "key": "44f9f2b3-a52d-43ee-ad95-02bd30305960",
+      "file": "44f9f2b3-a52d-43ee-ad95-02bd30305960.jsonl",
+      "sha1": "dcf0a0444bb43e0826157a772706ae024971b4c6"
+    },
+    {
+      "key": "465298cd-72aa-4d8c-a1cc-26cabfa67536",
+      "file": "465298cd-72aa-4d8c-a1cc-26cabfa67536.jsonl",
+      "sha1": "921800d40f41e463984dd287ed6b7a386db113ec"
+    },
+    {
+      "key": "46dc18ec-e0c3-41c3-9632-8d522ae99326",
+      "file": "46dc18ec-e0c3-41c3-9632-8d522ae99326.jsonl",
+      "sha1": "aa8ba02b905248fe5b801bda865bf670b4c8a781"
+    },
+    {
+      "key": "4e1ec7bb-e6c1-47a2-adab-991bb4dcf8e1",
+      "file": "4e1ec7bb-e6c1-47a2-adab-991bb4dcf8e1.jsonl",
+      "sha1": "9541d3c8175965379d946d83337bb7d404e890f7"
+    },
+    {
+      "key": "5023d9a1-9dd3-481f-b17e-e0b64243a78f",
+      "file": "5023d9a1-9dd3-481f-b17e-e0b64243a78f.jsonl",
+      "sha1": "cab3857fc50d94d0e8fe59414d9ab183aedddd8a"
+    },
+    {
+      "key": "532c7bcd-2d29-48a7-abaf-844244deca10",
+      "file": "532c7bcd-2d29-48a7-abaf-844244deca10.jsonl",
+      "sha1": "57d3dd58a7145c6415054303ee98730b1d029a9c"
+    },
+    {
+      "key": "586d668b-29a6-45d6-8f80-2f097df46d72",
+      "file": "586d668b-29a6-45d6-8f80-2f097df46d72.jsonl",
+      "sha1": "9851227c19b83539de0056a55739d6bb9a491bc9"
+    },
+    {
+      "key": "dfee9968-ddb6-4879-be6f-36304df9a428",
+      "file": "dfee9968-ddb6-4879-be6f-36304df9a428.jsonl",
+      "sha1": "6bebdd0c9c4b1587346cbd37704b0bbf4014b4a7"
+    },
+    {
+      "key": "67a11780-f0c0-41ee-a968-bcd5a5c44966",
+      "file": "67a11780-f0c0-41ee-a968-bcd5a5c44966.jsonl",
+      "sha1": "f121b74a77afab84b4283939d5f9f8de491ed9fa"
+    },
+    {
+      "key": "6b4dd8f5-bc78-4a9e-9f38-5d089dbfc87b",
+      "file": "6b4dd8f5-bc78-4a9e-9f38-5d089dbfc87b.jsonl",
+      "sha1": "7effb764c7c6343395be15446056407ee876aa8a"
+    },
+    {
+      "key": "6f92e8d5-517d-4f9d-949d-6f89c66b2bd0",
+      "file": "6f92e8d5-517d-4f9d-949d-6f89c66b2bd0.jsonl",
+      "sha1": "d24403975cf9d0a883f0149fb7290cf2503eb5c2"
+    },
+    {
+      "key": "70de7c67-9e1f-4f30-86b5-42413ecbdc60",
+      "file": "70de7c67-9e1f-4f30-86b5-42413ecbdc60.jsonl",
+      "sha1": "ce9807f861df73948190462d522f31df2d6441bc"
+    },
+    {
+      "key": "760bc253-1ea0-4fdb-b108-26abf5eeb037",
+      "file": "760bc253-1ea0-4fdb-b108-26abf5eeb037.jsonl",
+      "sha1": "d6c4f415b6800ef828c2ae50af48e4585e463b21"
+    },
+    {
+      "key": "835145bc-3af4-4da8-9744-35372b33307f",
+      "file": "835145bc-3af4-4da8-9744-35372b33307f.jsonl",
+      "sha1": "c115b655bac0e2987fadb5c0728cd7430235b4f9"
+    },
+    {
+      "key": "07303b0c-4d52-423a-ac6a-dd7406e8d40b",
+      "file": "07303b0c-4d52-423a-ac6a-dd7406e8d40b.jsonl",
+      "sha1": "cd9c14040407eff0ecbb0a7214e2113734b0fe81"
+    },
+    {
+      "key": "5f48d8dc-6258-4eb6-89c2-042fef574597",
+      "file": "5f48d8dc-6258-4eb6-89c2-042fef574597.jsonl",
+      "sha1": "233dad9f3abf248fe40250e4a396f03cc9ffe998"
+    },
+    {
+      "key": "9227f905-a865-4817-bb48-61a582c452c0",
+      "file": "9227f905-a865-4817-bb48-61a582c452c0.jsonl",
+      "sha1": "7fbdc640dbab7a5a96f445216a21cd6ed98f8021"
+    },
+    {
+      "key": "c2726ff6-0b9f-4b2e-a8ec-b8bbf47889cb",
+      "file": "c2726ff6-0b9f-4b2e-a8ec-b8bbf47889cb.jsonl",
+      "sha1": "6bc17598cac930eb1836838c3d946bb5b65dd700"
+    },
+    {
+      "key": "e56288cd-e191-404d-83b7-e38a0dbaf763",
+      "file": "e56288cd-e191-404d-83b7-e38a0dbaf763.jsonl",
+      "sha1": "65f80ff39e08378ef55ea33124987b4c3066ab86"
+    },
+    {
+      "key": "5c17d8b3-637f-4712-9e80-71b0816be1f1",
+      "file": "5c17d8b3-637f-4712-9e80-71b0816be1f1.jsonl",
+      "sha1": "bc097c526426909bced3d9d417f0b82fe62bd317"
+    },
+    {
+      "key": "e9800ab4-34f4-4a42-a2fc-84695b4df0a1",
+      "file": "e9800ab4-34f4-4a42-a2fc-84695b4df0a1.jsonl",
+      "sha1": "a5b73425ace7bfb1947b6911b4fe48785ba6df67"
+    },
+    {
+      "key": "c7245a68-02ec-46dc-9a1f-74dded267655",
+      "file": "c7245a68-02ec-46dc-9a1f-74dded267655.jsonl",
+      "sha1": "6d27424be9b87c059c1ac9b71d19263715e2d8cc"
+    },
+    {
+      "key": "b6fa05f6-e2fd-4437-a448-44bff9aa9586",
+      "file": "b6fa05f6-e2fd-4437-a448-44bff9aa9586.jsonl",
+      "sha1": "3f785e063541bf24ff9e3900ace63eefd31468e5"
+    },
+    {
+      "key": "cfcb364e-7491-4244-9119-3813b56a5247",
+      "file": "cfcb364e-7491-4244-9119-3813b56a5247.jsonl",
+      "sha1": "125211fa8f81dfe5ae467d2a9d6d4e05fc449f1c"
+    },
+    {
+      "key": "de2ce0ab-f19d-42ad-901c-07d92673dd87",
+      "file": "de2ce0ab-f19d-42ad-901c-07d92673dd87.jsonl",
+      "sha1": "b07d35033fd7eba81e77096fab0e7e93f806c434"
+    },
+    {
+      "key": "778a05f2-5501-4baa-b78b-9f97fc6c5c20",
+      "file": "778a05f2-5501-4baa-b78b-9f97fc6c5c20.jsonl",
+      "sha1": "7f55d4991aab36af73aefe3ec40c91a41c1c059c"
+    },
+    {
+      "key": "7abd03af-9839-473f-a0d5-b478fd3cc857",
+      "file": "7abd03af-9839-473f-a0d5-b478fd3cc857.jsonl",
+      "sha1": "369c0464d697924f4901bef527d5d63b39e82f20"
+    },
+    {
+      "key": "7af3fe1a-51bf-4d7a-b208-ebf918c85c8b",
+      "file": "7af3fe1a-51bf-4d7a-b208-ebf918c85c8b.jsonl",
+      "sha1": "c8dc6e08d64cc38c639ad6f95a29bf35f07b6c19"
+    },
+    {
+      "key": "8ab892dd-004e-42bf-a4c6-6329962b1e16",
+      "file": "8ab892dd-004e-42bf-a4c6-6329962b1e16.jsonl",
+      "sha1": "75bae40c524427b46483df0e729bb6a6fbc09964"
+    },
+    {
+      "key": "9b18ae27-2643-462c-ab21-e8b38845b1b6",
+      "file": "9b18ae27-2643-462c-ab21-e8b38845b1b6.jsonl",
+      "sha1": "11583baad75fe475dd55f7a20293e629b0d9bf5b"
+    },
+    {
+      "key": "a4d094c1-1aac-457b-a4a1-fda60adb0c4b",
+      "file": "a4d094c1-1aac-457b-a4a1-fda60adb0c4b.jsonl",
+      "sha1": "db0317864ea8ea86b6dc57b8464021b3765b921e"
+    },
+    {
+      "key": "a7ae34cf-1cd9-413b-825a-1aca73d783f8",
+      "file": "a7ae34cf-1cd9-413b-825a-1aca73d783f8.jsonl",
+      "sha1": "e83819de1b73d17cdd33c46ac03bf66c2775fd1b"
+    },
+    {
+      "key": "b02e71c0-8737-4b8f-8058-e96a7507d92b",
+      "file": "b02e71c0-8737-4b8f-8058-e96a7507d92b.jsonl",
+      "sha1": "8c45aa9f3706343f2d37fab64b0f62f4bef94ee3"
+    },
+    {
+      "key": "b15a8c13-6392-4290-8d50-a3a27c14a51a",
+      "file": "b15a8c13-6392-4290-8d50-a3a27c14a51a.jsonl",
+      "sha1": "14542378d9956d7d5f6888e50bf50c8b093b6a18"
+    },
+    {
+      "key": "bf55740f-da0a-4abe-b9a3-b5ff20ee3dff",
+      "file": "bf55740f-da0a-4abe-b9a3-b5ff20ee3dff.jsonl",
+      "sha1": "6660a39f8f0dd1f7f0c8c14f9ada2bc7b456f56e"
+    },
+    {
+      "key": "cdca2bcc-5e3a-41f0-943c-5bca59557244",
+      "file": "cdca2bcc-5e3a-41f0-943c-5bca59557244.jsonl",
+      "sha1": "99c9412d48af5504d723d1c60381a9e056d08ef4"
+    },
+    {
+      "key": "dcab22b9-7869-4064-9c00-2e8171522cb5",
+      "file": "dcab22b9-7869-4064-9c00-2e8171522cb5.jsonl",
+      "sha1": "a5fde9ce745be9f290d4f4e846ae90c1486374ea"
+    },
+    {
+      "key": "e2a5fc5e-1cc1-4b8b-941a-9faef41eed21",
+      "file": "e2a5fc5e-1cc1-4b8b-941a-9faef41eed21.jsonl",
+      "sha1": "b81048f08158dc7ca7c4e7f765deaea739667a54"
+    },
+    {
+      "key": "f0d2d687-16ca-4189-8fbc-9e41d0e58af2",
+      "file": "f0d2d687-16ca-4189-8fbc-9e41d0e58af2.jsonl",
+      "sha1": "2b2d4f12cbc73598eb60dfac07b3dc010d6ea349"
+    },
+    {
+      "key": "f2301b59-33bf-46d9-846b-a40ca982fbca",
+      "file": "f2301b59-33bf-46d9-846b-a40ca982fbca.jsonl",
+      "sha1": "50462011c9a3286b7ecb6300d035c590ba226601"
+    },
+    {
+      "key": "fc2c227d-e517-4a9a-af5d-9e5f5b770c24",
+      "file": "fc2c227d-e517-4a9a-af5d-9e5f5b770c24.jsonl",
+      "sha1": "06be99b62e198eba10c2727aa4c7f4d59e039b9b"
+    },
+    {
+      "key": "17f71f3d-78f2-40f9-89fe-0fb03d239000",
+      "file": "17f71f3d-78f2-40f9-89fe-0fb03d239000.jsonl",
+      "sha1": "9b58bb6c7e77399ea147e2a5c836efb4372be179"
+    },
+    {
+      "key": "bfb23292-1296-4513-adfc-e54383620e8f",
+      "file": "bfb23292-1296-4513-adfc-e54383620e8f.jsonl",
+      "sha1": "0c9aed261d3681d4496eea78f61de07fbc562692"
+    },
+    {
+      "key": "1d23ee6e-75b7-4a67-8cd4-996da53616b7",
+      "file": "1d23ee6e-75b7-4a67-8cd4-996da53616b7.jsonl",
+      "sha1": "b755abb855944619a5b61b71f7c9b9e2dfc60a37"
+    },
+    {
+      "key": "5e1ecaa7-bca8-4b8c-ba2c-5f08a7a5aa72",
+      "file": "5e1ecaa7-bca8-4b8c-ba2c-5f08a7a5aa72.jsonl",
+      "sha1": "3539fb235dfbfb8835766a3e5313813b195f9b00"
+    },
+    {
+      "key": "d7ccfda4-bcd9-4bd2-a2ad-d909fcd616ef",
+      "file": "d7ccfda4-bcd9-4bd2-a2ad-d909fcd616ef.jsonl",
+      "sha1": "6a4f14a45e6af7a623d929559d2cc4c085708673"
+    },
+    {
+      "key": "c0a700ad-1a67-4488-8b7b-3abc096e7a3a",
+      "file": "c0a700ad-1a67-4488-8b7b-3abc096e7a3a.jsonl",
+      "sha1": "0bb4f7301ce311f5d3dd9d60aa179720380a7aca"
+    },
+    {
+      "key": "c11c775e-bba8-42d2-a70d-a6e95f90b496",
+      "file": "c11c775e-bba8-42d2-a70d-a6e95f90b496.jsonl",
+      "sha1": "66990dd0d51ff50017632579b70e33b8d8fb0f6f"
+    },
+    {
+      "key": "e466d4dd-5f58-4edb-8fd4-5f8df582ed4f",
+      "file": "e466d4dd-5f58-4edb-8fd4-5f8df582ed4f.jsonl",
+      "sha1": "cb89dec48ebb62e75aea933c9e65b2aed9f38e46"
+    },
+    {
+      "key": "f8088d33-78d8-4101-a1ac-3cb370154ccb",
+      "file": "f8088d33-78d8-4101-a1ac-3cb370154ccb.jsonl",
+      "sha1": "efece124f84e750136bfdea7274c0d8acdec0e2a"
+    },
+    {
+      "key": "268256a5-dd4f-43a5-97d2-876b6533bd73",
+      "file": "268256a5-dd4f-43a5-97d2-876b6533bd73.jsonl",
+      "sha1": "cdc243f9f759c4804cf419d5416f1a0aad0c7886"
+    },
+    {
+      "key": "ed293360-c28b-458e-a01f-9d21ef472fee",
+      "file": "ed293360-c28b-458e-a01f-9d21ef472fee.jsonl",
+      "sha1": "c4d20142becbe6b6c474bfc081d2e91ac3dd7861"
+    },
+    {
+      "key": "1e3cbec6-7f1e-4081-aee7-5342756d663f",
+      "file": "1e3cbec6-7f1e-4081-aee7-5342756d663f.jsonl",
+      "sha1": "4cf4d3ceb8794e7118ffa0e4aaca48463287d2e2"
+    },
+    {
+      "key": "5577bb06-7518-4443-8351-3ba209fe1637",
+      "file": "5577bb06-7518-4443-8351-3ba209fe1637.jsonl",
+      "sha1": "15bcf44386fb532bd4765564e5956b06cdab8ada"
+    },
+    {
+      "key": "c637a703-9d60-46ce-aa01-3fa5ba109ff8",
+      "file": "c637a703-9d60-46ce-aa01-3fa5ba109ff8.jsonl",
+      "sha1": "5f607c25d9bf74894b8360c5bf61663f905fe6cc"
+    },
+    {
+      "key": "ba859834-feab-4b42-985f-77263937f5e9",
+      "file": "ba859834-feab-4b42-985f-77263937f5e9.jsonl",
+      "sha1": "4ee0bd7c438b62aff3b7ab1931e2b5736c4c6da4"
+    },
+    {
+      "key": "638a6ea4-76fe-406a-8510-5c3a8216bcc0",
+      "file": "638a6ea4-76fe-406a-8510-5c3a8216bcc0.jsonl",
+      "sha1": "f12bc33be612d3ebc7f90413cabe0110da337ab0"
+    },
+    {
+      "key": "a3de1c12-c232-4b9f-a792-111500c454b2",
+      "file": "a3de1c12-c232-4b9f-a792-111500c454b2.jsonl",
+      "sha1": "014a90de587a5af0c53559b47b6b288b67eff35d"
+    },
+    {
+      "key": "5973d24e-444c-40cb-af30-239e610c1f61",
+      "file": "5973d24e-444c-40cb-af30-239e610c1f61.jsonl",
+      "sha1": "8c3b8bf08c2406b344bd2bed7131a77837afd490"
+    },
+    {
+      "key": "95ade714-0e10-4662-9bb4-31a1b82d756b",
+      "file": "95ade714-0e10-4662-9bb4-31a1b82d756b.jsonl",
+      "sha1": "e5bde29d423f892b5f541ba82bfe78b678736ea4"
+    },
+    {
+      "key": "3f103674-8f0a-4242-a0bc-b89f69fbfad3",
+      "file": "3f103674-8f0a-4242-a0bc-b89f69fbfad3.jsonl",
+      "sha1": "b36be6bc5eecc64466f294acd51678c053520c45"
+    },
+    {
+      "key": "3446aa24-6a1f-4f00-a676-3a8b766d82a8",
+      "file": "3446aa24-6a1f-4f00-a676-3a8b766d82a8.jsonl",
+      "sha1": "f3ec09bf8499ba92c7b4e74bbcba38353b19dc0f"
+    },
+    {
+      "key": "1a335558-c891-4fb1-b18f-0b6235867805",
+      "file": "1a335558-c891-4fb1-b18f-0b6235867805.jsonl",
+      "sha1": "fbbefc9481a45b03d887bc7c86bf3047c20551f7"
+    },
+    {
+      "key": "141ee7cc-a262-4087-a0e2-a2833e0fb2dd",
+      "file": "141ee7cc-a262-4087-a0e2-a2833e0fb2dd.jsonl",
+      "sha1": "8568a0bd1ba3a364b367a33ff64f927cdce5bcda"
+    },
+    {
+      "key": "c9cf2165-17c1-4aa0-9417-e0dc65679a7c",
+      "file": "c9cf2165-17c1-4aa0-9417-e0dc65679a7c.jsonl",
+      "sha1": "ca625dc7952724adab463010bab8c6d201838810"
+    },
+    {
+      "key": "4d1e8e55-6e5b-46dc-8575-ca59e1cea90e",
+      "file": "4d1e8e55-6e5b-46dc-8575-ca59e1cea90e.jsonl",
+      "sha1": "581cf3b143a32d7b386690a74fe2b3c229528f52"
+    },
+    {
+      "key": "f4268eb5-2f51-4a6a-a13d-4b33348dfc14",
+      "file": "f4268eb5-2f51-4a6a-a13d-4b33348dfc14.jsonl",
+      "sha1": "974614c8d8eb518830e6b55f33773c1a3aeb92fa"
+    }
+  ]
+}

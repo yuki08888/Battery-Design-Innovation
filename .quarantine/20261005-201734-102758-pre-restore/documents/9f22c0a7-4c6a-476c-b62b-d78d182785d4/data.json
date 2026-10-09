@@ -1,0 +1,3320 @@
+{
+    "id": "9f22c0a7-4c6a-476c-b62b-d78d182785d4",
+    "title": "2-1-1_品質基準_路面干渉_210331",
+    "pages": [
+        {
+            "id": "2df58de3-8673-494b-a2f6-5259cede4eac",
+            "title": "ページ 1",
+            "content": "<h1>2-1-1 路面寸法保護</h1>\n<p>名称　2-1-1 路面寸法保護</p>\n<p>制定／改定　初回　2021年3月31日</p>\n<blockquote>\n<p>本部内規は、当部、関係部署および関係会社の社員、協力会社を含みます。部外または社外に開示する場合は取り扱いに十分留意してください。</p>\n</blockquote>\n<p>EHV電池設計部　電池バンク設計基準（3BV）</p>\n<table>\n<thead>\n<tr>\n<th>承認</th>\n<th>調査</th>\n<th>作成</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>久津</td>\n<td>井上</td>\n<td>磯辺、芦澤、大森</td>\n</tr>\n</tbody>\n</table>",
+            "references": [],
+            "sourceImagePath": "48dba2a9-ecec-46f3-9acf-0ddf45975ce2.png",
+            "thumbnailPath": "thumb_48dba2a9-ecec-46f3-9acf-0ddf45975ce2.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+            "title": "ページ 2",
+            "content": "<h2>1. 適用範囲</h2>\n<p>駆動用バッテリ（車室外）の電池パックの路面干渉物との接触予測を行う基準的な考え方を記述する。</p>\n<h2>2. 電池パックの路面干渉に関する考え方</h2>\n<p>適用車用と試験車用・異常使用で電池パックの路面干渉保護の考え方は以下のように区別する。</p>\n<p>●適用車用<br />\n・スピードバンプや路面排水溝蓋の横方向通過使用時で電池パックに機能不具合が発生しないこと。</p>\n<p>●試験車用・異常使用<br />\n・山型路面や落下物との干渉の有無を判断する場合、路面から入力があり、万が一発生した場合でも安全な避難性を確保できるよう、設計方針とすること。</p>\n<h2>3. 電池パックの路面干渉に対する目標</h2>\n<p>適用車用と試験用・異常使用のそれぞれの場合で、以下の3項目に対して目標を設定する</p>\n<p>①高電圧部と電池セルの保護<br />\n②ケースのへこみ保護<br />\n③冷却器の保護</p>\n<p>●適用車用<br />\n適用車用はTSダメージで評価する。</p>\n<p>①高電圧部やセルへの直接的な入力が無いようにケースやカバー等で保護すること。<br />\n②高電圧部品への破損に直結するケースのき裂・変形が発生しないこと。<br />\n③冷却器に対して冷却水漏れや流路閉塞等が発生しないこと。</p>\n<p>●異常使用<br />\n異常使用はTSダメージ試験、異常使用は路面干渉物との接触予測試験にて評価する。</p>\n<p>①高電圧部の漏電やセル発熱に至る入力が無いようにケースやカバー等で保護すること。<br />\n②高電圧部品への破損に直結するケースのき裂・変形が発生しないこと。<br />\nまた、路面干渉物の接触による電池パックの損傷を想定し、万が一路面干渉物との接触により電池パックが損傷した場合は、電池パック以外の構造体で衝撃を吸収すること。<br />\n③冷却器の設置位置及び、冷媒種類によって以下の2通りの評価とする。<br />\n・冷却器が電池パック外にある場合、あるいはLCの様な導電性部材を使用している場合は、電池パック内にあっても、電池パックの外側からの入力によっては、電池パックの側面からの入力によっては、電池パックの損傷を想定した設計とすること。<br />\n・冷却器がパック内にあり、かつ導電性の冷却材を使用している場合は原則冷却器の電装部品の電気回路が成立しない設計とすること。</p>",
+            "references": [],
+            "sourceImagePath": "a265bf31-bff2-4a5e-b736-81185042caaf.png",
+            "thumbnailPath": "thumb_a265bf31-bff2-4a5e-b736-81185042caaf.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "982bb01c-eb63-4c42-aa81-ab12ac7e532d",
+            "title": "ページ 3",
+            "content": "<h2>4. 設計例</h2>\n<p>個々の電池パック構造により、具体的な設計が大きく異なるため、<br />\nこれまでの車種（19PL、21PL、27PL）の構造を参考として以下に例示する。</p>\n<h3>4－1. 19PL、21PLの路面干渉事例：</h3>\n<p>スタッド直下にフレームを設定し電池スタックへの直接入力を防止。<br />\n上記2車系では路面干渉を想定してはならない4路面を対象とした。</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>雨溝付き段差</th>\n<th>石突し路</th>\n<th>スピードレーン</th>\n<th>輪止め路</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>突起形状</td>\n<td>420、190</td>\n<td>114、190</td>\n<td>720</td>\n<td>120</td>\n</tr>\n<tr>\n<td>車速</td>\n<td>10、20、30、40km/h</td>\n<td>徐速5km/h</td>\n<td>徐速5km/h</td>\n<td>徐速5km/h</td>\n</tr>\n<tr>\n<td>想定入力</td>\n<td>10.3kN</td>\n<td>100kN以下</td>\n<td>10.3kN以下</td>\n<td>10.3kN以下</td>\n</tr>\n</tbody>\n</table>\n<p>表4－1　路面種類</p>\n<p>図4－1　19PL バッテ下面図</p>\n<p>■ バスタブと路面の直接接触部位</p>\n<p>上記の内、突起の縦横比が大きい段差と路面干渉ではバッテのバスタブ部が直接接触しない高さとした。（図4－1参照）</p>\n<p>突起部がバスタブと接する場合においては、車両が路面を乗り越える際に、車両がバスタブと直接接触しない高さとした。（図4－1参照）</p>\n<p>図4－2　19PL R/F間ビス</p>",
+            "references": [],
+            "sourceImagePath": "b9853017-ea7c-4bf9-b08c-33257acc408c.png",
+            "thumbnailPath": "thumb_b9853017-ea7c-4bf9-b08c-33257acc408c.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "31fe373f-b868-4d5c-8fee-89c03bf6e25d",
+            "title": "ページ 4",
+            "content": "<h3>カスタムレールの変形例上</h3>\n<p>駆動用バッテリ（車室外）の電池パックの路面干渉対策を検討する際、路面干渉の衝撃によるシール部の開きなどを防止する為、基本的な考え方を記述する。</p>\n<ul>\n<li>左端にてアッパーを設定すると、</li>\n<li>合わせてシーラントをジャンクション部に寄せてセーフティーゾーンを確保することによりシール部の変形量を抑制。</li>\n</ul>\n<p>路面干渉時、入力によりアッパー部に変形発生</p>\n<p>図4－3 21PL LWRケースシーラント部<br />\n（AS 路面干渉検証）</p>\n<p>0.8mm<br />\n0.15mm<br />\nシールライン<br />\nアッパー段差<br />\nLWRケース<br />\nUPRカバー<br />\nアッパー段差</p>\n<p>〈LWRケースフランジ シール断面〉</p>\n<p>図4－4 シーラント部断面</p>",
+            "references": [],
+            "sourceImagePath": "644b7e1a-65a3-4239-a88b-50ed89113872.png",
+            "thumbnailPath": "thumb_644b7e1a-65a3-4239-a88b-50ed89113872.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+            "title": "ページ 5",
+            "content": "<h3>4－2. 27PLの路面干渉事例：</h3>\n<p>・バスダブ下面でアンダを設定し、バスダブ・荷室間部を除去することで路面干渉の入力に対し、バスダブ・荷室部の保護のために必要な車室下アンダを確保。<br />\n・システムレベルにてアンダ基準を設定。バッテリ搭載に重点し、必要アンダークリアランスを低減。</p>\n<p>フロント</p>\n<p>・ダミー試験：機能不具合なきこと<br />\n・特搭試験：F/Hなきこと</p>\n<p>冷却器<br />\nバスタブ<br />\nサスペンション（ブレ止3.2）</p>\n<p>17.7mm<br />\n354mm（支持ピッチ）</p>\n<p>①ダミー試験：バスタブや冷却器に接触しないこと<br />\n②特搭試験：セルに塑性変形を至る入力ないこと<br />\nを満たすEAストロークを確認。<br />\n※27PLはダミー試験の入力条件がシビア</p>\n<p>図4－4 27PL LWRアンダー基準断面</p>\n<h3>4－3. バッテリ搭載からのアンダー（落下物干渉事例）</h3>\n<p>・バッテリ搭載からの入力対応：落下物等、バッテリ搭載からの入力に対し、<br />\n・サスペン・鉄アンダーカバーを電池パックより下側に設定し、落下物をはじく<br />\n・電池パック前面にFrアンダーを設定し、バスダブへの直接入力を防ぐ</p>\n<p>路面治具頂点：<br />\nFrサスメン下端＋20mm上狙い</p>\n<p>試験①<br />\n試験②③④</p>\n<p>路面治具頂点：<br />\nFrサスメン下端狙い</p>\n<p>20mm<br />\nFrサスメン<br />\nFrアンダーカバー×高圧コネクタ間<br />\n63mm<br />\n電池パック<br />\nロアケース</p>\n<p>左側面視<br />\n路面治具<br />\nFrアンダーカバー</p>\n<p>電池パックFrアンダーへ<br />\n（バスダブへの直接入力を防ぐ）</p>\n<p>サスペン<br />\n（電池パックに落下物をはじく）</p>\n<p>落下物</p>\n<p>図4－5 27PL バンパ前面からの路面入力保護</p>\n<p>図4－6 27PL LWRケースW断面</p>",
+            "references": [],
+            "sourceImagePath": "309a74ee-a746-416c-a67a-13f04e663954.png",
+            "thumbnailPath": "thumb_309a74ee-a746-416c-a67a-13f04e663954.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+            "title": "ページ 6",
+            "content": "<p><strong>※路下干渉の路面法令について</strong></p>\n<p>路面法令・・・トレーラー走行などの路下物が路面上に引っ掛かり、固定されずに脱落を防ぐ<br />\n（設定理由）EV電池パックの安全性に対して影響大<br />\n2014年社内基準制定<br />\n・・・テスラModelSが路上に落ちていたトレーラーアームを車体に乗り上げ<br />\n→TMCのEVの安全性を確保する為に評価へ織り込み</p>\n<p>電瓶下への衝突<br />\n路面との干渉<br />\n路面との干渉<br />\n落下物との干渉<br />\n固定状態<br />\n路下物引っ掛り干渉<br />\n非固定状態<br />\n画定状態<br />\n金属部品干渉<br />\nコンクリート、木片干渉  </p>\n<p>①固定状態　路下物<br />\n②落下物干渉　ケース<br />\n安定性の検討<br />\n不十分</p>\n<p>図4－7 路面や異物干渉についてのストレス評価</p>\n<p>図4－8 路下物固定状態における電池パックへの衝撃</p>\n<h3>4－4. バッテリ側面からの入力に対する構造事例</h3>\n<p>バッテリ側面からの入力に対する構造事例：</p>\n<p>・EA材やサイドメンバを電池セルより下面に設定し、電池セルへの直接入力を防ぐ</p>\n<p>UPR<br />\nRH<br />\n電池セル<br />\nEA材<br />\nEA材をセルより下側に設定</p>\n<p>図4－9 27PL LWRケース断面</p>",
+            "references": [],
+            "sourceImagePath": "630775a5-293a-4a85-998e-30c89aa49a37.png",
+            "thumbnailPath": "thumb_630775a5-293a-4a85-998e-30c89aa49a37.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        }
+    ],
+    "references": [],
+    "sourceFilePath": "C:\\Users\\1584550\\AppData\\Roaming\\system_factory\\app_data\\projects\\0c47063b-31ef-45f7-9ab8-67833c1008e7\\documents\\9f22c0a7-4c6a-476c-b62b-d78d182785d4\\orgs\\e64405fb-e7df-4036-9cea-a31c253cd472.pdf",
+    "createdAt": null,
+    "updatedAt": null,
+    "skeleton": null,
+    "headingRules": null,
+    "digest": {
+        "overview": {
+            "summary": "本書は、駆動用バッテリ（車室外）の電池パックについて、路面干渉物との接触を予測・評価し、機能不具合や安全上の問題を防ぐための設計基準を示す。適用車用と試験車用・異常使用を区別し、高電圧部・電池セル、ケース、冷却器の目標を定めている。19PL、21PL、27PLなどの車種を例に、バスタブへの直接接触防止、シール部の変形抑制、アンダー構造による衝撃回避などの設計事例を説明する。また、路下物の脱落を防ぐ路面法令と、バッテリ側面からの入力に対する構造事例も扱う。",
+            "documentKind": "requirement_spec",
+            "purpose": "路面干渉に対する電池パックの評価目標と設計上の考え方を定め、接触予測や具体的な構造設計の基準として用いる。",
+            "scope": "対象は駆動用バッテリ（車室外）の電池パックであり、通常の適用車用に加え、試験車用・異常使用を含む路面干渉の評価および設計事例を扱う。",
+            "keyTopics": [
+                "適用範囲と路面干渉に対する設計方針",
+                "適用車用・異常使用の評価目標",
+                "高電圧部・セル、ケース、冷却器の保護",
+                "19PL・21PL・27PLの路面干渉設計事例",
+                "バスタブと路面の直接接触防止",
+                "シール部の変形抑制",
+                "アンダー構造と落下物対策",
+                "路下干渉に関する法令・社内基準",
+                "バッテリ側面入力に対する保護構造"
+            ],
+            "keyTerms": [
+                {
+                    "term": "TSダメージ",
+                    "definition": "適用車用および異常使用において、電池パックの路面干渉に関する目標を評価する試験として記載されている。"
+                },
+                {
+                    "term": "路面干渉物との接触予測試験",
+                    "definition": "異常使用における路面干渉の目標評価に用いられる試験である。"
+                },
+                {
+                    "term": "アンダー",
+                    "definition": "路面や落下物から電池パックを保護するため、車室下や電池パック下面に確保・配置する構造として記載されている。"
+                },
+                {
+                    "term": "EA材",
+                    "definition": "側面入力に対し、電池セルへの直接入力を防ぐためセルより下面に配置する部材として示されている。"
+                },
+                {
+                    "term": "3BV",
+                    "definition": "文書名「EHV電池設計部 電池バンク設計基準」に付された表記である。"
+                }
+            ],
+            "targetSystem": "駆動用バッテリ（車室外）の電池パック"
+        },
+        "outline": [
+            {
+                "id": "dc4d9a81-618d-452a-b23b-3e83caae5dba",
+                "title": "2-1-1 路面寸法保護",
+                "level": 1,
+                "summary": "「2-1-1 路面寸法保護」の名称と、制定／改定が初回（2021年3月31日）であることが記載されています。本部内規の開示時の取り扱いに関する注意書き、文書名「EHV電池設計部 電池バンク設計基準（3BV）」、承認・調査・作成の担当者名も記載されています。",
+                "keywords": [
+                    "路面寸法保護",
+                    "2021年3月31日",
+                    "EHV電池設計部",
+                    "電池バンク設計基準",
+                    "3BV",
+                    "久津",
+                    "井上",
+                    "磯辺"
+                ],
+                "pageIds": [
+                    "2df58de3-8673-494b-a2f6-5259cede4eac"
+                ],
+                "children": [
+                    {
+                        "id": "bbfcae4a-8434-4cb0-a3c7-af37581f3249",
+                        "title": "1. 適用範囲",
+                        "level": 2,
+                        "summary": "駆動用バッテリ（車室外）の電池パックについて、路面干渉物との接触予測を行うための基準的な考え方を記述する。",
+                        "keywords": [
+                            "駆動用バッテリ",
+                            "車室外",
+                            "電池パック",
+                            "路面干渉物",
+                            "接触予測"
+                        ],
+                        "pageIds": [
+                            "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802"
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "ad32076f-ae56-410a-8eae-c10fcd04f3fe",
+                        "title": "2. 電池パックの路面干渉に関する考え方",
+                        "level": 2,
+                        "summary": "適用車用では、スピードバンプや路面排水溝蓋を横方向に通過する際に電池パックの機能不具合が発生しないことを求める。試験車用・異常使用では、山型路面や落下物との干渉を判断し、路面入力があって万が一発生した場合にも安全な避難性を確保できる設計方針とする。",
+                        "keywords": [
+                            "適用車用",
+                            "試験車用",
+                            "異常使用",
+                            "スピードバンプ",
+                            "路面排水溝蓋",
+                            "山型路面",
+                            "落下物",
+                            "安全な避難性"
+                        ],
+                        "pageIds": [
+                            "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802"
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "617029d1-b229-46b2-b609-972cc40cfec3",
+                        "title": "3. 電池パックの路面干渉に対する目標",
+                        "level": 2,
+                        "summary": "高電圧部・電池セル、ケース、冷却器の3項目について、適用車用はTSダメージで評価し、直接入力の防止、破損に直結するケースのき裂・変形の防止、冷却水漏れや流路閉塞の防止を目標とする。異常使用はTSダメージ試験および路面干渉物との接触予測試験で評価し、高電圧部の漏電やセル発熱に至る入力を防ぎ、ケースのき裂・変形を防止するほか、電池パック損傷時は他の構造体で衝撃を吸収する。冷却器については、電池パック外またはLCのような導電性部材を使用する場合にパック損傷を想定した設計とし、パック内で導電性冷却材を使用する場合は原則として冷却器の電装部品で電気回路が成立しない設計とする。",
+                        "keywords": [
+                            "TSダメージ",
+                            "接触予測試験",
+                            "高電圧部",
+                            "電池セル",
+                            "ケースのき裂・変形",
+                            "冷却器",
+                            "冷却水漏れ",
+                            "導電性冷却材"
+                        ],
+                        "pageIds": [
+                            "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802"
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "a0f65afc-1d30-4d9e-bb4e-d0e821f10515",
+                        "title": "4. 設計例",
+                        "level": 2,
+                        "summary": "電池パック構造によって具体的な設計が大きく異なるため、これまでの車種（19PL、21PL、27PL）の構造を参考に設計例を示す。",
+                        "keywords": [
+                            "電池パック構造",
+                            "19PL",
+                            "21PL",
+                            "27PL",
+                            "設計例"
+                        ],
+                        "pageIds": [
+                            "982bb01c-eb63-4c42-aa81-ab12ac7e532d"
+                        ],
+                        "children": [
+                            {
+                                "id": "84c89ef1-99f2-4d56-ba05-c78c42521701",
+                                "title": "4－1. 19PL、21PLの路面干渉事例：",
+                                "level": 3,
+                                "summary": "スタッド直下にフレームを設け、電池スタックへの直接入力を防止する。対象は路面干渉を想定する4路面で、雨溝付き段差・石突し路・スピードレーン・輪止め路について、突起形状、車速、想定入力が示されている（順に突起形状は420・190、114・190、720、120、想定入力は10.3kN、100kN以下、10.3kN以下、10.3kN以下）。",
+                                "keywords": [
+                                    "19PL",
+                                    "21PL",
+                                    "路面干渉",
+                                    "スタッド",
+                                    "電池スタック",
+                                    "雨溝付き段差",
+                                    "スピードレーン",
+                                    "輪止め路"
+                                ],
+                                "pageIds": [
+                                    "982bb01c-eb63-4c42-aa81-ab12ac7e532d"
+                                ],
+                                "children": [
+                                    {
+                                        "id": "36ca6efd-a120-493d-8002-86088c8b9ccc",
+                                        "title": "■ バスタブと路面の直接接触部位",
+                                        "level": 4,
+                                        "summary": "突起の縦横比が大きい段差と路面干渉では、バッテのバスタブ部が直接接触しない高さとする。また、突起部がバスタブと接する場合も、車両が路面を乗り越える際にバスタブへ直接接触しない高さとする。図4－1（19PLバッテ下面図）を参照する旨が記され、続けて図4－2（19PL R/F間ビス）が示されている。",
+                                        "keywords": [
+                                            "バスタブ",
+                                            "路面干渉",
+                                            "直接接触",
+                                            "突起",
+                                            "図4－1",
+                                            "19PL",
+                                            "R/F間ビス",
+                                            "図4－2"
+                                        ],
+                                        "pageIds": [
+                                            "982bb01c-eb63-4c42-aa81-ab12ac7e532d"
+                                        ],
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "6b4d21f8-f6a2-491e-9a3f-e49515883ffa",
+                                "title": "カスタムレールの変形例上",
+                                "level": 3,
+                                "summary": "駆動用バッテリ（車室外）の電池パックについて、路面干渉の衝撃によるシール部の開きなどを防止する基本的な考え方を説明している。アッパーを左端に設定し、シーラントをジャンクション部に寄せてセーフティーゾーンを確保することでシール部の変形量を抑制する。図4－3では路面干渉時に入力でアッパー部が変形することを示し、図4－4のシーラント部断面には0.8mm、0.15mm、シールライン、アッパー段差、LWRケース、UPRカバーが記載されている。",
+                                "keywords": [
+                                    "カスタムレール",
+                                    "駆動用バッテリ",
+                                    "電池パック",
+                                    "路面干渉",
+                                    "シール部",
+                                    "シーラント",
+                                    "セーフティーゾーン",
+                                    "LWRケース"
+                                ],
+                                "pageIds": [
+                                    "31fe373f-b868-4d5c-8fee-89c03bf6e25d"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "5f13369b-622f-4ec3-8664-da9715641131",
+                                "title": "4－2. 27PLの路面干渉事例：",
+                                "level": 3,
+                                "summary": "バスダブ下面にアンダーを設定し、バスダブ・荷室間部を除去して、路面干渉時に車室下アンダーを確保する構成を説明する。システムレベルでアンダー基準を設定し、バッテリ搭載を重視して必要アンダークリアランスを低減する。フロントはダミー試験で機能不具合なし、特搭試験でF/Hなしを確認し、バスタブや冷却器への接触防止とセルの塑性変形を招く入力の防止を満たすEAストロークを確認する（サスペンション支持ピッチ354mm、ブレ止3.2、図示寸法17.7mm）。",
+                                "keywords": [
+                                    "27PL",
+                                    "路面干渉",
+                                    "バスダブ",
+                                    "アンダー基準",
+                                    "ダミー試験",
+                                    "特搭試験",
+                                    "EAストローク",
+                                    "354mm"
+                                ],
+                                "pageIds": [
+                                    "bd2622a5-96e0-4dbf-ae06-69492f23070b"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "8277e21f-b7a2-4eb5-9864-394bf6df0505",
+                                "title": "4－3. バッテリ搭載からのアンダー（落下物干渉事例）",
+                                "level": 3,
+                                "summary": "落下物などによるバッテリ搭載からの入力に対し、サスペン・鉄アンダーカバーを電池パックより下側に配置して落下物をはじき、電池パック前面のFrアンダーでバスダブへの直接入力を防ぐ構成を説明する。路面治具頂点の設定としてFrサスメン下端＋20mm上狙い、およびFrサスメン下端狙いが記載され、Frアンダーカバーと高圧コネクタ間の寸法は63mm。図には電池パック、ロアケース、路面治具などが示される。",
+                                "keywords": [
+                                    "27PL",
+                                    "落下物干渉",
+                                    "Frアンダー",
+                                    "サスペン",
+                                    "鉄アンダーカバー",
+                                    "電池パック",
+                                    "路面治具",
+                                    "高圧コネクタ"
+                                ],
+                                "pageIds": [
+                                    "bd2622a5-96e0-4dbf-ae06-69492f23070b"
+                                ],
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "5e8104f7-10ea-4c21-90bb-5bb78d17abfe",
+                "title": "路下干渉の路面法令について",
+                "level": 1,
+                "summary": "路面法令を、トレーラー走行などで路下物が路面に引っ掛かり、固定されずに脱落する事象を防ぐものとして説明している。EV電池パックの安全性への影響が大きいことから2014年に社内基準を制定し、テスラModel Sが路上のトレーラーアームに乗り上げた事例を受けて、TMCのEV安全性評価に織り込んだ。図4－7・図4－8では路面・異物との干渉や路下物の固定状態に関するストレス評価と電池パックへの衝撃を扱っている。",
+                "keywords": [
+                    "路下干渉",
+                    "路面法令",
+                    "EV電池パック",
+                    "2014年社内基準",
+                    "テスラModel S",
+                    "トレーラーアーム",
+                    "図4－7",
+                    "図4－8"
+                ],
+                "pageIds": [
+                    "4490c6cb-4d30-4db4-9e25-02f64c3220db"
+                ],
+                "children": [
+                    {
+                        "id": "4cf55cf5-c386-4200-b2f7-33667d7fd70f",
+                        "title": "4－4. バッテリ側面からの入力に対する構造事例",
+                        "level": 3,
+                        "summary": "バッテリ側面からの入力に対し、EA材やサイドメンバを電池セルより下面に配置して、電池セルへの直接入力を防ぐ構造を示している。図4－9は27PL LWRケース断面で、EA材をセルより下側に設定する構成を示す。",
+                        "keywords": [
+                            "バッテリ側面",
+                            "EA材",
+                            "サイドメンバ",
+                            "電池セル",
+                            "27PL LWRケース",
+                            "図4－9"
+                        ],
+                        "pageIds": [
+                            "4490c6cb-4d30-4db4-9e25-02f64c3220db"
+                        ],
+                        "children": []
+                    }
+                ]
+            }
+        ],
+        "sourceHash": "4ae4109d3cb67ca0f81d582af2dc050cb165f542",
+        "textHash": "ed327750dcd1a12a2b31a486335d4283b183d34c",
+        "generatedAt": "2026-10-03T14:18:24.589777",
+        "pageCount": 6,
+        "schemaVersion": 1,
+        "generator": "ai"
+    },
+    "coverage": {
+        "schemaVersion": 1,
+        "sourceHash": "4ae4109d3cb67ca0f81d582af2dc050cb165f542",
+        "textHash": "ed327750dcd1a12a2b31a486335d4283b183d34c",
+        "generatedAt": "2026-10-03T15:28:32.704835",
+        "rounds": 0,
+        "stoppedReason": "",
+        "segments": [
+            {
+                "id": "slu-46f76015fcaece2969f6f6693d90544efd492276a5d41325119bb35baa179dee",
+                "pageId": "2df58de3-8673-494b-a2f6-5259cede4eac",
+                "quote": "2-1-1 路面寸法保護",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 0,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 1,
+                        "end": 13,
+                        "occurrence": 0,
+                        "pageSourceHash": "035852bcdf38fdf5c834452139feadde270e96823718d86204428b9c586f7d2b"
+                    }
+                }
+            },
+            {
+                "id": "slu-c2dfa87cfabc9474d661199bb40f59e79f778ff87677529faf3523192c7ff34d",
+                "pageId": "2df58de3-8673-494b-a2f6-5259cede4eac",
+                "quote": "名称　2-1-1 路面寸法保護",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 1,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 16,
+                        "end": 31,
+                        "occurrence": 0,
+                        "pageSourceHash": "035852bcdf38fdf5c834452139feadde270e96823718d86204428b9c586f7d2b"
+                    }
+                }
+            },
+            {
+                "id": "slu-c737820179a91ae720d412570cfde1b6159cccd8e3c26fd1a940e8b1e426cdbf",
+                "pageId": "2df58de3-8673-494b-a2f6-5259cede4eac",
+                "quote": "制定／改定　初回　2021年3月31日",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 2,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 34,
+                        "end": 53,
+                        "occurrence": 0,
+                        "pageSourceHash": "035852bcdf38fdf5c834452139feadde270e96823718d86204428b9c586f7d2b"
+                    }
+                }
+            },
+            {
+                "id": "slu-afdd235a6f16fae41b1cb22ae65a5aea866154ff03e7f09bdec12f4fa38a7aa0",
+                "pageId": "2df58de3-8673-494b-a2f6-5259cede4eac",
+                "quote": "本部内規は、当部、関係部署および関係会社の社員、協力会社を含みます。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 3,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 58,
+                        "end": 92,
+                        "occurrence": 0,
+                        "pageSourceHash": "035852bcdf38fdf5c834452139feadde270e96823718d86204428b9c586f7d2b"
+                    }
+                }
+            },
+            {
+                "id": "slu-9ddbef4ab2a0665c4591084d4331bfc312402f0c812f9772bdb994e5f98a9093",
+                "pageId": "2df58de3-8673-494b-a2f6-5259cede4eac",
+                "quote": "部外または社外に開示する場合は取り扱いに十分留意してください。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 4,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 92,
+                        "end": 123,
+                        "occurrence": 0,
+                        "pageSourceHash": "035852bcdf38fdf5c834452139feadde270e96823718d86204428b9c586f7d2b"
+                    }
+                }
+            },
+            {
+                "id": "slu-b2273aa29a24dceef410dac238248904c8f58a8efbe97a948d1f871ede1c1ffa",
+                "pageId": "2df58de3-8673-494b-a2f6-5259cede4eac",
+                "quote": "EHV電池設計部　電池バンク設計基準（3BV）",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 5,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 128,
+                        "end": 151,
+                        "occurrence": 0,
+                        "pageSourceHash": "035852bcdf38fdf5c834452139feadde270e96823718d86204428b9c586f7d2b"
+                    }
+                }
+            },
+            {
+                "id": "slu-1f73918facb0461d332d21005da0c62e2d35d928fee6b90ea06e679a374c65ca",
+                "pageId": "2df58de3-8673-494b-a2f6-5259cede4eac",
+                "quote": "承認 \t調査 \t作成",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 6,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 159,
+                        "end": 169,
+                        "occurrence": 0,
+                        "pageSourceHash": "035852bcdf38fdf5c834452139feadde270e96823718d86204428b9c586f7d2b"
+                    }
+                }
+            },
+            {
+                "id": "slu-13ea07bb9e7f1ecc56e1cefbc4bf8ecfe8a750761e4b484f1605c636e85e2ce3",
+                "pageId": "2df58de3-8673-494b-a2f6-5259cede4eac",
+                "quote": "久津 \t井上 \t磯辺、芦澤、大森",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 7,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 177,
+                        "end": 193,
+                        "occurrence": 0,
+                        "pageSourceHash": "035852bcdf38fdf5c834452139feadde270e96823718d86204428b9c586f7d2b"
+                    }
+                }
+            },
+            {
+                "id": "slu-a6cfe85c673890c127b7fae778fcf29b642c91cd76b94035ddef7c23cf694d9a",
+                "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                "quote": "1. 適用範囲",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 0,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 1,
+                        "end": 8,
+                        "occurrence": 0,
+                        "pageSourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    }
+                }
+            },
+            {
+                "id": "slu-3fd51fbdab7296076563fb9904e3e8001d2b081225782a952b689fb7eac1b15a",
+                "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                "quote": "駆動用バッテリ（車室外）の電池パックの路面干渉物との接触予測を行う基準的な考え方を記述する。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 1,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 11,
+                        "end": 57,
+                        "occurrence": 0,
+                        "pageSourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    }
+                }
+            },
+            {
+                "id": "slu-6330712259064ab7f7b8019e37b9daa44e9ec4e657da32c9d87dd964e845e30d",
+                "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                "quote": "2. 電池パックの路面干渉に関する考え方",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 2,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 60,
+                        "end": 80,
+                        "occurrence": 0,
+                        "pageSourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    }
+                }
+            },
+            {
+                "id": "slu-311ee0622bee58acbc4ac7dfd1cdd318367883c13eecf62ff07c138bcd3b2fee",
+                "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                "quote": "適用車用と試験車用・異常使用で電池パックの路面干渉保護の考え方は以下のように区別する。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 3,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 83,
+                        "end": 126,
+                        "occurrence": 0,
+                        "pageSourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    }
+                }
+            },
+            {
+                "id": "slu-cb864065f061ae143a756081b8a27aa56b73bd87a4043e7f56ffec249190232b",
+                "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                "quote": "●適用車用",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 4,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 129,
+                        "end": 134,
+                        "occurrence": 0,
+                        "pageSourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    }
+                }
+            },
+            {
+                "id": "slu-7c39c06565d791de22fe85a61568c6ead57b3136645edf8d655765f1eeffe194",
+                "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                "quote": "・スピードバンプや路面排水溝蓋の横方向通過使用時で電池パックに機能不具合が発生しないこと。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 5,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 136,
+                        "end": 181,
+                        "occurrence": 0,
+                        "pageSourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    }
+                }
+            },
+            {
+                "id": "slu-a0e53837ac3dc542b19afbd7f0fdfb83be4bfd01f2526230e6cda48e6acb7492",
+                "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                "quote": "●試験車用・異常使用",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 6,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 184,
+                        "end": 194,
+                        "occurrence": 0,
+                        "pageSourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    }
+                }
+            },
+            {
+                "id": "slu-a12678a49cdc6e84196cd0e54baed2b3f70c3235e4837be59d16b4da3a9cfdc0",
+                "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                "quote": "・山型路面や落下物との干渉の有無を判断する場合、路面から入力があり、万が一発生した場合でも安全な避難性を確保できるよう、設計方針とすること。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 7,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 196,
+                        "end": 266,
+                        "occurrence": 0,
+                        "pageSourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    }
+                }
+            },
+            {
+                "id": "slu-1b5e74df3660e1e81449a1d438cd65aef7f917aafbc8792c22fa4196a5322e2d",
+                "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                "quote": "3. 電池パックの路面干渉に対する目標",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 8,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 269,
+                        "end": 288,
+                        "occurrence": 0,
+                        "pageSourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    }
+                }
+            },
+            {
+                "id": "slu-277c8d5adff49092ca81fdaf7a3257818161cf9f177d2104357c99bb37e500b0",
+                "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                "quote": "適用車用と試験用・異常使用のそれぞれの場合で、以下の3項目に対して目標を設定する",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 9,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 291,
+                        "end": 331,
+                        "occurrence": 0,
+                        "pageSourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    }
+                }
+            },
+            {
+                "id": "slu-058eeec9789432f9e6344ed39f8e1fe8ce7175b73cd6c704b12fe930395fa6b3",
+                "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                "quote": "①高電圧部と電池セルの保護",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 10,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 334,
+                        "end": 347,
+                        "occurrence": 0,
+                        "pageSourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    }
+                }
+            },
+            {
+                "id": "slu-8de52617269c01dad8549860ef748d32648508a1c097a166da2ae97ce147417b",
+                "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                "quote": "②ケースのへこみ保護",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 11,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 349,
+                        "end": 359,
+                        "occurrence": 0,
+                        "pageSourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    }
+                }
+            },
+            {
+                "id": "slu-3c7f4c6d714225ea80aa1a5c77c4f20c51626dab8d4b8b96cbebdcf4a70b9a41",
+                "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                "quote": "③冷却器の保護",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 12,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 361,
+                        "end": 368,
+                        "occurrence": 0,
+                        "pageSourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    }
+                }
+            },
+            {
+                "id": "slu-cc267c0aa62ba3d0b76945bfea7516d6bc45d92bf9323dd83be8ebdd089b2ef3",
+                "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                "quote": "●適用車用",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 13,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 371,
+                        "end": 376,
+                        "occurrence": 1,
+                        "pageSourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    }
+                }
+            },
+            {
+                "id": "slu-2f51ced8a113cec43e42bece543c5ebe70ae92cd3821c95c8f6d22c7583738d9",
+                "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                "quote": "適用車用はTSダメージで評価する。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 14,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 378,
+                        "end": 395,
+                        "occurrence": 0,
+                        "pageSourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    }
+                }
+            },
+            {
+                "id": "slu-dcd86b8cb4d174e557b31fb65d2e752bbe8186c3dd10b0a8794e18d9c8d56d8d",
+                "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                "quote": "①高電圧部やセルへの直接的な入力が無いようにケースやカバー等で保護すること。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 15,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 398,
+                        "end": 436,
+                        "occurrence": 0,
+                        "pageSourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    }
+                }
+            },
+            {
+                "id": "slu-65cb38b9dd80760614d141eb3ac2f88a3e40f18bd323036f24b04de2b6fa4f29",
+                "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                "quote": "②高電圧部品への破損に直結するケースのき裂・変形が発生しないこと。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 16,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 438,
+                        "end": 471,
+                        "occurrence": 0,
+                        "pageSourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    }
+                }
+            },
+            {
+                "id": "slu-adb5dfa0b95cda0f0d83fa5cf5b83737e78faab91f6cfd1223dcb513a66387a6",
+                "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                "quote": "③冷却器に対して冷却水漏れや流路閉塞等が発生しないこと。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 17,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 473,
+                        "end": 501,
+                        "occurrence": 0,
+                        "pageSourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    }
+                }
+            },
+            {
+                "id": "slu-c582d71ca693f2faf06c23a88dbf2149417e1fb0a9de03a87c63ffbcbbd4e867",
+                "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                "quote": "●異常使用",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 18,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 504,
+                        "end": 509,
+                        "occurrence": 0,
+                        "pageSourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    }
+                }
+            },
+            {
+                "id": "slu-9044601f47951680f8f5ec6dfe8ae29642bd6889b64884cc264b7c20fea6a0eb",
+                "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                "quote": "異常使用はTSダメージ試験、異常使用は路面干渉物との接触予測試験にて評価する。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 19,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 511,
+                        "end": 550,
+                        "occurrence": 0,
+                        "pageSourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    }
+                }
+            },
+            {
+                "id": "slu-5e8f6acd73541df6f90cdb2a9a4ad1bfcbd6205a8fed65c576f0ba5899011301",
+                "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                "quote": "①高電圧部の漏電やセル発熱に至る入力が無いようにケースやカバー等で保護すること。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 20,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 553,
+                        "end": 593,
+                        "occurrence": 0,
+                        "pageSourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    }
+                }
+            },
+            {
+                "id": "slu-56328fc2d3600a96966cae20d682d7c020a07359aad35ec49b8efde206fe1e59",
+                "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                "quote": "②高電圧部品への破損に直結するケースのき裂・変形が発生しないこと。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 21,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 595,
+                        "end": 628,
+                        "occurrence": 1,
+                        "pageSourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    }
+                }
+            },
+            {
+                "id": "slu-06ec7b9e7f73a793cc7cd0503f2143b521b391e13aa1ee1c3931c017008055ef",
+                "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                "quote": "また、路面干渉物の接触による電池パックの損傷を想定し、万が一路面干渉物との接触により電池パックが損傷した場合は、電池パック以外の構造体で衝撃を吸収すること。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 22,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 630,
+                        "end": 708,
+                        "occurrence": 0,
+                        "pageSourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    }
+                }
+            },
+            {
+                "id": "slu-c54420648ecef655ba9d06b03bcc076a4ec0cc976e9ce30c0132aadb7a32f32d",
+                "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                "quote": "③冷却器の設置位置及び、冷媒種類によって以下の2通りの評価とする。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 23,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 710,
+                        "end": 743,
+                        "occurrence": 0,
+                        "pageSourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    }
+                }
+            },
+            {
+                "id": "slu-1ae64d4be6334e2a2aedfc90d9d42736b055f7c8629901b226a27672cbe2034e",
+                "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                "quote": "・冷却器が電池パック外にある場合、あるいはLCの様な導電性部材を使用している場合は、電池パック内にあっても、電池パックの外側からの入力によっては、電池パックの側面からの入力によっては、電池パックの損傷を想定した設計とすること。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 24,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 745,
+                        "end": 858,
+                        "occurrence": 0,
+                        "pageSourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    }
+                }
+            },
+            {
+                "id": "slu-fa5e5ed49862b68b5c6d20089236e3e9424a933b0639e8c413eb2a23629d7ebe",
+                "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                "quote": "・冷却器がパック内にあり、かつ導電性の冷却材を使用している場合は原則冷却器の電装部品の電気回路が成立しない設計とすること。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 25,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 860,
+                        "end": 921,
+                        "occurrence": 0,
+                        "pageSourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    }
+                }
+            },
+            {
+                "id": "slu-a73c8f638a0dc0846e4655f4069038ddc4444cf77c24bc855af48f8502dbb3d3",
+                "pageId": "982bb01c-eb63-4c42-aa81-ab12ac7e532d",
+                "quote": "4. 設計例",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 0,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 1,
+                        "end": 7,
+                        "occurrence": 0,
+                        "pageSourceHash": "bfc3030342290c9d86b20dae508d8bd522e049d5475666409bd9dfba92656234"
+                    }
+                }
+            },
+            {
+                "id": "slu-e93f8716c036277be2f7a1b85db70647450b38a6c0d77c3e5600a2cdf0bc509f",
+                "pageId": "982bb01c-eb63-4c42-aa81-ab12ac7e532d",
+                "quote": "個々の電池パック構造により、具体的な設計が大きく異なるため、",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 1,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 10,
+                        "end": 40,
+                        "occurrence": 0,
+                        "pageSourceHash": "bfc3030342290c9d86b20dae508d8bd522e049d5475666409bd9dfba92656234"
+                    }
+                }
+            },
+            {
+                "id": "slu-63b02641411ebd9090a63f2e040ec9e179e5a0c360c7e4d377f0a5b0034d7d85",
+                "pageId": "982bb01c-eb63-4c42-aa81-ab12ac7e532d",
+                "quote": "これまでの車種（19PL、21PL、27PL）の構造を参考として以下に例示する。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 2,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 42,
+                        "end": 82,
+                        "occurrence": 0,
+                        "pageSourceHash": "bfc3030342290c9d86b20dae508d8bd522e049d5475666409bd9dfba92656234"
+                    }
+                }
+            },
+            {
+                "id": "slu-800c644fb2579b8073bb3591a9fbc18aca2656dee85e21ec699baeeb143ff0ef",
+                "pageId": "982bb01c-eb63-4c42-aa81-ab12ac7e532d",
+                "quote": "4－1.",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 3,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 85,
+                        "end": 89,
+                        "occurrence": 0,
+                        "pageSourceHash": "bfc3030342290c9d86b20dae508d8bd522e049d5475666409bd9dfba92656234"
+                    }
+                }
+            },
+            {
+                "id": "slu-d33a6160a8b2c8d11bb5036ff3177156a8d08967a298ea795493529216507834",
+                "pageId": "982bb01c-eb63-4c42-aa81-ab12ac7e532d",
+                "quote": "19PL、21PLの路面干渉事例：",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 4,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 90,
+                        "end": 107,
+                        "occurrence": 0,
+                        "pageSourceHash": "bfc3030342290c9d86b20dae508d8bd522e049d5475666409bd9dfba92656234"
+                    }
+                }
+            },
+            {
+                "id": "slu-f0d9c962af67a8a374bf34df9adf189c1dc7a879bd0a4ba4ee9cf56803d88e45",
+                "pageId": "982bb01c-eb63-4c42-aa81-ab12ac7e532d",
+                "quote": "スタッド直下にフレームを設定し電池スタックへの直接入力を防止。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 5,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 110,
+                        "end": 141,
+                        "occurrence": 0,
+                        "pageSourceHash": "bfc3030342290c9d86b20dae508d8bd522e049d5475666409bd9dfba92656234"
+                    }
+                }
+            },
+            {
+                "id": "slu-069ed8fbc4f0fe8b3a207fda4385a2261df4d4aa178859f4a488656eb043708d",
+                "pageId": "982bb01c-eb63-4c42-aa81-ab12ac7e532d",
+                "quote": "上記2車系では路面干渉を想定してはならない4路面を対象とした。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 6,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 143,
+                        "end": 174,
+                        "occurrence": 0,
+                        "pageSourceHash": "bfc3030342290c9d86b20dae508d8bd522e049d5475666409bd9dfba92656234"
+                    }
+                }
+            },
+            {
+                "id": "slu-45198e3541742f7b2b2edb0bbfd05b952e4c57d0d5ec728c78d824d4e40dcea1",
+                "pageId": "982bb01c-eb63-4c42-aa81-ab12ac7e532d",
+                "quote": "雨溝付き段差 \t石突し路 \tスピードレーン \t輪止め路",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 7,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 184,
+                        "end": 211,
+                        "occurrence": 0,
+                        "pageSourceHash": "bfc3030342290c9d86b20dae508d8bd522e049d5475666409bd9dfba92656234"
+                    }
+                }
+            },
+            {
+                "id": "slu-f9d827bd01c08e39def15b7048a4251fd5235836a71d8fcfeafb9c8c1f1a0d63",
+                "pageId": "982bb01c-eb63-4c42-aa81-ab12ac7e532d",
+                "quote": "突起形状 \t420、190 \t114、190 \t720 \t120",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 8,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 219,
+                        "end": 251,
+                        "occurrence": 0,
+                        "pageSourceHash": "bfc3030342290c9d86b20dae508d8bd522e049d5475666409bd9dfba92656234"
+                    }
+                }
+            },
+            {
+                "id": "slu-bcd62da49ecbeac18016208bd58ad14463b72015d785ecef297b8ff55bc462f7",
+                "pageId": "982bb01c-eb63-4c42-aa81-ab12ac7e532d",
+                "quote": "車速 \t10、20、30、40km/h \t徐速5km/h \t徐速5km/h \t徐速5km/h",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 9,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 257,
+                        "end": 303,
+                        "occurrence": 0,
+                        "pageSourceHash": "bfc3030342290c9d86b20dae508d8bd522e049d5475666409bd9dfba92656234"
+                    }
+                }
+            },
+            {
+                "id": "slu-bc2f543d8317b7e9c6e6b2b7b04c68313773b798c0bd5ba22f1bb74e125b54cf",
+                "pageId": "982bb01c-eb63-4c42-aa81-ab12ac7e532d",
+                "quote": "想定入力 \t10.3kN \t100kN以下 \t10.3kN以下 \t10.3kN以下",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 10,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 309,
+                        "end": 350,
+                        "occurrence": 0,
+                        "pageSourceHash": "bfc3030342290c9d86b20dae508d8bd522e049d5475666409bd9dfba92656234"
+                    }
+                }
+            },
+            {
+                "id": "slu-a27550e6a868f1403ca99be3aeb350ea8ec233e726fe933a7431d124ca76b5b6",
+                "pageId": "982bb01c-eb63-4c42-aa81-ab12ac7e532d",
+                "quote": "表4－1　路面種類",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 11,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 357,
+                        "end": 366,
+                        "occurrence": 0,
+                        "pageSourceHash": "bfc3030342290c9d86b20dae508d8bd522e049d5475666409bd9dfba92656234"
+                    }
+                }
+            },
+            {
+                "id": "slu-e37396f555484e84090f0810aa9380fb21750717413ff3787a2eb7aaaec2be3f",
+                "pageId": "982bb01c-eb63-4c42-aa81-ab12ac7e532d",
+                "quote": "図4－1　19PL バッテ下面図",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 12,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 369,
+                        "end": 385,
+                        "occurrence": 0,
+                        "pageSourceHash": "bfc3030342290c9d86b20dae508d8bd522e049d5475666409bd9dfba92656234"
+                    }
+                }
+            },
+            {
+                "id": "slu-451ffc7f955b088b9b018418d6992f52b6d8aa97eb356d8007c47086fe9c2abb",
+                "pageId": "982bb01c-eb63-4c42-aa81-ab12ac7e532d",
+                "quote": "■ バスタブと路面の直接接触部位",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 13,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 388,
+                        "end": 404,
+                        "occurrence": 0,
+                        "pageSourceHash": "bfc3030342290c9d86b20dae508d8bd522e049d5475666409bd9dfba92656234"
+                    }
+                }
+            },
+            {
+                "id": "slu-11254284f461e785a2bdbee3b0d5672c2a4636bdc3011d24185135cb5a93cadd",
+                "pageId": "982bb01c-eb63-4c42-aa81-ab12ac7e532d",
+                "quote": "上記の内、突起の縦横比が大きい段差と路面干渉ではバッテのバスタブ部が直接接触しない高さとした。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 14,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 407,
+                        "end": 454,
+                        "occurrence": 0,
+                        "pageSourceHash": "bfc3030342290c9d86b20dae508d8bd522e049d5475666409bd9dfba92656234"
+                    }
+                }
+            },
+            {
+                "id": "slu-aa6966744e9094f21a9a41172b217cc8dab668a01df6f007838d19a7a36db5cb",
+                "pageId": "982bb01c-eb63-4c42-aa81-ab12ac7e532d",
+                "quote": "（図4－1参照）",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 15,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 454,
+                        "end": 462,
+                        "occurrence": 0,
+                        "pageSourceHash": "bfc3030342290c9d86b20dae508d8bd522e049d5475666409bd9dfba92656234"
+                    }
+                }
+            },
+            {
+                "id": "slu-483f48a085a04bf94d0e573d8a201b6b9b76d3365f1d5912e5fd9c45c5741ffe",
+                "pageId": "982bb01c-eb63-4c42-aa81-ab12ac7e532d",
+                "quote": "突起部がバスタブと接する場合においては、車両が路面を乗り越える際に、車両がバスタブと直接接触しない高さとした。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 16,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 465,
+                        "end": 520,
+                        "occurrence": 0,
+                        "pageSourceHash": "bfc3030342290c9d86b20dae508d8bd522e049d5475666409bd9dfba92656234"
+                    }
+                }
+            },
+            {
+                "id": "slu-33622802f94cf5a5dd7fecec700f9ddfb7fe39c9ea40f212a1c5f05d664b27a6",
+                "pageId": "982bb01c-eb63-4c42-aa81-ab12ac7e532d",
+                "quote": "（図4－1参照）",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 17,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 520,
+                        "end": 528,
+                        "occurrence": 1,
+                        "pageSourceHash": "bfc3030342290c9d86b20dae508d8bd522e049d5475666409bd9dfba92656234"
+                    }
+                }
+            },
+            {
+                "id": "slu-e78ed7ba52bc8f147b031446d782727af2cd95e6d1addf87d330cdde68825d45",
+                "pageId": "982bb01c-eb63-4c42-aa81-ab12ac7e532d",
+                "quote": "図4－2　19PL R/F間ビス",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 18,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 531,
+                        "end": 547,
+                        "occurrence": 0,
+                        "pageSourceHash": "bfc3030342290c9d86b20dae508d8bd522e049d5475666409bd9dfba92656234"
+                    }
+                }
+            },
+            {
+                "id": "slu-b5cf691d48f3f986751487556266825634abc66cf0044b063c0338922a0aaba2",
+                "pageId": "31fe373f-b868-4d5c-8fee-89c03bf6e25d",
+                "quote": "カスタムレールの変形例上",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 0,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 1,
+                        "end": 13,
+                        "occurrence": 0,
+                        "pageSourceHash": "b7b388707ec5589491ea419b358de15f05db11c3525d8d1905b17017b49f92f4"
+                    }
+                }
+            },
+            {
+                "id": "slu-77b7ea6b3b058d3d00b313051afbd5849febffd09a81feaf2298e9d8af11372d",
+                "pageId": "31fe373f-b868-4d5c-8fee-89c03bf6e25d",
+                "quote": "駆動用バッテリ（車室外）の電池パックの路面干渉対策を検討する際、路面干渉の衝撃によるシール部の開きなどを防止する為、基本的な考え方を記述する。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 1,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 16,
+                        "end": 87,
+                        "occurrence": 0,
+                        "pageSourceHash": "b7b388707ec5589491ea419b358de15f05db11c3525d8d1905b17017b49f92f4"
+                    }
+                }
+            },
+            {
+                "id": "slu-e20f194c989f75f1e8fcad25756e170ae36925fa44edbad8d95ff48ee985b05e",
+                "pageId": "31fe373f-b868-4d5c-8fee-89c03bf6e25d",
+                "quote": "左端にてアッパーを設定すると、",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 2,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 92,
+                        "end": 107,
+                        "occurrence": 0,
+                        "pageSourceHash": "b7b388707ec5589491ea419b358de15f05db11c3525d8d1905b17017b49f92f4"
+                    }
+                }
+            },
+            {
+                "id": "slu-556dc917aef2c367d3f6ed898b57ee085e58ce184e180f7085a8bf98e20ca241",
+                "pageId": "31fe373f-b868-4d5c-8fee-89c03bf6e25d",
+                "quote": "合わせてシーラントをジャンクション部に寄せてセーフティーゾーンを確保することによりシール部の変形量を抑制。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 3,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 110,
+                        "end": 163,
+                        "occurrence": 0,
+                        "pageSourceHash": "b7b388707ec5589491ea419b358de15f05db11c3525d8d1905b17017b49f92f4"
+                    }
+                }
+            },
+            {
+                "id": "slu-4e7cb7013746f0da5b37c30fdcbb1b97c473cce0b5faab4ef5a56b55446fa522",
+                "pageId": "31fe373f-b868-4d5c-8fee-89c03bf6e25d",
+                "quote": "路面干渉時、入力によりアッパー部に変形発生",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 4,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 168,
+                        "end": 189,
+                        "occurrence": 0,
+                        "pageSourceHash": "b7b388707ec5589491ea419b358de15f05db11c3525d8d1905b17017b49f92f4"
+                    }
+                }
+            },
+            {
+                "id": "slu-7dcc37b72c4fca346b1e22333ccaae70e8877b0076693b2e8bc86329d3ef9b6b",
+                "pageId": "31fe373f-b868-4d5c-8fee-89c03bf6e25d",
+                "quote": "図4－3 21PL LWRケースシーラント部",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 5,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 192,
+                        "end": 214,
+                        "occurrence": 0,
+                        "pageSourceHash": "b7b388707ec5589491ea419b358de15f05db11c3525d8d1905b17017b49f92f4"
+                    }
+                }
+            },
+            {
+                "id": "slu-235d5cfb687d3980373884d4caa92b0610a1e0266ed3ead0c9757b7c0fccb906",
+                "pageId": "31fe373f-b868-4d5c-8fee-89c03bf6e25d",
+                "quote": "（AS 路面干渉検証）",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 6,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 216,
+                        "end": 227,
+                        "occurrence": 0,
+                        "pageSourceHash": "b7b388707ec5589491ea419b358de15f05db11c3525d8d1905b17017b49f92f4"
+                    }
+                }
+            },
+            {
+                "id": "slu-6ca57f7e8c88fcf189f7f08e518bba40391ac6ffdf63ecdc5dc6159184065ea7",
+                "pageId": "31fe373f-b868-4d5c-8fee-89c03bf6e25d",
+                "quote": "0.8mm",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 7,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 230,
+                        "end": 235,
+                        "occurrence": 0,
+                        "pageSourceHash": "b7b388707ec5589491ea419b358de15f05db11c3525d8d1905b17017b49f92f4"
+                    }
+                }
+            },
+            {
+                "id": "slu-319ecc7948a9c4f09b62731b1e2ee3ba3ee8f057f1952f71f2f3b81bfc7296a6",
+                "pageId": "31fe373f-b868-4d5c-8fee-89c03bf6e25d",
+                "quote": "0.15mm",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 8,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 237,
+                        "end": 243,
+                        "occurrence": 0,
+                        "pageSourceHash": "b7b388707ec5589491ea419b358de15f05db11c3525d8d1905b17017b49f92f4"
+                    }
+                }
+            },
+            {
+                "id": "slu-1e6c414165d806479138b8d20e1ad0eeef9d2a468f5f00b7dc8bdfd302ebeadd",
+                "pageId": "31fe373f-b868-4d5c-8fee-89c03bf6e25d",
+                "quote": "シールライン",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 9,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 245,
+                        "end": 251,
+                        "occurrence": 0,
+                        "pageSourceHash": "b7b388707ec5589491ea419b358de15f05db11c3525d8d1905b17017b49f92f4"
+                    }
+                }
+            },
+            {
+                "id": "slu-23e6f0bd6c0656d56cfc1b021b996a7f22c4a4213e64ac44a876f20fe2562612",
+                "pageId": "31fe373f-b868-4d5c-8fee-89c03bf6e25d",
+                "quote": "アッパー段差",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 10,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 253,
+                        "end": 259,
+                        "occurrence": 0,
+                        "pageSourceHash": "b7b388707ec5589491ea419b358de15f05db11c3525d8d1905b17017b49f92f4"
+                    }
+                }
+            },
+            {
+                "id": "slu-b2bb23d8bc41a65490491141875528700f33f3d7b33366d6e9a4f49650a543b0",
+                "pageId": "31fe373f-b868-4d5c-8fee-89c03bf6e25d",
+                "quote": "LWRケース",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 11,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 261,
+                        "end": 267,
+                        "occurrence": 0,
+                        "pageSourceHash": "b7b388707ec5589491ea419b358de15f05db11c3525d8d1905b17017b49f92f4"
+                    }
+                }
+            },
+            {
+                "id": "slu-a081ccec60f6aaf415ad151dc43793a58574c08e9b8ce3fb28edcf7bbd832d70",
+                "pageId": "31fe373f-b868-4d5c-8fee-89c03bf6e25d",
+                "quote": "UPRカバー",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 12,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 269,
+                        "end": 275,
+                        "occurrence": 0,
+                        "pageSourceHash": "b7b388707ec5589491ea419b358de15f05db11c3525d8d1905b17017b49f92f4"
+                    }
+                }
+            },
+            {
+                "id": "slu-78940f6a868f3bee8cc887d268d5628d595c9924e0cdeededa9f35e8af7e1629",
+                "pageId": "31fe373f-b868-4d5c-8fee-89c03bf6e25d",
+                "quote": "アッパー段差",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 13,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 277,
+                        "end": 283,
+                        "occurrence": 1,
+                        "pageSourceHash": "b7b388707ec5589491ea419b358de15f05db11c3525d8d1905b17017b49f92f4"
+                    }
+                }
+            },
+            {
+                "id": "slu-dd573d7deeed864d89eb868b1294bc7228c73240f38d3ce7e253353466b5ca16",
+                "pageId": "31fe373f-b868-4d5c-8fee-89c03bf6e25d",
+                "quote": "〈LWRケースフランジ シール断面〉",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 14,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 286,
+                        "end": 304,
+                        "occurrence": 0,
+                        "pageSourceHash": "b7b388707ec5589491ea419b358de15f05db11c3525d8d1905b17017b49f92f4"
+                    }
+                }
+            },
+            {
+                "id": "slu-a39e12eafca842869db262be2a1e710fd75fe83dc5182788fe9e5288d336b649",
+                "pageId": "31fe373f-b868-4d5c-8fee-89c03bf6e25d",
+                "quote": "図4－4 シーラント部断面",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 15,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 307,
+                        "end": 320,
+                        "occurrence": 0,
+                        "pageSourceHash": "b7b388707ec5589491ea419b358de15f05db11c3525d8d1905b17017b49f92f4"
+                    }
+                }
+            },
+            {
+                "id": "slu-7d59e527d4a4017dc638258d8a6d107cc470477102dd1ce89cca5462e205e47b",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "4－2.",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 0,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 1,
+                        "end": 5,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-61e345d0cdd8183c8fb8075c89429b2c4628b3f190d2309c4a22632945f6fe4e",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "27PLの路面干渉事例：",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 1,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 6,
+                        "end": 18,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-1cf7fff9c31332e0be152843f8b3274545dd64d7b26ea13b2823c7afe9ba8737",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "・バスダブ下面でアンダを設定し、バスダブ・荷室間部を除去することで路面干渉の入力に対し、バスダブ・荷室部の保護のために必要な車室下アンダを確保。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 2,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 21,
+                        "end": 93,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-6787a2be7b302e0922936272fa59d2bfd65805137c098bc9d8afa6eee55154aa",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "・システムレベルにてアンダ基準を設定。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 3,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 95,
+                        "end": 114,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-121d239c15bda699465e7509d292e0fde4764e009b1ec603a71d73c082cbd898",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "バッテリ搭載に重点し、必要アンダークリアランスを低減。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 4,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 114,
+                        "end": 141,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-c939158f8cf5fbf96ad184fd73f26bfa849ff1836c42d1c4b05240b68002cdf9",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "フロント",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 5,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 144,
+                        "end": 148,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-a1daa304fbd737980c8c3451283404cfe2fba61d086e39a0e17e19ee01c898a4",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "・ダミー試験：機能不具合なきこと",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 6,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 151,
+                        "end": 167,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-4396a910145d8dbbe476c54350035da2083702491abc94cefcb5fc9669536f7a",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "・特搭試験：F/Hなきこと",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 7,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 169,
+                        "end": 182,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-da2d17db0267af6cd2020b7894fcbaf029d5b814811a1e513cf34b38fe8985fd",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "冷却器",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 8,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 185,
+                        "end": 188,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-03d4ae3b990cf1bdf15b6c27dc4e474dbd14b14856f2a49f539f9a4272b6c689",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "バスタブ",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 9,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 190,
+                        "end": 194,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-43401357a587df71d408ff2d33edc9548e292f975f0b3879c75afe33aa65c8f1",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "サスペンション（ブレ止3.2）",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 10,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 196,
+                        "end": 211,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-04e0cf7918c69a79d47b9c46e49be581cb2ab7deb6cb645275e56418671248d7",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "17.7mm",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 11,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 214,
+                        "end": 220,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-1bb3f9a2f11f6dbf24eb066d2d8acec892ba07c1c63a80090f5ee0549eb9421f",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "354mm（支持ピッチ）",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 12,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 222,
+                        "end": 234,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-707fd6bbedaa147b320aa5a1fb4c9ef7702fda00f4be82ad72da56c983260817",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "①ダミー試験：バスタブや冷却器に接触しないこと",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 13,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 237,
+                        "end": 260,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-880eb7b4f626187bf3ca40f7b5bd3c3af3281f6914bf6d5221364d8cacfcabe6",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "②特搭試験：セルに塑性変形を至る入力ないこと",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 14,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 262,
+                        "end": 284,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-2accb6f0b6f88eec0ef33cbb32752d43b167f6868c835fa085998d7678218b6b",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "を満たすEAストロークを確認。",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 15,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 286,
+                        "end": 301,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-90ea6cc37e5719f9b3150dc1810b4fd329a59f3469544d5e5a46a9f583172f6a",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "※27PLはダミー試験の入力条件がシビア",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 16,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 303,
+                        "end": 323,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-5939826d98f4b0ed1f3bd0fbdb374b5fac5626105bdfe9fc26841cb56067bad0",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "図4－4 27PL LWRアンダー基準断面",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 17,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 326,
+                        "end": 347,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-0147abad97eaf8860bc45bac746f1ebcc5d558cd0a3b53fc89e5c05fb20aa55c",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "4－3.",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 18,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 350,
+                        "end": 354,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-d557b07eb784ed854aa0e490b03eb4820bc4290fc1a89e5ea41d7a2459ef6540",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "バッテリ搭載からのアンダー（落下物干渉事例）",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 19,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 355,
+                        "end": 377,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-a02a8458e8649ebdb07e08789c5333d7032b4cc11cd5183fba7fde24de70e5cb",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "・バッテリ搭載からの入力対応：落下物等、バッテリ搭載からの入力に対し、",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 20,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 380,
+                        "end": 415,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-613620dfa688359b5360732035056c207498c090802216fc6c3ca949a07f21d3",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "・サスペン・鉄アンダーカバーを電池パックより下側に設定し、落下物をはじく",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 21,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 417,
+                        "end": 453,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-1460e243dbbd6d6b01f60ef9d9cb597fd5ecf73132bfac4b1c740c46ab71d2d9",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "・電池パック前面にFrアンダーを設定し、バスダブへの直接入力を防ぐ",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 22,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 455,
+                        "end": 488,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-eab4e84002b7c537070f4469be9941f3dddb6c3e60e6336b280a16cbff562e08",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "路面治具頂点：",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 23,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 491,
+                        "end": 498,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-b039f81e1cae6bf7d5930b9cd8a25a7a030bddbb9a535aea6e3b3429db63a783",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "Frサスメン下端＋20mm上狙い",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 24,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 500,
+                        "end": 516,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-ca6b46ab0ee101646df52a531e1f171a5749b8650dbe53c907a718adbd8dc5dd",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "試験①",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 25,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 519,
+                        "end": 522,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-b17dae75aa208a80b346115211931ab2869dd3d65df6abc0353c422352f68f8a",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "試験②③④",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 26,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 524,
+                        "end": 529,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-761a81f0cb247b2ced6409d46544c3dccedd31558216c41eec37c511b16ba242",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "路面治具頂点：",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 27,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 532,
+                        "end": 539,
+                        "occurrence": 1,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-5a3bb26d50dbdec33b9a5c504a134f9774ae1da8da8543e45a68438092019443",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "Frサスメン下端狙い",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 28,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 541,
+                        "end": 551,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-5ca0818c93a5b48fd3a0240a406d86a273a27683caa54da9e68945fe5abb0320",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "20mm",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 29,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 554,
+                        "end": 558,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-5af0ba3e821fce1a686708394e0a8bc55ffdd967a72d89fa1b004f1faa691425",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "Frサスメン",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 30,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 560,
+                        "end": 566,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-345a7bf9b67b06b507cc6179f727d6003c612e1ff48bc1e619d7cd790e6fdfb8",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "Frアンダーカバー×高圧コネクタ間",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 31,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 568,
+                        "end": 585,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-94f7c4dab6bbf99bc0f468d76457d632b46c16fc6a54688b77fa905cb36c5c8a",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "63mm",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 32,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 587,
+                        "end": 591,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-13614c32350885d3a8179509f33ef31effcb96cfd5ea90c5e6d34928df26966e",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "電池パック",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 33,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 593,
+                        "end": 598,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-47453befd8c9d78229ac5f2a241038429482fa5227c03f1058b5b0d4a8278cfd",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "ロアケース",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 34,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 600,
+                        "end": 605,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-2434d74589cd661b626a439f4b495fef61b16f2f74fa988cf94846c24ccea3a1",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "左側面視",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 35,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 608,
+                        "end": 612,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-9f8ae6163fdd613649add2098315499a4ebcd792f5287afe9fa90b68571180c3",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "路面治具",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 36,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 614,
+                        "end": 618,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-4808e6b8ffef9b4721358c4b727c28d75f1afc069d26eaa144239d977cefcaa9",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "Frアンダーカバー",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 37,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 620,
+                        "end": 629,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-434eaddad5d412aa4cce0f76146518cf38c4c10d6baaad118567b4f6dabf0ca9",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "電池パックFrアンダーへ",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 38,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 632,
+                        "end": 644,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-5d4d500591a2bb9e317a10abcfbb06bb90305558841c65b584e2dc9f67b8bb86",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "（バスダブへの直接入力を防ぐ）",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 39,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 646,
+                        "end": 661,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-34d90dbce36c128ff75e880cfc863bfcb0b199b5347f9b74c1e1be9b8b1fdeb3",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "サスペン",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 40,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 664,
+                        "end": 668,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-72d13b900122f8690d4a71fa78e0e2ed201fc599e9779b4ccb5d31ba412f447d",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "（電池パックに落下物をはじく）",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 41,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 670,
+                        "end": 685,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-801fc19bfa00f64e3ee6a890973ac95923ef47bc90c07517d399821af3fe99ee",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "落下物",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 42,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 688,
+                        "end": 691,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-1f49d8d147d81a3ce10d81edb2ef59a25d1a4e67856472d1e6426004a9be2b74",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "図4－5 27PL バンパ前面からの路面入力保護",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 43,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 694,
+                        "end": 718,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-ecd0edcd636cabf94f59e8b7c2fbd4e6e3a66ccc3f413f304621cca86e540222",
+                "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                "quote": "図4－6 27PL LWRケースW断面",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 44,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 721,
+                        "end": 740,
+                        "occurrence": 0,
+                        "pageSourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    }
+                }
+            },
+            {
+                "id": "slu-52c5028771e8bb490e5580c3edaea71c0c35be9ac9ccd212367d9e90aee54266",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "※路下干渉の路面法令について",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 0,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 1,
+                        "end": 15,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-624d1c3aa6ccccb54efe25dc4368a22ea1de2ce359469c0f357119c19a5265d4",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "路面法令・・・トレーラー走行などの路下物が路面上に引っ掛かり、固定されずに脱落を防ぐ",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 1,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 18,
+                        "end": 60,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-047a282b2c402e5c72a71fc84f7687068ed3de2fdd0f5874d0e644cd49b1e548",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "（設定理由）EV電池パックの安全性に対して影響大",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 2,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 62,
+                        "end": 86,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-eefdde90434cead9840df9f69a67c08b6dab8357eaf8028cc0f317af65261ed7",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "2014年社内基準制定",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 3,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 88,
+                        "end": 99,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-b1c9a85929eb53ae80f28fe2403340b81c40d97cd251e16dc21850c04f84b02d",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "・・・テスラModelSが路上に落ちていたトレーラーアームを車体に乗り上げ",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 4,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 101,
+                        "end": 138,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-728fd8855308c536e8f4f16a8046c653f8ff025a1a99a799ed4a490ad95a312d",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "→TMCのEVの安全性を確保する為に評価へ織り込み",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 5,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 140,
+                        "end": 165,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-592010b5bec21dbfcb80d9d43da683938f7ae65c015dbf08d46a45fb1e42c432",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "電瓶下への衝突",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 6,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 168,
+                        "end": 175,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-c2d529016b5b29f3260d3dd9d97854c8a555560abbc12c595458e6f184a7d9e9",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "路面との干渉",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 7,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 177,
+                        "end": 183,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-3b93bfa59472ecb493b5fe8c5640872518366160b6515cbb33845928a356a057",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "路面との干渉",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 8,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 185,
+                        "end": 191,
+                        "occurrence": 1,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-f4de3387287e4c3fc7dbfafb22c9a2b11444a2d549c875f0e922e2fc261345ef",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "落下物との干渉",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 9,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 193,
+                        "end": 200,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-92bedeb14cf3067ae131d88319750d35e95a1e7df902c33002673f3039ef9c8f",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "固定状態",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 10,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 202,
+                        "end": 206,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-e7cf7046eddf026369e4a7fd5e42db069fa32b8df0680ec45bd4e3032c5bd105",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "路下物引っ掛り干渉",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 11,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 208,
+                        "end": 217,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-551598000cbb555e58edd05dfd9832df8686f45e9bdf21234477d4640f25ac1e",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "非固定状態",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 12,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 219,
+                        "end": 224,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-fa788744965e77d30effbd4d6b4da861bbac7669d60ba2438e3262184a05ea75",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "画定状態",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 13,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 226,
+                        "end": 230,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-595b98dd6901c26d4c0205bd2d6279dd5b2cb7f5d738460e159c514e61246465",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "金属部品干渉",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 14,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 232,
+                        "end": 238,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-f265c47dfb2120d08fe14d79ae3cfebf1be688f951a73ec31a6218f49735b6a4",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "コンクリート、木片干渉",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 15,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 240,
+                        "end": 251,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-8d5b3929dc16d67856f130af5029ee086f79cbbf0ee6665f44c7d7c1cb9cb49b",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "①固定状態　路下物",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 16,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 256,
+                        "end": 265,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-2ed7ea79166e47444df0a9053081b96067532a0269b3cef07cc95e50769c6251",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "②落下物干渉　ケース",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 17,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 267,
+                        "end": 277,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-db6cf7138d0e07874e62c5f590722b3f0456b0239a99be2b7c06dbfcd85694f5",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "安定性の検討",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 18,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 279,
+                        "end": 285,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-9822b84d7fe0b7baf4f663e9b25c8840a63a22a7fa9bf5b6e8609e638fbd9e00",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "不十分",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 19,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 287,
+                        "end": 290,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-08af7a6034bc3261a4c12536177798a1d3018966e9647c27860094c28d72c5f5",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "図4－7 路面や異物干渉についてのストレス評価",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 20,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 293,
+                        "end": 316,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-0967e852a3be1d973b27c44fb8621efedaca02647c34cf5ca8a7515b3da090ad",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "図4－8 路下物固定状態における電池パックへの衝撃",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 21,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 319,
+                        "end": 344,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-eca904c10dc3bd67694551ee7719a47e4a6285a4fbda4d7c2d8739f50de6d99f",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "4－4.",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 22,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 347,
+                        "end": 351,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-f61da2b2091e800cf022eab058605016a9c90cc43c6f8cbc329239ea758d0d4e",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "バッテリ側面からの入力に対する構造事例",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 23,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 352,
+                        "end": 371,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-ec70b582bccd00e2e529a67170d3509f6dc1826f592d6d96ace6b2e7df36db8b",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "バッテリ側面からの入力に対する構造事例：",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 24,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 374,
+                        "end": 394,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-4a227986125a1869bfb481503b8d477c43daba7c5744c02e0822c6cad3b231a9",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "・EA材やサイドメンバを電池セルより下面に設定し、電池セルへの直接入力を防ぐ",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 25,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 397,
+                        "end": 435,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-76152fa0b748a352f479f983c9a34ecc1bcc1c45e3c5375ef6cc9ac4c119c5ed",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "UPR",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 26,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 438,
+                        "end": 441,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-e8499921641efc9469d00cce6cd7023458705e82b812ac67e6d9c4f2b0e7da08",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "RH",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 27,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 443,
+                        "end": 445,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-721e22c13589b1b22821ad2ef78cabcbe5386ba2ac206e38967abd4f7702b85e",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "電池セル",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 28,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 447,
+                        "end": 451,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-eb166852c1a67b8eef936f452e76ff9fd9d4a8209109acefb423563e6b0e7ae1",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "EA材",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 29,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 453,
+                        "end": 456,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-22b0cb2b4febb27ae45ac88d64bfcd45c8b7b70a372094f83b9cf2ee7ae85bae",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "EA材をセルより下側に設定",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 30,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 458,
+                        "end": 471,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            },
+            {
+                "id": "slu-17576251793475810cac371df12076194d7a10ed4846a8b2411231bc155e10c7",
+                "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                "quote": "図4－9 27PL LWRケース断面",
+                "status": "uncovered",
+                "reason": "No explicit decision recorded",
+                "exclusionKind": "",
+                "elementIds": [],
+                "order": 31,
+                "suggestedTypes": [],
+                "metadata": {
+                    "sourceLedger": {
+                        "start": 474,
+                        "end": 492,
+                        "occurrence": 0,
+                        "pageSourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                }
+            }
+        ],
+        "stats": {
+            "total": 146,
+            "covered": 0,
+            "excluded": 0,
+            "uncovered": 146,
+            "coverageRate": 0.0,
+            "modeledRate": 0.0
+        },
+        "metadata": {
+            "sourceLedger": {
+                "version": 1,
+                "segmentationVersion": 2,
+                "documentId": "9f22c0a7-4c6a-476c-b62b-d78d182785d4",
+                "runId": "8f7dddf4-06ca-413d-8ac8-2664d8fd8f03",
+                "selectedTypes": [
+                    "Actor",
+                    "UseCase",
+                    "Requirement",
+                    "Block",
+                    "State",
+                    "ConstraintBlock",
+                    "TestCase",
+                    "Activity"
+                ],
+                "pages": [
+                    {
+                        "pageId": "2df58de3-8673-494b-a2f6-5259cede4eac",
+                        "content": "<h1>2-1-1 路面寸法保護</h1>\n<p>名称　2-1-1 路面寸法保護</p>\n<p>制定／改定　初回　2021年3月31日</p>\n<blockquote>\n<p>本部内規は、当部、関係部署および関係会社の社員、協力会社を含みます。部外または社外に開示する場合は取り扱いに十分留意してください。</p>\n</blockquote>\n<p>EHV電池設計部　電池バンク設計基準（3BV）</p>\n<table>\n<thead>\n<tr>\n<th>承認</th>\n<th>調査</th>\n<th>作成</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>久津</td>\n<td>井上</td>\n<td>磯辺、芦澤、大森</td>\n</tr>\n</tbody>\n</table>",
+                        "text": "\n2-1-1 路面寸法保護\n\n\n名称　2-1-1 路面寸法保護\n\n\n制定／改定　初回　2021年3月31日\n\n\n\n\n本部内規は、当部、関係部署および関係会社の社員、協力会社を含みます。部外または社外に開示する場合は取り扱いに十分留意してください。\n\n\n\n\nEHV電池設計部　電池バンク設計基準（3BV）\n\n\n\n\n\n \t承認 \t調査 \t作成 \n\n\n\n\n \t久津 \t井上 \t磯辺、芦澤、大森 \n\n\n\n",
+                        "sourceHash": "035852bcdf38fdf5c834452139feadde270e96823718d86204428b9c586f7d2b"
+                    },
+                    {
+                        "pageId": "e9c05a8e-a2e9-4f4e-81c8-857c1d8cc802",
+                        "content": "<h2>1. 適用範囲</h2>\n<p>駆動用バッテリ（車室外）の電池パックの路面干渉物との接触予測を行う基準的な考え方を記述する。</p>\n<h2>2. 電池パックの路面干渉に関する考え方</h2>\n<p>適用車用と試験車用・異常使用で電池パックの路面干渉保護の考え方は以下のように区別する。</p>\n<p>●適用車用<br />\n・スピードバンプや路面排水溝蓋の横方向通過使用時で電池パックに機能不具合が発生しないこと。</p>\n<p>●試験車用・異常使用<br />\n・山型路面や落下物との干渉の有無を判断する場合、路面から入力があり、万が一発生した場合でも安全な避難性を確保できるよう、設計方針とすること。</p>\n<h2>3. 電池パックの路面干渉に対する目標</h2>\n<p>適用車用と試験用・異常使用のそれぞれの場合で、以下の3項目に対して目標を設定する</p>\n<p>①高電圧部と電池セルの保護<br />\n②ケースのへこみ保護<br />\n③冷却器の保護</p>\n<p>●適用車用<br />\n適用車用はTSダメージで評価する。</p>\n<p>①高電圧部やセルへの直接的な入力が無いようにケースやカバー等で保護すること。<br />\n②高電圧部品への破損に直結するケースのき裂・変形が発生しないこと。<br />\n③冷却器に対して冷却水漏れや流路閉塞等が発生しないこと。</p>\n<p>●異常使用<br />\n異常使用はTSダメージ試験、異常使用は路面干渉物との接触予測試験にて評価する。</p>\n<p>①高電圧部の漏電やセル発熱に至る入力が無いようにケースやカバー等で保護すること。<br />\n②高電圧部品への破損に直結するケースのき裂・変形が発生しないこと。<br />\nまた、路面干渉物の接触による電池パックの損傷を想定し、万が一路面干渉物との接触により電池パックが損傷した場合は、電池パック以外の構造体で衝撃を吸収すること。<br />\n③冷却器の設置位置及び、冷媒種類によって以下の2通りの評価とする。<br />\n・冷却器が電池パック外にある場合、あるいはLCの様な導電性部材を使用している場合は、電池パック内にあっても、電池パックの外側からの入力によっては、電池パックの側面からの入力によっては、電池パックの損傷を想定した設計とすること。<br />\n・冷却器がパック内にあり、かつ導電性の冷却材を使用している場合は原則冷却器の電装部品の電気回路が成立しない設計とすること。</p>",
+                        "text": "\n1. 適用範囲\n\n\n駆動用バッテリ（車室外）の電池パックの路面干渉物との接触予測を行う基準的な考え方を記述する。\n\n\n2. 電池パックの路面干渉に関する考え方\n\n\n適用車用と試験車用・異常使用で電池パックの路面干渉保護の考え方は以下のように区別する。\n\n\n●適用車用\n\n・スピードバンプや路面排水溝蓋の横方向通過使用時で電池パックに機能不具合が発生しないこと。\n\n\n●試験車用・異常使用\n\n・山型路面や落下物との干渉の有無を判断する場合、路面から入力があり、万が一発生した場合でも安全な避難性を確保できるよう、設計方針とすること。\n\n\n3. 電池パックの路面干渉に対する目標\n\n\n適用車用と試験用・異常使用のそれぞれの場合で、以下の3項目に対して目標を設定する\n\n\n①高電圧部と電池セルの保護\n\n②ケースのへこみ保護\n\n③冷却器の保護\n\n\n●適用車用\n\n適用車用はTSダメージで評価する。\n\n\n①高電圧部やセルへの直接的な入力が無いようにケースやカバー等で保護すること。\n\n②高電圧部品への破損に直結するケースのき裂・変形が発生しないこと。\n\n③冷却器に対して冷却水漏れや流路閉塞等が発生しないこと。\n\n\n●異常使用\n\n異常使用はTSダメージ試験、異常使用は路面干渉物との接触予測試験にて評価する。\n\n\n①高電圧部の漏電やセル発熱に至る入力が無いようにケースやカバー等で保護すること。\n\n②高電圧部品への破損に直結するケースのき裂・変形が発生しないこと。\n\nまた、路面干渉物の接触による電池パックの損傷を想定し、万が一路面干渉物との接触により電池パックが損傷した場合は、電池パック以外の構造体で衝撃を吸収すること。\n\n③冷却器の設置位置及び、冷媒種類によって以下の2通りの評価とする。\n\n・冷却器が電池パック外にある場合、あるいはLCの様な導電性部材を使用している場合は、電池パック内にあっても、電池パックの外側からの入力によっては、電池パックの側面からの入力によっては、電池パックの損傷を想定した設計とすること。\n\n・冷却器がパック内にあり、かつ導電性の冷却材を使用している場合は原則冷却器の電装部品の電気回路が成立しない設計とすること。\n",
+                        "sourceHash": "9e67b505e50976ca74d1dc50c3b03dab36a0f5a91b65193f13c4715258b70dcf"
+                    },
+                    {
+                        "pageId": "982bb01c-eb63-4c42-aa81-ab12ac7e532d",
+                        "content": "<h2>4. 設計例</h2>\n<p>個々の電池パック構造により、具体的な設計が大きく異なるため、<br />\nこれまでの車種（19PL、21PL、27PL）の構造を参考として以下に例示する。</p>\n<h3>4－1. 19PL、21PLの路面干渉事例：</h3>\n<p>スタッド直下にフレームを設定し電池スタックへの直接入力を防止。<br />\n上記2車系では路面干渉を想定してはならない4路面を対象とした。</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>雨溝付き段差</th>\n<th>石突し路</th>\n<th>スピードレーン</th>\n<th>輪止め路</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>突起形状</td>\n<td>420、190</td>\n<td>114、190</td>\n<td>720</td>\n<td>120</td>\n</tr>\n<tr>\n<td>車速</td>\n<td>10、20、30、40km/h</td>\n<td>徐速5km/h</td>\n<td>徐速5km/h</td>\n<td>徐速5km/h</td>\n</tr>\n<tr>\n<td>想定入力</td>\n<td>10.3kN</td>\n<td>100kN以下</td>\n<td>10.3kN以下</td>\n<td>10.3kN以下</td>\n</tr>\n</tbody>\n</table>\n<p>表4－1　路面種類</p>\n<p>図4－1　19PL バッテ下面図</p>\n<p>■ バスタブと路面の直接接触部位</p>\n<p>上記の内、突起の縦横比が大きい段差と路面干渉ではバッテのバスタブ部が直接接触しない高さとした。（図4－1参照）</p>\n<p>突起部がバスタブと接する場合においては、車両が路面を乗り越える際に、車両がバスタブと直接接触しない高さとした。（図4－1参照）</p>\n<p>図4－2　19PL R/F間ビス</p>",
+                        "text": "\n4. 設計例\n\n\n個々の電池パック構造により、具体的な設計が大きく異なるため、\n\nこれまでの車種（19PL、21PL、27PL）の構造を参考として以下に例示する。\n\n\n4－1. 19PL、21PLの路面干渉事例：\n\n\nスタッド直下にフレームを設定し電池スタックへの直接入力を防止。\n\n上記2車系では路面干渉を想定してはならない4路面を対象とした。\n\n\n\n\n\n \t \t雨溝付き段差 \t石突し路 \tスピードレーン \t輪止め路 \n\n\n\n\n \t突起形状 \t420、190 \t114、190 \t720 \t120 \n\n\n \t車速 \t10、20、30、40km/h \t徐速5km/h \t徐速5km/h \t徐速5km/h \n\n\n \t想定入力 \t10.3kN \t100kN以下 \t10.3kN以下 \t10.3kN以下 \n\n\n\n\n\n表4－1　路面種類\n\n\n図4－1　19PL バッテ下面図\n\n\n■ バスタブと路面の直接接触部位\n\n\n上記の内、突起の縦横比が大きい段差と路面干渉ではバッテのバスタブ部が直接接触しない高さとした。（図4－1参照）\n\n\n突起部がバスタブと接する場合においては、車両が路面を乗り越える際に、車両がバスタブと直接接触しない高さとした。（図4－1参照）\n\n\n図4－2　19PL R/F間ビス\n",
+                        "sourceHash": "bfc3030342290c9d86b20dae508d8bd522e049d5475666409bd9dfba92656234"
+                    },
+                    {
+                        "pageId": "31fe373f-b868-4d5c-8fee-89c03bf6e25d",
+                        "content": "<h3>カスタムレールの変形例上</h3>\n<p>駆動用バッテリ（車室外）の電池パックの路面干渉対策を検討する際、路面干渉の衝撃によるシール部の開きなどを防止する為、基本的な考え方を記述する。</p>\n<ul>\n<li>左端にてアッパーを設定すると、</li>\n<li>合わせてシーラントをジャンクション部に寄せてセーフティーゾーンを確保することによりシール部の変形量を抑制。</li>\n</ul>\n<p>路面干渉時、入力によりアッパー部に変形発生</p>\n<p>図4－3 21PL LWRケースシーラント部<br />\n（AS 路面干渉検証）</p>\n<p>0.8mm<br />\n0.15mm<br />\nシールライン<br />\nアッパー段差<br />\nLWRケース<br />\nUPRカバー<br />\nアッパー段差</p>\n<p>〈LWRケースフランジ シール断面〉</p>\n<p>図4－4 シーラント部断面</p>",
+                        "text": "\nカスタムレールの変形例上\n\n\n駆動用バッテリ（車室外）の電池パックの路面干渉対策を検討する際、路面干渉の衝撃によるシール部の開きなどを防止する為、基本的な考え方を記述する。\n\n\n\n\n左端にてアッパーを設定すると、\n\n\n合わせてシーラントをジャンクション部に寄せてセーフティーゾーンを確保することによりシール部の変形量を抑制。\n\n\n\n\n路面干渉時、入力によりアッパー部に変形発生\n\n\n図4－3 21PL LWRケースシーラント部\n\n（AS 路面干渉検証）\n\n\n0.8mm\n\n0.15mm\n\nシールライン\n\nアッパー段差\n\nLWRケース\n\nUPRカバー\n\nアッパー段差\n\n\n〈LWRケースフランジ シール断面〉\n\n\n図4－4 シーラント部断面\n",
+                        "sourceHash": "b7b388707ec5589491ea419b358de15f05db11c3525d8d1905b17017b49f92f4"
+                    },
+                    {
+                        "pageId": "bd2622a5-96e0-4dbf-ae06-69492f23070b",
+                        "content": "<h3>4－2. 27PLの路面干渉事例：</h3>\n<p>・バスダブ下面でアンダを設定し、バスダブ・荷室間部を除去することで路面干渉の入力に対し、バスダブ・荷室部の保護のために必要な車室下アンダを確保。<br />\n・システムレベルにてアンダ基準を設定。バッテリ搭載に重点し、必要アンダークリアランスを低減。</p>\n<p>フロント</p>\n<p>・ダミー試験：機能不具合なきこと<br />\n・特搭試験：F/Hなきこと</p>\n<p>冷却器<br />\nバスタブ<br />\nサスペンション（ブレ止3.2）</p>\n<p>17.7mm<br />\n354mm（支持ピッチ）</p>\n<p>①ダミー試験：バスタブや冷却器に接触しないこと<br />\n②特搭試験：セルに塑性変形を至る入力ないこと<br />\nを満たすEAストロークを確認。<br />\n※27PLはダミー試験の入力条件がシビア</p>\n<p>図4－4 27PL LWRアンダー基準断面</p>\n<h3>4－3. バッテリ搭載からのアンダー（落下物干渉事例）</h3>\n<p>・バッテリ搭載からの入力対応：落下物等、バッテリ搭載からの入力に対し、<br />\n・サスペン・鉄アンダーカバーを電池パックより下側に設定し、落下物をはじく<br />\n・電池パック前面にFrアンダーを設定し、バスダブへの直接入力を防ぐ</p>\n<p>路面治具頂点：<br />\nFrサスメン下端＋20mm上狙い</p>\n<p>試験①<br />\n試験②③④</p>\n<p>路面治具頂点：<br />\nFrサスメン下端狙い</p>\n<p>20mm<br />\nFrサスメン<br />\nFrアンダーカバー×高圧コネクタ間<br />\n63mm<br />\n電池パック<br />\nロアケース</p>\n<p>左側面視<br />\n路面治具<br />\nFrアンダーカバー</p>\n<p>電池パックFrアンダーへ<br />\n（バスダブへの直接入力を防ぐ）</p>\n<p>サスペン<br />\n（電池パックに落下物をはじく）</p>\n<p>落下物</p>\n<p>図4－5 27PL バンパ前面からの路面入力保護</p>\n<p>図4－6 27PL LWRケースW断面</p>",
+                        "text": "\n4－2. 27PLの路面干渉事例：\n\n\n・バスダブ下面でアンダを設定し、バスダブ・荷室間部を除去することで路面干渉の入力に対し、バスダブ・荷室部の保護のために必要な車室下アンダを確保。\n\n・システムレベルにてアンダ基準を設定。バッテリ搭載に重点し、必要アンダークリアランスを低減。\n\n\nフロント\n\n\n・ダミー試験：機能不具合なきこと\n\n・特搭試験：F/Hなきこと\n\n\n冷却器\n\nバスタブ\n\nサスペンション（ブレ止3.2）\n\n\n17.7mm\n\n354mm（支持ピッチ）\n\n\n①ダミー試験：バスタブや冷却器に接触しないこと\n\n②特搭試験：セルに塑性変形を至る入力ないこと\n\nを満たすEAストロークを確認。\n\n※27PLはダミー試験の入力条件がシビア\n\n\n図4－4 27PL LWRアンダー基準断面\n\n\n4－3. バッテリ搭載からのアンダー（落下物干渉事例）\n\n\n・バッテリ搭載からの入力対応：落下物等、バッテリ搭載からの入力に対し、\n\n・サスペン・鉄アンダーカバーを電池パックより下側に設定し、落下物をはじく\n\n・電池パック前面にFrアンダーを設定し、バスダブへの直接入力を防ぐ\n\n\n路面治具頂点：\n\nFrサスメン下端＋20mm上狙い\n\n\n試験①\n\n試験②③④\n\n\n路面治具頂点：\n\nFrサスメン下端狙い\n\n\n20mm\n\nFrサスメン\n\nFrアンダーカバー×高圧コネクタ間\n\n63mm\n\n電池パック\n\nロアケース\n\n\n左側面視\n\n路面治具\n\nFrアンダーカバー\n\n\n電池パックFrアンダーへ\n\n（バスダブへの直接入力を防ぐ）\n\n\nサスペン\n\n（電池パックに落下物をはじく）\n\n\n落下物\n\n\n図4－5 27PL バンパ前面からの路面入力保護\n\n\n図4－6 27PL LWRケースW断面\n",
+                        "sourceHash": "8dee50fad20f22646a15fba1fc68a25cb20951d4380a76db441abc5399367e7e"
+                    },
+                    {
+                        "pageId": "4490c6cb-4d30-4db4-9e25-02f64c3220db",
+                        "content": "<p><strong>※路下干渉の路面法令について</strong></p>\n<p>路面法令・・・トレーラー走行などの路下物が路面上に引っ掛かり、固定されずに脱落を防ぐ<br />\n（設定理由）EV電池パックの安全性に対して影響大<br />\n2014年社内基準制定<br />\n・・・テスラModelSが路上に落ちていたトレーラーアームを車体に乗り上げ<br />\n→TMCのEVの安全性を確保する為に評価へ織り込み</p>\n<p>電瓶下への衝突<br />\n路面との干渉<br />\n路面との干渉<br />\n落下物との干渉<br />\n固定状態<br />\n路下物引っ掛り干渉<br />\n非固定状態<br />\n画定状態<br />\n金属部品干渉<br />\nコンクリート、木片干渉  </p>\n<p>①固定状態　路下物<br />\n②落下物干渉　ケース<br />\n安定性の検討<br />\n不十分</p>\n<p>図4－7 路面や異物干渉についてのストレス評価</p>\n<p>図4－8 路下物固定状態における電池パックへの衝撃</p>\n<h3>4－4. バッテリ側面からの入力に対する構造事例</h3>\n<p>バッテリ側面からの入力に対する構造事例：</p>\n<p>・EA材やサイドメンバを電池セルより下面に設定し、電池セルへの直接入力を防ぐ</p>\n<p>UPR<br />\nRH<br />\n電池セル<br />\nEA材<br />\nEA材をセルより下側に設定</p>\n<p>図4－9 27PL LWRケース断面</p>",
+                        "text": "\n※路下干渉の路面法令について\n\n\n路面法令・・・トレーラー走行などの路下物が路面上に引っ掛かり、固定されずに脱落を防ぐ\n\n（設定理由）EV電池パックの安全性に対して影響大\n\n2014年社内基準制定\n\n・・・テスラModelSが路上に落ちていたトレーラーアームを車体に乗り上げ\n\n→TMCのEVの安全性を確保する為に評価へ織り込み\n\n\n電瓶下への衝突\n\n路面との干渉\n\n路面との干渉\n\n落下物との干渉\n\n固定状態\n\n路下物引っ掛り干渉\n\n非固定状態\n\n画定状態\n\n金属部品干渉\n\nコンクリート、木片干渉  \n\n\n①固定状態　路下物\n\n②落下物干渉　ケース\n\n安定性の検討\n\n不十分\n\n\n図4－7 路面や異物干渉についてのストレス評価\n\n\n図4－8 路下物固定状態における電池パックへの衝撃\n\n\n4－4. バッテリ側面からの入力に対する構造事例\n\n\nバッテリ側面からの入力に対する構造事例：\n\n\n・EA材やサイドメンバを電池セルより下面に設定し、電池セルへの直接入力を防ぐ\n\n\nUPR\n\nRH\n\n電池セル\n\nEA材\n\nEA材をセルより下側に設定\n\n\n図4－9 27PL LWRケース断面\n",
+                        "sourceHash": "409b5c525a34415ba32df72fa1005ffa800d6677a4e1fe621012540c370bf1aa"
+                    }
+                ],
+                "inventoryHash": "b130c5619e97d4435dfb8e013499b64e1e149c137d980bd5e9f8d939b0108d04"
+            },
+            "sourceOrchestration": {
+                "8f7dddf4-06ca-413d-8ac8-2664d8fd8f03": {
+                    "runId": "8f7dddf4-06ca-413d-8ac8-2664d8fd8f03",
+                    "sharedContext": null,
+                    "obligations": [],
+                    "boundaryReviews": [],
+                    "pageResults": {},
+                    "pageReviews": {},
+                    "events": [],
+                    "stage": "preflight",
+                    "conventionReviews": {},
+                    "ontologyTyping": {
+                        "ontologyIds": [
+                            "18ae3915-9a06-4ae3-8129-9fce7891a423"
+                        ],
+                        "ontologyNames": {
+                            "18ae3915-9a06-4ae3-8129-9fce7891a423": "SysMLオントロジー"
+                        },
+                        "conceptCount": 80,
+                        "conceptCountByKind": {
+                            "Activity": 1,
+                            "Actor": 1,
+                            "Block": 22,
+                            "Operation": 1,
+                            "Package": 5,
+                            "Property": 46,
+                            "Requirement": 1,
+                            "State": 1,
+                            "TestCase": 1,
+                            "UseCase": 1
+                        },
+                        "typedKinds": [
+                            "Activity",
+                            "Actor",
+                            "Block",
+                            "Requirement",
+                            "State",
+                            "TestCase",
+                            "UseCase"
+                        ],
+                        "kindsWithoutConcepts": [
+                            "ConstraintBlock"
+                        ]
+                    },
+                    "status": "cancelled",
+                    "message": "Source generation cancelled; partial changes retained"
+                },
+                "fa19ffd1-b34c-48db-a547-4579bb9d86ce": {
+                    "runId": "fa19ffd1-b34c-48db-a547-4579bb9d86ce",
+                    "sharedContext": null,
+                    "obligations": [],
+                    "boundaryReviews": [],
+                    "pageResults": {},
+                    "pageReviews": {},
+                    "events": [],
+                    "stage": "preflight",
+                    "conventionReviews": {},
+                    "ontologyTyping": {
+                        "ontologyIds": [
+                            "18ae3915-9a06-4ae3-8129-9fce7891a423"
+                        ],
+                        "ontologyNames": {
+                            "18ae3915-9a06-4ae3-8129-9fce7891a423": "SysMLオントロジー"
+                        },
+                        "conceptCount": 80,
+                        "conceptCountByKind": {
+                            "Activity": 1,
+                            "Actor": 1,
+                            "Block": 22,
+                            "Operation": 1,
+                            "Package": 5,
+                            "Property": 46,
+                            "Requirement": 1,
+                            "State": 1,
+                            "TestCase": 1,
+                            "UseCase": 1
+                        },
+                        "typedKinds": [
+                            "Activity",
+                            "Actor",
+                            "Block",
+                            "Requirement",
+                            "State",
+                            "TestCase",
+                            "UseCase"
+                        ],
+                        "kindsWithoutConcepts": [
+                            "ConstraintBlock"
+                        ]
+                    },
+                    "status": "cancelled",
+                    "message": "Source generation cancelled; partial changes retained"
+                }
+            }
+        }
+    },
+    "modelBinding": {
+        "rootPackageId": "7f88fe8f-be0d-4d7b-9c17-fb9a4bd82ff2",
+        "typePackages": {
+            "Actor": "6db71765-61c3-4936-9e4f-e6181ed7a222",
+            "UseCase": "8c6c9a1b-4389-405b-81c5-f29afd674e21",
+            "Requirement": "d989c0bc-e60a-491c-ad38-6a8b6572875e",
+            "Block": "752b4265-096f-4aa8-8a31-53dc920bbe24",
+            "State": "10c822f3-6793-41ee-b5b5-b7eb77c99895",
+            "TestCase": "2391ee8e-466b-4315-bef0-1115dcde1ac6",
+            "Activity": "0090fd2f-73df-47d2-92d7-978c29466e3f"
+        },
+        "updatedAt": "2026-10-03T15:40:52.611843"
+    }
+}

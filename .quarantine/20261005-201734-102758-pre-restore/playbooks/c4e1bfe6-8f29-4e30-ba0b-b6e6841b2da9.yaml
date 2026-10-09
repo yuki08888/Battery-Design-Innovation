@@ -1,0 +1,84 @@
+id: ""
+name: システムコンテキスト定義
+slash_command: system-context
+description: |
+  対象システムの境界（システム・オブ・インタレスト）を定め、
+  外部アクター／外部システムと、それらとのインターフェースを整理して
+  コンテキスト図（BDD 相当）を作成する手順。
+  モデリングの最初期に実施する。
+use_when: |
+  ユーザーが「システムの境界を決めたい」「コンテキスト図を作って」
+  「外部システムとの関係を整理」等を依頼したとき。
+steps:
+  - no: 1
+    title: 対象システムと既存資産の把握
+    instruction: |
+      対象システム（system of interest）に相当する Block と、
+      既存の Actor / 外部 Block / Package 構成を search_item と
+      read_package_contents で確認する。
+      既に存在するものを重複作成しないこと。
+    tools:
+      - search_item
+      - read_package_contents
+      - get_related_elements
+      - read
+    done_when: 対象システムの短縮ID・所属Packageと、既存の外部 Actor / Block・直接の association を0件の場合も含めて一覧化できている
+  - no: 2
+    title: システム境界の定義
+    instruction: |
+      「何を対象システムの内側とし、何を外側とするか」を明示的に決める。
+      内側＝設計・実装の責任範囲、外側＝制約として受け入れる存在。
+      境界の判断根拠（責任分界点）を言語化すること。
+    done_when: 候補要素の全てが内側または外側に分類され、各分類に設計責任の有無を根拠とする説明があり、未分類0件である
+  - no: 3
+    title: 外部アクター・外部システムの洗い出し
+    instruction: |
+      対象システムと相互作用する人間（Actor）と外部システム（Block）を
+      漏れなく列挙する。運用者・保守者・上位システム・環境（電源、通信網等）
+      も忘れずに検討すること。命名はオントロジーの規約に従う。
+    tools:
+      - search_ontology_concepts
+      - explain_applicable_conventions
+    done_when: 全外部要素について名前・Actor/Block の種別・対象システムとの相互作用目的が定まり、既存要素との重複候補0件である
+  - no: 4
+    title: コンテキスト要素の作成
+    instruction: |
+      対象システム Block、外部システム Block、Actor を作成する。
+      複数まとめて作る場合は create_multi_elements を使う。
+      外部要素は対象システムと同じ Package には置かず、
+      「外部環境」等の専用 Package に分けて管理する。
+    tools:
+      - create_package
+      - create_block
+      - create_actor
+      - create_multi_elements
+    done_when: 設計一覧の対象システム・外部 Block・Actor が指定Packageに全件存在し、className別の実件数が設計件数と一致する
+    referenceConventions:
+      - Block
+      - Actor
+      - Package
+  - no: 5
+    title: 相互作用の関係付け
+    instruction: |
+      対象システムと外部要素の間に association を張る。
+      名前には「何をやり取りするか（情報・エネルギー・物質）」を書き、
+      単なる「関連」で終わらせないこと。
+    tools:
+      - create_relationship
+      - create_multi_elements
+    done_when: 全外部要素が対象システムと association で1本以上接続され、各関係名が交換する情報・エネルギー・物質のいずれかを具体的に示し、未接続0件である
+  - no: 6
+    title: コンテキスト図の生成と検証
+    instruction: |
+      create_free_diagram でコンテキスト図を作成し、
+      update_diagram_layout で見やすく配置する。
+      その後、作成した要素の短縮ID を validate_model に渡して検証する。
+      違反があれば修正し、最大 2 回まで再検証する。
+    tools:
+      - create_free_diagram
+      - update_diagram_layout
+      - validate_model
+    done_when: コンテキスト図に対象システム・全外部要素・全 association が欠落0件で表示され、validate_model が error 0件、または残る各違反の理由を記録した
+strict: true
+allow_skip: false
+max_steps_per_stage: 14

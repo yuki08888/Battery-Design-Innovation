@@ -1,0 +1,233 @@
+{
+    "id": "f22926a3-191f-4f06-98f2-6aff832d0c05",
+    "title": "2-4-1_品質基準_複合評価基準_210331",
+    "pages": [
+        {
+            "id": "bbb0f75d-4638-4303-816d-a653cc318713",
+            "title": "ページ 1",
+            "content": "<h1>2-4-1 複合評価基準</h1>\n<p>名称：2-4-1 複合評価基準</p>\n<p>制定／改定：初回<br />\n制定日：2021年3月31日</p>\n<blockquote>\n<p>本部内規は、当部、関係部署および関係会社の社員、グループを含みます。部外または社外に開示する場合には取扱いに十分注意してください。</p>\n</blockquote>\n<p>EHV電池設計部　電池システム評価部・電池設計室（1BV）</p>\n<table>\n<thead>\n<tr>\n<th>承認</th>\n<th>調査</th>\n<th>作成</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>高橋</td>\n<td>池元</td>\n<td>鳥居　綺近</td>\n</tr>\n</tbody>\n</table>",
+            "references": [],
+            "sourceImagePath": "d82c9897-a01b-43b8-990f-58b4da6ce3a5.png",
+            "thumbnailPath": "thumb_d82c9897-a01b-43b8-990f-58b4da6ce3a5.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "bdc1345b-da8c-4c35-a2f7-525de1281cf7",
+            "title": "ページ 2",
+            "content": "<h2>1. 適用範囲</h2>\n<p>密閉電池パック複合水入評価についての基本的な考え方を記述する。</p>\n<h2>2. 複合水入評価の考え方</h2>\n<p>密閉電池パックへ水浸しを与えた後、パック内に水が浸入して発煙することを想定。</p>\n<h3>2-1. 試験の分類</h3>\n<p>電池パック評価項目をお客様の使われ方により、通常使用、誤使用、基板使用に分類。各分類で電池パック安定性能目標を設定。</p>\n<table>\n<thead>\n<tr>\n<th>お客様の使われ方</th>\n<th>電池パック安定性能目標</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>基板使用</td>\n<td>F1、感電、漏液なきこと（リスクランク8、9なきこと）</td>\n</tr>\n<tr>\n<td>誤使用</td>\n<td>発煙、発火、急なReady offなきこと（リスクランク7なきこと）</td>\n</tr>\n<tr>\n<td>通常使用</td>\n<td>機能不具合なきこと</td>\n</tr>\n</tbody>\n</table>\n<p>図1　試験分類</p>\n<h3>2-2. 複合水入評価の適用</h3>\n<p>電池パック評価項目全てに複合水入評価を適用。<br />\n但し、その後自主判断が想定される評価項目は複合水入評価不要。（次ページ記載）</p>",
+            "references": [],
+            "sourceImagePath": "b51436bd-6af6-49d7-8a4b-269a55fa7378.png",
+            "thumbnailPath": "thumb_b51436bd-6af6-49d7-8a4b-269a55fa7378.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "1ca548d0-2f4f-4a68-9c51-28adcc4c3e6e",
+            "title": "ページ 3",
+            "content": "<h2>3. 目標設定</h2>\n<p>電池パック評価試験実施後、エアリークテスト基準（※）を満たすこと。<br />\n表1に各評価項目の複合水入り評価対応を示す。<br />\n※浸水経路等の水入りが考えられる部位は高電圧部品に被水が及ぶ場合、量相当</p>\n<p>表1　複合水入り評価対応</p>\n<table>\n<thead>\n<tr>\n<th>使われ方</th>\n<th>試験項目</th>\n<th>試験条件</th>\n<th>判定基準</th>\n<th>複合水入り評価判定基準</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>通常使用</td>\n<td>電装模擬浸水試験および試験など</td>\n<td>—</td>\n<td>機能不具合なし</td>\n<td>試験実施後、エアリークテストにて基準（※）を満たすこと</td>\n</tr>\n<tr>\n<td>誤使用</td>\n<td>高速浸水試験<br>特殊試験（TSW310G）</td>\n<td>高速浸水試験<br>最大浸水高さ<br>200万回（乗用車）<br>190万回（商用車）</td>\n<td>・高電圧部位の締結緩みなし<br>・有害な電装変形なし</td>\n<td>試験実施後、エアリークテストにて基準（※）を満たすこと</td>\n</tr>\n<tr>\n<td>誤使用</td>\n<td>路面干渉試験<br>特殊試験（TSA334G）</td>\n<td>高速走行<br>空車状態、最大積載状態<br>車速200万回（乗用車）<br>190万回（商用車）</td>\n<td>・高電圧部位の締結緩みなし<br>・有害な電装変形なし</td>\n<td>↑</td>\n</tr>\n<tr>\n<td>誤使用</td>\n<td>耐荷重試験<br>（TSW130G）</td>\n<td>□100、130N</td>\n<td>・高電圧部位の締結緩みなし<br>・有害な電装変形なし</td>\n<td>↑</td>\n</tr>\n<tr>\n<td>誤使用</td>\n<td>耐荷重試験<br>棚上重量物落下<br>（TSW130G）</td>\n<td>棚上高さから<br>重量物30kg落下</td>\n<td>・高電圧部品へ接触がないこと<br>・変形がないこと</td>\n<td>↑</td>\n</tr>\n<tr>\n<td>誤使用</td>\n<td>耐荷重試験<br>大井重量物落下<br>（TSW130G）</td>\n<td>大井高さから<br>重量物30kg落下</td>\n<td>Hに至る破損なきこと</td>\n<td>↑</td>\n</tr>\n<tr>\n<td>誤使用</td>\n<td>落下物干渉試験</td>\n<td>車道0.1m/hで<br>落下物模擬治具<br>20mm干渉</td>\n<td>↑</td>\n<td>↑</td>\n</tr>\n<tr>\n<td>誤使用</td>\n<td>実車衝突試験</td>\n<td>炎ベージュ衝突台<br>※部品最新情報確認のこと</td>\n<td>漏電、漏液なきこと</td>\n<td>↑</td>\n</tr>\n<tr>\n<td>誤使用</td>\n<td>外部短絡試験<br>（TSW130G）</td>\n<td>使用上限SOC 60℃、<br>被部位5mΩで短絡</td>\n<td>安全な高電圧を<br>遮断できる</td>\n<td>↑</td>\n</tr>\n<tr>\n<td>誤使用（自走不可）</td>\n<td>焼焼試験<br>（TSW130G）</td>\n<td>1h焼焼</td>\n<td>内部部品の<br>飛散なきこと</td>\n<td>評価不要</td>\n</tr>\n<tr>\n<td>誤使用（自走不可）</td>\n<td>連鎖発煙試験<br>（TSW130G）</td>\n<td>1セル発煙</td>\n<td>隣接セルが<br>発煙しないこと</td>\n<td>評価不要</td>\n</tr>\n<tr>\n<td>誤使用（自走不可）</td>\n<td>排煙性能試験<br>（TSW130G）</td>\n<td>↑</td>\n<td>発煙後CO濃度は<br>口元で、30分間に<br>600ppm以下であること</td>\n<td>評価不要</td>\n</tr>\n</tbody>\n</table>",
+            "references": [],
+            "sourceImagePath": "a2699210-6094-4f15-80db-6c8e797f369b.png",
+            "thumbnailPath": "thumb_a2699210-6094-4f15-80db-6c8e797f369b.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "0a5489cf-892c-450c-b819-aabcda47b3e1",
+            "title": "ページ 4",
+            "content": "<h2>第2 衝突性能一覧</h2>\n<p>各国法規・レーティング・社内規の衝突形態</p>\n<table>\n<thead>\n<tr>\n<th>車両仕向け</th>\n<th></th>\n<th></th>\n<th></th>\n<th></th>\n<th>法規名称</th>\n<th>形態</th>\n<th>詳細</th>\n<th>試験方法</th>\n<th>衝突方向</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>日本</td>\n<td>欧州</td>\n<td>米国</td>\n<td>韓国</td>\n<td>中国</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td>L / R</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n<td>FMVSS305<br>[米国法規]</td>\n<td>前突</td>\n<td>30mph フルラップ</td>\n<td>図</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td>90km/h オフセット</td>\n<td>図</td>\n<td>R</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n<td>側突</td>\n<td>30mph 右斜突</td>\n<td>図</td>\n<td>L</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td>30mph 左斜突</td>\n<td>図</td>\n<td>R</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td>54km/h MDB（フラット）</td>\n<td>図</td>\n<td>R</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td>32km/h 斜めポール</td>\n<td>図</td>\n<td>L / R</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n<td>後突</td>\n<td>80km/h MDB</td>\n<td>図</td>\n<td>L / R</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n<td>USNCAP<br>IIHS<br>[米国レーティング]</td>\n<td>前突</td>\n<td>35mph フルラップ</td>\n<td>図</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td>64km/h ODB</td>\n<td>図</td>\n<td>L / R</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n<td>側突</td>\n<td>64km/h MDB</td>\n<td>図</td>\n<td>L / R</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td>32km/h 斜めポール</td>\n<td>図</td>\n<td>L / R</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n<td>UN-R94,95<br>UN-R135<br>UN-R137<br>[欧州・国内法規]</td>\n<td>前突</td>\n<td>50km/h フルラップ</td>\n<td>図</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td>56km/h ODB</td>\n<td>図</td>\n<td>L / R</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n<td>側突</td>\n<td>50km/h MDB</td>\n<td>図</td>\n<td>L / R</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td>32km/h 斜めポール</td>\n<td>図</td>\n<td>L / R</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n<td>後突</td>\n<td>50km/h MRB</td>\n<td>図</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n<td>NCAP<br>[各国レーティング]</td>\n<td>前突</td>\n<td>55km/h フルラップ</td>\n<td>図</td>\n<td></td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td>64km/h ODB</td>\n<td>図</td>\n<td>L / R</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n<td>側突</td>\n<td>50km/h MDB</td>\n<td>図</td>\n<td>L / R</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td>50km/h M-PDB（50%ラップ→台車toCAR）</td>\n<td>図</td>\n<td>L</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n<td>後突</td>\n<td>55km/h AE-MDB</td>\n<td>図</td>\n<td>L / R</td>\n</tr>\n<tr>\n<td>●</td>\n<td>●</td>\n<td>●</td>\n<td>●</td>\n<td>●</td>\n<td>社内規格</td>\n<td>前突</td>\n<td>18km/h OLR</td>\n<td>図</td>\n<td>L / R</td>\n</tr>\n<tr>\n<td>●</td>\n<td>●</td>\n<td>●</td>\n<td>●</td>\n<td>●</td>\n<td></td>\n<td></td>\n<td>55km/h Car to Car<br>（50%ラップ→乗用車）</td>\n<td>図</td>\n<td>L / R</td>\n</tr>\n<tr>\n<td>●</td>\n<td>●</td>\n<td>●</td>\n<td>●</td>\n<td>●</td>\n<td></td>\n<td></td>\n<td>32km/h PCU細小ポール</td>\n<td>図</td>\n<td>L</td>\n</tr>\n<tr>\n<td>●</td>\n<td>●</td>\n<td>●</td>\n<td>●</td>\n<td>●</td>\n<td></td>\n<td></td>\n<td>32km/h 電池細小ポール</td>\n<td>図</td>\n<td>L</td>\n</tr>\n<tr>\n<td>●</td>\n<td>●</td>\n<td>●</td>\n<td>●</td>\n<td>●</td>\n<td>社内規格</td>\n<td>側突</td>\n<td>29km/h 直角ポール</td>\n<td>図</td>\n<td>L / R</td>\n</tr>\n<tr>\n<td>●</td>\n<td>●</td>\n<td>●</td>\n<td>●</td>\n<td>●</td>\n<td></td>\n<td></td>\n<td>60km/h SUV</td>\n<td>図</td>\n<td>L / R</td>\n</tr>\n<tr>\n<td>●</td>\n<td>●</td>\n<td>●</td>\n<td>●</td>\n<td>●</td>\n<td></td>\n<td></td>\n<td>60km/h Car to Car</td>\n<td>図</td>\n<td>L</td>\n</tr>\n<tr>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n<td>●</td>\n<td></td>\n<td></td>\n<td>積荷移動試験</td>\n<td>図</td>\n<td></td>\n</tr>\n<tr>\n<td>●</td>\n<td>●</td>\n<td>●</td>\n<td>●</td>\n<td>●</td>\n<td></td>\n<td>後突</td>\n<td>55km/h Car to Car<br>（50%ラップ→乗用車）</td>\n<td>図</td>\n<td>L / R</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>●</td>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n<td>88km/h MDB（※1）<br>車幅の50%</td>\n<td>図</td>\n<td>L / R</td>\n</tr>\n<tr>\n<td>●</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n<td>ダイナ後突</td>\n<td>—</td>\n<td>—</td>\n</tr>\n</tbody>\n</table>",
+            "references": [],
+            "sourceImagePath": "50b996c4-75ae-498c-9831-4f2f3b5e2961.png",
+            "thumbnailPath": "thumb_50b996c4-75ae-498c-9831-4f2f3b5e2961.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        }
+    ],
+    "references": [],
+    "sourceFilePath": "C:\\Users\\1584550\\AppData\\Roaming\\system_factory\\app_data\\projects\\0c47063b-31ef-45f7-9ab8-67833c1008e7\\documents\\f22926a3-191f-4f06-98f2-6aff832d0c05\\orgs\\8ef9bb3e-a52e-44fa-aa3a-e6425efa6373.pdf",
+    "createdAt": null,
+    "updatedAt": null,
+    "skeleton": null,
+    "headingRules": null,
+    "digest": {
+        "overview": {
+            "summary": "本書は、密閉電池パックの複合水入評価に関する基本的な考え方、適用範囲、試験分類および目標設定を定めた品質基準である。水浸し後にパック内へ水が浸入し、発煙する状況を想定し、通常使用・誤使用・基板使用の区分ごとに求める安定性能を示す。電池パック評価項目への複合水入評価の適用方針と、試験後に満たすべきエアリークテスト基準、評価項目別の試験条件・判定基準を記載している。さらに、仕向け先別に各国法規、レーティング、社内規の衝突試験条件を一覧化している。",
+            "documentKind": "requirement_spec",
+            "purpose": "密閉電池パックの複合水入評価について、評価の考え方、適用方針および目標・判定基準を定める。",
+            "scope": "密閉電池パックの複合水入評価と、仕向け先別の衝突性能試験条件を扱う。対象は当部・関係部署・関係会社の社員およびグループで、部外・社外への開示には注意を要する。",
+            "keyTopics": [
+                "複合水入評価の適用範囲と想定シナリオ",
+                "使用状況に応じた評価分類と安定性能目標",
+                "複合水入評価の適用・除外方針",
+                "エアリークテストを含む目標設定",
+                "評価項目別の試験条件・判定基準",
+                "高電圧部品への被水に関する注記",
+                "仕向け先別の衝突性能試験条件一覧"
+            ],
+            "keyTerms": [
+                {
+                    "term": "複合水入評価",
+                    "definition": "密閉電池パックを水浸しにした後、パック内へ水が浸入して発煙する状況を想定する評価。"
+                },
+                {
+                    "term": "基板使用",
+                    "definition": "電池パック評価項目の分類の一つで、F1・感電・漏液がないこと（リスクランク8、9がないこと）を安定性能目標とする区分。"
+                },
+                {
+                    "term": "誤使用",
+                    "definition": "電池パック評価項目の分類の一つで、発煙・発火・急なReady offがないこと（リスクランク7がないこと）を安定性能目標とする区分。"
+                },
+                {
+                    "term": "通常使用",
+                    "definition": "電池パック評価項目の分類の一つで、機能不具合がないことを安定性能目標とする区分。"
+                },
+                {
+                    "term": "エアリークテスト基準",
+                    "definition": "電池パック評価試験の実施後に満たすことを目標とする基準。"
+                }
+            ],
+            "targetSystem": "密閉電池パック"
+        },
+        "outline": [
+            {
+                "id": "c08cb1ea-d3b9-4668-ae85-10909b57bfc9",
+                "title": "2-4-1 複合評価基準",
+                "level": 1,
+                "summary": "文書名は「2-4-1 複合評価基準」で、制定／改定は初回、制定日は2021年3月31日。本文書は当部・関係部署・関係会社の社員およびグループを対象とし、部外・社外へ開示する際は取扱いに注意する旨を記載している。所管としてEHV電池設計部 電池システム評価部・電池設計室（1BV）が示され、承認・調査・作成の担当者名が記載されている。",
+                "keywords": [
+                    "複合評価基準",
+                    "初回",
+                    "2021年3月31日",
+                    "EHV電池設計部",
+                    "電池システム評価部",
+                    "電池設計室",
+                    "1BV",
+                    "取扱い"
+                ],
+                "pageIds": [
+                    "bbb0f75d-4638-4303-816d-a653cc318713"
+                ],
+                "children": [
+                    {
+                        "id": "07f04168-32f7-4e4f-a732-888f58a4437e",
+                        "title": "1. 適用範囲",
+                        "level": 2,
+                        "summary": "密閉電池パック複合水入評価についての基本的な考え方を記述する。",
+                        "keywords": [
+                            "密閉電池パック",
+                            "複合水入評価"
+                        ],
+                        "pageIds": [
+                            "bdc1345b-da8c-4c35-a2f7-525de1281cf7"
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "9992feb0-19a5-46c1-b45c-6b84627960e0",
+                        "title": "2. 複合水入評価の考え方",
+                        "level": 2,
+                        "summary": "密閉電池パックに水浸しを与えた後、パック内に水が浸入して発煙することを想定する。",
+                        "keywords": [
+                            "密閉電池パック",
+                            "水浸し",
+                            "水浸入",
+                            "発煙"
+                        ],
+                        "pageIds": [
+                            "bdc1345b-da8c-4c35-a2f7-525de1281cf7"
+                        ],
+                        "children": [
+                            {
+                                "id": "dd3f5dcc-25a8-44a4-8f39-9356ae425fbd",
+                                "title": "2-1. 試験の分類",
+                                "level": 3,
+                                "summary": "お客様の使われ方により電池パック評価項目を通常使用、誤使用、基板使用に分類し、それぞれ安定性能目標を設定する。基板使用はF1・感電・漏液がないこと（リスクランク8、9がないこと）、誤使用は発煙・発火・急なReady offがないこと（リスクランク7がないこと）、通常使用は機能不具合がないことを目標とする。",
+                                "keywords": [
+                                    "試験分類",
+                                    "通常使用",
+                                    "誤使用",
+                                    "基板使用",
+                                    "電池パック安定性能目標",
+                                    "F1",
+                                    "Ready off",
+                                    "リスクランク"
+                                ],
+                                "pageIds": [
+                                    "bdc1345b-da8c-4c35-a2f7-525de1281cf7"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "63f929ab-3e8b-4d76-94d2-4f21fda4af11",
+                                "title": "2-2. 複合水入評価の適用",
+                                "level": 3,
+                                "summary": "電池パック評価項目すべてに複合水入評価を適用する。ただし、その後に自主判断が想定される評価項目は複合水入評価を不要とし、詳細は次ページに記載するとしている。",
+                                "keywords": [
+                                    "複合水入評価",
+                                    "電池パック評価項目",
+                                    "自主判断"
+                                ],
+                                "pageIds": [
+                                    "bdc1345b-da8c-4c35-a2f7-525de1281cf7"
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "8450fc4b-2e32-4697-8c9f-0fbb91ef47aa",
+                        "title": "3. 目標設定",
+                        "level": 2,
+                        "summary": "電池パック評価試験の実施後にエアリークテスト基準を満たすことを目標としている。表1では通常使用・誤使用・誤使用（自走不可）に分けて評価項目、試験条件、判定基準および複合水入り評価判定基準を示し、例として高速浸水試験では最大浸水高さ、耐荷重試験では荷重や重量物落下、連鎖発煙試験では1セル発煙などの条件が記載されている。また、注記では浸水経路などから水入りが想定され、高電圧部品に被水が及ぶ場合の量相当について触れている。",
+                        "keywords": [
+                            "電池パック",
+                            "エアリークテスト",
+                            "複合水入り評価",
+                            "高速浸水試験",
+                            "TSW310G",
+                            "TSA334G",
+                            "TSW130G",
+                            "高電圧部品"
+                        ],
+                        "pageIds": [
+                            "1ca548d0-2f4f-4a68-9c51-28adcc4c3e6e"
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "9984b5ef-22f1-493a-9165-bf75f77c5fa0",
+                        "title": "第2 衝突性能一覧",
+                        "level": 2,
+                        "summary": "各国法規・レーティング・社内規について、仕向け先別に衝突形態、詳細な試験条件、試験方法、衝突方向を一覧化している。前突・側突・後突の試験として、30mphフルラップやODB、MDB、斜めポール、Car to Carなどの速度・方式とL/Rの方向が示され、FMVSS305、USNCAP/IIHS、UN-R94/95/135/137、NCAPおよび社内規格を含む。",
+                        "keywords": [
+                            "衝突性能一覧",
+                            "FMVSS305",
+                            "USNCAP",
+                            "IIHS",
+                            "UN-R94",
+                            "UN-R95",
+                            "NCAP",
+                            "社内規格"
+                        ],
+                        "pageIds": [
+                            "0a5489cf-892c-450c-b819-aabcda47b3e1"
+                        ],
+                        "children": []
+                    }
+                ]
+            }
+        ],
+        "sourceHash": "1ba10b05849c7cce256f5cd605335247ec92ad32",
+        "textHash": "fdf0e9367cc8e929a5525f22d85e89ad07b7d125",
+        "generatedAt": "2026-10-03T14:42:29.715431",
+        "pageCount": 4,
+        "schemaVersion": 1,
+        "generator": "ai"
+    },
+    "coverage": null,
+    "modelBinding": null
+}
