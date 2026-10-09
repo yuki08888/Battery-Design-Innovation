@@ -321,33 +321,19 @@
             "parent_id": "",
             "icon_key": "DescriptionOutlined",
             "icon_color": null
+        },
+        {
+            "id": "0d267360-603f-42b7-9f72-7ae6b49718d4",
+            "name": "熱連鎖耐性 部品-要求マトリクス",
+            "parent_id": "cfcb364e-7491-4244-9119-3813b56a5247",
+            "icon_key": "GridOnOutlined",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [
-        "2ad2b7ef-3734-4840-95c8-6ef890ceb32c",
-        "e5625fd8-66f8-4efb-90cd-08d55ad2728d",
-        "62e09133-06ca-4f60-b5dd-7204e3d7c661",
-        "af32732b-64fd-4234-8a10-da9c39c7be9f",
-        "d3180ac2-b67d-4ebd-852e-cd36fcbeaa51",
-        "cb8e3b49-c873-4581-89f9-acbd66070bd2",
-        "4b07927f-32e0-4647-9840-24b127e20670",
-        "63ed97c8-9734-4775-babd-7e84ae97c83a",
-        "29fe6d14-7080-4797-958f-9f79717c1484",
-        "d0e800b6-e244-44ed-8709-519dc122985e",
-        "917ef182-9a5f-4915-babe-1fccf016972d",
-        "e85f9d91-4128-4529-816a-1ae352176b71",
-        "441e5a3b-f3a8-450f-88b4-c1f9f1ea8adf",
-        "c4b79860-9d6b-4926-bf75-a936d11df703",
-        "94b74f01-c2a2-4370-82de-4f4fd99a292e",
-        "c52409d2-c080-4523-ba09-30087dfb6d09",
-        "5a1bb871-863c-49e3-a89f-fff2142b4963",
-        "9e0999fe-899e-4d7f-b690-ce16f028758b",
-        "43f4d071-ea21-4c66-9f88-55da09326154",
-        "dfe52c73-7733-465d-9e5d-ba0415e52256",
-        "081f4a09-e68f-4b31-b1b5-990e0db5711c",
-        "f409a5f7-f5b3-4b07-a3f7-a1e7443df025"
+        "0d267360-603f-42b7-9f72-7ae6b49718d4"
     ],
-    "current_view_id": "081f4a09-e68f-4b31-b1b5-990e0db5711c",
+    "current_view_id": "0d267360-603f-42b7-9f72-7ae6b49718d4",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,
