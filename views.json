@@ -335,6 +335,20 @@
             "parent_id": "ba859834-feab-4b42-985f-77263937f5e9",
             "icon_key": "TableChartOutlined",
             "icon_color": null
+        },
+        {
+            "id": "c9f1a042-cfca-4138-920a-776406c99163",
+            "name": "ヘルプ・ドキュメント",
+            "parent_id": "root",
+            "icon_key": "MenuBookOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "2ed8ff8f-7879-4d22-9516-749b1100e79d",
+            "name": "熱拡散サブシステム要求・部品関連マトリクス",
+            "parent_id": "cfcb364e-7491-4244-9119-3813b56a5247",
+            "icon_key": "GridOnOutlined",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [
@@ -360,9 +374,13 @@
         "5284d62f-04a4-4230-9768-0357754612e6",
         "081f4a09-e68f-4b31-b1b5-990e0db5711c",
         "8f05bf36-6a74-4e4a-962d-2327913e53e5",
-        "546b6422-bfd9-4fa5-bf96-0b01b190020f"
+        "c4725d55-8fcc-4455-b31d-c46fd8f2d370",
+        "7de507e6-6597-4a3d-acae-4c768a52fa8f",
+        "c7c6a999-0c6d-4c3f-9291-5650adaab40e",
+        "e56c667f-1cb9-43fb-915c-2f18fbd0d261",
+        "2ed8ff8f-7879-4d22-9516-749b1100e79d"
     ],
-    "current_view_id": "546b6422-bfd9-4fa5-bf96-0b01b190020f",
+    "current_view_id": "2ed8ff8f-7879-4d22-9516-749b1100e79d",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,
