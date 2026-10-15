@@ -214,5 +214,13 @@
         "createdAt": null,
         "updatedAt": null,
         "pageCount": 37
+    },
+    {
+        "id": "e1fc7374-ff95-4e8a-b26f-bb36f5ebaf32",
+        "title": "耐熱絶縁カバー設計標準書",
+        "sourceFilePath": "C:\\Users\\1584550\\AppData\\Roaming\\system_factory\\app_data\\projects\\0c47063b-31ef-45f7-9ab8-67833c1008e7\\documents\\e1fc7374-ff95-4e8a-b26f-bb36f5ebaf32\\orgs\\07d8f2ff-504b-4e33-a39a-a6ba36c48913.pdf",
+        "createdAt": null,
+        "updatedAt": null,
+        "pageCount": 51
     }
 ]

@@ -230,6 +230,14 @@
         "order": 16
     },
     {
+        "id": "0cc6962c-8af7-4109-aecb-2b086eadf33c",
+        "name": "耐熱絶縁カバー設計標準書",
+        "item_type": "document",
+        "parent_id": "e3be2160-d759-4b37-9b51-aadc1d110b6d",
+        "order": 16,
+        "document_id": "e1fc7374-ff95-4e8a-b26f-bb36f5ebaf32"
+    },
+    {
         "id": "e3be2160-d759-4b37-9b51-aadc1d110b6d",
         "name": "標準",
         "item_type": "folder",
