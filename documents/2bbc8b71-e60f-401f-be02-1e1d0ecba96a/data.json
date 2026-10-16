@@ -38,7 +38,7 @@
         {
             "id": "8fc8f235-6596-411c-92a1-4b48784af40e",
             "title": "セル間バスバ レーザ溶接 製造要件",
-            "content": "<hr />\n<p>title: セル間バスバ レーザ溶接 製造要件<br />\ntags: [バスバ, セル間バスバ, レーザ溶接, 製造要件, マスク治具, 基準穴, 位置ばらつき, BBM]<br />\ncreated: 2026-10-02<br />\nstatus: 骨子（0.1版）／数値・ばらつき要因の多くは未記入<br />\nsource:<br />\n  - バスバー隙間余裕度 設計標準（CAE）<br />\n  - BBM要求仕様書_241209改訂<br />\n  - 2BV バスバ溶接疲労安全率 要件<br />\n  - バスバ進捗_2026-09-30<br />\n  - 05_Journal/2026-07-23.md<br />\n  - 05_Journal/2026-07-20.md<br />\nscope: セル端子とセル間バスバのレーザ溶接（他の溶接方式は対象外）。設計・工程検討用。</p>\n<hr />\n<h1>セル間バスバ レーザ溶接 製造要件</h1>\n<blockquote>\n<p><strong>状態：骨子。</strong> 位置の3要件は依頼者の指定による。資料に記載のない数値は推定で埋めない。<br />\n記号の意味：【確認済】＝Vault内の資料に記載あり／【指定】＝依頼者の指定／【暫定】＝案で要確認／【未記入】＝情報待ち。</p>\n</blockquote>\n<h2>1. 目的・適用範囲</h2>\n<ul>\n<li>目的：セル端子とセル間バスバのレーザ溶接について、設計・工程検討で満たすべき製造要件を一か所にそろえる。</li>\n<li>対象：セル間バスバとセル端子のレーザ溶接。他の溶接方式（超音波、抵抗、ワイヤボンド）は対象外。</li>\n<li>車種：共通要件として書く。車種固有の値が分かれば区別して追記する。【暫定】</li>\n<li>対象外：疲労・発熱の判定（[[バスバー設計手順（強度・熱）]]）と、CAEによる隙間評価の手順（[[バスバー隙間余裕度 設計標準（CAE）]]）。本ノートからは参照のみ行う。</li>\n</ul>\n<h2>2. 要件サマリ（位置に関する3要件）</h2>\n<table>\n<thead>\n<tr>\n<th>No.</th>\n<th>要件</th>\n<th>状態</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>R1</td>\n<td>溶接の位置基準は、<strong>バスバの基準穴</strong>とする（現状）。基準穴は<strong>1溶接に1つ</strong></td>\n<td>【指定】</td>\n</tr>\n<tr>\n<td>R2</td>\n<td>R1の基準で溶接したとき、<strong>溶接がセル端子から外れない</strong>こと（ばらつきを見込み、余裕代1mm程度を確保）</td>\n<td>【指定】</td>\n</tr>\n<tr>\n<td>R3</td>\n<td>押し当て治具である<strong>マスク治具が、セル端子上にあり、かつバスバ上にある</strong>こと（ばらつきを見込み、余裕代1mm程度を確保）</td>\n<td>【指定】</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>背景：セル間バスバとセル端子の相対位置がばらつく。基準穴を基準にすると、ばらつき分だけ溶接位置が端子に対して動く。【指定】</li>\n<li>このため、<strong>事前に相対位置ばらつきを見積り、R2とR3を満たすことを確認する</strong>。確認は設計段階で行う。【指定】</li>\n<li>隙間（§5）、治具・設備（§6）、検査（§7）はR1〜R3と並ぶ製造要件として、後段で整理する。</li>\n</ul>\n<h2>3. 位置ばらつきの事前見積り</h2>\n<h3>3.1 位置の連鎖（考え方）</h3>\n<pre><code>バスバ基準穴（1溶接に1つ）──(基準穴〜溶接位置の寸法)──&gt; 溶接位置\n      │\n      └─ 基準穴の位置 ←→ セル端子の位置\n            ・BBM側：バスバ位置のばらつき\n            ・セル側：セル位置のばらつき\n</code></pre>\n<ul>\n<li>基準穴は<strong>1溶接（1つの溶接部）につき1つ</strong>。基準穴と副基準穴の組ではない。【指定】</li>\n<li>相対位置のばらつきは、<strong>セル位置ばらつき</strong>と<strong>BBM側のバスバ位置によるばらつき</strong>の2系統。【指定】</li>\n<li>\n<p>基準穴が1つなので、1溶接の範囲ではバスバの回転（基準穴まわり）は拘束されない。回転の扱いは§3.3で確認する。【暫定】</p>\n</li>\n<li>\n<p>基準穴を基準ピンで位置決めし、BBMをセル上に配置してレーザ溶接する、という作業手順が住友のデモで確認されている。【確認済】<code>05_Journal/2026-07-20.md</code>（シートタイプの組み付け）</p>\n</li>\n<li>380D溶接仕様の原典には、溶接軌跡、隙間測定方法、<strong>溶接位置補正ロジック</strong>、マスク治具構造、位置決め方法が含まれる。PDFの内容は未照合。【確認済（項目名のみ）】<code>05_Journal/2026-07-23.md</code></li>\n</ul>\n<h3>3.2 ばらつき要因の表（記入先）</h3>\n<p>主な2系統（依頼者の指定）：</p>\n<table>\n<thead>\n<tr>\n<th>系統</th>\n<th>要因</th>\n<th>値</th>\n<th>状態</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>セル側</td>\n<td>セル位置ばらつき（セル端子の位置。面内2方向）</td>\n<td>―</td>\n<td>【指定】要因／値は【未記入】</td>\n</tr>\n<tr>\n<td>BBM側</td>\n<td>BBM側のバスバ位置によるばらつき（基準穴位置、基準穴〜溶接位置の寸法、位置決めのガタ、BBM内の保持位置など）</td>\n<td>―</td>\n<td>【指定】要因／値・内訳は【未記入】</td>\n</tr>\n</tbody>\n</table>\n<p>内訳の候補（2系統の中身。採否は要確認）：</p>\n<table>\n<thead>\n<tr>\n<th>候補</th>\n<th>属する系統</th>\n<th>状態</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>セル厚み・セルピッチの公差の積み上がり</td>\n<td>セル側</td>\n<td>【暫定】</td>\n</tr>\n<tr>\n<td>セル端子の位置公差、端子寸法（幅・長さ）の公差</td>\n<td>セル側</td>\n<td>【暫定】</td>\n</tr>\n<tr>\n<td>基準穴の位置公差、基準穴〜溶接位置の寸法公差</td>\n<td>BBM側</td>\n<td>【暫定】</td>\n</tr>\n<tr>\n<td>基準穴と基準ピンの嵌合すきま、搭載治具でのBBM配置のばらつき</td>\n<td>BBM側</td>\n<td>【暫定】</td>\n</tr>\n<tr>\n<td>溶接位置補正ロジックで吸収できる量</td>\n<td>補正</td>\n<td>【未記入】原典PDF（§9）の照合待ち</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>溶接形状の拡大は、現状のばらつきから余裕が小さいという整理がある。セル厚み公差の意図は、関係先（NK・住友）へ再確認する方針。【確認済】2026-09-15 の住友BBM KI の内容（<code>05_Journal/weekly/archive/legacy/2026-W38_2026-09-16-22.md</code>）</li>\n</ul>\n<h3>3.3 見積り方法と判定（案）</h3>\n<ol>\n<li>セル側とBBM側の2系統について、面内の2方向（セル並び方向と、それに直交する方向）のばらつきを整理する。</li>\n<li>2系統を合成し、基準穴基準での<strong>溶接位置の端子に対するずれの最大値</strong>を求める。合成の方法（最悪ケースか統計的合成か）は決める必要がある。【未記入】</li>\n<li>溶接の全長（溶接軌跡の端から端まで）が端子の外形の内側に入るかを確認する。<br />\n   - 判定（R2）：<strong>ばらつきを見込んだうえで、溶接端から端子端まで、余裕代1mm程度を確保する</strong>。すなわち「ずれの最大値 ≦ 端子端から溶接端までの名目距離 − 余裕代」。【指定】余裕代は1mm程度（「程度」のため、確定値かは要確認）</li>\n<li>基準穴は1溶接に1つなので、基準穴まわりの回転ずれが溶接軌跡の端でどれだけ効くかを確認する。溶接軌跡の基準穴から遠い端で判定する。【暫定】</li>\n<li>条件を満たさないときは、基準穴の位置、溶接軌跡、端子形状、位置決め方法、公差のいずれかを見直して再計算する。</li>\n</ol>\n<p>記録する項目（案）：対象バスバ、機種、形状データの版、ばらつき要因と値、合成方法、方向別のずれの最大値、端子端から溶接端までの余白、判定（合格／不合格）、最小余白とその条件、実施者・日付。</p>\n<h2>4. マスク治具の位置要件（R3）</h2>\n<ul>\n<li>要件：マスク治具が、<strong>セル端子上</strong>と<strong>バスバ上</strong>の両方に乗ること。【指定】</li>\n<li>意味：マスク治具は溶接時にバスバを端子へ押し当てて隙間を抑える治具。両方に乗らないと押し当てが成立しない。【暫定】</li>\n<li>確認方法：§3の位置ばらつき見積りの結果を使い、マスク治具の接触範囲が、セル端子とバスバのそれぞれの外形の内側に入ることを確認する。【暫定】</li>\n<li>判定：<strong>ばらつきを見込んだうえで、マスク治具の接触範囲の端から、端子の端およびバスバの端まで、それぞれ余裕代1mm程度を確保する</strong>。すなわち「ずれの最大値 ≦ 接触範囲の端から端子端（バスバ端）までの名目距離 − 余裕代」を、端子側・バスバ側の両方で満たす。【指定】余裕代はR2と同じ1mm程度（「程度」のため確定値かは要確認）</li>\n<li>マスク治具の接触範囲・侵入範囲は計画図を参照する。計画図の参照先は未記入。【未記入】</li>\n<li>隙間との関係：押し当て時の許容隙間は §5。R3が成立しない場合は、隙間の評価（CAE）の前提が崩れる。【暫定】</li>\n</ul>\n<h2>5. 溶接条件・隙間・部品精度</h2>\n<h3>5.1 溶接条件（380D溶接仕様）</h3>\n<table>\n<thead>\n<tr>\n<th>項目</th>\n<th>値</th>\n<th>状態</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>レーザ出力</td>\n<td>1220±50W</td>\n<td>【確認済】<code>05_Journal/2026-07-23.md</code>。原典はPDF（未照合）</td>\n</tr>\n<tr>\n<td>走査速度</td>\n<td>400mm/sec</td>\n<td>【確認済】同上</td>\n</tr>\n<tr>\n<td>焦点深度</td>\n<td>±1.5mm</td>\n<td>【確認済】同上</td>\n</tr>\n<tr>\n<td>端子間隙間</td>\n<td>0.20mm以下</td>\n<td>【確認済】同上</td>\n</tr>\n<tr>\n<td>溶接長さ・溶接幅・溶け込み深さ</td>\n<td>―</td>\n<td>【未記入】溶接長さ・幅は DR 資料に項目あり（未照合）</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>上の値は380Dモ</li>\n</ul>",
+            "content": "<hr><p>title: セル間バスバ レーザ溶接 製造要件<br>tags: [バスバ, セル間バスバ, レーザ溶接, 製造要件, マスク治具, 基準穴, 位置ばらつき, BBM]<br>created: 2026-10-02<br>status: 骨子（0.1版）／数値・ばらつき要因の多くは未記入<br>source:<br>- バスバー隙間余裕度 設計標準（CAE）<br>- BBM要求仕様書_241209改訂<br>- 2BV バスバ溶接疲労安全率 要件<br>- バスバ進捗_2026-09-30<br>- 05_Journal/2026-07-23.md<br>- 05_Journal/2026-07-20.md<br>scope: セル端子とセル間バスバのレーザ溶接（他の溶接方式は対象外）。設計・工程検討用。</p><hr><h1>セル間バスバ レーザ溶接 製造要件</h1><blockquote><p><strong>状態：骨子。</strong> 位置の3要件は依頼者の指定による。資料に記載のない数値は推定で埋めない。<br>記号の意味：【確認済】＝Vault内の資料に記載あり／【指定】＝依頼者の指定／【暫定】＝案で要確認／【未記入】＝情報待ち。</p></blockquote><h2>1. 目的・適用範囲</h2><ul><li><p>目的：セル端子とセル間バスバのレーザ溶接について、設計・工程検討で満たすべき製造要件を一か所にそろえる。</p></li><li><p>対象：セル間バスバとセル端子のレーザ溶接。他の溶接方式（超音波、抵抗、ワイヤボンド）は対象外。</p></li><li><p>車種：共通要件として書く。車種固有の値が分かれば区別して追記する。【暫定】</p></li><li><p>対象外：疲労・発熱の判定（[[バスバー設計手順（強度・熱）]]）と、CAEによる隙間評価の手順（[[バスバー隙間余裕度 設計標準（CAE）]]）。本ノートからは参照のみ行う。</p></li></ul><h2>2. 要件サマリ（位置に関する3要件）</h2><table class=\"document-table\" style=\"min-width: 75px;\"><colgroup><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"></colgroup><tbody><tr><th colspan=\"1\" rowspan=\"1\"><p>No.</p></th><th colspan=\"1\" rowspan=\"1\"><p>要件</p></th><th colspan=\"1\" rowspan=\"1\"><p>状態</p></th></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>R1</p></td><td colspan=\"1\" rowspan=\"1\"><p>溶接の位置基準は、<strong>バスバの基準穴</strong>とする（現状）。基準穴は<strong>1溶接に1つ</strong></p></td><td colspan=\"1\" rowspan=\"1\"><p>【指定】</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>R2</p></td><td colspan=\"1\" rowspan=\"1\"><p>R1の基準で溶接したとき、<strong>溶接がセル端子から外れない</strong>こと（ばらつきを見込み、余裕代1mm程度を確保）</p></td><td colspan=\"1\" rowspan=\"1\"><p>【指定】</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>R3</p></td><td colspan=\"1\" rowspan=\"1\"><p>押し当て治具である<strong>マスク治具が、セル端子上にあり、かつバスバ上にある</strong>こと（ばらつきを見込み、余裕代1mm程度を確保）</p></td><td colspan=\"1\" rowspan=\"1\"><p>【指定】</p></td></tr></tbody></table><ul><li><p>背景：セル間バスバとセル端子の相対位置がばらつく。基準穴を基準にすると、ばらつき分だけ溶接位置が端子に対して動く。【指定】</p></li><li><p>このため、<strong>事前に相対位置ばらつきを見積り、R2とR3を満たすことを確認する</strong>。確認は設計段階で行う。【指定】</p></li><li><p>隙間（§5）、治具・設備（§6）、検査（§7）はR1〜R3と並ぶ製造要件として、後段で整理する。</p></li></ul><h2>3. 位置ばらつきの事前見積り</h2><h3>3.1 位置の連鎖（考え方）</h3><pre class=\"document-code-block\"><code>バスバ基準穴（1溶接に1つ）──(基準穴〜溶接位置の寸法)──&gt; 溶接位置\n      │\n      └─ 基準穴の位置 ←→ セル端子の位置\n            ・BBM側：バスバ位置のばらつき\n            ・セル側：セル位置のばらつき\n</code></pre><ul><li><p>基準穴は<strong>1溶接（1つの溶接部）につき1つ</strong>。基準穴と副基準穴の組ではない。【指定】</p></li><li><p>相対位置のばらつきは、<strong>セル位置ばらつき</strong>と<strong>BBM側のバスバ位置によるばらつき</strong>の2系統。【指定】</p></li><li><p>基準穴が1つなので、1溶接の範囲ではバスバの回転（基準穴まわり）は拘束されない。回転の扱いは§3.3で確認する。【暫定】</p></li><li><p>基準穴を基準ピンで位置決めし、BBMをセル上に配置してレーザ溶接する、という作業手順が住友のデモで確認されている。【確認済】<code>05_Journal/2026-07-20.md</code>（シートタイプの組み付け）</p></li><li><p>380D溶接仕様の原典には、溶接軌跡、隙間測定方法、<strong>溶接位置補正ロジック</strong>、マスク治具構造、位置決め方法が含まれる。PDFの内容は未照合。【確認済（項目名のみ）】<code>05_Journal/2026-07-23.md</code></p></li></ul><h3>3.2 ばらつき要因の表（記入先）</h3><p>主な2系統（依頼者の指定）：</p><table class=\"document-table\" style=\"min-width: 100px;\"><colgroup><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"></colgroup><tbody><tr><th colspan=\"1\" rowspan=\"1\"><p>系統</p></th><th colspan=\"1\" rowspan=\"1\"><p>要因</p></th><th colspan=\"1\" rowspan=\"1\"><p>値</p></th><th colspan=\"1\" rowspan=\"1\"><p>状態</p></th></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>セル側</p></td><td colspan=\"1\" rowspan=\"1\"><p>セル位置ばらつき（セル端子の位置。面内2方向）</p></td><td colspan=\"1\" rowspan=\"1\"><p>―</p></td><td colspan=\"1\" rowspan=\"1\"><p>【指定】要因／値は【未記入】</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>BBM側</p></td><td colspan=\"1\" rowspan=\"1\"><p>BBM側のバスバ位置によるばらつき（基準穴位置、基準穴〜溶接位置の寸法、位置決めのガタ、BBM内の保持位置など）</p></td><td colspan=\"1\" rowspan=\"1\"><p>―</p></td><td colspan=\"1\" rowspan=\"1\"><p>【指定】要因／値・内訳は【未記入】</p></td></tr></tbody></table><p>内訳の候補（2系統の中身。採否は要確認）：</p><table class=\"document-table\" style=\"min-width: 75px;\"><colgroup><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"></colgroup><tbody><tr><th colspan=\"1\" rowspan=\"1\"><p>候補</p></th><th colspan=\"1\" rowspan=\"1\"><p>属する系統</p></th><th colspan=\"1\" rowspan=\"1\"><p>状態</p></th></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>セル厚み・セルピッチの公差の積み上がり</p></td><td colspan=\"1\" rowspan=\"1\"><p>セル側</p></td><td colspan=\"1\" rowspan=\"1\"><p>【暫定】</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>セル端子の位置公差、端子寸法（幅・長さ）の公差</p></td><td colspan=\"1\" rowspan=\"1\"><p>セル側</p></td><td colspan=\"1\" rowspan=\"1\"><p>【暫定】</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>基準穴の位置公差、基準穴〜溶接位置の寸法公差</p></td><td colspan=\"1\" rowspan=\"1\"><p>BBM側</p></td><td colspan=\"1\" rowspan=\"1\"><p>【暫定】</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>基準穴と基準ピンの嵌合すきま、搭載治具でのBBM配置のばらつき</p></td><td colspan=\"1\" rowspan=\"1\"><p>BBM側</p></td><td colspan=\"1\" rowspan=\"1\"><p>【暫定】</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>溶接位置補正ロジックで吸収できる量</p></td><td colspan=\"1\" rowspan=\"1\"><p>補正</p></td><td colspan=\"1\" rowspan=\"1\"><p>【未記入】原典PDF（§9）の照合待ち</p></td></tr></tbody></table><ul><li><p>溶接形状の拡大は、現状のばらつきから余裕が小さいという整理がある。セル厚み公差の意図は、関係先（NK・住友）へ再確認する方針。【確認済】2026-09-15 の住友BBM KI の内容（<code>05_Journal/weekly/archive/legacy/2026-W38_2026-09-16-22.md</code>）</p></li></ul><h3>3.3 見積り方法と判定（案）</h3><ol><li><p>セル側とBBM側の2系統について、面内の2方向（セル並び方向と、それに直交する方向）のばらつきを整理する。</p></li><li><p>2系統を合成し、基準穴基準での<strong>溶接位置の端子に対するずれの最大値</strong>を求める。合成の方法（最悪ケースか統計的合成か）は決める必要がある。【未記入】</p></li><li><p>溶接の全長（溶接軌跡の端から端まで）が端子の外形の内側に入るかを確認する。<br>- 判定（R2）：<strong>ばらつきを見込んだうえで、溶接端から端子端まで、余裕代1mm程度を確保する</strong>。すなわち「ずれの最大値 ≦ 端子端から溶接端までの名目距離 − 余裕代」。【指定】余裕代は1mm程度（「程度」のため、確定値かは要確認）</p></li><li><p>基準穴は1溶接に1つなので、基準穴まわりの回転ずれが溶接軌跡の端でどれだけ効くかを確認する。溶接軌跡の基準穴から遠い端で判定する。【暫定】</p></li><li><p>条件を満たさないときは、基準穴の位置、溶接軌跡、端子形状、位置決め方法、公差のいずれかを見直して再計算する。</p></li></ol><p>記録する項目（案）：対象バスバ、機種、形状データの版、ばらつき要因と値、合成方法、方向別のずれの最大値、端子端から溶接端までの余白、判定（合格／不合格）、最小余白とその条件、実施者・日付。</p><h2>4. マスク治具の位置要件（R3）</h2><ul><li><p>要件：マスク治具が、<strong>セル端子上</strong>と<strong>バスバ上</strong>の両方に乗ること。【指定】</p></li><li><p>意味：マスク治具は溶接時にバスバを端子へ押し当てて隙間を抑える治具。両方に乗らないと押し当てが成立しない。【暫定】</p></li><li><p>確認方法：§3の位置ばらつき見積りの結果を使い、マスク治具の接触範囲が、セル端子とバスバのそれぞれの外形の内側に入ることを確認する。【暫定】</p></li><li><p>判定：<strong>ばらつきを見込んだうえで、マスク治具の接触範囲の端から、端子の端およびバスバの端まで、それぞれ余裕代1mm程度を確保する</strong>。すなわち「ずれの最大値 ≦ 接触範囲の端から端子端（バスバ端）までの名目距離 − 余裕代」を、端子側・バスバ側の両方で満たす。【指定】余裕代はR2と同じ1mm程度（「程度」のため確定値かは要確認）</p></li><li><p>マスク治具の接触範囲・侵入範囲は計画図を参照する。計画図の参照先は未記入。【未記入】</p></li><li><p>隙間との関係：押し当て時の許容隙間は §5。R3が成立しない場合は、隙間の評価（CAE）の前提が崩れる。【暫定】</p></li></ul><h2>5. 溶接条件・隙間・部品精度</h2><h3>5.1 溶接条件（380D溶接仕様）</h3><table class=\"document-table\" style=\"min-width: 75px;\"><colgroup><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"></colgroup><tbody><tr><th colspan=\"1\" rowspan=\"1\"><p>項目</p></th><th colspan=\"1\" rowspan=\"1\"><p>値</p></th><th colspan=\"1\" rowspan=\"1\"><p>状態</p></th></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>レーザ出力</p></td><td colspan=\"1\" rowspan=\"1\"><p>1220±50W</p></td><td colspan=\"1\" rowspan=\"1\"><p>【確認済】<code>05_Journal/2026-07-23.md</code>。原典はPDF（未照合）</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>走査速度</p></td><td colspan=\"1\" rowspan=\"1\"><p>400mm/sec</p></td><td colspan=\"1\" rowspan=\"1\"><p>【確認済】同上</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>焦点深度</p></td><td colspan=\"1\" rowspan=\"1\"><p>±1.5mm</p></td><td colspan=\"1\" rowspan=\"1\"><p>【確認済】同上</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>端子間隙間（隙間余裕度）</p></td><td colspan=\"1\" rowspan=\"1\"><p>0.20mm以下</p></td><td colspan=\"1\" rowspan=\"1\"><p>【確認済】同上</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>溶接長さ・溶接幅・溶け込み深さ</p></td><td colspan=\"1\" rowspan=\"1\"><p>―</p></td><td colspan=\"1\" rowspan=\"1\"><p>【未記入】溶接長さ・幅は DR 資料に項目あり（未照合）</p></td></tr></tbody></table><p></p><p>・バスバの剛性変化により端子とセル間の隙間値が変わる可能性あるため、</p><p>　バスバ形状変更するとCAE解析が必要</p><p>・隙間余裕度は溶接する板厚による変動する</p><p>・バスバ厚みが熱くなると、セルへの入熱が増える可能性があるため検証が必要</p><p></p>",
             "references": [],
             "sourceImagePath": null,
             "thumbnailPath": null,
@@ -50,7 +50,7 @@
     "references": [],
     "sourceFilePath": null,
     "createdAt": "2026-09-19T03:53:34.354Z",
-    "updatedAt": "2026-10-02T09:45:59.176117",
+    "updatedAt": "2026-10-16T11:39:11.586683",
     "skeleton": {
         "documentId": "2bbc8b71-e60f-401f-be02-1e1d0ecba96a",
         "roots": [
@@ -144,9 +144,338 @@
                 "pageIndices": [
                     0
                 ]
+            },
+            {
+                "id": "00fa94bb-5e5d-4bb0-9266-27b2771f88ed",
+                "title": "バスバー隙間余裕度 設計標準（CAE）",
+                "level": 1,
+                "sectionType": "introduction",
+                "pageId": "388715cf-2ad0-4c43-b582-8a23a867ccf7",
+                "startLine": 8,
+                "endLine": 14,
+                "children": [
+                    {
+                        "id": "dfd63373-54a9-4277-8c56-760a798c423a",
+                        "title": "1. 目的・適用範囲",
+                        "level": 2,
+                        "sectionType": "scope",
+                        "pageId": "388715cf-2ad0-4c43-b582-8a23a867ccf7",
+                        "startLine": 15,
+                        "endLine": 21,
+                        "children": [],
+                        "linkedElementIds": [],
+                        "pageIndex": 2,
+                        "pageIds": [
+                            "388715cf-2ad0-4c43-b582-8a23a867ccf7"
+                        ],
+                        "pageIndices": [
+                            2
+                        ]
+                    },
+                    {
+                        "id": "05ad6c12-2d05-4803-b2a7-8f3336580bf2",
+                        "title": "2. 用語・定義",
+                        "level": 2,
+                        "sectionType": "definition",
+                        "pageId": "388715cf-2ad0-4c43-b582-8a23a867ccf7",
+                        "startLine": 22,
+                        "endLine": 68,
+                        "children": [],
+                        "linkedElementIds": [],
+                        "pageIndex": 2,
+                        "pageIds": [
+                            "388715cf-2ad0-4c43-b582-8a23a867ccf7"
+                        ],
+                        "pageIndices": [
+                            2
+                        ]
+                    },
+                    {
+                        "id": "1744b285-1ca0-41c8-92be-18c5652898fc",
+                        "title": "3. 判定基準",
+                        "level": 2,
+                        "sectionType": "requirement",
+                        "pageId": "388715cf-2ad0-4c43-b582-8a23a867ccf7",
+                        "startLine": 69,
+                        "endLine": 127,
+                        "children": [],
+                        "linkedElementIds": [],
+                        "pageIndex": 2,
+                        "pageIds": [
+                            "388715cf-2ad0-4c43-b582-8a23a867ccf7"
+                        ],
+                        "pageIndices": [
+                            2
+                        ]
+                    },
+                    {
+                        "id": "ba4e726d-0872-416b-9bd8-47ed5c47fd28",
+                        "title": "4. CAE入力条件",
+                        "level": 2,
+                        "sectionType": "specification",
+                        "pageId": "388715cf-2ad0-4c43-b582-8a23a867ccf7",
+                        "startLine": 128,
+                        "endLine": 189,
+                        "children": [
+                            {
+                                "id": "cb39cfcc-6c0a-441d-9a2d-30b1c8d1ec6a",
+                                "title": "4.1 変動因子（評価条件の軸）",
+                                "level": 3,
+                                "sectionType": "specification",
+                                "pageId": "388715cf-2ad0-4c43-b582-8a23a867ccf7",
+                                "startLine": 190,
+                                "endLine": 222,
+                                "children": [],
+                                "linkedElementIds": [],
+                                "pageIndex": 2,
+                                "pageIds": [
+                                    "388715cf-2ad0-4c43-b582-8a23a867ccf7"
+                                ],
+                                "pageIndices": [
+                                    2
+                                ]
+                            }
+                        ],
+                        "linkedElementIds": [],
+                        "pageIndex": 2,
+                        "pageIds": [
+                            "388715cf-2ad0-4c43-b582-8a23a867ccf7"
+                        ],
+                        "pageIndices": [
+                            2
+                        ]
+                    },
+                    {
+                        "id": "31371503-0742-41b4-8a2a-597026f12283",
+                        "title": "5. CAE手順",
+                        "level": 2,
+                        "sectionType": "procedure",
+                        "pageId": "388715cf-2ad0-4c43-b582-8a23a867ccf7",
+                        "startLine": 223,
+                        "endLine": 260,
+                        "children": [],
+                        "linkedElementIds": [],
+                        "pageIndex": 2,
+                        "pageIds": [
+                            "388715cf-2ad0-4c43-b582-8a23a867ccf7"
+                        ],
+                        "pageIndices": [
+                            2
+                        ]
+                    },
+                    {
+                        "id": "cc7d4ff4-ed44-4626-b27a-edafb1ff6b14",
+                        "title": "6. 判定フローと記録様式",
+                        "level": 2,
+                        "sectionType": "procedure",
+                        "pageId": "388715cf-2ad0-4c43-b582-8a23a867ccf7",
+                        "startLine": 261,
+                        "endLine": 267,
+                        "children": [],
+                        "linkedElementIds": [],
+                        "pageIndex": 2,
+                        "pageIds": [
+                            "388715cf-2ad0-4c43-b582-8a23a867ccf7"
+                        ],
+                        "pageIndices": [
+                            2
+                        ]
+                    }
+                ],
+                "linkedElementIds": [],
+                "pageIndex": 2,
+                "pageIds": [
+                    "388715cf-2ad0-4c43-b582-8a23a867ccf7"
+                ],
+                "pageIndices": [
+                    2
+                ]
+            },
+            {
+                "id": "80b7cbeb-0ebe-4874-9f19-2995daebee94",
+                "title": "セル間バスバ レーザ溶接 製造要件",
+                "level": 1,
+                "sectionType": "general",
+                "pageId": "8fc8f235-6596-411c-92a1-4b48784af40e",
+                "startLine": 1,
+                "endLine": 0,
+                "children": [
+                    {
+                        "id": "ac1274d0-23d1-4be9-b3af-9e76fb50c0d5",
+                        "title": "1. 目的・適用範囲",
+                        "level": 2,
+                        "sectionType": "scope",
+                        "pageId": "8fc8f235-6596-411c-92a1-4b48784af40e",
+                        "startLine": 1,
+                        "endLine": 0,
+                        "children": [],
+                        "linkedElementIds": [],
+                        "pageIndex": 3,
+                        "pageIds": [
+                            "8fc8f235-6596-411c-92a1-4b48784af40e"
+                        ],
+                        "pageIndices": [
+                            3
+                        ]
+                    },
+                    {
+                        "id": "49b747b6-ad3e-4a5d-8b65-70f1160c0578",
+                        "title": "2. 要件サマリ（位置に関する3要件）",
+                        "level": 2,
+                        "sectionType": "requirement",
+                        "pageId": "8fc8f235-6596-411c-92a1-4b48784af40e",
+                        "startLine": 1,
+                        "endLine": 0,
+                        "children": [],
+                        "linkedElementIds": [],
+                        "pageIndex": 3,
+                        "pageIds": [
+                            "8fc8f235-6596-411c-92a1-4b48784af40e"
+                        ],
+                        "pageIndices": [
+                            3
+                        ]
+                    },
+                    {
+                        "id": "b325c778-9864-40b2-8198-22f7f6fe3fa9",
+                        "title": "3. 位置ばらつきの事前見積り",
+                        "level": 2,
+                        "sectionType": "specification",
+                        "pageId": "8fc8f235-6596-411c-92a1-4b48784af40e",
+                        "startLine": 1,
+                        "endLine": 0,
+                        "children": [
+                            {
+                                "id": "c1380323-a1c5-489b-a57d-c309a772517f",
+                                "title": "3.1 位置の連鎖（考え方）",
+                                "level": 3,
+                                "sectionType": "general",
+                                "pageId": "8fc8f235-6596-411c-92a1-4b48784af40e",
+                                "startLine": 1,
+                                "endLine": 5,
+                                "children": [],
+                                "linkedElementIds": [],
+                                "pageIndex": 3,
+                                "pageIds": [
+                                    "8fc8f235-6596-411c-92a1-4b48784af40e"
+                                ],
+                                "pageIndices": [
+                                    3
+                                ]
+                            },
+                            {
+                                "id": "848b0850-fc4d-4da7-88cb-e7dff6da84b5",
+                                "title": "3.2 ばらつき要因の表（記入先）",
+                                "level": 3,
+                                "sectionType": "specification",
+                                "pageId": "8fc8f235-6596-411c-92a1-4b48784af40e",
+                                "startLine": 6,
+                                "endLine": 5,
+                                "children": [],
+                                "linkedElementIds": [],
+                                "pageIndex": 3,
+                                "pageIds": [
+                                    "8fc8f235-6596-411c-92a1-4b48784af40e"
+                                ],
+                                "pageIndices": [
+                                    3
+                                ]
+                            },
+                            {
+                                "id": "c156282a-fe05-424c-915c-4aa920b824d2",
+                                "title": "3.3 見積り方法と判定（案）",
+                                "level": 3,
+                                "sectionType": "procedure",
+                                "pageId": "8fc8f235-6596-411c-92a1-4b48784af40e",
+                                "startLine": 6,
+                                "endLine": 5,
+                                "children": [],
+                                "linkedElementIds": [],
+                                "pageIndex": 3,
+                                "pageIds": [
+                                    "8fc8f235-6596-411c-92a1-4b48784af40e"
+                                ],
+                                "pageIndices": [
+                                    3
+                                ]
+                            }
+                        ],
+                        "linkedElementIds": [],
+                        "pageIndex": 3,
+                        "pageIds": [
+                            "8fc8f235-6596-411c-92a1-4b48784af40e"
+                        ],
+                        "pageIndices": [
+                            3
+                        ]
+                    },
+                    {
+                        "id": "a6b7e636-033d-4133-989f-c52744a60c15",
+                        "title": "4. マスク治具の位置要件（R3）",
+                        "level": 2,
+                        "sectionType": "requirement",
+                        "pageId": "8fc8f235-6596-411c-92a1-4b48784af40e",
+                        "startLine": 6,
+                        "endLine": 5,
+                        "children": [],
+                        "linkedElementIds": [],
+                        "pageIndex": 3,
+                        "pageIds": [
+                            "8fc8f235-6596-411c-92a1-4b48784af40e"
+                        ],
+                        "pageIndices": [
+                            3
+                        ]
+                    },
+                    {
+                        "id": "2a60308f-a4da-44a4-8f8c-c9a590fd19ec",
+                        "title": "5. 溶接条件・隙間・部品精度",
+                        "level": 2,
+                        "sectionType": "specification",
+                        "pageId": "8fc8f235-6596-411c-92a1-4b48784af40e",
+                        "startLine": 6,
+                        "endLine": 5,
+                        "children": [
+                            {
+                                "id": "beddd825-627c-4be6-876b-3b6ae888fa48",
+                                "title": "5.1 溶接条件（380D溶接仕様）",
+                                "level": 3,
+                                "sectionType": "specification",
+                                "pageId": "8fc8f235-6596-411c-92a1-4b48784af40e",
+                                "startLine": 6,
+                                "endLine": 6,
+                                "children": [],
+                                "linkedElementIds": [],
+                                "pageIndex": 3,
+                                "pageIds": [
+                                    "8fc8f235-6596-411c-92a1-4b48784af40e"
+                                ],
+                                "pageIndices": [
+                                    3
+                                ]
+                            }
+                        ],
+                        "linkedElementIds": [],
+                        "pageIndex": 3,
+                        "pageIds": [
+                            "8fc8f235-6596-411c-92a1-4b48784af40e"
+                        ],
+                        "pageIndices": [
+                            3
+                        ]
+                    }
+                ],
+                "linkedElementIds": [],
+                "pageIndex": 3,
+                "pageIds": [
+                    "8fc8f235-6596-411c-92a1-4b48784af40e"
+                ],
+                "pageIndices": [
+                    3
+                ]
             }
         ],
-        "updatedAt": 1790898205822,
+        "updatedAt": 1792118351252,
         "isComplete": true
     },
     "headingRules": {

@@ -6,12 +6,20 @@
             "parent_id": "",
             "icon_key": "DescriptionOutlined",
             "icon_color": null
+        },
+        {
+            "id": "f0d34f59-afc5-493e-b470-6ea9f849ea8e",
+            "name": "BBM要求仕様書_241209改訂",
+            "parent_id": "",
+            "icon_key": "DescriptionOutlined",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [
-        "d8c73197-d3f0-4aa3-a326-66056bd53c63"
+        "d8c73197-d3f0-4aa3-a326-66056bd53c63",
+        "f0d34f59-afc5-493e-b470-6ea9f849ea8e"
     ],
-    "current_view_id": "d8c73197-d3f0-4aa3-a326-66056bd53c63",
+    "current_view_id": "f0d34f59-afc5-493e-b470-6ea9f849ea8e",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,
