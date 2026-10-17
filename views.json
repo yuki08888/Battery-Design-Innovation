@@ -13,13 +13,17 @@
             "parent_id": "",
             "icon_key": "DescriptionOutlined",
             "icon_color": null
+        },
+        {
+            "id": "1fcb0dc4-e491-44ef-ab82-2bc832fc467a",
+            "name": "電池パックASSY - 内部ブロック図",
+            "parent_id": "54530f3c-1f57-4d43-877e-3e62190dd63a",
+            "icon_key": "DashboardOutlined",
+            "icon_color": null
         }
     ],
-    "current_tab_ids": [
-        "d8c73197-d3f0-4aa3-a326-66056bd53c63",
-        "f0d34f59-afc5-493e-b470-6ea9f849ea8e"
-    ],
-    "current_view_id": "f0d34f59-afc5-493e-b470-6ea9f849ea8e",
+    "current_tab_ids": [],
+    "current_view_id": null,
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,
