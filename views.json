@@ -22,8 +22,10 @@
             "icon_color": null
         }
     ],
-    "current_tab_ids": [],
-    "current_view_id": null,
+    "current_tab_ids": [
+        "1fcb0dc4-e491-44ef-ab82-2bc832fc467a"
+    ],
+    "current_view_id": "1fcb0dc4-e491-44ef-ab82-2bc832fc467a",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,
