@@ -192,8 +192,8 @@
                 },
                 {
                     "element_id": "cdb165dd-77e2-463a-aea2-51388befbb01",
-                    "x": 98,
-                    "y": 212,
+                    "x": 85.62278932646265,
+                    "y": 211,
                     "placement": "port"
                 }
             ]
@@ -1491,9 +1491,9 @@
             "routing": "bezier"
         }
     ],
-    "scale": 0.5311110693083867,
-    "offset_x": 15.82071654010872,
-    "offset_y": -2.624780288882363,
+    "scale": 0.6311110693083868,
+    "offset_x": -2.7978787621352694,
+    "offset_y": 58.13727649410771,
     "relationship_type": "containment",
     "visible_relation_types": [
         "containment",
