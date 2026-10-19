@@ -38,7 +38,7 @@
         {
             "id": "8fc8f235-6596-411c-92a1-4b48784af40e",
             "title": "セル間バスバ レーザ溶接 製造要件",
-            "content": "<hr />\n<p>title: セル間バスバ レーザ溶接 製造要件<br />\ntags: [バスバ, セル間バスバ, レーザ溶接, 製造要件, マスク治具, 基準穴, 位置ばらつき, BBM]<br />\ncreated: 2026-10-02<br />\nstatus: 骨子（0.1版）／数値・ばらつき要因の多くは未記入<br />\nsource:<br />\n  - バスバー隙間余裕度 設計標準（CAE）<br />\n  - BBM要求仕様書_241209改訂<br />\n  - 2BV バスバ溶接疲労安全率 要件<br />\n  - バスバ進捗_2026-09-30<br />\n  - 05_Journal/2026-07-23.md<br />\n  - 05_Journal/2026-07-20.md<br />\nscope: セル端子とセル間バスバのレーザ溶接（他の溶接方式は対象外）。設計・工程検討用。</p>\n<hr />\n<h1>セル間バスバ レーザ溶接 製造要件</h1>\n<blockquote>\n<p><strong>状態：骨子。</strong> 位置の3要件は依頼者の指定による。資料に記載のない数値は推定で埋めない。<br />\n記号の意味：【確認済】＝Vault内の資料に記載あり／【指定】＝依頼者の指定／【暫定】＝案で要確認／【未記入】＝情報待ち。</p>\n</blockquote>\n<h2>1. 目的・適用範囲</h2>\n<ul>\n<li>目的：セル端子とセル間バスバのレーザ溶接について、設計・工程検討で満たすべき製造要件を一か所にそろえる。</li>\n<li>対象：セル間バスバとセル端子のレーザ溶接。他の溶接方式（超音波、抵抗、ワイヤボンド）は対象外。</li>\n<li>車種：共通要件として書く。車種固有の値が分かれば区別して追記する。【暫定】</li>\n<li>対象外：疲労・発熱の判定（[[バスバー設計手順（強度・熱）]]）と、CAEによる隙間評価の手順（[[バスバー隙間余裕度 設計標準（CAE）]]）。本ノートからは参照のみ行う。</li>\n</ul>\n<h2>2. 要件サマリ（位置に関する3要件）</h2>\n<table>\n<thead>\n<tr>\n<th>No.</th>\n<th>要件</th>\n<th>状態</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>R1</td>\n<td>溶接の位置基準は、<strong>バスバの基準穴</strong>とする（現状）。基準穴は<strong>1溶接に1つ</strong></td>\n<td>【指定】</td>\n</tr>\n<tr>\n<td>R2</td>\n<td>R1の基準で溶接したとき、<strong>溶接がセル端子から外れない</strong>こと（ばらつきを見込み、余裕代1mm程度を確保）</td>\n<td>【指定】</td>\n</tr>\n<tr>\n<td>R3</td>\n<td>押し当て治具である<strong>マスク治具が、セル端子上にあり、かつバスバ上にある</strong>こと（ばらつきを見込み、余裕代1mm程度を確保）</td>\n<td>【指定】</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>背景：セル間バスバとセル端子の相対位置がばらつく。基準穴を基準にすると、ばらつき分だけ溶接位置が端子に対して動く。【指定】</li>\n<li>このため、<strong>事前に相対位置ばらつきを見積り、R2とR3を満たすことを確認する</strong>。確認は設計段階で行う。【指定】</li>\n<li>隙間（§5）、治具・設備（§6）、検査（§7）はR1〜R3と並ぶ製造要件として、後段で整理する。</li>\n</ul>\n<h2>3. 位置ばらつきの事前見積り</h2>\n<h3>3.1 位置の連鎖（考え方）</h3>\n<pre><code>バスバ基準穴（1溶接に1つ）──(基準穴〜溶接位置の寸法)──&gt; 溶接位置\n      │\n      └─ 基準穴の位置 ←→ セル端子の位置\n            ・BBM側：バスバ位置のばらつき\n            ・セル側：セル位置のばらつき\n</code></pre>\n<ul>\n<li>基準穴は<strong>1溶接（1つの溶接部）につき1つ</strong>。基準穴と副基準穴の組ではない。【指定】</li>\n<li>相対位置のばらつきは、<strong>セル位置ばらつき</strong>と<strong>BBM側のバスバ位置によるばらつき</strong>の2系統。【指定】</li>\n<li>\n<p>基準穴が1つなので、1溶接の範囲ではバスバの回転（基準穴まわり）は拘束されない。回転の扱いは§3.3で確認する。【暫定】</p>\n</li>\n<li>\n<p>基準穴を基準ピンで位置決めし、BBMをセル上に配置してレーザ溶接する、という作業手順が住友のデモで確認されている。【確認済】<code>05_Journal/2026-07-20.md</code>（シートタイプの組み付け）</p>\n</li>\n<li>380D溶接仕様の原典には、溶接軌跡、隙間測定方法、<strong>溶接位置補正ロジック</strong>、マスク治具構造、位置決め方法が含まれる。PDFの内容は未照合。【確認済（項目名のみ）】<code>05_Journal/2026-07-23.md</code></li>\n</ul>\n<h3>3.2 ばらつき要因の表（記入先）</h3>\n<p>主な2系統（依頼者の指定）：</p>\n<table>\n<thead>\n<tr>\n<th>系統</th>\n<th>要因</th>\n<th>値</th>\n<th>状態</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>セル側</td>\n<td>セル位置ばらつき（セル端子の位置。面内2方向）</td>\n<td>―</td>\n<td>【指定】要因／値は【未記入】</td>\n</tr>\n<tr>\n<td>BBM側</td>\n<td>BBM側のバスバ位置によるばらつき（基準穴位置、基準穴〜溶接位置の寸法、位置決めのガタ、BBM内の保持位置など）</td>\n<td>―</td>\n<td>【指定】要因／値・内訳は【未記入】</td>\n</tr>\n</tbody>\n</table>\n<p>内訳の候補（2系統の中身。採否は要確認）：</p>\n<table>\n<thead>\n<tr>\n<th>候補</th>\n<th>属する系統</th>\n<th>状態</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>セル厚み・セルピッチの公差の積み上がり</td>\n<td>セル側</td>\n<td>【暫定】</td>\n</tr>\n<tr>\n<td>セル端子の位置公差、端子寸法（幅・長さ）の公差</td>\n<td>セル側</td>\n<td>【暫定】</td>\n</tr>\n<tr>\n<td>基準穴の位置公差、基準穴〜溶接位置の寸法公差</td>\n<td>BBM側</td>\n<td>【暫定】</td>\n</tr>\n<tr>\n<td>基準穴と基準ピンの嵌合すきま、搭載治具でのBBM配置のばらつき</td>\n<td>BBM側</td>\n<td>【暫定】</td>\n</tr>\n<tr>\n<td>溶接位置補正ロジックで吸収できる量</td>\n<td>補正</td>\n<td>【未記入】原典PDF（§9）の照合待ち</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>溶接形状の拡大は、現状のばらつきから余裕が小さいという整理がある。セル厚み公差の意図は、関係先（NK・住友）へ再確認する方針。【確認済】2026-09-15 の住友BBM KI の内容（<code>05_Journal/weekly/archive/legacy/2026-W38_2026-09-16-22.md</code>）</li>\n</ul>\n<h3>3.3 見積り方法と判定（案）</h3>\n<ol>\n<li>セル側とBBM側の2系統について、面内の2方向（セル並び方向と、それに直交する方向）のばらつきを整理する。</li>\n<li>2系統を合成し、基準穴基準での<strong>溶接位置の端子に対するずれの最大値</strong>を求める。合成の方法（最悪ケースか統計的合成か）は決める必要がある。【未記入】</li>\n<li>溶接の全長（溶接軌跡の端から端まで）が端子の外形の内側に入るかを確認する。<br />\n   - 判定（R2）：<strong>ばらつきを見込んだうえで、溶接端から端子端まで、余裕代1mm程度を確保する</strong>。すなわち「ずれの最大値 ≦ 端子端から溶接端までの名目距離 − 余裕代」。【指定】余裕代は1mm程度（「程度」のため、確定値かは要確認）</li>\n<li>基準穴は1溶接に1つなので、基準穴まわりの回転ずれが溶接軌跡の端でどれだけ効くかを確認する。溶接軌跡の基準穴から遠い端で判定する。【暫定】</li>\n<li>条件を満たさないときは、基準穴の位置、溶接軌跡、端子形状、位置決め方法、公差のいずれかを見直して再計算する。</li>\n</ol>\n<p>記録する項目（案）：対象バスバ、機種、形状データの版、ばらつき要因と値、合成方法、方向別のずれの最大値、端子端から溶接端までの余白、判定（合格／不合格）、最小余白とその条件、実施者・日付。</p>\n<h2>4. マスク治具の位置要件（R3）</h2>\n<ul>\n<li>要件：マスク治具が、<strong>セル端子上</strong>と<strong>バスバ上</strong>の両方に乗ること。【指定】</li>\n<li>意味：マスク治具は溶接時にバスバを端子へ押し当てて隙間を抑える治具。両方に乗らないと押し当てが成立しない。【暫定】</li>\n<li>確認方法：§3の位置ばらつき見積りの結果を使い、マスク治具の接触範囲が、セル端子とバスバのそれぞれの外形の内側に入ることを確認する。【暫定】</li>\n<li>判定：<strong>ばらつきを見込んだうえで、マスク治具の接触範囲の端から、端子の端およびバスバの端まで、それぞれ余裕代1mm程度を確保する</strong>。すなわち「ずれの最大値 ≦ 接触範囲の端から端子端（バスバ端）までの名目距離 − 余裕代」を、端子側・バスバ側の両方で満たす。【指定】余裕代はR2と同じ1mm程度（「程度」のため確定値かは要確認）</li>\n<li>マスク治具の接触範囲・侵入範囲は計画図を参照する。計画図の参照先は未記入。【未記入】</li>\n<li>隙間との関係：押し当て時の許容隙間は §5。R3が成立しない場合は、隙間の評価（CAE）の前提が崩れる。【暫定】</li>\n</ul>\n<h2>5. 溶接条件・隙間・部品精度</h2>\n<h3>5.1 溶接条件（380D溶接仕様）</h3>\n<table>\n<thead>\n<tr>\n<th>項目</th>\n<th>値</th>\n<th>状態</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>レーザ出力</td>\n<td>1220±50W</td>\n<td>【確認済】<code>05_Journal/2026-07-23.md</code>。原典はPDF（未照合）</td>\n</tr>\n<tr>\n<td>走査速度</td>\n<td>400mm/sec</td>\n<td>【確認済】同上</td>\n</tr>\n<tr>\n<td>焦点深度</td>\n<td>±1.5mm</td>\n<td>【確認済】同上</td>\n</tr>\n<tr>\n<td>端子間隙間</td>\n<td>0.20mm以下</td>\n<td>【確認済】同上</td>\n</tr>\n<tr>\n<td>溶接長さ・溶接幅・溶け込み深さ</td>\n<td>―</td>\n<td>【未記入】溶接長さ・幅は DR 資料に項目あり（未照合）</td>\n</tr>\n</tbody>\n</table>\n<ul>\n<li>上の値は380Dモ</li>\n</ul>",
+            "content": "<hr><p><strong>title: セル間バスバ レーザ溶接 製造要件<br>tags: [バスバ, セル間バスバ, レーザ溶接, 製造要件, マスク治具, 基準穴, 位置ばらつき, BBM]<br>created: 2026-10-02<br>status: 骨子（0.1版）／数値・ばらつき要因の多くは未記入<br>source:<br>- バスバー隙間余裕度 設計標準（CAE）<br>- BBM要求仕様書_241209</strong>改訂<br>- 2BV バスバ溶接疲労安全率 要件<br>- バスバ進捗_2026-09-30<br>- 05_Journal/2026-07-23.md<br>- 05_Journal/2026-07-20.md<br>scope: セル端子とセル間バスバのレーザ溶接（他の溶接方式は対象外）。設計・工程検討用。</p><hr><h1>セル間バスバ レーザ溶接 製造要件</h1><blockquote><p><strong>状態：骨子。</strong> 位置の3要件は依頼者の指定による。資料に記載のない数値は推定で埋めない。<br>記号の意味：【確認済】＝Vault内の資料に記載あり／【指定】＝依頼者の指定／【暫定】＝案で要確認／【未記入】＝情報待ち。</p></blockquote><h2>1. 目的・適用範囲</h2><ul><li><p>目的：セル端子とセル間バスバのレーザ溶接について、設計・工程検討で満たすべき製造要件を一か所にそろえる。</p></li><li><p>対象：セル間バスバとセル端子のレーザ溶接。他の溶接方式（超音波、抵抗、ワイヤボンド）は対象外。</p></li><li><p>車種：共通要件として書く。車種固有の値が分かれば区別して追記する。【暫定】</p></li><li><p>対象外：疲労・発熱の判定（[[バスバー設計手順（強度・熱）]]）と、CAEによる隙間評価の手順（[[バスバー隙間余裕度 設計標準（CAE）]]）。本ノートからは参照のみ行う。</p></li></ul><h2>2. 要件サマリ（位置に関する3要件）</h2><table class=\"document-table\" style=\"min-width: 75px;\"><colgroup><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"></colgroup><tbody><tr><th colspan=\"1\" rowspan=\"1\"><p>No.</p></th><th colspan=\"1\" rowspan=\"1\"><p>要件</p></th><th colspan=\"1\" rowspan=\"1\"><p>状態</p></th></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>R1</p></td><td colspan=\"1\" rowspan=\"1\"><p>溶接の位置基準は、<strong>バスバの基準穴</strong>とする（現状）。基準穴は<strong>1溶接に1つ</strong></p></td><td colspan=\"1\" rowspan=\"1\"><p>【指定】</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>R2</p></td><td colspan=\"1\" rowspan=\"1\"><p>R1の基準で溶接したとき、<strong>溶接がセル端子から外れない</strong>こと（ばらつきを見込み、余裕代1mm程度を確保）</p></td><td colspan=\"1\" rowspan=\"1\"><p>【指定】</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>R3</p></td><td colspan=\"1\" rowspan=\"1\"><p>押し当て治具である<strong>マスク治具が、セル端子上にあり、かつバスバ上にある</strong>こと（ばらつきを見込み、余裕代1mm程度を確保）</p></td><td colspan=\"1\" rowspan=\"1\"><p>【指定】</p></td></tr></tbody></table><ul><li><p>背景：セル間バスバとセル端子の相対位置がばらつく。基準穴を基準にすると、ばらつき分だけ溶接位置が端子に対して動く。【指定】</p></li><li><p>このため、<strong>事前に相対位置ばらつきを見積り、R2とR3を満たすことを確認する</strong>。確認は設計段階で行う。【指定】</p></li><li><p>隙間（§5）、治具・設備（§6）、検査（§7）はR1〜R3と並ぶ製造要件として、後段で整理する。</p></li></ul><h2>3. 位置ばらつきの事前見積り</h2><h3>3.1 位置の連鎖（考え方）</h3><pre class=\"document-code-block\"><code>バスバ基準穴（1溶接に1つ）──(基準穴〜溶接位置の寸法)──&gt; 溶接位置\n      │\n      └─ 基準穴の位置 ←→ セル端子の位置\n            ・BBM側：バスバ位置のばらつき\n            ・セル側：セル位置のばらつき\n</code></pre><ul><li><p>基準穴は<strong>1溶接（1つの溶接部）につき1つ</strong>。基準穴と副基準穴の組ではない。【指定】</p></li><li><p>相対位置のばらつきは、<strong>セル位置ばらつき</strong>と<strong>BBM側のバスバ位置によるばらつき</strong>の2系統。【指定】</p></li><li><p>基準穴が1つなので、1溶接の範囲ではバスバの回転（基準穴まわり）は拘束されない。回転の扱いは§3.3で確認する。【暫定】</p></li><li><p>基準穴を基準ピンで位置決めし、BBMをセル上に配置してレーザ溶接する、という作業手順が住友のデモで確認されている。【確認済】<code>05_Journal/2026-07-20.md</code>（シートタイプの組み付け）</p></li><li><p>380D溶接仕様の原典には、溶接軌跡、隙間測定方法、<strong>溶接位置補正ロジック</strong>、マスク治具構造、位置決め方法が含まれる。PDFの内容は未照合。【確認済（項目名のみ）】<code>05_Journal/2026-07-23.md</code></p></li></ul><h3>3.2 ばらつき要因の表（記入先）</h3><p>主な2系統（依頼者の指定）：</p><table class=\"document-table\" style=\"min-width: 100px;\"><colgroup><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"></colgroup><tbody><tr><th colspan=\"1\" rowspan=\"1\"><p>系統</p></th><th colspan=\"1\" rowspan=\"1\"><p>要因</p></th><th colspan=\"1\" rowspan=\"1\"><p>値</p></th><th colspan=\"1\" rowspan=\"1\"><p>状態</p></th></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>セル側</p></td><td colspan=\"1\" rowspan=\"1\"><p>セル位置ばらつき（セル端子の位置。面内2方向）</p></td><td colspan=\"1\" rowspan=\"1\"><p>―</p></td><td colspan=\"1\" rowspan=\"1\"><p>【指定】要因／値は【未記入】</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>BBM側</p></td><td colspan=\"1\" rowspan=\"1\"><p>BBM側のバスバ位置によるばらつき（基準穴位置、基準穴〜溶接位置の寸法、位置決めのガタ、BBM内の保持位置など）</p></td><td colspan=\"1\" rowspan=\"1\"><p>―</p></td><td colspan=\"1\" rowspan=\"1\"><p>【指定】要因／値・内訳は【未記入】</p></td></tr></tbody></table><p>内訳の候補（2系統の中身。採否は要確認）：</p><table class=\"document-table\" style=\"min-width: 75px;\"><colgroup><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"></colgroup><tbody><tr><th colspan=\"1\" rowspan=\"1\"><p>候補</p></th><th colspan=\"1\" rowspan=\"1\"><p>属する系統</p></th><th colspan=\"1\" rowspan=\"1\"><p>状態</p></th></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>セル厚み・セルピッチの公差の積み上がり</p></td><td colspan=\"1\" rowspan=\"1\"><p>セル側</p></td><td colspan=\"1\" rowspan=\"1\"><p>【暫定】</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>セル端子の位置公差、端子寸法（幅・長さ）の公差</p></td><td colspan=\"1\" rowspan=\"1\"><p>セル側</p></td><td colspan=\"1\" rowspan=\"1\"><p>【暫定】</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>基準穴の位置公差、基準穴〜溶接位置の寸法公差</p></td><td colspan=\"1\" rowspan=\"1\"><p>BBM側</p></td><td colspan=\"1\" rowspan=\"1\"><p>【暫定】</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>基準穴と基準ピンの嵌合すきま、搭載治具でのBBM配置のばらつき</p></td><td colspan=\"1\" rowspan=\"1\"><p>BBM側</p></td><td colspan=\"1\" rowspan=\"1\"><p>【暫定】</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>溶接位置補正ロジックで吸収できる量</p></td><td colspan=\"1\" rowspan=\"1\"><p>補正</p></td><td colspan=\"1\" rowspan=\"1\"><p>【未記入】原典PDF（§9）の照合待ち</p></td></tr></tbody></table><ul><li><p>溶接形状の拡大は、現状のばらつきから余裕が小さいという整理がある。セル厚み公差の意図は、関係先（NK・住友）へ再確認する方針。【確認済】2026-09-15 の住友BBM KI の内容（<code>05_Journal/weekly/archive/legacy/2026-W38_2026-09-16-22.md</code>）</p></li></ul><h3>3.3 見積り方法と判定（案）</h3><ol><li><p>セル側とBBM側の2系統について、面内の2方向（セル並び方向と、それに直交する方向）のばらつきを整理する。</p></li><li><p>2系統を合成し、基準穴基準での<strong>溶接位置の端子に対するずれの最大値</strong>を求める。合成の方法（最悪ケースか統計的合成か）は決める必要がある。【未記入】</p></li><li><p>溶接の全長（溶接軌跡の端から端まで）が端子の外形の内側に入るかを確認する。<br>- 判定（R2）：<strong>ばらつきを見込んだうえで、溶接端から端子端まで、余裕代1mm程度を確保する</strong>。すなわち「ずれの最大値 ≦ 端子端から溶接端までの名目距離 − 余裕代」。【指定】余裕代は1mm程度（「程度」のため、確定値かは要確認）</p></li><li><p>基準穴は1溶接に1つなので、基準穴まわりの回転ずれが溶接軌跡の端でどれだけ効くかを確認する。溶接軌跡の基準穴から遠い端で判定する。【暫定】</p></li><li><p>条件を満たさないときは、基準穴の位置、溶接軌跡、端子形状、位置決め方法、公差のいずれかを見直して再計算する。</p></li></ol><p>記録する項目（案）：対象バスバ、機種、形状データの版、ばらつき要因と値、合成方法、方向別のずれの最大値、端子端から溶接端までの余白、判定（合格／不合格）、最小余白とその条件、実施者・日付。</p><h2>4. マスク治具の位置要件（R3）</h2><ul><li><p>要件：マスク治具が、<strong>セル端子上</strong>と<strong>バスバ上</strong>の両方に乗ること。【指定】</p></li><li><p>意味：マスク治具は溶接時にバスバを端子へ押し当てて隙間を抑える治具。両方に乗らないと押し当てが成立しない。【暫定】</p></li><li><p>確認方法：§3の位置ばらつき見積りの結果を使い、マスク治具の接触範囲が、セル端子とバスバのそれぞれの外形の内側に入ることを確認する。【暫定】</p></li><li><p>判定：<strong>ばらつきを見込んだうえで、マスク治具の接触範囲の端から、端子の端およびバスバの端まで、それぞれ余裕代1mm程度を確保する</strong>。すなわち「ずれの最大値 ≦ 接触範囲の端から端子端（バスバ端）までの名目距離 − 余裕代」を、端子側・バスバ側の両方で満たす。【指定】余裕代はR2と同じ1mm程度（「程度」のため確定値かは要確認）</p></li><li><p>マスク治具の接触範囲・侵入範囲は計画図を参照する。計画図の参照先は未記入。【未記入】</p></li><li><p>隙間との関係：押し当て時の許容隙間は §5。R3が成立しない場合は、隙間の評価（CAE）の前提が崩れる。【暫定】</p></li></ul><h2>5. 溶接条件・隙間・部品精度</h2><h3>5.1 溶接条件（380D溶接仕様）</h3><table class=\"document-table\" style=\"min-width: 75px;\"><colgroup><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"></colgroup><tbody><tr><th colspan=\"1\" rowspan=\"1\"><p>項目</p></th><th colspan=\"1\" rowspan=\"1\"><p>値</p></th><th colspan=\"1\" rowspan=\"1\"><p>状態</p></th></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>レーザ出力</p></td><td colspan=\"1\" rowspan=\"1\"><p>1220±50W</p></td><td colspan=\"1\" rowspan=\"1\"><p>【確認済】<code>05_Journal/2026-07-23.md</code>。原典はPDF（未照合）</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>走査速度</p></td><td colspan=\"1\" rowspan=\"1\"><p>400mm/sec</p></td><td colspan=\"1\" rowspan=\"1\"><p>【確認済】同上</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>焦点深度</p></td><td colspan=\"1\" rowspan=\"1\"><p>±1.5mm</p></td><td colspan=\"1\" rowspan=\"1\"><p>【確認済】同上</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>端子間隙間（隙間余裕度）</p></td><td colspan=\"1\" rowspan=\"1\"><p>0.15mm以下</p></td><td colspan=\"1\" rowspan=\"1\"><p>【確認済】同上</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>溶接長さ・溶接幅・溶け込み深さ</p></td><td colspan=\"1\" rowspan=\"1\"><p>―</p></td><td colspan=\"1\" rowspan=\"1\"><p>【未記入】溶接長さ・幅は DR 資料に項目あり（未照合）</p></td></tr></tbody></table><p></p><p>・バスバの剛性変化により端子とセル間の隙間値が変わる可能性あるため、</p><p>　バスバ形状変更するとCAE解析が必要</p><p>・隙間余裕度は溶接する板厚による変動する</p><p>・バスバ厚みが熱くなると、セルへの入熱が増える可能性があるため検証が必要</p><p></p>",
             "references": [],
             "sourceImagePath": null,
             "thumbnailPath": null,
@@ -50,7 +50,7 @@
     "references": [],
     "sourceFilePath": null,
     "createdAt": "2026-09-19T03:53:34.354Z",
-    "updatedAt": "2026-10-02T09:45:59.176117",
+    "updatedAt": "2026-10-16T12:52:22.604833",
     "skeleton": {
         "documentId": "2bbc8b71-e60f-401f-be02-1e1d0ecba96a",
         "roots": [
@@ -144,9 +144,338 @@
                 "pageIndices": [
                     0
                 ]
+            },
+            {
+                "id": "00fa94bb-5e5d-4bb0-9266-27b2771f88ed",
+                "title": "バスバー隙間余裕度 設計標準（CAE）",
+                "level": 1,
+                "sectionType": "introduction",
+                "pageId": "388715cf-2ad0-4c43-b582-8a23a867ccf7",
+                "startLine": 8,
+                "endLine": 14,
+                "children": [
+                    {
+                        "id": "dfd63373-54a9-4277-8c56-760a798c423a",
+                        "title": "1. 目的・適用範囲",
+                        "level": 2,
+                        "sectionType": "scope",
+                        "pageId": "388715cf-2ad0-4c43-b582-8a23a867ccf7",
+                        "startLine": 15,
+                        "endLine": 21,
+                        "children": [],
+                        "linkedElementIds": [],
+                        "pageIndex": 2,
+                        "pageIds": [
+                            "388715cf-2ad0-4c43-b582-8a23a867ccf7"
+                        ],
+                        "pageIndices": [
+                            2
+                        ]
+                    },
+                    {
+                        "id": "05ad6c12-2d05-4803-b2a7-8f3336580bf2",
+                        "title": "2. 用語・定義",
+                        "level": 2,
+                        "sectionType": "definition",
+                        "pageId": "388715cf-2ad0-4c43-b582-8a23a867ccf7",
+                        "startLine": 22,
+                        "endLine": 68,
+                        "children": [],
+                        "linkedElementIds": [],
+                        "pageIndex": 2,
+                        "pageIds": [
+                            "388715cf-2ad0-4c43-b582-8a23a867ccf7"
+                        ],
+                        "pageIndices": [
+                            2
+                        ]
+                    },
+                    {
+                        "id": "1744b285-1ca0-41c8-92be-18c5652898fc",
+                        "title": "3. 判定基準",
+                        "level": 2,
+                        "sectionType": "requirement",
+                        "pageId": "388715cf-2ad0-4c43-b582-8a23a867ccf7",
+                        "startLine": 69,
+                        "endLine": 127,
+                        "children": [],
+                        "linkedElementIds": [],
+                        "pageIndex": 2,
+                        "pageIds": [
+                            "388715cf-2ad0-4c43-b582-8a23a867ccf7"
+                        ],
+                        "pageIndices": [
+                            2
+                        ]
+                    },
+                    {
+                        "id": "ba4e726d-0872-416b-9bd8-47ed5c47fd28",
+                        "title": "4. CAE入力条件",
+                        "level": 2,
+                        "sectionType": "specification",
+                        "pageId": "388715cf-2ad0-4c43-b582-8a23a867ccf7",
+                        "startLine": 128,
+                        "endLine": 189,
+                        "children": [
+                            {
+                                "id": "cb39cfcc-6c0a-441d-9a2d-30b1c8d1ec6a",
+                                "title": "4.1 変動因子（評価条件の軸）",
+                                "level": 3,
+                                "sectionType": "specification",
+                                "pageId": "388715cf-2ad0-4c43-b582-8a23a867ccf7",
+                                "startLine": 190,
+                                "endLine": 222,
+                                "children": [],
+                                "linkedElementIds": [],
+                                "pageIndex": 2,
+                                "pageIds": [
+                                    "388715cf-2ad0-4c43-b582-8a23a867ccf7"
+                                ],
+                                "pageIndices": [
+                                    2
+                                ]
+                            }
+                        ],
+                        "linkedElementIds": [],
+                        "pageIndex": 2,
+                        "pageIds": [
+                            "388715cf-2ad0-4c43-b582-8a23a867ccf7"
+                        ],
+                        "pageIndices": [
+                            2
+                        ]
+                    },
+                    {
+                        "id": "31371503-0742-41b4-8a2a-597026f12283",
+                        "title": "5. CAE手順",
+                        "level": 2,
+                        "sectionType": "procedure",
+                        "pageId": "388715cf-2ad0-4c43-b582-8a23a867ccf7",
+                        "startLine": 223,
+                        "endLine": 260,
+                        "children": [],
+                        "linkedElementIds": [],
+                        "pageIndex": 2,
+                        "pageIds": [
+                            "388715cf-2ad0-4c43-b582-8a23a867ccf7"
+                        ],
+                        "pageIndices": [
+                            2
+                        ]
+                    },
+                    {
+                        "id": "cc7d4ff4-ed44-4626-b27a-edafb1ff6b14",
+                        "title": "6. 判定フローと記録様式",
+                        "level": 2,
+                        "sectionType": "procedure",
+                        "pageId": "388715cf-2ad0-4c43-b582-8a23a867ccf7",
+                        "startLine": 261,
+                        "endLine": 267,
+                        "children": [],
+                        "linkedElementIds": [],
+                        "pageIndex": 2,
+                        "pageIds": [
+                            "388715cf-2ad0-4c43-b582-8a23a867ccf7"
+                        ],
+                        "pageIndices": [
+                            2
+                        ]
+                    }
+                ],
+                "linkedElementIds": [],
+                "pageIndex": 2,
+                "pageIds": [
+                    "388715cf-2ad0-4c43-b582-8a23a867ccf7"
+                ],
+                "pageIndices": [
+                    2
+                ]
+            },
+            {
+                "id": "80b7cbeb-0ebe-4874-9f19-2995daebee94",
+                "title": "セル間バスバ レーザ溶接 製造要件",
+                "level": 1,
+                "sectionType": "general",
+                "pageId": "8fc8f235-6596-411c-92a1-4b48784af40e",
+                "startLine": 1,
+                "endLine": 0,
+                "children": [
+                    {
+                        "id": "ac1274d0-23d1-4be9-b3af-9e76fb50c0d5",
+                        "title": "1. 目的・適用範囲",
+                        "level": 2,
+                        "sectionType": "scope",
+                        "pageId": "8fc8f235-6596-411c-92a1-4b48784af40e",
+                        "startLine": 1,
+                        "endLine": 0,
+                        "children": [],
+                        "linkedElementIds": [],
+                        "pageIndex": 3,
+                        "pageIds": [
+                            "8fc8f235-6596-411c-92a1-4b48784af40e"
+                        ],
+                        "pageIndices": [
+                            3
+                        ]
+                    },
+                    {
+                        "id": "49b747b6-ad3e-4a5d-8b65-70f1160c0578",
+                        "title": "2. 要件サマリ（位置に関する3要件）",
+                        "level": 2,
+                        "sectionType": "requirement",
+                        "pageId": "8fc8f235-6596-411c-92a1-4b48784af40e",
+                        "startLine": 1,
+                        "endLine": 0,
+                        "children": [],
+                        "linkedElementIds": [],
+                        "pageIndex": 3,
+                        "pageIds": [
+                            "8fc8f235-6596-411c-92a1-4b48784af40e"
+                        ],
+                        "pageIndices": [
+                            3
+                        ]
+                    },
+                    {
+                        "id": "b325c778-9864-40b2-8198-22f7f6fe3fa9",
+                        "title": "3. 位置ばらつきの事前見積り",
+                        "level": 2,
+                        "sectionType": "specification",
+                        "pageId": "8fc8f235-6596-411c-92a1-4b48784af40e",
+                        "startLine": 1,
+                        "endLine": 0,
+                        "children": [
+                            {
+                                "id": "c1380323-a1c5-489b-a57d-c309a772517f",
+                                "title": "3.1 位置の連鎖（考え方）",
+                                "level": 3,
+                                "sectionType": "general",
+                                "pageId": "8fc8f235-6596-411c-92a1-4b48784af40e",
+                                "startLine": 1,
+                                "endLine": 5,
+                                "children": [],
+                                "linkedElementIds": [],
+                                "pageIndex": 3,
+                                "pageIds": [
+                                    "8fc8f235-6596-411c-92a1-4b48784af40e"
+                                ],
+                                "pageIndices": [
+                                    3
+                                ]
+                            },
+                            {
+                                "id": "848b0850-fc4d-4da7-88cb-e7dff6da84b5",
+                                "title": "3.2 ばらつき要因の表（記入先）",
+                                "level": 3,
+                                "sectionType": "specification",
+                                "pageId": "8fc8f235-6596-411c-92a1-4b48784af40e",
+                                "startLine": 6,
+                                "endLine": 5,
+                                "children": [],
+                                "linkedElementIds": [],
+                                "pageIndex": 3,
+                                "pageIds": [
+                                    "8fc8f235-6596-411c-92a1-4b48784af40e"
+                                ],
+                                "pageIndices": [
+                                    3
+                                ]
+                            },
+                            {
+                                "id": "c156282a-fe05-424c-915c-4aa920b824d2",
+                                "title": "3.3 見積り方法と判定（案）",
+                                "level": 3,
+                                "sectionType": "procedure",
+                                "pageId": "8fc8f235-6596-411c-92a1-4b48784af40e",
+                                "startLine": 6,
+                                "endLine": 5,
+                                "children": [],
+                                "linkedElementIds": [],
+                                "pageIndex": 3,
+                                "pageIds": [
+                                    "8fc8f235-6596-411c-92a1-4b48784af40e"
+                                ],
+                                "pageIndices": [
+                                    3
+                                ]
+                            }
+                        ],
+                        "linkedElementIds": [],
+                        "pageIndex": 3,
+                        "pageIds": [
+                            "8fc8f235-6596-411c-92a1-4b48784af40e"
+                        ],
+                        "pageIndices": [
+                            3
+                        ]
+                    },
+                    {
+                        "id": "a6b7e636-033d-4133-989f-c52744a60c15",
+                        "title": "4. マスク治具の位置要件（R3）",
+                        "level": 2,
+                        "sectionType": "requirement",
+                        "pageId": "8fc8f235-6596-411c-92a1-4b48784af40e",
+                        "startLine": 6,
+                        "endLine": 5,
+                        "children": [],
+                        "linkedElementIds": [],
+                        "pageIndex": 3,
+                        "pageIds": [
+                            "8fc8f235-6596-411c-92a1-4b48784af40e"
+                        ],
+                        "pageIndices": [
+                            3
+                        ]
+                    },
+                    {
+                        "id": "2a60308f-a4da-44a4-8f8c-c9a590fd19ec",
+                        "title": "5. 溶接条件・隙間・部品精度",
+                        "level": 2,
+                        "sectionType": "specification",
+                        "pageId": "8fc8f235-6596-411c-92a1-4b48784af40e",
+                        "startLine": 6,
+                        "endLine": 5,
+                        "children": [
+                            {
+                                "id": "beddd825-627c-4be6-876b-3b6ae888fa48",
+                                "title": "5.1 溶接条件（380D溶接仕様）",
+                                "level": 3,
+                                "sectionType": "specification",
+                                "pageId": "8fc8f235-6596-411c-92a1-4b48784af40e",
+                                "startLine": 6,
+                                "endLine": 6,
+                                "children": [],
+                                "linkedElementIds": [],
+                                "pageIndex": 3,
+                                "pageIds": [
+                                    "8fc8f235-6596-411c-92a1-4b48784af40e"
+                                ],
+                                "pageIndices": [
+                                    3
+                                ]
+                            }
+                        ],
+                        "linkedElementIds": [],
+                        "pageIndex": 3,
+                        "pageIds": [
+                            "8fc8f235-6596-411c-92a1-4b48784af40e"
+                        ],
+                        "pageIndices": [
+                            3
+                        ]
+                    }
+                ],
+                "linkedElementIds": [],
+                "pageIndex": 3,
+                "pageIds": [
+                    "8fc8f235-6596-411c-92a1-4b48784af40e"
+                ],
+                "pageIndices": [
+                    3
+                ]
             }
         ],
-        "updatedAt": 1790898205822,
+        "updatedAt": 1792122724166,
         "isComplete": true
     },
     "headingRules": {
@@ -160,75 +489,61 @@
     },
     "digest": {
         "overview": {
-            "summary": "本資料は、バスバーモジュール（BBM）の要求仕様と信頼性評価の概要を定める要求仕様書であり、適用部品、設計前提、構成部品ごとの要求、結線・ピン配列を記載している。後半にはセル間バスバとメインヒューズのマッチング検討計画があり、成立条件の明確化、HEV／BEV使用条件の抽出、CAE・実験による検証、設計標準および設計フローへの反映を段階的に示す。関連する設計検討資料として、バスバ隙間余裕度のCAE設計標準案と、セル間バスバのレーザ溶接製造要件も含み、いずれも未確定条件や確認事項を明示している。",
+            "summary": "本資料は、バスバーモジュール（BBM）の要求仕様を中心に、セル間バスバとメインヒューズのマッチング検討、バスバー隙間余裕度のCAE設計標準案、レーザ溶接の製造要件をまとめている。BBMの設計前提、部品・配線・コネクタの要求、および信頼性評価の項目と試験条件を定める。別途、HEV／BEVの使用条件を踏まえたマッチング成立基準の整理から解析・実験、設計ルール化までのロードマップを示す。隙間評価と溶接要件では、板厚・端子角度などの評価条件や位置ばらつき、治具・溶接条件を扱い、未確定事項や情報待ちも明示している。",
             "documentKind": "requirement_spec",
-            "purpose": "BBMの部品・性能・配線および信頼性評価に関する要求を提示し、あわせてセル間バスバとメインヒューズのマッチング検討を設計プロセスへ反映する方針を整理する。",
-            "scope": "適用部品DEG66-10034～DEG66-10037の設計前提、BBM構成部品要求、結線・コネクタ配列、信頼性評価の概要と、バスバ・ヒューズのマッチング、隙間CAE評価、レーザ溶接製造要件を扱う。提示範囲では一部の評価条件・判定条件・CAE入力値が未記入または確認待ちである。",
+            "purpose": "BBMの設計・製造・信頼性評価に関する要求を示し、セル間バスバのヒューズマッチング、CAEによる隙間評価、およびレーザ溶接要件の検討・標準化に向けた事項を整理する。",
+            "scope": "BBMの設計前提、構成部品、配線、コネクタ、信頼性評価に加え、セル間バスバのマッチングロードマップ、隙間余裕度CAE標準案、レーザ溶接の位置・工程要件を扱う。対象外として、溶接要件では他方式の溶接、疲労・発熱判定およびCAE隙間評価手順を除き、隙間標準では疲労・発熱の判定を除く。",
             "keyTopics": [
-                "BBMの適用範囲と設計前提",
-                "BBM一般および構成部品の要求仕様",
-                "配線・コネクタ結線図とピン配列",
+                "BBMの設計前提・要求仕様",
+                "バスバー、樹脂ケース、配線部品、ヒューズ、サーミスタ、サブWH、コネクタの要求",
+                "結線図・コネクタピン配列",
                 "BBMおよび配線部品の信頼性評価",
-                "セル間バスバとメインヒューズのマッチング検討",
-                "HEV／BEV使用条件の抽出とCAE・実験計画",
-                "設計標準・設計フローへのマッチング結果の反映",
-                "バスバ隙間余裕度のCAE設計標準案",
-                "セル間バスバのレーザ溶接製造要件"
+                "セル間バスバとメインヒューズのマッチング成立条件",
+                "HEV／BEV使用条件に基づく解析・実験・設計標準化ロードマップ",
+                "バスバー隙間余裕度のCAE評価標準案",
+                "セル間バスバのレーザ溶接に関する位置・工程要件"
             ],
             "keyTerms": [
                 {
                     "term": "BBM",
-                    "definition": "バスバーモジュールを指し、本書の要求仕様および評価対象となる部品である。"
-                },
-                {
-                    "term": "TTIM",
-                    "definition": "BBM要求仕様との優先関係が文書冒頭で示される関連仕様である。"
+                    "definition": "バスバーモジュールを指し、本資料の主要な要求仕様対象である。"
                 },
                 {
                     "term": "サブWH",
-                    "definition": "BBM要求仕様の一項目として、配線経路、固定、保護材などが規定されるサブワイヤハーネスである。"
+                    "definition": "BBM要求仕様で配線経路、クランプ、保護材などの要求対象として扱われるサブワイヤハーネスである。"
+                },
+                {
+                    "term": "ヒューズマッチング",
+                    "definition": "セル間バスバとメインヒューズの成立性を評価し、想定条件での保護成立や限界到達順序を確認する検討である。"
                 },
                 {
                     "term": "隙間余裕度",
-                    "definition": "CAE最大隙間と板厚別許容隙間G(t)との差として暫定的に定義される評価指標である。"
-                },
-                {
-                    "term": "G(t)",
-                    "definition": "バスバ板厚ごとに定める方針の許容隙間である。"
+                    "definition": "板厚ごとの許容隙間 G(t) とCAEで得た最大隙間との差として暫定定義される評価値である。"
                 },
                 {
                     "term": "マスク治具",
-                    "definition": "レーザ溶接時にバスバをセル端子へ押し当て、隙間を抑える治具である。"
-                },
-                {
-                    "term": "セル間バスバ・メインヒューズマッチング",
-                    "definition": "セル間バスバとメインヒューズの限界・保護条件を照合し、設計上の成立性を判定する検討である。"
+                    "definition": "レーザ溶接時にバスバを端子へ押し当てる治具で、端子とバスバ双方への接触範囲が要件となる。"
                 },
                 {
                     "term": "サロゲートモデル",
-                    "definition": "過去の解析データを活用し、バスバ設計条件から最高温度などを予測するモデルとして計画されている。"
-                },
-                {
-                    "term": "R1〜R3",
-                    "definition": "レーザ溶接製造要件における位置要件で、基準穴、溶接位置、マスク治具の配置に関する指定を表す。"
+                    "definition": "過去の解析データを用い、バスバ条件などから最高温度を予測するモデルとしてロードマップに位置づけられている。"
                 }
             ],
-            "targetSystem": "BBM（バスバーモジュール）"
+            "targetSystem": "バスバーモジュール（BBM）"
         },
         "outline": [
             {
-                "id": "ce4b19c0-bb2d-4187-8d1a-3c04e3ddef72",
+                "id": "60b0718f-5967-4c0c-8998-fcbc89157cc6",
                 "title": "1. BBM（バスバーモジュール）要求仕様書",
                 "level": 1,
-                "summary": "BBM要求仕様書の文書情報を示す。文書番号EG6H-00QU、外設申No. EG6H-00QTへの添付、発行日2026/05/28、トヨタ自動車株式会社から住友電工株式会社への宛先などが記載され、適用部品はDEG66-10034～DEG66-10037である。TTIMとの優先関係やBBMの定義も示す。",
+                "summary": "文書はバスバーモジュール（BBM）の要求仕様を定める。出典はRSS_EG6H-00QT.pdf（外設申No. EG6H-00QT添付、全15ページ）で、版種は要素技術試作用。文書情報には仕様番号EG6H-00QU、発行日2026/05/28、適用部品番号DEG66-10034～10037などが記載され、TTIMとの不一致時は本仕様書を優先するとしている。",
                 "keywords": [
                     "BBM",
+                    "バスバーモジュール",
+                    "RSS_EG6H-00QT",
                     "EG6H-00QU",
-                    "EG6H-00QT",
                     "DEG66-10034",
-                    "DEG66-10035",
-                    "DEG66-10036",
-                    "DEG66-10037",
+                    "要素技術試作用",
                     "TTIM"
                 ],
                 "pageIds": [
@@ -236,14 +551,14 @@
                 ],
                 "children": [
                     {
-                        "id": "75fddd7d-dbdf-48ef-83bb-f93318c9f665",
+                        "id": "fc72ac19-a0e5-4ebe-9d28-1d64097ded9f",
                         "title": "出典: RSS_EG6H-00QT.pdf（外設申No. EG6H-00QTに添付／全15ページ）",
                         "level": 2,
-                        "summary": "出典資料がRSS_EG6H-00QT.pdfであり、外設申No. EG6H-00QTに添付された全15ページの文書であることを示す。",
+                        "summary": "本仕様書の出典資料と添付元を示す。出典資料はRSS_EG6H-00QT.pdfで、外設申No. EG6H-00QTに添付された全15ページの資料である。",
                         "keywords": [
                             "RSS_EG6H-00QT.pdf",
                             "外設申No. EG6H-00QT",
-                            "15ページ"
+                            "全15ページ"
                         ],
                         "pageIds": [
                             "2ecc251c-b5b3-44e0-a815-e46770954802"
@@ -251,11 +566,12 @@
                         "children": []
                     },
                     {
-                        "id": "5b06fa9a-3e2e-4d29-b804-fdac8bf98e7b",
+                        "id": "8804d031-adf0-4ae8-aee0-c885bb8eb3eb",
                         "title": "版種: 要素技術試作用",
                         "level": 2,
                         "summary": "本書の版種を要素技術試作用としている。",
                         "keywords": [
+                            "版種",
                             "要素技術試作用"
                         ],
                         "pageIds": [
@@ -264,13 +580,14 @@
                         "children": []
                     },
                     {
-                        "id": "766620e1-1884-44f1-8490-994da563c946",
+                        "id": "048fd8ea-0675-4b75-add2-22bc1f83e141",
                         "title": "注記: [A][B] 形式は原文の選択式記載、 * は原文のマスク箇所",
                         "level": 2,
-                        "summary": "[A][B]形式は原文の選択式記載、アスタリスクは原文のマスク箇所であると説明する。",
+                        "summary": "[A][B]は原文にある選択式記載を示し、アスタリスク（*）は原文のマスク箇所を示す。",
                         "keywords": [
-                            "[A][B]",
-                            "マスク箇所"
+                            "選択式記載",
+                            "マスク箇所",
+                            "[A][B]"
                         ],
                         "pageIds": [
                             "2ecc251c-b5b3-44e0-a815-e46770954802"
@@ -278,70 +595,16 @@
                         "children": []
                     },
                     {
-                        "id": "f6797f1a-bc4a-458e-9400-cc0fc4e952e9",
+                        "id": "f2a35aa6-79c4-4bab-ab06-6632ebada961",
                         "title": "※「原文記載のまま」とあるものは、原文の誤記・不整合をそのまま転記",
                         "level": 2,
-                        "summary": "「原文記載のまま」と注記された箇所は、誤記や不整合を含め原文どおりに転記すると説明する。文書内には日付や電圧値、低温通電条件について原文の誤記・不整合としての注記がある。",
+                        "summary": "「原文記載のまま」と注記された箇所は、原文の誤記や不整合を修正せずに転記している。本文では試作計画の日付「20026/5/28」や定格電圧の計算式との不整合などが例示される。",
                         "keywords": [
                             "原文記載のまま",
                             "誤記",
-                            "不整合"
-                        ],
-                        "pageIds": [
-                            "2ecc251c-b5b3-44e0-a815-e46770954802"
-                        ],
-                        "children": []
-                    }
-                ]
-            },
-            {
-                "id": "02d77427-1b5a-4f81-9b7b-53102380fe23",
-                "title": "1. 設計前提",
-                "level": 1,
-                "summary": "TMC主担当の設計前提として、仕向け先、BBMの機能、床下搭載、温湿度範囲、セル構成および電圧・電流条件を定める。112セル直列（28セルスタック4個）で、保管温度-40～85℃、作動温度-30～80℃、作動湿度0～95%RHと記載される。",
-                "keywords": [
-                    "設計前提",
-                    "TMC",
-                    "112セル",
-                    "28セルスタック",
-                    "床下搭載",
-                    "作動温度",
-                    "システム最大電流"
-                ],
-                "pageIds": [
-                    "2ecc251c-b5b3-44e0-a815-e46770954802"
-                ],
-                "children": []
-            },
-            {
-                "id": "46c4507f-a9f7-4bac-a0e7-f0fcd394a2fb",
-                "title": "2. 要求仕様",
-                "level": 1,
-                "summary": "BBM一般、バスバー、樹脂ケース、配線部品、ヒューズ、サーミスタ、サブWH、コネクタに関する要求を定める。各項目の主な責任者は仕入先で、一部の仕様はTMC設計との協議・合意を要する。",
-                "keywords": [
-                    "要求仕様",
-                    "仕入先",
-                    "TMC設計",
-                    "BBM"
-                ],
-                "pageIds": [
-                    "2ecc251c-b5b3-44e0-a815-e46770954802"
-                ],
-                "children": [
-                    {
-                        "id": "b770c573-3176-4e0f-9a9b-09a834b13b06",
-                        "title": "2.1. BBM一般",
-                        "level": 2,
-                        "summary": "部品番号ごとの構造・搭載側、IPXXBによる高電圧活電部の直接接触保護、周辺部品との静隙、セル間変位への耐性、結露水対策を規定する。さらにIEC 60664-1に基づく絶縁距離、UL94 HB難燃性、シリコン系材料の事前合意、TSM0505Gのにおい要求、品質データ提出、コーティング材の絶縁破壊電圧600V以上などを定める。",
-                        "keywords": [
-                            "IPXXB",
-                            "IEC 60664-1",
-                            "絶縁距離",
-                            "セル間変位",
-                            "UL94 HB",
-                            "TSM0505G",
-                            "コーティング材",
-                            "600V"
+                            "不整合",
+                            "20026/5/28",
+                            "定格電圧"
                         ],
                         "pageIds": [
                             "2ecc251c-b5b3-44e0-a815-e46770954802"
@@ -349,407 +612,412 @@
                         "children": []
                     },
                     {
-                        "id": "50f4f331-60b8-4283-8a63-a15fe0e2cae2",
-                        "title": "2.2. バスバー",
+                        "id": "f7f12cff-2d75-47d3-8efc-fccbe3f1c500",
+                        "title": "1. 設計前提",
                         "level": 2,
-                        "summary": "バスバーの要求仕様は計画図を参照することとしている。",
+                        "summary": "主担当はTMCで、対象地域は日本・北米・欧州・中国など。BBMの機能、床下搭載、保管温度−40～85℃・作動温度−30～80℃・作動湿度0～95%RH、112セル直列構成、パック電圧（定格281.2V、通常上限317.3V等）、電流条件および配線最大電流150mAを示す。",
                         "keywords": [
+                            "設計前提",
+                            "TMC",
+                            "112セル",
+                            "281.2V",
+                            "317.3V",
+                            "422.56V",
+                            "150mA",
+                            "作動温度"
+                        ],
+                        "pageIds": [
+                            "2ecc251c-b5b3-44e0-a815-e46770954802"
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "00829ed2-f1e1-45b0-9dc1-1d693634c2c4",
+                        "title": "2. 要求仕様",
+                        "level": 2,
+                        "summary": "BBM、バスバー、樹脂ケース、配線部品、ヒューズ、サーミスタ、サブWHおよびコネクタに関する要求を定める。各項目では仕入先の設計・製造要件、部品仕様、TMCとの協議・合意条件を記載する。",
+                        "keywords": [
+                            "要求仕様",
+                            "BBM",
                             "バスバー",
-                            "計画図"
-                        ],
-                        "pageIds": [
-                            "2ecc251c-b5b3-44e0-a815-e46770954802"
-                        ],
-                        "children": []
-                    },
-                    {
-                        "id": "a6b692f9-c3d6-48f8-8559-3a22a44d17fe",
-                        "title": "2.3. 樹脂ケース",
-                        "level": 2,
-                        "summary": "DEG66-10034/10036の本体はPPまたはPCの真空成型、DEG66-10035/10037の本体はPVCとし、樹脂色はTMC設計と協議して決める。サーミスタ保持、セル端子溶接時の治具干渉・レーザー遮断防止とスパッタ保護、上方から見えるスタック識別記号も要求する。",
-                        "keywords": [
                             "樹脂ケース",
-                            "PP",
-                            "PC",
-                            "PVC",
-                            "真空成型",
-                            "サーミスタ",
-                            "スパッタ",
-                            "スタック識別記号"
-                        ],
-                        "pageIds": [
-                            "2ecc251c-b5b3-44e0-a815-e46770954802"
-                        ],
-                        "children": []
-                    },
-                    {
-                        "id": "938c1a4b-55d8-4c5d-8d51-79389a68f0d7",
-                        "title": "2.4. 配線部品一般",
-                        "level": 2,
-                        "summary": "配線部品に電池電圧検出線、電池温度検出線、監視IC電源供給線、電池判別線を含め、結線図・ピン配列に従う配策とDR合意を求める。電圧検出線には全線ヒューズ、線抵抗1320mΩ以下@60℃、ヒューズ抵抗の初期150mΩ以下・通電後±20%などの条件があり、電流条件は常時150mAおよび4A×9s。はんだ外観品質の選択式要求、温度検出線へのサーミスタ設定、監視IC電源線へのヒューズ設定、電池判別線の抵抗仕様も記載する。",
-                        "keywords": [
-                            "電池電圧検出線",
-                            "電池温度検出線",
-                            "監視IC電源供給線",
-                            "電池判別線",
-                            "TSC0001G",
-                            "IPC-A-610",
-                            "1320mΩ",
-                            "4A"
-                        ],
-                        "pageIds": [
-                            "2ecc251c-b5b3-44e0-a815-e46770954802"
-                        ],
-                        "children": []
-                    },
-                    {
-                        "id": "4ae3e503-688f-46ce-9328-05acf73bb8d2",
-                        "title": "2.5. ヒューズ",
-                        "level": 2,
-                        "summary": "使用ヒューズの品番をG3828-28010とし、仕入先の取扱規定への適合および実装部ランドひずみ1,700μST以下を要求する。バスバー側部品からランドまで、ならびに隣接コネクタ側ランドに0.7mm以上の間隔を確保する。",
-                        "keywords": [
+                            "配線部品",
                             "ヒューズ",
-                            "G3828-28010",
-                            "ランドひずみ",
-                            "1,700μST",
-                            "0.7mm"
-                        ],
-                        "pageIds": [
-                            "2ecc251c-b5b3-44e0-a815-e46770954802"
-                        ],
-                        "children": []
-                    },
-                    {
-                        "id": "93a77bec-d904-4744-bc16-2cd6fa14b6a8",
-                        "title": "2.6. サーミスタ",
-                        "level": 2,
-                        "summary": "サーミスタ素子は25℃で10kΩ±1%、25～85℃間のB定数3435K±1%とし、25℃から85℃の熱時定数30s以下を求める。測温誤差は点接触・線接触でも満足すること、測温面温度許容誤差±3℃を含め、雰囲気温度25℃時の測温面温度25～125℃に対する誤差表を示す。",
-                        "keywords": [
                             "サーミスタ",
-                            "10kΩ",
-                            "B定数",
-                            "3435K",
-                            "熱時定数",
-                            "測温誤差",
-                            "±3℃"
+                            "コネクタ"
                         ],
                         "pageIds": [
                             "2ecc251c-b5b3-44e0-a815-e46770954802"
                         ],
-                        "children": []
+                        "children": [
+                            {
+                                "id": "f61bc18d-e9d9-417c-b08b-9ca093d314d6",
+                                "title": "2.1. BBM一般",
+                                "level": 3,
+                                "summary": "品番ごとの構造・搭載側を定め、IPXXBによる高電圧活電部の直接接触保護、搭載隙、セル間変位への強度、結露水対策、IEC 60664-1に基づく絶縁距離を要求する。セル間変位はW/L/H方向の振動・突起等について振幅と回数を指定し、材料難燃性（UL94 HB）、非金属材のにおい（TSM0505G）、品質、コーティング材の絶縁破壊電圧600V以上なども定める。",
+                                "keywords": [
+                                    "BBM一般",
+                                    "IPXXB",
+                                    "IEC 60664-1",
+                                    "空間距離",
+                                    "沿面距離",
+                                    "セル間変位",
+                                    "UL94 HB",
+                                    "TSM0505G"
+                                ],
+                                "pageIds": [
+                                    "2ecc251c-b5b3-44e0-a815-e46770954802"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "25dca7d7-6f82-4ad2-9d87-682ffd8f37a2",
+                                "title": "2.2. バスバー",
+                                "level": 3,
+                                "summary": "バスバーの要求仕様は計画図を参照するよう定めている。",
+                                "keywords": [
+                                    "バスバー",
+                                    "計画図"
+                                ],
+                                "pageIds": [
+                                    "2ecc251c-b5b3-44e0-a815-e46770954802"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "90c8ae55-44d4-4d52-b6e7-bff2a2396c0b",
+                                "title": "2.3. 樹脂ケース",
+                                "level": 3,
+                                "summary": "DEG66-10034/10036の本体はPP・PCの真空成型、DEG66-10035/10037はPVCとし、樹脂色はTMC設計と協議して決める。サーミスタ保持構造、セル端子溶接時の治具干渉・レーザー遮断防止およびスパッタ保護、上方から見えるスタック識別記号を要求する。",
+                                "keywords": [
+                                    "樹脂ケース",
+                                    "PP",
+                                    "PC",
+                                    "PVC",
+                                    "真空成型",
+                                    "サーミスタ保持",
+                                    "溶接",
+                                    "スタック識別記号"
+                                ],
+                                "pageIds": [
+                                    "2ecc251c-b5b3-44e0-a815-e46770954802"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "262e2be8-8cdd-41e2-a01e-e6ff3d50b419",
+                                "title": "2.4. 配線部品一般",
+                                "level": 3,
+                                "summary": "配線部品には電池電圧検出線、電池温度検出線、監視IC電源供給線、電池判別線を含め、結線図・ピン配列に従った配策と事前DR合意を要求する。電圧検出線は全線にヒューズを設け、抵抗1320mΩ以下@60℃、ヒューズ抵抗は初期150mΩ以下・通電後初期値±20%とするほか、150mA常時および4A×9sの条件で異常がないことを求める。はんだ外観品質の選択式規格、サーミスタ設定、監視IC電源線のヒューズ、電池判別線の抵抗仕様（各対象品番でオープン）も記載する。",
+                                "keywords": [
+                                    "配線部品一般",
+                                    "電池電圧検出線",
+                                    "1320mΩ",
+                                    "ヒューズ抵抗",
+                                    "TSC0001G",
+                                    "IPC-A-610",
+                                    "サーミスタ",
+                                    "電池判別線"
+                                ],
+                                "pageIds": [
+                                    "2ecc251c-b5b3-44e0-a815-e46770954802"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "7e4f6fbc-2e2d-44bc-8e57-28a8228b6f0c",
+                                "title": "2.5. ヒューズ",
+                                "level": 3,
+                                "summary": "使用ヒューズの品番をG3828-28010とし、仕入先の取扱規定への適合および実装ランドひずみ1,700μST以下を要求する。バスバー側部品からランド、および隣接コネクタ側ランドにはそれぞれ0.7mm以上を確保する。",
+                                "keywords": [
+                                    "ヒューズ",
+                                    "G3828-28010",
+                                    "ランドひずみ",
+                                    "1,700μST",
+                                    "0.7mm"
+                                ],
+                                "pageIds": [
+                                    "2ecc251c-b5b3-44e0-a815-e46770954802"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "30cc380c-60cb-4bbc-9737-0d096ff48023",
+                                "title": "2.6. サーミスタ",
+                                "level": 3,
+                                "summary": "素子抵抗は25℃で10kΩ±1%、B定数は25～85℃間で3435K±1%、熱時定数は25℃から85℃で30秒以下とする。測温誤差は測温面温度ごとの許容値（25℃で±0.8℃、85℃で±7.5℃、125℃で±12.0℃など）を満たし、点接触・線接触でも測温面温度許容誤差±3℃を求める。",
+                                "keywords": [
+                                    "サーミスタ",
+                                    "10kΩ",
+                                    "B定数3435K",
+                                    "熱時定数",
+                                    "測温誤差",
+                                    "±3℃"
+                                ],
+                                "pageIds": [
+                                    "2ecc251c-b5b3-44e0-a815-e46770954802"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "7f636d9f-38e7-4ddd-9115-2158b3e265ab",
+                                "title": "2.7. サブWH",
+                                "level": 3,
+                                "summary": "サブWHのクランプ位置・形状や配線経路は計画図・添付3Dデータを参照し、車両組付け時に誤組しない構造とする。相手機器・クランプ品番はTMCと協議し、経路に合わせた保護材は所定の保護材性能およびTSC1151Gを満足させる。高圧部の保護材色はオレンジ（SAE 8.75R 5.75/2.5）とする。",
+                                "keywords": [
+                                    "サブWH",
+                                    "クランプ",
+                                    "添付3Dデータ",
+                                    "配線保護",
+                                    "TSC1151G",
+                                    "SAE 8.75R 5.75/2.5"
+                                ],
+                                "pageIds": [
+                                    "2ecc251c-b5b3-44e0-a815-e46770954802"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "ec925773-0f47-4caa-9d22-7baeac0642bd",
+                                "title": "2.8. コネクタ",
+                                "level": 3,
+                                "summary": "DEG66-10034/10035にはG92SF-42430・90980-12366、DEG66-10036/10037には90980-12388を使用する。搭載位置と取扱規定は計画図・コネクタ図面に従い、端子名称としてSR、GSR、V、G、TB、CD、GBと用途を示し、端子品番G92SG-42040・90980-09895を参考として挙げる。",
+                                "keywords": [
+                                    "コネクタ",
+                                    "G92SF-42430",
+                                    "90980-12366",
+                                    "90980-12388",
+                                    "SR",
+                                    "TB",
+                                    "GB",
+                                    "G92SG-42040"
+                                ],
+                                "pageIds": [
+                                    "2ecc251c-b5b3-44e0-a815-e46770954802"
+                                ],
+                                "children": []
+                            }
+                        ]
                     },
                     {
-                        "id": "98ef01c2-9943-4adb-b2a7-f912dade8633",
-                        "title": "2.7. サブWH",
+                        "id": "88dc036b-0b20-4d8c-9c3f-ec78ee498994",
+                        "title": "付図. 結線図・コネクタピン配列",
                         "level": 2,
-                        "summary": "クランプ固定位置・形状、配線経路、車両組付け時の誤組防止、接続相手機器とクランプ品番を計画図・添付3Dデータを参照してTMCと決める。保護材はTSC1151Gおよび指定性能を満たし、高圧部の保護材色はオレンジ（SAE 8.75R 5.75/2.5）とする。",
+                        "summary": "DEG66-10034/10036（スタック3・4 LH、cell29～56）とDEG66-10035/10037（スタック3・4 RH、cell57～84）のコネクタ構成・嵌合面視の関連部品を示す。端子横の数値はGA0基準で5V/セルとした場合の電位を表し、検出回路は5V－10kΩ－TB／GB－コンデンサC－検出回路の構成として記載される。",
                         "keywords": [
-                            "サブWH",
-                            "クランプ",
-                            "添付3Dデータ",
-                            "TSC1151G",
-                            "高圧部",
-                            "SAE 8.75R 5.75/2.5"
-                        ],
-                        "pageIds": [
-                            "2ecc251c-b5b3-44e0-a815-e46770954802"
-                        ],
-                        "children": []
-                    },
-                    {
-                        "id": "310ea74f-b0ca-438e-ba81-373844925452",
-                        "title": "2.8. コネクタ",
-                        "level": 2,
-                        "summary": "部品番号別にコネクタ品番を指定し、相手部品と接続できる搭載位置や取扱規定への適合を求める。端子名称としてSR、GSR、V、G、TB、CD、GBと各用途を示し、端子品番G92SG-42040および90980-09895を参考として記載する。",
-                        "keywords": [
-                            "コネクタ",
-                            "G92SF-42430",
-                            "90980-12366",
-                            "90980-12388",
-                            "SR",
+                            "結線図",
+                            "コネクタピン配列",
+                            "cell29～cell56",
+                            "cell57～cell84",
+                            "GA0",
+                            "5V/セル",
                             "TB",
-                            "CD",
-                            "G92SG-42040"
+                            "GB"
                         ],
                         "pageIds": [
                             "2ecc251c-b5b3-44e0-a815-e46770954802"
                         ],
                         "children": []
-                    }
-                ]
-            },
-            {
-                "id": "6ed413b1-2737-4737-8729-990b86e41a5f",
-                "title": "付図. 結線図・コネクタピン配列",
-                "level": 1,
-                "summary": "DEG66-10034/10036のスタック3・4 LH（cell29～cell56）と、DEG66-10035/10037のスタック3・4 RH（cell57～cell84）についてコネクタ構成を示す。端子名横の数値はGA0基準で5V/セルとした電位を表し、サーミスタ検出回路は5V－10kΩ－TB/GB－コンデンサC－検出回路の構成として記載される。",
-                "keywords": [
-                    "結線図",
-                    "コネクタピン配列",
-                    "cell29",
-                    "cell56",
-                    "cell57",
-                    "cell84",
-                    "GA0",
-                    "サーミスタ検出回路"
-                ],
-                "pageIds": [
-                    "2ecc251c-b5b3-44e0-a815-e46770954802"
-                ],
-                "children": []
-            },
-            {
-                "id": "cc9a4061-8ddb-4db0-9def-a29b5b28e8ae",
-                "title": "3. 信頼性評価",
-                "level": 1,
-                "summary": "BBM ASSYまたは配線部品サブASSYを供試品とする信頼性評価について、評価概要、性能確認マトリクス、供試品別の評価方法および判定条件を目次に掲げる。記載範囲には評価の共通ルールと評価項目・測定タイミングのマトリクスが含まれる。",
-                "keywords": [
-                    "信頼性評価",
-                    "BBM ASSY",
-                    "配線部品サブASSY",
-                    "性能確認マトリクス"
-                ],
-                "pageIds": [
-                    "2ecc251c-b5b3-44e0-a815-e46770954802"
-                ],
-                "children": [
+                    },
                     {
-                        "id": "e9b5d5f9-b30f-434c-93b4-9cc9f32c3476",
-                        "title": "3.1. 評価概要",
+                        "id": "acb02150-fa4b-47d0-8270-9106d88e1a1e",
+                        "title": "3. 信頼性評価",
                         "level": 2,
-                        "summary": "BBM ASSYの場合は車両搭載状態を模擬した治具で評価し、締結トルクなどの詳細はTMC設計に確認する。未規定の試験条件・判定基準は試験計画書で合意し、評価日程・条件をTMCと整合させるほか、仕様変更は根拠を示して協議し、改訂済みTSは最新版に従う。",
+                        "summary": "BBM ASSYまたは配線部品サブASSYを供試品とする信頼性評価について、評価概要、性能確認マトリクスおよび評価方法を記載する。試験条件・判定基準の合意、試験日程の整合、仕様変更時の根拠提示、改訂TSへの対応を求める。",
                         "keywords": [
-                            "評価概要",
-                            "供試品",
-                            "車両搭載状態",
+                            "信頼性評価",
+                            "BBM ASSY",
+                            "配線部品サブASSY",
                             "試験計画書",
-                            "TMC設計",
                             "TS"
                         ],
                         "pageIds": [
                             "2ecc251c-b5b3-44e0-a815-e46770954802"
                         ],
-                        "children": []
-                    },
-                    {
-                        "id": "081e7ee2-6f1c-47e4-abe0-32ae7f15c9b9",
-                        "title": "3.2. 評価一覧・性能確認マトリクス",
-                        "level": 2,
-                        "summary": "外観、絶縁抵抗、耐電圧、各線抵抗、はんだ断面クラック率、ウィスカ長、マイグレーション、防水性、サーミスタ特性、ヒューズ特性などの確認項目を列挙する。凡例は□が最終測定、○が初期＋最終、△が初期＋中間＋最終で、BBM ASSYおよび配線部品サブASSY別に試験ごとの測定タイミングを示す。",
-                        "keywords": [
-                            "評価一覧",
-                            "性能確認マトリクス",
-                            "絶縁抵抗",
-                            "防水性",
-                            "ウィスカ",
-                            "マイグレーション",
-                            "初期測定",
-                            "最終測定"
-                        ],
-                        "pageIds": [
-                            "2ecc251c-b5b3-44e0-a815-e46770954802"
-                        ],
-                        "children": []
-                    },
-                    {
-                        "id": "428416c8-3be5-4799-b82b-a7eb8dcabc36",
-                        "title": "3.3. 評価方法（供試品：BBM ASSY）",
-                        "level": 2,
-                        "summary": "BBM ASSYを供試品とする評価方法を記載する。見えている条件では、高温通電は周囲温度85±2℃、電池電圧検出線50 +10/-0mA、1h ON/1h OFF、通電1000h（500hで中間測定）であり、低温通電は通電500h（250hで中間測定）とする一方、周囲温度も85±2℃と記載され原文注記で矛盾の可能性が示される。",
-                        "keywords": [
-                            "BBM ASSY",
-                            "高温通電",
-                            "低温通電",
-                            "85±2℃",
-                            "50mA",
-                            "1000h",
-                            "500h"
-                        ],
-                        "pageIds": [
-                            "2ecc251c-b5b3-44e0-a815-e46770954802"
-                        ],
-                        "children": []
-                    },
-                    {
-                        "id": "5ff15ce0-a26a-411f-845c-546b92cc978d",
-                        "title": "3.4. 評価方法（供試品：配線部品サブASSY）",
-                        "level": 2,
-                        "summary": "目次に、配線部品サブASSYを供試品とする評価方法の節が示されているが、提示された本文範囲には詳細な試験条件が記載されていない。",
-                        "keywords": [
-                            "配線部品サブASSY",
-                            "評価方法"
-                        ],
-                        "pageIds": [
-                            "2ecc251c-b5b3-44e0-a815-e46770954802"
-                        ],
-                        "children": []
-                    },
-                    {
-                        "id": "5c96549c-2887-4ba4-81b5-6385de465f68",
-                        "title": "3.5. 確認項目および判定条件",
-                        "level": 2,
-                        "summary": "目次に確認項目および判定条件の節が示されているが、提示された本文範囲には具体的な判定条件の記載がない。",
-                        "keywords": [
-                            "確認項目",
-                            "判定条件"
-                        ],
-                        "pageIds": [
-                            "2ecc251c-b5b3-44e0-a815-e46770954802"
-                        ],
-                        "children": []
+                        "children": [
+                            {
+                                "id": "47165e17-2b50-4e98-adc8-3d0129ecfe4b",
+                                "title": "3.1. 評価概要",
+                                "level": 3,
+                                "summary": "BBM ASSY評価では車両搭載状態を模擬した治具を使用し、搭載要件の詳細はTMC設計に確認する。本仕様にない試験条件・判定基準は試験計画書で合意し、日程・条件はTMCと整合してから実施するほか、仕様変更は理由と根拠を示して協議し、参照TSは最新改訂版に従う。",
+                                "keywords": [
+                                    "評価概要",
+                                    "供試品",
+                                    "車両搭載状態",
+                                    "試験計画書",
+                                    "TMC設計",
+                                    "TS"
+                                ],
+                                "pageIds": [
+                                    "2ecc251c-b5b3-44e0-a815-e46770954802"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "8fcc94e3-ca6e-44d1-a5a2-4a6c70789ddd",
+                                "title": "3.2. 評価一覧・性能確認マトリクス",
+                                "level": 3,
+                                "summary": "確認項目として外観、絶縁抵抗、耐電圧、各線抵抗、はんだ断面クラック率、ウィスカ長、マイグレーション、防水性、サーミスタ特性、ヒューズ特性などを列挙する。測定記号は□が最終測定、○が初期・最終、△が初期・中間・最終を示し、BBM ASSYと配線部品サブASSYの試験ごとに確認項目を割り当てる。",
+                                "keywords": [
+                                    "評価一覧",
+                                    "性能確認マトリクス",
+                                    "外観",
+                                    "絶縁抵抗",
+                                    "マイグレーション",
+                                    "防水性",
+                                    "サーミスタ",
+                                    "ヒューズ特性"
+                                ],
+                                "pageIds": [
+                                    "2ecc251c-b5b3-44e0-a815-e46770954802"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "d45e395c-7513-4f11-b8ea-392816ac01ac",
+                                "title": "3.3. 評価方法（供試品：BBM ASSY）",
+                                "level": 3,
+                                "summary": "BBM ASSYの高温通電では周囲温度85±2℃、電池電圧検出線50mA（+10/−0mA、1時間ON・1時間OFF、奇数・偶数chは10msずらす）、通電1000時間とし、500時間終了時に中間測定する。低温通電は本文記載の周囲温度も85±2℃で、高温通電と同じ電流条件、500時間・250時間時中間測定とされ、原文注記で矛盾の可能性を指摘する。熱衝撃は低温側からサイクルを開始する旨が記載されている。",
+                                "keywords": [
+                                    "評価方法",
+                                    "BBM ASSY",
+                                    "高温通電",
+                                    "低温通電",
+                                    "85±2℃",
+                                    "50mA",
+                                    "1000h",
+                                    "熱衝撃"
+                                ],
+                                "pageIds": [
+                                    "2ecc251c-b5b3-44e0-a815-e46770954802"
+                                ],
+                                "children": []
+                            }
+                        ]
                     }
                 ]
             },
             {
-                "id": "5d1f21d9-bef4-41ed-a1ca-374e3ccd0c2f",
-                "title": "4. 要求事項一覧表",
+                "id": "26b6d79f-edd9-40f6-bc7c-6ff93f67bf73",
+                "title": "ヒューズマッチング要求",
                 "level": 1,
-                "summary": "目次に要求事項一覧表の節が示されているが、提示された本文範囲には一覧表の内容が記載されていない。",
+                "summary": "セル間バスバとメインヒューズのマッチング課題を扱うページ。セル間バスバの設計プロセスへの反映、HEV／BEVの電流条件、CAE・試験を通じた判定方法と設計標準化を記載している。",
                 "keywords": [
-                    "要求事項一覧表"
-                ],
-                "pageIds": [
-                    "2ecc251c-b5b3-44e0-a815-e46770954802"
-                ],
-                "children": []
-            },
-            {
-                "id": "3e74fb05-ac2a-4f82-8e85-d491942c4e7c",
-                "title": "課題",
-                "level": 1,
-                "summary": "メインヒューズとセル間バスバのマッチングを課題として示している。",
-                "keywords": [
-                    "メインヒューズ",
-                    "セル間バスバ",
-                    "マッチング"
-                ],
-                "pageIds": [
-                    "b252df30-7a0b-45ea-b546-ce819141f33a"
-                ],
-                "children": []
-            },
-            {
-                "id": "87416050-4c6b-483c-b1f3-b46d1a262704",
-                "title": "セル間バスバ",
-                "level": 1,
-                "summary": "バスバ破断に関する更新中の資料へのリンクが掲載されている。",
-                "keywords": [
-                    "セル間バスバ",
-                    "バスバ破断",
-                    "740D"
-                ],
-                "pageIds": [
-                    "b252df30-7a0b-45ea-b546-ce819141f33a"
-                ],
-                "children": []
-            },
-            {
-                "id": "d0985450-1144-4542-a703-a3e2baa3d7db",
-                "title": "今後",
-                "level": 1,
-                "summary": "HEVはIT判断、BEV/PHEVはIT判断の後に机上検討とCAE解析を行う方針を記載している。",
-                "keywords": [
-                    "HEV",
-                    "BEV",
-                    "PHEV",
-                    "IT判断",
-                    "CAE解析"
-                ],
-                "pageIds": [
-                    "b252df30-7a0b-45ea-b546-ce819141f33a"
-                ],
-                "children": []
-            },
-            {
-                "id": "7aa62845-a951-4a68-9244-54beee95c637",
-                "title": "目的",
-                "level": 1,
-                "summary": "セル間バスバとメインヒューズのマッチング、およびその結果をセル間バスバの設計プロセスに反映できているかを確認する。",
-                "keywords": [
+                    "ヒューズマッチング",
                     "セル間バスバ",
                     "メインヒューズ",
-                    "マッチング",
-                    "設計プロセス"
-                ],
-                "pageIds": [
-                    "b252df30-7a0b-45ea-b546-ce819141f33a"
-                ],
-                "children": []
-            },
-            {
-                "id": "c97a96a4-93ae-4bdd-9026-001ef5d9afa0",
-                "title": "設計因子",
-                "level": 1,
-                "summary": "雰囲気温度、設計要素ばらつき、試験ばらつきを挙げる。ヒューズは-30度、試験温度は常温とし、過渡現象のため設計要素ばらつきは無視、電流×時間の試験ばらつきでは時間の影響が大きい可能性があり電流値は抵抗値で調整するとしている。",
-                "keywords": [
-                    "雰囲気温度",
-                    "ヒューズ",
-                    "-30度",
-                    "常温",
-                    "設計要素ばらつき",
-                    "試験ばらつき",
-                    "電流",
-                    "時間"
-                ],
-                "pageIds": [
-                    "b252df30-7a0b-45ea-b546-ce819141f33a"
-                ],
-                "children": []
-            },
-            {
-                "id": "35d8a317-4ddb-41c7-9925-ebcb1289fb58",
-                "title": "手法",
-                "level": 1,
-                "summary": "マッチング検討の手法として机上計算とCAE解析を挙げている。",
-                "keywords": [
-                    "机上計算",
-                    "CAE解析"
-                ],
-                "pageIds": [
-                    "b252df30-7a0b-45ea-b546-ce819141f33a"
-                ],
-                "children": []
-            },
-            {
-                "id": "a321f6a1-eeca-4b59-86d5-4c66f4e0794d",
-                "title": "横展",
-                "level": 1,
-                "summary": "横展開先として設計標準を挙げている。",
-                "keywords": [
-                    "横展",
-                    "設計標準"
+                    "81PL"
                 ],
                 "pageIds": [
                     "b252df30-7a0b-45ea-b546-ce819141f33a"
                 ],
                 "children": [
                     {
-                        "id": "10404ddd-2373-4ec6-8b74-353f22cb78eb",
-                        "title": "STEP3",
+                        "id": "0d0ebb5d-e703-463e-adc1-74352fec22e6",
+                        "title": "今後",
                         "level": 2,
-                        "summary": "過去の社内資料ではセル間バスバの発熱・疲労・ヒューズマッチングやHEV/BEVの電流成立性が個別に評価されている一方、マッチング結果を設計プロセスに織り込む仕組みは標準化されていないようだと述べる。HEVの225～420A級、BEV急速充電時の500A超の検討を挙げている。",
+                        "summary": "HEVはIT判断まで、BEV／PHEVはIT判断後に机上検討とCAE解析を行う方針を示す。",
                         "keywords": [
-                            "STEP3",
-                            "セル間バスバ",
-                            "ヒューズマッチング",
                             "HEV",
                             "BEV",
-                            "225A",
-                            "420A",
-                            "500A"
+                            "PHEV",
+                            "IT判断",
+                            "CAE"
                         ],
                         "pageIds": [
                             "b252df30-7a0b-45ea-b546-ce819141f33a"
                         ],
                         "children": []
+                    },
+                    {
+                        "id": "8b3576da-2da3-4c4a-9ba6-a753a873b86a",
+                        "title": "目的",
+                        "level": 2,
+                        "summary": "セル間バスバとメインヒューズのマッチング成立、およびその確認が設計プロセスに織り込まれているかを調べ、新しい設計プロセスへ反映することを目的とする。",
+                        "keywords": [
+                            "セル間バスバ",
+                            "メインヒューズ",
+                            "マッチング",
+                            "設計プロセス"
+                        ],
+                        "pageIds": [
+                            "b252df30-7a0b-45ea-b546-ce819141f33a"
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "ddec6f46-e256-4d75-b750-07cd4ac798c4",
+                        "title": "設計因子",
+                        "level": 2,
+                        "summary": "雰囲気温度についてヒューズは−30度、試験は常温と記載する。過渡現象のため設計要素ばらつきは無視し、試験ばらつきでは時間の影響が大きい可能性があるため、電流値を抵抗値で調整する。",
+                        "keywords": [
+                            "雰囲気温度",
+                            "−30度",
+                            "常温",
+                            "設計要素ばらつき",
+                            "試験ばらつき",
+                            "抵抗値"
+                        ],
+                        "pageIds": [
+                            "b252df30-7a0b-45ea-b546-ce819141f33a"
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "d7794539-8265-47ce-9b9c-70cda75361a2",
+                        "title": "手法",
+                        "level": 2,
+                        "summary": "マッチングの評価手法として机上計算とCAE解析を挙げる。",
+                        "keywords": [
+                            "机上計算",
+                            "CAE解析"
+                        ],
+                        "pageIds": [
+                            "b252df30-7a0b-45ea-b546-ce819141f33a"
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "62a538bd-6369-49f5-aee1-119168de1da7",
+                        "title": "横展",
+                        "level": 2,
+                        "summary": "横展開先として設計標準を挙げ、STEP3に続く内容として過去資料の確認結果を記載する。",
+                        "keywords": [
+                            "横展",
+                            "設計標準",
+                            "STEP3"
+                        ],
+                        "pageIds": [
+                            "b252df30-7a0b-45ea-b546-ce819141f33a"
+                        ],
+                        "children": [
+                            {
+                                "id": "6edf87a0-b701-41da-bfd2-7ab021ccb684",
+                                "title": "STEP3",
+                                "level": 3,
+                                "summary": "過去に発熱・疲労・ヒューズマッチングやHEV／BEVの電流成立性は個別評価されている一方、マッチング結果を設計プロセスへ織り込む仕組みは標準化されていないと述べる。HEVは225～420A級、BEVは急速充電時500A超が論点として挙げられる。",
+                                "keywords": [
+                                    "セル間バスバ",
+                                    "ヒューズマッチング",
+                                    "設計プロセス",
+                                    "225A",
+                                    "420A",
+                                    "500A超"
+                                ],
+                                "pageIds": [
+                                    "b252df30-7a0b-45ea-b546-ce819141f33a"
+                                ],
+                                "children": []
+                            }
+                        ]
                     }
                 ]
             },
             {
-                "id": "160b21b2-8940-4b15-9ae1-898e586fbb35",
+                "id": "e24b8286-b3fc-427a-951d-713c778c4ab3",
                 "title": "目的",
                 "level": 1,
-                "summary": "マッチング成立条件の明確化、HEV・BEVの厳しい使用条件の定量化、CAEと実機試験による予測精度の確立、設計初期に判定できる設計プロセスの構築を目的としている。",
+                "summary": "マッチング成立条件の明確化、HEV・BEVの厳しい使用条件の定量化、CAEと実機試験による予測精度の確立、および設計初期段階で判定できるプロセス構築を掲げる。",
                 "keywords": [
                     "成立条件",
                     "HEV",
@@ -764,12 +1032,12 @@
                 "children": []
             },
             {
-                "id": "d3e9fe62-1de6-4e0b-8006-afe61808de6e",
+                "id": "26aeece0-6fd3-48d0-a448-8086e1445a02",
                 "title": "全体ロードマップ",
                 "level": 1,
-                "summary": "マッチング成立条件の明確化から、車種別条件抽出、解析、実験、設計ルール化までの段階的な進め方を示している。",
+                "summary": "成立条件の明確化から車種別条件抽出、解析・実験、設計ルール化までの段階的な取り組みを示す。",
                 "keywords": [
-                    "全体ロードマップ",
+                    "ロードマップ",
                     "Phase1",
                     "Phase2",
                     "Phase3",
@@ -781,85 +1049,160 @@
                 ],
                 "children": [
                     {
-                        "id": "31c00815-8f97-4795-91f6-9bdf76a3403a",
+                        "id": "83d62136-264d-4c8a-a9ac-80241e1bb668",
                         "title": "Phase1：成立条件の明確化（最優先）",
                         "level": 2,
-                        "summary": "マッチングOKの判定基準を定める段階。セル間バスバ側では断面積・板厚・材質・抵抗値・発熱量・温度上昇、メインヒューズ側では定格電流・I²t特性・溶断特性・許容温度・連続通電性能を整理し、例としてヒューズ溶断前のバスバ非溶融、バスバ125℃以下、セル端子93℃以下、故障時のヒューズ先行溶断を挙げている。",
+                        "summary": "マッチングの合否基準を定める段階。セル間バスバとメインヒューズの設計項目、および温度や溶断順序などの評価指標を整理する。",
                         "keywords": [
-                            "Phase1",
-                            "断面積",
-                            "板厚",
-                            "I²t特性",
-                            "溶断特性",
-                            "125℃",
-                            "93℃",
-                            "マッチング評価指標"
-                        ],
-                        "pageIds": [
-                            "b252df30-7a0b-45ea-b546-ce819141f33a"
-                        ],
-                        "children": []
-                    },
-                    {
-                        "id": "80069d43-0399-42d4-ac9f-38c8125e3ee8",
-                        "title": "関連ノート",
-                        "level": 2,
-                        "summary": "バスバ設計、サロゲート、バスバーモジュール、熱拡散防止システム機能アーキテクチャに関するノートを参照先として列挙している。過去資料のクライテリアとしてバスバ125℃、端子シール93℃にも言及する。",
-                        "keywords": [
-                            "バスバ設計",
-                            "バスバサロゲート",
-                            "バスバーモジュール",
-                            "熱拡散防止システム",
-                            "125℃",
-                            "端子シール93℃"
-                        ],
-                        "pageIds": [
-                            "b252df30-7a0b-45ea-b546-ce819141f33a"
-                        ],
-                        "children": []
-                    },
-                    {
-                        "id": "1df369d5-d9da-4dec-a8fd-bd99319e4ee6",
-                        "title": "Phase2：HEV／BEVの厳しい条件抽出",
-                        "level": 2,
-                        "summary": "HEVとBEVで厳しい使用条件を抽出する。HEVは最大放電・回生電流、SOC、温度、連続時間を整理し、既存資料の225A・420A級と高SOC回生などの想定Worstを記載する。",
-                        "keywords": [
-                            "Phase2",
-                            "HEV",
-                            "最大放電電流",
-                            "最大回生電流",
-                            "SOC",
-                            "225A",
-                            "420A",
-                            "高SOC回生"
+                            "成立条件",
+                            "セル間バスバ",
+                            "メインヒューズ",
+                            "評価指標"
                         ],
                         "pageIds": [
                             "b252df30-7a0b-45ea-b546-ce819141f33a"
                         ],
                         "children": [
                             {
-                                "id": "4cd6d9d3-2efc-45ae-afa9-4043bb6e3d73",
-                                "title": "HEV",
+                                "id": "fc8cbf81-d05e-41cf-bd41-ecb068adabb4",
+                                "title": "ゴール",
                                 "level": 3,
-                                "summary": "最大放電電流、最大回生電流、SOC、温度、連続時間を整理対象とし、既存資料では225A・420Aの検討が進んでいる。想定Worstとして高SOC回生、高温環境、長坂路、高速追い越しを挙げる。",
+                                "summary": "「何をもってマッチングOKとするか」を決めることを目標とする。",
                                 "keywords": [
-                                    "HEV",
-                                    "225A",
-                                    "420A",
-                                    "高SOC回生",
-                                    "高温環境",
-                                    "長坂路",
-                                    "高速追い越し"
+                                    "マッチングOK",
+                                    "成立条件"
+                                ],
+                                "pageIds": [
+                                    "b252df30-7a0b-45ea-b546-ce819141f33a"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "610ca936-4111-4bbc-abb6-20524fb32fde",
+                                "title": "整理項目",
+                                "level": 3,
+                                "summary": "セル間バスバ側とメインヒューズ側の特性、および両者のマッチング評価指標を整理する。",
+                                "keywords": [
+                                    "断面積",
+                                    "抵抗値",
+                                    "定格電流",
+                                    "I²t",
+                                    "溶断特性"
                                 ],
                                 "pageIds": [
                                     "b252df30-7a0b-45ea-b546-ce819141f33a"
                                 ],
                                 "children": [
                                     {
-                                        "id": "ebec2000-0888-4b42-abb4-4ac702e49a90",
+                                        "id": "f47344d6-d857-42ef-b0bc-dd1b2c8ae950",
+                                        "title": "セル間バスバ側",
+                                        "level": 4,
+                                        "summary": "断面積、板厚、材質、抵抗値、発熱量、温度上昇を整理項目として挙げる。",
+                                        "keywords": [
+                                            "断面積",
+                                            "板厚",
+                                            "材質",
+                                            "抵抗値",
+                                            "発熱量",
+                                            "温度上昇"
+                                        ],
+                                        "pageIds": [
+                                            "b252df30-7a0b-45ea-b546-ce819141f33a"
+                                        ],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "9b81f40b-0821-4d3c-841e-efa66fc06b63",
+                                        "title": "メインヒューズ側",
+                                        "level": 4,
+                                        "summary": "定格電流、I²t特性、溶断特性、許容温度、連続通電性能を整理項目として挙げる。",
+                                        "keywords": [
+                                            "メインヒューズ",
+                                            "定格電流",
+                                            "I²t特性",
+                                            "溶断特性",
+                                            "許容温度"
+                                        ],
+                                        "pageIds": [
+                                            "b252df30-7a0b-45ea-b546-ce819141f33a"
+                                        ],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "35eeaca4-b9ea-4523-92a0-4f278ca99248",
+                                        "title": "マッチング評価指標",
+                                        "level": 4,
+                                        "summary": "例として、ヒューズ溶断前にバスバが溶融しないこと、最大通電時にバスバ125℃以下・セル端子93℃以下であること、想定故障時にヒューズが先行溶断することを示す。過去資料ではバスバ125℃、端子シール93℃がクライテリアとして使われたと記載する。",
+                                        "keywords": [
+                                            "バスバ125℃",
+                                            "セル端子93℃",
+                                            "端子シール93℃",
+                                            "ヒューズ先行溶断",
+                                            "評価指標"
+                                        ],
+                                        "pageIds": [
+                                            "b252df30-7a0b-45ea-b546-ce819141f33a"
+                                        ],
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "b1ac4ad6-4190-4759-983f-835ef993d98b",
+                                "title": "関連ノート",
+                                "level": 3,
+                                "summary": "バスバ設計、サロゲート、バスバーモジュール、熱拡散防止システムに関する関連ノートを列挙し、それぞれの概要を添える。",
+                                "keywords": [
+                                    "バスバ設計",
+                                    "バスバサロゲート",
+                                    "バスバーモジュール",
+                                    "熱拡散防止システム"
+                                ],
+                                "pageIds": [
+                                    "b252df30-7a0b-45ea-b546-ce819141f33a"
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "6ef32f08-039d-4936-aaf0-00aa1db29994",
+                        "title": "Phase2：HEV／BEVの厳しい条件抽出",
+                        "level": 2,
+                        "summary": "HEVとBEVそれぞれについて、整理する使用条件、既存資料・解析に記載された電流値、および想定Worst条件をまとめる。",
+                        "keywords": [
+                            "HEV",
+                            "BEV",
+                            "最大放電電流",
+                            "回生電流",
+                            "急速充電"
+                        ],
+                        "pageIds": [
+                            "b252df30-7a0b-45ea-b546-ce819141f33a"
+                        ],
+                        "children": [
+                            {
+                                "id": "6d52f8b6-de73-4f43-b2e2-0c02f2c988f9",
+                                "title": "HEV",
+                                "level": 3,
+                                "summary": "最大放電電流、最大回生電流、SOC、温度、連続時間を整理項目とする。既存資料では225A・420Aの検討が進み、高SOC回生、高温環境、長坂路、高速追い越しを想定Worstとして挙げる。",
+                                "keywords": [
+                                    "HEV",
+                                    "225A",
+                                    "420A",
+                                    "SOC",
+                                    "最大回生電流",
+                                    "長坂路"
+                                ],
+                                "pageIds": [
+                                    "b252df30-7a0b-45ea-b546-ce819141f33a"
+                                ],
+                                "children": [
+                                    {
+                                        "id": "4527460d-b13e-4231-b26b-0d6bf91d2ef5",
                                         "title": "想定Worst",
                                         "level": 4,
-                                        "summary": "HEVの想定Worst条件として、高SOC回生、高温環境、長坂路、高速追い越しを列挙している。",
+                                        "summary": "HEVの想定Worst条件として、高SOC回生、高温環境、長坂路、高速追い越しを列挙する。",
                                         "keywords": [
                                             "高SOC回生",
                                             "高温環境",
@@ -874,28 +1217,27 @@
                                 ]
                             },
                             {
-                                "id": "f1bf97bc-d2a1-4718-9a31-c81cbe755572",
+                                "id": "71855e62-abc7-4970-ad05-8ab85c572bed",
                                 "title": "BEV",
                                 "level": 3,
-                                "summary": "DC急速充電、最大放電、冷間充電、高温充電を整理対象とし、既存解析に568A・578A・648A級の検討実績がある。想定Worstとして20分充電、高温環境、低SOC、冷却性能低下を挙げる。",
+                                "summary": "DC急速充電、最大放電、冷間充電、高温充電を整理対象とする。既存解析では568A、578A、648A級の検討実績があり、20分充電、高温環境、SOC低、冷却性能低下を想定Worstとして挙げる。",
                                 "keywords": [
                                     "BEV",
-                                    "DC急速充電",
                                     "568A",
                                     "578A",
                                     "648A",
-                                    "20min充電",
-                                    "冷却性能低下"
+                                    "DC急速充電",
+                                    "冷却性能"
                                 ],
                                 "pageIds": [
                                     "b252df30-7a0b-45ea-b546-ce819141f33a"
                                 ],
                                 "children": [
                                     {
-                                        "id": "4bdeea41-5796-4ea2-b3f7-21455398e789",
+                                        "id": "874beb66-d81f-4cda-9123-5b3e99011cb7",
                                         "title": "想定Worst",
                                         "level": 4,
-                                        "summary": "BEVの想定Worst条件として、20分充電、高温環境、SOC低、冷却性能低下を列挙している。",
+                                        "summary": "BEVの想定Worst条件として、20分充電、高温環境、SOC低、冷却性能低下を列挙する。",
                                         "keywords": [
                                             "20min充電",
                                             "高温環境",
@@ -912,70 +1254,35 @@
                         ]
                     },
                     {
-                        "id": "e9a8a053-9e05-414c-9829-8b169c0493df",
+                        "id": "5aae668c-b5aa-4e5b-9496-e8271db4c20a",
                         "title": "Phase3：UI解析",
                         "level": 2,
-                        "summary": "解析ベースで予測を行う段階として、入力にバスバ寸法・材質・ヒューズ特性・通電波形・周囲温度・冷却条件を挙げている。",
+                        "summary": "まず解析ベースで予測する段階として、バスバ寸法・材質、ヒューズ特性、通電波形、周囲温度、冷却条件を入力にし、抵抗値・発熱量・温度上昇・ヒューズ余裕率・判定を出力する。Excel化、解析UI連携、サロゲートモデル化の手順を記載する。",
                         "keywords": [
-                            "Phase3",
                             "UI解析",
-                            "バスバ寸法",
-                            "ヒューズ特性",
-                            "通電波形",
-                            "周囲温度",
-                            "冷却条件"
-                        ],
-                        "pageIds": [
-                            "b252df30-7a0b-45ea-b546-ce819141f33a"
-                        ],
-                        "children": []
-                    },
-                    {
-                        "id": "11fec136-ae28-4e3e-b785-5f3ae065dbc7",
-                        "title": "出力",
-                        "level": 2,
-                        "summary": "解析出力として抵抗値、発熱量、温度上昇、ヒューズ余裕率、マッチング判定を挙げている。",
-                        "keywords": [
-                            "抵抗値",
-                            "発熱量",
-                            "温度上昇",
-                            "ヒューズ余裕率",
-                            "マッチング判定"
-                        ],
-                        "pageIds": [
-                            "b252df30-7a0b-45ea-b546-ce819141f33a"
-                        ],
-                        "children": []
-                    },
-                    {
-                        "id": "d58985df-616a-4e27-b794-abbfc0201c75",
-                        "title": "実施内容",
-                        "level": 2,
-                        "summary": "Excel化、解析ツールとのUI連携、過去解析データを用いたサロゲートモデル化の3段階を記載している。",
-                        "keywords": [
-                            "実施内容",
+                            "入力",
+                            "出力",
                             "Excel",
-                            "UI連携",
-                            "サロゲートモデル",
-                            "過去解析データ"
+                            "HyperMesh",
+                            "ANSYS",
+                            "サロゲートモデル"
                         ],
                         "pageIds": [
                             "b252df30-7a0b-45ea-b546-ce819141f33a"
                         ],
                         "children": [
                             {
-                                "id": "827ae82d-2468-4359-9a50-ad596ba0fb1d",
-                                "title": "Step1 Excel化",
+                                "id": "d3d331d9-03dc-4c9b-afe0-b783deb1be79",
+                                "title": "入力",
                                 "level": 3,
-                                "summary": "幅・厚み・長さ・電流を入力し、抵抗と発熱を出力するExcel化を行う。",
+                                "summary": "解析入力として、バスバ寸法、材質、ヒューズ特性、通電波形、周囲温度、冷却条件を挙げる。",
                                 "keywords": [
-                                    "Excel",
-                                    "幅",
-                                    "厚み",
-                                    "長さ",
-                                    "電流",
-                                    "抵抗",
-                                    "発熱"
+                                    "バスバ寸法",
+                                    "材質",
+                                    "ヒューズ特性",
+                                    "通電波形",
+                                    "周囲温度",
+                                    "冷却条件"
                                 ],
                                 "pageIds": [
                                     "b252df30-7a0b-45ea-b546-ce819141f33a"
@@ -983,73 +1290,119 @@
                                 "children": []
                             },
                             {
-                                "id": "3c9f01fd-cc6f-4b42-986e-a87aa4a1ac77",
-                                "title": "Step2 UI連携",
+                                "id": "1805060c-7abd-445e-b32c-42c5c2d98438",
+                                "title": "出力",
                                 "level": 3,
-                                "summary": "HyperMesh、ANSYS、Abaqus、STAR-CCM+、UI環境を挙げ、温度予測をどこで行っているか確認する。",
+                                "summary": "出力として、抵抗値、発熱量、温度上昇、ヒューズ余裕率、マッチング判定を挙げる。",
                                 "keywords": [
-                                    "HyperMesh",
-                                    "ANSYS",
-                                    "Abaqus",
-                                    "STAR-CCM+",
+                                    "抵抗値",
+                                    "発熱量",
+                                    "温度上昇",
+                                    "ヒューズ余裕率",
+                                    "マッチング判定"
+                                ],
+                                "pageIds": [
+                                    "b252df30-7a0b-45ea-b546-ce819141f33a"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "d2171f23-4865-4a07-8fd2-0301e34d4dad",
+                                "title": "実施内容",
+                                "level": 3,
+                                "summary": "Excel化、解析UIとの連携、過去解析データを使ったサロゲートモデル化の3段階を実施する。",
+                                "keywords": [
+                                    "Excel化",
                                     "UI連携",
-                                    "温度予測"
-                                ],
-                                "pageIds": [
-                                    "b252df30-7a0b-45ea-b546-ce819141f33a"
-                                ],
-                                "children": []
-                            },
-                            {
-                                "id": "80098641-bbd7-49cf-af45-78d61d018551",
-                                "title": "Step3 サロゲートモデル化",
-                                "level": 3,
-                                "summary": "過去解析データを活用し、板厚・幅・電流・温度を入力、最高温度を出力するサロゲートモデルを作る。",
-                                "keywords": [
                                     "サロゲートモデル",
-                                    "過去解析データ",
-                                    "板厚",
-                                    "幅",
-                                    "電流",
-                                    "温度",
-                                    "最高温度"
+                                    "過去解析データ"
                                 ],
                                 "pageIds": [
                                     "b252df30-7a0b-45ea-b546-ce819141f33a"
                                 ],
-                                "children": []
+                                "children": [
+                                    {
+                                        "id": "c55949e1-df53-473b-9263-a1b3ce481ade",
+                                        "title": "Step1 Excel化",
+                                        "level": 4,
+                                        "summary": "幅・厚み・長さ・電流を入力し、抵抗と発熱を出力するExcel化を行う。",
+                                        "keywords": [
+                                            "Excel",
+                                            "幅",
+                                            "厚み",
+                                            "長さ",
+                                            "電流",
+                                            "抵抗"
+                                        ],
+                                        "pageIds": [
+                                            "b252df30-7a0b-45ea-b546-ce819141f33a"
+                                        ],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "a3497126-b541-4751-8cc9-0c4e860a4254",
+                                        "title": "Step2 UI連携",
+                                        "level": 4,
+                                        "summary": "HyperMesh、ANSYS、Abaqus、STAR-CCM+などのUI環境と、温度予測を実施している場所を確認する。",
+                                        "keywords": [
+                                            "HyperMesh",
+                                            "ANSYS",
+                                            "Abaqus",
+                                            "STAR-CCM+",
+                                            "温度予測"
+                                        ],
+                                        "pageIds": [
+                                            "b252df30-7a0b-45ea-b546-ce819141f33a"
+                                        ],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "0bc11369-328f-4fd3-88f6-c37b5f066b59",
+                                        "title": "Step3 サロゲートモデル化",
+                                        "level": 4,
+                                        "summary": "過去解析データを活用し、板厚・幅・電流・温度を入力、最高温度を出力とするサロゲートモデルを作る。",
+                                        "keywords": [
+                                            "サロゲートモデル",
+                                            "過去解析データ",
+                                            "板厚",
+                                            "幅",
+                                            "最高温度"
+                                        ],
+                                        "pageIds": [
+                                            "b252df30-7a0b-45ea-b546-ce819141f33a"
+                                        ],
+                                        "children": []
+                                    }
+                                ]
                             }
                         ]
                     },
                     {
-                        "id": "16fb7f48-78ad-4010-99db-80635946891c",
+                        "id": "1814f271-e05f-4896-ad13-690ea8481627",
                         "title": "Phase4：実験計画",
                         "level": 2,
-                        "summary": "CAE相関取得の単品発熱試験、ヒューズとバスバの限界到達順を確認するマッチング試験、保護成立を確認する故障試験を計画している。",
+                        "summary": "CAE相関取得、ヒューズとバスバの限界到達順序の確認、保護成立確認を目的とする3種類の実験を計画する。",
                         "keywords": [
-                            "Phase4",
                             "実験計画",
-                            "単品発熱",
+                            "CAE相関",
                             "ヒューズマッチング",
-                            "故障試験",
-                            "CAE相関"
+                            "故障試験"
                         ],
                         "pageIds": [
                             "b252df30-7a0b-45ea-b546-ce819141f33a"
                         ],
                         "children": [
                             {
-                                "id": "6bb85903-b8f3-4d1d-83b5-a24c614fb1cc",
+                                "id": "2c9afefb-296e-4100-a6ea-2ee9ec11c1bf",
                                 "title": "実験① 単品発熱",
                                 "level": 3,
-                                "summary": "CAE相関取得を目的に電流・電圧・温度を測定する。条件としてHEVは150A・225A・420A、BEVは300A・500A・650Aを挙げる。",
+                                "summary": "CAEとの相関取得を目的に、電流・電圧・温度を測定する。条件はHEVが150A・225A・420A、BEVが300A・500A・650A。",
                                 "keywords": [
                                     "単品発熱",
                                     "CAE相関",
-                                    "電流",
-                                    "電圧",
-                                    "温度",
                                     "150A",
+                                    "225A",
+                                    "420A",
                                     "650A"
                                 ],
                                 "pageIds": [
@@ -1058,10 +1411,10 @@
                                 "children": []
                             },
                             {
-                                "id": "888d540f-cbb4-4d78-a153-af73a3feeb64",
+                                "id": "f43fc95a-4a5f-4a22-a726-092a57f1ad9f",
                                 "title": "実験② ヒューズマッチング",
                                 "level": 3,
-                                "summary": "ヒューズとバスバのどちらが先に限界に到達するかを確認するため、ヒューズ温度、バスバ温度、溶断時間、I²tを測定する。",
+                                "summary": "ヒューズとバスバのどちらが先に限界へ到達するかを確認する。ヒューズ温度、バスバ温度、溶断時間、I²tを測定する。",
                                 "keywords": [
                                     "ヒューズマッチング",
                                     "ヒューズ温度",
@@ -1075,16 +1428,16 @@
                                 "children": []
                             },
                             {
-                                "id": "cc8c2077-c388-415d-9266-4da293d5daab",
+                                "id": "9012904b-0ba1-4bc2-a721-dbb896c871b8",
                                 "title": "実験③ 故障試験",
                                 "level": 3,
-                                "summary": "保護成立確認を目的に、短絡・過電流・接触抵抗増加の条件で故障試験を行う。",
+                                "summary": "保護成立の確認を目的とし、短絡、過電流、接触抵抗増加を試験条件として挙げる。",
                                 "keywords": [
                                     "故障試験",
                                     "保護成立",
                                     "短絡",
                                     "過電流",
-                                    "接触抵抗増加"
+                                    "接触抵抗"
                                 ],
                                 "pageIds": [
                                     "b252df30-7a0b-45ea-b546-ce819141f33a"
@@ -1094,33 +1447,32 @@
                         ]
                     },
                     {
-                        "id": "e24058ce-3e08-4543-9461-98e6b06ff11b",
+                        "id": "2cf86371-60f0-4712-92be-34c51180d983",
                         "title": "Phase5：設計ルール化",
                         "level": 2,
-                        "summary": "最終成果物として設計標準と設計フローへの織り込みを示している。",
+                        "summary": "最終成果物として設計標準を定め、電流・車種・HEV／BEVから必要断面積、推奨板厚、ヒューズ容量を導く。また、マッチング計算から試験・DR・図面発行までの設計フローを示す。",
                         "keywords": [
-                            "Phase5",
-                            "設計ルール化",
+                            "設計ルール",
                             "設計標準",
-                            "設計フロー"
+                            "必要断面積",
+                            "推奨板厚",
+                            "ヒューズ容量"
                         ],
                         "pageIds": [
                             "b252df30-7a0b-45ea-b546-ce819141f33a"
                         ],
                         "children": [
                             {
-                                "id": "3b924086-3d4b-4591-83be-35f8bcde76bc",
+                                "id": "01e0c695-601e-4abb-90e1-79b65e78848b",
                                 "title": "設計標準",
                                 "level": 3,
-                                "summary": "電流、車種、HEV/BEVを入力とし、必要断面積、推奨板厚、ヒューズ容量を出力する設計標準を示している。",
+                                "summary": "入力を電流・車種・HEV／BEV、出力を必要断面積・推奨板厚・ヒューズ容量とする設計標準を示す。",
                                 "keywords": [
-                                    "設計標準",
                                     "電流",
                                     "車種",
                                     "HEV",
                                     "BEV",
                                     "必要断面積",
-                                    "推奨板厚",
                                     "ヒューズ容量"
                                 ],
                                 "pageIds": [
@@ -1129,10 +1481,10 @@
                                 "children": []
                             },
                             {
-                                "id": "5d69c696-fb32-42d5-a07b-152707140a8a",
+                                "id": "510a06f9-b931-497a-b7f5-9834cb70283e",
                                 "title": "設計フローへの織込み",
                                 "level": 3,
-                                "summary": "従来の設計→解析→評価に対し、今後は設計→マッチング計算→CAE→試験→DR→図面発行とするフローを示している。",
+                                "summary": "現在の「設計→解析→評価」に対し、今後は「設計→マッチング計算→CAE→試験→DR→図面発行」の流れを提案する。",
                                 "keywords": [
                                     "設計フロー",
                                     "マッチング計算",
@@ -1151,16 +1503,15 @@
                 ]
             },
             {
-                "id": "b62f4329-874f-4253-96b4-9bca4464118d",
+                "id": "8f38ad11-52d3-45a7-b8de-9608c3fa3898",
                 "title": "あなたの立場（開発DXアーキテクト）で狙うべきゴール",
                 "level": 1,
-                "summary": "セル間バスバ寸法からHEV/BEV別の推奨ヒューズ容量、温度余裕率、成立判定を自動出力する仕組みを目標としている。実験・解析・設計標準化・自動判定を一連で構想することを述べる。",
+                "summary": "セル間バスバ寸法からHEV／BEV別の推奨ヒューズ容量、温度余裕率、成立判定を自動出力する仕組みを目標とする。実験・解析・設計標準化・自動判定を一連で構想する仕事として説明する。",
                 "keywords": [
                     "開発DXアーキテクト",
+                    "自動判定",
                     "推奨ヒューズ容量",
                     "温度余裕率",
-                    "成立判定",
-                    "自動判定",
                     "設計標準化"
                 ],
                 "pageIds": [
@@ -1168,26 +1519,26 @@
                 ],
                 "children": [
                     {
-                        "id": "317402c6-7088-46f4-ab77-e3150379fddb",
+                        "id": "03e7c5ff-74ae-4b10-b68b-f5e79aff9afb",
                         "title": "リンク提案",
                         "level": 2,
-                        "summary": "本ノートの内容に沿ったVault内の関連ノートへのリンクを提案している。サロゲートモデル・最適化、バスバCAE・疲労・実機相関、設計プロセス標準化、役割の各領域に分けている。",
+                        "summary": "マッチング課題の内容に沿い、サロゲートモデル・最適化、バスバCAE・疲労・実機相関、設計プロセス標準化、役割に関連するVault内ノートを提案する。",
                         "keywords": [
                             "リンク提案",
-                            "Vault",
-                            "関連ノート",
                             "サロゲートモデル",
-                            "最適化"
+                            "最適化",
+                            "バスバCAE",
+                            "設計プロセス"
                         ],
                         "pageIds": [
                             "b252df30-7a0b-45ea-b546-ce819141f33a"
                         ],
                         "children": [
                             {
-                                "id": "e74b9eb0-2b7a-4e14-84be-480ad1214a1c",
+                                "id": "25b5c58d-6e44-4e46-be5f-19fe36b6f969",
                                 "title": "1. サロゲートモデル・最適化（Phase3・DXゴールと直結）",
                                 "level": 3,
-                                "summary": "サロゲートモデル、ベイズ探索、OptunaとCAEの自動実行など、寸法入力から成立判定を自動化する目標に関係するノートを列挙している。",
+                                "summary": "自動成立判定という目標に関連するノートとして、RAG・サロゲートモデル・自動設計のロードマップ、バスバ解析でのサロゲート提案、ベイズ探索、OptunaとCAEの自動実行、振動を考慮したCAE最適化を挙げる。",
                                 "keywords": [
                                     "サロゲートモデル",
                                     "ベイズ探索",
@@ -1201,16 +1552,15 @@
                                 "children": []
                             },
                             {
-                                "id": "47c1f49c-4450-407e-b1af-e888d113edf8",
+                                "id": "6f8c7ced-0c77-4c52-9396-c58829411f4d",
                                 "title": "2. バスバCAE・疲労・実機相関（Phase4：実験計画）",
                                 "level": 3,
-                                "summary": "バスバ疲労SN線図や積層バスバの疲労・FSコリレ、実機との正解率定量化に関するノートを、実験とCAE相関に関係する資料として挙げている。",
+                                "summary": "バスバ疲労SN線図・CAE、および積層バスバの疲労とFSコリレに関するノートを挙げ、実験計画におけるCAE相関取得との関連を説明する。",
                                 "keywords": [
                                     "バスバCAE",
                                     "疲労SN線図",
                                     "FSコリレ",
-                                    "実機相関",
-                                    "CAE相関"
+                                    "実機相関"
                                 ],
                                 "pageIds": [
                                     "b252df30-7a0b-45ea-b546-ce819141f33a"
@@ -1218,18 +1568,17 @@
                                 "children": []
                             },
                             {
-                                "id": "836f5855-f051-4a92-a335-e3c0c1976cbf",
+                                "id": "9da59725-58c1-4e4c-9fc2-8a5603c6d8cb",
                                 "title": "3. 設計プロセス・標準化への織り込み（Phase5）",
                                 "level": 3,
-                                "summary": "部品要求の割り付けとトレーサビリティ、MBSE、DR支援、自動評価レポートに関するノートを挙げ、設計プロセス標準化への関連を示している。",
+                                "summary": "部品要求の割り付けとトレーサビリティ、MBSEの要求階層、DR支援、自動評価レポートに関するノートを挙げる。",
                                 "keywords": [
                                     "設計プロセス",
                                     "標準化",
                                     "知能化",
                                     "MBSE",
                                     "レビューツール",
-                                    "自動評価レポート",
-                                    "DR"
+                                    "自動評価レポート"
                                 ],
                                 "pageIds": [
                                     "b252df30-7a0b-45ea-b546-ce819141f33a"
@@ -1237,10 +1586,10 @@
                                 "children": []
                             },
                             {
-                                "id": "2682105d-0733-45b3-bc7f-86b39108303b",
+                                "id": "6adb2a66-42c3-4dfb-9538-074e3e1dcce9",
                                 "title": "4. 役割・立場",
                                 "level": 3,
-                                "summary": "「設計そのものではなく、開発のやり方を変える武器づくり」に関する役割ノートを関連先として示している。",
+                                "summary": "「設計そのものではなく、開発のやり方を変える武器づくり」という役割に関するノートを、本ページの開発DXアーキテクトの目標と関連付ける。",
                                 "keywords": [
                                     "役割",
                                     "開発DXアーキテクト",
@@ -1254,14 +1603,13 @@
                         ]
                     },
                     {
-                        "id": "2b91183b-9bf0-4ae1-9e07-87ad707637d7",
+                        "id": "86f33fb7-eb63-4ef4-a96e-d4603990a610",
                         "title": "ノートに追記する形（コピー用）",
                         "level": 2,
-                        "summary": "関連ノートへのリンク提案を、サロゲートモデル・CAE相関・設計プロセス・役割の分類でコピーできるMarkdown形式にまとめている。",
+                        "summary": "関連ノートへのリンクを、サロゲートモデル・最適化、CAE・疲労・実機相関、設計プロセス、役割のカテゴリに分けたコピー用Markdownとして提示する。",
                         "keywords": [
-                            "コピー用",
-                            "Markdown",
                             "関連ノート",
+                            "コピー用",
                             "サロゲートモデル",
                             "CAE",
                             "設計プロセス"
@@ -1271,17 +1619,14 @@
                         ],
                         "children": [
                             {
-                                "id": "1919e07f-5637-4c92-82f1-85116d5aa4b5",
+                                "id": "c619dcc9-91b3-480e-9592-9cca609db5b6",
                                 "title": "Sources",
                                 "level": 4,
-                                "summary": "リンク提案の根拠として、室長、日付ノート、ベイズ探索、設計に活用できる理論、疲労・標準化関連ノートなどへの脚注参照を列挙している。",
+                                "summary": "リンク提案の根拠として参照されたVaultノートを脚注番号付きで列挙する。",
                                 "keywords": [
                                     "Sources",
                                     "脚注",
-                                    "室長",
-                                    "ベイズ探索",
-                                    "知能化",
-                                    "MBSE"
+                                    "参照ノート"
                                 ],
                                 "pageIds": [
                                     "b252df30-7a0b-45ea-b546-ce819141f33a"
@@ -1293,27 +1638,28 @@
                 ]
             },
             {
-                "id": "aa11b11c-ad16-4d5b-88b1-72b36f505bc8",
+                "id": "751bbcc6-f503-449e-9c5a-f4642f38eb34",
                 "title": "バスバー隙間余裕度 設計標準（CAE）",
                 "level": 1,
-                "summary": "セル間・MOD間・エンドバスバを対象に、マスク治具押し当て時のバスバと端子の隙間をCAEで評価する設計標準の骨子である。隙間余裕度は板厚と端子角度により変わり、許容隙間も板厚ごとの G(t) として定める方針で、CAE条件・結果は未記入。0.15mm以下は板厚不明の現状代表値であり、数値や式を推定で補わないとしている。",
+                "summary": "セル間・MOD間・エンドバスバを対象に、マスク治具押し当て時の隙間余裕度をCAEで評価する標準の骨子を示す。隙間余裕度は板厚 t とセル端子角度 θ の組合せごとに算出し、許容隙間 G(t) は板厚ごとに定める方針で、CAE条件・結果は情報待ちとしている。",
                 "keywords": [
                     "バスバー隙間余裕度",
                     "CAE",
                     "マスク治具",
                     "BBM",
-                    "G(t)",
-                    "0.15mm"
+                    "板厚 t",
+                    "端子角度 θ",
+                    "許容隙間 G(t)"
                 ],
                 "pageIds": [
                     "388715cf-2ad0-4c43-b582-8a23a867ccf7"
                 ],
                 "children": [
                     {
-                        "id": "ad27914d-f42b-4e4b-8862-dfffd89d6207",
+                        "id": "43492916-970b-4f1b-a70e-1d12d4b314cb",
                         "title": "1. 目的・適用範囲",
                         "level": 2,
-                        "summary": "マスク治具を押し当てたレーザ溶接前のバスバ・端子間隙間をCAEで事前評価し、設計段階で余裕度を判定する。対象はセル間、MOD間、エンドバスバ共通で、疲労・発熱の判定は対象外として別の「バスバー設計手順（強度・熱）」を参照する。",
+                        "summary": "レーザ溶接前にマスク治具を押し当てた状態のバスバと端子間の隙間をCAEで事前評価し、設計段階で判定する。対象はセル間・MOD間・エンドバスバ共通で、疲労・発熱の判定は対象外とする。",
                         "keywords": [
                             "マスク治具",
                             "レーザ溶接",
@@ -1329,18 +1675,18 @@
                         "children": []
                     },
                     {
-                        "id": "9a2e9413-89dd-4e24-a223-312f7e00b40e",
+                        "id": "f618506c-e31e-4564-8fee-471737521e35",
                         "title": "2. 用語・定義",
                         "level": 2,
-                        "summary": "隙間、板厚別の許容隙間 G(t)、隙間余裕度、マスク治具、バスバ板厚 t、セル端子角度 θ、評価条件を定義する。隙間余裕度の暫定式は G(t) − CAE最大隙間で、測定位置・方向や式、角度の基準面などは要確認または未記入としている。",
+                        "summary": "隙間、板厚別の許容隙間 G(t)、隙間余裕度、マスク治具、バスバ板厚 t、セル端子角度 θ、評価条件を定義する。余裕の暫定式は G(t) − CAEで得た最大隙間であり、評価条件は t と θ の組合せだが、測定位置・方向や式など未確定の項目も記載している。",
                         "keywords": [
                             "隙間",
                             "許容隙間 G(t)",
                             "隙間余裕度",
-                            "マスク治具",
                             "バスバ板厚 t",
                             "セル端子角度 θ",
-                            "評価条件"
+                            "評価条件",
+                            "BBM"
                         ],
                         "pageIds": [
                             "388715cf-2ad0-4c43-b582-8a23a867ccf7"
@@ -1348,17 +1694,18 @@
                         "children": []
                     },
                     {
-                        "id": "0fe4d00f-dec1-48d1-8d7c-890cc270dccc",
+                        "id": "d0d2a57b-d3b9-4a9b-bdea-2158895cd94a",
                         "title": "3. 判定基準",
                         "level": 2,
-                        "summary": "現状代表値は隙間0.15mm以下（対応板厚未確認）で、9/23打合せの0.1mm以下との違いも未確定として確認を求めている。参考値として380D溶接仕様の端子間隙間0.20mm以下（出力1220±50W、焦点深度±1.5mm）と治具・BBMの非干渉条件を記載し、最終的には全ての（板厚, 端子角度）条件で該当板厚の G(t) を満たすこと、板厚別基準が揃うまでは0.15mmを暫定値として報告することを示す。",
+                        "summary": "現状の代表値は隙間0.15 mm以下だが対応板厚は未確認で、9/23打合せの0.1 mm以下との違いも未確定とする。380D溶接仕様の端子間隙間0.20 mm以下（出力1220±50 W、焦点深度±1.5 mm）と治具・BBMの非干渉条件を記載し、板厚別の G(t) を用いて全条件を判定する方針を示す。板厚別値が揃うまでは0.15 mmを暫定代表値として報告に明記する。",
                         "keywords": [
                             "0.15mm",
                             "0.1mm",
                             "0.20mm",
-                            "380D溶接仕様",
                             "G(t)",
-                            "板厚別テーブル",
+                            "380D溶接仕様",
+                            "出力1220±50W",
+                            "焦点深度±1.5mm",
                             "干渉"
                         ],
                         "pageIds": [
@@ -1367,36 +1714,38 @@
                         "children": []
                     },
                     {
-                        "id": "0061868b-c191-44be-80ef-82008d7b36ef",
+                        "id": "b4b82b94-02c6-4fca-af93-97233d79aaf9",
                         "title": "4. CAE入力条件",
                         "level": 2,
-                        "summary": "CAEツール・バージョン、モデル範囲、寸法公差、治具の押し当て方法と量、材料物性、温度・線膨張、拘束条件、隙間測定位置・方向などの入力項目を列挙し、多くを未記入としている。エンドバスバの形状データは8月試作データへの差替え後に実施する方針が記録されているが、差替え完了は未確認。",
+                        "summary": "CAEツール・バージョン、モデル範囲、形状データ、公差、治具の押し当て方法・量、材料物性、温度条件、拘束条件、隙間測定位置・方向を入力条件として列挙する。多くの条件は未記入で、エンドについては8月試作データへの差替え後に実施する方針が記録されているが、差替え完了は未確認である。",
                         "keywords": [
-                            "CAE入力条件",
+                            "CAEツール",
                             "モデル範囲",
                             "形状データ",
                             "寸法公差",
-                            "押し当て方法",
+                            "押し当て条件",
                             "材料物性",
-                            "拘束条件"
+                            "拘束条件",
+                            "隙間測定位置"
                         ],
                         "pageIds": [
                             "388715cf-2ad0-4c43-b582-8a23a867ccf7"
                         ],
                         "children": [
                             {
-                                "id": "47b60d85-4a28-408a-8fef-6a25a8a72239",
+                                "id": "2939902f-6f25-4c6d-ae1c-640ce47104b9",
                                 "title": "4.1 変動因子（評価条件の軸）",
                                 "level": 3,
-                                "summary": "評価条件の軸としてバスバ板厚 t[mm] とセル端子角度 θ[°] を挙げるが、具体的な評価水準は未記入で、板厚は設計ごとに指定し、角度の基準面とばらつき範囲を定める必要がある。参考資料にはBBM板厚0.8→1.0mm、1.2mm、エンドバスバ2mmから3mm、積層箔0.1／0.2／0.5mmの記載がある一方、端子角度の数値は見つかっておらず、板厚と角度の組合せで評価する方針を示す。",
+                                "summary": "評価条件の軸をバスバ板厚 t[mm] とセル端子角度 θ[°] とし、設計ごとに使う板厚や角度の基準面・ばらつき範囲を指定する。Vault資料にはBBM板厚0.8→1.0 mm（27PL・45PL・56PL）、1.2 mm（46PL）、エンドバスバ2 mmから3 mm、積層箔0.1／0.2／0.5 mmの記載がある一方、端子角度の数値は見つかっていない。両因子の組合せで評価する方針を示す。",
                                 "keywords": [
-                                    "変動因子",
-                                    "バスバ板厚 t",
-                                    "セル端子角度 θ",
-                                    "評価水準",
-                                    "BBM",
-                                    "エンドバスバ",
-                                    "積層箔"
+                                    "バスバ板厚",
+                                    "端子角度",
+                                    "27PL",
+                                    "45PL",
+                                    "56PL",
+                                    "46PL",
+                                    "積層箔",
+                                    "評価水準"
                                 ],
                                 "pageIds": [
                                     "388715cf-2ad0-4c43-b582-8a23a867ccf7"
@@ -1406,18 +1755,19 @@
                         ]
                     },
                     {
-                        "id": "e98e923d-0ad1-4f75-84a8-331ab51bf40f",
+                        "id": "019e7ff2-4d4b-4483-b5c2-808738617a1e",
                         "title": "5. CAE手順",
                         "level": 2,
-                        "summary": "最新版形状の取り込み、モデル化、材料物性・拘束条件設定、治具押し当てステップ設定、最大隙間の出力、公差最悪ケースの再計算を行う手順を示す。板厚 t と端子角度 θ の条件マトリクスの全ケースを評価し、最大隙間・余裕・干渉・判定を一覧化して、最小余裕の条件を記録する。手順の詳細や条件表の値は未記入または暫定。",
+                        "summary": "最新版形状のモデル化、材料物性・拘束条件の設定、治具押し当て荷重ステップ、隙間出力、寸法公差を反映した再計算を順に行う。板厚 t と端子角度 θ の条件マトリクスを作って各ケースを評価し、最大隙間・余裕・干渉・判定を一覧化する。最小余裕となる条件を記録し、設計変更時は変更因子を含む条件を再計算する方針で、条件表の記入様式案も示す。",
                         "keywords": [
                             "CAE手順",
-                            "形状データ",
                             "荷重ステップ",
+                            "変位制御",
+                            "荷重制御",
                             "最大隙間",
-                            "寸法公差",
                             "条件マトリクス",
-                            "最小余裕"
+                            "最小余裕",
+                            "条件表"
                         ],
                         "pageIds": [
                             "388715cf-2ad0-4c43-b582-8a23a867ccf7"
@@ -1425,19 +1775,19 @@
                         "children": []
                     },
                     {
-                        "id": "9942d136-b708-4030-836e-7605860ca287",
+                        "id": "4df0ae64-9a13-4302-9075-5739e7090b07",
                         "title": "6. 判定フローと記録様式",
                         "level": 2,
-                        "summary": "各（t, θ）条件でCAE最大隙間が当該板厚の G(t) 以下か判定し、未確定時は暫定0.15mmを使う。満たす場合は余裕を記録して治具との干渉がないことを確認し、満たさない場合は板厚・角度・形状・公差・治具条件を見直して再計算する；全条件合格時は最小余裕と条件を記録する。記録項目案には対象バスバ、機種、形状データ版、CAEツール、押し当て条件、t・θ、G(t)、最大隙間、余裕、干渉有無、判定が含まれるが、末尾は本文が途中で切れている。",
+                        "summary": "条件（t, θ）ごとに最大隙間が当該板厚の G(t) 以下かを確認し、合格時は余裕を記録して治具との干渉がないことを確認する。基準を満たさない場合は板厚・端子角度・形状・公差・治具条件を見直して再計算し、全条件合格時には最小余裕とその条件を記録する。記録項目案として対象バスバ、機種、形状データ版、CAEツール、押し当て条件、各ケースの t・θ・G(t)・最大隙間・余裕・干渉有無・判定を列挙している。",
                         "keywords": [
                             "判定フロー",
                             "最大隙間",
                             "G(t)",
                             "余裕",
                             "干渉",
-                            "合格",
                             "記録様式",
-                            "t"
+                            "合格判定",
+                            "最小余裕"
                         ],
                         "pageIds": [
                             "388715cf-2ad0-4c43-b582-8a23a867ccf7"
@@ -1447,15 +1797,15 @@
                 ]
             },
             {
-                "id": "1c329ffc-d879-4692-a1d0-28f9ae2b21dd",
+                "id": "149fc4db-c50a-4547-ba73-fc1f808d9eab",
                 "title": "セル間バスバ レーザ溶接 製造要件",
                 "level": 1,
-                "summary": "セル端子とセル間バスバのレーザ溶接について、設計・工程検討用の製造要件を整理するページ。状態は骨子（0.1版）で、資料にない数値やばらつき要因は推定で補わない方針が示されている。",
+                "summary": "セル端子とセル間バスバのレーザ溶接に関する設計・工程検討用の製造要件をまとめている。他の溶接方式は対象外で、骨子版のため、資料にない数値やばらつき要因は推定で補わない方針を示す。",
                 "keywords": [
                     "セル間バスバ",
                     "レーザ溶接",
                     "製造要件",
-                    "BBM",
+                    "マスク治具",
                     "位置ばらつき"
                 ],
                 "pageIds": [
@@ -1463,17 +1813,18 @@
                 ],
                 "children": [
                     {
-                        "id": "6ff19989-ddec-43cc-bb63-cd0a1d829510",
+                        "id": "2c5c8c2f-b5ae-4a64-99f9-ce7d1fddaaeb",
                         "title": "1. 目的・適用範囲",
                         "level": 2,
-                        "summary": "セル端子とセル間バスバのレーザ溶接に関する製造要件を一か所に整理する。超音波・抵抗・ワイヤボンド溶接、疲労・発熱判定、CAEによる隙間評価手順は対象外とし、共通要件を記載して車種固有値は分かれば追記する。",
+                        "summary": "セル端子とセル間バスバのレーザ溶接について、設計・工程検討で満たす要件を集約する。超音波・抵抗・ワイヤボンド溶接、疲労・発熱判定、CAEによる隙間評価手順は対象外とし、車種共通要件として整理する方針を示す。",
                         "keywords": [
                             "適用範囲",
                             "セル端子",
                             "セル間バスバ",
-                            "レーザ溶接",
-                            "対象外",
-                            "CAE"
+                            "超音波溶接",
+                            "疲労",
+                            "CAE",
+                            "車種共通"
                         ],
                         "pageIds": [
                             "8fc8f235-6596-411c-92a1-4b48784af40e"
@@ -1481,18 +1832,18 @@
                         "children": []
                     },
                     {
-                        "id": "f55c6e97-13b1-4076-bbba-f909131ee073",
+                        "id": "8e7bb0c5-ba70-4d4d-ab0d-db884d994b3b",
                         "title": "2. 要件サマリ（位置に関する3要件）",
                         "level": 2,
-                        "summary": "位置に関する指定要件R1〜R3を示す。R1は1溶接につきバスバ基準穴1つを位置基準とし、R2は溶接がセル端子から外れないこと、R3はマスク治具がセル端子とバスバの双方に乗ることを求め、R2・R3ではばらつきを見込んで余裕代1mm程度を確保する。",
+                        "summary": "R1は1溶接につき1つのバスバ基準穴を位置基準とし、R2はばらつきを見込んで溶接が端子から外れず余裕代1mm程度を確保する要件、R3はマスク治具が端子とバスバの双方に乗り余裕代1mm程度を確保する要件である。セルとバスバの相対位置ばらつきを事前に見積もり、設計段階でR2・R3を確認する。",
                         "keywords": [
                             "R1",
                             "R2",
                             "R3",
                             "基準穴",
                             "マスク治具",
-                            "余裕代",
-                            "位置ばらつき"
+                            "相対位置ばらつき",
+                            "余裕代"
                         ],
                         "pageIds": [
                             "8fc8f235-6596-411c-92a1-4b48784af40e"
@@ -1500,34 +1851,35 @@
                         "children": []
                     },
                     {
-                        "id": "c2a2a8bf-7c96-47c6-b7d8-2e35331b71ca",
+                        "id": "442256f6-70c3-4955-bddb-5b846c7e19a2",
                         "title": "3. 位置ばらつきの事前見積り",
                         "level": 2,
-                        "summary": "セル側とBBM側の位置ばらつきを事前に見積もり、設計段階でR2・R3を満たすことを確認する方針を示す。ばらつき要因の整理と合成・判定方法は後続の各節で扱う。",
+                        "summary": "セル側とBBM側の位置ばらつきを整理・合成し、基準穴基準での溶接位置の端子に対するずれを求めてR2を判定する方法を示す。ばらつき合成方法など未確定事項があり、基準穴まわりの回転の影響も確認対象としている。",
                         "keywords": [
                             "位置ばらつき",
-                            "事前見積り",
-                            "セル側",
-                            "BBM側",
+                            "BBM",
+                            "基準穴",
+                            "溶接位置",
                             "R2",
-                            "R3"
+                            "ばらつき合成",
+                            "回転ずれ"
                         ],
                         "pageIds": [
                             "8fc8f235-6596-411c-92a1-4b48784af40e"
                         ],
                         "children": [
                             {
-                                "id": "e6908c69-0689-49c8-b8b2-a6534ccfe09d",
+                                "id": "7f05b7e0-45c3-4c18-90cc-bb83d625af42",
                                 "title": "3.1 位置の連鎖（考え方）",
                                 "level": 3,
-                                "summary": "基準穴から溶接位置までの寸法と、基準穴・セル端子間の位置関係から、溶接位置のずれを捉える。基準穴は1溶接につき1つで副基準穴との組ではなく、相対位置ばらつきはセル位置とBBM側のバスバ位置の2系統とされる。1つの基準穴では基準穴まわりの回転が拘束されず、その扱いは暫定確認事項である。",
+                                "summary": "基準穴から溶接位置までの寸法と、基準穴・セル端子の相対位置を位置連鎖として示す。相対位置ばらつきはセル位置とBBM側バスバ位置の2系統であり、1溶接に基準穴が1つのため基準穴まわりの回転は拘束されず、その扱いは要確認としている。",
                                 "keywords": [
                                     "位置の連鎖",
                                     "基準穴",
-                                    "溶接位置",
-                                    "セル位置ばらつき",
+                                    "セル端子",
+                                    "BBM",
                                     "バスバ位置",
-                                    "回転ずれ",
+                                    "回転",
                                     "基準ピン"
                                 ],
                                 "pageIds": [
@@ -1536,18 +1888,18 @@
                                 "children": []
                             },
                             {
-                                "id": "01c65b60-4148-42c8-a234-c357ddaca05c",
+                                "id": "2f718fbd-a71e-42f3-91ef-4fa02ce668b5",
                                 "title": "3.2 ばらつき要因の表（記入先）",
                                 "level": 3,
-                                "summary": "主なばらつき系統として、セル端子の面内2方向の位置ばらつきと、基準穴位置・基準穴から溶接位置までの寸法・位置決めガタなどのBBM側ばらつきを挙げるが、値や内訳は未記入。セル厚み・ピッチ、端子寸法、穴とピンの嵌合すきまなどを候補に挙げ、溶接位置補正ロジックで吸収できる量は原典PDFの照合待ちとしている。",
+                                "summary": "セル側のセル位置ばらつきと、BBM側の基準穴位置・寸法・位置決めガタ・保持位置などを2系統として記入する表を示すが、値や内訳は未記入である。セル厚み・ピッチ、端子公差、基準穴・嵌合すきまなどを内訳候補として挙げ、溶接位置補正ロジックで吸収できる量は原典PDFの照合待ちとしている。",
                                 "keywords": [
                                     "ばらつき要因",
+                                    "セル位置ばらつき",
+                                    "BBM",
                                     "セル厚み",
                                     "セルピッチ",
-                                    "端子寸法",
-                                    "基準穴",
-                                    "基準ピン",
-                                    "位置決めガタ",
+                                    "基準穴公差",
+                                    "嵌合すきま",
                                     "溶接位置補正ロジック"
                                 ],
                                 "pageIds": [
@@ -1556,19 +1908,19 @@
                                 "children": []
                             },
                             {
-                                "id": "7ba6ed61-4414-44c4-9d98-9b7af4c7f215",
+                                "id": "2d6a3800-2009-44f5-bf77-7cacf7e4d845",
                                 "title": "3.3 見積り方法と判定（案）",
                                 "level": 3,
-                                "summary": "セル並び方向と直交方向についてセル側・BBM側のばらつきを整理し、合成して基準穴基準の溶接位置の最大ずれを求める案を示す。最悪ケースと統計的合成のどちらを使うかは未決で、溶接全長が端子外形内に入り、溶接端から端子端まで1mm程度の余裕を確保することをR2の判定条件とする。基準穴まわりの回転影響を溶接軌跡の遠い端で確認し、不適合時は位置・形状・公差などを見直す。",
+                                "summary": "セル側・BBM側のばらつきを面内2方向で整理し、合成して溶接位置の最大ずれを求めるが、最悪ケースか統計的合成かは未決定である。溶接全長が端子内に入り、溶接端から端子端まで1mm程度の余裕を確保することをR2判定とし、回転ずれの評価、未達時の見直し項目、記録項目案を示す。",
                                 "keywords": [
                                     "見積り方法",
                                     "最大ずれ",
-                                    "最悪ケース",
-                                    "統計的合成",
+                                    "面内2方向",
                                     "R2",
-                                    "溶接軌跡",
+                                    "余裕代",
                                     "回転ずれ",
-                                    "判定"
+                                    "判定",
+                                    "記録項目"
                                 ],
                                 "pageIds": [
                                     "8fc8f235-6596-411c-92a1-4b48784af40e"
@@ -1578,10 +1930,10 @@
                         ]
                     },
                     {
-                        "id": "f247e6da-63ed-4939-9be1-e231b001a4c6",
+                        "id": "9c8304d1-640f-4d3b-854e-391adc92cf75",
                         "title": "4. マスク治具の位置要件（R3）",
                         "level": 2,
-                        "summary": "マスク治具は溶接時にバスバを端子へ押し当てて隙間を抑えるもので、セル端子とバスバの双方に乗ることを要件とする。ばらつきを考慮し、接触範囲から端子端・バスバ端までそれぞれ1mm程度の余裕を確保する判定案を示すが、接触範囲の計画図参照先は未記入である。押し当て時の許容隙間は§5を参照する。",
+                        "summary": "マスク治具は溶接時にバスバを端子へ押し当てる治具であり、接触範囲が端子とバスバの双方に乗ることをR3とする。位置ばらつきを見込んで両側それぞれに1mm程度の余裕を確認する案を示し、接触範囲の計画図参照先は未記入、押し当て時の許容隙間は§5としている。",
                         "keywords": [
                             "マスク治具",
                             "R3",
@@ -1597,33 +1949,36 @@
                         "children": []
                     },
                     {
-                        "id": "de621665-3daa-42df-91f0-d47457336c3e",
+                        "id": "63436468-00e4-4f40-af87-5d384052a127",
                         "title": "5. 溶接条件・隙間・部品精度",
                         "level": 2,
-                        "summary": "溶接条件、隙間、部品精度に関する要件を扱う章であり、このページに記載された具体的な条件は5.1に示されている。",
+                        "summary": "溶接条件、隙間、部品精度に関する要件を扱い、続く5.1で380D溶接仕様の値を示す。バスバ剛性や板厚によって隙間・入熱が変わる可能性があり、形状変更時のCAE解析や検証について記載する。",
                         "keywords": [
                             "溶接条件",
                             "隙間",
                             "部品精度",
-                            "380D溶接仕様"
+                            "380D",
+                            "バスバ剛性",
+                            "CAE",
+                            "入熱"
                         ],
                         "pageIds": [
                             "8fc8f235-6596-411c-92a1-4b48784af40e"
                         ],
                         "children": [
                             {
-                                "id": "e8fbb262-20d8-4495-883b-276362ad943b",
+                                "id": "25521fdd-28ca-400c-84d9-a8f6c2f9fa21",
                                 "title": "5.1 溶接条件（380D溶接仕様）",
                                 "level": 3,
-                                "summary": "380D溶接仕様として、レーザ出力1220±50W、走査速度400mm/sec、焦点深度±1.5mm、端子間隙間0.20mm以下を記載する。これらはJournal記載に基づき原典PDFは未照合で、溶接長さ・幅・溶け込み深さは未記入（溶接長さ・幅はDR資料に項目あり、未照合）としている。",
+                                "summary": "確認済みの条件として、レーザ出力1220±50W、走査速度400mm/sec、焦点深度±1.5mm、端子間隙間0.15mm以下を記載する。溶接長さ・幅・溶け込み深さは未記入で、バスバ形状変更時のCAE解析、板厚による隙間余裕度の変動、バスバ厚み増加時のセル入熱の検証必要性を挙げる。",
                                 "keywords": [
-                                    "380D",
+                                    "380D溶接仕様",
                                     "レーザ出力",
                                     "1220±50W",
                                     "走査速度",
                                     "焦点深度",
                                     "端子間隙間",
-                                    "溶接長さ",
+                                    "0.15mm",
                                     "溶け込み深さ"
                                 ],
                                 "pageIds": [
@@ -1636,9 +1991,9 @@
                 ]
             }
         ],
-        "sourceHash": "01c34da572ca48ea8ffc20845d0068d7c46a4240",
-        "textHash": "fc6f79f8925ee4cf76b8de9fd84a468f567ffd72",
-        "generatedAt": "2026-10-16T11:30:18.178317",
+        "sourceHash": "2518de2675cc14dd9de4c3adb6a979e25928f134",
+        "textHash": "b1544975b378b669075bdeb8ed62d0c460a8f0de",
+        "generatedAt": "2026-10-16T11:59:54.049263",
         "pageCount": 4,
         "schemaVersion": 1,
         "generator": "ai"

@@ -28,7 +28,7 @@
         "title": "BBM要求仕様書_241209改訂",
         "sourceFilePath": null,
         "createdAt": "2026-09-19T03:53:34.354Z",
-        "updatedAt": "2026-10-02T09:45:59.176117",
+        "updatedAt": "2026-10-16T12:52:22.604833",
         "pageCount": 4
     },
     {
@@ -214,5 +214,13 @@
         "createdAt": null,
         "updatedAt": null,
         "pageCount": 37
+    },
+    {
+        "id": "e1fc7374-ff95-4e8a-b26f-bb36f5ebaf32",
+        "title": "耐熱絶縁カバー設計標準書",
+        "sourceFilePath": "C:\\Users\\1584550\\AppData\\Roaming\\system_factory\\app_data\\projects\\0c47063b-31ef-45f7-9ab8-67833c1008e7\\documents\\e1fc7374-ff95-4e8a-b26f-bb36f5ebaf32\\orgs\\07d8f2ff-504b-4e33-a39a-a6ba36c48913.pdf",
+        "createdAt": null,
+        "updatedAt": null,
+        "pageCount": 51
     }
 ]

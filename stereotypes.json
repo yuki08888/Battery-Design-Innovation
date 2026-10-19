@@ -1,1 +1,1034 @@
-[]
+[
+    {
+        "id": "cst-a30145cd",
+        "name": "component",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-01a72985",
+        "name": "electrical",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-7969d420",
+        "name": "wire_harness",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-07bf035c",
+        "name": "low_voltage",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-e85f28a7",
+        "name": "distribution",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-9d07c1c8",
+        "name": "physical",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-400ea7be",
+        "name": "structural",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-4dcbbbb9",
+        "name": "interconnect",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-2cf09a7b",
+        "name": "signal",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-9acd9d16",
+        "name": "power",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-bde8938a",
+        "name": "routing",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-38106f86",
+        "name": "protection",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-08175c03",
+        "name": "ground",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-6616695e",
+        "name": "shield",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-b38017ba",
+        "name": "connector",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-baf98c4c",
+        "name": "sensor",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-352b0b7f",
+        "name": "actuator",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-01cfb5a9",
+        "name": "controller",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-656b026d",
+        "name": "thermal",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-9145e178",
+        "name": "mechanical",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-754431d0",
+        "name": "environmental",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-2743890a",
+        "name": "diagnostic",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-c780f180",
+        "name": "communication",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-333974be",
+        "name": "bus",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-1b6b82c9",
+        "name": "cable",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-c88398ea",
+        "name": "harness",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-049b063f",
+        "name": "terminal",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-7b6bc7a7",
+        "name": "junction",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-5ee086f1",
+        "name": "module",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-57e13901",
+        "name": "assembly",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-92858e01",
+        "name": "subassembly",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-bb4728ec",
+        "name": "part",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-29781d12",
+        "name": "element",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-d3c3de3f",
+        "name": "equipment",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-4b82175d",
+        "name": "hardware_component",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-c983ba38",
+        "name": "electrical_component",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-f0641640",
+        "name": "wire",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-628e0a6e",
+        "name": "lead",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-e99185f8",
+        "name": "conductor",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-ea924c87",
+        "name": "wiring",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-cb1c0927",
+        "name": "circuit",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-c10a66df",
+        "name": "loop",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-58314dac",
+        "name": "link",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-42e69dfd",
+        "name": "connection",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-704f4079",
+        "name": "network",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-a243d915",
+        "name": "trace",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-d393d342",
+        "name": "path",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-e3e608a7",
+        "name": "line",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-ec70c900",
+        "name": "channel",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-a00df547",
+        "name": "carrier",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-0ed41b56",
+        "name": "media",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-de53d7da",
+        "name": "transmission",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-0f3387df",
+        "name": "feed",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-263601ed",
+        "name": "supply",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-ded78983",
+        "name": "harness_assy",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-2fe540de",
+        "name": "lv_harness",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-520c37d5",
+        "name": "wire_assembly",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-321b6e24",
+        "name": "cable_assembly",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-762569a6",
+        "name": "electric_wire",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-d19b142b",
+        "name": "wire_bundle",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-20515eea",
+        "name": "cable_bundle",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-72cb8844",
+        "name": "wiring_harness",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-c5c67ad2",
+        "name": "wireharness",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-8fe836bf",
+        "name": "wire_harness_assy",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-cbb6048d",
+        "name": "lv_wire",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-6891eeb2",
+        "name": "lv_cable",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-1a44c50e",
+        "name": "lv_circuit",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-21970afc",
+        "name": "lv_distribution",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-a5a5d7cc",
+        "name": "lv_system",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-7dd3f11f",
+        "name": "lv_network",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-3ceb7077",
+        "name": "low_voltage_harness",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-3a917e6d",
+        "name": "low_voltage_wire",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-d79d6814",
+        "name": "low_voltage_circuit",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-d5b9e936",
+        "name": "signal_wire",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-f6069195",
+        "name": "power_wire",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-8eea68e5",
+        "name": "control_wire",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-ffa3aae0",
+        "name": "sensor_wire",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-fb4953fa",
+        "name": "comm_wire",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-0fd368a4",
+        "name": "interconnect_wire",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-9aca9fa6",
+        "name": "vehicle_harness",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-56961cee",
+        "name": "pack_harness",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-b1716877",
+        "name": "internal_harness",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-1f7afc40",
+        "name": "battery_harness",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-a6e109b7",
+        "name": "assy_harness",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-dc84dd48",
+        "name": "assy_wire",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-2ceac00b",
+        "name": "assy_cable",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-e9cacd62",
+        "name": "assy_circuit",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-90406107",
+        "name": "assy_network",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-c9222a55",
+        "name": "assy_link",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-0780d4e6",
+        "name": "assy_connection",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-b641aeac",
+        "name": "assy_transmission",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-304a6ea3",
+        "name": "assy_feed",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-956c1ccb",
+        "name": "assy_supply",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-7e77958f",
+        "name": "assy_distribution",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-4287cb45",
+        "name": "assy_system",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-dc0ae814",
+        "name": "assy_part",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-0e80f4dc",
+        "name": "assy_module",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-2d324ccc",
+        "name": "assy_subassembly",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-fd641fac",
+        "name": "assy_component",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-2d10f2f3",
+        "name": "assy_device",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-21ca122d",
+        "name": "assy_unit",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-1c631ba4",
+        "name": "assy_element",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-c19a178b",
+        "name": "assy_structural",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-8724b197",
+        "name": "assy_physical",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-89a2d88c",
+        "name": "assy_hardware",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-3d286d68",
+        "name": "assy_electrical",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-497b2539",
+        "name": "assy_functional",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-6dbb134c",
+        "name": "assy_interface",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-103ba2af",
+        "name": "assy_interconnect",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-2f96ccb7",
+        "name": "assy_safety",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-01b28605",
+        "name": "assy_reliability",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-021f52d3",
+        "name": "assy_signal",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-3ee5576f",
+        "name": "assy_power",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-f36bc656",
+        "name": "assy_routing",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-440d8e17",
+        "name": "assy_protection",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-f9b3ae3d",
+        "name": "assy_ground",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-5228010c",
+        "name": "assy_shield",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-ebd301ae",
+        "name": "assy_connector",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-f66952c7",
+        "name": "assy_sensor",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-caf73ec2",
+        "name": "assy_actuator",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-490d2578",
+        "name": "assy_controller",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-f37090ee",
+        "name": "assy_thermal",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-607d7e03",
+        "name": "assy_mechanical",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-f0b82c07",
+        "name": "assy_environmental",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-ed0b0ae5",
+        "name": "assy_diagnostic",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-8a1236e4",
+        "name": "assy_communication",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-43e57882",
+        "name": "assy_bus",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-f17788e2",
+        "name": "assy_cable_component",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-6209ff98",
+        "name": "assy_wire_component",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-58792ee4",
+        "name": "assy_harness_component",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-662889ce",
+        "name": "assy_circuit_component",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-394f7b22",
+        "name": "assy_loop_component",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-bf3f953d",
+        "name": "assy_trace_component",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-956aa843",
+        "name": "assy_path_component",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-a57799c5",
+        "name": "assy_line_component",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-b2a5b757",
+        "name": "assy_channel_component",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-9b00db89",
+        "name": "assy_carrier_component",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-263f4d7a",
+        "name": "assy_media_component",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-527fa6d2",
+        "name": "assy_transmission_component",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-c12af244",
+        "name": "assy_feed_component",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-9f8f5bd3",
+        "name": "assy_supply_component",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-6ecb0adc",
+        "name": "assy_distribution_component",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-d612c3ec",
+        "name": "assy_system_component",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-466d9dde",
+        "name": "assy_lv_harness",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-6746caa3",
+        "name": "assy_wire_assembly",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-25050b71",
+        "name": "assy_cable_assembly",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-0cdacf2b",
+        "name": "assy_electric_wire",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-4bf22ca4",
+        "name": "assy_wire_bundle",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-c90d8040",
+        "name": "assy_cable_bundle",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-ce6eb038",
+        "name": "assy_wiring_harness",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-5e61db28",
+        "name": "assy_wireharness",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-8f8407b0",
+        "name": "assy_wire_harness_assy",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-961aa854",
+        "name": "assy_lv_wire",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-394703ad",
+        "name": "assy_lv_cable",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-a74f75b6",
+        "name": "assy_lv_circuit",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-e420e445",
+        "name": "assy_lv_distribution",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-05826265",
+        "name": "assy_lv_system",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-7011d935",
+        "name": "assy_lv_network",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-e9b9f7d7",
+        "name": "assy_low_voltage_harness",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-03c29d8d",
+        "name": "assy_low_voltage_wire",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-bf11c166",
+        "name": "assy_low_voltage_circuit",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-d86c1e4e",
+        "name": "assy_signal_wire",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-1cf0ec84",
+        "name": "assy_power_wire",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-33dff562",
+        "name": "assy_control_wire",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-e7b00bfd",
+        "name": "assy_sensor_wire",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-fc473674",
+        "name": "assy_comm_wire",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-a9243933",
+        "name": "assy_interconnect_wire",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-b432d55d",
+        "name": "assy_vehicle_harness",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-1cc14615",
+        "name": "assy_pack_harness",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-f742c838",
+        "name": "assy_internal_harness",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-fe3c167a",
+        "name": "assy_battery_harness",
+        "description": "",
+        "isCustom": true
+    },
+    {
+        "id": "cst-175e823d",
+        "name": "port",
+        "description": "",
+        "isCustom": true
+    }
+]
