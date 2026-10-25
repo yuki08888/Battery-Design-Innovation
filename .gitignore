@@ -21,14 +21,13 @@ app_doc_vector_index.json
 .description_proposals/
 .requirement_proposals/
 .restructure_proposals/
-.scripts/
 *.corrupt-backup/
 *.corrupt-*
 .ontology-migration-backup-*/
 apps/**/.build/
-apps/**/.preview/
 apps/**/app_build_log.txt
 # <<< system-factory internal artifacts <<<
+
 
 
 
