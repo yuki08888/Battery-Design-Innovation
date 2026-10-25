@@ -1,0 +1,47 @@
+id: ""
+name: 非専門家向けの説明ビジュアル
+slash_command: media-explain
+description: モデルを知らない人に「何のための・どんなシステムか」を伝える説明図を、システム全体の中での位置づけを踏まえて作る
+use_when: 社内外の非専門家・新メンバー・関係部署向けに、要素やサブシステムの役割をひと目で伝える画像を作る場合。正確な寸法や設計判断を示す図が欲しいときは報告・レビュー用の手順書を使う
+steps:
+  - no: 1
+    title: 伝える相手と一言メッセージを決める
+    instruction: |
+      依頼から「誰に」「何を一言で伝えるか」(例: 配送ドローンは荷物を自律で届ける) を決める。
+      gather_media_context(elementIds=[...], contextScope="project") で、
+      題材 (core) に加えて所属・兄弟 (surroundings) とシステム全体・アクター (project) を集める。
+      contextGuide の温度感に従い、core は必ず描く・near は場面づくりに使う・surrounding / project は背景に留める。
+      aspect は相手が知りたいことで選ぶ (使われ方なら usecase、何でできているかなら structure、
+      どう動くかなら behavior)。迷えば suggestedAspect。
+    tools: [gather_media_context, get_related_elements, search_item]
+    done_when: 伝える相手・一言メッセージ・aspect と、描く要素 (core) と背景に留める要素の一覧が決まっている
+  - no: 2
+    title: 見た目の根拠を揃える
+    instruction: |
+      check_media_traceability(elementIds=[...]) で使える画像・動画・3D を確かめ、題材に届かないファイルは使わない。
+      capture_media_reference で根拠を撮る。説明図では部位だけでなく全体が伝わることが大事なので、
+      画像・動画の領域は既定 (framing 省略 = 全体 + 部位の拡大) のまま撮る。
+      3D は基準視点の全体 (baseViewCaptureIds) を必ず先頭にし、部品の位置は横に並ぶ確認用の強調で確かめる。
+      根拠が無い要素は文字情報だけで描くと判断する。
+    tools: [check_media_traceability, capture_media_reference, read_asset]
+    done_when: 生成に使う captureId の一覧と、根拠が無い要素の一覧が記録されている
+  - no: 3
+    title: 分かりやすさ優先で生成する
+    instruction: |
+      generate_element_image を purpose="explanation"、style は illustration か infographic で呼ぶ。
+      prompt (英語) は「一言メッセージ」を主題にし、構成は 1 画面 1 メッセージ、主題を中央に大きく、
+      背景はシステム全体の舞台 (project の modelName / systemBlocks / actors) を簡潔に示す程度にする。
+      専門用語や仕様値・文字は描かせない (説明はスライド側で付ける)。
+      referenceAssetIds は手順 2 の captureId (基準視点の全体を先頭)。
+      project.visualStyle があれば同じ画風に寄せ、続きなら consistentWithAssetId を渡す。
+    tools: [generate_element_image]
+    done_when: 生成が success=true を返し、references に手順 2 の captureId が記録されている
+  - no: 4
+    title: 伝わるか確かめて報告する
+    instruction: |
+      生成結果が一言メッセージを表しているかを確かめ、外れていれば
+      update_generated_media(regenerate=true, revisionInstruction=...) で同じファイルの新版にする。
+      報告では、一言メッセージ・生成物の名前・描いた要素・背景として扱った文脈・根拠が無かった要素・
+      スライドに添えるとよい説明文 (日本語 1〜2 文) を述べる。
+    tools: [update_generated_media, trace_asset_links]
+    done_when: 生成物の assetId・一言メッセージ・添える説明文・根拠が無かった要素の一覧が報告に含まれている

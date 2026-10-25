@@ -1,0 +1,54 @@
+id: ""
+name: STPA
+slash_command: stpa
+description: |
+  損失・ハザード・安全制約を定義し、制御構造の全制御動作について 4 種別の UCA を網羅し、
+  損失シナリオと安全要求を導く手順。結果は分析レイヤーの STPA に残し、安全要求をモデルへ戻す。
+use_when: |
+  ユーザーが「STPA して」「制御構造の安全分析」「UCA を洗い出して」等を依頼したとき。
+steps:
+  - no: 1
+    title: 損失・ハザード・制約
+    instruction: |
+      文脈の「対象の分析」があればそれを使う。無ければ create_analysis(method=stpa) で作る。
+      describe_analysis_method(stpa) を確認する。loss、hazard (lossIds で損失へ接続)、constraint (hazardIds) を作る。
+    tools: [list_analyses, describe_analysis_method, create_analysis, read_analysis, edit_analysis_records]
+    done_when: 各 hazard が lossIds で損失に接続され、各 hazard に constraint が存在する
+  - no: 2
+    title: 制御構造
+    instruction: |
+      モデルのブロック・接続・信号 (get_related_elements / graph_query) から controller、controlled_process、
+      control_action (sourceId / targetId)、feedback を作り、elementId で要素へトレースする。
+    tools: [search_item, get_related_elements, graph_query, edit_analysis_records]
+    done_when: 各 control_action の sourceId / targetId が解決され、elementId が記録されている
+  - no: 3
+    title: UCA (4 種別 × 全制御動作)
+    instruction: |
+      各 control_action の子に uca を作る。ucaType は not_provided / provided_causes_hazard /
+      too_early_late / stopped_too_soon_applied_too_long の 4 種別を全て評価する。
+      危険にならない種別は notHazardous=true とし理由を notes に書く。危険な UCA は hazardIds で接続する。
+      read_analysis で control_action の computed.missingTypes が空になるまで続ける。
+    tools: [read_analysis, edit_analysis_records]
+    done_when: 全 control_action の missingTypes が 0件である
+  - no: 4
+    title: 損失シナリオ
+    instruction: |
+      危険な各 uca の子に loss_scenario (controller / feedback / control_path / controlled_process) を作り、
+      原因要素を elementIds に入れる。
+    tools: [edit_analysis_records, get_related_elements]
+    done_when: 危険な各 uca に loss_scenario が 1 件以上接続されている
+  - no: 5
+    title: 安全要求化
+    instruction: |
+      constraint の ucaIds に対応する UCA を入れる。安全制約を create_requirement で要求化し、requirementIds に入れる。
+    tools: [create_requirement, create_relationship, edit_analysis_records, validate_analysis]
+    done_when: 危険な全 uca が constraint に接続され、要求化した制約の要求 ID が記録されている
+  - no: 6
+    title: 報告
+    instruction: |
+      validate_analysis で残課題を確認し、損失・ハザード・UCA・シナリオの件数、未接続の UCA、要求化した制約を報告する。
+    tools: [validate_analysis]
+    done_when: validate_analysis の検証結果と UCA の件数が報告に含まれている
+strict: true
+allow_skip: false
+max_steps_per_stage: 14

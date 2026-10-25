@@ -1,0 +1,81 @@
+id: ""
+name: カスタムUIの作成と改善
+slash_command: custom-ui
+description: ユーザーの意図に沿ったカスタムUIやモデル由来のドキュメントUIを構築し、追記保存と出力まで確認する
+use_when: カスタムUIの新規作成・大きなUI改善を依頼された場合。小さな修正では必要な範囲だけ実施する
+steps:
+  - no: 1
+    title: 対象と目的の確定
+    instruction: |
+      カスタムUIドメイン(app)で実行する。横断エージェントならbuiltin:appへ委任する。
+      添付・明示された対象を確認し、既存ならlist_apps/select_app、新規依頼ならcreate_app(template=用途に合う下地)を使う。
+      用途が次に当てはまる場合はその手順書の段階に沿って進める(該当が曖昧ならask_userで選択肢として提示する):
+        /ui-report 章立てレポート(設計書・仕様書・検証報告・ICD) template=report
+        /ui-trace トレーサビリティ・カバレッジ template=trace
+        /ui-dashboard 進捗・品質ダッシュボード template=dashboard
+        /ui-review 設計レビュー支援 / /ui-explorer 構造ブラウザ・要素詳細 template=explorer
+        /ui-compare 比較・トレードスタディ / /ui-interface インタフェース管理(ICD)
+        /ui-param パラメータ・予算管理 / /ui-form データ入力・一括編集
+      目的・利用者・必須の操作・対象スコープで不足する情報は推測せずask_userで確認する(選択肢 + 既定値)。方向性が曖昧ならgenerate_ui_mockupで画面イメージを示してよい。
+      ユーザーが実現したい操作・データ・指定デザインを優先し、些細な装飾だけなら標準で補う。
+      文書生成では対象ドメイン、章立て、出典、対象モデル範囲、手動追記と必要な出力形式を決める。
+      画像/PDF/Excelサンプルがあれば先に観察する。PDFプレビューと座標、Excelのセル位置/結合/書式を参照し、解析上限と未解析部分を区別する。
+      開発対象システムのアプリのモデル化とは区別し、別のカスタムUIを無断で改変しない。
+    tools: [list_apps, select_app, create_app, ask_user, generate_ui_mockup]
+    done_when: 対象ID・新規または編集の区別・用途(該当手順書)・主要操作・ユーザー指定事項が記録されている
+  - no: 2
+    title: 既存実装とSDKの確認
+    instruction: |
+      ファイルツリーとmanifestを確認し、関連ファイルだけまとめてread_fileする。
+      必要なAPIはシステム文脈のSDK参照で確認し、実装例はread_sdk_recipe(topic)で読む(検証済みのお手本)。未公開APIやホスト相対importを作らない。
+      search_projectでdatabase/assets/document/ontologyの実データを調べる。空queryで一覧、resourceIdで詳細、pageIdで本文、offsetで次ページ。
+      実際のSQL列名・文書ページ・アセット形式・概念とモデルリンクを確認し、名前やスキーマを推測しない。
+      ビュー連携ではsearch_project(kind="views")で一覧、resourceIdで説明・親要素・meaning・definitionを読む。大きい図のnodes/edgesはoffsetで続きを取得する。
+      ActivityDiagramは活動の制御/オブジェクトフロー、InternalBlockDiagramは部品・ポートの接続、FreeDiagramは選択した観点と関係種別を確認する。
+      FreeTableは行ルートと列クエリ、FreeMatrixは両軸のスコープと関係の方向/フィルタを確認する。satisfy/verify/deriveReqtを混同せず、空セルだけで未充足と判定しない。
+      プロジェクトの目的・親要素・モデル内容から、なぜこのビューをこの範囲で示すかを判断する。図名だけから意味を推測しない。
+      サンプルの各章/列/図を実モデルのプロパティ・クエリ・単位に対応付ける。サンプル記載の値を実データと混同しない。
+      既存の構成とデータを維持し、必要最小限の変更・権限を決める。新規権限を推測で増やさない。
+      固定ID・プロジェクト固有の検索名・URL・ローカルパスは環境変数へ分離する。
+      manifest.environmentVariables に key/description/required のみを宣言し、environment.read 権限で environment.get({key}) から読む。
+      実値やdefaultはアプリへ保存しない。値はユーザーが環境変数設定のアプリ専用スコープへ入力する。
+    tools: [list_app_files, read_file, get_app_diagnostics, search_project, read_sdk_recipe]
+    done_when: 編集するファイル一覧・利用API・必要権限・再利用する部品が記録されている
+  - no: 3
+    title: 操作しやすい画面の実装
+    instruction: |
+      ユーザー指定を最優先し、未指定部分にはSDKのカスタムUI標準設計ガイドを適用する。
+      MUIテーマとdesignTokensを使う。文字は控えめに、不要な説明や装飾カードを増やさない。
+      スクロールバーはdesignTokens.scrollbar.thin（ホストcustom-scrollbarと同じ）。
+      複数ペインはResizableSplitPaneのhorizontal/verticalで幅・高さをドラッグ調整可能にする。
+      ElementLabel（chip=trueを含む）で種別アイコン、EllipsisTextで省略+全文Tooltipを付ける。
+      モデルとの連動はModelElementLink、画像はAssetImage。useAssetList/useDocumentPage/useOntologyGraph/useSqlQuery/useLinkedContentで状態管理を再利用する。
+      既存ビューはModelView/useViews/useViewList/useViewImageとmodel.read権限で再利用する。独自の架空データで描き直さない。
+      scopeで要素/表ルート/列/行列軸、図viewportでモデル座標のx/y/width/height、width/heightで表示サイズを制御する。元ビューは保存しない。
+      宣言的フック(useModelQuery/useSqlQuery/ModelView等)は本体の変更に自動追従する。独自の非同期取得はuseLiveQuery(load, deps, {on})で追従させる。範囲外を含む全モデルが表示されていると説明しない。
+      要素・図・資料・概念への参照はResourceChip/ResourceChipListで名前と種別アイコンを表示する。IDを生で表示しない。
+      コピーはcopyToClipboard、表の保存はexportTable、任意ファイルはsaveFile、図を開くのはopenView、要素の表示はrevealElement、確認はuseUI().confirmを使う。navigator.clipboard/<a download>/window.open/localStorage/alert/直fetchはサンドボックスで動かない。
+      横断リンクはmodel.read/assets.read/document.read/ontology.readが全て必要。単一資料なら個別APIを使う。
+      ファイル取得16MiB上限、SQL読取専用・最大500行、旧オントロジーnullを扱う。PDF/3DもAssetImageで画像表示する（PDF先頭ページ、3D保存済みカラー画像）。3D未解析・画像未同期はエラーとして表示する。
+      読込中・空・エラー・権限不足を区別し、狭い画面・長い名前・キーボード操作を考慮する。
+      複数ページの文書はReportDocument/ReportSection/ReportFigure/ReportTable/ReportTocで組む(詳細は/ui-reportとread_sdk_recipe(topic="report"))。出力ツールバーと読込中の出力抑止はReportDocumentが担う。files権限。
+      単一画面の簡易出力だけならDocumentExportToolbar(targetRef,title)でもよい。操作部はdata-export-exclude。
+      手動追記はDocumentText(storageKey,label,defaultValue)とstorage権限。安定した文書/節キーで保存し、モデル更新では上書きしない。保存はアプリ専用でありプロジェクト文書への公開とは別。
+      既定外の権限が必要ならrequest_permissionsで理由を添えて承認を依頼する。manifestのpermissionsを直接編集しない。
+      関連箇所はmulti_replace_string_in_fileでまとめて変更し、小変更を全画面再生成に拡大しない。
+    tools: [multi_replace_string_in_file, create_app_file, request_permissions]
+    done_when: 要求された各操作と表示が実装され、ユーザー指定と標準適用箇所・必要権限の承認結果が記録されている
+  - no: 4
+    title: 検証と引き渡し
+    instruction: |
+      diff_appで範囲を確認し、変更単位がまとまった段階でvalidate_appを実行してエラーを修正する。
+      validate_sdk_usageでAPIの誤用を確認する。読み取りや検証を意味なく繰り返さない。
+      静的検証の後、test_app_in_sandboxで一時ダミーモデル上で実行し、連携・権限設定とCRUD往復・表示データ取得を確認する。
+      画面が使う呼び出しはscenarioで再現し(@ref:でfixtureのID、@step:Nで前の戻り値)、失敗のcode/detail/hintに従いpassed:trueまで直す。
+      両検証のENVエラーを解消する。必須未設定時の設定表示と、設定後の起動を確認する。
+      preview_app(action="inspect")で描画・見切れ・ID表示・読込中のまま止まる箇所を確認し、指摘を解消する。狭幅・長い名前・ライト/ダークも可能な範囲で確認する。
+      文書UIはpreview_app(action="export")でページ数・目次・図の欠落・空章を確認し、サンプルとの構成対応・出典/単位、追記の保持を検証する。
+      実行できなかった確認は未検証と明記する。型検査成功だけで操作や描画の成功を宣言しない。
+      変更ファイル・実施した検証・未確認事項を簡潔に報告する。
+    tools: [diff_app, validate_app, validate_sdk_usage, test_app_in_sandbox, preview_app]
+    done_when: 差分と検証結果が記録され、残存エラーと未検証事項が明示されている

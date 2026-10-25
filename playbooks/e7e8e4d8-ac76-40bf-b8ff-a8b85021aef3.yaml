@@ -1,0 +1,57 @@
+id: ""
+name: TARA
+slash_command: tara
+description: |
+  ISO/SAE 21434 に沿って、資産と CIA 特性、損害シナリオ、脅威シナリオ (STRIDE)、攻撃パスの実現可能性から
+  リスクを判定し、処置とサイバーセキュリティ目標を定める手順。結果は分析レイヤーの TARA に残す。
+use_when: |
+  ユーザーが「TARA して」「脅威分析とリスク評価」「サイバーセキュリティ分析」等を依頼したとき。
+steps:
+  - no: 1
+    title: 資産と CIA
+    instruction: |
+      文脈の「対象の分析」があればそれを使う。無ければ create_analysis(method=tara, scopeElementIds=対象) で作る。
+      describe_analysis_method(tara) を確認する。守るべき資産を asset として作り、CIA 特性と elementId を入れる。
+    tools: [list_analyses, describe_analysis_method, create_analysis, search_item, read, edit_analysis_records]
+    done_when: 各 asset に CIA 特性と要素 ID が記録されている
+  - no: 2
+    title: 損害シナリオと影響
+    instruction: |
+      各 asset の子に damage_scenario を作る。安全 / 財務 / 運用 / プライバシーの影響度は根拠がある場合のみ記入する。
+    tools: [edit_analysis_records]
+    done_when: 各 asset に damage_scenario が接続されている
+  - no: 3
+    title: 脅威シナリオ (STRIDE)
+    instruction: |
+      各 damage_scenario の子に threat_scenario を作り、stride で分類する。
+    tools: [edit_analysis_records]
+    done_when: 各 damage_scenario に threat_scenario が接続され、stride が分類されている
+  - no: 4
+    title: 攻撃パスと実現可能性
+    instruction: |
+      各 threat_scenario の子に attack_path を作り、経由する要素を elementIds に入れる (インターフェース・接続を根拠にする)。
+      攻撃ポテンシャル / CVSS / 攻撃ベクトルは手法設定に合う項目を、根拠がある場合のみ記入する。
+    tools: [get_related_elements, graph_query, edit_analysis_records]
+    done_when: 各 threat_scenario に attack_path が接続され、経由要素の ID が記録されている
+  - no: 5
+    title: リスク判定
+    instruction: |
+      read_analysis(kinds=[threat_scenario]) で computed の riskValue を確認する。評価値が空でリスクが出ないものは一覧にする。
+    tools: [read_analysis, validate_analysis]
+    done_when: 各 threat_scenario のリスク値か、未評価の理由が一覧で確認されている
+  - no: 6
+    title: 処置とサイバーセキュリティ目標
+    instruction: |
+      リスク値の高い脅威から treatment (avoid / reduce / share / retain と理由) を作る。
+      reduce の場合は cybersecurity_goal を作り、create_requirement で要求化して requirementIds に入れる。
+    tools: [edit_analysis_records, create_requirement, create_relationship]
+    done_when: リスク値 4 以上の全 threat_scenario に treatment が接続されている
+  - no: 7
+    title: 報告
+    instruction: |
+      資産・脅威・攻撃パスの件数、高リスクの脅威と処置、空欄の評価値、要求化した目標を報告する。
+    tools: [validate_analysis]
+    done_when: validate_analysis の検証結果と高リスク脅威の件数が報告に含まれている
+strict: true
+allow_skip: false
+max_steps_per_stage: 14

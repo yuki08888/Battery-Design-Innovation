@@ -1,0 +1,46 @@
+id: ""
+name: 設計レビュー用の論点ビジュアル
+slash_command: media-review
+description: 設計レビューで議論する部位・インタフェース・条件を、全体の中の位置と関係する要求ごと一目で示す画像を作る
+use_when: 設計レビュー・DR・不具合検討などで、議論する部品やインタフェース・満たすべき要求をチームで共有する画像を作る場合。単に構成を説明したいだけなら説明ビジュアルの手順書を使う
+steps:
+  - no: 1
+    title: 論点と関係する要素を特定する
+    instruction: |
+      依頼から論点 (どの部品・どのインタフェース・どの条件が問題か) を決める。
+      gather_media_context(elementIds=[...], contextScope="standard") で、論点の要素 (core) と、
+      関係で繋がる要求・接続先・上位ブロック (near / surroundings) を集める。
+      論点に効く要求 (satisfy / verify / deriveReqt 等の関係先) と接続相手は必ず洗い出す。
+      必要なら get_related_elements / read で要求の本文を読む。aspect は structure / requirement / behavior から選ぶ。
+    tools: [gather_media_context, get_related_elements, read, graph_query]
+    done_when: 論点の要素・関係する要求と接続相手の短縮ID の一覧と aspect が決まっている
+  - no: 2
+    title: 論点の位置を全体の中で撮る
+    instruction: |
+      check_media_traceability(elementIds=[論点の要素と接続相手]) で根拠のファイルを確かめる。
+      capture_media_reference で、全体 → 論点の順に撮る。
+      - 3D: 基準視点の全体 (先頭に自動で入る) + 論点の部品を見える角度で。内部部品は手前の覆いを hide し、
+        zoom で論点を大きく写す。結果に並ぶ強調表示で、論点の部品が正しく写っていることを確かめる。
+      - 画像 / 動画: framing 既定 (全体 + 部位の拡大) で、論点の領域・時刻を撮る。
+      論点が隠れている・小さいときは角度を変えて撮り直す。
+    tools: [check_media_traceability, capture_media_reference, read_asset]
+    done_when: 全体と論点の captureId の一覧があり、各キャプチャに論点の部品・部位が写っていることを確認済みである
+  - no: 3
+    title: 論点がはっきり分かる絵を作る
+    instruction: |
+      generate_element_image を purpose="review"、style は isometric か diagram で呼ぶ。
+      sourceElementIds には論点の要素・関係する要求・接続相手を含める (レビュー記録から辿れるように)。
+      prompt (英語) は論点の部位を構図の中心に、全体の中での位置と接続相手との関係が分かるように書き、
+      関係する要求の条件 (環境・負荷・状態など) を状況として描く。仕様値の捏造はしない。
+      referenceAssetIds は全体キャプチャを先頭にする。
+    tools: [generate_element_image]
+    done_when: 生成が success=true を返し、sourceElementIds に論点の要素と関係する要求がすべて記録されている
+  - no: 4
+    title: レビュー資料としての確認と報告
+    instruction: |
+      trace_asset_links(assetIds=[生成物]) で論点の要素・要求・参照ファイルへ辿れることを確かめ、
+      欠けていれば link_generated_media で補う。
+      報告では、論点 (1 文)・描いた部位と関係する要求・全体の中での位置・根拠ファイル・
+      レビューで確認すべき問い (2〜3 個) を述べる。
+    tools: [trace_asset_links, link_generated_media, update_generated_media]
+    done_when: 生成物から論点の要素・要求・参照ファイルへのトレースが確認され、確認すべき問いの一覧が報告に含まれている

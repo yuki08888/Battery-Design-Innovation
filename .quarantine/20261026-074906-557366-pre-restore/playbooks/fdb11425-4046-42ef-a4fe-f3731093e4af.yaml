@@ -1,0 +1,50 @@
+id: ""
+name: 手順・取扱説明のビジュアル
+slash_command: media-manual
+description: アクティビティ・状態遷移・ユースケースの流れを、実物の外観に沿った手順ごとの画像 (と短い動画) にシリーズで作る
+use_when: 組立・操作・保守・点検などの手順書、取扱説明、教育資料の挿絵を作る場合。1 枚で全体を説明したいだけなら説明ビジュアルの手順書を使う
+steps:
+  - no: 1
+    title: 手順の流れと各ステップの対象を洗い出す
+    instruction: |
+      題材の Activity / State / UseCase を特定し、gather_media_context(elementIds=[...], contextScope="standard") で
+      アクション・状態・関係する部品 (related / surroundings) を集める。
+      必要なら read / get_related_elements でアクションの順序と、各アクションが扱う部品・アクターを確かめる。
+      手順を 3〜6 ステップに区切り、ステップごとに「誰が・どの部品に・何をするか」を 1 文で決める。aspect は behavior。
+    tools: [gather_media_context, read, get_related_elements, graph_query]
+    done_when: 各ステップの 1 文と、ステップごとに扱う部品・アクターの短縮ID の一覧が決まっている
+  - no: 2
+    title: ステップごとの部位を撮る
+    instruction: |
+      check_media_traceability(elementIds=[各ステップで扱う部品]) で根拠を確かめる。
+      capture_media_reference で、基準視点の全体 (先頭に自動で入る) と、ステップごとに扱う部品を撮る。
+      3D はそのままの外観で、作業する向き (正面・作業者の視点) に角度を合わせ、内部作業なら覆いを hide する。
+      動画に作業の記録があれば、そのステップの時刻のフレームを撮る。画像の部位は framing 既定 (全体 + 部位の拡大)。
+    tools: [check_media_traceability, capture_media_reference, read_asset]
+    done_when: 全体の captureId と、ステップごとの captureId の対応表が記録されている
+  - no: 3
+    title: 手順のシリーズとして生成する
+    instruction: |
+      ステップ 1 を generate_element_image (purpose="manual", style は illustration か isometric) で作り、
+      以降のステップは consistentWithAssetId にステップ 1 の生成物を渡して、視点・画風・部品の描き方を揃える。
+      各ステップの referenceAssetIds は全体キャプチャ + そのステップの部位キャプチャ。
+      prompt (英語) は「誰が・どの部品に・何をするか」を、手の動きや向きが分かるように具体的に書く。
+      sourceElementIds にはそのステップのアクション (または状態) と扱う部品を含める。
+    tools: [generate_element_image]
+    done_when: すべてのステップの生成が success=true を返し、2 枚目以降の consistentWith がステップ 1 の assetId に一致している
+  - no: 4
+    title: 必要なら動画にする
+    instruction: |
+      動きが重要なステップ (はめ込む・回す・状態が切り替わる等) で動画が求められていれば、
+      generate_element_video を 1 本だけ呼ぶ。referenceAssetIds の先頭はそのステップの生成画像、
+      consistentWithAssetId はステップ 1 の生成物にする。不要なら作らない。
+    tools: [generate_element_video]
+    done_when: 動画を作った場合は success=true と対象ステップが記録され、作らない場合はその判断が記録されている
+  - no: 5
+    title: 手順とトレースの確認・報告
+    instruction: |
+      list_generated_media で今回の生成物を確かめ、trace_asset_links で各生成物がそのステップのアクションと部品へ辿れることを確かめる。
+      欠けていれば link_generated_media で補い、手順と合わない絵は update_generated_media(regenerate=true) で直す。
+      報告では、ステップ番号ごとに生成物の名前・1 文の説明 (手順書の本文案)・扱う部品を表にし、根拠が無かったステップも述べる。
+    tools: [list_generated_media, trace_asset_links, link_generated_media, update_generated_media]
+    done_when: 全ステップの生成物 assetId と本文案の一覧があり、各生成物からアクションと部品へのトレースが確認されている

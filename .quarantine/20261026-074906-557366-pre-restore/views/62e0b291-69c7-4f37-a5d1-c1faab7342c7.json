@@ -1,0 +1,620 @@
+{
+    "id": "62e0b291-69c7-4f37-a5d1-c1faab7342c7",
+    "name": "熱連鎖耐性 部品×要求マトリクス",
+    "class_name": "FreeMatrix",
+    "description": "縦軸：既存の要求→部品traceから取得した関連部品Block31件を起点として指定。非部品行を除去するため、縦軸のパッケージ経由クエリを解除。横軸（熱連鎖耐性配下の要求92件）、traceフィルター、incoming方向、推論設定は従来のまま。traceは満足・検証完了を意味しない。モデル要素・関係および既存FreeTableは変更していない。",
+    "vertical_scope_el_ids": [
+        "ec2dcd30-72cc-4659-acd1-ed3d4afd4d25",
+        "50d0d2ac-9465-4376-b381-ed65c75ae5e4",
+        "531328e4-2908-49a1-aadf-7f1e2a780bab",
+        "5117666d-c6f1-4328-9d3a-e3c56f85c20c",
+        "cf4732a4-728c-4741-8b06-9ce27537c6ac",
+        "21da6225-62e4-48db-ba18-719a1cd5e350",
+        "b9f74e15-0e87-49fc-8115-9d1db111301b",
+        "e0f4cf7a-1ff0-4f8b-9b10-d82683d887ba",
+        "629fbe83-23bb-4fe3-921b-92fc21e87a74",
+        "7eb21e5d-2fd0-4d4e-a420-476dea4714ea",
+        "e967fb6e-763b-4612-8c5d-9ae67eb5eed1",
+        "3224408a-45b0-420d-811e-814324475d6a",
+        "b99bd784-45e9-4b51-b80d-33bf6bd986d7",
+        "69509d8a-0375-4d86-82d3-1cdd192a2f4e",
+        "af037cbb-68c0-4b26-9763-ae5884603e8e",
+        "6930764b-e76a-425b-ac9c-bf5749edf5cb",
+        "10b81eb5-b7a8-436d-9833-c03556d25b0b",
+        "94c51eaf-c85c-4bd3-afb5-501ff41284c8",
+        "dbce9ead-351c-4662-b9f2-7b755e07e4db",
+        "52f3a336-3629-4dd7-8ed9-693ae50bff12",
+        "7d5da627-4e45-4c23-8103-8273c7f475c9",
+        "5862d70a-116a-4c03-b0f2-11b3f5287bfe",
+        "930bf5b1-45e3-4553-99ea-1d8f2c17d4a0",
+        "390850c3-80fa-47d4-b88c-c5bb40d8b086",
+        "0e220a67-b6b0-438b-8ef1-278685bb5b1f",
+        "f7eb6966-ac4c-4733-b6bf-6e021ddb7c60",
+        "fe1368d0-f498-41b9-a1be-5a5d9a33e1c0",
+        "af5ca8ec-2980-4aed-96e5-72a28fb95291",
+        "a58cccb4-f187-4ffa-aef5-e0a7038d3aad",
+        "3b383f1b-07f2-4ce7-a9d6-6019869575fd",
+        "a789f8af-edbb-4669-b522-3eb1802b72be"
+    ],
+    "horizontal_scope_el_ids": [
+        "cfcb364e-7491-4244-9119-3813b56a5247"
+    ],
+    "vertical_types": [
+        "Block"
+    ],
+    "horizontal_types": [
+        "Requirement"
+    ],
+    "rel_filter_types": [
+        "trace",
+        "containment",
+        "dependency",
+        "association",
+        "generalization",
+        "realization",
+        "composition",
+        "aggregation",
+        "allocation",
+        "merge",
+        "refine",
+        "satisfy",
+        "verify",
+        "deriveReqt",
+        "include",
+        "extend"
+    ],
+    "row_scope_config": {
+        "roots": [
+            {
+                "rootId": "dfee9968-ddb6-4879-be6f-36304df9a428",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": [],
+                "recursive": false
+            },
+            {
+                "rootId": "54530f3c-1f57-4d43-877e-3e62190dd63a",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": [],
+                "recursive": false
+            },
+            {
+                "rootId": "ec2dcd30-72cc-4659-acd1-ed3d4afd4d25",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "a789f8af-edbb-4669-b522-3eb1802b72be",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "b99bd784-45e9-4b51-b80d-33bf6bd986d7",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "52f3a336-3629-4dd7-8ed9-693ae50bff12",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "6930764b-e76a-425b-ac9c-bf5749edf5cb",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "cf4732a4-728c-4741-8b06-9ce27537c6ac",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "7948afdb-8265-43db-859f-4a46578e3f33",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "dbce9ead-351c-4662-b9f2-7b755e07e4db",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "d44c96d7-18fe-40a3-9b34-b1dfb425266f",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "af037cbb-68c0-4b26-9763-ae5884603e8e",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "e967fb6e-763b-4612-8c5d-9ae67eb5eed1",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "7eb21e5d-2fd0-4d4e-a420-476dea4714ea",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "cc70f18e-5422-4a16-b0d9-2c45ed6f8422",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "42e1c4c7-a1db-424b-b6cb-026cd374d2f5",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "5a576c71-deeb-43e2-9665-6e65943de60d",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "dd76b3a0-c7a9-4d8b-9a7d-eb2f364f08ef",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "10b81eb5-b7a8-436d-9833-c03556d25b0b",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "3224408a-45b0-420d-811e-814324475d6a",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "0e220a67-b6b0-438b-8ef1-278685bb5b1f",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "b011ac2f-39a8-4d07-a18b-d4d1efb38228",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "629fbe83-23bb-4fe3-921b-92fc21e87a74",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "69509d8a-0375-4d86-82d3-1cdd192a2f4e",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "531328e4-2908-49a1-aadf-7f1e2a780bab",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "94c51eaf-c85c-4bd3-afb5-501ff41284c8",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "f7eb6966-ac4c-4733-b6bf-6e021ddb7c60",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "3b383f1b-07f2-4ce7-a9d6-6019869575fd",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "fe1368d0-f498-41b9-a1be-5a5d9a33e1c0",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "50d0d2ac-9465-4376-b381-ed65c75ae5e4",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "4c72183c-d643-4600-862c-c3ab720825f9",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "21da6225-62e4-48db-ba18-719a1cd5e350",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "e0f4cf7a-1ff0-4f8b-9b10-d82683d887ba",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "a5da3658-a705-4000-a00e-fd8eb168e0d9",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "b9f74e15-0e87-49fc-8115-9d1db111301b",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "5117666d-c6f1-4328-9d3a-e3c56f85c20c",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "60af630b-322a-47de-8afb-ffd2f5556da7",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "7d5da627-4e45-4c23-8103-8273c7f475c9",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "930bf5b1-45e3-4553-99ea-1d8f2c17d4a0",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "af5ca8ec-2980-4aed-96e5-72a28fb95291",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "a58cccb4-f187-4ffa-aef5-e0a7038d3aad",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "5862d70a-116a-4c03-b0f2-11b3f5287bfe",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            },
+            {
+                "rootId": "390850c3-80fa-47d4-b88c-c5bb40d8b086",
+                "includeRoot": true,
+                "includeIntermediates": false,
+                "queries": []
+            }
+        ],
+        "directElementIds": []
+    },
+    "col_scope_config": {
+        "roots": [
+            {
+                "rootId": "cfcb364e-7491-4244-9119-3813b56a5247",
+                "includeRoot": true,
+                "includeIntermediates": true,
+                "queries": [
+                    {
+                        "relationType": "containment",
+                        "direction": "outgoing",
+                        "nodeType": "Requirement"
+                    }
+                ],
+                "recursive": true
+            }
+        ],
+        "directElementIds": []
+    },
+    "direction_filter": "incoming",
+    "create_relation_type": "__all__",
+    "include_implied": false,
+    "implied_edge_config": {
+        "customRules": [
+            {
+                "id": "default-generalization",
+                "name": "汎化の継承",
+                "enabled": true,
+                "isDefault": true,
+                "bridgeRelType": "generalization",
+                "propagateRelTypes": [
+                    "satisfy",
+                    "verify",
+                    "trace",
+                    "refine",
+                    "allocate",
+                    "include",
+                    "extend",
+                    "dependency",
+                    "association",
+                    "aggregation",
+                    "composition",
+                    "containment"
+                ],
+                "resolvedType": "__inherit__",
+                "direction": "forward",
+                "bridgePivot": "target",
+                "propagatePivot": "source",
+                "resultSource": "anchor"
+            },
+            {
+                "id": "default-realization",
+                "name": "実現の継承",
+                "enabled": true,
+                "isDefault": true,
+                "bridgeRelType": "realization",
+                "propagateRelTypes": [
+                    "satisfy",
+                    "verify",
+                    "trace",
+                    "refine",
+                    "allocate",
+                    "include",
+                    "extend",
+                    "dependency",
+                    "association",
+                    "aggregation",
+                    "composition",
+                    "containment"
+                ],
+                "resolvedType": "__inherit__",
+                "direction": "forward",
+                "bridgePivot": "target",
+                "propagatePivot": "source",
+                "resultSource": "anchor"
+            },
+            {
+                "id": "default-include",
+                "name": "包含(include)の継承",
+                "enabled": true,
+                "isDefault": true,
+                "bridgeRelType": "include",
+                "propagateRelTypes": [
+                    "satisfy",
+                    "verify",
+                    "trace",
+                    "refine"
+                ],
+                "resolvedType": "__inherit__",
+                "direction": "forward",
+                "bridgePivot": "target",
+                "propagatePivot": "source",
+                "resultSource": "anchor"
+            },
+            {
+                "id": "default-merge",
+                "name": "マージ元の継承",
+                "enabled": true,
+                "isDefault": true,
+                "bridgeRelType": "merge",
+                "propagateRelTypes": [
+                    "satisfy",
+                    "verify",
+                    "trace",
+                    "refine",
+                    "allocate",
+                    "include",
+                    "extend",
+                    "dependency",
+                    "association",
+                    "aggregation",
+                    "composition",
+                    "containment"
+                ],
+                "resolvedType": "__inherit__",
+                "direction": "forward",
+                "bridgePivot": "source",
+                "propagatePivot": "source",
+                "resultSource": "anchor"
+            },
+            {
+                "id": "default-derive-satisfy",
+                "name": "派生要求の逆トレース(satisfy)",
+                "enabled": true,
+                "isDefault": true,
+                "bridgeRelType": "deriveReqt",
+                "propagateRelTypes": [
+                    "satisfy"
+                ],
+                "resolvedType": "trace",
+                "direction": "backward",
+                "bridgePivot": "target",
+                "propagatePivot": "target",
+                "resultSource": "far"
+            },
+            {
+                "id": "default-derive-verify",
+                "name": "派生要求の逆トレース(verify)",
+                "enabled": true,
+                "isDefault": true,
+                "bridgeRelType": "deriveReqt",
+                "propagateRelTypes": [
+                    "verify"
+                ],
+                "resolvedType": "trace",
+                "direction": "backward",
+                "bridgePivot": "target",
+                "propagatePivot": "target",
+                "resultSource": "far"
+            },
+            {
+                "id": "default-extend-satisfy",
+                "name": "拡張のトレース(satisfy)",
+                "enabled": true,
+                "isDefault": true,
+                "bridgeRelType": "extend",
+                "propagateRelTypes": [
+                    "satisfy"
+                ],
+                "resolvedType": "trace",
+                "direction": "forward",
+                "bridgePivot": "source",
+                "propagatePivot": "source",
+                "resultSource": "anchor"
+            },
+            {
+                "id": "default-extend-verify",
+                "name": "拡張のトレース(verify)",
+                "enabled": true,
+                "isDefault": true,
+                "bridgeRelType": "extend",
+                "propagateRelTypes": [
+                    "verify"
+                ],
+                "resolvedType": "trace",
+                "direction": "forward",
+                "bridgePivot": "source",
+                "propagatePivot": "source",
+                "resultSource": "anchor"
+            },
+            {
+                "id": "default-dependency-trace",
+                "name": "依存のトレース",
+                "enabled": true,
+                "isDefault": true,
+                "bridgeRelType": "dependency",
+                "propagateRelTypes": [
+                    "satisfy",
+                    "verify"
+                ],
+                "resolvedType": "trace",
+                "direction": "forward",
+                "bridgePivot": "target",
+                "propagatePivot": "source",
+                "resultSource": "anchor"
+            },
+            {
+                "id": "default-association-trace",
+                "name": "関連のトレース",
+                "enabled": true,
+                "isDefault": true,
+                "bridgeRelType": "association",
+                "propagateRelTypes": [
+                    "satisfy",
+                    "verify"
+                ],
+                "resolvedType": "trace",
+                "direction": "forward",
+                "bidirectional": true,
+                "bridgePivot": "target",
+                "propagatePivot": "source",
+                "resultSource": "anchor"
+            },
+            {
+                "id": "default-partwhole-satisfy",
+                "name": "部品→全体 satisfy昇格",
+                "enabled": false,
+                "isDefault": true,
+                "bridgeRelType": "composition",
+                "propagateRelTypes": [
+                    "satisfy"
+                ],
+                "resolvedType": "__inherit__",
+                "direction": "forward",
+                "bridgePivot": "target",
+                "propagatePivot": "source",
+                "resultSource": "anchor"
+            },
+            {
+                "id": "default-partwhole-verify",
+                "name": "部品→全体 verify昇格",
+                "enabled": false,
+                "isDefault": true,
+                "bridgeRelType": "composition",
+                "propagateRelTypes": [
+                    "verify"
+                ],
+                "resolvedType": "__inherit__",
+                "direction": "forward",
+                "bridgePivot": "target",
+                "propagatePivot": "source",
+                "resultSource": "anchor"
+            },
+            {
+                "id": "default-allocate-satisfy",
+                "name": "割り当ての satisfy双方向",
+                "enabled": false,
+                "isDefault": true,
+                "bridgeRelType": "allocate",
+                "propagateRelTypes": [
+                    "satisfy"
+                ],
+                "resolvedType": "satisfy",
+                "direction": "forward",
+                "bidirectional": true,
+                "bridgePivot": "source",
+                "propagatePivot": "source",
+                "resultSource": "anchor"
+            },
+            {
+                "id": "default-refine-satisfy",
+                "name": "refine satisfy昇格",
+                "enabled": false,
+                "isDefault": true,
+                "bridgeRelType": "refine",
+                "propagateRelTypes": [
+                    "satisfy"
+                ],
+                "resolvedType": "satisfy",
+                "direction": "forward",
+                "bridgePivot": "source",
+                "propagatePivot": "source",
+                "resultSource": "anchor"
+            }
+        ]
+    },
+    "row_expanded_ids": [
+        "cfcb364e-7491-4244-9119-3813b56a5247"
+    ],
+    "col_expanded_ids": [
+        "fb71180f-6f4d-41f9-bfa4-4810cbc9b19f",
+        "135db228-4565-4391-a789-8dcf54a82d7c",
+        "cfcb364e-7491-4244-9119-3813b56a5247",
+        "05c79587-2c75-413c-99bf-d884a3df139a"
+    ],
+    "show_outgoing": true,
+    "show_incoming": true,
+    "row_header_width": 342,
+    "col_header_height": 126,
+    "cell_size": 40
+}

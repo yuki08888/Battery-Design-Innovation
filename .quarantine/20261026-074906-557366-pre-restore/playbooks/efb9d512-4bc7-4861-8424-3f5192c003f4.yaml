@@ -1,0 +1,79 @@
+id: ""
+name: 機能フロー設計
+slash_command: func-flow
+description: |
+  ユースケースや要求から機能の流れ（Activity）を設計し、
+  アクティビティ図として整理する手順。
+  さらに各アクションを構造（Block）へ割り当てる。
+use_when: |
+  ユーザーが「機能の流れを作って」「アクティビティ図を作成」
+  「処理手順をモデル化」等を依頼したとき。
+steps:
+  - no: 1
+    title: 対象と入出力の把握
+    instruction: |
+      フローを設計する対象（UseCase / Requirement / Block / Operation）と、
+      既存の Activity を確認する。
+      そのフローの起点（トリガー）と終点（成果）を明確にする。
+    tools:
+      - search_item
+      - read_package_contents
+      - get_related_elements
+      - read
+    done_when: 対象要素の短縮ID・種別、フローのトリガー・入力・期待成果、および既存 Activity の短縮IDを0件の場合も含めて記録できている
+  - no: 2
+    title: 機能の分解
+    instruction: |
+      対象の振る舞いを、順序を持つアクションの列に分解する。
+      分岐（decision）・並行（fork/join）が必要な箇所を特定する。
+      粒度は「1 アクション = 1 つの明確な変換」に揃えること。
+    done_when: 全アクションに入力・変換・出力があり、実行順と全分岐のガード、fork/join の対応が定まり、到達先未定の経路0件である
+  - no: 3
+    title: フローの生成
+    instruction: |
+      create_internal_model_elements（structureType=flow）で
+      Activity / ActivityNode / ActivityEdge を生成する。
+      対象が Activity 以外の場合は新規 Activity が作られ、
+      対象と関係付けされることを前提に指示を書くこと。
+    tools:
+      - create_internal_model_elements
+      - create_activity
+    done_when: 設計した Activity と全ノード・エッジが存在し、実件数が設計件数と一致し、各エッジの source / target が実在ノードに解決できる
+    referenceConventions:
+      - Activity
+  - no: 4
+    title: 構造への機能割り当て
+    instruction: |
+      **アクション単位で割り当てる**こと。
+      各 action ノード（ActivityNode）を、その処理を実際に実行する
+      Block へ allocate 関係で割り当てる（source=ActivityNode, target=Block）。
+
+      Activity 全体を複数の Block へ allocate してはいけない。
+      「この Activity は 6 個の Block に割り当てられている」という状態は、
+      どのアクションをどの Block が担うのかを一切表さないため
+      機能配分（functional allocation）として成立しない。
+      Activity → Block の allocate は、その Activity 全体を単一の Block が
+      担う場合にのみ 1 本だけ張ること。
+
+      initial / final / decision / merge / fork / join は制御記号であり
+      実行主体を持たないため割り当てない。
+      割り当て先が未定のアクションは、その旨を記録して残す
+      （無理に割り当てないこと）。
+    tools:
+      - create_relationship
+      - search_item
+      - read
+    done_when: 各 action ノードに実行 Block への allocate が1本あるか未割り当て理由が記録されており、Activity 全体を複数 Block へ割り当てた allocate が0本である
+  - no: 5
+    title: 図の生成と検証
+    instruction: |
+      create_activity_diagram でアクティビティ図を作成し、
+      レイアウトを整える。その後 validate_model で検証する。
+    tools:
+      - create_activity_diagram
+      - update_diagram_layout
+      - validate_model
+    done_when: アクティビティ図に全ノード・全エッジが欠落0件で表示され、validate_model が error 0件、または残る各違反の ruleId・要素ID・理由を記録した
+strict: true
+allow_skip: false
+max_steps_per_stage: 12

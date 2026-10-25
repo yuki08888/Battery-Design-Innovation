@@ -1,0 +1,51 @@
+id: ""
+name: 進捗・品質ダッシュボードの作成
+slash_command: ui-dashboard
+description: 要求充足率・検証状況・リスク・分析の要対応件数などをKPIとグラフで可視化するカスタムUIを作る
+use_when: 進捗・品質・リスクの指標をKPIカードとグラフで一覧するダッシュボードを作る場合
+steps:
+  - no: 1
+    title: 要件のすり合わせ
+    instruction: |
+      対象UIをlist_apps/select_appで特定し、新規はcreate_app(template="dashboard")で作る。
+      表示するKPI(名前・計算式・母数)、グラフの種類、対象スコープ、更新頻度を決める。
+      不足はask_userで選択肢 + 既定値を示す。方向性が曖昧ならgenerate_ui_mockupで画面イメージを提示してよい。
+    tools: [list_apps, select_app, create_app, ask_user, generate_ui_mockup]
+    done_when: 各KPIの定義(計算式と母数)とグラフの一覧が記録されている
+  - no: 2
+    title: データの特定
+    instruction: |
+      search_projectでモデル要素・database(SQL表/列名)・分析を確認する。列名やテーブル名を推測しない。
+      read_sdk_recipe(topic="dashboard-kpi")とread_sdk_recipe(topic="chart")で書き方を確認する。
+    tools: [search_project, read_sdk_recipe, read_file]
+    done_when: 各KPIのデータ源(DSL/SQL/フック)が記録され、存在するテーブル・列だけを使っている
+  - no: 3
+    title: 骨格の実装
+    instruction: |
+      上段にKPIカード列、中段にrechartsのグラフ(ResponsiveContainerで幅追従)、下段に詳細表(DataTable)を置く。
+      色はテーマとdesignTokens.semanticColors.statusを使う。読込中・空・エラーをKPIごとに区別する。
+    tools: [create_app_file, multi_replace_string_in_file]
+    done_when: KPI・グラフ・詳細表の各コンポーネントファイルの一覧が記録されている
+  - no: 4
+    title: 操作の実装
+    instruction: |
+      KPIやグラフのクリックで詳細表を絞り込み、行からrevealElementで本体へ遷移する。表はexportTableで出力できるようにする。
+      宣言的フックは自動追従する。独自に集計するときはuseLiveQuery(load, deps, {on:["model-changed"]})を使う。
+    tools: [multi_replace_string_in_file, replace_string_in_file]
+    done_when: 絞り込み・遷移・出力の操作とライブ更新の方法が記録されている
+  - no: 5
+    title: 権限の確定
+    instruction: |
+      model.read / database.read / files / ui を確認し、既定外はrequest_permissionsで承認を得る。
+    tools: [request_permissions, validate_sdk_usage]
+    done_when: 必要権限の一覧と承認結果が記録され、権限不足(SDK004)が0件
+  - no: 6
+    title: 検証と引き渡し
+    instruction: |
+      validate_app → validate_sdk_usage → test_app_in_sandbox → preview_app(action="inspect")で0件になるまで直す。
+      KPIの値を実データで1件以上照合し、確認できなかった点は未検証と明記する。
+    tools: [diff_app, validate_app, validate_sdk_usage, test_app_in_sandbox, preview_app]
+    done_when: 検証エラー0件・inspectの指摘0件・照合したKPIが記録され、未検証事項が明示されている
+strict: false
+allow_skip: true
+max_steps_per_stage: 12

@@ -1,0 +1,70 @@
+id: ""
+name: インターフェース定義
+slash_command: interface-def
+description: |
+  Block 間のインターフェースを Port と Connector で定義し、
+  やり取りされる項目（信号・エネルギー・物質）を明確にする手順。
+  内部構造がある程度できた後、境界を固める段階で使用する。
+use_when: |
+  ユーザーが「インターフェースを定義して」「ポートを整理」
+  「ブロック間の接続を明確に」等を依頼したとき。
+steps:
+  - no: 1
+    title: 接続対象の把握
+    instruction: |
+      インターフェースを定義する Block の組と、
+      既存の Port（type が port の Property）・Connector を確認する。
+      既に定義済みの接続を重複して作らないこと。
+    tools:
+      - search_item
+      - read_package_contents
+      - get_related_elements
+      - read
+    done_when: 対象 Block の短縮IDと、既存 Port の親・名前・方向・型、および Connector の両端を0件の場合も含めて一覧化できている
+  - no: 2
+    title: 交換項目の特定
+    instruction: |
+      各接続で何が流れるかを「情報 / エネルギー / 物質」の観点で特定する。
+      方向（入力・出力・双方向）も明示すること。
+      抽象的な「データ」で済ませず、具体的な項目名まで落とし込む。
+    done_when: 全接続について具体的な交換項目・情報/エネルギー/物質の区分・方向・送信元・受信先が一意に定まり、未定項目0件である
+  - no: 3
+    title: Port の定義
+    instruction: |
+      交換項目に対応する Port を各 Block に作成する。
+      Port は独立要素ではなく type が port の Property として作る。
+      命名はオントロジーの規約に従い、方向が分かる名前にする。
+    tools:
+      - create_property
+      - create_multi_elements
+      - update_property
+    done_when: 設計した全 Port が意図した Block 配下に type=port で存在し、名前・方向・交換項目が設計と一致し、同一 Block 内の重複 Port 0件である
+    referenceConventions:
+      - Property
+      - Block
+  - no: 4
+    title: Connector による接続
+    instruction: |
+      create_internal_model_elements（structureType=internal_structure）で
+      part 同士を connector で接続する。
+      Port の自動生成・端点の付け替えは派生操作が行うため、
+      生成結果の derivedNotes を必ず確認すること。
+    tools:
+      - create_internal_model_elements
+      - create_relationship
+    done_when: 設計した各接続に Connector が1本存在し、両端が意図した実在 Port に解決され、同じ端点を結ぶ重複 Connector 0件である
+  - no: 5
+    title: IBD での可視化と検証
+    instruction: |
+      create_internal_block_diagram で内部ブロック図を作成し、
+      Port と Connector が意図通り表現されているか確認する。
+      その後 validate_model で検証する。
+    tools:
+      - create_internal_block_diagram
+      - update_diagram_layout
+      - read_view
+      - validate_model
+    done_when: IBD に設計対象の全 Port / Connector が欠落0件で表示され、各線の端点が正しく、validate_model が error 0件または残る違反を記録した
+strict: true
+allow_skip: false
+max_steps_per_stage: 12

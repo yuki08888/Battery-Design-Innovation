@@ -1,0 +1,50 @@
+id: ""
+name: インタフェース管理(ICD)UIの作成
+slash_command: ui-interface
+description: ポート・フロー・インタフェースブロックの一覧と接続相手を表示し、ICDとして出力できるカスタムUIを作る
+use_when: ブロック間インタフェースの一覧・接続相手の確認・ICD文書の出力をカスタムUIで行う場合
+steps:
+  - no: 1
+    title: 要件のすり合わせ
+    instruction: |
+      対象UIをlist_apps/select_appで特定し、新規はcreate_appで作る。
+      対象ブロック範囲、表示する項目(ポート名・型・方向・接続相手・フロー項目・単位)、ICD出力の要否と形式を決める。
+      不足はask_userで選択肢 + 既定値を示して確認する。
+    tools: [list_apps, select_app, create_app, ask_user]
+    done_when: 対象範囲・表示項目・出力形式が記録されている
+  - no: 2
+    title: データの特定
+    instruction: |
+      search_project(kind="model")でブロック・ポート(Property type="port")・コネクタの実在を確認する。Portは独立クラスではない。
+      IBDがあればsearch_project(kind="views")でmeaningと範囲を確認する。
+      read_sdk_recipe(topic="tree-detail")とread_sdk_recipe(topic="report")で書き方を確認する。
+    tools: [search_project, read_sdk_recipe, read_file]
+    done_when: ポート・接続・使用IBDの取得方法が記録され、存在する要素だけを使っている
+  - no: 3
+    title: 骨格の実装
+    instruction: |
+      ResizableSplitPaneで左にブロック一覧、右にインタフェース表(DataTable)と該当IBD(ModelView fit="content")を置く。参照はResourceChip。
+    tools: [create_app_file, multi_replace_string_in_file]
+    done_when: ブロック一覧・インタフェース表・図表示の各コンポーネントファイルの一覧が記録されている
+  - no: 4
+    title: 操作の実装
+    instruction: |
+      接続相手へのrevealElement、表のexportTable出力、ICD出力はReportDocument + ReportTableで実装する(章ごとにブロック)。
+    tools: [multi_replace_string_in_file, replace_string_in_file]
+    done_when: 遷移・表出力・ICD出力の各操作がSDK APIで実装されている
+  - no: 5
+    title: 権限の確定
+    instruction: |
+      model.read / files / ui を確認し、既定外はrequest_permissionsで承認を得る。
+    tools: [request_permissions, validate_sdk_usage]
+    done_when: 必要権限の一覧と承認結果が記録され、権限不足(SDK004)が0件
+  - no: 6
+    title: 検証と引き渡し
+    instruction: |
+      validate_app → validate_sdk_usage → test_app_in_sandbox → preview_app(action="inspect")で0件になるまで直す。
+      ICDを出力するならpreview_app(action="export")のproblemsを0件にする。未確認は未検証と明記する。
+    tools: [diff_app, validate_app, validate_sdk_usage, test_app_in_sandbox, preview_app]
+    done_when: 検証エラー0件・inspect/exportの指摘0件が記録され、未検証事項が明示されている
+strict: false
+allow_skip: true
+max_steps_per_stage: 12
