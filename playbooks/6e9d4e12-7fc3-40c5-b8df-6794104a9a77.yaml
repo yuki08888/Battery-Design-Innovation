@@ -1,0 +1,49 @@
+id: ""
+name: 構造ブラウザ・要素詳細UIの作成
+slash_command: ui-explorer
+description: 階層ツリーと詳細ペインで要素・関連要素・リンク資料を横断表示するカスタムUIを作る
+use_when: パッケージ/ブロック階層を辿りながら、要素の詳細・関連要素・リンク資料を確認するUIを作る場合
+steps:
+  - no: 1
+    title: 要件のすり合わせ
+    instruction: |
+      対象UIをlist_apps/select_appで特定し、新規はcreate_app(template="explorer")で作る。
+      ツリーの起点と辿る関係(contain/composition)、詳細に出す属性、関連要素の関係種別、資料(画像/文書/概念)の要否を決める。
+      不足はask_userで選択肢 + 既定値を示して確認する。
+    tools: [list_apps, select_app, create_app, ask_user]
+    done_when: ツリーの起点と辿る関係・詳細項目・関連の関係種別が記録されている
+  - no: 2
+    title: データの特定
+    instruction: |
+      search_project(kind="model")で起点と階層を確認する。useModel().getChildren / getRelated / useLinkedContentの使い方をread_sdk_recipe(topic="tree-detail")で確認する。
+    tools: [search_project, read_sdk_recipe, read_file]
+    done_when: ツリー・詳細・関連の各データ取得方法が記録されている
+  - no: 3
+    title: 骨格の実装
+    instruction: |
+      ResizableSplitPaneで左にツリー(遅延展開)、右に詳細ペインを置く。名前はElementLabel/ResourceChipで種別アイコン付きにし、長い名前はEllipsisTextで省略する。
+      読込中・空・エラーを区別する。キーボード操作(上下・展開)に配慮する。
+    tools: [create_app_file, multi_replace_string_in_file]
+    done_when: ツリー・詳細・関連の各コンポーネントファイルの一覧が記録されている
+  - no: 4
+    title: 操作の実装
+    instruction: |
+      選択要素を本体へ連動(revealElement)、図を開く(openView/ResourceChip kind="view")、関連要素の一覧をResourceChipListで表示する。
+      ツリーの展開状態や選択はuseStorageStateで保存してよい。
+    tools: [multi_replace_string_in_file, replace_string_in_file]
+    done_when: 連動・図を開く・関連表示の各操作がSDK APIで実装されている
+  - no: 5
+    title: 権限の確定
+    instruction: |
+      model.read(+ 資料を出すならassets.read/document.read/ontology.read)を確認し、既定外はrequest_permissionsで承認を得る。
+    tools: [request_permissions, validate_sdk_usage]
+    done_when: 必要権限の一覧と承認結果が記録され、権限不足(SDK004)が0件
+  - no: 6
+    title: 検証と引き渡し
+    instruction: |
+      validate_app → validate_sdk_usage → test_app_in_sandbox → preview_app(action="inspect")で0件になるまで直す。未確認は未検証と明記する。
+    tools: [diff_app, validate_app, validate_sdk_usage, test_app_in_sandbox, preview_app]
+    done_when: 検証エラー0件・inspectの指摘0件が記録され、未検証事項が明示されている
+strict: false
+allow_skip: true
+max_steps_per_stage: 12

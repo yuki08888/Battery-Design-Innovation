@@ -20,12 +20,19 @@
             "parent_id": "54530f3c-1f57-4d43-877e-3e62190dd63a",
             "icon_key": "DashboardOutlined",
             "icon_color": null
+        },
+        {
+            "id": "bd10b46a-0c83-4db4-a4bf-31f54d077d5f",
+            "name": "熱拡散要求マトリクス",
+            "parent_id": "cfcb364e-7491-4244-9119-3813b56a5247",
+            "icon_key": "GridOnOutlined",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [
-        "1fcb0dc4-e491-44ef-ab82-2bc832fc467a"
+        "bd10b46a-0c83-4db4-a4bf-31f54d077d5f"
     ],
-    "current_view_id": "1fcb0dc4-e491-44ef-ab82-2bc832fc467a",
+    "current_view_id": "bd10b46a-0c83-4db4-a4bf-31f54d077d5f",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,

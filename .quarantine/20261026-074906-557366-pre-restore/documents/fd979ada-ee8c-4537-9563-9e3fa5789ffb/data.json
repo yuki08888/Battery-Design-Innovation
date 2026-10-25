@@ -1,0 +1,1635 @@
+{
+    "id": "fd979ada-ee8c-4537-9563-9e3fa5789ffb",
+    "title": "BV-D-11　アッパー断熱",
+    "pages": [
+        {
+            "id": "3b739d07-3edd-428d-957c-790fc66a5401",
+            "title": "ページ 1",
+            "content": "<h1>アンバー熱設計標準書</h1>\n<table>\n<thead>\n<tr>\n<th>項目</th>\n<th>内容</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>番号</td>\n<td>BV-D-11</td>\n</tr>\n<tr>\n<td>名称</td>\n<td>アンバー熱設計標準書</td>\n</tr>\n<tr>\n<td>部門</td>\n<td>電池パック開発部</td>\n</tr>\n<tr>\n<td>室</td>\n<td>第2電池機能設計室</td>\n</tr>\n</tbody>\n</table>\n<table>\n<thead>\n<tr>\n<th>承認</th>\n<th>調査</th>\n<th>作成</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>南谷</td>\n<td>白河</td>\n<td>飯塚<br>板原</td>\n</tr>\n<tr>\n<td>2026.3.24</td>\n<td>2026.3.24</td>\n<td>2026.3.24</td>\n</tr>\n</tbody>\n</table>\n<p><strong>名称</strong></p>\n<p>印刷はプロパーの方に限定されています。</p>\n<p><strong>変更履歴</strong></p>\n<table>\n<thead>\n<tr>\n<th>符号</th>\n<th>発行/変更履歴</th>\n<th>承認</th>\n<th>調査</th>\n<th>作成</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td></td>\n<td>新設</td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p><strong>開示先</strong></p>\n<p>□ BVx　□ PBV　□ MBV　□ 1BV　□ 2BV　□　□　□　□ AHV　□ HVQ</p>\n<p>□ プロパーのみ　□ 全員　□ 独自指示</p>",
+            "references": [],
+            "sourceImagePath": "216f4e26-864c-4697-a53a-cb9ec7bf7f2d.png",
+            "thumbnailPath": "thumb_216f4e26-864c-4697-a53a-cb9ec7bf7f2d.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "c0f778ad-ad65-4912-9758-b1a764350b7b",
+            "title": "ページ 2",
+            "content": "<p>（目次）</p>\n<ul>\n<li>1 表紙 — 1</li>\n<li>2 目次 — 2</li>\n<li>3 概要 — 3</li>\n<li>4 業務フロー — 4～10</li>\n<li>5 要求性能 — 11</li>\n<li>5.1 性能企画 — 11</li>\n<li>5.2 要求機能 — 12</li>\n<li>5.3 材質 — 13</li>\n<li>5.4 搭載 — 14</li>\n<li>5.5 耐熱性 — 15<ul>\n<li>5.5.1 カチオン塗装部品各件検討（参考） — 16</li>\n</ul>\n</li>\n<li>5.6 耐ブラス — 17</li>\n<li>5.7 接着強度 — 18</li>\n<li>5.8 組付性 — 19</li>\n<li>5.9 吸着性 — 20</li>\n<li>6 信頼性評価項目 — 21</li>\n<li>6.1 評価概要 — 21</li>\n<li>6.2 要求仕様・評価方法 — 21</li>\n<li>7 機能ブロック図 — 22</li>\n</ul>",
+            "references": [],
+            "sourceImagePath": "020a14f7-1bf9-487c-b6cd-c69481b71adc.png",
+            "thumbnailPath": "thumb_020a14f7-1bf9-487c-b6cd-c69481b71adc.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "28053c47-3b70-41d9-8871-a3633916f1f2",
+            "title": "ページ 3",
+            "content": "<h2>3 概要</h2>\n<h3>3-1. 用途</h3>\n<p>電池パックにおけるUPR断熱材は、UPRカバーの内側に搭載することで、</p>\n<ul>\n<li>セル熱暴走時の熱伝達を抑制</li>\n<li>カチオン塗装の白化着火を防止</li>\n<li>セル発煙プラストによるUPRカバーの保護、および断熱材の機能喪失を防止</li>\n</ul>\n<p>を目的とする。</p>\n<h3>3-2. 使用箇所、ラインナップ</h3>\n<p>図中表記：UPR断熱材、自己着火、UPRケース、発煙プラスト、セル</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>日本生産（元町、高岡、TMK）</th>\n<th>中国生産（GTMC）</th>\n<th>北米生産（TMMK）</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>セル種類</td>\n<td>Li6.B／Li7.B</td>\n<td>Li7.B</td>\n<td>Li6.B／Li9.A</td>\n</tr>\n<tr>\n<td>断熱材</td>\n<td>不燃紙＋マイカ板／シリカクロス</td>\n<td>シリカクロス</td>\n<td>不燃紙＋マイカ板／シリカクロス＋マイカ</td>\n</tr>\n<tr>\n<td>UPR断熱材</td>\n<td>マイカ板、不燃紙、幅広</td>\n<td>シリカクロス、幅狭</td>\n<td>マイカ板、不燃紙、幅広／シリカクロス＋マイカ</td>\n</tr>\n<tr>\n<td>仕入先</td>\n<td>・豊田通商<br>Tier 2：千代田インテグレ<br>Tier 3：タイガラックス（不燃紙）<br>阿波製紙（不燃紙）</td>\n<td>・パーカー（中国生産）</td>\n<td>・豊田通商（日本パススルー）<br>Tier 2：千代田インテグレ<br>Tier 3：阿波製紙（不燃紙）／・パーカー（中国生産）</td>\n</tr>\n</tbody>\n</table>",
+            "references": [],
+            "sourceImagePath": "ebd2658e-bbcf-4ced-ac8f-74c9bfa1d6f2.png",
+            "thumbnailPath": "thumb_ebd2658e-bbcf-4ced-ac8f-74c9bfa1d6f2.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "602f0744-047e-4669-b3da-9ad411752cce",
+            "title": "ページ 4",
+            "content": "<h2>4 業務フロー</h2>\n<p>【試作フェーズ】</p>\n<p>開始<br />\n↓<br />\n部品開発日程作成<br />\n↓<br />\n材質の選定</p>\n<h3>【形状検討】</h3>\n<p>検討前提整理<br />\n↓<br />\n配置検討<br />\n↓<br />\n形状検討<br />\n↓<br />\n電池パック内部品との整合は取れているか？</p>\n<ul>\n<li>NO：形状検討に戻る</li>\n<li>YES：次工程へ</li>\n</ul>\n<p>＜周辺部品確認＞</p>\n<ul>\n<li>MDL構造</li>\n<li>セル</li>\n<li>バスバー</li>\n<li>アッパーカバー</li>\n<li>その他パック部品</li>\n</ul>\n<p>＜UPR断熱材の設計要件＞</p>\n<ul>\n<li>○K要件</li>\n<li>保護範囲</li>\n<li>必要熱抵抗・耐熱性</li>\n</ul>\n<p>＜検討に必要な情報＞</p>\n<ul>\n<li>周辺部品形状・材質</li>\n<li>材料物性</li>\n<li>発煙時セル挙動（セル容量・温度、連鎖有無等）</li>\n<li>アッパーカバー：材質、板厚、仕様</li>\n<li>電池パック：体格、余剰体積</li>\n<li>法規：熱連鎖トリガー位置、エーポジション</li>\n</ul>\n<h3>【ソーシング】</h3>\n<p>RMBS作成<br />\n↓<br />\nCost Summary Sheet(CSS)作成※<br />\n↓<br />\nDelivery Instruction(DI)作成※<br />\n↓<br />\nComponent Parts List(CPL)作成※<br />\n↓<br />\n見積図作成<br />\n↓<br />\n耐食性・開発日程・コストから仕入先を調達と決定</p>\n<ul>\n<li>企画部署から前提条件を入手（企画台数、材料建値時期、為替レートなど）</li>\n<li>企画部署から車両事業体、引当、引当車両台数を入手</li>\n<li>順不同　※PJに応じて要否を確認</li>\n</ul>\n<h3>【原価活動】</h3>\n<p>原価目標検討</p>\n<ol>\n<li>見積前提入手</li>\n<li>CC解析</li>\n</ol>\n<p>図2 (1/7)</p>",
+            "references": [],
+            "sourceImagePath": "43348d54-b695-47be-8488-620390cbc62b.png",
+            "thumbnailPath": "thumb_43348d54-b695-47be-8488-620390cbc62b.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "f8ff826f-9bf1-410b-a26e-54bc3e22aeb4",
+            "title": "ページ 5",
+            "content": "<h3>【試作フェーズ】</h3>\n<p>【仕入先SE】</p>\n<ol>\n<li>2Dデータおよび3Dデータ送付</li>\n<li>製造要望入手<br />\n   - 形状簡素化（R緩和）<br />\n   - 公差緩和<br />\n   - 等々</li>\n<li>SE課題リスト入手</li>\n<li>SE課題は無いか？<br />\n   - YES：出図へ<br />\n   - NO：2Dデータおよび3Dデータ修正 → SE課題リスト入手</li>\n</ol>\n<p>【生技SE】</p>\n<ol>\n<li>生技課題がないか？<br />\n   - YES：品質総点検へ<br />\n   - NO：対策検討 → 2Dデータおよび3Dデータ修正 → 生技課題がないか？</li>\n</ol>\n<p>【熱拡散CAE】</p>\n<ol>\n<li>CAE用データ送付（3D・物性情報）</li>\n<li>CAEモデル作成</li>\n<li>モデル妥当性確認（Correlation）</li>\n<li>エニーポジションでクライテリア○か？（プラスタ実施）<br />\n   - YES：機能主管監査へ<br />\n   - NO：対策検討/モデル修正 → CAE用データ送付（3D・物性情報）</li>\n</ol>\n<p>【出図】</p>\n<ol>\n<li>出図ビデオ・資料作成<br />\n   - 設変チェッカー<br />\n   - 検図エビデンス<br />\n   - 設計検討資料（各機能の達成状況）</li>\n<li>出図前DR</li>\n</ol>\n<p>【品質総点検】</p>\n<ol>\n<li>帳票作成</li>\n<li>点検結果報告</li>\n</ol>\n<p>品質総点検の帳票：<br />\n- 開発日程<br />\n- 監0：品質状況まとめ<br />\n- 監2：変化点リスト（変化点マトリクス）<br />\n- 監4：FTA<br />\n- 監5：D-FMEA<br />\n- 監6：変化点層別シート<br />\n- 監7：変化点と課題進捗一覧<br />\n- 監16：DRBFM<br />\n- PCフォローシート</p>\n<p>【機能主管監査】</p>\n<ol>\n<li>帳票作成</li>\n<li>監査</li>\n</ol>\n<p>帳票：<br />\n- DRポイント集およびエビデンス</p>",
+            "references": [],
+            "sourceImagePath": "b9e0c582-81c8-42f7-8dec-e84e8d63eee6.png",
+            "thumbnailPath": "thumb_b9e0c582-81c8-42f7-8dec-e84e8d63eee6.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "1f0c946e-28bf-45b4-a458-941cabdc7941",
+            "title": "ページ 6",
+            "content": "<h3>【試作フェーズ】</h3>\n<ul>\n<li>【仕入先試作】</li>\n<li>2 → 金型設計 → 金型製作 → 試作品作製・検査<ul>\n<li>トーチ＆グリット試験（検討中）</li>\n</ul>\n</li>\n<li>→ 出荷</li>\n<li>【TMC試作】</li>\n<li>単品確認（寸法精度・出来栄え・品質・組付性）</li>\n<li>→ 電池パック組付<ul>\n<li>組付性確認</li>\n<li>干渉なき事確認</li>\n</ul>\n</li>\n<li>→ 出荷前検査</li>\n<li>【評価】</li>\n<li>→ ミニモジュール試験</li>\n<li>→ ユニット評価<ul>\n<li>熱拡散試験</li>\n<li>悪路模擬耐久試験</li>\n<li>高速波状路模擬耐久試験</li>\n<li>熱衝撃試験</li>\n</ul>\n</li>\n<li>→ 車両評価<ul>\n<li>実車応力測定試験</li>\n<li>実車起応力測定試験</li>\n<li>Lスケ試験</li>\n<li>路面入力試験</li>\n<li>前突</li>\n</ul>\n</li>\n<li>→ 法規試験<ul>\n<li>輸送法規（T2）温度サイクル試験</li>\n<li>輸送法規（T3）振動試験</li>\n<li>輸送法規（T4）衝撃試験</li>\n<li>中国ランダム振動試験</li>\n<li>中国圧壊試験</li>\n<li>UN-R100振動試験</li>\n</ul>\n</li>\n<li>→ 3</li>\n</ul>\n<p>図2（3/7）</p>",
+            "references": [],
+            "sourceImagePath": "2f596e1c-2f3e-4494-a2bc-9516c8127cb2.png",
+            "thumbnailPath": "thumb_2f596e1c-2f3e-4494-a2bc-9516c8127cb2.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "1d32a0b1-8636-450b-a6d0-0ccfe9faafee",
+            "title": "ページ 7",
+            "content": "<p>【CV・号試フェーズ】</p>\n<p>3<br />\n↓<br />\n部品開発日程更新<br />\n↓<br />\n設計へ反映すべき試作フェーズ時のフィードバックは無いか？</p>\n<ul>\n<li>NO → 検討前整理</li>\n<li>YES → 【原価活動】Cost Summary Sheet(CSS)作成  </li>\n<li>企画部署から前提条件を入手（企画台数、材料建値時期、為替レートなど）</li>\n</ul>\n<p>【形状検討】</p>\n<p>検討前整理<br />\n↓<br />\n配置修正<br />\n↓<br />\n形状修正<br />\n↓<br />\n電池パック内部品との整合はとれているか？</p>\n<ul>\n<li>NO → 形状修正</li>\n<li>YES → 見積図作成</li>\n</ul>\n<p>見積図作成<br />\n↓<br />\n4</p>\n<p>＜周辺部品確認＞<br />\n- MDL構造<br />\n- セル<br />\n- バスバー<br />\n- アッパーカバー<br />\n- その他パック部品</p>\n<p>＜UPR断熱材の設計要件＞<br />\n- ○K要件<br />\n- 保護範囲<br />\n- 必要熱抵抗・耐熱性</p>\n<p>＜検討に必要な情報＞<br />\n- 周辺部品形状・材質<br />\n- 材料物性<br />\n- 発煙時セル挙動（セル容量・温度、連鎖有無等）<br />\n- アッパーカバー：材質、板厚、体格<br />\n- 電池パック：体格、余剰体積<br />\n- 法規：熱連鎖トリガー位置、エマージェンシン</p>\n<p>図2(4/7)</p>",
+            "references": [],
+            "sourceImagePath": "cd20920c-57c6-4421-8650-36bc246b2867.png",
+            "thumbnailPath": "thumb_cd20920c-57c6-4421-8650-36bc246b2867.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "d8cba423-1cc3-41cf-ba9a-8eb751c1324c",
+            "title": "ページ 8",
+            "content": "<p>【CV・号試フェーズ】</p>\n<p>接続：4</p>\n<h3>【仕入先SE】</h3>\n<p>2Dデータおよび3Dデータ送付<br />\n↓<br />\n製造要望入手</p>\n<p>・形状簡素化（R緩和）<br />\n・公差緩和<br />\n等々</p>\n<p>↓<br />\nSE課題リスト入手<br />\n↓<br />\nSE課題は無いか？</p>\n<ul>\n<li>NO：2Dデータおよび3Dデータ修正 → SE課題リスト入手</li>\n<li>YES：出図へ</li>\n</ul>\n<h3>【生技SE】</h3>\n<p>生技課題がないか？</p>\n<ul>\n<li>NO：対策検討 → 2Dデータおよび3Dデータ修正 → 生技課題がないか？</li>\n<li>YES：品質総点検へ</li>\n</ul>\n<h3>【熱拡散CAE】</h3>\n<p>熱拡散機能の懸念はないか？</p>\n<ul>\n<li>NO：対策検討/モデル修正 → エニーポジションでクリア○か？</li>\n<li>NO：対策検討/モデル修正</li>\n<li>YES：機能主管監査へ</li>\n<li>YES：機能主管監査へ</li>\n</ul>\n<h3>【出図】</h3>\n<p>出図エビデンス資料作成</p>\n<p>・設変チェックシート<br />\n・検図エビデンス<br />\n・設計検討資料（各機能の達成状況）</p>\n<p>↓<br />\n出図前DR</p>\n<h3>【品質総点検】</h3>\n<p>帳票作成<br />\n↓<br />\n点検結果報告</p>\n<p>・開発日程<br />\n・監0：品質状況まとめ<br />\n・監2：変化点リスト（変化点マトリクス）<br />\n・監4：FTA<br />\n・監5：D-FMEA<br />\n・監6：変化点層別シート<br />\n・監7：変化点と課題進捗一覧<br />\n・監16：DRBFM<br />\n・PCフォローシート</p>\n<h3>【機能主管監査】</h3>\n<p>帳票作成<br />\n↓<br />\n監査</p>\n<p>・DRポイント集<br />\nおよびエビデンス</p>\n<p>接続：5</p>\n<p>図2 (2/7)</p>",
+            "references": [],
+            "sourceImagePath": "eb72e5e8-02e1-4138-b431-9d8a0926255d.png",
+            "thumbnailPath": "thumb_eb72e5e8-02e1-4138-b431-9d8a0926255d.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "759f5ca7-8040-4e51-83f2-b20ef5cf8bfc",
+            "title": "ページ 9",
+            "content": "<p>【CV・写フェーズ】</p>\n<p>5</p>\n<p>【仕入先試作】</p>\n<ul>\n<li>金型</li>\n<li>金型設計</li>\n<li>金型製作</li>\n<li>本型試作・検査</li>\n<li>設備輸送・立ち上げ</li>\n<li>本型品作製・検査</li>\n<li>出荷</li>\n<li>設備仕様検討・見積り</li>\n<li>設備製作・組み立て治具製作</li>\n<li>試作トライ</li>\n<li>設備輸送（空輸：2week　海運：1.5M）</li>\n<li>立ち上げ</li>\n<li>梱包仕様検討</li>\n<li>通い箱試作、検証</li>\n<li>輸送試験</li>\n<li>梱包承認（荷姿決定）</li>\n<li>量産梱包資材作製</li>\n</ul>\n<p>【TM試作】</p>\n<ul>\n<li>単品確認（寸法精度・出来栄え・質量・組付性）</li>\n<li>電池パック組付</li>\n<li>組付性確認</li>\n<li>干渉なき事確認</li>\n<li>出荷前検査</li>\n</ul>\n<p>【評価】</p>\n<ul>\n<li>ユニット評価</li>\n<li>熱拡散試験</li>\n<li>悪路模擬耐久試験</li>\n<li>高速波状路模擬耐久試験</li>\n<li>熱衝撃試験</li>\n<li>車両評価</li>\n<li>実車応力測定試験</li>\n<li>実車起応力測定試験</li>\n<li>リスク試験</li>\n<li>路面干渉試験</li>\n<li>衝突</li>\n<li>法規試験</li>\n<li>輸送法規(T2)温度サイクル試験</li>\n<li>輸送法規(T3)振動試験</li>\n<li>輸送法規(T4)衝撃試験</li>\n<li>中国ランダム振動試験</li>\n<li>中国圧壊試験</li>\n<li>UN-R100振動試験</li>\n</ul>\n<p>6</p>\n<p>図2 (6/7)</p>",
+            "references": [],
+            "sourceImagePath": "80720e3d-7de4-46a3-90c1-51572a2d6ae1.png",
+            "thumbnailPath": "thumb_80720e3d-7de4-46a3-90c1-51572a2d6ae1.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "fd781c05-96a7-45ce-81f3-91d48b1683ff",
+            "title": "ページ 10",
+            "content": "<h3>【CV・電試フェーズ】</h3>\n<p>6</p>\n<p>工程調査</p>\n<p>【ポイント】<br />\n1) ○A、○K<br />\n   a) QC工程表<br />\n   b) 作業標準書<br />\n   c) NG品処理ルート<br />\n   d) 検査結果<br />\n   e) 購入部品受入検査<br />\n   など<br />\n2) 現物DRでの図面との整合性確認<br />\n   ※出席者確認<br />\n3) 量試生産結果での製品バラツキ<br />\n   a) 工程能力<br />\n   b) 初期特性  </p>\n<p>【注意】<br />\nいづれも○×ではなく、データを確認すること。</p>\n<p>↓</p>\n<p>写図組付確認部品（トヨタ）</p>\n<p>【ポイント】<br />\n1) ASSYの組付性<br />\n2) 単品信頼性評価結果の確認<br />\n3) ○×ではなく、データ「設計適合性や実力」を確認のこと。<br />\n   ※評価前後で現物確認する。</p>\n<p>↓</p>\n<p>簡易会「写図移行」（トヨタ）</p>\n<p>【ポイント】<br />\n1) 室内展開「今回不具合も含めて室内報告会を実施」</p>\n<p>↓</p>\n<p>終了</p>",
+            "references": [],
+            "sourceImagePath": "6d99ef7b-a618-4108-97fe-20e28f73c5b6.png",
+            "thumbnailPath": "thumb_6d99ef7b-a618-4108-97fe-20e28f73c5b6.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "6e77b965-4e04-4a81-b4fc-49c11f6665a9",
+            "title": "ページ 11",
+            "content": "<h2>5 要求性能</h2>\n<h3>5.1 性能企画書</h3>\n<p>部品設計にあたり、性能企画書で必要な前提情報を確認する。</p>\n<ul>\n<li>仕向、対応法規情報<br />\n  主に熱拡散で必要。</li>\n<li>セル情報（セル数、セル容量、セル種類、発煙ストレス等）<br />\n  主に耐熱・耐ブラスト性能で必要。</li>\n<li>セル情報（セル連結有無、連鎖数、連鎖速度）<br />\n  主に耐熱・耐ブラスト性能で必要。</li>\n<li>パック情報<br />\n  （搭載位置、ケース形状、材質、体格、余剰体積、パック内レイアウト等）<br />\n  主に搭載、耐熱性能、組付性で必要。</li>\n</ul>",
+            "references": [],
+            "sourceImagePath": "6accc00e-8d18-47b6-a9a1-88023c75b8b1.png",
+            "thumbnailPath": "thumb_6accc00e-8d18-47b6-a9a1-88023c75b8b1.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "9ee278e8-e884-4c95-adc1-35e46b738b10",
+            "title": "ページ 12",
+            "content": "<h3>5.2 要求機能</h3>\n<p>UPR断熱材の要求機能は以下の通り。</p>\n<table>\n<thead>\n<tr>\n<th>機能</th>\n<th>UPR断熱材の機能</th>\n<th>性能</th>\n<th>要求事項（クライテリア）</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>基本機能</td>\n<td>セル熱暴走時のUPRケースのカチオン塗装の白色着火防止</td>\n<td>断熱</td>\n<td>断熱性能を満足すること</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>耐熱</td>\n<td>熱により焼失しないこと</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>耐ガス</td>\n<td>ガスによる断熱機能を損失しないこと</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>追従性</td>\n<td>ケースの膨らみに追従すること</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>接着強度</td>\n<td>発煙時、保護範囲におけるUPRケース面の露出が無きこと</td>\n</tr>\n<tr>\n<td>付加機能</td>\n<td>外力により剥がれないこと</td>\n<td>接着強度</td>\n<td>振動、熱衝撃、冷熱サイクルで剥がれないこと</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>材料強度</td>\n<td>振動時、UPR変形時に周辺部品と干渉し破損しないこと</td>\n</tr>\n<tr>\n<td></td>\n<td>発煙時の排煙経路確保</td>\n<td>接着強度</td>\n<td>排煙時、排煙口をふさがないこと</td>\n</tr>\n<tr>\n<td>本体機能</td>\n<td>周辺部品との隙を確保</td>\n<td>搭載</td>\n<td>周辺部品のエッジが当たらないこと</td>\n</tr>\n<tr>\n<td>弊害防止機能</td>\n<td>使用者に害なきこと</td>\n<td>異音防止</td>\n<td>異音無きこと</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td>機器保護</td>\n<td>シロキサン、スチアリン酸、硫黄含有量</td>\n</tr>\n<tr>\n<td>自己防衛機能</td>\n<td>組付け作業性</td>\n<td>○R組付け性</td>\n<td>組付け時に破損なきこと</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n<td>容易に貼り付けられること</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n<td>適正位置に貼り付けられること</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n<td>脱着できること</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n<td>有害なエッジがないこと</td>\n</tr>\n<tr>\n<td></td>\n<td>輸送時の品質低下なきこと</td>\n<td>輸送</td>\n<td>シロキサン、スチアリン酸、硫黄含有量</td>\n</tr>\n<tr>\n<td></td>\n<td></td>\n<td></td>\n<td>シロキサン、スチアリン酸、硫黄含有量</td>\n</tr>\n</tbody>\n</table>",
+            "references": [],
+            "sourceImagePath": "ba3a92c3-4913-4e14-b368-f086ba935cbd.png",
+            "thumbnailPath": "thumb_ba3a92c3-4913-4e14-b368-f086ba935cbd.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "6579886a-2aa8-42c9-b697-9c188b58db1f",
+            "title": "ページ 13",
+            "content": "<p><strong>5 要求性能</strong></p>\n<h3>5.3 材質</h3>\n<p>材質は下記を考慮して選定のこと。<br />\nUL試験（トーチ＆グリッド）等を利用して検証することは有効である。</p>\n<p>＜材質選定条件＞</p>\n<ul>\n<li>熱伝導率<br />\n  →発熱時のセルからの噴出高温ガスに対する断熱性の確保</li>\n<li>耐熱温度<br />\n  →発熱時のセルからの噴出高温ガスに対する耐熱性の確保</li>\n<li>引張強度<br />\n  →発熱時のセルからの噴出物に対する耐ブラスト性の確保</li>\n<li>熱、ひずみ量による収縮率<br />\n  →断熱範囲の確保</li>\n<li>UPRカバー形状への追従性<br />\n  →UPRカバーとの密着性の確保<br />\n  （UPRカバーのビード形状や発熱時のUPRカバー膨らみを考慮）</li>\n<li>厚さ<br />\n  →周辺部品との干渉等搭載隙間の確保</li>\n<li>接着要件<br />\n  →周辺部品の脱落防止</li>\n<li>部材強度<br />\n  →離型紙剥がし時、UPRカバー取着時に材料からの剥離が無い強度を確保</li>\n</ul>",
+            "references": [],
+            "sourceImagePath": "f2914620-3dfb-430f-b5bc-ccd4f02a1fb9.png",
+            "thumbnailPath": "thumb_f2914620-3dfb-430f-b5bc-ccd4f02a1fb9.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "54cd3a64-051e-4afa-befa-e44ec7fdfb10",
+            "title": "ページ 14",
+            "content": "<p><strong>5 要求性能</strong></p>\n<h3>5.4 搭載</h3>\n<p>搭載は、電池パック上面（UPRカバー）の内側に両面テープにより貼付ける。<br />\nこれにより、セル熱暴走時のUPRカバー膨らみに追従することができ、<br />\n組付け作業性（UPRカバーの隙間）を確保。また振動・熱衝撃環境下でも脱落しない構造。<br />\n貼付箇所は、セル熱暴走時のセルから出る排煙ガスによりUPRケースが高温になる箇所とする。<br />\n（セルモジュールからの発煙範囲・角度によって貼付範囲を設定）<br />\n電池パックの種類（モジュールの配置、UPRカバー形状等）によっては、貼付作業性の観点からUPR断熱材を分割することは有効である。<br />\n但し、熱及び液温による収縮を考慮したシンプリ量、厚み追加による搭載隙間に注意のこと。</p>\n<p>（図中の表記）<br />\n- 断熱材<br />\n- UPRケース</p>\n<p>（参考）<br />\n【断熱材貼付け範囲】</p>\n<table>\n<thead>\n<tr>\n<th><Li6.B></th>\n<th><Li7.B></th>\n<th><Li9.A></th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>不燃紙＋マイカ<br>t0.3　t0.5</td>\n<td>シリカクロス<br>t1.2</td>\n<td>シリカクロス<br>t1.2</td>\n</tr>\n</tbody>\n</table>\n<p>UPR<br />\nFr<br />\nLH</p>",
+            "references": [],
+            "sourceImagePath": "94ec5b24-a56e-451f-9bf9-9fa927a7a8c4.png",
+            "thumbnailPath": "thumb_94ec5b24-a56e-451f-9bf9-9fa927a7a8c4.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "31a1ba71-7a14-4fa6-aefb-95d165dded51",
+            "title": "ページ 15",
+            "content": "<p><strong>5 要求性能</strong></p>\n<h3>5.5 耐熱性</h3>\n<p>UPRカバーがサブアッセン電着塗装している場合、発煙時に生じる排煙ガスによりUPRケースが温められ、UPRケースのカチオン電着塗装が白く黄変する。<br />\nそのためカチオン電着塗装以下となる耐熱性を確保すること。<br />\nカチオン塗装の条件：UPRケース面温度40℃以上、及び昇温速度42℃/sec以上にて着火<br />\n※カチオン塗装発火条件根拠（5.5.1）参照</p>\n<p>断熱しない場合、UPRケース温度は800℃以上となるため、40℃以上になるよう素材の組み合わせで熱抵抗算出、試験にて効果を確認し仕様を決定する。</p>\n<p>図中表記：シリカ、UPRカバー、火力、発煙</p>",
+            "references": [],
+            "sourceImagePath": "2630a4c9-870a-4c6b-b0e9-7e7da37cb932.png",
+            "thumbnailPath": "thumb_2630a4c9-870a-4c6b-b0e9-7e7da37cb932.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "7474baf6-02d6-4f31-b345-b5f055324752",
+            "title": "ページ 16",
+            "content": "<p><strong>5 要求性能</strong></p>\n<h4>5.5.1 カチオン塗装発火条件（参考）</h4>\n<p>【参考】ポリアミドミン硬化エポキシ樹脂の熱分解挙動（TG-DTA-FTIR法による発生気体分析）</p>\n<p>209℃付近よりエポキシ樹脂が熱分解し、質量減少<br />\n⇒ 炭化水素系の有機ガスやCO、NH₃などの可燃性ガスが発生</p>\n<p>【カチオン塗装の発火推定メカニズム】<br />\n209℃からガス化開始、可燃性ガスに自己着火（約540℃）する。<br />\n昇温速度に着目し、発火の有無を検証</p>\n<p>カチオン塗装発火点調査</p>\n<p>試験目的：UPRバーのカチオン塗装発火について、昇温速度と発火温度の関係を調査する。</p>\n<p>試験状況<br />\n熱電対（φ0.65mm）<br />\nクリアランス調整 85mm～150mm<br />\nアセチレンバーナー（出力固定）<br />\nアセチレン：0.08MPa<br />\n酸素：0.8MPa<br />\nバーナー</p>\n<p>カチオン塗装発火点調査</p>\n<p>バーナー試験結果<br />\n発火点：540℃</p>\n<p>【検証結果】<br />\n発火点に到達しても発火しない条件があり、昇温速度依存性あり</p>\n<p>カチオン塗装発火点調査</p>\n<p>バーナー試験結果<br />\n300℃～発火点540℃間の昇温速度を算出</p>\n<p>発火<br />\n発火なし<br />\n△t 42℃/sec<br />\n△t 24℃/sec</p>\n<p>△t ≧ 42℃/sec ⇒ 発火<br />\n△t ≤ 24℃/sec ⇒ 発火しない<br />\n24℃＜△t＜42℃は今回の評価からは判定不可</p>",
+            "references": [],
+            "sourceImagePath": "cf9503a0-67a2-4356-bca5-3837c53931d5.png",
+            "thumbnailPath": "thumb_cf9503a0-67a2-4356-bca5-3837c53931d5.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "c2f2c3c2-f3d9-40c0-86ec-9420a270a9db",
+            "title": "ページ 17",
+            "content": "<p><strong>5 要求性能</strong></p>\n<h3>5.6 耐ブラスト性</h3>\n<p>発煙テストの噴きはセル壁面によって異なるため、その性質に合わせた断熱材を選定のこと。<br />\n特にセル間連鎖をする場合は、発煙時間も長く、噴出物も多いため、断熱性や強度を十分に確保することが重要。<br />\n断熱材の範囲・材厚は、発煙テストの噴き・発煙範囲・蓄熱程度を考慮して設定のこと。<br />\nトーチ＆グリッド試験、ミニモジュール試験等を活用し、実物で検証する。</p>\n<ul>\n<li>Li6.B：セル排煙弁面上に集中し、非常に強い ⇒ マイカ（t0.5）＋不燃紙（t0.3）</li>\n<li>Li7.B：セル上全体に分散 ⇒ シリカクロス（t1.3）</li>\n<li>Li9.A：セル間連鎖によりモジュール上全体に分散 ⇒ シリカクロス（t1.3）＋マイカ（t0.5）</li>\n</ul>\n<table>\n<thead>\n<tr>\n<th>セル種類</th>\n<th></th>\n<th>Li6.B</th>\n<th>Li7.B</th>\n<th>Li9.A</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>ブラスト性質</td>\n<td>範囲</td>\n<td>局所集中<br>（排煙弁直上）</td>\n<td>広範囲<br>（セル／モジュール全体）</td>\n<td>広範囲<br>（セル／モジュール全体）</td>\n</tr>\n<tr>\n<td></td>\n<td>強さ</td>\n<td>強</td>\n<td>弱</td>\n<td>弱</td>\n</tr>\n<tr>\n<td>ブラストイメージ図</td>\n<td></td>\n<td>セル<br>＜断熱材＞<br>・マイカ・・・耐ブラスト<br>・不燃紙・・・断熱</td>\n<td>セル／モジュール<br>＜断熱材＞<br>・シリカクロス・・・耐ブラスト＋断熱</td>\n<td>セル／モジュール</td>\n</tr>\n<tr>\n<td>セル開裂写真</td>\n<td></td>\n<td></td>\n<td></td>\n<td></td>\n</tr>\n</tbody>\n</table>\n<p>＜マイカ幅の考え方＞</p>\n<p><strong>マイカ幅必要幅は70mm（法規形態）</strong></p>\n<p>ミニモジュール試験結果からブラスト範囲を推測<br />\n→φ50mm（ブラストのバラツキ最悪時）</p>\n<p>φ50をベースに法規形態のブラスト範囲を54mmと推測<br />\nバラツキ考慮し70mm必要判断</p>\n<p>ミニモジュール試験後 UP断熱材ダメージサイズ<br />\nn数</p>\n<p>セルパック熱拡散試験（単セル発煙）<br />\nシリカクロス ダメージ穴 Φ5mm</p>\n<p>54（法規形態 ブラスト範囲）<br />\n50（ミニモジュール試験後 サイズ）<br />\n44（安全 ブラスト範囲）</p>\n<p>UPケース 法規形態時 20mm LFT UP<br />\nUPケース ミニモジュール試験時 15mm LFT UP<br />\nUPケース 実安全形態時 7mm LFT UP</p>",
+            "references": [],
+            "sourceImagePath": "e9a15667-82b2-4b69-8372-5beda1ee5ae2.png",
+            "thumbnailPath": "thumb_e9a15667-82b2-4b69-8372-5beda1ee5ae2.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "3dc86b32-e8ff-4156-a5ad-e12b7461d57a",
+            "title": "ページ 18",
+            "content": "<p><strong>5 要求性能</strong></p>\n<h3>5.7 接着強度</h3>\n<p>UPR断熱材は、いかなるとき（組付時、通常時、異常時）においてもUPRケース表面を確実に被覆し続ける必要があるため、十分な接着強度を必要とする。</p>\n<p>①組付時<br />\n電池パック組付け時にUPRケースを接着して持ち上げるため、UPRケースの自重以上の接着強度を必要とする。</p>\n<p>②通常時<br />\n振動や熱衝撃による外力にて剥がれがないこと</p>\n<p>③異常時（セル熱暴走時）<br />\nセル熱暴走時に断熱材が脱落し、UPRケース面が露出しないこと<br />\n断熱材のめくれにより、排煙経路を塞がないこと<br />\n但し、セル熱暴走時に断熱材の剥がれが発生する場合は、カチオン塗装条件やUPRケースの焼け状態を確認して判断すること</p>\n<p>また、両面テープにて貼らず塗布UPR断熱材の脱落防止（中間マットなど）を設けること。</p>",
+            "references": [],
+            "sourceImagePath": "1ad8e42a-9951-45e3-86a9-9f98b573d9bc.png",
+            "thumbnailPath": "thumb_1ad8e42a-9951-45e3-86a9-9f98b573d9bc.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "501570bd-dc6c-4da9-9c23-7ec2b2121448",
+            "title": "ページ 19",
+            "content": "<p><strong>5 要求性能</strong></p>\n<h3>5.8 貼付性</h3>\n<p>保護範囲に適切に貼り付けるため、PRカバーのビードや壁面等を利用して、貼付基準位置を設定する。<br />\n（貼付け基準位置は L方向・W方向それぞれ必要）</p>\n<p>貼付作業性（オーバーモールド長さ）や、コストによっては、断熱材を分割する場合は、下記に注意する。</p>\n<ul>\n<li>モジュールの配置に考慮した分割位置</li>\n<li>寸法公差、貼付けばらつき、熱収縮を考慮したラップ量</li>\n<li>排熱経路を考慮した貼付け順序</li>\n</ul>\n<p>離型紙の分割位置やタブテープ位置は、関係者と協議の上設定する。</p>\n<p><strong>【断熱材位置決め】</strong></p>\n<p>Li6.B<br />\n枚数：4枚<br />\n基準<br />\nL位置：アイを緑丸ビードに合わせる<br />\nW位置：赤丸ビードに合わせる<br />\n判定<br />\n赤丸、緑丸ビード内にあるか</p>\n<p>Li7.B<br />\n枚数：4枚<br />\n基準<br />\nL位置：青／緑丸R部に合わせる<br />\nW位置：赤丸ビードに合わせる<br />\n判定<br />\n赤丸、緑丸R部内にあるか<br />\n橙色面に乗り上げNG</p>\n<p><strong>＜Li7.B UPケースへの貼り付け＞</strong></p>\n<p>①初期<br />\n離型紙分割位置<br />\nシリカクロス側<br />\nタブ（離型紙持ち手）<br />\n作業者<br />\n上ケースで位置合わせ</p>\n<p>②位置合わせ</p>\n<p>③離型紙をはがし、仮付け</p>\n<p>④大半側の離型紙を剥がしながら本貼り</p>",
+            "references": [],
+            "sourceImagePath": "1035b4df-ae2a-4db3-b118-7d56e56f48fc.png",
+            "thumbnailPath": "thumb_1035b4df-ae2a-4db3-b118-7d56e56f48fc.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "e337c39e-f8ca-414c-8836-fb5981b76eb4",
+            "title": "ページ 20",
+            "content": "<p><strong>5 要求性能</strong></p>\n<h3>5.9 吸着性</h3>\n<p>UPRケースは、断熱材貼付後、吸着して反転させ、電池パックへASSYにするため、<br />\n貼着後、UPRケースを持ち上げた際に、断熱材が剥がれないか以下関係式で検証を行う。</p>\n<p><strong>図中の表示</strong></p>\n<table>\n<thead>\n<tr>\n<th>工程</th>\n<th>表示</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>貼着</td>\n<td>UPRケース、断熱材、（貼着）</td>\n</tr>\n<tr>\n<td>反転</td>\n<td>（反転）</td>\n</tr>\n<tr>\n<td>組付け</td>\n<td>電池パック、（組付け）</td>\n</tr>\n</tbody>\n</table>\n<p><strong>（両面テープ接着力検証）</strong></p>\n<p>断熱材の両面テープ接着力は、UPRケース保持重量以上を確保すること</p>\n<p>①両面テープ接着力 ＞ ②UPRケース保持重量</p>\n<p>①両面テープ接着力：せん断接着力 × 接着箇所<br />\n②UPRケース保持重量：UPRケースASSY質量（リリーフバルブ等含む）</p>\n<p><strong>（吸着力検証）</strong></p>\n<p>UPRケースの吸着力は、必要吸着力（UPRケースを持ち上げる力）以上を確保すること</p>\n<p>①吸着力 ＞ ②必要吸着力（UPRケースを持ち上げる力）</p>\n<p>①吸着力：吸着面積 × 吸引圧力 × 吸着数<br />\n②必要吸着力：UPRケースASSY質量（リリーフバルブ等含む）</p>",
+            "references": [],
+            "sourceImagePath": "061a975b-2d01-4258-9ca7-750f305ec4bf.png",
+            "thumbnailPath": "thumb_061a975b-2d01-4258-9ca7-750f305ec4bf.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "3c850052-d918-418a-8ad8-c809c28364be",
+            "title": "ページ 21",
+            "content": "<h2>6 評価確認項目</h2>\n<h3>6.1 評価概要</h3>\n<ul>\n<li>評価対象は UPR断熱材単体 とする。</li>\n</ul>\n<h3>6.2 要求仕様・評価方法</h3>\n<ul>\n<li>以下の要求仕様に基づき、UPR断熱材の性能を評価する。</li>\n<li>使用材料によって、適用する要求仕様は異なる。</li>\n<li>現在、使用実績のあるシリカクロスについては、下記の要求仕様Aを満たすことを確認する。</li>\n<li>仕様を満たさない項目がある場合は、仕入先と協議の上、条件を決定する。</li>\n</ul>\n<table>\n<thead>\n<tr>\n<th>項目<br>ITEM</th>\n<th>単位<br>UNIT</th>\n<th>値<br>VALUE</th>\n<th>規格・測定方法<br>Standard / Test Method</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>目付量<br>RELATED WEIGHT</td>\n<td>g/m2</td>\n<td>1300 以下<br>MAX 1300</td>\n<td>-</td>\n</tr>\n<tr>\n<td>耐熱温度<br>HEATPROOF TEMPERATURE</td>\n<td>°C</td>\n<td>1000 以上<br>MIN 1000</td>\n<td>-</td>\n</tr>\n<tr>\n<td>熱伝導率（25°C）<br>THERMAL CONDUCTIVITY</td>\n<td>W/mK</td>\n<td>0.12 以下<br>MAX 0.12</td>\n<td>-</td>\n</tr>\n<tr>\n<td>熱伝導率（1000°C、1h）<br>THERMAL CONDUCTIVITY</td>\n<td>W/mK</td>\n<td>0.43 以下<br>MAX 0.43</td>\n<td>-</td>\n</tr>\n<tr>\n<td>引張強度（25°C）<br>TENSILE STRENGTH</td>\n<td>N/25mm</td>\n<td>VERTICAL:1600 以上<br>MIN 1600<br>HORIZONTAL:800 以上<br>MIN 800</td>\n<td>JIS R 3420</td>\n</tr>\n<tr>\n<td>引張強度（1000°C、1h）<br>TENSILE STRENGTH</td>\n<td>N/25mm</td>\n<td>VERTICAL:200 以上<br>MIN 200<br>HORIZONTAL:200 以上<br>MIN 200</td>\n<td>JIS R 3420</td>\n</tr>\n<tr>\n<td>加熱収縮率（800°C、20min）<br>HEAT SHRINKAGE RATE</td>\n<td>%</td>\n<td>2 以下<br>MAX 2</td>\n<td>ISO 62</td>\n</tr>\n<tr>\n<td>トーチ＆グリット試験<br>TORCH AND GRIT TEST</td>\n<td>-</td>\n<td>検討中</td>\n<td>UL 2596</td>\n</tr>\n</tbody>\n</table>",
+            "references": [],
+            "sourceImagePath": "c411d514-1bba-4e45-915d-6ba118215a7e.png",
+            "thumbnailPath": "thumb_c411d514-1bba-4e45-915d-6ba118215a7e.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        },
+        {
+            "id": "b5193e30-0ae6-4b35-8670-c3edab5b3533",
+            "title": "ページ 22",
+            "content": "<h2>7 機能ブロック図</h2>\n<p>以下にUPR断熱材を検討するにあたっての機能ブロック図を示す。</p>\n<p>本機能ブロック図は、UPR断熱材の断熱性、保護範囲、耐ブラスト性に影響を与える要因およびその因果関係を整理し、設計初期段階における検討観点の抽出を目的としたものである。</p>\n<p>実際の各性能は各要素間の相互作用や非線形特性の影響を受けるため、本図に基づく検討結果については実機評価により妥当性を確認すること。</p>\n<p>特に、耐ブラスト性の機能ブロック図は、デブリ負荷と材料特性の関係を整理するための指標であり、実際の熱暴走規模を完全に再現するものではない。デブリによる局所的な損傷の定量化には限界があるため、熱拡散試験、ミニMDL試験、単セル試験、TaG試験等を併用し、実機現象との相関および妥当性を確認すること。</p>\n<h3>機能ブロック図</h3>\n<h4>断熱性能</h4>\n<ul>\n<li>入力：セル発電温度 tc℃<br />\n  → <strong>アッパーカバー裏面温度を決める機能</strong><br />\n<code>T=t0+(t0-tc)*erf(L/(2*√(k*c/ρ)*t))</code><br />\n  → アッパーカバー裏面温度 ℃</li>\n<li>入力要素：熱伝導率 k、厚さ L、密度 ρ、比熱 c、時間 t</li>\n<li>各層：シリカクロス、ガラスクロス、PETフィルム、両面テープ等</li>\n<li>板厚公差</li>\n</ul>\n<h4>保護範囲</h4>\n<ul>\n<li>入力：セル解放面積<br />\n  → <strong>ブラストエリアを決める機能</strong><br />\n  開放面積＋tan（最大噴出角度°）×UPR～セル隙間mm＋組付けブラケットmm＋熱収縮分mm<br />\n  → UPR断熱材保護範囲 mm</li>\n<li>入力要素：セル安全弁面積、セル上排煙空間、噴出角度、組付ばらつき、UPR断熱材収縮率</li>\n</ul>\n<h4>耐ブラスト性能</h4>\n<ul>\n<li>入力：セル発煙</li>\n<li>ガス流量 L、デブリ噴出範囲 A、デブリ量 m<br />\n  → <strong>デブリ衝突によるエネルギーを決める機能</strong><br />\n<code>E=1/2×m×(L×A)^2</code><br />\n  → デブリ衝突エネルギー E<br />\n  → <strong>デブリ衝突による浸食性を決める機能</strong><br />\n<code>U_er,req = E_impact / A(t0 - t_req)</code></li>\n<li>初期厚さ：t0<br />\n  残存厚さ：treq</li>\n<li>ρ：密度<br />\n  H：硬さ<br />\n  T：耐熱性<br />\n  σ：引張強度<br />\n  → <strong>材料耐浸食性を決める機能</strong><br />\n<code>U_er = C ρ^a H^b T^c σ^d</code><br />\n  → UPR断熱材に必要な耐ブラスト性</li>\n</ul>",
+            "references": [],
+            "sourceImagePath": "e2afb0c8-afca-43f7-82a1-af2db485d5c7.png",
+            "thumbnailPath": "thumb_e2afb0c8-afca-43f7-82a1-af2db485d5c7.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        }
+    ],
+    "references": [],
+    "sourceFilePath": "C:\\Users\\1584550\\AppData\\Roaming\\system_factory\\app_data\\projects\\0c47063b-31ef-45f7-9ab8-67833c1008e7\\documents\\fd979ada-ee8c-4537-9563-9e3fa5789ffb\\orgs\\87699047-e30b-48f4-a3f4-d8d6f37d29d0.pdf",
+    "createdAt": null,
+    "updatedAt": null,
+    "skeleton": null,
+    "headingRules": null,
+    "digest": {
+        "overview": {
+            "summary": "「アンバー熱設計標準書」（BV-D-11）は、電池パックのUPRカバー内側に搭載するUPR断熱材の設計標準をまとめた文書です。日本・中国・北米の使用箇所と材料ラインナップを示し、試作から形状検討、ソーシング、原価活動、各種設計審査・試作・評価までの開発フローを記載しています。要求性能では、性能企画情報、要求機能、材質選定、搭載、耐熱性・耐ブラスト性、接着・貼付・吸着に関する要件と検討方法を扱います。さらに、材料単体の評価仕様・試験方法と、断熱性、保護範囲、耐ブラスト性を左右する要因の機能ブロック図を示しています。",
+            "documentKind": "design_doc",
+            "purpose": "電池パック用UPR断熱材について、設計・開発の進め方と要求性能、評価確認の基準を示す。",
+            "scope": "UPR断熱材の用途・材料ラインナップ、開発フェーズの業務フロー、形状・材質・搭載設計、性能要求および単体評価を扱う。",
+            "keyTopics": [
+                "UPR断熱材の用途・使用箇所・地域別ラインナップ",
+                "試作・CV・号試・写フェーズの開発業務フロー",
+                "形状検討と周辺部品・パック情報の確認",
+                "仕入先選定・ソーシング・原価活動",
+                "UPR断熱材の要求機能と性能企画情報",
+                "材質選定および搭載・貼付設計",
+                "耐熱性・耐ブラスト性・接着強度の要求",
+                "吸着・反転・組付け時の強度検証",
+                "材料単体の要求仕様と評価方法",
+                "断熱性・保護範囲・耐ブラスト性の機能ブロック図"
+            ],
+            "keyTerms": [
+                {
+                    "term": "UPR断熱材",
+                    "definition": "セル熱暴走時の熱伝達を抑え、UPRケースの塗装着火や発煙プラストによる損傷を防ぐため、UPRカバー内側に搭載する断熱材。"
+                },
+                {
+                    "term": "UPRケース",
+                    "definition": "UPR断熱材を貼り付ける電池パック上面のカバー側部品で、熱暴走時の排煙ガスによる加熱や塗装の着火防止が設計上の対象となる。"
+                },
+                {
+                    "term": "熱拡散CAE",
+                    "definition": "3D形状・物性情報を用いて熱拡散機能を確認し、モデル妥当性やクライテリア達成を評価する開発工程。"
+                },
+                {
+                    "term": "トーチ＆グリット試験（TaG）",
+                    "definition": "断熱材の耐ブラスト性等を実物検証する試験として記載され、評価方法にはUL 2596が挙げられている。"
+                },
+                {
+                    "term": "機能ブロック図",
+                    "definition": "断熱性・保護範囲・耐ブラスト性に影響する入力要素と性能決定の因果関係を整理した図。"
+                }
+            ],
+            "targetSystem": "電池パック用UPR断熱材"
+        },
+        "outline": [
+            {
+                "id": "642ff570-673a-4600-b0da-bc13c0b7b8a1",
+                "title": "アンバー熱設計標準書",
+                "level": 1,
+                "summary": "文書番号は BV-D-11、名称は「アンバー熱設計標準書」で、部門は電池パック開発部、室は第2電池機能設計室と記載されています。承認・調査・作成の担当者は南谷・白河・飯塚／板原で、各日付は 2026.3.24 です。変更履歴欄には「新設」、開示先欄には区分の選択肢があり、印刷はプロパーの方に限定すると記載されています。",
+                "keywords": [
+                    "BV-D-11",
+                    "アンバー熱設計標準書",
+                    "電池パック開発部",
+                    "第2電池機能設計室",
+                    "南谷",
+                    "白河",
+                    "飯塚",
+                    "板原"
+                ],
+                "pageIds": [
+                    "3b739d07-3edd-428d-957c-790fc66a5401"
+                ],
+                "children": [
+                    {
+                        "id": "00bd351f-5765-4971-930b-57dcd1e6ba1c",
+                        "title": "3 概要",
+                        "level": 2,
+                        "summary": "電池パックのUPR断熱材について、用途と使用箇所・ラインナップを示す。",
+                        "keywords": [
+                            "UPR断熱材",
+                            "電池パック"
+                        ],
+                        "pageIds": [
+                            "28053c47-3b70-41d9-8871-a3633916f1f2"
+                        ],
+                        "children": [
+                            {
+                                "id": "a58fbea1-277f-4fb4-a61d-7e9e7b1a8ff3",
+                                "title": "3-1. 用途",
+                                "level": 3,
+                                "summary": "UPRカバー内側にUPR断熱材を搭載し、セル熱暴走時の熱伝達抑制、カチオン塗装の白化着火防止、セル発煙プラストからのUPRカバー保護と断熱材の機能喪失防止を目的とする。",
+                                "keywords": [
+                                    "UPR断熱材",
+                                    "UPRカバー",
+                                    "セル熱暴走",
+                                    "熱伝達",
+                                    "カチオン塗装",
+                                    "白化着火",
+                                    "発煙プラスト"
+                                ],
+                                "pageIds": [
+                                    "28053c47-3b70-41d9-8871-a3633916f1f2"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "1abd7913-6137-40fc-b0d5-b43e1842c0b3",
+                                "title": "3-2. 使用箇所、ラインナップ",
+                                "level": 3,
+                                "summary": "図中にはUPR断熱材、自己着火、UPRケース、発煙プラスト、セルの表記がある。生産地域は日本（元町・高岡・TMK）、中国（GTMC）、北米（TMMK）で、セル種類は順にLi6.B／Li7.B、Li7.B、Li6.B／Li9.A。断熱材・UPR断熱材の仕様は地域別に、不燃紙＋マイカ板／シリカクロス（マイカ板・不燃紙・幅広）、シリカクロス（幅狭）、不燃紙＋マイカ板／シリカクロス＋マイカ（マイカ板・不燃紙・幅広／シリカクロス＋マイカ）と記載され、仕入先として豊田通商、千代田インテグレ、タイガラックス、阿波製紙、パーカーが挙げられている。",
+                                "keywords": [
+                                    "UPR断熱材",
+                                    "自己着火",
+                                    "UPRケース",
+                                    "発煙プラスト",
+                                    "日本生産",
+                                    "元町",
+                                    "高岡",
+                                    "TMK"
+                                ],
+                                "pageIds": [
+                                    "28053c47-3b70-41d9-8871-a3633916f1f2"
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "7937462c-d034-4048-ab61-682cee2275d9",
+                        "title": "4 業務フロー",
+                        "level": 2,
+                        "summary": "試作フェーズから形状検討、ソーシング、原価活動までの業務フローを示す。",
+                        "keywords": [
+                            "業務フロー",
+                            "試作フェーズ",
+                            "形状検討",
+                            "ソーシング",
+                            "原価活動"
+                        ],
+                        "pageIds": [
+                            "602f0744-047e-4669-b3da-9ad411752cce"
+                        ],
+                        "children": [
+                            {
+                                "id": "a72fe454-6e69-41e1-9268-5023bdbf2d3f",
+                                "title": "【試作フェーズ】",
+                                "level": 3,
+                                "summary": "開始後、部品開発日程を作成し、材質を選定する。",
+                                "keywords": [
+                                    "試作フェーズ",
+                                    "部品開発日程",
+                                    "材質選定"
+                                ],
+                                "pageIds": [
+                                    "602f0744-047e-4669-b3da-9ad411752cce"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "075574bf-8382-435b-9e78-75a3d853febd",
+                                "title": "【形状検討】",
+                                "level": 3,
+                                "summary": "検討前提を整理して配置・形状を検討し、電池パック内部品との整合が取れていない場合は形状検討に戻る。周辺部品としてMDL構造、セル、バスバー、アッパーカバー等を確認し、UPR断熱材の保護範囲・必要熱抵抗・耐熱性や、部品形状・材質、材料物性、セル挙動、パック体格・余剰体積、法規情報を検討材料とする。",
+                                "keywords": [
+                                    "電池パック",
+                                    "MDL構造",
+                                    "セル",
+                                    "バスバー",
+                                    "アッパーカバー",
+                                    "UPR断熱材",
+                                    "熱抵抗",
+                                    "熱連鎖"
+                                ],
+                                "pageIds": [
+                                    "602f0744-047e-4669-b3da-9ad411752cce"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "5de73549-9175-415f-abf5-413b2900781b",
+                                "title": "【ソーシング】",
+                                "level": 3,
+                                "summary": "RMBS、Cost Summary Sheet（CSS）、Delivery Instruction（DI）、Component Parts List（CPL）、見積図を作成し、耐食性・開発日程・コストを基準に仕入先を決定する。企画部署から企画台数、材料建値時期、為替レート、車両事業体、引当、引当車両台数を入手し、各書類の要否はPJに応じて確認する。",
+                                "keywords": [
+                                    "ソーシング",
+                                    "RMBS",
+                                    "Cost Summary Sheet",
+                                    "CSS",
+                                    "Delivery Instruction",
+                                    "DI",
+                                    "Component Parts List",
+                                    "CPL"
+                                ],
+                                "pageIds": [
+                                    "602f0744-047e-4669-b3da-9ad411752cce"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "6493b0a3-b158-425c-9cf9-773a65ff329a",
+                                "title": "【原価活動】",
+                                "level": 3,
+                                "summary": "原価目標を検討し、見積前提を入手したうえでCC解析を行う。",
+                                "keywords": [
+                                    "原価活動",
+                                    "原価目標",
+                                    "見積前提",
+                                    "CC解析"
+                                ],
+                                "pageIds": [
+                                    "602f0744-047e-4669-b3da-9ad411752cce"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "1adaac12-9e50-404c-925b-d29628fdca48",
+                                "title": "【試作フェーズ】",
+                                "level": 3,
+                                "summary": "試作フェーズの確認・作業フローを示す。仕入先SE、生技SE、熱拡散CAE、出図、品質総点検、機能主管監査について、課題の有無による分岐や作成する資料・帳票を記載している。",
+                                "keywords": [
+                                    "試作フェーズ",
+                                    "仕入先SE",
+                                    "生技SE",
+                                    "熱拡散CAE",
+                                    "出図",
+                                    "品質総点検",
+                                    "機能主管監査"
+                                ],
+                                "pageIds": [
+                                    "f8ff826f-9bf1-410b-a26e-54bc3e22aeb4"
+                                ],
+                                "children": [
+                                    {
+                                        "id": "2db45429-536f-4e24-9a1b-c0e9d8126a7e",
+                                        "title": "【仕入先SE】",
+                                        "level": 4,
+                                        "summary": "2D・3Dデータを送付して製造要望とSE課題リストを入手する。形状簡素化（R緩和）や公差緩和などの要望を確認し、SE課題があればデータを修正して課題リストを再入手し、課題がなければ出図へ進む。",
+                                        "keywords": [
+                                            "仕入先SE",
+                                            "2Dデータ",
+                                            "3Dデータ",
+                                            "製造要望",
+                                            "形状簡素化",
+                                            "R緩和",
+                                            "公差緩和",
+                                            "SE課題リスト"
+                                        ],
+                                        "pageIds": [
+                                            "f8ff826f-9bf1-410b-a26e-54bc3e22aeb4"
+                                        ],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "4db574f1-1dae-4e19-8b8c-9e35c7cd03bc",
+                                        "title": "【生技SE】",
+                                        "level": 4,
+                                        "summary": "生技課題の有無を確認し、課題があれば対策検討と2D・3Dデータ修正を行って再確認する。課題がなければ品質総点検へ進む。",
+                                        "keywords": [
+                                            "生技SE",
+                                            "生技課題",
+                                            "対策検討",
+                                            "2Dデータ",
+                                            "3Dデータ",
+                                            "品質総点検"
+                                        ],
+                                        "pageIds": [
+                                            "f8ff826f-9bf1-410b-a26e-54bc3e22aeb4"
+                                        ],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "541b93bd-49d9-46c5-ab8d-aff4aa2254ce",
+                                        "title": "【熱拡散CAE】",
+                                        "level": 4,
+                                        "summary": "3D・物性情報を含むCAE用データを送付し、CAEモデル作成とモデル妥当性確認（Correlation）を行う。プラスタ実施のうえ、エニーポジションでクライテリアを満たすか確認し、YESなら機能主管監査へ、NOなら対策検討・モデル修正後にデータ送付へ戻る。",
+                                        "keywords": [
+                                            "熱拡散CAE",
+                                            "CAE用データ",
+                                            "物性情報",
+                                            "CAEモデル",
+                                            "Correlation",
+                                            "エニーポジション",
+                                            "クライテリア",
+                                            "プラスタ"
+                                        ],
+                                        "pageIds": [
+                                            "f8ff826f-9bf1-410b-a26e-54bc3e22aeb4"
+                                        ],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "e70c9ce5-500d-4b17-b504-29741e8a3624",
+                                        "title": "【出図】",
+                                        "level": 4,
+                                        "summary": "出図ビデオ・資料を作成する。資料には設変チェッカー、検図エビデンス、各機能の達成状況を示す設計検討資料が含まれ、出図前DRを行う。",
+                                        "keywords": [
+                                            "出図",
+                                            "出図ビデオ",
+                                            "設変チェッカー",
+                                            "検図エビデンス",
+                                            "設計検討資料",
+                                            "出図前DR"
+                                        ],
+                                        "pageIds": [
+                                            "f8ff826f-9bf1-410b-a26e-54bc3e22aeb4"
+                                        ],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "82b1656f-523d-472b-bbff-cae429c7f795",
+                                        "title": "【品質総点検】",
+                                        "level": 4,
+                                        "summary": "帳票を作成し、点検結果を報告する。帳票として開発日程、監0（品質状況まとめ）、監2（変化点リスト／変化点マトリクス）、監4（FTA）、監5（D-FMEA）、監6（変化点層別シート）、監7（変化点と課題進捗一覧）、監16（DRBFM）、PCフォローシートを挙げている。",
+                                        "keywords": [
+                                            "品質総点検",
+                                            "帳票",
+                                            "開発日程",
+                                            "監0",
+                                            "監2",
+                                            "FTA",
+                                            "D-FMEA",
+                                            "DRBFM"
+                                        ],
+                                        "pageIds": [
+                                            "f8ff826f-9bf1-410b-a26e-54bc3e22aeb4"
+                                        ],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "53ac17f1-c4f7-4f79-b0c4-ccac42151426",
+                                        "title": "【機能主管監査】",
+                                        "level": 4,
+                                        "summary": "帳票を作成して監査を行う。帳票はDRポイント集およびエビデンスである。",
+                                        "keywords": [
+                                            "機能主管監査",
+                                            "帳票",
+                                            "監査",
+                                            "DRポイント集",
+                                            "エビデンス"
+                                        ],
+                                        "pageIds": [
+                                            "f8ff826f-9bf1-410b-a26e-54bc3e22aeb4"
+                                        ],
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "d16fcffc-933d-4939-8fe8-aa800fcc3585",
+                                "title": "【試作フェーズ】",
+                                "level": 3,
+                                "summary": "仕入先試作、TMC試作、評価の各工程を記載している。工程の先頭と末尾に「2」「3」および出荷の表記がある。",
+                                "keywords": [
+                                    "試作フェーズ",
+                                    "仕入先試作",
+                                    "TMC試作",
+                                    "評価"
+                                ],
+                                "pageIds": [
+                                    "1f0c946e-28bf-45b4-a458-941cabdc7941"
+                                ],
+                                "children": [
+                                    {
+                                        "id": "b961bbcf-d501-4938-8490-2a1c662d28eb",
+                                        "title": "【仕入先試作】",
+                                        "level": 4,
+                                        "summary": "「2」から金型設計、金型製作、試作品作製・検査へ進み、トーチ＆グリット試験（検討中）を経て出荷する流れが記載されている。",
+                                        "keywords": [
+                                            "仕入先試作",
+                                            "金型設計",
+                                            "金型製作",
+                                            "試作品作製・検査",
+                                            "トーチ＆グリット試験",
+                                            "出荷"
+                                        ],
+                                        "pageIds": [
+                                            "1f0c946e-28bf-45b4-a458-941cabdc7941"
+                                        ],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "0b01b89a-4311-4737-9d9f-4d8165000629",
+                                        "title": "【TMC試作】",
+                                        "level": 4,
+                                        "summary": "単品の寸法精度・出来栄え・品質・組付性を確認し、電池パックを組み付ける。組付性と干渉の有無を確認した後、出荷前検査を行う。",
+                                        "keywords": [
+                                            "TMC試作",
+                                            "単品確認",
+                                            "寸法精度",
+                                            "出来栄え",
+                                            "品質",
+                                            "組付性",
+                                            "電池パック組付",
+                                            "出荷前検査"
+                                        ],
+                                        "pageIds": [
+                                            "1f0c946e-28bf-45b4-a458-941cabdc7941"
+                                        ],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "0132cbe3-969b-4f35-b561-a6ed199698da",
+                                        "title": "【評価】",
+                                        "level": 4,
+                                        "summary": "ミニモジュール試験、ユニット評価、車両評価、法規試験の各項目が列挙されている。ユニット評価には熱拡散・耐久・熱衝撃試験、車両評価には実車測定や路面入力、前突、法規試験には輸送法規、中国試験、UN-R100の試験が含まれる。",
+                                        "keywords": [
+                                            "評価",
+                                            "ミニモジュール試験",
+                                            "ユニット評価",
+                                            "熱拡散試験",
+                                            "悪路模擬耐久試験",
+                                            "車両評価",
+                                            "法規試験",
+                                            "UN-R100"
+                                        ],
+                                        "pageIds": [
+                                            "1f0c946e-28bf-45b4-a458-941cabdc7941"
+                                        ],
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "97c4a360-8304-44ad-99ef-2f30fefc36c5",
+                "title": "【CV・号試フェーズ】",
+                "level": 1,
+                "summary": "部品開発日程を更新し、設計へ反映すべき試作フェーズ時のフィードバックの有無を確認する。フィードバックが無い場合は「検討前整理」へ進み、ある場合は原価活動としてCSSを作成する。",
+                "keywords": [
+                    "CV・号試フェーズ",
+                    "部品開発日程",
+                    "試作フェーズ",
+                    "フィードバック",
+                    "検討前整理"
+                ],
+                "pageIds": [
+                    "1d32a0b1-8636-450b-a6d0-0ccfe9faafee"
+                ],
+                "children": [
+                    {
+                        "id": "2692742d-8267-4360-b4e7-8dc1ab154162",
+                        "title": "【原価活動】",
+                        "level": 2,
+                        "summary": "Cost Summary Sheet（CSS）を作成し、企画部署から企画台数、材料建値時期、為替レートなどの前提条件を入手する。",
+                        "keywords": [
+                            "原価活動",
+                            "Cost Summary Sheet",
+                            "CSS",
+                            "企画台数",
+                            "材料建値時期",
+                            "為替レート"
+                        ],
+                        "pageIds": [
+                            "1d32a0b1-8636-450b-a6d0-0ccfe9faafee"
+                        ],
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "id": "e4a3c225-fce2-4cd6-aefa-4b485e7e3e98",
+                "title": "【形状検討】",
+                "level": 1,
+                "summary": "検討前整理、配置修正、形状修正の順に進め、電池パック内部品との整合を確認する。不整合があれば形状修正へ戻り、整合していれば見積図を作成する。",
+                "keywords": [
+                    "形状検討",
+                    "検討前整理",
+                    "配置修正",
+                    "形状修正",
+                    "電池パック内部品",
+                    "見積図"
+                ],
+                "pageIds": [
+                    "1d32a0b1-8636-450b-a6d0-0ccfe9faafee"
+                ],
+                "children": [
+                    {
+                        "id": "453ec3ae-dc5a-4812-aada-761fbbb4c8b9",
+                        "title": "見積図作成",
+                        "level": 2,
+                        "summary": "見積図作成に続く確認項目として、周辺部品、UPR断熱材の設計要件、検討に必要な情報を列挙している。周辺部品にはMDL構造、セル、バスバー、アッパーカバーなどが含まれる。",
+                        "keywords": [
+                            "見積図",
+                            "MDL構造",
+                            "セル",
+                            "バスバー",
+                            "アッパーカバー",
+                            "UPR断熱材"
+                        ],
+                        "pageIds": [
+                            "1d32a0b1-8636-450b-a6d0-0ccfe9faafee"
+                        ],
+                        "children": [
+                            {
+                                "id": "ef4dc8d9-3dff-4c24-9246-cb1968944a39",
+                                "title": "＜周辺部品確認＞",
+                                "level": 3,
+                                "summary": "確認対象として、MDL構造、セル、バスバー、アッパーカバー、その他パック部品を挙げている。",
+                                "keywords": [
+                                    "周辺部品",
+                                    "MDL構造",
+                                    "セル",
+                                    "バスバー",
+                                    "アッパーカバー",
+                                    "パック部品"
+                                ],
+                                "pageIds": [
+                                    "1d32a0b1-8636-450b-a6d0-0ccfe9faafee"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "462322a8-d238-414c-9749-ca5f5fca41cc",
+                                "title": "＜UPR断熱材の設計要件＞",
+                                "level": 3,
+                                "summary": "UPR断熱材の設計要件として、○K要件、保護範囲、必要熱抵抗・耐熱性を挙げている。",
+                                "keywords": [
+                                    "UPR断熱材",
+                                    "設計要件",
+                                    "○K要件",
+                                    "保護範囲",
+                                    "熱抵抗",
+                                    "耐熱性"
+                                ],
+                                "pageIds": [
+                                    "1d32a0b1-8636-450b-a6d0-0ccfe9faafee"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "fa925683-a917-459a-ac6d-547f9334e88f",
+                                "title": "＜検討に必要な情報＞",
+                                "level": 3,
+                                "summary": "検討に必要な情報として、周辺部品の形状・材質や材料物性、発煙時のセル挙動（セル容量・温度、連鎖有無など）を挙げている。また、アッパーカバーの材質・板厚・体格、電池パックの体格・余剰体積、法規上の熱連鎖トリガー位置・エマージェンシンも記載している。",
+                                "keywords": [
+                                    "周辺部品形状",
+                                    "材料物性",
+                                    "発煙時セル挙動",
+                                    "セル容量",
+                                    "セル温度",
+                                    "アッパーカバー",
+                                    "電池パック",
+                                    "熱連鎖トリガー"
+                                ],
+                                "pageIds": [
+                                    "1d32a0b1-8636-450b-a6d0-0ccfe9faafee"
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "e952bb5a-5324-4943-bdd2-7545e44e3ec6",
+                        "title": "【CV・号試フェーズ】",
+                        "level": 2,
+                        "summary": "CV・号試フェーズの工程として、仕入先SE、生技SE、熱拡散CAE、出図、品質総点検、機能主管監査の流れを示す。冒頭に「接続：4」、末尾に「接続：5」と記載されている。",
+                        "keywords": [
+                            "CV・号試フェーズ",
+                            "接続"
+                        ],
+                        "pageIds": [
+                            "d8cba423-1cc3-41cf-ba9a-8eb751c1324c"
+                        ],
+                        "children": [
+                            {
+                                "id": "6814b5cf-e7b4-4153-a195-374010a0fe51",
+                                "title": "【仕入先SE】",
+                                "level": 3,
+                                "summary": "2Dデータおよび3Dデータを送付し、製造要望（形状簡素化（R緩和）、公差緩和など）とSE課題リストを入手する。SE課題があればデータを修正して課題リストを再入手し、課題がなければ出図へ進む。",
+                                "keywords": [
+                                    "仕入先SE",
+                                    "2Dデータ",
+                                    "3Dデータ",
+                                    "製造要望",
+                                    "形状簡素化",
+                                    "R緩和",
+                                    "公差緩和",
+                                    "SE課題リスト"
+                                ],
+                                "pageIds": [
+                                    "d8cba423-1cc3-41cf-ba9a-8eb751c1324c"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "1810aa95-c1d2-459c-9dc1-4a428ad31c40",
+                                "title": "【生技SE】",
+                                "level": 3,
+                                "summary": "生技課題の有無を確認し、課題があれば対策を検討して2Dデータおよび3Dデータを修正し、再確認する。課題がなければ品質総点検へ進む。",
+                                "keywords": [
+                                    "生技SE",
+                                    "生技課題",
+                                    "対策検討",
+                                    "2Dデータ",
+                                    "3Dデータ",
+                                    "品質総点検"
+                                ],
+                                "pageIds": [
+                                    "d8cba423-1cc3-41cf-ba9a-8eb751c1324c"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "8d323a66-02af-423f-94cd-b5dd3d050e29",
+                                "title": "【熱拡散CAE】",
+                                "level": 3,
+                                "summary": "熱拡散機能の懸念を確認する。懸念がある場合は対策検討・モデル修正を行い、「エニーポジションでクリア○か？」を確認し、記載上はいずれも機能主管監査へ進む分岐が示されている。",
+                                "keywords": [
+                                    "熱拡散CAE",
+                                    "熱拡散機能",
+                                    "対策検討",
+                                    "モデル修正",
+                                    "エニーポジション",
+                                    "機能主管監査"
+                                ],
+                                "pageIds": [
+                                    "d8cba423-1cc3-41cf-ba9a-8eb751c1324c"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "e9778a76-7480-491c-83a5-9ae8b10b7977",
+                                "title": "【出図】",
+                                "level": 3,
+                                "summary": "出図エビデンス資料として、設変チェックシート、検図エビデンス、各機能の達成状況を記載した設計検討資料を作成し、出図前DRを行う。",
+                                "keywords": [
+                                    "出図",
+                                    "出図エビデンス資料",
+                                    "設変チェックシート",
+                                    "検図エビデンス",
+                                    "設計検討資料",
+                                    "出図前DR"
+                                ],
+                                "pageIds": [
+                                    "d8cba423-1cc3-41cf-ba9a-8eb751c1324c"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "bd00be86-3ce1-4ca9-8088-205c6d4378e0",
+                                "title": "【品質総点検】",
+                                "level": 3,
+                                "summary": "帳票を作成して点検結果を報告する。報告資料として、開発日程、監0（品質状況まとめ）、監2（変化点リスト／変化点マトリクス）、監4（FTA）、監5（D-FMEA）、監6（変化点層別シート）、監7（変化点と課題進捗一覧）、監16（DRBFM）、PCフォローシートを列挙している。",
+                                "keywords": [
+                                    "品質総点検",
+                                    "点検結果報告",
+                                    "開発日程",
+                                    "監0",
+                                    "監2",
+                                    "FTA",
+                                    "D-FMEA",
+                                    "DRBFM"
+                                ],
+                                "pageIds": [
+                                    "d8cba423-1cc3-41cf-ba9a-8eb751c1324c"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "3f00084b-bb84-425d-8baa-fd8783925706",
+                                "title": "【機能主管監査】",
+                                "level": 3,
+                                "summary": "帳票を作成して監査を行い、DRポイント集およびエビデンスを用いる。",
+                                "keywords": [
+                                    "機能主管監査",
+                                    "帳票作成",
+                                    "監査",
+                                    "DRポイント集",
+                                    "エビデンス"
+                                ],
+                                "pageIds": [
+                                    "d8cba423-1cc3-41cf-ba9a-8eb751c1324c"
+                                ],
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "e44dd915-7b48-48f0-97ae-e959988062e0",
+                "title": "【CV・写フェーズ】",
+                "level": 1,
+                "summary": "CV・写フェーズの試作・評価に関する項目が示されています。仕入先試作、TM試作、評価の各区分から構成されています。",
+                "keywords": [
+                    "CV・写フェーズ",
+                    "仕入先試作",
+                    "TM試作",
+                    "評価"
+                ],
+                "pageIds": [
+                    "759f5ca7-8040-4e51-83f2-b20ef5cf8bfc"
+                ],
+                "children": [
+                    {
+                        "id": "699e919c-6480-46cc-9f61-2aa29a6ae24d",
+                        "title": "【仕入先試作】",
+                        "level": 2,
+                        "summary": "金型設計・製作、本型試作・検査、本型品作製・検査、設備輸送・立ち上げなどの項目が挙げられています。設備については仕様検討・見積り、製作・組み立て治具製作、試作トライ、輸送（空輸は2week、海運は1.5M）、立ち上げを含みます。梱包仕様検討から通い箱試作・検証、輸送試験、梱包承認（荷姿決定）、量産梱包資材作製までが記載されています。",
+                        "keywords": [
+                            "金型設計",
+                            "本型試作",
+                            "設備仕様検討",
+                            "組み立て治具",
+                            "空輸",
+                            "海運",
+                            "通い箱",
+                            "梱包承認"
+                        ],
+                        "pageIds": [
+                            "759f5ca7-8040-4e51-83f2-b20ef5cf8bfc"
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "31b5ee5d-4149-444c-aa7c-51a864bee79e",
+                        "title": "【TM試作】",
+                        "level": 2,
+                        "summary": "単品確認では寸法精度・出来栄え・質量・組付性を確認し、電池パック組付後に組付性と干渉の有無を確認して、出荷前検査を行う項目が示されています。",
+                        "keywords": [
+                            "単品確認",
+                            "寸法精度",
+                            "質量",
+                            "組付性",
+                            "電池パック",
+                            "干渉",
+                            "出荷前検査"
+                        ],
+                        "pageIds": [
+                            "759f5ca7-8040-4e51-83f2-b20ef5cf8bfc"
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "551141bf-a0ea-4acf-ae23-c7f25dc9d8f4",
+                        "title": "【評価】",
+                        "level": 2,
+                        "summary": "ユニット評価として熱拡散、悪路模擬耐久、高速波状路模擬耐久、熱衝撃の各試験が記載されています。車両評価には実車応力測定試験・実車起応力測定試験、リスク試験には路面干渉試験・衝突・法規試験があり、法規関連として輸送法規（T2）温度サイクル、（T3）振動、（T4）衝撃、中国ランダム振動、中国圧壊、UN-R100振動の各試験が挙げられています。",
+                        "keywords": [
+                            "ユニット評価",
+                            "熱拡散試験",
+                            "悪路模擬耐久試験",
+                            "実車応力測定試験",
+                            "路面干渉試験",
+                            "輸送法規",
+                            "T2",
+                            "UN-R100"
+                        ],
+                        "pageIds": [
+                            "759f5ca7-8040-4e51-83f2-b20ef5cf8bfc"
+                        ],
+                        "children": [
+                            {
+                                "id": "94036dd2-6710-47d5-9d7a-49cc4d02219f",
+                                "title": "【CV・電試フェーズ】",
+                                "level": 3,
+                                "summary": "このフェーズでは、工程調査、写図組付確認部品の確認、簡易会「写図移行」を行い、最後に終了する。各確認では、○×判定ではなくデータを確認するよう記載されている。",
+                                "keywords": [
+                                    "CV・電試フェーズ",
+                                    "工程調査",
+                                    "写図組付確認部品",
+                                    "写図移行"
+                                ],
+                                "pageIds": [
+                                    "fd781c05-96a7-45ce-81f3-91d48b1683ff"
+                                ],
+                                "children": [
+                                    {
+                                        "id": "72e2a131-685e-446d-bc9f-690973d1979d",
+                                        "title": "工程調査",
+                                        "level": 4,
+                                        "summary": "○A、○Kについて、QC工程表、作業標準書、NG品処理ルート、検査結果、購入部品受入検査などを確認する。また、現物DRで図面との整合性を確認し、出席者も確認する。量試生産結果では製品バラツキを工程能力・初期特性で確認し、○×ではなくデータを確認する。",
+                                        "keywords": [
+                                            "○A",
+                                            "○K",
+                                            "QC工程表",
+                                            "作業標準書",
+                                            "NG品処理ルート",
+                                            "現物DR",
+                                            "工程能力",
+                                            "初期特性"
+                                        ],
+                                        "pageIds": [
+                                            "fd781c05-96a7-45ce-81f3-91d48b1683ff"
+                                        ],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "3c6abdc3-545b-4582-b8c4-02f610feeb6a",
+                                        "title": "写図組付確認部品（トヨタ）",
+                                        "level": 4,
+                                        "summary": "ASSYの組付性と単品信頼性評価結果を確認する。○×判定ではなく、設計適合性や実力のデータを確認し、評価前後で現物確認する。",
+                                        "keywords": [
+                                            "写図組付確認部品",
+                                            "トヨタ",
+                                            "ASSY",
+                                            "組付性",
+                                            "単品信頼性評価",
+                                            "設計適合性",
+                                            "現物確認"
+                                        ],
+                                        "pageIds": [
+                                            "fd781c05-96a7-45ce-81f3-91d48b1683ff"
+                                        ],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "081c518b-6047-4af0-8b0a-6b5efd99600f",
+                                        "title": "簡易会「写図移行」（トヨタ）",
+                                        "level": 4,
+                                        "summary": "今回の不具合も含めて、室内報告会を実施する。",
+                                        "keywords": [
+                                            "簡易会",
+                                            "写図移行",
+                                            "トヨタ",
+                                            "不具合",
+                                            "室内報告会"
+                                        ],
+                                        "pageIds": [
+                                            "fd781c05-96a7-45ce-81f3-91d48b1683ff"
+                                        ],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "6924c590-3c46-4532-a4ea-f1cecb2e8c4c",
+                                        "title": "終了",
+                                        "level": 4,
+                                        "summary": "この工程の終了を示す。",
+                                        "keywords": [],
+                                        "pageIds": [
+                                            "fd781c05-96a7-45ce-81f3-91d48b1683ff"
+                                        ],
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "cc72295b-c14a-4568-b039-06c527a7210e",
+                        "title": "5 要求性能",
+                        "level": 2,
+                        "summary": "要求性能に関する項目を扱い、5.1 では部品設計にあたり性能企画書で必要な前提情報を確認する。",
+                        "keywords": [
+                            "要求性能",
+                            "性能企画書",
+                            "部品設計"
+                        ],
+                        "pageIds": [
+                            "6e77b965-4e04-4a81-b4fc-49c11f6665a9"
+                        ],
+                        "children": [
+                            {
+                                "id": "4ffc9b76-2a73-4833-876c-13093a8533da",
+                                "title": "5.1 性能企画書",
+                                "level": 3,
+                                "summary": "部品設計にあたり性能企画書で必要な前提情報を確認する。仕向・対応法規情報は主に熱拡散に、セル数・容量・種類・発煙ストレスなどのセル情報とセル連結有無・連鎖数・連鎖速度は主に耐熱・耐ブラスト性能に必要。搭載位置・ケース形状・材質・体格・余剰体積・パック内レイアウトなどのパック情報は、主に搭載、耐熱性能、組付性に必要。",
+                                "keywords": [
+                                    "性能企画書",
+                                    "仕向",
+                                    "対応法規情報",
+                                    "セル情報",
+                                    "セル数",
+                                    "セル容量",
+                                    "セル種類",
+                                    "発煙ストレス"
+                                ],
+                                "pageIds": [
+                                    "6e77b965-4e04-4a81-b4fc-49c11f6665a9"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "b3db9b2d-4c3d-4b1e-acda-7bb9a341076b",
+                                "title": "5.2 要求機能",
+                                "level": 3,
+                                "summary": "UPR断熱材の要求機能を、基本機能・付加機能・本体機能・弊害防止機能・自己防衛機能に分け、性能と要求事項（クライテリア）を示す。セル熱暴走時のUPRケースのカチオン塗装の白色着火防止に関する断熱・耐熱・耐ガス・追従性・接着強度のほか、剥がれや破損の防止、排煙口をふさがないこと、周辺部品との隙の確保、異音防止、組付け・輸送時の条件としてシロキサン・スチアリン酸・硫黄含有量などを記載する。",
+                                "keywords": [
+                                    "UPR断熱材",
+                                    "セル熱暴走",
+                                    "カチオン塗装",
+                                    "断熱性能",
+                                    "耐ガス",
+                                    "排煙経路",
+                                    "組付け性",
+                                    "シロキサン"
+                                ],
+                                "pageIds": [
+                                    "9ee278e8-e884-4c95-adc1-35e46b738b10"
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "b151a734-ea75-48f7-94c4-81fef814a0a5",
+                        "title": "5 要求性能",
+                        "level": 2,
+                        "summary": "要求性能に関する章であり、このページでは材質の選定について記載している。",
+                        "keywords": [
+                            "要求性能",
+                            "材質"
+                        ],
+                        "pageIds": [
+                            "6579886a-2aa8-42c9-b697-9c188b58db1f"
+                        ],
+                        "children": [
+                            {
+                                "id": "96036907-6fe6-4d4a-a4e7-79887660a4a0",
+                                "title": "5.3 材質",
+                                "level": 3,
+                                "summary": "材質は記載の条件を考慮して選定し、UL試験（トーチ＆グリッド）等を利用して検証することが有効とされている。条件として、熱伝導率・耐熱温度・引張強度・熱やひずみ量による収縮率・UPRカバー形状への追従性・厚さ・接着要件・部材強度を挙げ、それぞれ断熱性、耐熱性、耐ブラスト性、断熱範囲、密着性、搭載隙間、周辺部品の脱落防止、材料剥離の防止に対応づけている。",
+                                "keywords": [
+                                    "材質",
+                                    "UL試験",
+                                    "トーチ＆グリッド",
+                                    "熱伝導率",
+                                    "耐熱温度",
+                                    "引張強度",
+                                    "収縮率",
+                                    "UPRカバー"
+                                ],
+                                "pageIds": [
+                                    "6579886a-2aa8-42c9-b697-9c188b58db1f"
+                                ],
+                                "children": [
+                                    {
+                                        "id": "eb435f0b-be2d-447f-8be0-9a99ab4d320a",
+                                        "title": "＜材質選定条件＞",
+                                        "level": 4,
+                                        "summary": "材質選定にあたり、熱伝導率と耐熱温度で高温ガスへの断熱性・耐熱性、引張強度で噴出物への耐ブラスト性を確保する。さらに収縮率による断熱範囲、UPRカバーのビード形状や発熱時の膨らみを考慮した追従性、周辺部品との干渉を避ける厚さ、接着要件による脱落防止、離型紙剥がし時およびUPRカバー取着時に剥離しない部材強度を条件としている。",
+                                        "keywords": [
+                                            "熱伝導率",
+                                            "耐熱温度",
+                                            "引張強度",
+                                            "収縮率",
+                                            "UPRカバー",
+                                            "厚さ",
+                                            "接着要件",
+                                            "部材強度"
+                                        ],
+                                        "pageIds": [
+                                            "6579886a-2aa8-42c9-b697-9c188b58db1f"
+                                        ],
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "eccddd4b-2631-4ec8-9542-1eed7c6ccfc2",
+                                "title": "5.4 搭載",
+                                "level": 3,
+                                "summary": "断熱材を電池パック上面のUPRカバー内側に両面テープで貼り付け、セル熱暴走時のカバー膨らみに追従し、組付け作業性を確保するとともに、振動・熱衝撃環境下で脱落しない構造とする。貼付箇所はセルの排煙ガスでUPRケースが高温になる箇所を基準に、発煙範囲・角度から設定する。パックの種類によっては断熱材の分割が有効だが、熱・液温による収縮を考慮したシンプリ量と、厚み追加による搭載隙間に注意する。参考図には不燃紙＋マイカ t0.3／t0.5、シリカクロス t1.2の表記がある。",
+                                "keywords": [
+                                    "搭載",
+                                    "断熱材",
+                                    "UPRカバー",
+                                    "両面テープ",
+                                    "セル熱暴走",
+                                    "排煙ガス",
+                                    "シンプリ量",
+                                    "不燃紙"
+                                ],
+                                "pageIds": [
+                                    "54cd3a64-051e-4afa-befa-e44ec7fdfb10"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "1f73c8fd-eb20-479b-bf3d-d4302cf65972",
+                                "title": "5.5 耐熱性",
+                                "level": 3,
+                                "summary": "UPRカバーをサブアッセン電着塗装した場合、発煙時の排煙ガスでUPRケースが加熱され、カチオン電着塗装が白く黄変するため、カチオン電着塗装以下となる耐熱性を確保する要件を示す。カチオン塗装の着火条件はUPRケース面温度40℃以上かつ昇温速度42℃/sec以上で、断熱しない場合のケース温度は800℃以上と記載されている。素材の組み合わせから熱抵抗を算出し、試験で効果を確認して仕様を決定する。",
+                                "keywords": [
+                                    "UPRカバー",
+                                    "UPRケース",
+                                    "耐熱性",
+                                    "サブアッセン電着塗装",
+                                    "カチオン電着塗装",
+                                    "着火",
+                                    "40℃",
+                                    "42℃/sec"
+                                ],
+                                "pageIds": [
+                                    "31a1ba71-7a14-4fa6-aefb-95d165dded51"
+                                ],
+                                "children": [
+                                    {
+                                        "id": "01a46cec-8f6c-4c22-b5f8-3004bf4a6e9b",
+                                        "title": "5.5.1 カチオン塗装発火条件（参考）",
+                                        "level": 4,
+                                        "summary": "ポリアミドミン硬化エポキシ樹脂はTG-DTA-FTIR法による分析で約209℃から熱分解し、炭化水素系有機ガスやCO、NH₃などの可燃性ガスを発生する。発生ガスは約540℃で自己着火すると推定し、UPRバーのカチオン塗装について、出力固定のアセチレンバーナー（アセチレン0.08MPa、酸素0.8MPa）と熱電対（φ0.65mm）、クリアランス85～150mmで昇温速度と発火の関係を調査した。発火点は540℃だが発火には昇温速度依存性があり、300～540℃間で42℃/sec以上は発火、24℃/sec以下は発火せず、24℃/sec超～42℃/sec未満は今回の評価では判定不可。",
+                                        "keywords": [
+                                            "カチオン塗装",
+                                            "発火条件",
+                                            "UPRバー",
+                                            "ポリアミドミン硬化エポキシ樹脂",
+                                            "TG-DTA-FTIR法",
+                                            "発火点540℃",
+                                            "昇温速度",
+                                            "アセチレンバーナー"
+                                        ],
+                                        "pageIds": [
+                                            "7474baf6-02d6-4f31-b345-b5f055324752"
+                                        ],
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "88152cba-c140-4b63-81be-8c3c2d096ec8",
+                        "title": "5 要求性能",
+                        "level": 2,
+                        "summary": "要求性能に関する項目を記載している。",
+                        "keywords": [
+                            "要求性能"
+                        ],
+                        "pageIds": [
+                            "c2f2c3c2-f3d9-40c0-86ec-9420a270a9db"
+                        ],
+                        "children": [
+                            {
+                                "id": "c38e5322-5cbf-439e-9c2d-8cd13da69ffd",
+                                "title": "5.6 耐ブラスト性",
+                                "level": 3,
+                                "summary": "発煙テストの噴きや発煙範囲、蓄熱程度に合わせて断熱材の種類・範囲・厚さを設定し、トーチ＆グリッド試験やミニモジュール試験で実物検証するよう述べている。セル間連鎖時は発煙時間が長く噴出物も多いため、断熱性と強度の確保が重要。Li6.Bは排煙弁直上に強く集中するためマイカ（t0.5）＋不燃紙（t0.3）、Li7.Bはセル上全体に分散するためシリカクロス（t1.3）、Li9.Aはセル間連鎖でモジュール全体に分散するためシリカクロス（t1.3）＋マイカ（t0.5）を示す。",
+                                "keywords": [
+                                    "耐ブラスト性",
+                                    "発煙テスト",
+                                    "セル間連鎖",
+                                    "Li6.B",
+                                    "Li7.B",
+                                    "Li9.A",
+                                    "マイカ",
+                                    "シリカクロス"
+                                ],
+                                "pageIds": [
+                                    "c2f2c3c2-f3d9-40c0-86ec-9420a270a9db"
+                                ],
+                                "children": [
+                                    {
+                                        "id": "fb9c058a-51f7-47bd-a735-1045d11691bf",
+                                        "title": "＜マイカ幅の考え方＞",
+                                        "level": 4,
+                                        "summary": "ミニモジュール試験でのブラスト範囲φ50 mmを基に、法規形態での範囲を54 mmと推測し、ばらつきを考慮してマイカ幅を70 mm必要と判断している。試験後のシリカクロスのダメージ穴はΦ5 mmで、ブラスト範囲の安全側寸法として44 mmも記載される。UPケースのLFT UP寸法は法規形態時20 mm、ミニモジュール試験時15 mm、実安全形態時7 mm。",
+                                        "keywords": [
+                                            "マイカ幅",
+                                            "70mm",
+                                            "φ50mm",
+                                            "54mm",
+                                            "44mm",
+                                            "シリカクロス",
+                                            "ダメージ穴",
+                                            "UPケース"
+                                        ],
+                                        "pageIds": [
+                                            "c2f2c3c2-f3d9-40c0-86ec-9420a270a9db"
+                                        ],
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "4312a889-f0b9-4aa5-a26a-06bb8b68fdc1",
+                                "title": "5.7 接着強度",
+                                "level": 3,
+                                "summary": "UPR断熱材は組付時・通常時・異常時を通じてUPRケース表面を被覆し続けるため、十分な接着強度が必要とする。組付時はUPRケース自重以上、通常時は振動・熱衝撃による剥がれがないこと、セル熱暴走時は断熱材の脱落やUPRケース面の露出、めくれによる排煙経路の閉塞を防ぐことを求める。熱暴走時に剥がれが生じた場合はカチオン塗装条件とUPRケースの焼け状態を確認して判断し、両面テープを使わない場合は中間マットなどで塗布UPR断熱材の脱落を防止する。",
+                                "keywords": [
+                                    "UPR断熱材",
+                                    "接着強度",
+                                    "UPRケース",
+                                    "組付時",
+                                    "振動",
+                                    "熱衝撃",
+                                    "セル熱暴走",
+                                    "カチオン塗装"
+                                ],
+                                "pageIds": [
+                                    "3dc86b32-e8ff-4156-a5ad-e12b7461d57a"
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "0dfb288e-9abb-422a-80d5-d43befe5a106",
+                        "title": "5 要求性能",
+                        "level": 2,
+                        "summary": "要求性能に関する項目を扱う。本文には貼付性について記載されている。",
+                        "keywords": [
+                            "要求性能"
+                        ],
+                        "pageIds": [
+                            "501570bd-dc6c-4da9-9c23-7ec2b2121448"
+                        ],
+                        "children": [
+                            {
+                                "id": "fc051208-ae58-44c3-828a-c81d35a5a68b",
+                                "title": "5.8 貼付性",
+                                "level": 3,
+                                "summary": "保護範囲へ適切に貼り付けるため、PRカバーのビードや壁面等を使って貼付基準位置を設定し、L方向・W方向の両方で基準を設ける。断熱材を分割する場合は、モジュール配置、寸法公差・貼付けばらつき・熱収縮を考慮したラップ量、排熱経路に基づく貼付け順序に注意し、離型紙の分割位置やタブテープ位置は関係者と協議して設定する。",
+                                "keywords": [
+                                    "貼付性",
+                                    "PRカバー",
+                                    "貼付基準位置",
+                                    "L方向",
+                                    "W方向",
+                                    "断熱材",
+                                    "ラップ量",
+                                    "離型紙"
+                                ],
+                                "pageIds": [
+                                    "501570bd-dc6c-4da9-9c23-7ec2b2121448"
+                                ],
+                                "children": [
+                                    {
+                                        "id": "f0321b29-e68c-4f64-9a32-44854ac98b7d",
+                                        "title": "【断熱材位置決め】",
+                                        "level": 4,
+                                        "summary": "Li6.Bは4枚で、L位置をアイと緑丸ビード、W位置を赤丸ビードに合わせ、赤丸・緑丸ビード内にあるか判定する。Li7.Bも4枚で、L位置を青／緑丸R部、W位置を赤丸ビードに合わせ、赤丸・緑丸R部内にあることを確認し、橙色面への乗り上げは不可とする。",
+                                        "keywords": [
+                                            "断熱材位置決め",
+                                            "Li6.B",
+                                            "Li7.B",
+                                            "緑丸ビード",
+                                            "赤丸ビード",
+                                            "青／緑丸R部",
+                                            "橙色面"
+                                        ],
+                                        "pageIds": [
+                                            "501570bd-dc6c-4da9-9c23-7ec2b2121448"
+                                        ],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "bd745c0f-03c0-48be-80f9-f5802546fc80",
+                                        "title": "＜Li7.B UPケースへの貼り付け＞",
+                                        "level": 4,
+                                        "summary": "初期状態では離型紙分割位置、シリカクロス側、タブ（離型紙持ち手）、作業者、上ケースでの位置合わせを示す。位置合わせ後、離型紙をはがして仮付けし、大半側の離型紙を剥がしながら本貼りする手順を記載する。",
+                                        "keywords": [
+                                            "Li7.B",
+                                            "UPケース",
+                                            "離型紙",
+                                            "シリカクロス",
+                                            "タブ",
+                                            "位置合わせ",
+                                            "仮付け",
+                                            "本貼り"
+                                        ],
+                                        "pageIds": [
+                                            "501570bd-dc6c-4da9-9c23-7ec2b2121448"
+                                        ],
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "bcfb7388-9919-41dc-b959-9859b05606a8",
+                        "title": "5 要求性能",
+                        "level": 2,
+                        "summary": "要求性能に関する項目を示している。",
+                        "keywords": [
+                            "要求性能"
+                        ],
+                        "pageIds": [
+                            "e337c39e-f8ca-414c-8836-fb5981b76eb4"
+                        ],
+                        "children": [
+                            {
+                                "id": "7dde9cff-580a-4085-bf9a-db4c6e388fb0",
+                                "title": "5.9 吸着性",
+                                "level": 3,
+                                "summary": "断熱材貼付後にUPRケースを吸着して反転し、電池パックへ組み付ける際、UPRケースを持ち上げても断熱材が剥がれないことを関係式で検証する。工程表示として貼着・反転・組付けが示され、両面テープ接着力はUPRケース保持重量以上、吸着力は必要吸着力以上であることを確認する。",
+                                "keywords": [
+                                    "吸着性",
+                                    "UPRケース",
+                                    "断熱材",
+                                    "電池パック",
+                                    "ASSY",
+                                    "貼着",
+                                    "反転",
+                                    "組付け"
+                                ],
+                                "pageIds": [
+                                    "e337c39e-f8ca-414c-8836-fb5981b76eb4"
+                                ],
+                                "children": [
+                                    {
+                                        "id": "fa14713b-d813-4df5-be9b-4e762f19451f",
+                                        "title": "両面テープ接着力検証",
+                                        "level": 4,
+                                        "summary": "断熱材の両面テープ接着力をUPRケース保持重量以上とする。接着力は「せん断接着力×接着箇所」、保持重量はリリーフバルブ等を含むUPRケースASSY質量として示される。",
+                                        "keywords": [
+                                            "両面テープ接着力",
+                                            "せん断接着力",
+                                            "接着箇所",
+                                            "UPRケース保持重量",
+                                            "UPRケースASSY質量",
+                                            "リリーフバルブ"
+                                        ],
+                                        "pageIds": [
+                                            "e337c39e-f8ca-414c-8836-fb5981b76eb4"
+                                        ],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "b8fe00ac-071b-44f7-bebf-308e0b596e83",
+                                        "title": "吸着力検証",
+                                        "level": 4,
+                                        "summary": "UPRケースの吸着力を、ケースを持ち上げるための必要吸着力以上とする。吸着力は「吸着面積×吸引圧力×吸着数」、必要吸着力はリリーフバルブ等を含むUPRケースASSY質量として示される。",
+                                        "keywords": [
+                                            "吸着力",
+                                            "必要吸着力",
+                                            "吸着面積",
+                                            "吸引圧力",
+                                            "吸着数",
+                                            "UPRケースASSY質量",
+                                            "リリーフバルブ"
+                                        ],
+                                        "pageIds": [
+                                            "e337c39e-f8ca-414c-8836-fb5981b76eb4"
+                                        ],
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "0fc624ba-2c5c-4966-b439-318563e587ab",
+                        "title": "6 評価確認項目",
+                        "level": 2,
+                        "summary": "UPR断熱材の評価確認項目を示す。評価対象はUPR断熱材単体であり、要求仕様と評価方法が記載されている。",
+                        "keywords": [
+                            "UPR断熱材",
+                            "評価確認項目"
+                        ],
+                        "pageIds": [
+                            "3c850052-d918-418a-8ad8-c809c28364be"
+                        ],
+                        "children": [
+                            {
+                                "id": "4836dbe8-ca81-4555-9344-da771d5e36f5",
+                                "title": "6.1 評価概要",
+                                "level": 3,
+                                "summary": "評価対象をUPR断熱材単体とする。",
+                                "keywords": [
+                                    "UPR断熱材",
+                                    "評価対象"
+                                ],
+                                "pageIds": [
+                                    "3c850052-d918-418a-8ad8-c809c28364be"
+                                ],
+                                "children": []
+                            },
+                            {
+                                "id": "9d465137-46eb-4591-af33-428b61cdc3f6",
+                                "title": "6.2 要求仕様・評価方法",
+                                "level": 3,
+                                "summary": "使用材料によって適用する要求仕様は異なり、使用実績のあるシリカクロスは要求仕様Aを満たすことを確認する。目付量は1300 g/m²以下、耐熱温度は1000°C以上、熱伝導率は25°Cで0.12 W/mK以下・1000°C 1時間で0.43 W/mK以下、引張強度は25°Cで垂直1600 N/25mm以上・水平800 N/25mm以上、1000°C 1時間で垂直・水平とも200 N/25mm以上、加熱収縮率は800°C 20分で2%以下とする。測定方法として引張強度にJIS R 3420、加熱収縮率にISO 62、トーチ＆グリット試験にUL 2596が記載され、同試験は検討中であり、仕様を満たさない項目は仕入先と協議して条件を決定する。",
+                                "keywords": [
+                                    "要求仕様A",
+                                    "シリカクロス",
+                                    "目付量",
+                                    "耐熱温度",
+                                    "熱伝導率",
+                                    "引張強度",
+                                    "加熱収縮率",
+                                    "UL 2596"
+                                ],
+                                "pageIds": [
+                                    "3c850052-d918-418a-8ad8-c809c28364be"
+                                ],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "03c8866e-74a8-4745-a106-da1d6d762ff5",
+                        "title": "7 機能ブロック図",
+                        "level": 2,
+                        "summary": "UPR断熱材の断熱性、保護範囲、耐ブラスト性に影響する要因と因果関係を整理し、設計初期段階の検討観点を抽出する目的を示す。性能は要素間の相互作用や非線形特性の影響を受けるため実機評価で妥当性を確認すること、耐ブラスト性の図は熱暴走規模を完全再現せず、熱拡散試験・ミニMDL試験・単セル試験・TaG試験等との併用が必要であると述べる。",
+                        "keywords": [
+                            "UPR断熱材",
+                            "機能ブロック図",
+                            "実機評価",
+                            "耐ブラスト性",
+                            "デブリ負荷",
+                            "熱拡散試験",
+                            "ミニMDL試験",
+                            "TaG試験"
+                        ],
+                        "pageIds": [
+                            "b5193e30-0ae6-4b35-8670-c3edab5b3533"
+                        ],
+                        "children": [
+                            {
+                                "id": "aa59aa62-8e7c-436a-873f-aee67b02d416",
+                                "title": "機能ブロック図",
+                                "level": 3,
+                                "summary": "断熱性能、保護範囲、耐ブラスト性能について、入力と各性能を決める機能、および関連要素を示す機能ブロック図を掲載する。",
+                                "keywords": [
+                                    "機能ブロック図",
+                                    "断熱性能",
+                                    "保護範囲",
+                                    "耐ブラスト性能"
+                                ],
+                                "pageIds": [
+                                    "b5193e30-0ae6-4b35-8670-c3edab5b3533"
+                                ],
+                                "children": [
+                                    {
+                                        "id": "903e6bf9-4713-4d87-9be7-11693b3cab54",
+                                        "title": "断熱性能",
+                                        "level": 4,
+                                        "summary": "セル発電温度 tc を入力としてアッパーカバー裏面温度を決める機能を示し、温度式 T=t0+(t0-tc)erf(L/(2√(kc/ρ)t)) を記載する。入力要素は熱伝導率 k、厚さ L、密度 ρ、比熱 c、時間 t であり、各層としてシリカクロス、ガラスクロス、PETフィルム、両面テープ等と板厚公差を挙げる。",
+                                        "keywords": [
+                                            "セル発電温度",
+                                            "アッパーカバー裏面温度",
+                                            "熱伝導率",
+                                            "シリカクロス",
+                                            "ガラスクロス",
+                                            "PETフィルム",
+                                            "板厚公差"
+                                        ],
+                                        "pageIds": [
+                                            "b5193e30-0ae6-4b35-8670-c3edab5b3533"
+                                        ],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "bb5cc754-d343-4ea2-948d-807ea4ce7faa",
+                                        "title": "保護範囲",
+                                        "level": 4,
+                                        "summary": "セル解放面積からブラストエリアを決め、開放面積に最大噴出角度、UPR～セル隙間、組付けブラケット、熱収縮分を加味してUPR断熱材保護範囲（mm）を求める式を示す。入力要素としてセル安全弁面積、セル上排煙空間、噴出角度、組付ばらつき、UPR断熱材収縮率を挙げる。",
+                                        "keywords": [
+                                            "セル解放面積",
+                                            "ブラストエリア",
+                                            "最大噴出角度",
+                                            "UPR～セル隙間",
+                                            "組付けばらつき",
+                                            "収縮率",
+                                            "保護範囲"
+                                        ],
+                                        "pageIds": [
+                                            "b5193e30-0ae6-4b35-8670-c3edab5b3533"
+                                        ],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "ebccbfa3-5a9c-4cc4-9f32-04c261927b62",
+                                        "title": "耐ブラスト性能",
+                                        "level": 4,
+                                        "summary": "セル発煙に伴うガス流量 L、デブリ噴出範囲 A、デブリ量 m から、E=1/2×m×(L×A)^2 によりデブリ衝突エネルギーを決める機能を示す。さらに浸食性の式 U_er,req = E_impact / A(t0 - t_req) と、初期厚さ t0・残存厚さ treq・密度 ρ・硬さ H・耐熱性 T・引張強度 σ を挙げ、U_er = C ρ^a H^b T^c σ^d により材料耐浸食性を決め、UPR断熱材に必要な耐ブラスト性につなげる。",
+                                        "keywords": [
+                                            "セル発煙",
+                                            "デブリ衝突エネルギー",
+                                            "ガス流量",
+                                            "デブリ噴出範囲",
+                                            "材料耐浸食性",
+                                            "残存厚さ",
+                                            "引張強度",
+                                            "耐ブラスト性"
+                                        ],
+                                        "pageIds": [
+                                            "b5193e30-0ae6-4b35-8670-c3edab5b3533"
+                                        ],
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "sourceHash": "5c03198127af0578de36384779fb6b5b0d4ab201",
+        "textHash": "7126f95f6bb05d85366d153ea5d5bd2982a467a0",
+        "generatedAt": "2026-10-03T14:51:53.526377",
+        "pageCount": 22,
+        "schemaVersion": 1,
+        "generator": "ai"
+    },
+    "coverage": null,
+    "modelBinding": null
+}

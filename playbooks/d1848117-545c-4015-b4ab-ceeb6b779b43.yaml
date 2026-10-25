@@ -1,0 +1,53 @@
+id: ""
+name: DRBFM
+slash_command: drbfm
+description: |
+  設計変更点に着目して心配点を洗い出し (GD3)、原因・影響と設計 / 評価 / 製造の対応を決める手順。
+  変更点はベースライン差分とモデル要素から抽出し、結果は分析レイヤーの DRBFM に残す。
+use_when: |
+  ユーザーが「DRBFM して」「変更点の心配点を洗い出して」「設計変更のレビュー」等を依頼したとき。
+steps:
+  - no: 1
+    title: 変更点の抽出
+    instruction: |
+      文脈の「対象の分析」があればそれを使う。無ければ create_analysis(method=drbfm, scopeElementIds=変更対象) で作る。
+      describe_analysis_method(drbfm) を確認する。check_analysis_baseline の差分とユーザーの説明から変更点を特定し、
+      change_point レコード (変更種別・変更前・変更後・理由) を作って elementIds に変更要素を入れる。
+    tools: [list_analyses, describe_analysis_method, create_analysis, check_analysis_baseline, read, edit_analysis_records]
+    done_when: 各変更点に change_point が存在し、変更要素の ID が elementIds に記録されている
+  - no: 2
+    title: 心配点の洗い出し
+    instruction: |
+      get_related_elements で変更要素の周辺 (接続・要求・機能) を読み、change_point の子に concern を作る。
+      心配点が無い変更点は noConcernReason に理由を書く。
+    tools: [get_related_elements, find_element_analyses, edit_analysis_records]
+    done_when: 全 change_point に concern があるか、noConcernReason が記録されている
+  - no: 3
+    title: 原因と影響
+    instruction: |
+      各 concern の子に cause と effect を作る。影響先・原因の要素は elementIds に入れる。
+      effect の severity は根拠がある場合のみ記入し、無ければ空欄のまま要確認とする。
+    tools: [edit_analysis_records, get_related_elements]
+    done_when: 各 concern に cause と effect が接続されている
+  - no: 4
+    title: 設計 / 評価 / 製造の対応
+    instruction: |
+      concern または cause の子に action を作り、area (design / evaluation / manufacturing)、担当、期限を入れる。
+      要求化が必要な対応は create_requirement で要求を作り elementIds に入れる。
+    tools: [edit_analysis_records, create_requirement]
+    done_when: 全 concern に action が接続されている
+  - no: 5
+    title: 未対応の確認
+    instruction: |
+      validate_analysis と read_analysis(kinds=[action]) で、結果が OK でない対応・AP=H の対応を確認する。
+    tools: [validate_analysis, read_analysis]
+    done_when: 未対応の action の一覧と件数が確認されている
+  - no: 6
+    title: 報告
+    instruction: |
+      変更点・心配点・対応の件数、未対応の項目、空欄の評価値と理由を簡潔に報告する。
+    tools: [validate_analysis]
+    done_when: 変更点・心配点・未対応の件数が報告に含まれている
+strict: true
+allow_skip: false
+max_steps_per_stage: 12

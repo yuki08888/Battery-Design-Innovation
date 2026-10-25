@@ -1,0 +1,53 @@
+id: ""
+name: 設計変更報告
+slash_command: report-change
+description: |
+  設計変更の内容・理由・影響範囲・再検証の要否を報告書にまとめる手順。影響範囲は関係をたどって
+  モデルから求め、影響を受ける要素の一覧は問い合わせで置く。
+use_when: |
+  ユーザーが「設計変更の報告書」「変更通知 (ECN) を作って」「この変更の影響をまとめた資料」等を依頼したとき。
+steps:
+  - no: 1
+    title: 変更の把握
+    instruction: |
+      変更の対象要素 (ID)・変更の内容・理由を依頼と read で確かめる。変更前の値が分からなければ推測せず「要確認」に回す。
+    tools: [search_item, read, list_reports]
+    done_when: 変更対象の要素 ID の一覧と、変更内容・理由が記録されている
+  - no: 2
+    title: 影響範囲の調査
+    instruction: |
+      get_related_elements / graph_query で変更対象から関係をたどり、影響を受ける要素を分類する:
+      満足している要求 (satisfy)・検証 (verify)・接続先 (connector)・派生した要求 (deriveReqt)・割り当て (allocate)。
+      find_element_analyses で、変更対象に紐づく分析 (見直しが要る FMEA 等) も確かめる。
+    tools: [get_related_elements, graph_query, find_element_analyses, read]
+    done_when: 影響を受ける要素が関係の種類ごとに分類され、件数が分かっている
+  - no: 3
+    title: 構成とデザイン
+    instruction: |
+      get_report_design_guide (layouts / data) を読み、create_report (A4) で作る。構成の基本:
+      表紙 (変更番号・版数・発行日は変数) → 変更の概要 (対象・内容・理由) → 影響範囲 (関係の種類ごとの件数 + 一覧) →
+      再検証の要否 (検証の一覧) → 見直しが要る分析 → 判断を求める事項。
+    tools: [get_report_design_guide, create_report, apply_report_ops]
+    done_when: 構成の全ページが作られ、変更番号・版数が変数として存在する
+  - no: 4
+    title: 影響の配置
+    instruction: |
+      影響の一覧は {{ref:<変更対象>|list|<関係>>in|…}} か binding の list / table で置き、preview_report_binding で確かめる。
+      変更対象の詳細は element 部品、関係の図は view 部品で示す。見直しが要る分析は analysis 部品 (mode summary)。
+    tools: [apply_report_ops, preview_report_binding, list_views]
+    done_when: 関係の種類ごとの影響の一覧が問い合わせとして存在する
+  - no: 5
+    title: 検証と確認
+    instruction: |
+      validate_report のエラーを 0 にし、review_report_design の講評を直す。影響範囲のページは render_report_page で見る。
+    tools: [validate_report, review_report_design, render_report_page, apply_report_ops]
+    done_when: validate_report のエラーが0件
+  - no: 6
+    title: 報告
+    instruction: |
+      レポート名、影響を受ける要素の件数 (関係の種類ごと)、再検証が要る検証の件数、「要確認」の事項を報告する。
+    tools: [validate_report]
+    done_when: 関係の種類ごとの影響の件数と再検証の件数が報告に含まれている
+strict: true
+allow_skip: false
+max_steps_per_stage: 12
