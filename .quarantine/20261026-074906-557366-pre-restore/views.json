@@ -1,0 +1,41 @@
+{
+    "all_view_entities": [
+        {
+            "id": "d8c73197-d3f0-4aa3-a326-66056bd53c63",
+            "name": "絶縁カバー要求仕様",
+            "parent_id": "",
+            "icon_key": "DescriptionOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "f0d34f59-afc5-493e-b470-6ea9f849ea8e",
+            "name": "BBM要求仕様書_241209改訂",
+            "parent_id": "",
+            "icon_key": "DescriptionOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "1fcb0dc4-e491-44ef-ab82-2bc832fc467a",
+            "name": "電池パックASSY - 内部ブロック図",
+            "parent_id": "54530f3c-1f57-4d43-877e-3e62190dd63a",
+            "icon_key": "DashboardOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "62e0b291-69c7-4f37-a5d1-c1faab7342c7",
+            "name": "熱連鎖耐性 部品×要求マトリクス",
+            "parent_id": "cfcb364e-7491-4244-9119-3813b56a5247",
+            "icon_key": "GridOnOutlined",
+            "icon_color": null
+        }
+    ],
+    "current_tab_ids": [
+        "1fcb0dc4-e491-44ef-ab82-2bc832fc467a",
+        "62e0b291-69c7-4f37-a5d1-c1faab7342c7"
+    ],
+    "current_view_id": "62e0b291-69c7-4f37-a5d1-c1faab7342c7",
+    "split_tab_ids": [],
+    "split_view_id": null,
+    "split_ratio": 50.0,
+    "active_view_group": "main"
+}

@@ -1,0 +1,76 @@
+id: ""
+name: トレース根拠に基づくメディア生成
+slash_command: media
+description: 目的と文脈の切り口を決め、要素⇔ファイルの挟み撃ちトレースで根拠を確かめ、部位・時刻・部品のキャプチャを参照にして、一貫した画像・動画を生成する
+use_when: モデル要素から説明用・報告用・レビュー用・プレゼン用の画像や動画を作る、または既存の生成物をシリーズとして作り足す・作り直す場合。単に生成済みファイルの名前を変える・削除するだけなら不要
+steps:
+  - no: 1
+    title: 目的と文脈の切り口を決める
+    instruction: |
+      依頼とフォーカス要素から、対象要素と「目的 (purpose)」「文脈の切り口 (aspect)」を決める。
+      - purpose: explanation (非専門家への説明) / report (報告書の図。誇張しない・視点を揃える) /
+        review (設計レビュー。議論する部位・インタフェース・条件を明確に) / presentation / promotion / manual。
+      - aspect: usecase (誰が・どこで・何のために) / requirement (満たすべき状況と効果) /
+        structure (構成部品と配置・接続) / behavior (動作・状態遷移の順序) /
+        parametric (物理量とその関係) / overview (全体像)。
+      gather_media_context で属性・関係・ドキュメント原文・visualEvidence・suggestedAspect を集める。
+      contextScope は既定 standard (題材 + 近傍 + 所属・兄弟・2 ホップ先)。全体像・利用場面が要るときは project、
+      題材だけで足りるときは focused。contextGuide の温度感に従い、core は必ず描き、near は場面づくり、
+      surrounding / project は背景・画風の一貫性にだけ使う。
+      依頼が既存の生成物の続き・別観点なら list_generated_media で前作の assetId を確かめる (シリーズ化に使う)。
+    tools: [gather_media_context, list_generated_media, search_item, get_related_elements]
+    done_when: 対象要素の短縮ID、purpose、aspect、(続きなら) 前作の assetId が決まっている
+  - no: 2
+    title: 挟み撃ちで根拠を確かめる
+    instruction: |
+      check_media_traceability(elementIds=[...]) で要素→ファイル (関係を辿った先も含む) と
+      ファイル→要素の両方向を確かめる。ユーザーが特定のファイルを指定したときは assetIds にも渡す。
+      結果の evidence は「どの経路で題材に届くか」の根拠、gaps は視覚的な根拠が無い要素・題材に届かないファイル・
+      古い生成物 (stale) を示す。題材に届かないファイルと stale な生成物は根拠に使わない。
+      ファイルの中身や紐づく要素がはっきりしないときは trace_asset_links(assetIds=[...]) で
+      領域・時刻・部品ごとの紐づけと要素間の関係を読む。
+      根拠が 1 つも無い要素は「文字情報だけで描く」と判断し、その旨を報告に残す。
+    tools: [check_media_traceability, trace_asset_links, read_asset]
+    done_when: 使う根拠 (suggestedReferences の targets) の一覧と、根拠が無い要素・使わないファイルの理由が記録されている
+  - no: 3
+    title: 参照キャプチャを撮って確かめる
+    instruction: |
+      capture_media_reference に根拠の targets を渡し、要素が紐づく部位・時刻・部品を撮る (最大 6)。
+      - 画像 / 動画の領域: framing 省略 (= context) で「全体 + 部位の拡大」を並べて撮る。
+        部位だけを使うと全体の形が失われるので、crop は部位の細部だけが要るときに限る
+        (crop でも生成時には全体の絵が自動で添えられる)。
+      - 動画: リンクされた時刻のフレーム (time で微調整)。
+      - 3D: 既定はそのままの外観 (半透明にしない)。部品を指定すると、位置確認用の強調表示が
+        チャット上で横に並ぶ (生成には使われない)。ファイルの既定視点や図に貼られた視点があれば、
+        その基準視点の全体が自動で先頭に撮られ、baseViewCaptureIds に返る。
+        加えて partIds / groupId と view / azimuthDeg / elevationDeg / zoom / hide で、
+        aspect に合う角度・表示部品に調整する (structure なら構成が見える斜め上、
+        review なら議論する部品を正面から大きく、内部部品は手前の覆いを hide)。
+        基準視点を使わない理由があるときだけ useBaseCamera=false。
+      返った画像を見て、対象が隠れている・小さい・向きが不適切なら角度や zoom を変えて撮り直す。
+      撮れなかった target は warnings の理由を確かめ、別の領域・時刻・角度に替える。
+    tools: [capture_media_reference]
+    done_when: 生成に使う captureId が揃い、各キャプチャに対象の部位・部品がはっきり写っていることを確認済みである
+  - no: 4
+    title: 一貫した生成
+    instruction: |
+      prompt は英語で、gather_media_context の文脈 (構成部品・利用場面・関係するアクター・要求の条件) を具体的に書く。
+      文脈に無い仕様値・ロゴ・実在の商標は書かない。
+      generate_element_image / generate_element_video に、
+      sourceElementIds (根拠にした主要要素すべて)・purpose・aspect・referenceAssetIds (手順 3 の captureId) を渡す。
+      referenceAssetIds は baseViewCaptureIds (基準視点の全体) を先頭にし、部位・部品のキャプチャを後に並べる。
+      project.visualStyle があれば既存の生成物と画風を揃える。
+      シリーズの続きは consistentWithAssetId に前作を渡し、画風・配色・視点・共通部品の描き方を揃える。
+      動画は 1 回に 1 本だけ。参照は先頭 1 枚が開始フレームになるので、最も代表的なキャプチャを先頭にする。
+    tools: [generate_element_image, generate_element_video]
+    done_when: 生成が success=true を返し、結果の references に手順 3 の根拠が記録されている
+  - no: 5
+    title: 生成物のトレース確認と報告
+    instruction: |
+      trace_asset_links(assetIds=[生成物の assetId]) で、生成物が生成元要素と参照元ファイルの両方へ辿れることを確かめる。
+      ずれていれば (根拠にした要素が生成元に無い等) link_generated_media で生成元を補う。
+      依頼と合わない点があれば update_generated_media(regenerate=true, revisionInstruction=...) で同じファイルの新版にする。
+      報告では、生成物の名前・purpose / aspect・生成元要素・参照にした部位 / 時刻 / 部品・
+      根拠が無かった要素と使わなかったファイル・次にできること (別観点のシリーズ・動画化など) を簡潔に述べる。
+    tools: [trace_asset_links, link_generated_media, update_generated_media]
+    done_when: 生成物から生成元要素と参照元ファイルへのトレースが確認され、根拠と不足の一覧が報告に含まれている

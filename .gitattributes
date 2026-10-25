@@ -8,6 +8,7 @@ documents/** -merge -text
 ontologies/** -merge -text
 databases/** -merge -text
 workflows/** -merge -text
+analyses/** -merge -text
 apps/** -merge -text
 stereotypes.json -merge -text
 env_var.json -merge -text

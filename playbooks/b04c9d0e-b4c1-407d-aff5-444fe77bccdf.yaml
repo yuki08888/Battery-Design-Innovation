@@ -1,0 +1,62 @@
+id: ""
+name: 要因解析 (なぜなぜ)
+slash_command: rca
+description: |
+  発生した不具合・事象について、事実を整理し、なぜなぜ (4M+E) で原因を掘り下げ、
+  事実で裏付けた根本原因に対策を立てて要求・設計へ戻す手順。結果は分析レイヤーの要因解析 (rca) に残す。
+use_when: |
+  ユーザーが「なぜなぜ分析」「要因解析」「根本原因を調べて」「不具合の原因を整理して」等を依頼したとき。
+steps:
+  - no: 1
+    title: 事象の事実整理
+    instruction: |
+      文脈の「対象の分析」があればそれを使う。無ければ create_analysis(method=rca) で作る。
+      describe_analysis_method(rca) で problem / cause / countermeasure のフィールドを確認する。
+      事象を problem レコードに記録する (何が・いつ・どこで・影響)。推測は書かず、ユーザー提供の事実と出典だけを書く。
+    tools: [list_analyses, describe_analysis_method, create_analysis, read_analysis, edit_analysis_records]
+    done_when: problem レコードが存在し、事象・発生時期・影響が事実として記録されている
+  - no: 2
+    title: 関連要素の特定
+    instruction: |
+      search_item / get_related_elements / get_linked_content で、事象に関わるモデル要素 (ブロック・要求・機能) を特定する。
+      problem の elementIds に設定し、分析対象としてトレースする。
+    tools: [search_item, read, get_related_elements, get_linked_content, edit_analysis_records]
+    done_when: 関連するモデル要素の ID が problem の elementIds に記録されている
+  - no: 3
+    title: なぜの展開 (4M+E)
+    instruction: |
+      problem の子に cause を作り、category (man / machine / method / material / measurement / environment) で分類する。
+      「なぜ」を繰り返し、cause の子に cause を作って掘り下げる (仮 ID tmp: で一括作成)。
+      原因に関わる要素は elementIds に入れる。
+    tools: [edit_analysis_records, read_analysis]
+    done_when: 各 cause に category が分類され、末端まで「なぜ」が展開されている
+  - no: 4
+    title: 事実確認
+    instruction: |
+      各原因について、モデル・ドキュメント・データに裏付けがあるか確認する。
+      裏付けがある原因は verified=true とし evidence に出典を書く。裏付けの無い原因は verified を立てず「要確認」として残す。
+    tools: [read, get_linked_content, read_analysis, edit_analysis_records]
+    done_when: 末端の各 cause について verified と evidence の有無が記録されている
+  - no: 5
+    title: 根本原因の判定
+    instruction: |
+      validate_analysis と read_analysis(kinds=[cause]) で computed.isRootCause を確認する。
+      事実で裏付けられた末端原因が根本原因になる。根本原因が 0 件なら、手順 4 に戻って事実確認を進める。
+    tools: [validate_analysis, read_analysis]
+    done_when: 根本原因 (isRootCause=true) の一覧が確認されている
+  - no: 6
+    title: 対策と要求化
+    instruction: |
+      各根本原因の子に countermeasure を作る (暫定 / 恒久、担当、期限)。
+      恒久対策で設計への要求が必要なものは create_requirement で要求を作り、countermeasure の elementIds に入れる。
+    tools: [edit_analysis_records, create_requirement, create_relationship]
+    done_when: 全ての根本原因に countermeasure が接続され、要求化したものは要求 ID が記録されている
+  - no: 7
+    title: 検証と報告
+    instruction: |
+      validate_analysis で残課題を確認する。報告では、事象・根本原因・対策・要求化した項目・未確認の原因を簡潔に示す。
+    tools: [validate_analysis]
+    done_when: validate_analysis の検証結果と残課題の件数が報告に含まれている
+strict: true
+allow_skip: false
+max_steps_per_stage: 12

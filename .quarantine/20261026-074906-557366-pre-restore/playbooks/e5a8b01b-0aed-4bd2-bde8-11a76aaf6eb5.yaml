@@ -1,0 +1,55 @@
+id: ""
+name: 変更影響分析
+slash_command: impact
+description: |
+  ある要素を変更した場合に影響が波及する範囲を、
+  関係グラフを辿って特定し、影響一覧として報告する手順。
+  変更を実施する前の事前評価に使用する。編集は行わない。
+use_when: |
+  ユーザーが「変更の影響を調べて」「これを直すとどこに響く？」
+  「影響範囲を洗い出して」等を依頼したとき。
+steps:
+  - no: 1
+    title: 変更起点の特定
+    instruction: |
+      変更対象となる要素を特定し、その現状（プロパティ・
+      直接の関係）を read / get_related_elements で把握する。
+      対象が曖昧な場合は search_item で候補を提示して絞り込む。
+    tools:
+      - search_item
+      - read
+      - get_related_elements
+    done_when: 変更起点が一意の短縮IDで特定され、変更予定内容と、変更前の全プロパティ・直接関係ID/種別/方向/相手端点を記録できている
+  - no: 2
+    title: 直接影響の抽出
+    instruction: |
+      起点要素に直接つながる関係（composition / generalization /
+      satisfy / allocate / verify / connector 等）を辿り、
+      1 次の影響先を列挙する。
+    tools:
+      - get_related_elements
+      - graph_query
+    done_when: 全直接関係について関係ID・種別・方向・相手要素IDを取得し、相手要素を影響候補または非影響に根拠付きで分類して未判定0件である
+  - no: 3
+    title: 波及影響の追跡
+    instruction: |
+      1 次の影響先からさらに 2〜3 次まで関係を辿り、
+      波及範囲を特定する。
+      特に「要求 → 設計 → テスト」の縦方向のトレースと、
+      「Block → Port → Connector」の横方向の接続を重点的に確認する。
+    tools:
+      - graph_query
+      - pincer_search
+      - get_related_elements
+    done_when: 影響候補から2〜3次までの全探索経路を関係種別付きで記録し、重複要素を統合し、探索を止めた境界と理由を説明できる
+  - no: 4
+    title: 影響度の評価と報告
+    instruction: |
+      影響先を「要修正 / 要確認 / 影響なし」に分類し、
+      理由とともに整理する。
+      修正が必要なものは推奨する対処も添えて finalize で報告する。
+      勝手にモデルを編集しないこと。
+    done_when: 全影響候補が要修正・要確認・影響なしのいずれかに分類され、各項目に要素ID・到達経路・根拠・推奨対処があり、分類別件数と総候補数が一致する
+strict: false
+allow_skip: true
+max_steps_per_stage: 12

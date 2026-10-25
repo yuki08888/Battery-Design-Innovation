@@ -1,0 +1,765 @@
+{
+  "items": [
+    {
+      "id": "0fe08803-2040-4d7d-a23e-a85b1cacd015",
+      "name": "ブロック階層の整理",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 0
+    },
+    {
+      "id": "e5a8b01b-0aed-4bd2-bde8-11a76aaf6eb5",
+      "name": "変更影響分析",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 1
+    },
+    {
+      "id": "efb9d512-4bc7-4861-8424-3f5192c003f4",
+      "name": "機能フロー設計",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 2
+    },
+    {
+      "id": "ca84b141-ee73-45ff-9214-7e2227c84bc7",
+      "name": "ハザード分析と安全要求",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 3
+    },
+    {
+      "id": "3421e80d-4dab-482a-8ea8-f62435571a8b",
+      "name": "内部構造展開（IBD）",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 4
+    },
+    {
+      "id": "1f117755-b026-4785-a20b-fa451c456efb",
+      "name": "インターフェース定義",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 5
+    },
+    {
+      "id": "20f192cc-efec-4af3-ac4d-6458567b4f78",
+      "name": "モデルレビュー",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 6
+    },
+    {
+      "id": "17f1e500-5022-4e1a-8e13-7199f9a49432",
+      "name": "パラメトリック制約定義",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 7
+    },
+    {
+      "id": "c1f0681e-a624-49a9-ab28-bd673ab6b69a",
+      "name": "要求ツリー整備",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 8
+    },
+    {
+      "id": "caf23827-3a8b-4236-8077-0b7b1899da2e",
+      "name": "要求品質レビュー",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 9
+    },
+    {
+      "id": "17ec899c-beb9-4bfb-a127-9920a39cf272",
+      "name": "シナリオ（シーケンス）設計",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 10
+    },
+    {
+      "id": "45544e33-bc23-4037-88e5-18aa5b1769c0",
+      "name": "状態遷移設計",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 11
+    },
+    {
+      "id": "c4e1bfe6-8f29-4e30-ba0b-b6e6841b2da9",
+      "name": "システムコンテキスト定義",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 12
+    },
+    {
+      "id": "5086e4fa-be1c-407e-9be2-e98484f80421",
+      "name": "トレーサビリティ監査",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 13
+    },
+    {
+      "id": "734967f7-afa3-482b-b6c7-fd4e36d918b5",
+      "name": "ユースケース分析",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 14
+    },
+    {
+      "id": "7b04664d-0d2e-4b37-9aac-bbd2ee9da102",
+      "name": "検証計画（V&V）",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 15
+    },
+    {
+      "id": "ec8a5561-ad25-4292-b9bf-221923b810b3",
+      "name": "添付ファイルの分析と変換",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 16
+    },
+    {
+      "id": "ee82f3b7-ff9f-4713-9da8-a208b53e2b86",
+      "name": "構想からモデルへ（アイデアの段階的具体化）",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 17
+    },
+    {
+      "id": "3f74e7c3-984a-4aea-92d8-d551d1dd6f3c",
+      "name": "カスタムUIの作成と改善",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 18
+    },
+    {
+      "id": "1ccb3339-7923-47fa-a815-6c8ea7150206",
+      "name": "SQL クエリシートの作成・修正",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 19
+    },
+    {
+      "id": "2d7670bc-b183-4b2c-ace7-55e28c774225",
+      "name": "分析の見直し (設計変更追従)",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 20
+    },
+    {
+      "id": "71154170-5896-44ae-979a-faabb765b88b",
+      "name": "DRBFM",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 21
+    },
+    {
+      "id": "8f1b42a5-f4bc-41a4-a6af-8d1bb9ad40c0",
+      "name": "FMEA",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 22
+    },
+    {
+      "id": "1cab1901-bde2-46ff-bdaa-4d703d322d45",
+      "name": "FTA",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 23
+    },
+    {
+      "id": "56ae6b20-4d8e-42bb-8509-295909382289",
+      "name": "インパクト分析",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 24
+    },
+    {
+      "id": "b5d5ae40-c102-4fb0-8573-8640666b6257",
+      "name": "非専門家向けの説明ビジュアル",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 25
+    },
+    {
+      "id": "4f32b928-422c-4575-9381-69b5addfd7a7",
+      "name": "トレース根拠に基づくメディア生成",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 26
+    },
+    {
+      "id": "fdb11425-4046-42ef-a4fe-f3731093e4af",
+      "name": "手順・取扱説明のビジュアル",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 27
+    },
+    {
+      "id": "816147c3-ee2f-4738-ba93-a9e47d6d6321",
+      "name": "プレゼン・プロモーション素材",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 28
+    },
+    {
+      "id": "2899a495-25c2-44db-9895-207f4edb6d72",
+      "name": "報告書用の正確な図",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 29
+    },
+    {
+      "id": "2af6f20c-6a67-4340-b8c0-420048c49cd3",
+      "name": "設計レビュー用の論点ビジュアル",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 30
+    },
+    {
+      "id": "327bee31-a872-452d-bac5-608a8fa01bc0",
+      "name": "要因解析 (なぜなぜ)",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 31
+    },
+    {
+      "id": "f3c7113b-c996-45da-a058-b1c7ced96f37",
+      "name": "設計変更報告",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 32
+    },
+    {
+      "id": "950b711b-0659-43f5-b404-dbf866b7ffd9",
+      "name": "レポート作成",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 33
+    },
+    {
+      "id": "e7c53dc1-0686-4d42-8782-2e5a6a223026",
+      "name": "設計審査資料作成",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 34
+    },
+    {
+      "id": "539dbba1-008b-483b-afce-16e838d19691",
+      "name": "インタフェース仕様書作成",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 35
+    },
+    {
+      "id": "e14f2782-2e67-4104-81f3-975befc83608",
+      "name": "レポートの体裁仕上げ",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 36
+    },
+    {
+      "id": "1576fcae-9e02-4df7-ad8c-ab5f538e7bd1",
+      "name": "開発進捗報告",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 37
+    },
+    {
+      "id": "e299ebd6-485e-467a-8d0c-6e7e838b2e0b",
+      "name": "レポート修正",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 38
+    },
+    {
+      "id": "1bd33509-15b1-4f93-8877-d53e9df5bf17",
+      "name": "安全・リスク分析サマリ",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 39
+    },
+    {
+      "id": "5c71d1b9-5560-4951-bd2f-57111c9c71b9",
+      "name": "提出書類作成",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 40
+    },
+    {
+      "id": "8957c152-56cf-48e6-b8cf-d0727cebf98d",
+      "name": "要求トレーサビリティ報告",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 41
+    },
+    {
+      "id": "f0d5be79-7d30-46c4-add5-31741b50096b",
+      "name": "スクリプトの作成と改善",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 42
+    },
+    {
+      "id": "33443aeb-52ff-4806-b875-58d0f6af1f76",
+      "name": "STPA",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 43
+    },
+    {
+      "id": "0484e685-cce3-4682-832a-81894717aa8d",
+      "name": "TARA",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 44
+    },
+    {
+      "id": "464f51c1-9334-4b66-a9df-2b15339066ad",
+      "name": "比較・トレードスタディUIの作成",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 45
+    },
+    {
+      "id": "947611e5-904c-42ab-8b14-3a9f97f935bf",
+      "name": "進捗・品質ダッシュボードの作成",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 46
+    },
+    {
+      "id": "1ca10383-085f-409e-8acb-45f7a31806e6",
+      "name": "構造ブラウザ・要素詳細UIの作成",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 47
+    },
+    {
+      "id": "a2143547-2a17-4d5c-9073-3b989748fa0e",
+      "name": "データ入力・一括編集UIの作成",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 48
+    },
+    {
+      "id": "a4322721-dd14-4abb-bdd4-9ebc2574b61e",
+      "name": "インタフェース管理(ICD)UIの作成",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 49
+    },
+    {
+      "id": "46525064-ce62-46fd-9ee7-eaa198e680bc",
+      "name": "パラメータ・予算管理UIの作成",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 50
+    },
+    {
+      "id": "8303e3ce-1335-42c1-bd22-796380dc4b74",
+      "name": "章立てレポートの自動生成",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 51
+    },
+    {
+      "id": "25b486ff-a72c-4ee6-b1f2-484edf0d5b92",
+      "name": "設計レビュー支援UIの作成",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 52
+    },
+    {
+      "id": "e3e180d9-e6e2-49fa-ba85-1c2eb7872a86",
+      "name": "トレーサビリティ・カバレッジUIの作成",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 53
+    }
+  ],
+  "version": 2,
+  "seeded_templates": [
+    "analysis-review",
+    "block-hierarchy",
+    "change-impact",
+    "custom-ui",
+    "database-query",
+    "drbfm-analysis",
+    "file-handling",
+    "fmea-analysis",
+    "fta-analysis",
+    "functional-flow",
+    "hazard-safety",
+    "ibd-expand",
+    "ideation-to-model",
+    "impact-analysis",
+    "interface-definition",
+    "media-explanation",
+    "media-generation",
+    "media-manual",
+    "media-promotion",
+    "media-report",
+    "media-review",
+    "model-review",
+    "parametric-analysis",
+    "rca-analysis",
+    "report-change",
+    "report-create",
+    "report-design-review",
+    "report-interface",
+    "report-polish",
+    "report-progress",
+    "report-revise",
+    "report-safety",
+    "report-submission",
+    "report-trace",
+    "req-tree",
+    "requirement-quality",
+    "scenario-sequence",
+    "script-authoring",
+    "state-machine",
+    "stpa-analysis",
+    "system-context",
+    "tara-analysis",
+    "traceability-audit",
+    "ui-compare",
+    "ui-dashboard",
+    "ui-explorer",
+    "ui-form",
+    "ui-interface",
+    "ui-param",
+    "ui-report",
+    "ui-review",
+    "ui-trace",
+    "usecase-analysis",
+    "verification-planning"
+  ],
+  "seeded_template_state": {
+    "block-hierarchy": {
+      "item_id": "0fe08803-2040-4d7d-a23e-a85b1cacd015",
+      "name": "ブロック階層の整理",
+      "content_hash": "cfb4f61b87aac754c9ee4320a182add2ae2a7de7979b87b89c6860c501dbc4a0",
+      "managed": true
+    },
+    "change-impact": {
+      "item_id": "e5a8b01b-0aed-4bd2-bde8-11a76aaf6eb5",
+      "name": "変更影響分析",
+      "content_hash": "eba17413eaaf981d04a58cf1c0b14baa9549f75e7cae624337e927679a3bf3e5",
+      "managed": true
+    },
+    "functional-flow": {
+      "item_id": "efb9d512-4bc7-4861-8424-3f5192c003f4",
+      "name": "機能フロー設計",
+      "content_hash": "e6d7d03e6c4db7fbfa67213a7f14fb3b14eefdb9face9a0ef206d8fffb215dcd",
+      "managed": true
+    },
+    "hazard-safety": {
+      "item_id": "ca84b141-ee73-45ff-9214-7e2227c84bc7",
+      "name": "ハザード分析と安全要求",
+      "content_hash": "f638fe59070c93603a2b1bbea56ed4135c07bae803dd2700aea92ef570466510",
+      "managed": true
+    },
+    "ibd-expand": {
+      "item_id": "3421e80d-4dab-482a-8ea8-f62435571a8b",
+      "name": "内部構造展開（IBD）",
+      "content_hash": "42ea52c3498c165c3a74cad2c4df5279fa59e99f1bcd23241c8608f98ae7d1cc",
+      "managed": true
+    },
+    "interface-definition": {
+      "item_id": "1f117755-b026-4785-a20b-fa451c456efb",
+      "name": "インターフェース定義",
+      "content_hash": "ae0130f54b749e8e673d17fb50a3a84351a2907afe21cb4397f7cd5d35302c54",
+      "managed": true
+    },
+    "model-review": {
+      "item_id": "20f192cc-efec-4af3-ac4d-6458567b4f78",
+      "name": "モデルレビュー",
+      "content_hash": "f2c36b2893beba32c39c90a31e61da637acb356f0bdfe41719f6b2d83e770387",
+      "managed": true
+    },
+    "parametric-analysis": {
+      "item_id": "17f1e500-5022-4e1a-8e13-7199f9a49432",
+      "name": "パラメトリック制約定義",
+      "content_hash": "4b702e642b474d632ea93200fb66aaf7d4182adb5009a34c0cd4008f9112a337",
+      "managed": true
+    },
+    "req-tree": {
+      "item_id": "c1f0681e-a624-49a9-ab28-bd673ab6b69a",
+      "name": "要求ツリー整備",
+      "content_hash": "d267c4b5272436570a74d41c6df3931a86048974d4916cd10b9c390f14448e5f",
+      "managed": true
+    },
+    "requirement-quality": {
+      "item_id": "caf23827-3a8b-4236-8077-0b7b1899da2e",
+      "name": "要求品質レビュー",
+      "content_hash": "3f652fac2cbe19cb5fad9268e8b36b4ef70543b5dd472addf2dd0df7ba32ed48",
+      "managed": true
+    },
+    "scenario-sequence": {
+      "item_id": "17ec899c-beb9-4bfb-a127-9920a39cf272",
+      "name": "シナリオ（シーケンス）設計",
+      "content_hash": "8d495b4ab4aada8dd3d21df222396f6049d69aac7c35e51b7e7bcf48b8d433b0",
+      "managed": true
+    },
+    "state-machine": {
+      "item_id": "45544e33-bc23-4037-88e5-18aa5b1769c0",
+      "name": "状態遷移設計",
+      "content_hash": "9d982c2335db3aa9e405a1f3ff98707fb187e355b44654dd8c351358cb47ab8c",
+      "managed": true
+    },
+    "system-context": {
+      "item_id": "c4e1bfe6-8f29-4e30-ba0b-b6e6841b2da9",
+      "name": "システムコンテキスト定義",
+      "content_hash": "41d01c3e1f7a3c426a96417130006693715dbf952ef1933439b94ffb0e914559",
+      "managed": true
+    },
+    "traceability-audit": {
+      "item_id": "5086e4fa-be1c-407e-9be2-e98484f80421",
+      "name": "トレーサビリティ監査",
+      "content_hash": "f0cf2df9b2bf3d2b2a8336439ee1bc385ed662a5e5a918d18153bcf4a7b4f02c",
+      "managed": true
+    },
+    "usecase-analysis": {
+      "item_id": "734967f7-afa3-482b-b6c7-fd4e36d918b5",
+      "name": "ユースケース分析",
+      "content_hash": "e38a26a1bae6dcc0ecb8c32758096b6d14081d6bedf3b511ec591d2af8e66962",
+      "managed": true
+    },
+    "verification-planning": {
+      "item_id": "7b04664d-0d2e-4b37-9aac-bbd2ee9da102",
+      "name": "検証計画（V&V）",
+      "content_hash": "e07c96f1d5544c105388005d4de70cf5ba602da7ecac1259a99f30886fca66ef",
+      "managed": true
+    },
+    "file-handling": {
+      "item_id": "ec8a5561-ad25-4292-b9bf-221923b810b3",
+      "name": "添付ファイルの分析と変換",
+      "content_hash": "021254336a638660716f252b94dab47240b99e98cf2cde73cb3896ca32aee448",
+      "managed": true
+    },
+    "ideation-to-model": {
+      "item_id": "ee82f3b7-ff9f-4713-9da8-a208b53e2b86",
+      "name": "構想からモデルへ（アイデアの段階的具体化）",
+      "content_hash": "0840cb59c4a19d011713e1a4d7db35aa49398a077d717bf6217d5aa8d10b0cca",
+      "managed": true
+    },
+    "custom-ui": {
+      "item_id": "3f74e7c3-984a-4aea-92d8-d551d1dd6f3c",
+      "name": "カスタムUIの作成と改善",
+      "content_hash": "6b079c5a576c3b141451ef41bd43fe0f06b44a044f7abddf9b6317ea94e38c6b",
+      "managed": true
+    },
+    "database-query": {
+      "item_id": "1ccb3339-7923-47fa-a815-6c8ea7150206",
+      "name": "SQL クエリシートの作成・修正",
+      "content_hash": "e8b744d984dbf8556cdc69448082ef01b2b725c0618241b2806911c421077bc8",
+      "managed": true
+    },
+    "analysis-review": {
+      "item_id": "2d7670bc-b183-4b2c-ace7-55e28c774225",
+      "name": "分析の見直し (設計変更追従)",
+      "content_hash": "39502b40ce4a8f2e9acab221ac26a4f6b787882833a11bb1a3facf4dedb938d4",
+      "managed": true
+    },
+    "drbfm-analysis": {
+      "item_id": "71154170-5896-44ae-979a-faabb765b88b",
+      "name": "DRBFM",
+      "content_hash": "b4887d0cc83e8fcb21b4f2c3b1d6646786c8e70f9482bbf509dd11cdf2b8f326",
+      "managed": true
+    },
+    "fmea-analysis": {
+      "item_id": "8f1b42a5-f4bc-41a4-a6af-8d1bb9ad40c0",
+      "name": "FMEA",
+      "content_hash": "92293784a49cf5db2adb029c09a0856d59f447e05d7fadc1717b78ddafe96ae5",
+      "managed": true
+    },
+    "fta-analysis": {
+      "item_id": "1cab1901-bde2-46ff-bdaa-4d703d322d45",
+      "name": "FTA",
+      "content_hash": "d3dc423b7b7ab7749df6f811a61e5f79aea66b0d6cf88379187c93770c9990f0",
+      "managed": true
+    },
+    "impact-analysis": {
+      "item_id": "56ae6b20-4d8e-42bb-8509-295909382289",
+      "name": "インパクト分析",
+      "content_hash": "0f0a0515af8c9fbf2d50aa17364378f2d9ed67261fd20205dff6a4cd53b6d46f",
+      "managed": true
+    },
+    "media-explanation": {
+      "item_id": "b5d5ae40-c102-4fb0-8573-8640666b6257",
+      "name": "非専門家向けの説明ビジュアル",
+      "content_hash": "e95291e2f9875bd9fd0de826441ea8f8dbb05ba9ec9fbd2ed3ef8c3e7e8efccc",
+      "managed": true
+    },
+    "media-generation": {
+      "item_id": "4f32b928-422c-4575-9381-69b5addfd7a7",
+      "name": "トレース根拠に基づくメディア生成",
+      "content_hash": "820fb67f7cd8923da36f33362eef5709857789dfac29c6954ce397be7674c3c6",
+      "managed": true
+    },
+    "media-manual": {
+      "item_id": "fdb11425-4046-42ef-a4fe-f3731093e4af",
+      "name": "手順・取扱説明のビジュアル",
+      "content_hash": "8a5a25108974252a243b5d87e51775d0a3e2811527ec103a762acf5219375ce5",
+      "managed": true
+    },
+    "media-promotion": {
+      "item_id": "816147c3-ee2f-4738-ba93-a9e47d6d6321",
+      "name": "プレゼン・プロモーション素材",
+      "content_hash": "1725baa6c0ce4487f6ec8e89140269dbf4193e417c8b3a969492b2149a840910",
+      "managed": true
+    },
+    "media-report": {
+      "item_id": "2899a495-25c2-44db-9895-207f4edb6d72",
+      "name": "報告書用の正確な図",
+      "content_hash": "9ebbe5f76bb9b5a3de38da1c7136d633b6575489a03122192d1b75ecf021acd5",
+      "managed": true
+    },
+    "media-review": {
+      "item_id": "2af6f20c-6a67-4340-b8c0-420048c49cd3",
+      "name": "設計レビュー用の論点ビジュアル",
+      "content_hash": "7cd4816c548a5ce39fcf16933c3d42f7a1194262859edc2704442573d4c6fbc6",
+      "managed": true
+    },
+    "rca-analysis": {
+      "item_id": "327bee31-a872-452d-bac5-608a8fa01bc0",
+      "name": "要因解析 (なぜなぜ)",
+      "content_hash": "82727ce93c1f88fbcf43722ba4324032b0ef9c3874e26420fb2b8d030ee51927",
+      "managed": true
+    },
+    "report-change": {
+      "item_id": "f3c7113b-c996-45da-a058-b1c7ced96f37",
+      "name": "設計変更報告",
+      "content_hash": "f58de082cb82ade2589a69ab752268b0c88bfa8648d94095d620e5abe7a78bee",
+      "managed": true
+    },
+    "report-create": {
+      "item_id": "950b711b-0659-43f5-b404-dbf866b7ffd9",
+      "name": "レポート作成",
+      "content_hash": "d658c9d374e492af34ec0d94dc92ae6b0f12674ba24fa378398a0ca27e1f0daa",
+      "managed": true
+    },
+    "report-design-review": {
+      "item_id": "e7c53dc1-0686-4d42-8782-2e5a6a223026",
+      "name": "設計審査資料作成",
+      "content_hash": "5c87daf6e09312d002a162c648c3851caaa0fe1941344e38906115c5b3cda115",
+      "managed": true
+    },
+    "report-interface": {
+      "item_id": "539dbba1-008b-483b-afce-16e838d19691",
+      "name": "インタフェース仕様書作成",
+      "content_hash": "ecd6994409f49888dcb80301a35eb8d3372a1df53ceb4a3fd2e48522cc09c0e7",
+      "managed": true
+    },
+    "report-polish": {
+      "item_id": "e14f2782-2e67-4104-81f3-975befc83608",
+      "name": "レポートの体裁仕上げ",
+      "content_hash": "4821e4f08e7872107acd654fb474d939f9ebcf55f21e68e16cbfd668e52fbe24",
+      "managed": true
+    },
+    "report-progress": {
+      "item_id": "1576fcae-9e02-4df7-ad8c-ab5f538e7bd1",
+      "name": "開発進捗報告",
+      "content_hash": "143162f5874f055924734665a8b8ba98ed8bce74632d7ffed4c19b042bce9ba1",
+      "managed": true
+    },
+    "report-revise": {
+      "item_id": "e299ebd6-485e-467a-8d0c-6e7e838b2e0b",
+      "name": "レポート修正",
+      "content_hash": "c3c0f1198b5d6134bb52db265405242e7b10b71b416e00f9eb86818dde005335",
+      "managed": true
+    },
+    "report-safety": {
+      "item_id": "1bd33509-15b1-4f93-8877-d53e9df5bf17",
+      "name": "安全・リスク分析サマリ",
+      "content_hash": "b209cd70813371ec293d5cf6ae99311934b5f6dfce9e7b2dc15b01b267a44eee",
+      "managed": true
+    },
+    "report-submission": {
+      "item_id": "5c71d1b9-5560-4951-bd2f-57111c9c71b9",
+      "name": "提出書類作成",
+      "content_hash": "615ea243fd52edc9a2ae1f879e1a789b8af1f0f2fe60c93d6925173c1f7db2f8",
+      "managed": true
+    },
+    "report-trace": {
+      "item_id": "8957c152-56cf-48e6-b8cf-d0727cebf98d",
+      "name": "要求トレーサビリティ報告",
+      "content_hash": "d2f8cb5ee81b6f3f3a8b2227b4a94e3f95636f1a4be3a68645033feef342e2f9",
+      "managed": true
+    },
+    "script-authoring": {
+      "item_id": "f0d5be79-7d30-46c4-add5-31741b50096b",
+      "name": "スクリプトの作成と改善",
+      "content_hash": "4633d8ed7ce85d808c72ca71ceecce4179ae5b2abcab12c754287a326542bc2a",
+      "managed": true
+    },
+    "stpa-analysis": {
+      "item_id": "33443aeb-52ff-4806-b875-58d0f6af1f76",
+      "name": "STPA",
+      "content_hash": "43f6caf8ae3196d0a185507affebb519b22afae5e19d33017326e2d1ccd0a9e7",
+      "managed": true
+    },
+    "tara-analysis": {
+      "item_id": "0484e685-cce3-4682-832a-81894717aa8d",
+      "name": "TARA",
+      "content_hash": "087ef6073cfa2f4c94caa411cda4fbcb20430b25b3ebc08ddca84dee4f5dbce9",
+      "managed": true
+    },
+    "ui-compare": {
+      "item_id": "464f51c1-9334-4b66-a9df-2b15339066ad",
+      "name": "比較・トレードスタディUIの作成",
+      "content_hash": "62793aabe0680bf80eca57ec4f91297d2e8aff383e6f2be75e5191e85fda6126",
+      "managed": true
+    },
+    "ui-dashboard": {
+      "item_id": "947611e5-904c-42ab-8b14-3a9f97f935bf",
+      "name": "進捗・品質ダッシュボードの作成",
+      "content_hash": "22fa9392fc860e0ffef2d18dcc4446ad991a8d0bb61a678f177e48b8e9159427",
+      "managed": true
+    },
+    "ui-explorer": {
+      "item_id": "1ca10383-085f-409e-8acb-45f7a31806e6",
+      "name": "構造ブラウザ・要素詳細UIの作成",
+      "content_hash": "847e40f9d12df1016aed5dd84695a7260917cd6f3d026f350d5c066f4d7623e6",
+      "managed": true
+    },
+    "ui-form": {
+      "item_id": "a2143547-2a17-4d5c-9073-3b989748fa0e",
+      "name": "データ入力・一括編集UIの作成",
+      "content_hash": "b9bc081990ffd570821bc097cbad45d437c8791bdf0ab968fe0604b77dfc73c8",
+      "managed": true
+    },
+    "ui-interface": {
+      "item_id": "a4322721-dd14-4abb-bdd4-9ebc2574b61e",
+      "name": "インタフェース管理(ICD)UIの作成",
+      "content_hash": "df32b5e379bae5ba5879b6c13b2500fbe5b96eb913522f3db9cf5af2ca900494",
+      "managed": true
+    },
+    "ui-param": {
+      "item_id": "46525064-ce62-46fd-9ee7-eaa198e680bc",
+      "name": "パラメータ・予算管理UIの作成",
+      "content_hash": "08b5df84d687a1d7c127dedcf071360888ed7774687f7e191e2d7f98894a40a1",
+      "managed": true
+    },
+    "ui-report": {
+      "item_id": "8303e3ce-1335-42c1-bd22-796380dc4b74",
+      "name": "章立てレポートの自動生成",
+      "content_hash": "d99e8a9f574212587191a4a517300882d7ce3e3c04e805302fca5c5a403ae747",
+      "managed": true
+    },
+    "ui-review": {
+      "item_id": "25b486ff-a72c-4ee6-b1f2-484edf0d5b92",
+      "name": "設計レビュー支援UIの作成",
+      "content_hash": "2690c0e0d72931604905770239ccfe1ac6d063f1a7db77fef222014a76aa4ced",
+      "managed": true
+    },
+    "ui-trace": {
+      "item_id": "e3e180d9-e6e2-49fa-ba85-1c2eb7872a86",
+      "name": "トレーサビリティ・カバレッジUIの作成",
+      "content_hash": "b79aa1a803b4fb6f81a930e3b07cf9c88b294dc302fb0104b065c16f2fc0a752",
+      "managed": true
+    }
+  }
+}
