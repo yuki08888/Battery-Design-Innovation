@@ -100,6 +100,28 @@
       "order": 18
     },
     {
+      "id": "cd783b8a-54ac-4853-be81-062c8cd0267d",
+      "itemType": "asset",
+      "name": "image-1.png",
+      "parentId": null,
+      "order": 19,
+      "description": "45PL端子部品の複数方向からの寸法図。外形、板厚、端子間隔、穴位置、幾何公差および加工・検査上の注記を示す。変更点として溶接部のコイニング廃止とチップヒューズ搭載が記載されている。",
+      "assetKind": "image",
+      "sha1": "f5c80f52412d3c4e7f9ec2fc6e26ba0fa6058481",
+      "ext": "png",
+      "mimeType": "image/png",
+      "width": 1151,
+      "height": 591,
+      "byteSize": 283968,
+      "createdAt": "2026-10-26T09:18:42.142489",
+      "updatedAt": "2026-10-26T09:18:47.095624",
+      "aiStatus": "done",
+      "origin": {
+        "kind": "chat_attachment",
+        "fileName": "image-1.png"
+      }
+    },
+    {
       "id": "42a875f7-4950-4730-be4d-7d6a9be34439",
       "itemType": "asset",
       "name": "耐熱絶縁カバー設計標準書 p.51",

@@ -250,5 +250,14 @@
         "createdAt": null,
         "updatedAt": null,
         "pageCount": 51
+    },
+    {
+        "id": "3e5f9cde-e2c4-4184-8a24-e1d4fb56f072",
+        "title": "BBMバスバ図面（image-1.png）",
+        "description": null,
+        "sourceFilePath": "C:\\Users\\1584550\\AppData\\Roaming\\system_factory\\app_data\\projects\\0c47063b-31ef-45f7-9ab8-67833c1008e7\\documents\\3e5f9cde-e2c4-4184-8a24-e1d4fb56f072\\orgs\\6d0335db-4da0-4aed-b843-ddf0191d69a1.pdf",
+        "createdAt": null,
+        "updatedAt": null,
+        "pageCount": 1
     }
 ]

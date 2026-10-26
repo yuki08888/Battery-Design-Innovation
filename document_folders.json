@@ -250,5 +250,13 @@
         "item_type": "folder",
         "parent_id": null,
         "order": 18
+    },
+    {
+        "id": "01f36d7f-7c3e-411f-ace0-d33e823e11c9",
+        "name": "BBMバスバ図面（image-1.png）",
+        "item_type": "document",
+        "parent_id": null,
+        "order": 19,
+        "document_id": "3e5f9cde-e2c4-4184-8a24-e1d4fb56f072"
     }
 ]
