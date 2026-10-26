@@ -122,6 +122,13 @@
       }
     },
     {
+      "id": "9fe724d0-aa63-4520-9f56-1b659a7416a8",
+      "itemType": "folder",
+      "name": "BBMバスバ図面（image-1.png）",
+      "parentId": null,
+      "order": 20
+    },
+    {
       "id": "42a875f7-4950-4730-be4d-7d6a9be34439",
       "itemType": "asset",
       "name": "耐熱絶縁カバー設計標準書 p.51",
@@ -8810,6 +8817,97 @@
       "name": "抽出画像",
       "parentId": "9e74206e-e496-4a9b-8d8f-f7f984ed3bef",
       "order": 2
+    },
+    {
+      "id": "dfd849b2-0fe4-4c42-957f-152402a7073c",
+      "itemType": "asset",
+      "name": "BBMバスバ図面（image-1.png） (元ファイル)",
+      "parentId": "9fe724d0-aa63-4520-9f56-1b659a7416a8",
+      "order": 0,
+      "description": "",
+      "assetKind": "document",
+      "sha1": null,
+      "ext": "pdf",
+      "mimeType": "application/pdf",
+      "width": 0,
+      "height": 0,
+      "byteSize": 186485,
+      "createdAt": "2026-10-26T13:40:31.829860",
+      "updatedAt": "2026-10-26T13:40:31.829860",
+      "aiStatus": "skipped",
+      "origin": {
+        "kind": "document_source",
+        "documentId": "3e5f9cde-e2c4-4184-8a24-e1d4fb56f072",
+        "fileName": "6d0335db-4da0-4aed-b843-ddf0191d69a1.pdf"
+      },
+      "sourceRef": {
+        "kind": "document",
+        "key": "document:3e5f9cde-e2c4-4184-8a24-e1d4fb56f072:orgs:6d0335db-4da0-4aed-b843-ddf0191d69a1.pdf",
+        "documentId": "3e5f9cde-e2c4-4184-8a24-e1d4fb56f072",
+        "subdir": "orgs",
+        "fileName": "6d0335db-4da0-4aed-b843-ddf0191d69a1.pdf"
+      }
+    },
+    {
+      "id": "8043970e-2a34-4e79-8505-8b3eedb86289",
+      "itemType": "asset",
+      "name": "BBMバスバ図面（image-1.png） p.1",
+      "parentId": "9fe724d0-aa63-4520-9f56-1b659a7416a8",
+      "order": 1,
+      "description": "",
+      "assetKind": "image",
+      "sha1": null,
+      "ext": "png",
+      "mimeType": "image/png",
+      "width": 0,
+      "height": 0,
+      "byteSize": 277490,
+      "createdAt": "2026-10-26T13:40:31.829927",
+      "updatedAt": "2026-10-26T13:40:31.829927",
+      "aiStatus": "skipped",
+      "origin": {
+        "kind": "pdf_page",
+        "documentId": "3e5f9cde-e2c4-4184-8a24-e1d4fb56f072",
+        "fileName": "30d42062-4271-4e21-9472-31c525909e0d.png",
+        "pageId": "3880aa04-c561-4c1a-945a-3ab04f711272"
+      },
+      "sourceRef": {
+        "kind": "document",
+        "key": "document:3e5f9cde-e2c4-4184-8a24-e1d4fb56f072:images:30d42062-4271-4e21-9472-31c525909e0d.png",
+        "documentId": "3e5f9cde-e2c4-4184-8a24-e1d4fb56f072",
+        "subdir": "images",
+        "fileName": "30d42062-4271-4e21-9472-31c525909e0d.png"
+      }
+    },
+    {
+      "id": "6b5c507d-fcf5-466f-8ebd-05575eb88307",
+      "itemType": "asset",
+      "name": "e296ed44-8eb6-4d72-841f-f901e00872bb.png",
+      "parentId": "9fe724d0-aa63-4520-9f56-1b659a7416a8",
+      "order": 2,
+      "description": "",
+      "assetKind": "image",
+      "sha1": null,
+      "ext": "png",
+      "mimeType": "image/png",
+      "width": 0,
+      "height": 0,
+      "byteSize": 184412,
+      "createdAt": "2026-10-26T13:40:31.829985",
+      "updatedAt": "2026-10-26T13:40:31.829985",
+      "aiStatus": "skipped",
+      "origin": {
+        "kind": "document_image",
+        "documentId": "3e5f9cde-e2c4-4184-8a24-e1d4fb56f072",
+        "fileName": "e296ed44-8eb6-4d72-841f-f901e00872bb.png"
+      },
+      "sourceRef": {
+        "kind": "document",
+        "key": "document:3e5f9cde-e2c4-4184-8a24-e1d4fb56f072:images:e296ed44-8eb6-4d72-841f-f901e00872bb.png",
+        "documentId": "3e5f9cde-e2c4-4184-8a24-e1d4fb56f072",
+        "subdir": "images",
+        "fileName": "e296ed44-8eb6-4d72-841f-f901e00872bb.png"
+      }
     },
     {
       "id": "d8fcb110-b16d-48fb-b41f-2ecceee15bd9",
