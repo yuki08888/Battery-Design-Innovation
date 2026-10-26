@@ -27,7 +27,11 @@ steps:
       シナリオに登場するライフライン（Actor / Block）を決め、
       時系列に沿ったメッセージ列を設計する。
       各メッセージには、呼び出す操作と渡す情報を明示すること。
-    done_when: 全ライフラインの型が定まり、各メッセージに一意な順序・送信元・受信先・Operation・入出力情報があり、端点または順序未定のメッセージ0件である
+      各メッセージの種別を決める: sync_call（同期呼び出し。応答を待つ）/
+      async_call（非同期呼び出し。通知・イベント）/ reply（応答）。
+      sync_call には呼ばれた側→呼んだ側の reply を必ず付け、
+      入れ子の呼び出しは内側から順に応答させる（応答待ちの間に呼び出し元が別のメッセージを送らない）。
+    done_when: 全ライフラインの型が定まり、各メッセージに一意な順序・送信元・受信先・種別（sync_call / async_call / reply）・Operation・入出力情報があり、端点または順序未定のメッセージ0件である
   - no: 3
     title: 代替系・例外系の検討
     instruction: |
@@ -56,6 +60,8 @@ steps:
       メッセージが呼び出す Operation が、対応する Block に
       実際に定義されているかを確認する。
       不足している Operation を追加した上で validate_model で検証する。
+      ruleSource=sequence の指摘（種別の未設定・応答の欠落・入れ子の交差など）は
+      update_relationship（edgeType）やメッセージの追加で解消する。
     tools:
       - get_related_elements
       - create_operation
