@@ -1189,5 +1189,6 @@
         "generator": "ai"
     },
     "coverage": null,
-    "modelBinding": null
+    "modelBinding": null,
+    "description": null
 }

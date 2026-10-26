@@ -22,5 +22,6 @@
     "headingRules": null,
     "digest": null,
     "coverage": null,
-    "modelBinding": null
+    "modelBinding": null,
+    "description": null
 }
