@@ -258,5 +258,13 @@
         "parent_id": null,
         "order": 19,
         "document_id": "3e5f9cde-e2c4-4184-8a24-e1d4fb56f072"
+    },
+    {
+        "id": "f691743c-f49f-47d1-a975-028c06a2e706",
+        "name": "最大短絡電流時の溶断時間（45PLヒューズ）",
+        "item_type": "document",
+        "parent_id": null,
+        "order": 20,
+        "document_id": "d9628dfa-db62-47f7-942c-83c3c39c08c0"
     }
 ]

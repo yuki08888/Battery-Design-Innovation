@@ -129,6 +129,28 @@
       "order": 20
     },
     {
+      "id": "be0a4c7b-baaf-444b-9eae-5e5b5f4d3568",
+      "itemType": "asset",
+      "name": "image-1.png",
+      "parentId": null,
+      "order": 21,
+      "description": "最大短絡電流時の溶断時間を、45PLヒューズの80℃特性と常温特性で比較した表。温度・抵抗条件、補間下側／上側電流、溶断時間の上下限・参考値を示し、電流と時間の対数軸で補間する方法を記載している。",
+      "assetKind": "image",
+      "sha1": "0d3d47c1f973414ae59cd357e30c254b375df86b",
+      "ext": "png",
+      "mimeType": "image/png",
+      "width": 1735,
+      "height": 333,
+      "byteSize": 91743,
+      "createdAt": "2026-10-27T07:25:32.983772",
+      "updatedAt": "2026-10-27T07:25:36.877838",
+      "aiStatus": "done",
+      "origin": {
+        "kind": "chat_attachment",
+        "fileName": "image-1.png"
+      }
+    },
+    {
       "id": "42a875f7-4950-4730-be4d-7d6a9be34439",
       "itemType": "asset",
       "name": "耐熱絶縁カバー設計標準書 p.51",

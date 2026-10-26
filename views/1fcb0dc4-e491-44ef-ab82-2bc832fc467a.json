@@ -1705,17 +1705,7 @@
         },
         {
             "class_name": "DiagramEdge",
-            "element_id": "b10de1e4-7e8c-51be-a384-4f4b27fd365a",
-            "routing": "bezier"
-        },
-        {
-            "class_name": "DiagramEdge",
             "element_id": "ee71d7a6-4455-47e0-8f5f-d78ef802a373",
-            "routing": "bezier"
-        },
-        {
-            "class_name": "DiagramEdge",
-            "element_id": "cd65ae8f-27bb-527c-88cf-d7615efb1798",
             "routing": "bezier"
         },
         {
@@ -1961,26 +1951,6 @@
         },
         {
             "class_name": "DiagramEdge",
-            "element_id": "aaf5ba11-7da9-4666-9bee-31cd56fe8c49",
-            "routing": "bezier"
-        },
-        {
-            "class_name": "DiagramEdge",
-            "element_id": "4f55e1d4-d8cb-5bec-a73e-a7516f5ae900",
-            "routing": "bezier"
-        },
-        {
-            "class_name": "DiagramEdge",
-            "element_id": "26e2fee5-8e7a-4e55-88e8-3a709830c4d4",
-            "routing": "bezier"
-        },
-        {
-            "class_name": "DiagramEdge",
-            "element_id": "2554c1d9-43a2-51c5-878b-c269124baad3",
-            "routing": "bezier"
-        },
-        {
-            "class_name": "DiagramEdge",
             "element_id": "8c2a9f65-c259-4b3b-9aec-425ad556d139",
             "routing": "bezier"
         },
@@ -2008,11 +1978,6 @@
             "class_name": "DiagramEdge",
             "element_id": "5cdcb0b3-f744-58de-8698-3ffec64476d7",
             "routing": "bezier"
-        },
-        {
-            "class_name": "DiagramEdge",
-            "element_id": "085670a5-5571-4a05-a11b-706f2a857e30",
-            "routing": "orthogonal"
         },
         {
             "class_name": "DiagramEdge",
