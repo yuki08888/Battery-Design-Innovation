@@ -151,6 +151,13 @@
       }
     },
     {
+      "id": "df9478c1-dbec-4e7f-a168-b1ca2be8ede5",
+      "itemType": "folder",
+      "name": "構想イメージ",
+      "parentId": null,
+      "order": 22
+    },
+    {
       "id": "42a875f7-4950-4730-be4d-7d6a9be34439",
       "itemType": "asset",
       "name": "耐熱絶縁カバー設計標準書 p.51",
@@ -17933,6 +17940,38 @@
         "documentId": "859cfd19-94fd-41be-931e-7a8ea78af8ce",
         "subdir": "images",
         "fileName": "ef52d42d-a012-4ca2-940d-c8ded401c6e1.png"
+      }
+    },
+    {
+      "id": "a7bd817e-ed44-476a-9dc1-9eab941cbb5e",
+      "itemType": "asset",
+      "name": "BBM 形状と安全性の役割分担・構想案",
+      "parentId": "df9478c1-dbec-4e7f-a168-b1ca2be8ede5",
+      "order": 0,
+      "description": "AI 生成イメージ。プロンプト: Create a conceptual engineering isometric sketch of an EV battery busbar module above a small row of prismatic cells. Use the reference drawing ONLY for the general rectangular flat busbar end contact pads and a central two-bend offset bridge motif; do not reproduce dimensions or claim this geometry is optimized. Show one enlarged offset busbar connecting two adjacent cell terminals, broad flat joining pads seated on the terminals, the middle offset span free of rigid carrier clamping with curved displacement arrows. Add a gray insulating carrier that locates components but allows local relative motion, insulating partitions between different-potential conductors, a partially lifted protective insulating cover (cutaway illustration, not operating condition). A separate thin sensing ribbon with a slack loop runs in its own protected channel to a connector. Contrast stable joining zones in blue, candidate motion-accommodating zones in orange, insulation in pale green. Include small detail insets for terminal reaction arrows and insulation paths, without numbers, text, letters, labels or performance checkmarks. Clean white background. Clearly conceptual, not production CAD. Do not imply holes mean bolted joints; joining process unspecified. No exposed active conductor represented as safe for touching.",
+      "assetKind": "image",
+      "sha1": "e3909e48448bb5f15369e3d644db10122961c6f6",
+      "ext": "png",
+      "mimeType": "image/png",
+      "width": 1536,
+      "height": 1024,
+      "byteSize": 1616697,
+      "createdAt": "2026-10-27T11:34:00.322619",
+      "updatedAt": "2026-10-27T11:34:06.792499",
+      "aiStatus": "done",
+      "origin": {
+        "kind": "ai_generated",
+        "prompt": "Create a conceptual engineering isometric sketch of an EV battery busbar module above a small row of prismatic cells. Use the reference drawing ONLY for the general rectangular flat busbar end contact pads and a central two-bend offset bridge motif; do not reproduce dimensions or claim this geometry is optimized. Show one enlarged offset busbar connecting two adjacent cell terminals, broad flat joining pads seated on the terminals, the middle offset span free of rigid carrier clamping with curved displacement arrows. Add a gray insulating carrier that locates components but allows local relative motion, insulating partitions between different-potential conductors, a partially lifted protective insulating cover (cutaway illustration, not operating condition). A separate thin sensing ribbon with a slack loop runs in its own protected channel to a connector. Contrast stable joining zones in blue, candidate motion-accommodating zones in orange, insulation in pale green. Include small detail insets for terminal reaction arrows and insulation paths, without numbers, text, letters, labels or performance checkmarks. Clean white background. Clearly conceptual, not production CAD. Do not imply holes mean bolted joints; joining process unspecified. No exposed active conductor represented as safe for touching.",
+        "style": "isometric",
+        "chatId": "ea7e124e-04c7-4c3e-8ce1-df9792c9d201",
+        "messageId": "18bc603b-cacf-4fcc-85ec-7564fa373ab3",
+        "conceptIds": [],
+        "reference": {
+          "assetId": "8043970e-2a34-4e79-8505-8b3eedb86289",
+          "name": "BBMバスバ図面（image-1.png） p.1",
+          "kind": "image",
+          "representation": "image"
+        }
       }
     },
     {

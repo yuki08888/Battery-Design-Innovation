@@ -55,14 +55,24 @@
             "parent_id": "root",
             "icon_key": "MenuBookOutlined",
             "icon_color": null
+        },
+        {
+            "id": "a9691555-cec8-43d2-b0f0-364dea650bd8",
+            "name": "振動・耐久・衝撃性能 - 部品要求マトリクス",
+            "parent_id": "835145bc-3af4-4da8-9744-35372b33307f",
+            "icon_key": "GridOnOutlined",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [
-        "bd10b46a-0c83-4db4-a4bf-31f54d077d5f",
         "d7dcf14d-65c1-429b-a864-573ebb75dc15",
-        "781fc0e1-ce93-405e-a73e-9b05ea0bf9d1"
+        "9751a2b1-7e7d-4b1a-93bc-66f2d9e859fb",
+        "f0d34f59-afc5-493e-b470-6ea9f849ea8e",
+        "bd10b46a-0c83-4db4-a4bf-31f54d077d5f",
+        "781fc0e1-ce93-405e-a73e-9b05ea0bf9d1",
+        "a9691555-cec8-43d2-b0f0-364dea650bd8"
     ],
-    "current_view_id": "781fc0e1-ce93-405e-a73e-9b05ea0bf9d1",
+    "current_view_id": "a9691555-cec8-43d2-b0f0-364dea650bd8",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,
