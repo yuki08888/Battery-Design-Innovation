@@ -644,5 +644,8 @@
         ]
     },
     "show_outgoing": true,
-    "show_incoming": true
+    "show_incoming": true,
+    "row_header_width": 368,
+    "col_header_height": 120,
+    "cell_size": 40
 }

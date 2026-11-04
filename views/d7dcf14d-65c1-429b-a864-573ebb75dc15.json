@@ -1859,11 +1859,41 @@
             "class_name": "DiagramEdge",
             "element_id": "90f27f0a-4b3f-4336-9e7e-c305256a009f",
             "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "fd06ce81-012e-4f22-8b78-71f872925304",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "330678f9-99c1-4067-b67b-550354318d7d",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "c6fd4d55-cdae-4a0d-ae29-b325551548a8",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "6fc408b4-313c-4bbf-bd73-89165afe6345",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "53bc3d27-94d9-4a07-ab3f-a3f8eefb0717",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "9298f643-2efd-4c5e-968c-5fe6fc9fa455",
+            "routing": "bezier"
         }
     ],
-    "scale": 0.4999999999999999,
-    "offset_x": -443.36652595032433,
-    "offset_y": 35.53349803756288,
+    "scale": 0.4,
+    "offset_x": 22.716303049264752,
+    "offset_y": -1.5160587128070802,
     "relationship_type": "containment",
     "visible_relation_types": [
         "containment",
