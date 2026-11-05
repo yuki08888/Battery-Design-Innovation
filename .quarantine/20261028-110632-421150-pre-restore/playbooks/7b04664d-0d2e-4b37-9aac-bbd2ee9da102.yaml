@@ -1,0 +1,68 @@
+id: ""
+name: 検証計画（V&V）
+slash_command: vv-plan
+description: |
+  要求ごとに検証方法（検査・解析・実証・試験）を決め、
+  TestCase を作成して verify 関係で接続する手順。
+  V 字プロセスの右側を立ち上げるときに使用する。
+use_when: |
+  ユーザーが「テストケースを作って」「検証計画を立てて」
+  「V&V を整備」「要求の確認方法を決めたい」等を依頼したとき。
+steps:
+  - no: 1
+    title: 検証対象要求の洗い出し
+    instruction: |
+      対象範囲の Requirement を列挙し、
+      既に verify する TestCase が存在するものを除外して
+      未検証の要求を特定する。
+    tools:
+      - search_item
+      - read_package_contents
+      - get_related_elements
+      - graph_query
+    done_when: 対象範囲の全 Requirement と既存 verify 元 TestCase を一覧化し、要求総数・検証済み件数・未検証件数が一致している
+  - no: 2
+    title: 検証方法の選定
+    instruction: |
+      各要求について、検証方法を
+      「検査(Inspection) / 解析(Analysis) / 実証(Demonstration) / 試験(Test)」
+      から選定する。選定理由（コスト・実現性・要求の性質）を記録する。
+      検証不能な要求（測定できない曖昧な要求）は要求文の修正を提案する。
+    done_when: 全未検証要求に検査・解析・実証・試験のいずれかと選定理由があるか、検証不能として要求文の具体的な修正案があり、方法未定0件である
+  - no: 3
+    title: TestCase の作成
+    instruction: |
+      検証方法に沿って TestCase を作成する。
+      各 TestCase には合否判定基準（測定量と閾値）を必ず記述すること。
+      「正常に動作すること」のような判定不能な基準は禁止。
+    tools:
+      - create_test_case
+      - create_multi_elements
+      - update_test_case
+    done_when: 計画した全 TestCase が存在し、各ケースに対象要求・前提条件・検証方法・測定量・合否閾値があり、「正常」等の判定不能な基準0件である
+    referenceConventions:
+      - TestCase
+      - Requirement
+  - no: 4
+    title: verify 関係の接続
+    instruction: |
+      TestCase から Requirement へ verify 関係を張る。
+      1 つのテストが複数要求を検証する場合は、その全てに接続する。
+    tools:
+      - create_relationship
+      - create_multi_elements
+    done_when: 作成した全 TestCase から1件以上の Requirement へ verify があり、対象の全検証可能要求に1件以上の TestCase が接続され、孤立 TestCase 0件である
+  - no: 5
+    title: カバレッジ確認と検証
+    instruction: |
+      未検証のまま残る要求がないかを再確認し、
+      残るものは理由とともに記録する。
+      その後 validate_model で検証する。
+    tools:
+      - graph_query
+      - create_free_matrix
+      - validate_model
+    done_when: 要求総数・verify済み件数・カバレッジ率と例外要求のID・理由を報告でき、validate_model が error 0件または残る各違反を記録した
+strict: true
+allow_skip: false
+max_steps_per_stage: 12

@@ -1,0 +1,52 @@
+id: ""
+name: 設計レビュー支援UIの作成
+slash_command: ui-review
+description: チェックリスト・指摘記録・対象図の表示・レビュー記録の出力を備えたカスタムUIを作る
+use_when: 設計レビューのチェックリスト運用や指摘の記録、レビュー記録の出力をカスタムUIで行う場合
+steps:
+  - no: 1
+    title: 要件のすり合わせ
+    instruction: |
+      対象UIをlist_apps/select_appで特定し、新規はcreate_appで作る。
+      レビュー対象(図・要素スコープ)、チェック項目、指摘の属性(重大度・状態・担当)、記録の出力形式を決める。
+      不足はask_userで選択肢 + 既定値を示して確認する。
+    tools: [list_apps, select_app, create_app, ask_user]
+    done_when: 対象スコープ・チェック項目一覧・指摘の属性・出力形式が記録されている
+  - no: 2
+    title: データの特定
+    instruction: |
+      search_project(kind="views")で対象図のmeaningと範囲を確認し、search_project(kind="model")で対象要素を確認する。
+      チェック項目がモデルから自動判定できるもの(説明の欠落、関係の欠落)と人の判断が必要なものを分ける。
+      read_sdk_recipe(topic="report")とread_sdk_recipe(topic="form-bulk-edit")で書き方を確認する。
+    tools: [search_project, read_sdk_recipe, read_file]
+    done_when: 自動判定項目と手動項目の分類、対象図・要素の取得方法が記録されている
+  - no: 3
+    title: 骨格の実装
+    instruction: |
+      ResizableSplitPaneで左にチェックリスト/指摘一覧、右に対象図(ModelView fit="content")を置く。
+      指摘はuseStorageStateで保存する(安定したキー)。参照はResourceChip。
+    tools: [create_app_file, multi_replace_string_in_file]
+    done_when: チェックリスト・指摘一覧・図表示の各コンポーネントファイルの一覧が記録されている
+  - no: 4
+    title: 操作の実装
+    instruction: |
+      指摘の追加・状態変更・削除(useUI().confirmで確認)、指摘対象要素へのrevealElement、レビュー記録のReportDocument出力を実装する。
+      モデルを書き換える場合だけmodel.writeを使い、変更前に確認ダイアログを出す。
+    tools: [multi_replace_string_in_file, replace_string_in_file]
+    done_when: 指摘の追加・変更・削除・遷移・出力の各操作がSDK APIで実装されている
+  - no: 5
+    title: 権限の確定
+    instruction: |
+      storage / model.read / files / ui を確認し、既定外(model.write等)はrequest_permissionsで承認を得る。
+    tools: [request_permissions, validate_sdk_usage]
+    done_when: 必要権限の一覧と承認結果が記録され、権限不足(SDK004)が0件
+  - no: 6
+    title: 検証と引き渡し
+    instruction: |
+      validate_app → validate_sdk_usage → test_app_in_sandbox → preview_app(action="inspect")で0件になるまで直す。
+      レビュー記録を出力するならpreview_app(action="export")でproblemsが0件であることを確認する。未確認は未検証と明記する。
+    tools: [diff_app, validate_app, validate_sdk_usage, test_app_in_sandbox, preview_app]
+    done_when: 検証エラー0件・inspect/exportの指摘0件が記録され、未検証事項が明示されている
+strict: false
+allow_skip: true
+max_steps_per_stage: 12

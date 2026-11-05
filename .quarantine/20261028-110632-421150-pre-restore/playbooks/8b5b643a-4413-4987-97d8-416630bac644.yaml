@@ -1,0 +1,59 @@
+id: ""
+name: FTA
+slash_command: fta
+description: |
+  望ましくないトップ事象からゲート (AND / OR / k-of-n) で原因を展開し、基本事象の確率から
+  最小カットセットとトップ確率を求めて対策を立てる手順。結果は分析レイヤーの FTA に残す。
+use_when: |
+  ユーザーが「FTA して」「故障の木解析」「トップ事象の原因を展開して」等を依頼したとき。
+steps:
+  - no: 1
+    title: トップ事象の定義
+    instruction: |
+      文脈の「対象の分析」があればそれを使う。無ければ create_analysis(method=fta) で作る。
+      describe_analysis_method(fta) を確認する。top_event の title・条件・目標確率 (根拠がある場合のみ) を記入し、
+      対象要素を elementIds に入れる。
+    tools: [list_analyses, describe_analysis_method, create_analysis, read_analysis, edit_analysis_records]
+    done_when: top_event が存在し、対象要素の ID が elementIds に記録されている
+  - no: 2
+    title: ゲート展開
+    instruction: |
+      モデルの構造・接続 (get_related_elements / graph_query) を根拠に、トップ事象を gate で展開する。
+      冗長構成は AND、単一経路は OR、多数決は K_OF_N (k を指定)。仮 ID tmp: で一括作成する。
+    tools: [get_related_elements, graph_query, edit_analysis_records]
+    done_when: 各 gate に子事象が 1 件以上接続されている
+  - no: 3
+    title: 基本事象と確率
+    instruction: |
+      末端を basic_event (または undeveloped_event) とし、原因要素を elementIds に入れる。
+      probability または failureRate + missionTime は根拠がある場合のみ記入し、無ければ空欄のまま要確認とする。
+    tools: [read, get_linked_content, edit_analysis_records]
+    done_when: 全ての末端が basic_event / undeveloped_event として存在し、確率の有無が記録されている
+  - no: 4
+    title: 整合性検査
+    instruction: |
+      validate_analysis で循環・子の無いゲート・確率の欠落を確認し、修正する。
+    tools: [validate_analysis, edit_analysis_records]
+    done_when: validate_analysis の error が 0件である
+  - no: 5
+    title: カットセット / 重要度
+    instruction: |
+      read_analysis(kinds=[top_event, basic_event]) で computed のトップ確率・最小カットセット・単一点故障・目標達成を確認する。
+    tools: [read_analysis]
+    done_when: 最小カットセットの件数と単一点故障の一覧が確認されている
+  - no: 6
+    title: 対策と要求化
+    instruction: |
+      単一点故障・目標未達の要因について対策を検討し、要求化が必要なものは create_requirement で作って
+      top_event の link op (derived_requirement) でトレースする。
+    tools: [create_requirement, create_relationship, edit_analysis_records]
+    done_when: 単一点故障の各事象について対策または要確認の理由が記録されている
+  - no: 7
+    title: 報告
+    instruction: |
+      トップ確率と目標の比較、最小カットセット数、単一点故障、空欄の確率、要求化した項目を報告する。
+    tools: [validate_analysis]
+    done_when: トップ確率と単一点故障の件数が報告に含まれている
+strict: true
+allow_skip: false
+max_steps_per_stage: 12

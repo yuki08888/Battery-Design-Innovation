@@ -1,0 +1,51 @@
+id: ""
+name: スクリプトの作成と改善
+slash_command: script
+description: イベント / 手動で動く Python スクリプト (main(app, run)) を作り、静的検査とサンドボックスで動作を確かめてから起動条件を設定する
+use_when: スクリプトの新規作成・修正・フックの設定を依頼された場合。小さな修正では必要な段階だけ実施する
+steps:
+  - no: 1
+    title: 対象と起動条件の確定
+    instruction: |
+      スクリプトドメイン(script)で実行する。横断エージェントならbuiltin:scriptへ委任する。
+      既存の修正ならlist_scripts/select_script/read_scriptで対象を開き、新規ならcreate_scriptで作る(名前は処理内容がわかるもの)。
+      何をきっかけに動くか(手動 / element.before_create などのイベント / AI のツール / ワークフローのステップ)を決める。
+      before_* は操作の取り消し(run.veto)と内容の書き換え(run.patch)だけを行い書込ツールを呼ばない。書込は after_* で行う。
+      対象の要素種別・ステレオタイプ・操作者などの絞り込み、入力(meta.inputs)、出力を決める。曖昧な点は推測せずask_userで確認する(選択肢 + 既定値)。
+    tools: [list_scripts, select_script, read_script, create_script, ask_user]
+    done_when: 対象スクリプト・起動イベントと絞り込み・入出力・必要な書込の有無が記録されている
+  - no: 2
+    title: 書き方とモデルの実態の確認
+    instruction: |
+      モデルを読む / 集計するスクリプトなら、書く前にsurvey_model_dataで本物のモデルを調べる(keywordsにユーザーの言葉と言い換え)。
+      実在する名前・値の場所(値プロパティ / タグ値 / シートの列)・単位・数値以外と未入力の件数・数値の合計(検証の期待値)を記録する。
+      推測の名前で書かない。候補が複数あり決められないときだけask_userで確認する。
+      モデルは app.model.query_sheets_sql でモデル仮想表を SQL 集計して読む(要素ごとのreadループにしない)。使うSQLはquery_model_sqlで試す。
+      使うツールのシグネチャはread_script_api(domain/group/tool)で確かめる。推測で引数を書かない。
+      フックのペイロード型はread_script_api(event=...)で読む。run の属性はread_script_api(topic="run")。
+      近い処理のお手本をread_script_recipe(topic)で読む(topic省略で一覧。集計は model-aggregate)。
+      標準以外のライブラリが要るならlist_script_packagesで既に使えるか確かめる。
+    tools: [survey_model_data, query_model_sql, read_script_api, read_script_recipe, list_script_packages, ask_user]
+    done_when: 呼ぶツールとその引数・ペイロードの型・参考にしたお手本、モデルを読むなら実在する名前・単位・期待値と試したSQLが記録されている
+  - no: 3
+    title: 実装
+    instruction: |
+      入口は def main(app: App, run: Run[<Event>Payload]): とし、本体の機能はapp.<ドメイン>.<ツール>で呼ぶ(再実装しない)。
+      ID は実 ID を使い、書込ツールには reasoning を渡す。失敗はToolErrorになる(必要ならraise_on_error=Falseで受ける)。
+      長いループでは run.cancelled を確かめ、run.progress で進捗を出す。
+      関連箇所はmulti_replace_string_in_scriptでまとめて変更し、小さな修正で全体を書き直さない。
+      説明・入力・公開設定はupdate_script_metaで更新する(権限はここでは変えられない)。
+      権限(ドメイン・書込)やライブラリが足りなければrequest_script_permissions/request_script_packagesで理由を添えてユーザーに承認を依頼する。
+    tools: [replace_string_in_script, multi_replace_string_in_script, update_script_meta, request_script_permissions, request_script_packages]
+    done_when: 必要な処理が実装され、必要な権限・ライブラリの承認結果が記録されている
+  - no: 4
+    title: 検証と起動条件の設定
+    instruction: |
+      validate_scriptでERROR/WARNINGが無くなるまで直す。
+      test_script_in_sandboxで一時ダミーモデル上で実行し(フックならそのイベントのペイロードで)、veto/patch/ログ/書込が期待どおりか確かめる。
+      モデルを集計するスクリプトはdataSource="project"(本物のモデルの使い捨て複製)でも実行し、結果を手順 2 の期待値と突き合わせる。合わなければ原因(名前 / 単位 / 数値以外)を直す。
+      起動イベントがあるならbind_script_hookでイベントと絞り込みを設定する。
+      ユーザーが本物のプロジェクトでの実行を望んだときだけrun_scriptを使う(書込のある / 未信頼のスクリプトは承認が要る)。
+      diff_scriptで変更点を確かめ、作ったもの・起動条件・信頼(エディタでの確認)が必要なこと・未検証事項を簡潔に報告する。
+    tools: [validate_script, test_script_in_sandbox, bind_script_hook, run_script, diff_script]
+    done_when: 検査 (エラー 0件) とサンドボックスの結果 (集計なら期待値との一致)、設定した起動条件、残る確認事項が記録されている

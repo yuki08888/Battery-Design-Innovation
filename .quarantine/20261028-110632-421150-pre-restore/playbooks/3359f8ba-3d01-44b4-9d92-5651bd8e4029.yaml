@@ -1,0 +1,52 @@
+id: ""
+name: パラメータ・予算管理UIの作成
+slash_command: ui-param
+description: 質量・電力・コストなどの積み上げ、余裕度、超過警告を表示するカスタムUIを作る
+use_when: 構成要素の数値属性を積み上げて予算・余裕度を管理するUIを作る場合
+steps:
+  - no: 1
+    title: 要件のすり合わせ
+    instruction: |
+      対象UIをlist_apps/select_appで特定し、新規はcreate_appで作る。
+      積み上げる量(質量/電力/コスト等)と単位、構成の辿り方(composition/contain)、予算値と余裕度の定義、警告のしきい値を決める。
+      不足はask_userで選択肢 + 既定値を示して確認する。
+    tools: [list_apps, select_app, create_app, ask_user]
+    done_when: 対象の量と単位・構成の辿り方・予算と警告しきい値が記録されている
+  - no: 2
+    title: データの特定
+    instruction: |
+      search_project(kind="model")で構成ブロックと数値プロパティ名・単位を確認する。プロパティ名を推測しない。
+      値が無い要素は0ではなく「未設定」として扱い、合計の信頼度を表示する。
+      read_sdk_recipe(topic="tree-detail")とread_sdk_recipe(topic="chart")で書き方を確認する。
+    tools: [search_project, read_sdk_recipe, read_file]
+    done_when: 構成の取得方法と数値プロパティ名・単位が記録され、存在するプロパティだけを使っている
+  - no: 3
+    title: 骨格の実装
+    instruction: |
+      構成ツリー(各行に自値と積み上げ値)と、予算に対する積み上げのグラフ(recharts)を置く。計算は純粋関数に分ける。
+      超過はdesignTokens.semanticColors.status.errorで示し、未設定の件数を併記する。
+    tools: [create_app_file, multi_replace_string_in_file]
+    done_when: 構成ツリー・グラフの各コンポーネントファイルと計算関数の一覧が記録されている
+  - no: 4
+    title: 操作の実装
+    instruction: |
+      行から要素へrevealElement、表のexportTable出力を実装する。値の編集を許す場合だけmodel.writeを使い、useUI().confirmで確認してから更新する。
+      モデル変更には宣言的フックが自動追従する。独自集計はuseLiveQueryで追従させる。
+    tools: [multi_replace_string_in_file, replace_string_in_file]
+    done_when: 遷移・出力(・編集)の各操作とライブ更新の方法が記録されている
+  - no: 5
+    title: 権限の確定
+    instruction: |
+      model.read / files / ui(編集するならmodel.write)を確認し、既定外はrequest_permissionsで承認を得る。
+    tools: [request_permissions, validate_sdk_usage]
+    done_when: 必要権限の一覧と承認結果が記録され、権限不足(SDK004)が0件
+  - no: 6
+    title: 検証と引き渡し
+    instruction: |
+      validate_app → validate_sdk_usage → test_app_in_sandbox → preview_app(action="inspect")で0件になるまで直す。
+      積み上げ値を1件以上手計算と照合し、未確認は未検証と明記する。
+    tools: [diff_app, validate_app, validate_sdk_usage, test_app_in_sandbox, preview_app]
+    done_when: 検証エラー0件・inspectの指摘0件・照合結果が記録され、未検証事項が明示されている
+strict: false
+allow_skip: true
+max_steps_per_stage: 12

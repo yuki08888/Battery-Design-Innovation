@@ -1,0 +1,54 @@
+id: ""
+name: 要求トレーサビリティ報告
+slash_command: report-trace
+description: |
+  要求の充足 (satisfy)・検証 (verify)・派生 (deriveReqt) のカバレッジと、未対応の要求を報告書にまとめる手順。
+  件数・一覧・表はすべて問い合わせにして、モデルの更新に追従させる。
+use_when: |
+  ユーザーが「トレーサビリティの報告書」「要求のカバレッジをまとめて」「未充足の要求一覧」等を依頼したとき。
+steps:
+  - no: 1
+    title: 対象の要求範囲
+    instruction: |
+      対象の要求パッケージ (起点 ID) を search_item / read_package_contents で決める。
+      要求の数と、満足・検証に使われている関係の種類と向きを get_related_elements で 2〜3 件見て確かめる。
+    tools: [search_item, read_package_contents, get_related_elements, list_reports]
+    done_when: 起点のパッケージ ID と、使う関係の種類・向きが決まっている
+  - no: 2
+    title: カバレッジの問い合わせ
+    instruction: |
+      要求全体 (className equals Requirement)、未充足 (__rel__:satisfy incoming relCountLte 0)、
+      未検証 (__rel__:verify incoming relCountLte 0) の binding を作り、preview_report_binding で件数と中身を確かめる。
+      件数が想定と違えば向き (relDirection) を見直す。
+    tools: [preview_report_binding, graph_query, get_related_elements]
+    done_when: 要求全体・未充足・未検証の件数を preview_report_binding で検証した
+  - no: 3
+    title: 構成の作成
+    instruction: |
+      get_report_design_guide (data / layouts) を読み、create_report (A4) で作る。構成の基本:
+      表紙 → 概要 (目的・範囲・カバレッジの数字) → カバレッジ (count 3 個 + chart) → 未充足の要求 (table) →
+      未検証の要求 (table) → 要求と設計要素の対応表 (table、列に関係先) → 所見と対応方針。
+    tools: [get_report_design_guide, create_report, apply_report_ops]
+    done_when: 構成の全ページが作られ、各ページに名前と説明が存在する
+  - no: 4
+    title: 部品の配置
+    instruction: |
+      count は thresholds {warn, danger} で未対応の件数を色分けする。table の columns には requirementId / name / text と
+      関係先の列を置き、行が多ければ continue_on_next_page。所見の text の要素名はモデル参照で書く。
+    tools: [apply_report_ops, preview_report_binding, read]
+    done_when: 各ページに内容の部品が存在し、件数と表がすべて問い合わせになっている
+  - no: 5
+    title: 検証と確認
+    instruction: |
+      validate_report のエラーを 0 にし、review_report_design の講評を直す。表のページは render_report_page で見る。
+    tools: [validate_report, review_report_design, render_report_page, apply_report_ops]
+    done_when: validate_report のエラーが0件
+  - no: 6
+    title: 報告
+    instruction: |
+      要求の総数、充足率・検証率、未対応の要求の件数と主な ID、使った関係の向きを報告する。
+    tools: [validate_report]
+    done_when: 要求の総数と未充足・未検証の件数が報告に含まれている
+strict: true
+allow_skip: false
+max_steps_per_stage: 12

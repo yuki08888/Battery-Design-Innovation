@@ -1,0 +1,58 @@
+id: ""
+name: レポート作成
+slash_command: report
+description: |
+  モデルから報告書・説明スライドを作る手順。目的と読み手から章立てを決め、本文はモデル参照で書き、
+  一覧・表・件数は問い合わせを確かめてから置く。検証エラー 0 と描画確認で仕上げる。
+use_when: |
+  ユーザーが「報告書を作って」「説明スライドを作って」「モデルからレポートを生成して」等を依頼したとき。
+steps:
+  - no: 1
+    title: 目的と対象の把握
+    instruction: |
+      目的 (報告 / 説明 / 審査)、読み手、対象範囲 (パッケージ・要素) を依頼から確かめる。
+      文脈に「対象のレポート」が無ければ list_reports で既存を確認し、search_item / read_package_contents で対象を読む。
+    tools: [list_reports, read_report, search_item, read_package_contents, read]
+    done_when: 目的・読み手・対象範囲 (起点の要素 ID) が決まっている
+  - no: 2
+    title: 章立てとページ構成
+    instruction: |
+      章ごとに 1〜数ページを割り当てる (文書は A4、説明は slide_16_9)。用途が DR / トレース / 進捗 / I/F / 安全 / 変更なら
+      get_report_design_guide (usecases) の専用手順書を案内する。layouts と typography を読んでページの型と文字サイズを決める。
+      create_report でレポートを作り、続けて apply_report_ops で各ページの name / description と見出しを置く。
+      3 ページ以上ならフッターにページ番号、日付・版数は set_variables で変数にする。
+    tools: [get_report_design_guide, create_report, apply_report_ops]
+    done_when: 章ごとのページが作られ、各ページに名前と説明がある
+  - no: 3
+    title: 問い合わせの確認
+    instruction: |
+      一覧・表・件数・グラフに使う binding と {{ref:…|list|…}} を preview_report_binding で確かめる。
+      0 件・意図しない要素が出る問い合わせは関係の種類 / 向き / nodeType を直す。
+    tools: [preview_report_binding, get_related_elements, graph_query]
+    done_when: 使う問い合わせ全ての件数が 1 以上で、意図した要素を返すことを preview_report_binding で検証した
+  - no: 4
+    title: 部品の配置と本文
+    instruction: |
+      apply_report_ops で部品を置く。text / heading はモデル参照 ({{ref:…}}) で書き、値をベタ書きしない。
+      部品には name と description を付ける。座標は y 省略か arrange で決める。
+      文字の書式は props、枠は style。フォント・色は仕様の値で部品ごとに揃える (テーマは図形の既定にしか効かない)。
+    tools: [apply_report_ops, read, get_report_design_guide]
+    done_when: 各ページに内容の部品があり、本文の要素名・値がモデル参照になっている
+  - no: 5
+    title: 検証と見た目の確認
+    instruction: |
+      validate_report でエラーが 0 になるまで apply_report_ops で直す (あふれは高さ / shrink / ページ分割)。
+      review_report_design の warning (見出しなし・小さい文字・書式の不揃い) を直す。
+      主要なページは render_report_page で画像を確認し、文字の切れ・重なりを直す。
+    tools: [validate_report, review_report_design, render_report_page, apply_report_ops]
+    done_when: validate_report のエラーが0件
+  - no: 6
+    title: 報告
+    instruction: |
+      レポート名、ページ構成、残った警告と理由、モデルに不足していた情報を報告する。
+      描画確認できなかった場合は「見た目は未確認」と明記する。
+    tools: [validate_report]
+    done_when: レポート ID・ページ構成・残った警告の件数が報告に含まれている
+strict: true
+allow_skip: false
+max_steps_per_stage: 12

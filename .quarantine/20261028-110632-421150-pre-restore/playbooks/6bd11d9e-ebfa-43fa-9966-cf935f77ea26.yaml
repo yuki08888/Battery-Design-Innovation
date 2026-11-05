@@ -1,0 +1,52 @@
+id: ""
+name: プレゼン・プロモーション素材
+slash_command: media-promo
+description: 提案・展示・社内発表向けに、システムの価値が伝わるキービジュアルと短い映像をシリーズとして統一感を持って作る
+use_when: プレゼン資料の表紙・章扉、展示会や社内発表のキービジュアル、プロモーション映像を作る場合。報告書用の正確な図が必要なら報告書用の手順書を使う
+steps:
+  - no: 1
+    title: 価値と見せ場を決める
+    instruction: |
+      gather_media_context(elementIds=[...], contextScope="project") で、題材とシステム全体・アクター・ユースケースを集める。
+      「誰が・どんな場面で・何がうれしいか」を 1 文の価値として決める (ユースケースとアクターが手掛かり)。
+      見せ場 (主役の要素と、価値が伝わる利用場面) を決め、aspect は usecase か overview を基本にする。
+      project.visualStyle があれば既存素材の画風に揃える。シリーズの続きなら list_generated_media で前作を確かめる。
+    tools: [gather_media_context, list_generated_media, search_item]
+    done_when: 価値の 1 文・主役の要素の短縮ID と利用場面・aspect、続きなら前作の assetId が記録されている
+  - no: 2
+    title: 実物らしさの根拠を揃える
+    instruction: |
+      check_media_traceability(elementIds=[主役の要素]) で使えるファイルを確かめる。
+      capture_media_reference で主役の外観を撮る。3D はそのままの外観で、基準視点の全体を先頭にし、
+      見栄えのよい角度 (斜め上・やや低い煽りなど) を 1〜2 枚加える。
+      画像の部位は framing 既定 (全体 + 部位の拡大) で、全体の形が参照から抜けないようにする。
+    tools: [check_media_traceability, capture_media_reference]
+    done_when: 主役の外観の captureId の一覧 (基準視点の全体が先頭) が記録されている
+  - no: 3
+    title: キービジュアルを作る
+    instruction: |
+      generate_element_image を purpose="presentation" (資料用) または "promotion" (展示・宣伝用) で呼ぶ。
+      style は cinematic / photo / illustration から相手に合わせて選ぶ。
+      prompt (英語) は価値の 1 文を場面として描き、主役は参照の外観どおり、余白を残した構図にする。
+      文脈に無い仕様値・ロゴ・実在の商標は描かない。
+    tools: [generate_element_image]
+    done_when: キービジュアルの生成が success=true を返し、references に主役の外観キャプチャが記録されている
+  - no: 4
+    title: 映像化とシリーズの統一
+    instruction: |
+      映像が求められていれば generate_element_video を 1 本だけ呼ぶ。
+      referenceAssetIds の先頭は手順 3 のキービジュアル (開始フレームになる)、consistentWithAssetId もキービジュアルにする。
+      prompt (英語) は利用場面の動き (取り出す → 動く → 価値が生まれる) を 4〜8 秒に収まる 1 つの流れで書く。
+      追加の静止画 (章扉など) も consistentWithAssetId にキービジュアルを渡して画風・配色を揃える。
+      映像が不要なら静止画のシリーズだけでよい。
+    tools: [generate_element_video, generate_element_image]
+    done_when: 追加の生成物がすべて success=true を返し、各生成物の consistentWith がキービジュアルの assetId に一致している (映像不要なら不要と記録している)
+  - no: 5
+    title: 素材一式の確認と報告
+    instruction: |
+      list_generated_media で今回作った素材を一覧し、trace_asset_links で生成元要素へ辿れることを確かめる。
+      依頼と合わない素材は update_generated_media(regenerate=true, revisionInstruction=...) で直す。
+      報告では、価値の 1 文・素材ごとの名前と用途 (表紙 / 章扉 / 映像)・主役の要素・
+      資料に添えるキャッチコピー案 (日本語) を述べる。
+    tools: [list_generated_media, trace_asset_links, update_generated_media]
+    done_when: 今回作った素材の assetId 一覧と各用途、キャッチコピー案が報告に含まれている

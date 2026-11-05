@@ -1,0 +1,46 @@
+id: ""
+name: 提出書類作成
+slash_command: report-submission
+description: |
+  機関への提出書類を、指定の様式 (項目・順序・用紙) に沿ってモデルから作る手順。
+  様式の項目ごとに根拠のモデル要素を対応づけ、根拠の無い項目は空欄にせず「要確認」として残す。
+use_when: |
+  ユーザーが「提出書類を作って」「申請様式に沿って」「認証機関向けの資料」等を依頼したとき。
+steps:
+  - no: 1
+    title: 様式の把握
+    instruction: |
+      依頼・添付ドキュメントから様式の項目・順序・用紙サイズ・ページ番号の要否を整理する。
+      不明な点は推測せず、報告の「要確認」に回す。
+    tools: [search_item, read, get_linked_content, list_reports]
+    done_when: 様式の項目一覧と用紙設定が決まっている
+  - no: 2
+    title: 項目と根拠の対応
+    instruction: |
+      各項目に根拠のモデル要素・プロパティを search_item / read / get_related_elements で探し、
+      一覧・件数は preview_report_binding で確かめる。根拠が無い項目は控えておく。
+    tools: [search_item, read, get_related_elements, graph_query, preview_report_binding]
+    done_when: 各項目に根拠の要素 ID か「根拠なし」が記録されている
+  - no: 3
+    title: 書類の作成
+    instruction: |
+      create_report (様式の用紙) でレポートを作り、ヘッダー / フッター (master:header / master:footer) に書類名とページ番号を置く。
+      項目の順に apply_report_ops で部品を置き、値はモデル参照で書く。根拠の無い項目は「要確認」と明記した text を置く。
+    tools: [create_report, apply_report_ops, read_report]
+    done_when: 様式の全項目が順に配置されている
+  - no: 4
+    title: 検証と確定
+    instruction: |
+      validate_report でエラー 0 にする。render_report_page で各ページを確認する。
+      ユーザーが値の確定を依頼した場合だけ freeze で提出時点の値に固定する。
+    tools: [validate_report, render_report_page, apply_report_ops]
+    done_when: validate_report のエラーが0件
+  - no: 5
+    title: 報告
+    instruction: |
+      書類名、項目ごとの根拠の有無、「要確認」の項目、固定 (freeze) の有無を報告する。
+    tools: [validate_report]
+    done_when: 要確認の項目の一覧と固定の有無が報告に含まれている
+strict: true
+allow_skip: false
+max_steps_per_stage: 12

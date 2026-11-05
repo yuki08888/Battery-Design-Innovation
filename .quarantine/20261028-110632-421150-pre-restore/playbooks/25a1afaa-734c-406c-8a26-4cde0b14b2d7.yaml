@@ -1,0 +1,43 @@
+id: ""
+name: 報告書用の正確な図
+slash_command: media-report
+description: 設計報告書・技術資料に載せる、誇張の無い・視点の揃った図を、実物 (3D / 写真) の外観と原文の記述を根拠に作る
+use_when: 報告書・設計書・技術資料・審査資料に載せる図を作る場合、または同じ報告書の図を複数枚揃えて作る場合。印象重視のプレゼン素材ならプレゼン・プロモーション用の手順書を使う
+steps:
+  - no: 1
+    title: 図の役割と記載根拠を決める
+    instruction: |
+      報告書の中でこの図が示すこと (構成 / 状態 / 条件) を 1 文で決め、aspect を選ぶ。
+      gather_media_context(elementIds=[...], contextScope="standard") で属性・関係・ドキュメント原文を集める。
+      図に描いてよいのは core の属性と documents の原文にある事実だけとし、それ以外は描かない。
+      同じ報告書で既に図を作っていれば list_generated_media で前作を確かめ、consistentWithAssetId に使う。
+    tools: [gather_media_context, list_generated_media, get_linked_content]
+    done_when: 図が示す事実の一覧 (属性・原文の該当箇所) と aspect、続きなら前作の assetId が決まっている
+  - no: 2
+    title: 実物の外観を根拠にする
+    instruction: |
+      check_media_traceability(elementIds=[...]) で根拠のファイルを確かめ、stale な生成物や題材に届かないファイルは使わない。
+      capture_media_reference で撮る。3D はそのままの外観で、基準視点 (ファイルの既定視点 / 図に貼った視点) の
+      全体を必ず先頭にする。報告書の図は視点を揃えることが重要なので、角度を変えるのは
+      基準視点で対象部品が見えないときだけにし、そのときも基準視点の全体を参照から外さない。
+      画像の部位は framing 既定 (全体 + 部位の拡大) にする。
+    tools: [check_media_traceability, capture_media_reference, trace_asset_links]
+    done_when: 基準視点の全体を先頭にした captureId の一覧と、使わなかったファイルとその理由が記録されている
+  - no: 3
+    title: 誇張なしで生成する
+    instruction: |
+      generate_element_image を purpose="report"、style は diagram か isometric で呼ぶ。
+      prompt (英語) には手順 1 の事実だけを書き、誇張・演出 (劇的な照明・背景の街並み等) を入れない。
+      視点・縮尺は参照の基準視点に合わせるよう明記する。
+      referenceAssetIds は手順 2 の captureId、続きなら consistentWithAssetId に前作を渡す。
+    tools: [generate_element_image]
+    done_when: 生成が success=true を返し、references の先頭が基準視点の全体キャプチャである
+  - no: 4
+    title: トレースを確かめ、図の説明を添える
+    instruction: |
+      trace_asset_links(assetIds=[生成物]) で生成元要素と参照元ファイルの両方に辿れることを確かめ、
+      根拠にした要素が生成元に無ければ link_generated_media で補う。
+      報告では、生成物の名前・図が示す事実と根拠 (要素 / 原文 / 参照ファイル)・視点・
+      報告書の図キャプション案 (日本語 1 文) を述べる。描かなかった事実があればそれも述べる。
+    tools: [trace_asset_links, link_generated_media, update_generated_media]
+    done_when: 生成物から生成元要素と参照元ファイルへのトレースが確認され、図キャプション案と根拠の一覧が報告に含まれている

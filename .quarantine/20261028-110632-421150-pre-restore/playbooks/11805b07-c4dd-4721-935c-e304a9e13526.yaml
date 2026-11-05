@@ -1,0 +1,55 @@
+id: ""
+name: インタフェース仕様書作成
+slash_command: report-interface
+description: |
+  ブロック間のインタフェース (ポート・コネクタ・やり取りする項目) を A4 の仕様書にまとめる手順。
+  インタフェースごとに 1 節を設け、接続図 (IBD) と一覧表をモデル参照で置く。
+use_when: |
+  ユーザーが「インタフェース仕様書を作って」「ICD を作って」「I/F 一覧の資料」等を依頼したとき。
+steps:
+  - no: 1
+    title: 対象とインタフェースの洗い出し
+    instruction: |
+      対象のシステム (起点のブロック) を決め、read / get_related_elements で部品・ポート (Property の type port)・
+      コネクタ (connector)・やり取りする項目を洗い出す。list_views で接続を示す IBD を探す。
+    tools: [search_item, read, get_related_elements, graph_query, list_views, list_reports]
+    done_when: インタフェースの一覧 (両端の要素 ID) と、使う IBD のビュー ID が決まっている
+  - no: 2
+    title: 構成とデザイン
+    instruction: |
+      get_report_design_guide (layouts の document_cover / document_chapter / master) を読む。
+      create_report (A4) で作り、表紙 → 改訂履歴 → 適用範囲 → 全体の接続図 → インタフェース一覧 →
+      インタフェースごとの節 (目的・両端・項目・接続図) → 未定義の事項 の順にページを置く。
+      ヘッダーに書類名 (field title)、フッターにページ番号を置き、版数・発行日は変数にする。
+    tools: [get_report_design_guide, create_report, apply_report_ops]
+    done_when: 構成の全ページが作られ、マスターに書類名とページ番号が存在する
+  - no: 3
+    title: 問い合わせの確認
+    instruction: |
+      インタフェース一覧・項目一覧の binding (関係の種類と向き) を作り、preview_report_binding で件数と中身を確かめる。
+      {{ref:…|list|…}} で両端を書く場合も同じく確かめる。
+    tools: [preview_report_binding, get_related_elements]
+    done_when: 使う問い合わせ全ての件数と意図した要素であることを preview_report_binding で検証した
+  - no: 4
+    title: 節の作成
+    instruction: |
+      各節は heading (level 2) → 目的の text → 両端と項目の table (名前・型・方向・単位の列) → view (IBD, fit contain) →
+      キャプションの順に stack で積む。値はモデル参照で書く。定義の無い項目は「未定義」と明記する (空欄にしない)。
+    tools: [apply_report_ops, read, preview_report_binding]
+    done_when: インタフェース一覧の各インタフェースに節が存在する
+  - no: 5
+    title: 検証と確認
+    instruction: |
+      validate_report のエラーを 0 にし、review_report_design の講評 (見出し書式の不揃い・ページ番号) を直す。
+      接続図のページは render_report_page で見る。
+    tools: [validate_report, review_report_design, render_report_page, apply_report_ops]
+    done_when: validate_report のエラーが0件
+  - no: 6
+    title: 報告
+    instruction: |
+      書類名、インタフェースの件数、未定義の項目の一覧 (モデルに足りない情報) を報告する。
+    tools: [validate_report]
+    done_when: インタフェースの件数と未定義の項目の一覧が報告に含まれている
+strict: true
+allow_skip: false
+max_steps_per_stage: 12

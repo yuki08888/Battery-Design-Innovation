@@ -1,0 +1,73 @@
+{
+    "all_view_entities": [
+        {
+            "id": "d8c73197-d3f0-4aa3-a326-66056bd53c63",
+            "name": "絶縁カバー要求仕様",
+            "parent_id": "",
+            "icon_key": "DescriptionOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "f0d34f59-afc5-493e-b470-6ea9f849ea8e",
+            "name": "BBM要求仕様書_241209改訂",
+            "parent_id": "",
+            "icon_key": "DescriptionOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "1fcb0dc4-e491-44ef-ab82-2bc832fc467a",
+            "name": "電池パックASSY - 内部ブロック図",
+            "parent_id": "54530f3c-1f57-4d43-877e-3e62190dd63a",
+            "icon_key": "DashboardOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "bd10b46a-0c83-4db4-a4bf-31f54d077d5f",
+            "name": "熱拡散要求マトリクス",
+            "parent_id": "cfcb364e-7491-4244-9119-3813b56a5247",
+            "icon_key": "GridOnOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "d7dcf14d-65c1-429b-a864-573ebb75dc15",
+            "name": "BBM - パラメトリック図",
+            "parent_id": "af037cbb-68c0-4b26-9763-ae5884603e8e",
+            "icon_key": "FunctionsOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "9d775d4d-f6c1-4404-a4d0-8aade383bb33",
+            "name": "BBMバスバ図面（image-1.png）",
+            "parent_id": "",
+            "icon_key": "DescriptionOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "781fc0e1-ce93-405e-a73e-9b05ea0bf9d1",
+            "name": "BBM - 内部ブロック図",
+            "parent_id": "af037cbb-68c0-4b26-9763-ae5884603e8e",
+            "icon_key": "DashboardOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "9751a2b1-7e7d-4b1a-93bc-66f2d9e859fb",
+            "name": "ヘルプ・ドキュメント",
+            "parent_id": "root",
+            "icon_key": "MenuBookOutlined",
+            "icon_color": null
+        }
+    ],
+    "current_tab_ids": [
+        "bd10b46a-0c83-4db4-a4bf-31f54d077d5f",
+        "d7dcf14d-65c1-429b-a864-573ebb75dc15",
+        "9d775d4d-f6c1-4404-a4d0-8aade383bb33",
+        "f0d34f59-afc5-493e-b470-6ea9f849ea8e",
+        "9751a2b1-7e7d-4b1a-93bc-66f2d9e859fb",
+        "781fc0e1-ce93-405e-a73e-9b05ea0bf9d1"
+    ],
+    "current_view_id": "781fc0e1-ce93-405e-a73e-9b05ea0bf9d1",
+    "split_tab_ids": [],
+    "split_view_id": null,
+    "split_ratio": 50.0,
+    "active_view_group": "main"
+}

@@ -1,0 +1,49 @@
+id: ""
+name: データ入力・一括編集UIの作成
+slash_command: ui-form
+description: モデル要素の属性を入力検証つきで一括編集し、変更前に確認するカスタムUIを作る
+use_when: 多数の要素の属性をフォームや表で一括入力・修正するUIを作る場合
+steps:
+  - no: 1
+    title: 要件のすり合わせ
+    instruction: |
+      対象UIをlist_apps/select_appで特定し、新規はcreate_appで作る。
+      編集対象(要素種別とスコープ)、編集する属性と入力規則(必須・列挙・数値範囲)、保存の単位(行ごと/一括)を決める。
+      不足はask_userで選択肢 + 既定値を示して確認する。
+    tools: [list_apps, select_app, create_app, ask_user]
+    done_when: 編集対象・属性ごとの入力規則・保存単位が記録されている
+  - no: 2
+    title: データの特定
+    instruction: |
+      search_project(kind="model")で対象要素と属性名・列挙値を確認する。属性名を推測しない。
+      read_sdk_recipe(topic="form-bulk-edit")で書き方を確認する。
+    tools: [search_project, read_sdk_recipe, read_file]
+    done_when: 対象要素の取得方法と属性名・列挙値が記録され、存在する属性だけを使っている
+  - no: 3
+    title: 骨格の実装
+    instruction: |
+      編集表(変更セルを強調)と、変更件数・検証エラー件数を示すツールバーを置く。下書きは画面内の状態で持ち、保存まではモデルを変更しない。
+    tools: [create_app_file, multi_replace_string_in_file]
+    done_when: 編集表・ツールバーの各コンポーネントファイルの一覧が記録されている
+  - no: 4
+    title: 操作の実装
+    instruction: |
+      保存前にuseUI().confirmで変更件数を示して確認し、useModel().updateElementで更新する。失敗した行はエラーとして残し、成功分と区別する。
+      保存後の再表示は宣言的フックの自動追従に任せる。破棄は確認してから行う。
+    tools: [multi_replace_string_in_file, replace_string_in_file]
+    done_when: 入力検証・確認・保存・失敗行の表示・破棄の各操作がSDK APIで実装されている
+  - no: 5
+    title: 権限の確定
+    instruction: |
+      model.read / model.write / ui を確認する。model.writeは既定外なのでrequest_permissionsで理由を添えて承認を得る。
+    tools: [request_permissions, validate_sdk_usage]
+    done_when: 必要権限の一覧と承認結果が記録され、権限不足(SDK004)が0件
+  - no: 6
+    title: 検証と引き渡し
+    instruction: |
+      validate_app → validate_sdk_usage → test_app_in_sandbox(更新のCRUD往復を含む) → preview_app(action="inspect")で0件になるまで直す。未確認は未検証と明記する。
+    tools: [diff_app, validate_app, validate_sdk_usage, test_app_in_sandbox, preview_app]
+    done_when: 検証エラー0件・サンドボックスの更新往復成功・inspectの指摘0件が記録され、未検証事項が明示されている
+strict: false
+allow_skip: true
+max_steps_per_stage: 12

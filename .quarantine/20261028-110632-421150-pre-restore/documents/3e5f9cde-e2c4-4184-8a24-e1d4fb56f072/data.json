@@ -1,0 +1,92 @@
+{
+    "id": "3e5f9cde-e2c4-4184-8a24-e1d4fb56f072",
+    "title": "BBMバスバ図面（image-1.png）",
+    "pages": [
+        {
+            "id": "3880aa04-c561-4c1a-945a-3ab04f711272",
+            "title": "ページ 1",
+            "content": "<p>＜参考図＞</p>\n<p>4.5PL-0.8×3.5　4×4sq　端末圧着：4.8<br />\n電線：1.0×6.0×3.5　端末圧着：4.04</p>\n<p>オプトー入力端子</p>\n<p>接続端子（リレー接点）、A接点</p>\n<p>（注記）<br />\n1. 接続はA1050-H24とします。</p>",
+            "references": [],
+            "sourceImagePath": "30d42062-4271-4e21-9472-31c525909e0d.png",
+            "thumbnailPath": "thumb_30d42062-4271-4e21-9472-31c525909e0d.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        }
+    ],
+    "references": [],
+    "sourceFilePath": "C:\\Users\\1584550\\AppData\\Roaming\\system_factory\\app_data\\projects\\0c47063b-31ef-45f7-9ab8-67833c1008e7\\documents\\3e5f9cde-e2c4-4184-8a24-e1d4fb56f072\\orgs\\6d0335db-4da0-4aed-b843-ddf0191d69a1.pdf",
+    "createdAt": null,
+    "updatedAt": null,
+    "skeleton": null,
+    "headingRules": null,
+    "digest": {
+        "overview": {
+            "summary": "本資料は「BBMバスバ図面」と題された1ページの参考図で、端子の圧着寸法と端子の表示を示しています。参考図には「4.5PL-0.8×3.5 4×4sq」の端末圧着4.8、および「電線：1.0×6.0×3.5」の端末圧着4.04が記載されています。また、オプトー入力端子と、リレー接点のA接点である接続端子が示されています。注記では接続をA1050-H24とする旨が記されています。",
+            "documentKind": "other",
+            "purpose": "BBMバスバ図面の端子圧着寸法、端子表示、および接続に関する注記を示す。",
+            "scope": "参考図に記載された端末圧着寸法と端子種別、および接続材質・規格として示されたA1050-H24を扱う。",
+            "keyTopics": [
+                "端末圧着寸法",
+                "オプトー入力端子",
+                "リレー接点のA接点接続端子",
+                "接続に関する注記"
+            ],
+            "keyTerms": [
+                {
+                    "term": "A1050-H24",
+                    "definition": "注記で接続に用いるものとして指定されている材料・規格の表記。"
+                },
+                {
+                    "term": "オプトー入力端子",
+                    "definition": "参考図に表示された入力端子。"
+                }
+            ],
+            "targetSystem": "BBMバスバ"
+        },
+        "outline": [
+            {
+                "id": "12b18252-19a1-4a4e-b13b-9ae3a16dba50",
+                "title": "＜参考図＞",
+                "level": 1,
+                "summary": "参考図に、端子圧着寸法として「4.5PL-0.8×3.5 4×4sq」の端末圧着 4.8 と、「電線：1.0×6.0×3.5」の端末圧着 4.04 が記載されています。また、「オプトー入力端子」および「接続端子（リレー接点）、A接点」の表示があります。",
+                "keywords": [
+                    "端末圧着",
+                    "4.5PL-0.8×3.5",
+                    "4×4sq",
+                    "電線",
+                    "オプトー入力端子",
+                    "リレー接点",
+                    "A接点"
+                ],
+                "pageIds": [
+                    "3880aa04-c561-4c1a-945a-3ab04f711272"
+                ],
+                "children": []
+            },
+            {
+                "id": "6bab9c0f-f9a9-40bd-b4a3-5b7964b6fa07",
+                "title": "（注記）",
+                "level": 1,
+                "summary": "接続は A1050-H24 とする旨が記載されています。",
+                "keywords": [
+                    "接続",
+                    "A1050-H24"
+                ],
+                "pageIds": [
+                    "3880aa04-c561-4c1a-945a-3ab04f711272"
+                ],
+                "children": []
+            }
+        ],
+        "sourceHash": "8db8d802fbbca50552e4fd9e049f2db45f939be5",
+        "textHash": "61ba7504e53a94ccf8103b3972342f535af5a27d",
+        "generatedAt": "2026-10-26T09:19:15.417211",
+        "pageCount": 1,
+        "schemaVersion": 1,
+        "generator": "ai"
+    },
+    "coverage": null,
+    "modelBinding": null,
+    "description": null
+}

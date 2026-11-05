@@ -1,0 +1,58 @@
+id: ""
+name: レポートの体裁仕上げ
+slash_command: report-polish
+description: |
+  既存のレポートの見た目を整える手順。デザイン仕様に沿って文字サイズ・フォント・色・見出し書式・
+  左端の揃え・ページ番号・装飾を統一し、内容 (モデル参照・問い合わせ) は変えない。
+use_when: |
+  ユーザーが「見た目を整えて」「体裁を揃えて」「プレゼン向けに仕上げて」「デザインを良くして」等を依頼したとき。
+steps:
+  - no: 1
+    title: 現状と講評の把握
+    instruction: |
+      文脈の「対象のレポート」か list_reports で対象を決め、read_report (outline) で構成を読む。
+      review_report_design で見た目の講評 (RPD*) を、validate_report で検証エラーを取る。
+      講評の summary (使っているフォント・色・見出しサイズ) を控えておく。
+    tools: [list_reports, read_report, review_report_design, validate_report]
+    done_when: 講評の件数 (warning / info) と検証エラーの件数、summary のフォント・色の一覧が分かっている
+  - no: 2
+    title: デザインの方針を決める
+    instruction: |
+      get_report_design_guide (typography / color / style / layouts) を読み、用紙に合う文字サイズの段階、
+      フォント 1〜2 種、アクセント色 1 色 (+ 状態色) を決める。既存の色・フォントのうち多数派を基準にする。
+      推測で値を書かない (色・図形名・矢じりは必ず仕様の値を使う)。
+    tools: [get_report_design_guide, read_report]
+    done_when: 文字サイズの段階・フォント・アクセント色の方針が決まり、仕様の値と一致している
+  - no: 3
+    title: 書式の統一
+    instruction: |
+      apply_report_ops の update_component で、同じ役割の部品の props (font_size_pt / font_family / color / align)
+      と style (fill / border / radius_mm / padding_mm) を揃える。同じ階層の見出しは同じ書式にする。
+      スライドの本文は 12pt 以上。装飾 (shadow / glow / fill_gradient) は 1 ページ 2 つまで。
+      本文の文言・モデル参照・binding は変えない。
+    tools: [apply_report_ops, read_report]
+    done_when: review_report_design の RPD002 / RPD003 / RPD004 / RPD005 / RPD008 が0件
+  - no: 4
+    title: 配置とページ構成
+    instruction: |
+      左端のずれ (RPD006) は arrange か x を揃えて直す。見出しの無いスライド (RPD001) には結論を一文で書いた見出しを置く。
+      文字量過多 (RPD007) は要点に絞るかページを分ける (分けたら各ページに name / description)。
+    tools: [apply_report_ops, read_report, review_report_design]
+    done_when: review_report_design の RPD001 / RPD006 / RPD007 が0件か、残す理由が記録されている
+  - no: 5
+    title: マスターと変数
+    instruction: |
+      3 ページ以上ならフッターにページ番号 (field page) を、ヘッダーに書類名 (field title) を置く。表紙は hide_master。
+      本文にベタ書きの日付・版数 (RPD010) があれば set_variables で変数にし、field (variable) に置き換える。
+    tools: [apply_report_ops, get_report_design_guide]
+    done_when: review_report_design の RPD009 / RPD010 が0件
+  - no: 6
+    title: 確認と報告
+    instruction: |
+      validate_report のエラーが 0 件であること (書式変更であふれが出ていないこと) を確かめ、
+      主要なページを render_report_page で見る。統一した方針 (文字・フォント・色) と残った講評を報告する。
+    tools: [validate_report, review_report_design, render_report_page, apply_report_ops]
+    done_when: validate_report のエラーが0件で、統一した方針と残った講評の件数が報告に含まれている
+strict: true
+allow_skip: false
+max_steps_per_stage: 12
