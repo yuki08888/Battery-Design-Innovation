@@ -111,6 +111,13 @@
             "parent_id": "",
             "icon_key": "DescriptionOutlined",
             "icon_color": null
+        },
+        {
+            "id": "d18ed4b4-f231-434c-9003-ca7f7bfbf199",
+            "name": "要求一覧_CTR-IC-012以降_項目形式.pdf",
+            "parent_id": "",
+            "icon_key": "DescriptionOutlined",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [
@@ -122,11 +129,9 @@
         "bd10b46a-0c83-4db4-a4bf-31f54d077d5f",
         "1077a2f6-de39-4daa-81ba-ad4079586789",
         "c004f0eb-190f-4c55-9ea8-31612d2202c7",
-        "1fcb0dc4-e491-44ef-ab82-2bc832fc467a",
-        "5aa26d24-925f-4050-a60f-bb8579af9768",
-        "61e2ec4d-7346-4d9a-a5bf-f63aa00bcd7a"
+        "1fcb0dc4-e491-44ef-ab82-2bc832fc467a"
     ],
-    "current_view_id": "5aa26d24-925f-4050-a60f-bb8579af9768",
+    "current_view_id": "9ebbce52-406e-4fcb-a972-c91d7f8c08cb",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,

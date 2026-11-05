@@ -158,6 +158,72 @@
       "order": 22
     },
     {
+      "id": "2c274c74-ce06-4f45-b119-520956640915",
+      "itemType": "asset",
+      "name": "要求一覧_CTR-IC-012以降_項目形式.pdf",
+      "parentId": null,
+      "order": 23,
+      "description": "",
+      "assetKind": "document",
+      "sha1": "314c940f2d946eaab3e6a1f95bae68a7fab03d8b",
+      "ext": "pdf",
+      "mimeType": "application/pdf",
+      "width": 0,
+      "height": 0,
+      "byteSize": 114293,
+      "createdAt": "2026-11-04T12:01:43.663904",
+      "updatedAt": "2026-11-04T12:01:43.673596",
+      "aiStatus": "skipped",
+      "origin": {
+        "kind": "chat_attachment",
+        "fileName": "要求一覧_CTR-IC-012以降_項目形式.pdf"
+      }
+    },
+    {
+      "id": "06093a66-fbc3-4366-8c6a-68bb39e727c9",
+      "itemType": "asset",
+      "name": "要求一覧_CTR-IC-012以降.csv",
+      "parentId": null,
+      "order": 24,
+      "description": "",
+      "assetKind": "tabular",
+      "sha1": "4e1febe513a866254e6fef40cfdd937ef9f7be4e",
+      "ext": "csv",
+      "mimeType": "text/csv",
+      "width": 0,
+      "height": 0,
+      "byteSize": 16278,
+      "createdAt": "2026-11-04T15:45:50.231893",
+      "updatedAt": "2026-11-04T15:45:50.239268",
+      "aiStatus": "skipped",
+      "origin": {
+        "kind": "chat_attachment",
+        "fileName": "要求一覧_CTR-IC-012以降.csv"
+      }
+    },
+    {
+      "id": "6d073bc2-1106-4b31-8f91-cf283d6fafd0",
+      "itemType": "asset",
+      "name": "絶縁カバー要求_紐づけ一覧_v4.csv",
+      "parentId": null,
+      "order": 25,
+      "description": "",
+      "assetKind": "tabular",
+      "sha1": "d38875f579b171d636d17bf57ae8ba1b4518a4aa",
+      "ext": "csv",
+      "mimeType": "text/csv",
+      "width": 0,
+      "height": 0,
+      "byteSize": 8173,
+      "createdAt": "2026-11-05T10:58:48.244803",
+      "updatedAt": "2026-11-05T10:58:48.254870",
+      "aiStatus": "skipped",
+      "origin": {
+        "kind": "chat_attachment",
+        "fileName": "絶縁カバー要求_紐づけ一覧_v4.csv"
+      }
+    },
+    {
       "id": "42a875f7-4950-4730-be4d-7d6a9be34439",
       "itemType": "asset",
       "name": "耐熱絶縁カバー設計標準書 p.51",
@@ -489,6 +555,28 @@
         "documentId": "e1fc7374-ff95-4e8a-b26f-bb36f5ebaf32",
         "subdir": "orgs",
         "fileName": "07d8f2ff-504b-4e33-a39a-a6ba36c48913.pdf"
+      }
+    },
+    {
+      "id": "b5b5fd6c-7197-4d32-b50d-574015fb30b6",
+      "itemType": "asset",
+      "name": "要求一覧_CTR-IC-012以降.csv",
+      "parentId": "23503afc-6825-43e1-813b-02b1ef5b15a6",
+      "order": 1,
+      "description": "",
+      "assetKind": "tabular",
+      "sha1": "1126240178151395db3bf5fbc5b6d78043861718",
+      "ext": "csv",
+      "mimeType": "text/csv",
+      "width": 0,
+      "height": 0,
+      "byteSize": 13633,
+      "createdAt": "2026-11-04T13:41:39.833743",
+      "updatedAt": "2026-11-04T13:41:39.836391",
+      "aiStatus": "skipped",
+      "origin": {
+        "kind": "chat_attachment",
+        "fileName": "要求一覧_CTR-IC-012以降.csv"
       }
     },
     {
