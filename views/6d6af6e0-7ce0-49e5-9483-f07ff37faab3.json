@@ -1,0 +1,8 @@
+{
+    "id": "6d6af6e0-7ce0-49e5-9483-f07ff37faab3",
+    "name": "バスバー接合部4ノード熱伝達解析 時系列データ",
+    "class_name": "RelationalDbView",
+    "description": "",
+    "database_id": "6f218245-38a3-4c97-9da7-7a129c9fb139",
+    "db_type": "relational"
+}

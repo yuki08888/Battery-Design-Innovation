@@ -224,6 +224,111 @@
       }
     },
     {
+      "id": "03e437c2-3dfb-46b0-aff4-f2cdd800711c",
+      "itemType": "folder",
+      "name": "最大短絡電流時の溶断時間（45PLヒューズ）",
+      "parentId": null,
+      "order": 26
+    },
+    {
+      "id": "da9d1c4b-a858-4774-8eca-1ded60f7848b",
+      "itemType": "folder",
+      "name": "要求一覧_CTR-IC-012以降_項目形式.pdf",
+      "parentId": null,
+      "order": 27
+    },
+    {
+      "id": "53499d57-632b-47c8-a030-18f341968ffe",
+      "itemType": "asset",
+      "name": "最大短絡電流時の溶断時間（45PLヒューズ） (元ファイル)",
+      "parentId": "03e437c2-3dfb-46b0-aff4-f2cdd800711c",
+      "order": 0,
+      "description": "",
+      "assetKind": "document",
+      "sha1": null,
+      "ext": "pdf",
+      "mimeType": "application/pdf",
+      "width": 0,
+      "height": 0,
+      "byteSize": 48001,
+      "createdAt": "2026-11-05T21:32:39.087929",
+      "updatedAt": "2026-11-05T21:32:39.087929",
+      "aiStatus": "skipped",
+      "origin": {
+        "kind": "document_source",
+        "documentId": "d9628dfa-db62-47f7-942c-83c3c39c08c0",
+        "fileName": "cb6a65ed-2d84-429e-abda-410f6859aec1.pdf"
+      },
+      "sourceRef": {
+        "kind": "document",
+        "key": "document:d9628dfa-db62-47f7-942c-83c3c39c08c0:orgs:cb6a65ed-2d84-429e-abda-410f6859aec1.pdf",
+        "documentId": "d9628dfa-db62-47f7-942c-83c3c39c08c0",
+        "subdir": "orgs",
+        "fileName": "cb6a65ed-2d84-429e-abda-410f6859aec1.pdf"
+      }
+    },
+    {
+      "id": "44b9ee16-7a69-4141-bbcd-52baa85eb8db",
+      "itemType": "asset",
+      "name": "最大短絡電流時の溶断時間（45PLヒューズ） p.1",
+      "parentId": "03e437c2-3dfb-46b0-aff4-f2cdd800711c",
+      "order": 1,
+      "description": "",
+      "assetKind": "image",
+      "sha1": null,
+      "ext": "png",
+      "mimeType": "image/png",
+      "width": 0,
+      "height": 0,
+      "byteSize": 152786,
+      "createdAt": "2026-11-05T21:32:39.087985",
+      "updatedAt": "2026-11-05T21:32:39.087985",
+      "aiStatus": "skipped",
+      "origin": {
+        "kind": "pdf_page",
+        "documentId": "d9628dfa-db62-47f7-942c-83c3c39c08c0",
+        "fileName": "ca7726de-a359-494e-b85e-4f79db68b8e5.png",
+        "pageId": "15b468cb-afff-48c0-8b99-8ae1a282370a"
+      },
+      "sourceRef": {
+        "kind": "document",
+        "key": "document:d9628dfa-db62-47f7-942c-83c3c39c08c0:images:ca7726de-a359-494e-b85e-4f79db68b8e5.png",
+        "documentId": "d9628dfa-db62-47f7-942c-83c3c39c08c0",
+        "subdir": "images",
+        "fileName": "ca7726de-a359-494e-b85e-4f79db68b8e5.png"
+      }
+    },
+    {
+      "id": "4e19c52f-db93-4385-a752-aba94c102b87",
+      "itemType": "asset",
+      "name": "a76fd50d-9855-4fac-bde9-5a0be1e753d5.png",
+      "parentId": "03e437c2-3dfb-46b0-aff4-f2cdd800711c",
+      "order": 2,
+      "description": "",
+      "assetKind": "image",
+      "sha1": null,
+      "ext": "png",
+      "mimeType": "image/png",
+      "width": 0,
+      "height": 0,
+      "byteSize": 44842,
+      "createdAt": "2026-11-05T21:32:39.088034",
+      "updatedAt": "2026-11-05T21:32:39.088034",
+      "aiStatus": "skipped",
+      "origin": {
+        "kind": "document_image",
+        "documentId": "d9628dfa-db62-47f7-942c-83c3c39c08c0",
+        "fileName": "a76fd50d-9855-4fac-bde9-5a0be1e753d5.png"
+      },
+      "sourceRef": {
+        "kind": "document",
+        "key": "document:d9628dfa-db62-47f7-942c-83c3c39c08c0:images:a76fd50d-9855-4fac-bde9-5a0be1e753d5.png",
+        "documentId": "d9628dfa-db62-47f7-942c-83c3c39c08c0",
+        "subdir": "images",
+        "fileName": "a76fd50d-9855-4fac-bde9-5a0be1e753d5.png"
+      }
+    },
+    {
       "id": "42a875f7-4950-4730-be4d-7d6a9be34439",
       "itemType": "asset",
       "name": "耐熱絶縁カバー設計標準書 p.51",
@@ -17361,6 +17466,222 @@
         "documentId": "e1fc7374-ff95-4e8a-b26f-bb36f5ebaf32",
         "subdir": "images",
         "fileName": "edfd06ed-1ee9-4a33-ad82-b25dffa433d0.png"
+      }
+    },
+    {
+      "id": "257cf687-b645-4afb-9b68-458da640c538",
+      "itemType": "asset",
+      "name": "要求一覧_CTR-IC-012以降_項目形式.pdf (元ファイル)",
+      "parentId": "da9d1c4b-a858-4774-8eca-1ded60f7848b",
+      "order": 0,
+      "description": "",
+      "assetKind": "document",
+      "sha1": null,
+      "ext": "pdf",
+      "mimeType": "application/pdf",
+      "width": 0,
+      "height": 0,
+      "byteSize": 114293,
+      "createdAt": "2026-11-05T21:32:39.088103",
+      "updatedAt": "2026-11-05T21:32:39.088103",
+      "aiStatus": "skipped",
+      "origin": {
+        "kind": "document_source",
+        "documentId": "855d8c39-f2bd-4fb6-9218-949fb7042c08",
+        "fileName": "a3f516c8-86d7-4a10-b740-346c3a3a188f.pdf"
+      },
+      "sourceRef": {
+        "kind": "document",
+        "key": "document:855d8c39-f2bd-4fb6-9218-949fb7042c08:orgs:a3f516c8-86d7-4a10-b740-346c3a3a188f.pdf",
+        "documentId": "855d8c39-f2bd-4fb6-9218-949fb7042c08",
+        "subdir": "orgs",
+        "fileName": "a3f516c8-86d7-4a10-b740-346c3a3a188f.pdf"
+      }
+    },
+    {
+      "id": "d60d38c4-7a61-42f5-b0e1-a87b360df9d0",
+      "itemType": "asset",
+      "name": "要求一覧_CTR-IC-012以降_項目形式.pdf p.1",
+      "parentId": "da9d1c4b-a858-4774-8eca-1ded60f7848b",
+      "order": 1,
+      "description": "",
+      "assetKind": "image",
+      "sha1": null,
+      "ext": "png",
+      "mimeType": "image/png",
+      "width": 0,
+      "height": 0,
+      "byteSize": 683769,
+      "createdAt": "2026-11-05T21:32:39.088146",
+      "updatedAt": "2026-11-05T21:32:39.088146",
+      "aiStatus": "skipped",
+      "origin": {
+        "kind": "pdf_page",
+        "documentId": "855d8c39-f2bd-4fb6-9218-949fb7042c08",
+        "fileName": "3cb6e199-5211-48d0-964e-fde22f819404.png",
+        "pageId": "63756361-eb55-493b-b302-58dd3c8c7c25"
+      },
+      "sourceRef": {
+        "kind": "document",
+        "key": "document:855d8c39-f2bd-4fb6-9218-949fb7042c08:images:3cb6e199-5211-48d0-964e-fde22f819404.png",
+        "documentId": "855d8c39-f2bd-4fb6-9218-949fb7042c08",
+        "subdir": "images",
+        "fileName": "3cb6e199-5211-48d0-964e-fde22f819404.png"
+      }
+    },
+    {
+      "id": "9fe50ad3-58bf-46f0-98d0-6a8bd2fad24f",
+      "itemType": "asset",
+      "name": "要求一覧_CTR-IC-012以降_項目形式.pdf p.2",
+      "parentId": "da9d1c4b-a858-4774-8eca-1ded60f7848b",
+      "order": 2,
+      "description": "",
+      "assetKind": "image",
+      "sha1": null,
+      "ext": "png",
+      "mimeType": "image/png",
+      "width": 0,
+      "height": 0,
+      "byteSize": 560521,
+      "createdAt": "2026-11-05T21:32:39.088189",
+      "updatedAt": "2026-11-05T21:32:39.088189",
+      "aiStatus": "skipped",
+      "origin": {
+        "kind": "pdf_page",
+        "documentId": "855d8c39-f2bd-4fb6-9218-949fb7042c08",
+        "fileName": "5d17bbb7-0dc5-46be-9a39-e9f044689764.png",
+        "pageId": "4451cefb-cc29-4c45-a020-3c7e0a3ffaad"
+      },
+      "sourceRef": {
+        "kind": "document",
+        "key": "document:855d8c39-f2bd-4fb6-9218-949fb7042c08:images:5d17bbb7-0dc5-46be-9a39-e9f044689764.png",
+        "documentId": "855d8c39-f2bd-4fb6-9218-949fb7042c08",
+        "subdir": "images",
+        "fileName": "5d17bbb7-0dc5-46be-9a39-e9f044689764.png"
+      }
+    },
+    {
+      "id": "e54da66d-2a3b-4ad8-a8e1-cacbd9e94809",
+      "itemType": "asset",
+      "name": "要求一覧_CTR-IC-012以降_項目形式.pdf p.3",
+      "parentId": "da9d1c4b-a858-4774-8eca-1ded60f7848b",
+      "order": 3,
+      "description": "",
+      "assetKind": "image",
+      "sha1": null,
+      "ext": "png",
+      "mimeType": "image/png",
+      "width": 0,
+      "height": 0,
+      "byteSize": 584522,
+      "createdAt": "2026-11-05T21:32:39.088231",
+      "updatedAt": "2026-11-05T21:32:39.088231",
+      "aiStatus": "skipped",
+      "origin": {
+        "kind": "pdf_page",
+        "documentId": "855d8c39-f2bd-4fb6-9218-949fb7042c08",
+        "fileName": "9b40e5b8-1a39-4d4e-bfdf-a588f7298346.png",
+        "pageId": "6200ab97-e6da-449f-87f2-449a52d7206c"
+      },
+      "sourceRef": {
+        "kind": "document",
+        "key": "document:855d8c39-f2bd-4fb6-9218-949fb7042c08:images:9b40e5b8-1a39-4d4e-bfdf-a588f7298346.png",
+        "documentId": "855d8c39-f2bd-4fb6-9218-949fb7042c08",
+        "subdir": "images",
+        "fileName": "9b40e5b8-1a39-4d4e-bfdf-a588f7298346.png"
+      }
+    },
+    {
+      "id": "cb39adb9-fef9-4eb5-bae1-7ddc1044eecd",
+      "itemType": "asset",
+      "name": "要求一覧_CTR-IC-012以降_項目形式.pdf p.4",
+      "parentId": "da9d1c4b-a858-4774-8eca-1ded60f7848b",
+      "order": 4,
+      "description": "",
+      "assetKind": "image",
+      "sha1": null,
+      "ext": "png",
+      "mimeType": "image/png",
+      "width": 0,
+      "height": 0,
+      "byteSize": 497310,
+      "createdAt": "2026-11-05T21:32:39.088272",
+      "updatedAt": "2026-11-05T21:32:39.088272",
+      "aiStatus": "skipped",
+      "origin": {
+        "kind": "pdf_page",
+        "documentId": "855d8c39-f2bd-4fb6-9218-949fb7042c08",
+        "fileName": "abd5d6bd-4222-42e9-afd1-141edf0073a4.png",
+        "pageId": "21105308-323c-4b2c-b5fb-9ae373b9ec0a"
+      },
+      "sourceRef": {
+        "kind": "document",
+        "key": "document:855d8c39-f2bd-4fb6-9218-949fb7042c08:images:abd5d6bd-4222-42e9-afd1-141edf0073a4.png",
+        "documentId": "855d8c39-f2bd-4fb6-9218-949fb7042c08",
+        "subdir": "images",
+        "fileName": "abd5d6bd-4222-42e9-afd1-141edf0073a4.png"
+      }
+    },
+    {
+      "id": "741284dd-47aa-489b-b66b-77ee647154ce",
+      "itemType": "asset",
+      "name": "要求一覧_CTR-IC-012以降_項目形式.pdf p.5",
+      "parentId": "da9d1c4b-a858-4774-8eca-1ded60f7848b",
+      "order": 5,
+      "description": "",
+      "assetKind": "image",
+      "sha1": null,
+      "ext": "png",
+      "mimeType": "image/png",
+      "width": 0,
+      "height": 0,
+      "byteSize": 549656,
+      "createdAt": "2026-11-05T21:32:39.088315",
+      "updatedAt": "2026-11-05T21:32:39.088315",
+      "aiStatus": "skipped",
+      "origin": {
+        "kind": "pdf_page",
+        "documentId": "855d8c39-f2bd-4fb6-9218-949fb7042c08",
+        "fileName": "67518958-063d-462c-a020-cb9b03e07046.png",
+        "pageId": "76f46f04-2ee0-45e7-9d05-d146a475ab0f"
+      },
+      "sourceRef": {
+        "kind": "document",
+        "key": "document:855d8c39-f2bd-4fb6-9218-949fb7042c08:images:67518958-063d-462c-a020-cb9b03e07046.png",
+        "documentId": "855d8c39-f2bd-4fb6-9218-949fb7042c08",
+        "subdir": "images",
+        "fileName": "67518958-063d-462c-a020-cb9b03e07046.png"
+      }
+    },
+    {
+      "id": "becc66cf-8658-488e-affc-ac6bb68fa72a",
+      "itemType": "asset",
+      "name": "要求一覧_CTR-IC-012以降_項目形式.pdf p.6",
+      "parentId": "da9d1c4b-a858-4774-8eca-1ded60f7848b",
+      "order": 6,
+      "description": "",
+      "assetKind": "image",
+      "sha1": null,
+      "ext": "png",
+      "mimeType": "image/png",
+      "width": 0,
+      "height": 0,
+      "byteSize": 452798,
+      "createdAt": "2026-11-05T21:32:39.088357",
+      "updatedAt": "2026-11-05T21:32:39.088357",
+      "aiStatus": "skipped",
+      "origin": {
+        "kind": "pdf_page",
+        "documentId": "855d8c39-f2bd-4fb6-9218-949fb7042c08",
+        "fileName": "2fd70526-8cbc-4e75-bd98-a0ed4e97653b.png",
+        "pageId": "da36c09d-0be0-48eb-b3b3-9eb56bf5bf02"
+      },
+      "sourceRef": {
+        "kind": "document",
+        "key": "document:855d8c39-f2bd-4fb6-9218-949fb7042c08:images:2fd70526-8cbc-4e75-bd98-a0ed4e97653b.png",
+        "documentId": "855d8c39-f2bd-4fb6-9218-949fb7042c08",
+        "subdir": "images",
+        "fileName": "2fd70526-8cbc-4e75-bd98-a0ed4e97653b.png"
       }
     },
     {

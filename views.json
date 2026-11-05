@@ -118,20 +118,25 @@
             "parent_id": "",
             "icon_key": "DescriptionOutlined",
             "icon_color": null
+        },
+        {
+            "id": "6d6af6e0-7ce0-49e5-9483-f07ff37faab3",
+            "name": "バスバー接合部4ノード熱伝達解析 時系列データ",
+            "parent_id": "",
+            "icon_key": "RelationalDbView",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [
         "d7dcf14d-65c1-429b-a864-573ebb75dc15",
-        "f0d34f59-afc5-493e-b470-6ea9f849ea8e",
-        "781fc0e1-ce93-405e-a73e-9b05ea0bf9d1",
-        "a9691555-cec8-43d2-b0f0-364dea650bd8",
         "9ebbce52-406e-4fcb-a972-c91d7f8c08cb",
         "bd10b46a-0c83-4db4-a4bf-31f54d077d5f",
         "1077a2f6-de39-4daa-81ba-ad4079586789",
         "c004f0eb-190f-4c55-9ea8-31612d2202c7",
-        "1fcb0dc4-e491-44ef-ab82-2bc832fc467a"
+        "1fcb0dc4-e491-44ef-ab82-2bc832fc467a",
+        "6d6af6e0-7ce0-49e5-9483-f07ff37faab3"
     ],
-    "current_view_id": "9ebbce52-406e-4fcb-a972-c91d7f8c08cb",
+    "current_view_id": "6d6af6e0-7ce0-49e5-9483-f07ff37faab3",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,
