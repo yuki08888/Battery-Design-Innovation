@@ -151,6 +151,79 @@
       }
     },
     {
+      "id": "df9478c1-dbec-4e7f-a168-b1ca2be8ede5",
+      "itemType": "folder",
+      "name": "構想イメージ",
+      "parentId": null,
+      "order": 22
+    },
+    {
+      "id": "2c274c74-ce06-4f45-b119-520956640915",
+      "itemType": "asset",
+      "name": "要求一覧_CTR-IC-012以降_項目形式.pdf",
+      "parentId": null,
+      "order": 23,
+      "description": "",
+      "assetKind": "document",
+      "sha1": "314c940f2d946eaab3e6a1f95bae68a7fab03d8b",
+      "ext": "pdf",
+      "mimeType": "application/pdf",
+      "width": 0,
+      "height": 0,
+      "byteSize": 114293,
+      "createdAt": "2026-11-04T12:01:43.663904",
+      "updatedAt": "2026-11-04T12:01:43.673596",
+      "aiStatus": "skipped",
+      "origin": {
+        "kind": "chat_attachment",
+        "fileName": "要求一覧_CTR-IC-012以降_項目形式.pdf"
+      }
+    },
+    {
+      "id": "06093a66-fbc3-4366-8c6a-68bb39e727c9",
+      "itemType": "asset",
+      "name": "要求一覧_CTR-IC-012以降.csv",
+      "parentId": null,
+      "order": 24,
+      "description": "",
+      "assetKind": "tabular",
+      "sha1": "4e1febe513a866254e6fef40cfdd937ef9f7be4e",
+      "ext": "csv",
+      "mimeType": "text/csv",
+      "width": 0,
+      "height": 0,
+      "byteSize": 16278,
+      "createdAt": "2026-11-04T15:45:50.231893",
+      "updatedAt": "2026-11-04T15:45:50.239268",
+      "aiStatus": "skipped",
+      "origin": {
+        "kind": "chat_attachment",
+        "fileName": "要求一覧_CTR-IC-012以降.csv"
+      }
+    },
+    {
+      "id": "6d073bc2-1106-4b31-8f91-cf283d6fafd0",
+      "itemType": "asset",
+      "name": "絶縁カバー要求_紐づけ一覧_v4.csv",
+      "parentId": null,
+      "order": 25,
+      "description": "",
+      "assetKind": "tabular",
+      "sha1": "d38875f579b171d636d17bf57ae8ba1b4518a4aa",
+      "ext": "csv",
+      "mimeType": "text/csv",
+      "width": 0,
+      "height": 0,
+      "byteSize": 8173,
+      "createdAt": "2026-11-05T10:58:48.244803",
+      "updatedAt": "2026-11-05T10:58:48.254870",
+      "aiStatus": "skipped",
+      "origin": {
+        "kind": "chat_attachment",
+        "fileName": "絶縁カバー要求_紐づけ一覧_v4.csv"
+      }
+    },
+    {
       "id": "42a875f7-4950-4730-be4d-7d6a9be34439",
       "itemType": "asset",
       "name": "耐熱絶縁カバー設計標準書 p.51",
@@ -482,6 +555,28 @@
         "documentId": "e1fc7374-ff95-4e8a-b26f-bb36f5ebaf32",
         "subdir": "orgs",
         "fileName": "07d8f2ff-504b-4e33-a39a-a6ba36c48913.pdf"
+      }
+    },
+    {
+      "id": "b5b5fd6c-7197-4d32-b50d-574015fb30b6",
+      "itemType": "asset",
+      "name": "要求一覧_CTR-IC-012以降.csv",
+      "parentId": "23503afc-6825-43e1-813b-02b1ef5b15a6",
+      "order": 1,
+      "description": "",
+      "assetKind": "tabular",
+      "sha1": "1126240178151395db3bf5fbc5b6d78043861718",
+      "ext": "csv",
+      "mimeType": "text/csv",
+      "width": 0,
+      "height": 0,
+      "byteSize": 13633,
+      "createdAt": "2026-11-04T13:41:39.833743",
+      "updatedAt": "2026-11-04T13:41:39.836391",
+      "aiStatus": "skipped",
+      "origin": {
+        "kind": "chat_attachment",
+        "fileName": "要求一覧_CTR-IC-012以降.csv"
       }
     },
     {
@@ -17933,6 +18028,38 @@
         "documentId": "859cfd19-94fd-41be-931e-7a8ea78af8ce",
         "subdir": "images",
         "fileName": "ef52d42d-a012-4ca2-940d-c8ded401c6e1.png"
+      }
+    },
+    {
+      "id": "a7bd817e-ed44-476a-9dc1-9eab941cbb5e",
+      "itemType": "asset",
+      "name": "BBM 形状と安全性の役割分担・構想案",
+      "parentId": "df9478c1-dbec-4e7f-a168-b1ca2be8ede5",
+      "order": 0,
+      "description": "AI 生成イメージ。プロンプト: Create a conceptual engineering isometric sketch of an EV battery busbar module above a small row of prismatic cells. Use the reference drawing ONLY for the general rectangular flat busbar end contact pads and a central two-bend offset bridge motif; do not reproduce dimensions or claim this geometry is optimized. Show one enlarged offset busbar connecting two adjacent cell terminals, broad flat joining pads seated on the terminals, the middle offset span free of rigid carrier clamping with curved displacement arrows. Add a gray insulating carrier that locates components but allows local relative motion, insulating partitions between different-potential conductors, a partially lifted protective insulating cover (cutaway illustration, not operating condition). A separate thin sensing ribbon with a slack loop runs in its own protected channel to a connector. Contrast stable joining zones in blue, candidate motion-accommodating zones in orange, insulation in pale green. Include small detail insets for terminal reaction arrows and insulation paths, without numbers, text, letters, labels or performance checkmarks. Clean white background. Clearly conceptual, not production CAD. Do not imply holes mean bolted joints; joining process unspecified. No exposed active conductor represented as safe for touching.",
+      "assetKind": "image",
+      "sha1": "e3909e48448bb5f15369e3d644db10122961c6f6",
+      "ext": "png",
+      "mimeType": "image/png",
+      "width": 1536,
+      "height": 1024,
+      "byteSize": 1616697,
+      "createdAt": "2026-10-27T11:34:00.322619",
+      "updatedAt": "2026-10-27T11:34:06.792499",
+      "aiStatus": "done",
+      "origin": {
+        "kind": "ai_generated",
+        "prompt": "Create a conceptual engineering isometric sketch of an EV battery busbar module above a small row of prismatic cells. Use the reference drawing ONLY for the general rectangular flat busbar end contact pads and a central two-bend offset bridge motif; do not reproduce dimensions or claim this geometry is optimized. Show one enlarged offset busbar connecting two adjacent cell terminals, broad flat joining pads seated on the terminals, the middle offset span free of rigid carrier clamping with curved displacement arrows. Add a gray insulating carrier that locates components but allows local relative motion, insulating partitions between different-potential conductors, a partially lifted protective insulating cover (cutaway illustration, not operating condition). A separate thin sensing ribbon with a slack loop runs in its own protected channel to a connector. Contrast stable joining zones in blue, candidate motion-accommodating zones in orange, insulation in pale green. Include small detail insets for terminal reaction arrows and insulation paths, without numbers, text, letters, labels or performance checkmarks. Clean white background. Clearly conceptual, not production CAD. Do not imply holes mean bolted joints; joining process unspecified. No exposed active conductor represented as safe for touching.",
+        "style": "isometric",
+        "chatId": "ea7e124e-04c7-4c3e-8ce1-df9792c9d201",
+        "messageId": "18bc603b-cacf-4fcc-85ec-7564fa373ab3",
+        "conceptIds": [],
+        "reference": {
+          "assetId": "8043970e-2a34-4e79-8505-8b3eedb86289",
+          "name": "BBMバスバ図面（image-1.png） p.1",
+          "kind": "image",
+          "representation": "image"
+        }
       }
     },
     {

@@ -413,9 +413,1754 @@
     "references": [],
     "sourceFilePath": "C:\\Users\\1584550\\AppData\\Roaming\\system_factory\\app_data\\projects\\0c47063b-31ef-45f7-9ab8-67833c1008e7\\documents\\fce2062a-3c0d-42eb-98ed-38f6f5f609b5\\orgs\\5158c7c9-f748-4896-b5fc-5db272bcc656.pdf",
     "createdAt": null,
-    "updatedAt": null,
-    "skeleton": null,
-    "headingRules": null,
+    "updatedAt": "2026-11-03T15:35:53.483059",
+    "skeleton": {
+        "documentId": "fce2062a-3c0d-42eb-98ed-38f6f5f609b5",
+        "roots": [
+            {
+                "id": "fe88f62b-4b4a-4cbb-bde5-0e71e5a738e6",
+                "title": "HV電池室内設計業務標準",
+                "level": 1,
+                "sectionType": "introduction",
+                "pageId": "775cfceb-66be-4419-a30c-e6e186ab0c52",
+                "startLine": 1,
+                "endLine": 121,
+                "children": [
+                    {
+                        "id": "a430474c-a298-432a-b5e1-4cac5746cbd3",
+                        "title": "1 適用範囲",
+                        "level": 2,
+                        "sectionType": "scope",
+                        "pageId": "95ee0140-fefb-4e8a-84c6-01218d2463fe",
+                        "startLine": 1,
+                        "endLine": 2,
+                        "children": [],
+                        "linkedElementIds": [],
+                        "pageIndex": 2,
+                        "pageIds": [
+                            "95ee0140-fefb-4e8a-84c6-01218d2463fe"
+                        ],
+                        "pageIndices": [
+                            2
+                        ]
+                    },
+                    {
+                        "id": "bb531b77-e390-4387-8ed2-02376924cffd",
+                        "title": "2 用語",
+                        "level": 2,
+                        "sectionType": "definition",
+                        "pageId": "95ee0140-fefb-4e8a-84c6-01218d2463fe",
+                        "startLine": 3,
+                        "endLine": 11,
+                        "children": [],
+                        "linkedElementIds": [],
+                        "pageIndex": 2,
+                        "pageIds": [
+                            "95ee0140-fefb-4e8a-84c6-01218d2463fe"
+                        ],
+                        "pageIndices": [
+                            2
+                        ]
+                    },
+                    {
+                        "id": "b648ffaf-3e9b-49bc-883d-3e52f853cbdc",
+                        "title": "3 概要",
+                        "level": 2,
+                        "sectionType": "general",
+                        "pageId": "05aa36f5-bc64-4506-b8fe-177ffbc434e9",
+                        "startLine": 1,
+                        "endLine": 2,
+                        "children": [],
+                        "linkedElementIds": [],
+                        "pageIndex": 3,
+                        "pageIds": [
+                            "05aa36f5-bc64-4506-b8fe-177ffbc434e9"
+                        ],
+                        "pageIndices": [
+                            3
+                        ]
+                    },
+                    {
+                        "id": "7dc8acde-29ea-4147-b7eb-888e1282976e",
+                        "title": "4 業務フロー",
+                        "level": 2,
+                        "sectionType": "procedure",
+                        "pageId": "153b2ee1-4236-4a1f-8222-94a9b516c0c8",
+                        "startLine": 1,
+                        "endLine": 99,
+                        "children": [],
+                        "linkedElementIds": [],
+                        "pageIndex": 4,
+                        "pageIds": [
+                            "153b2ee1-4236-4a1f-8222-94a9b516c0c8"
+                        ],
+                        "pageIndices": [
+                            4
+                        ]
+                    },
+                    {
+                        "id": "480133eb-14f6-4bd2-8a0f-f78e3afe8bc8",
+                        "title": "4 業務フロー",
+                        "level": 2,
+                        "sectionType": "procedure",
+                        "pageId": "54e1dd2b-0c72-45c2-84f6-6d6e0861812a",
+                        "startLine": 1,
+                        "endLine": 2,
+                        "children": [
+                            {
+                                "id": "8c56604a-3001-42a2-a8e0-a7e59ed34e3c",
+                                "title": "設計チーム",
+                                "level": 3,
+                                "sectionType": "procedure",
+                                "pageId": "54e1dd2b-0c72-45c2-84f6-6d6e0861812a",
+                                "startLine": 3,
+                                "endLine": 10,
+                                "children": [],
+                                "linkedElementIds": [],
+                                "pageIndex": 5,
+                                "pageIds": [
+                                    "54e1dd2b-0c72-45c2-84f6-6d6e0861812a"
+                                ],
+                                "pageIndices": [
+                                    5
+                                ]
+                            },
+                            {
+                                "id": "4c3cc48b-cc4f-41ca-952c-23ae601f5b44",
+                                "title": "要求仕様発行者",
+                                "level": 3,
+                                "sectionType": "procedure",
+                                "pageId": "54e1dd2b-0c72-45c2-84f6-6d6e0861812a",
+                                "startLine": 11,
+                                "endLine": 26,
+                                "children": [],
+                                "linkedElementIds": [],
+                                "pageIndex": 5,
+                                "pageIds": [
+                                    "54e1dd2b-0c72-45c2-84f6-6d6e0861812a"
+                                ],
+                                "pageIndices": [
+                                    5
+                                ]
+                            },
+                            {
+                                "id": "9e441a25-0c40-4708-9aa3-3a1c265853eb",
+                                "title": "部品設計DR",
+                                "level": 3,
+                                "sectionType": "procedure",
+                                "pageId": "54e1dd2b-0c72-45c2-84f6-6d6e0861812a",
+                                "startLine": 27,
+                                "endLine": 64,
+                                "children": [],
+                                "linkedElementIds": [],
+                                "pageIndex": 5,
+                                "pageIds": [
+                                    "54e1dd2b-0c72-45c2-84f6-6d6e0861812a"
+                                ],
+                                "pageIndices": [
+                                    5
+                                ]
+                            },
+                            {
+                                "id": "b15db745-650a-41ab-9b16-70d0ea4192b6",
+                                "title": "要求図承認者",
+                                "level": 3,
+                                "sectionType": "procedure",
+                                "pageId": "54e1dd2b-0c72-45c2-84f6-6d6e0861812a",
+                                "startLine": 65,
+                                "endLine": 95,
+                                "children": [],
+                                "linkedElementIds": [],
+                                "pageIndex": 5,
+                                "pageIds": [
+                                    "54e1dd2b-0c72-45c2-84f6-6d6e0861812a"
+                                ],
+                                "pageIndices": [
+                                    5
+                                ]
+                            },
+                            {
+                                "id": "cdc01424-3456-4a53-9a73-7d346f17cd61",
+                                "title": "部品設計DR 品質確認",
+                                "level": 3,
+                                "sectionType": "test",
+                                "pageId": "38a7024b-e3e8-4d88-a80b-4b4617f75a2b",
+                                "startLine": 72,
+                                "endLine": 183,
+                                "children": [
+                                    {
+                                        "id": "2429652e-850f-4793-b8ab-0eae19085776",
+                                        "title": "（8）工程調査",
+                                        "level": 4,
+                                        "sectionType": "procedure",
+                                        "pageId": "9140dc36-2ab8-46a4-97bb-f692818adcbe",
+                                        "startLine": 1,
+                                        "endLine": 34,
+                                        "children": [],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 12,
+                                        "pageIds": [
+                                            "9140dc36-2ab8-46a4-97bb-f692818adcbe"
+                                        ],
+                                        "pageIndices": [
+                                            12
+                                        ]
+                                    }
+                                ],
+                                "linkedElementIds": [],
+                                "pageIndex": 11,
+                                "pageIds": [
+                                    "38a7024b-e3e8-4d88-a80b-4b4617f75a2b"
+                                ],
+                                "pageIndices": [
+                                    11
+                                ]
+                            }
+                        ],
+                        "linkedElementIds": [],
+                        "pageIndex": 5,
+                        "pageIds": [
+                            "54e1dd2b-0c72-45c2-84f6-6d6e0861812a"
+                        ],
+                        "pageIndices": [
+                            5
+                        ]
+                    },
+                    {
+                        "id": "aa9b6676-ffe0-49ec-8d82-bd4768a44ba8",
+                        "title": "5 性能仕様",
+                        "level": 2,
+                        "sectionType": "specification",
+                        "pageId": "6311fbd8-7670-4ae1-8cf4-7b289dd2265e",
+                        "startLine": 1,
+                        "endLine": 2,
+                        "children": [
+                            {
+                                "id": "db8b505a-720b-43c5-bd24-fe81bc8bbfcd",
+                                "title": "5.1 要求性能",
+                                "level": 3,
+                                "sectionType": "requirement",
+                                "pageId": "6311fbd8-7670-4ae1-8cf4-7b289dd2265e",
+                                "startLine": 3,
+                                "endLine": 120,
+                                "children": [
+                                    {
+                                        "id": "cfe3c2a3-61ac-4bec-aad4-980a95029a7a",
+                                        "title": "5.1.1 仕向け地",
+                                        "level": 4,
+                                        "sectionType": "requirement",
+                                        "pageId": "542f5c9a-fe1e-4b5b-abf6-ffc9b4b54e1c",
+                                        "startLine": 1,
+                                        "endLine": 2,
+                                        "children": [],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 14,
+                                        "pageIds": [
+                                            "542f5c9a-fe1e-4b5b-abf6-ffc9b4b54e1c"
+                                        ],
+                                        "pageIndices": [
+                                            14
+                                        ]
+                                    },
+                                    {
+                                        "id": "763d78f5-1404-4c23-927d-10b60b4dd3af",
+                                        "title": "5.1.2 用途",
+                                        "level": 4,
+                                        "sectionType": "specification",
+                                        "pageId": "542f5c9a-fe1e-4b5b-abf6-ffc9b4b54e1c",
+                                        "startLine": 3,
+                                        "endLine": 13,
+                                        "children": [],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 14,
+                                        "pageIds": [
+                                            "542f5c9a-fe1e-4b5b-abf6-ffc9b4b54e1c"
+                                        ],
+                                        "pageIndices": [
+                                            14
+                                        ]
+                                    },
+                                    {
+                                        "id": "c97c6030-eeda-4e95-8485-fc935a395312",
+                                        "title": "5.1.3 設計・搭載要件",
+                                        "level": 4,
+                                        "sectionType": "requirement",
+                                        "pageId": "542f5c9a-fe1e-4b5b-abf6-ffc9b4b54e1c",
+                                        "startLine": 14,
+                                        "endLine": 15,
+                                        "children": [],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 14,
+                                        "pageIds": [
+                                            "542f5c9a-fe1e-4b5b-abf6-ffc9b4b54e1c"
+                                        ],
+                                        "pageIndices": [
+                                            14
+                                        ]
+                                    },
+                                    {
+                                        "id": "8c6ca0a1-e8d5-4c32-b792-097412642ded",
+                                        "title": "1) BM一体要件",
+                                        "level": 4,
+                                        "sectionType": "requirement",
+                                        "pageId": "542f5c9a-fe1e-4b5b-abf6-ffc9b4b54e1c",
+                                        "startLine": 16,
+                                        "endLine": 16,
+                                        "children": [
+                                            {
+                                                "id": "adba4a95-4477-4d0e-853e-621111ccc4a0",
+                                                "title": "A) 基本構造",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "542f5c9a-fe1e-4b5b-abf6-ffc9b4b54e1c",
+                                                "startLine": 17,
+                                                "endLine": 24,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 14,
+                                                "pageIds": [
+                                                    "542f5c9a-fe1e-4b5b-abf6-ffc9b4b54e1c"
+                                                ],
+                                                "pageIndices": [
+                                                    14
+                                                ]
+                                            },
+                                            {
+                                                "id": "1f8f87ff-1bbc-4d35-991e-d7c825e9d3ef",
+                                                "title": "B) 高電圧活電部品直接接触保護",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "542f5c9a-fe1e-4b5b-abf6-ffc9b4b54e1c",
+                                                "startLine": 25,
+                                                "endLine": 155,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 14,
+                                                "pageIds": [
+                                                    "542f5c9a-fe1e-4b5b-abf6-ffc9b4b54e1c"
+                                                ],
+                                                "pageIndices": [
+                                                    14
+                                                ]
+                                            },
+                                            {
+                                                "id": "d5319bd2-52ff-4f59-98dc-d68375594d17",
+                                                "title": "C) 搭載隙",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "542f5c9a-fe1e-4b5b-abf6-ffc9b4b54e1c",
+                                                "startLine": 156,
+                                                "endLine": 159,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 14,
+                                                "pageIds": [
+                                                    "542f5c9a-fe1e-4b5b-abf6-ffc9b4b54e1c"
+                                                ],
+                                                "pageIndices": [
+                                                    14
+                                                ]
+                                            }
+                                        ],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 14,
+                                        "pageIds": [
+                                            "542f5c9a-fe1e-4b5b-abf6-ffc9b4b54e1c"
+                                        ],
+                                        "pageIndices": [
+                                            14
+                                        ]
+                                    },
+                                    {
+                                        "id": "8d0f80b8-a2bf-4eb6-b517-9638c78c847f",
+                                        "title": "1) BM一体要件",
+                                        "level": 4,
+                                        "sectionType": "requirement",
+                                        "pageId": "1cb678a0-69fa-4e7c-a92f-4f21b22c96ee",
+                                        "startLine": 1,
+                                        "endLine": 1,
+                                        "children": [
+                                            {
+                                                "id": "a0a658e0-b275-4eda-bd14-8995969f9857",
+                                                "title": "G) 使用する樹脂・ゴム材料の難燃性は、UL94 HB規格に適合のこと",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "1cb678a0-69fa-4e7c-a92f-4f21b22c96ee",
+                                                "startLine": 2,
+                                                "endLine": 6,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 16,
+                                                "pageIds": [
+                                                    "1cb678a0-69fa-4e7c-a92f-4f21b22c96ee"
+                                                ],
+                                                "pageIndices": [
+                                                    16
+                                                ]
+                                            },
+                                            {
+                                                "id": "dd8e85c2-de8f-4cee-9dd0-42ec64ff1d2e",
+                                                "title": "H) VOC",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "1cb678a0-69fa-4e7c-a92f-4f21b22c96ee",
+                                                "startLine": 7,
+                                                "endLine": 11,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 16,
+                                                "pageIds": [
+                                                    "1cb678a0-69fa-4e7c-a92f-4f21b22c96ee"
+                                                ],
+                                                "pageIndices": [
+                                                    16
+                                                ]
+                                            },
+                                            {
+                                                "id": "2c9407d2-c762-4187-860c-fc6c218bc2b5",
+                                                "title": "I) シリコン系材料",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "1cb678a0-69fa-4e7c-a92f-4f21b22c96ee",
+                                                "startLine": 12,
+                                                "endLine": 15,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 16,
+                                                "pageIds": [
+                                                    "1cb678a0-69fa-4e7c-a92f-4f21b22c96ee"
+                                                ],
+                                                "pageIndices": [
+                                                    16
+                                                ]
+                                            },
+                                            {
+                                                "id": "f0068b3a-6544-407c-be2b-9176c6a43f79",
+                                                "title": "J) 非金属材料におい",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "1cb678a0-69fa-4e7c-a92f-4f21b22c96ee",
+                                                "startLine": 16,
+                                                "endLine": 19,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 16,
+                                                "pageIds": [
+                                                    "1cb678a0-69fa-4e7c-a92f-4f21b22c96ee"
+                                                ],
+                                                "pageIndices": [
+                                                    16
+                                                ]
+                                            }
+                                        ],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 16,
+                                        "pageIds": [
+                                            "1cb678a0-69fa-4e7c-a92f-4f21b22c96ee"
+                                        ],
+                                        "pageIndices": [
+                                            16
+                                        ]
+                                    },
+                                    {
+                                        "id": "8f54964d-f1ff-445e-ab70-0106c5797e39",
+                                        "title": "2) バスバー要件",
+                                        "level": 4,
+                                        "sectionType": "requirement",
+                                        "pageId": "1cb678a0-69fa-4e7c-a92f-4f21b22c96ee",
+                                        "startLine": 20,
+                                        "endLine": 20,
+                                        "children": [
+                                            {
+                                                "id": "2db3dd84-6b60-431b-b04b-580fa3c749f2",
+                                                "title": "A) バスバー",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "1cb678a0-69fa-4e7c-a92f-4f21b22c96ee",
+                                                "startLine": 21,
+                                                "endLine": 24,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 16,
+                                                "pageIds": [
+                                                    "1cb678a0-69fa-4e7c-a92f-4f21b22c96ee"
+                                                ],
+                                                "pageIndices": [
+                                                    16
+                                                ]
+                                            }
+                                        ],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 16,
+                                        "pageIds": [
+                                            "1cb678a0-69fa-4e7c-a92f-4f21b22c96ee"
+                                        ],
+                                        "pageIndices": [
+                                            16
+                                        ]
+                                    },
+                                    {
+                                        "id": "f5466c59-4d24-49d8-abc5-4490ba8965da",
+                                        "title": "3) 樹脂ケース要件",
+                                        "level": 4,
+                                        "sectionType": "requirement",
+                                        "pageId": "1cb678a0-69fa-4e7c-a92f-4f21b22c96ee",
+                                        "startLine": 25,
+                                        "endLine": 25,
+                                        "children": [
+                                            {
+                                                "id": "9ac6c1b1-abf1-4e22-98ca-2a87a9b3b68f",
+                                                "title": "A) 材料色",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "1cb678a0-69fa-4e7c-a92f-4f21b22c96ee",
+                                                "startLine": 26,
+                                                "endLine": 29,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 16,
+                                                "pageIds": [
+                                                    "1cb678a0-69fa-4e7c-a92f-4f21b22c96ee"
+                                                ],
+                                                "pageIndices": [
+                                                    16
+                                                ]
+                                            },
+                                            {
+                                                "id": "3e7cf391-98e4-4ec7-b7ae-8b436a41db22",
+                                                "title": "B) サニスタ保持",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "1cb678a0-69fa-4e7c-a92f-4f21b22c96ee",
+                                                "startLine": 30,
+                                                "endLine": 33,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 16,
+                                                "pageIds": [
+                                                    "1cb678a0-69fa-4e7c-a92f-4f21b22c96ee"
+                                                ],
+                                                "pageIndices": [
+                                                    16
+                                                ]
+                                            },
+                                            {
+                                                "id": "b29f1dcc-8ea7-4668-ad9c-2b8ac688dfb4",
+                                                "title": "C) バスバー溶接工程配慮",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "1cb678a0-69fa-4e7c-a92f-4f21b22c96ee",
+                                                "startLine": 34,
+                                                "endLine": 41,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 16,
+                                                "pageIds": [
+                                                    "1cb678a0-69fa-4e7c-a92f-4f21b22c96ee"
+                                                ],
+                                                "pageIndices": [
+                                                    16
+                                                ]
+                                            },
+                                            {
+                                                "id": "1d136e98-9f3a-4343-834a-2260246a8de7",
+                                                "title": "D) モジュール端部締結工程配慮",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "1cb678a0-69fa-4e7c-a92f-4f21b22c96ee",
+                                                "startLine": 42,
+                                                "endLine": 51,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 16,
+                                                "pageIds": [
+                                                    "1cb678a0-69fa-4e7c-a92f-4f21b22c96ee"
+                                                ],
+                                                "pageIndices": [
+                                                    16
+                                                ]
+                                            },
+                                            {
+                                                "id": "5bd995cb-b19b-4a88-9186-3d3b7712b588",
+                                                "title": "E) スタッド識別用記号",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "1cb678a0-69fa-4e7c-a92f-4f21b22c96ee",
+                                                "startLine": 52,
+                                                "endLine": 58,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 16,
+                                                "pageIds": [
+                                                    "1cb678a0-69fa-4e7c-a92f-4f21b22c96ee"
+                                                ],
+                                                "pageIndices": [
+                                                    16
+                                                ]
+                                            }
+                                        ],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 16,
+                                        "pageIds": [
+                                            "1cb678a0-69fa-4e7c-a92f-4f21b22c96ee"
+                                        ],
+                                        "pageIndices": [
+                                            16
+                                        ]
+                                    },
+                                    {
+                                        "id": "9f2b056d-df86-4659-97e5-af33dfb68055",
+                                        "title": "4) 絶縁カバー要件",
+                                        "level": 4,
+                                        "sectionType": "requirement",
+                                        "pageId": "fabed622-6f02-4f93-a6e5-ae384700b54d",
+                                        "startLine": 1,
+                                        "endLine": 1,
+                                        "children": [
+                                            {
+                                                "id": "48e88437-36f7-4d41-8a8a-dc9d2e7f0a45",
+                                                "title": "A) 材料色",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "fabed622-6f02-4f93-a6e5-ae384700b54d",
+                                                "startLine": 2,
+                                                "endLine": 4,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 17,
+                                                "pageIds": [
+                                                    "fabed622-6f02-4f93-a6e5-ae384700b54d"
+                                                ],
+                                                "pageIndices": [
+                                                    17
+                                                ]
+                                            },
+                                            {
+                                                "id": "acd711c1-94a3-4245-a984-1ab9f3598589",
+                                                "title": "B) 固定方法",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "fabed622-6f02-4f93-a6e5-ae384700b54d",
+                                                "startLine": 5,
+                                                "endLine": 10,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 17,
+                                                "pageIds": [
+                                                    "fabed622-6f02-4f93-a6e5-ae384700b54d"
+                                                ],
+                                                "pageIndices": [
+                                                    17
+                                                ]
+                                            },
+                                            {
+                                                "id": "a207cb8c-bddc-41e4-ab70-e297cb91dc24",
+                                                "title": "C) コネクタ保持",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "fabed622-6f02-4f93-a6e5-ae384700b54d",
+                                                "startLine": 11,
+                                                "endLine": 20,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 17,
+                                                "pageIds": [
+                                                    "fabed622-6f02-4f93-a6e5-ae384700b54d"
+                                                ],
+                                                "pageIndices": [
+                                                    17
+                                                ]
+                                            },
+                                            {
+                                                "id": "eeb2977c-cd90-4112-a07b-158d8d7678b7",
+                                                "title": "D) セルジョイント部付近",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "fabed622-6f02-4f93-a6e5-ae384700b54d",
+                                                "startLine": 21,
+                                                "endLine": 25,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 17,
+                                                "pageIds": [
+                                                    "fabed622-6f02-4f93-a6e5-ae384700b54d"
+                                                ],
+                                                "pageIndices": [
+                                                    17
+                                                ]
+                                            },
+                                            {
+                                                "id": "5b74e091-8053-4c15-87b7-b0e7b1ebb143",
+                                                "title": "E) 総端子部開閉機構",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "fabed622-6f02-4f93-a6e5-ae384700b54d",
+                                                "startLine": 26,
+                                                "endLine": 36,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 17,
+                                                "pageIds": [
+                                                    "fabed622-6f02-4f93-a6e5-ae384700b54d"
+                                                ],
+                                                "pageIndices": [
+                                                    17
+                                                ]
+                                            },
+                                            {
+                                                "id": "a0f1ad11-13c1-4bd8-bcd7-c7628fe4ec52",
+                                                "title": "F) スタッド識別用記号",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "fabed622-6f02-4f93-a6e5-ae384700b54d",
+                                                "startLine": 37,
+                                                "endLine": 41,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 17,
+                                                "pageIds": [
+                                                    "fabed622-6f02-4f93-a6e5-ae384700b54d"
+                                                ],
+                                                "pageIndices": [
+                                                    17
+                                                ]
+                                            }
+                                        ],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 17,
+                                        "pageIds": [
+                                            "fabed622-6f02-4f93-a6e5-ae384700b54d"
+                                        ],
+                                        "pageIndices": [
+                                            17
+                                        ]
+                                    },
+                                    {
+                                        "id": "90283f9b-4938-4489-ac2b-a66cdf0e1789",
+                                        "title": "5) 配線部品一般要件",
+                                        "level": 4,
+                                        "sectionType": "requirement",
+                                        "pageId": "429b9380-1c6e-431d-9739-9ccbcf5c4e44",
+                                        "startLine": 1,
+                                        "endLine": 1,
+                                        "children": [
+                                            {
+                                                "id": "849c5264-24fc-4266-88a0-23b409bd43c0",
+                                                "title": "A) 基本構造",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "429b9380-1c6e-431d-9739-9ccbcf5c4e44",
+                                                "startLine": 2,
+                                                "endLine": 15,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 18,
+                                                "pageIds": [
+                                                    "429b9380-1c6e-431d-9739-9ccbcf5c4e44"
+                                                ],
+                                                "pageIndices": [
+                                                    18
+                                                ]
+                                            },
+                                            {
+                                                "id": "16051fd2-7a97-41f1-b105-31c19262c4b5",
+                                                "title": "B) 防水性",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "429b9380-1c6e-431d-9739-9ccbcf5c4e44",
+                                                "startLine": 16,
+                                                "endLine": 21,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 18,
+                                                "pageIds": [
+                                                    "429b9380-1c6e-431d-9739-9ccbcf5c4e44"
+                                                ],
+                                                "pageIndices": [
+                                                    18
+                                                ]
+                                            },
+                                            {
+                                                "id": "2851b42d-72b2-4a4c-80d4-9505f2013ff6",
+                                                "title": "C) はんだ付外観品質",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "429b9380-1c6e-431d-9739-9ccbcf5c4e44",
+                                                "startLine": 22,
+                                                "endLine": 26,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 18,
+                                                "pageIds": [
+                                                    "429b9380-1c6e-431d-9739-9ccbcf5c4e44"
+                                                ],
+                                                "pageIndices": [
+                                                    18
+                                                ]
+                                            },
+                                            {
+                                                "id": "4fa3afa9-629e-456c-a631-5a4785f7d06f",
+                                                "title": "D) 電池電圧検出線",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "429b9380-1c6e-431d-9739-9ccbcf5c4e44",
+                                                "startLine": 27,
+                                                "endLine": 36,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 18,
+                                                "pageIds": [
+                                                    "429b9380-1c6e-431d-9739-9ccbcf5c4e44"
+                                                ],
+                                                "pageIndices": [
+                                                    18
+                                                ]
+                                            },
+                                            {
+                                                "id": "2330b6ac-0eef-4b98-9a12-6b7b4206086c",
+                                                "title": "E) 電池温度検出線",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "429b9380-1c6e-431d-9739-9ccbcf5c4e44",
+                                                "startLine": 37,
+                                                "endLine": 39,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 18,
+                                                "pageIds": [
+                                                    "429b9380-1c6e-431d-9739-9ccbcf5c4e44"
+                                                ],
+                                                "pageIndices": [
+                                                    18
+                                                ]
+                                            },
+                                            {
+                                                "id": "021de158-0615-472f-8ca9-b134207e7fbb",
+                                                "title": "F) 監視IC電源供給線",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "429b9380-1c6e-431d-9739-9ccbcf5c4e44",
+                                                "startLine": 40,
+                                                "endLine": 41,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 18,
+                                                "pageIds": [
+                                                    "429b9380-1c6e-431d-9739-9ccbcf5c4e44"
+                                                ],
+                                                "pageIndices": [
+                                                    18
+                                                ]
+                                            },
+                                            {
+                                                "id": "0afee7da-0e78-48ff-b928-c5c0da07ff92",
+                                                "title": "G) 電池判別線",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "429b9380-1c6e-431d-9739-9ccbcf5c4e44",
+                                                "startLine": 42,
+                                                "endLine": 46,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 18,
+                                                "pageIds": [
+                                                    "429b9380-1c6e-431d-9739-9ccbcf5c4e44"
+                                                ],
+                                                "pageIndices": [
+                                                    18
+                                                ]
+                                            }
+                                        ],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 18,
+                                        "pageIds": [
+                                            "429b9380-1c6e-431d-9739-9ccbcf5c4e44"
+                                        ],
+                                        "pageIndices": [
+                                            18
+                                        ]
+                                    },
+                                    {
+                                        "id": "a6130dde-1a8a-4b9b-ae1a-8d5baf3f5731",
+                                        "title": "6) ヒューズ要件",
+                                        "level": 4,
+                                        "sectionType": "requirement",
+                                        "pageId": "e4312036-3d0a-4a5a-8685-3a7c23822d61",
+                                        "startLine": 1,
+                                        "endLine": 1,
+                                        "children": [
+                                            {
+                                                "id": "dc2ed0b9-dc80-4707-94da-349a49db40ff",
+                                                "title": "A) 品番",
+                                                "level": 5,
+                                                "sectionType": "specification",
+                                                "pageId": "e4312036-3d0a-4a5a-8685-3a7c23822d61",
+                                                "startLine": 2,
+                                                "endLine": 3,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 19,
+                                                "pageIds": [
+                                                    "e4312036-3d0a-4a5a-8685-3a7c23822d61"
+                                                ],
+                                                "pageIndices": [
+                                                    19
+                                                ]
+                                            },
+                                            {
+                                                "id": "74381805-6896-4c1f-a543-1f2c08c58fcf",
+                                                "title": "B) 取扱規定",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "e4312036-3d0a-4a5a-8685-3a7c23822d61",
+                                                "startLine": 4,
+                                                "endLine": 8,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 19,
+                                                "pageIds": [
+                                                    "e4312036-3d0a-4a5a-8685-3a7c23822d61"
+                                                ],
+                                                "pageIndices": [
+                                                    19
+                                                ]
+                                            }
+                                        ],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 19,
+                                        "pageIds": [
+                                            "e4312036-3d0a-4a5a-8685-3a7c23822d61"
+                                        ],
+                                        "pageIndices": [
+                                            19
+                                        ]
+                                    },
+                                    {
+                                        "id": "ffd4cc73-3925-4abe-8af2-653d81eae0cb",
+                                        "title": "7) サーミスタ要件",
+                                        "level": 4,
+                                        "sectionType": "requirement",
+                                        "pageId": "e4312036-3d0a-4a5a-8685-3a7c23822d61",
+                                        "startLine": 9,
+                                        "endLine": 9,
+                                        "children": [
+                                            {
+                                                "id": "7dd74b95-f719-44e7-9ea9-0fb7f547eeb1",
+                                                "title": "A) 品番",
+                                                "level": 5,
+                                                "sectionType": "specification",
+                                                "pageId": "e4312036-3d0a-4a5a-8685-3a7c23822d61",
+                                                "startLine": 10,
+                                                "endLine": 13,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 19,
+                                                "pageIds": [
+                                                    "e4312036-3d0a-4a5a-8685-3a7c23822d61"
+                                                ],
+                                                "pageIndices": [
+                                                    19
+                                                ]
+                                            },
+                                            {
+                                                "id": "5074ca0a-2d9a-4c88-8fcb-8451649abdac",
+                                                "title": "B) 素子特性",
+                                                "level": 5,
+                                                "sectionType": "specification",
+                                                "pageId": "e4312036-3d0a-4a5a-8685-3a7c23822d61",
+                                                "startLine": 14,
+                                                "endLine": 19,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 19,
+                                                "pageIds": [
+                                                    "e4312036-3d0a-4a5a-8685-3a7c23822d61"
+                                                ],
+                                                "pageIndices": [
+                                                    19
+                                                ]
+                                            },
+                                            {
+                                                "id": "ac1ee7ae-5d4f-4618-97a4-2d55c19b91c6",
+                                                "title": "C) 応答性",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "e4312036-3d0a-4a5a-8685-3a7c23822d61",
+                                                "startLine": 20,
+                                                "endLine": 22,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 19,
+                                                "pageIds": [
+                                                    "e4312036-3d0a-4a5a-8685-3a7c23822d61"
+                                                ],
+                                                "pageIndices": [
+                                                    19
+                                                ]
+                                            }
+                                        ],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 19,
+                                        "pageIds": [
+                                            "e4312036-3d0a-4a5a-8685-3a7c23822d61"
+                                        ],
+                                        "pageIndices": [
+                                            19
+                                        ]
+                                    },
+                                    {
+                                        "id": "dfcd7c36-4787-49b0-afc7-266f946c0b42",
+                                        "title": "8) コネクタ要件",
+                                        "level": 4,
+                                        "sectionType": "requirement",
+                                        "pageId": "6947f6db-b223-45fc-bb95-db58567cff29",
+                                        "startLine": 1,
+                                        "endLine": 1,
+                                        "children": [
+                                            {
+                                                "id": "ef5d7b3e-f9ea-4d3b-8161-348b74ad8a9c",
+                                                "title": "A) 品番",
+                                                "level": 5,
+                                                "sectionType": "specification",
+                                                "pageId": "6947f6db-b223-45fc-bb95-db58567cff29",
+                                                "startLine": 2,
+                                                "endLine": 5,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 20,
+                                                "pageIds": [
+                                                    "6947f6db-b223-45fc-bb95-db58567cff29"
+                                                ],
+                                                "pageIndices": [
+                                                    20
+                                                ]
+                                            },
+                                            {
+                                                "id": "4510ea39-1641-419d-bc44-d46667779ee6",
+                                                "title": "B) 搭載位置",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "6947f6db-b223-45fc-bb95-db58567cff29",
+                                                "startLine": 6,
+                                                "endLine": 8,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 20,
+                                                "pageIds": [
+                                                    "6947f6db-b223-45fc-bb95-db58567cff29"
+                                                ],
+                                                "pageIndices": [
+                                                    20
+                                                ]
+                                            },
+                                            {
+                                                "id": "182c2eee-a41e-4886-a83a-b8fe82f318a0",
+                                                "title": "C) 取扱規定",
+                                                "level": 5,
+                                                "sectionType": "requirement",
+                                                "pageId": "6947f6db-b223-45fc-bb95-db58567cff29",
+                                                "startLine": 9,
+                                                "endLine": 10,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 20,
+                                                "pageIds": [
+                                                    "6947f6db-b223-45fc-bb95-db58567cff29"
+                                                ],
+                                                "pageIndices": [
+                                                    20
+                                                ]
+                                            },
+                                            {
+                                                "id": "565dfbf9-f07a-46cb-99c5-7967e0fdf908",
+                                                "title": "D) 端子名称",
+                                                "level": 5,
+                                                "sectionType": "specification",
+                                                "pageId": "6947f6db-b223-45fc-bb95-db58567cff29",
+                                                "startLine": 11,
+                                                "endLine": 68,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 20,
+                                                "pageIds": [
+                                                    "6947f6db-b223-45fc-bb95-db58567cff29"
+                                                ],
+                                                "pageIndices": [
+                                                    20
+                                                ]
+                                            }
+                                        ],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 20,
+                                        "pageIds": [
+                                            "6947f6db-b223-45fc-bb95-db58567cff29"
+                                        ],
+                                        "pageIndices": [
+                                            20
+                                        ]
+                                    },
+                                    {
+                                        "id": "2d29baa3-0873-448d-91d5-d3c59083266b",
+                                        "title": "5.1.4 環境温度/温度",
+                                        "level": 4,
+                                        "sectionType": "specification",
+                                        "pageId": "4ef66c2b-53ac-4d89-b84a-72a48f294077",
+                                        "startLine": 1,
+                                        "endLine": 1,
+                                        "children": [
+                                            {
+                                                "id": "9ba727e8-0e4d-46a5-b49a-f37301e5a518",
+                                                "title": "1) 保存環境温度",
+                                                "level": 5,
+                                                "sectionType": "specification",
+                                                "pageId": "4ef66c2b-53ac-4d89-b84a-72a48f294077",
+                                                "startLine": 2,
+                                                "endLine": 3,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 21,
+                                                "pageIds": [
+                                                    "4ef66c2b-53ac-4d89-b84a-72a48f294077"
+                                                ],
+                                                "pageIndices": [
+                                                    21
+                                                ]
+                                            },
+                                            {
+                                                "id": "4365d840-ff60-4429-ae75-e1e512ca38a0",
+                                                "title": "2) 使用環境温度",
+                                                "level": 5,
+                                                "sectionType": "specification",
+                                                "pageId": "4ef66c2b-53ac-4d89-b84a-72a48f294077",
+                                                "startLine": 4,
+                                                "endLine": 5,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 21,
+                                                "pageIds": [
+                                                    "4ef66c2b-53ac-4d89-b84a-72a48f294077"
+                                                ],
+                                                "pageIndices": [
+                                                    21
+                                                ]
+                                            },
+                                            {
+                                                "id": "de36d330-6830-48b1-ac9e-546b9f7cba25",
+                                                "title": "3) 使用環境温度",
+                                                "level": 5,
+                                                "sectionType": "specification",
+                                                "pageId": "4ef66c2b-53ac-4d89-b84a-72a48f294077",
+                                                "startLine": 6,
+                                                "endLine": 7,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 21,
+                                                "pageIds": [
+                                                    "4ef66c2b-53ac-4d89-b84a-72a48f294077"
+                                                ],
+                                                "pageIndices": [
+                                                    21
+                                                ]
+                                            }
+                                        ],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 21,
+                                        "pageIds": [
+                                            "4ef66c2b-53ac-4d89-b84a-72a48f294077"
+                                        ],
+                                        "pageIndices": [
+                                            21
+                                        ]
+                                    },
+                                    {
+                                        "id": "efa64bfb-5059-4b1f-8990-09ebf919e6e2",
+                                        "title": "5.1.5 セル数",
+                                        "level": 4,
+                                        "sectionType": "specification",
+                                        "pageId": "4ef66c2b-53ac-4d89-b84a-72a48f294077",
+                                        "startLine": 8,
+                                        "endLine": 11,
+                                        "children": [],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 21,
+                                        "pageIds": [
+                                            "4ef66c2b-53ac-4d89-b84a-72a48f294077"
+                                        ],
+                                        "pageIndices": [
+                                            21
+                                        ]
+                                    },
+                                    {
+                                        "id": "0a9dd74a-8476-4716-8561-403d42a905d8",
+                                        "title": "5.1.6 電池パックP-N間電圧/P-GND間過電圧/システム最大電流",
+                                        "level": 4,
+                                        "sectionType": "specification",
+                                        "pageId": "4ef66c2b-53ac-4d89-b84a-72a48f294077",
+                                        "startLine": 12,
+                                        "endLine": 12,
+                                        "children": [
+                                            {
+                                                "id": "6e9dd61b-7bb1-4931-80d6-ead28b49a88a",
+                                                "title": "1) P-N間電圧",
+                                                "level": 5,
+                                                "sectionType": "specification",
+                                                "pageId": "4ef66c2b-53ac-4d89-b84a-72a48f294077",
+                                                "startLine": 13,
+                                                "endLine": 18,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 21,
+                                                "pageIds": [
+                                                    "4ef66c2b-53ac-4d89-b84a-72a48f294077"
+                                                ],
+                                                "pageIndices": [
+                                                    21
+                                                ]
+                                            },
+                                            {
+                                                "id": "16190dae-91c6-4ed7-8dd5-f024f1915bbf",
+                                                "title": "2) P-N間電圧",
+                                                "level": 5,
+                                                "sectionType": "specification",
+                                                "pageId": "4ef66c2b-53ac-4d89-b84a-72a48f294077",
+                                                "startLine": 19,
+                                                "endLine": 21,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 21,
+                                                "pageIds": [
+                                                    "4ef66c2b-53ac-4d89-b84a-72a48f294077"
+                                                ],
+                                                "pageIndices": [
+                                                    21
+                                                ]
+                                            },
+                                            {
+                                                "id": "ee94fa5a-dff3-4692-bc6d-245379e859f4",
+                                                "title": "3) システム最大電流",
+                                                "level": 5,
+                                                "sectionType": "specification",
+                                                "pageId": "4ef66c2b-53ac-4d89-b84a-72a48f294077",
+                                                "startLine": 22,
+                                                "endLine": 27,
+                                                "children": [],
+                                                "linkedElementIds": [],
+                                                "pageIndex": 21,
+                                                "pageIds": [
+                                                    "4ef66c2b-53ac-4d89-b84a-72a48f294077"
+                                                ],
+                                                "pageIndices": [
+                                                    21
+                                                ]
+                                            }
+                                        ],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 21,
+                                        "pageIds": [
+                                            "4ef66c2b-53ac-4d89-b84a-72a48f294077"
+                                        ],
+                                        "pageIndices": [
+                                            21
+                                        ]
+                                    },
+                                    {
+                                        "id": "6570c41f-bf80-44d8-bd56-0f63aefd0f97",
+                                        "title": "5.1.7 配線部品最大電流",
+                                        "level": 4,
+                                        "sectionType": "specification",
+                                        "pageId": "4ef66c2b-53ac-4d89-b84a-72a48f294077",
+                                        "startLine": 28,
+                                        "endLine": 30,
+                                        "children": [],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 21,
+                                        "pageIds": [
+                                            "4ef66c2b-53ac-4d89-b84a-72a48f294077"
+                                        ],
+                                        "pageIndices": [
+                                            21
+                                        ]
+                                    }
+                                ],
+                                "linkedElementIds": [],
+                                "pageIndex": 13,
+                                "pageIds": [
+                                    "6311fbd8-7670-4ae1-8cf4-7b289dd2265e"
+                                ],
+                                "pageIndices": [
+                                    13
+                                ]
+                            }
+                        ],
+                        "linkedElementIds": [],
+                        "pageIndex": 13,
+                        "pageIds": [
+                            "6311fbd8-7670-4ae1-8cf4-7b289dd2265e"
+                        ],
+                        "pageIndices": [
+                            13
+                        ]
+                    },
+                    {
+                        "id": "d4d56cc4-8b20-4a4b-8db0-846c4b930812",
+                        "title": "6. 回路図",
+                        "level": 2,
+                        "sectionType": "general",
+                        "pageId": "b4f4df9e-15db-4d29-9bf8-93da76d5e253",
+                        "startLine": 1,
+                        "endLine": 1,
+                        "children": [
+                            {
+                                "id": "b2ebc275-3162-4cc2-8046-3c861456b7ec",
+                                "title": "1) BBM配線種類と検討事項",
+                                "level": 3,
+                                "sectionType": "procedure",
+                                "pageId": "b4f4df9e-15db-4d29-9bf8-93da76d5e253",
+                                "startLine": 2,
+                                "endLine": 70,
+                                "children": [],
+                                "linkedElementIds": [],
+                                "pageIndex": 22,
+                                "pageIds": [
+                                    "b4f4df9e-15db-4d29-9bf8-93da76d5e253"
+                                ],
+                                "pageIndices": [
+                                    22
+                                ]
+                            },
+                            {
+                                "id": "47fa7dea-c8a7-40f8-bac1-cee2c82cf91f",
+                                "title": "2) サーミスタの個数・配置",
+                                "level": 3,
+                                "sectionType": "requirement",
+                                "pageId": "b4f4df9e-15db-4d29-9bf8-93da76d5e253",
+                                "startLine": 71,
+                                "endLine": 73,
+                                "children": [],
+                                "linkedElementIds": [],
+                                "pageIndex": 22,
+                                "pageIds": [
+                                    "b4f4df9e-15db-4d29-9bf8-93da76d5e253"
+                                ],
+                                "pageIndices": [
+                                    22
+                                ]
+                            },
+                            {
+                                "id": "0e35375f-4b2f-4ef8-aa62-ec73de7de403",
+                                "title": "3) FPCコネクタのピン配置",
+                                "level": 3,
+                                "sectionType": "requirement",
+                                "pageId": "b4f4df9e-15db-4d29-9bf8-93da76d5e253",
+                                "startLine": 74,
+                                "endLine": 102,
+                                "children": [],
+                                "linkedElementIds": [],
+                                "pageIndex": 22,
+                                "pageIds": [
+                                    "b4f4df9e-15db-4d29-9bf8-93da76d5e253"
+                                ],
+                                "pageIndices": [
+                                    22
+                                ]
+                            },
+                            {
+                                "id": "07f99212-2ef7-4e0c-859c-8ed219f7492a",
+                                "title": "4) 結線図",
+                                "level": 3,
+                                "sectionType": "procedure",
+                                "pageId": "b4f4df9e-15db-4d29-9bf8-93da76d5e253",
+                                "startLine": 103,
+                                "endLine": 106,
+                                "children": [],
+                                "linkedElementIds": [],
+                                "pageIndex": 22,
+                                "pageIds": [
+                                    "b4f4df9e-15db-4d29-9bf8-93da76d5e253"
+                                ],
+                                "pageIndices": [
+                                    22
+                                ]
+                            }
+                        ],
+                        "linkedElementIds": [],
+                        "pageIndex": 22,
+                        "pageIds": [
+                            "b4f4df9e-15db-4d29-9bf8-93da76d5e253"
+                        ],
+                        "pageIndices": [
+                            22
+                        ]
+                    },
+                    {
+                        "id": "7d53dd2e-0460-478d-8283-e5cc924a80c0",
+                        "title": "7 信頼性評価項目",
+                        "level": 2,
+                        "sectionType": "test",
+                        "pageId": "7fc053e0-3075-43b9-a651-175633938a92",
+                        "startLine": 1,
+                        "endLine": 1,
+                        "children": [
+                            {
+                                "id": "99ee7257-d0f5-45f0-9aeb-996b2f2147be",
+                                "title": "7.1 評価概要",
+                                "level": 3,
+                                "sectionType": "requirement",
+                                "pageId": "7fc053e0-3075-43b9-a651-175633938a92",
+                                "startLine": 2,
+                                "endLine": 7,
+                                "children": [],
+                                "linkedElementIds": [],
+                                "pageIndex": 23,
+                                "pageIds": [
+                                    "7fc053e0-3075-43b9-a651-175633938a92"
+                                ],
+                                "pageIndices": [
+                                    23
+                                ]
+                            },
+                            {
+                                "id": "6050c1e3-7e54-45ad-82fb-30de6d802a04",
+                                "title": "7.2 評価一覧・性能評価マトリクス",
+                                "level": 3,
+                                "sectionType": "test",
+                                "pageId": "7fc053e0-3075-43b9-a651-175633938a92",
+                                "startLine": 8,
+                                "endLine": 295,
+                                "children": [
+                                    {
+                                        "id": "ee5f2eaf-8508-457e-95a9-7788e3e975b4",
+                                        "title": "7.2.1 評価方法（供試品：BM Assy）",
+                                        "level": 4,
+                                        "sectionType": "test",
+                                        "pageId": "8fa440e7-3ce7-489c-9432-5a4023fb7b0e",
+                                        "startLine": 1,
+                                        "endLine": 22,
+                                        "children": [],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 24,
+                                        "pageIds": [
+                                            "8fa440e7-3ce7-489c-9432-5a4023fb7b0e"
+                                        ],
+                                        "pageIndices": [
+                                            24
+                                        ]
+                                    },
+                                    {
+                                        "id": "b175299e-adbe-46ad-9f60-c54cefa28f2a",
+                                        "title": "7.2.1 評価方法（供試品：BM Assy）",
+                                        "level": 4,
+                                        "sectionType": "procedure",
+                                        "pageId": "7590357e-ea19-4cbe-aea1-ce3ccacaabee",
+                                        "startLine": 1,
+                                        "endLine": 22,
+                                        "children": [],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 25,
+                                        "pageIds": [
+                                            "7590357e-ea19-4cbe-aea1-ce3ccacaabee"
+                                        ],
+                                        "pageIndices": [
+                                            25
+                                        ]
+                                    },
+                                    {
+                                        "id": "aeb01818-6302-409e-8ef5-f095cd8215c8",
+                                        "title": "7.2.1 評価方法（供試品：BM Assy）",
+                                        "level": 4,
+                                        "sectionType": "procedure",
+                                        "pageId": "1cab7f72-3438-42c4-a32f-50da845ae414",
+                                        "startLine": 1,
+                                        "endLine": 27,
+                                        "children": [],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 26,
+                                        "pageIds": [
+                                            "1cab7f72-3438-42c4-a32f-50da845ae414"
+                                        ],
+                                        "pageIndices": [
+                                            26
+                                        ]
+                                    },
+                                    {
+                                        "id": "dc25276e-a735-4f02-ae56-a98c08f83dea",
+                                        "title": "7.2.1 評価方法（供試品：BM Assy）",
+                                        "level": 4,
+                                        "sectionType": "procedure",
+                                        "pageId": "f9f7bba5-b9e4-4f29-9927-4802f81f54b0",
+                                        "startLine": 1,
+                                        "endLine": 23,
+                                        "children": [],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 27,
+                                        "pageIds": [
+                                            "f9f7bba5-b9e4-4f29-9927-4802f81f54b0"
+                                        ],
+                                        "pageIndices": [
+                                            27
+                                        ]
+                                    },
+                                    {
+                                        "id": "c00b3254-3e9d-44e3-bd26-880bea429670",
+                                        "title": "7.2.2 評価方法（供試品：電線部品 サブAssy）",
+                                        "level": 4,
+                                        "sectionType": "procedure",
+                                        "pageId": "c19f0f15-e568-40dd-bd82-d0751fe8da0e",
+                                        "startLine": 1,
+                                        "endLine": 22,
+                                        "children": [],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 28,
+                                        "pageIds": [
+                                            "c19f0f15-e568-40dd-bd82-d0751fe8da0e"
+                                        ],
+                                        "pageIndices": [
+                                            28
+                                        ]
+                                    },
+                                    {
+                                        "id": "d4e75f32-8139-4b12-a6c6-c7d5beb8fd7e",
+                                        "title": "7.2.2 評価方法（供試品：電線部品 サブAssy）",
+                                        "level": 4,
+                                        "sectionType": "procedure",
+                                        "pageId": "7891cefc-eb6e-4501-9711-c1e85d41aeee",
+                                        "startLine": 1,
+                                        "endLine": 17,
+                                        "children": [],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 29,
+                                        "pageIds": [
+                                            "7891cefc-eb6e-4501-9711-c1e85d41aeee"
+                                        ],
+                                        "pageIndices": [
+                                            29
+                                        ]
+                                    },
+                                    {
+                                        "id": "c4d672bb-78c0-43d6-9f75-582e4a68b5d3",
+                                        "title": "7.2.2 評価方法（供試品：電線部品 サブAssy）",
+                                        "level": 4,
+                                        "sectionType": "procedure",
+                                        "pageId": "d22e76d0-5d98-46cc-84da-171a78b61881",
+                                        "startLine": 1,
+                                        "endLine": 22,
+                                        "children": [],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 30,
+                                        "pageIds": [
+                                            "d22e76d0-5d98-46cc-84da-171a78b61881"
+                                        ],
+                                        "pageIndices": [
+                                            30
+                                        ]
+                                    },
+                                    {
+                                        "id": "8755dbff-1c73-4b8f-b842-056f82be0e9c",
+                                        "title": "7.2.2 評価方法（供試品：電線部品 サブAssy）",
+                                        "level": 4,
+                                        "sectionType": "procedure",
+                                        "pageId": "eb31df31-d384-4ad6-a86c-0c3049785fce",
+                                        "startLine": 1,
+                                        "endLine": 17,
+                                        "children": [],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 31,
+                                        "pageIds": [
+                                            "eb31df31-d384-4ad6-a86c-0c3049785fce"
+                                        ],
+                                        "pageIndices": [
+                                            31
+                                        ]
+                                    },
+                                    {
+                                        "id": "442d27a5-e064-47df-8e7b-d2ae01800dff",
+                                        "title": "7.2.3 確認項目および判定条件",
+                                        "level": 4,
+                                        "sectionType": "test",
+                                        "pageId": "13399338-2982-4fef-aeea-5cdb6c5a8f5a",
+                                        "startLine": 1,
+                                        "endLine": 61,
+                                        "children": [],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 32,
+                                        "pageIds": [
+                                            "13399338-2982-4fef-aeea-5cdb6c5a8f5a"
+                                        ],
+                                        "pageIndices": [
+                                            32
+                                        ]
+                                    },
+                                    {
+                                        "id": "e86f71df-6b69-4e3a-9ab4-731aba710324",
+                                        "title": "7.2.3 確認項目および判定条件",
+                                        "level": 4,
+                                        "sectionType": "test",
+                                        "pageId": "76aeabf0-df62-4eb7-a6e2-14b32f337265",
+                                        "startLine": 1,
+                                        "endLine": 149,
+                                        "children": [],
+                                        "linkedElementIds": [],
+                                        "pageIndex": 33,
+                                        "pageIds": [
+                                            "76aeabf0-df62-4eb7-a6e2-14b32f337265"
+                                        ],
+                                        "pageIndices": [
+                                            33
+                                        ]
+                                    }
+                                ],
+                                "linkedElementIds": [],
+                                "pageIndex": 23,
+                                "pageIds": [
+                                    "7fc053e0-3075-43b9-a651-175633938a92"
+                                ],
+                                "pageIndices": [
+                                    23
+                                ]
+                            }
+                        ],
+                        "linkedElementIds": [],
+                        "pageIndex": 23,
+                        "pageIds": [
+                            "7fc053e0-3075-43b9-a651-175633938a92"
+                        ],
+                        "pageIndices": [
+                            23
+                        ]
+                    },
+                    {
+                        "id": "76894b22-14a3-4f2f-a6df-fa517ac51dc9",
+                        "title": "8 承認図記載事項",
+                        "level": 2,
+                        "sectionType": "requirement",
+                        "pageId": "069a40fc-7fe2-4325-ba37-296f82fafcb7",
+                        "startLine": 1,
+                        "endLine": 31,
+                        "children": [],
+                        "linkedElementIds": [],
+                        "pageIndex": 34,
+                        "pageIds": [
+                            "069a40fc-7fe2-4325-ba37-296f82fafcb7"
+                        ],
+                        "pageIndices": [
+                            34
+                        ]
+                    },
+                    {
+                        "id": "8a4372c8-805b-481f-ac04-80ede7451851",
+                        "title": "9 用語・参考",
+                        "level": 2,
+                        "sectionType": "definition",
+                        "pageId": "196eb479-3953-403d-94fe-578adacd77d3",
+                        "startLine": 1,
+                        "endLine": 1,
+                        "children": [
+                            {
+                                "id": "e5fc791e-84ab-407c-a03e-458937b4dbdf",
+                                "title": "9.1 法規・規格・規則",
+                                "level": 3,
+                                "sectionType": "reference",
+                                "pageId": "196eb479-3953-403d-94fe-578adacd77d3",
+                                "startLine": 2,
+                                "endLine": 8,
+                                "children": [],
+                                "linkedElementIds": [],
+                                "pageIndex": 35,
+                                "pageIds": [
+                                    "196eb479-3953-403d-94fe-578adacd77d3"
+                                ],
+                                "pageIndices": [
+                                    35
+                                ]
+                            }
+                        ],
+                        "linkedElementIds": [],
+                        "pageIndex": 35,
+                        "pageIds": [
+                            "196eb479-3953-403d-94fe-578adacd77d3"
+                        ],
+                        "pageIndices": [
+                            35
+                        ]
+                    },
+                    {
+                        "id": "c172610d-c2f1-434a-8dbc-a06242a57e3b",
+                        "title": "10 解説",
+                        "level": 2,
+                        "sectionType": "general",
+                        "pageId": "64c9422a-729f-4796-9d8c-12f8a0594a31",
+                        "startLine": 1,
+                        "endLine": 1,
+                        "children": [
+                            {
+                                "id": "60e7c5c3-6c34-4ec3-9c30-b5d448ba59fa",
+                                "title": "10.1 電動車両概要",
+                                "level": 3,
+                                "sectionType": "general",
+                                "pageId": "64c9422a-729f-4796-9d8c-12f8a0594a31",
+                                "startLine": 2,
+                                "endLine": 5,
+                                "children": [],
+                                "linkedElementIds": [],
+                                "pageIndex": 36,
+                                "pageIds": [
+                                    "64c9422a-729f-4796-9d8c-12f8a0594a31"
+                                ],
+                                "pageIndices": [
+                                    36
+                                ]
+                            },
+                            {
+                                "id": "964f0b74-b13b-4c77-a8ce-c27ef780cbc7",
+                                "title": "10.2 電池パック構成について",
+                                "level": 3,
+                                "sectionType": "specification",
+                                "pageId": "64c9422a-729f-4796-9d8c-12f8a0594a31",
+                                "startLine": 6,
+                                "endLine": 10,
+                                "children": [],
+                                "linkedElementIds": [],
+                                "pageIndex": 36,
+                                "pageIds": [
+                                    "64c9422a-729f-4796-9d8c-12f8a0594a31"
+                                ],
+                                "pageIndices": [
+                                    36
+                                ]
+                            }
+                        ],
+                        "linkedElementIds": [],
+                        "pageIndex": 36,
+                        "pageIds": [
+                            "64c9422a-729f-4796-9d8c-12f8a0594a31"
+                        ],
+                        "pageIndices": [
+                            36
+                        ]
+                    }
+                ],
+                "linkedElementIds": [],
+                "pageIndex": 0,
+                "pageIds": [
+                    "775cfceb-66be-4419-a30c-e6e186ab0c52"
+                ],
+                "pageIndices": [
+                    0
+                ]
+            }
+        ],
+        "updatedAt": 1793687682973,
+        "isComplete": true
+    },
+    "headingRules": {
+        "ruleEntries": [],
+        "commonRules": {
+            "blankLineBeforeHeading": true,
+            "mergeSameLevelHeadings": true,
+            "fillMissingNumbers": true,
+            "preserveContentExactly": true
+        }
+    },
     "digest": {
         "overview": {
             "summary": "「HV電池室内設計業務標準」は、駆動用電池パックのセル間バスバー、セル温度センサー、電圧検出回路を備えるBBM（Bus Bar Module）の設計標準を定める文書である。要求仕様の策定から設計・部品品質検討、試作、DR、要求図承認、生産準備までの業務フローと関係者の役割を示す。性能・搭載要件、構成部品および配線・回路図の設計条件、信頼性評価の項目・方法・判定条件を規定し、承認図への記載事項や参照規格も挙げる。",

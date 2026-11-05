@@ -1,0 +1,186 @@
+{
+    "id": "c004f0eb-190f-4c55-9ea8-31612d2202c7",
+    "name": "81PL電池パック システムコンテキスト - 内部ブロック図",
+    "class_name": "FreeDiagram",
+    "nodes": [
+        {
+            "class_name": "DiagramNode",
+            "id": "27e443b9-691a-4058-8bd4-1fc2515a9953",
+            "element_id": "27e443b9-691a-4058-8bd4-1fc2515a9953",
+            "x": 80,
+            "y": 80,
+            "width": 560,
+            "height": 360,
+            "inner_nodes": [
+                {
+                    "element_id": "2feecb61-5961-4713-a1e4-d69694eae13c",
+                    "x": 11.111111111111146,
+                    "y": 114.88887871636284,
+                    "placement": "part",
+                    "width": 125.13888888888889,
+                    "height": 62.666666666666664
+                },
+                {
+                    "element_id": "8775a39d-f67f-48eb-8e4d-dbffdbafcddd",
+                    "x": 13.333333333333307,
+                    "y": 182.66665649414062,
+                    "placement": "part",
+                    "width": 124.44444444444444,
+                    "height": 59.33333333333333
+                },
+                {
+                    "element_id": "4ce26c61-9822-4381-867c-851f808288e8",
+                    "x": 13.333333333333314,
+                    "y": 245.99998982747394,
+                    "placement": "part",
+                    "width": 123.33333333333333,
+                    "height": 61.55555555555556
+                },
+                {
+                    "element_id": "ec6f4146-a7c4-4aa3-ab67-e28b5a395a37",
+                    "x": 317.46031746031747,
+                    "y": 67.11110093858507,
+                    "placement": "part",
+                    "width": 174.44444444444446,
+                    "height": 132.66666666666666
+                },
+                {
+                    "element_id": "42e87265-4bfa-4bc1-b26e-dea0f1332121",
+                    "x": 11.170634920634882,
+                    "y": 52.50793650793656,
+                    "placement": "part",
+                    "width": 123.75,
+                    "height": 59.75
+                },
+                {
+                    "element_id": "2d7aca0d-f3ce-434b-bd62-ee9631d0dd4b",
+                    "x": 119.1825396825397,
+                    "y": 60.03174603174614,
+                    "placement": "part",
+                    "width": 326.66666666666663,
+                    "height": 264.33333333333326
+                }
+            ]
+        }
+    ],
+    "edges": [
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "c0f33bff-608c-4316-9890-837f2561181f",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "652c86ba-715d-551b-b591-ccc4fd0e8b75",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "cc75ba6a-83d0-4aaf-97d4-b3c5c6e08826",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "71e1a56e-6036-46f0-a76c-7a3ad4dc85eb",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "9b132714-7ed3-5202-849b-ddd477fabf23",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "b3c32834-20e9-4679-af82-17848d9f62be",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "4a67e1c8-646d-46ef-9317-677116acd469",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "e0c6340c-97f9-599c-a7b4-834315ec6887",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "dd916e80-4ff5-4bca-8696-aaf593dd7294",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "49888863-b24d-4576-a2aa-b63efa94bfc3",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "e0eec324-724b-56eb-876a-80fc092cee20",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "ded45d15-913e-4148-a49b-20e179e21a38",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "a5d4e5fd-fda1-4179-8d8d-aab66cebb61b",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "5b9225cc-46bf-5719-a2c8-839ab8c22604",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "8fd2f32c-b278-42cd-af47-0e86b3078bbd",
+            "routing": "bezier"
+        },
+        {
+            "class_name": "DiagramEdge",
+            "element_id": "3845f45f-c8bd-4536-92e4-e61bbefb985d",
+            "routing": "bezier"
+        }
+    ],
+    "scale": 0.8,
+    "offset_x": -23.07936507936506,
+    "offset_y": 56.2412698412698,
+    "relationship_type": "containment",
+    "visible_relation_types": [
+        "containment",
+        "association",
+        "aggregation",
+        "composition",
+        "generalization",
+        "dependency",
+        "realization",
+        "satisfy",
+        "deriveReqt",
+        "trace",
+        "refine",
+        "allocate",
+        "merge",
+        "extend",
+        "include",
+        "verify"
+    ],
+    "visible_node_types": [
+        "Activity",
+        "ActivityNode",
+        "ActivityEdge",
+        "Actor",
+        "Block",
+        "Operation",
+        "Property",
+        "Parameter",
+        "Package",
+        "Requirement",
+        "TestCase",
+        "TestStep",
+        "UseCase"
+    ],
+    "anchored_node_ids": []
+}
