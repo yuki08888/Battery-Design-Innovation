@@ -1,0 +1,79 @@
+id: ""
+name: パラメトリック制約定義
+slash_command: parametric
+description: |
+  Block の値プロパティ間の物理的・数学的な制約を ConstraintBlock として
+  定義し、bindingConnector で束縛してパラメトリック図を作る手順。
+  性能配分やトレードオフ解析の土台になる。
+use_when: |
+  ユーザーが「制約を定義して」「パラメトリック図を作って」
+  「性能を配分したい」「計算式をモデルに入れたい」等を依頼したとき。
+steps:
+  - no: 1
+    title: 値プロパティの棚卸し
+    instruction: |
+      対象 Block とその part が持つ値プロパティ（質量・電力・
+      応答時間などの物理量）を列挙し、単位と型を確認する。
+      既存の ConstraintBlock があれば再利用を検討する。
+    tools:
+      - search_item
+      - read_package_contents
+      - get_related_elements
+      - read
+    done_when: 対象 Block と part の全値プロパティについて短縮ID・親Block・型・単位を一覧化し、関連する既存 ConstraintBlock を0件の場合も含めて識別できている
+  - no: 2
+    title: 制約式の定義
+    instruction: |
+      値プロパティ間に成り立つ関係式を定義する。
+      各式について、パラメータ名・単位・式の意味（物理的根拠）を
+      明示すること。単位系の不整合がないか必ず確認する。
+      式はそのまま実行できる Python で書く:
+      - パラメータ名は Python 識別子 (単位・括弧・空白を含めない)。
+      - 出力は全分岐で代入する (return 不可)。べき乗は **、数学関数は math.sqrt 等。
+      - 式で使う変数はすべて入力か parameters (定数) にする。合否は boolean 出力にする。
+      作成ツールは試行実行で検査し、実行できない式は拒否する。
+    done_when: 各制約式に全入力・出力パラメータと単位・物理的根拠があり、式の両辺で次元が一致し、単位または役割が未定のパラメータ0件で、式中の全変数が入力または定数として宣言されている
+  - no: 3
+    title: パラメトリック構造の生成
+    instruction: |
+      create_internal_model_elements（structureType=parametric）で
+      ConstraintBlock / constraint 型 Property / bindingConnector を生成する。
+      派生操作の結果（derivedNotes）を確認し、
+      意図しない要素が作られていないか点検すること。
+      結果の「シミュレーション: まだ実行できません」に挙がった項目 (初期値の無い入力、
+      未束縛の入力) はこの段階で解消する。入力値は指示・原文にある数値を
+      値プロパティの defaultValue に設定し、無い場合は推測せずユーザーに確認する。
+    tools:
+      - create_internal_model_elements
+      - create_constraint_block
+      - create_property
+    done_when: 設計した全 ConstraintBlock・constraint型Property・bindingConnector が存在し、実件数が設計件数と一致し、意図しない派生要素0件である
+    referenceConventions:
+      - ConstraintBlock
+      - Property
+  - no: 4
+    title: 束縛の完全性確認
+    instruction: |
+      各制約パラメータが値プロパティへ正しく束縛されているかを
+      get_related_elements で確認する。
+      未束縛のパラメータがあれば bindingConnector を追加する。
+    tools:
+      - get_related_elements
+      - create_relationship
+      - update_relationship
+    done_when: 全制約パラメータに対応する値Propertyへの bindingConnector が1本以上あり、全端点が実在要素へ解決し、未束縛・誤束縛・重複束縛0件である
+  - no: 5
+    title: 要求との接続と検証
+    instruction: |
+      制約が満たすべき性能要求がある場合、ConstraintBlock から
+      Requirement へ satisfy 関係を張る。
+      その後 validate_model で検証し、simulation (contextBlockId = 対象 Block) で
+      実際に実行する。失敗したら fixHints の理由をそのまま直してから再実行する。
+    tools:
+      - search_item
+      - create_relationship
+      - validate_model
+    done_when: 各制約が対応する性能 Requirement と satisfy で接続されるか非該当理由があり、validate_model が error 0件または残る各違反を理由付きで記録し、対象 Block のシミュレーションが実行完了して全出力が数値または boolean になった (入力値が原文に無い場合はその旨を記録した)
+strict: true
+allow_skip: false
+max_steps_per_stage: 12
