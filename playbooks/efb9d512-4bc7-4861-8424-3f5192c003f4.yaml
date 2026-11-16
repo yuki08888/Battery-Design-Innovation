@@ -67,10 +67,12 @@ steps:
   - no: 5
     title: 図の生成と検証
     instruction: |
-      create_activity_diagram でアクティビティ図を作成し、
-      レイアウトを整える。その後 validate_model で検証する。
+      create_detail_diagram(diagramType=activity, targetElementId=対象 Activity) で
+      専用のアクティビティ図を作成する（まず自動配置を適用する。create_free_diagram で
+      ノードを並べない）。自動配置で表示に問題がある場合だけ update_diagram_layout で修正する。
+      その後 validate_model で検証する。
     tools:
-      - create_activity_diagram
+      - create_detail_diagram
       - update_diagram_layout
       - validate_model
     done_when: アクティビティ図に全ノード・全エッジが欠落0件で表示され、validate_model が error 0件、または残る各違反の ruleId・要素ID・理由を記録した

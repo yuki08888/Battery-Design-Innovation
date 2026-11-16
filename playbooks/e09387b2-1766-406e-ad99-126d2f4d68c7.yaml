@@ -1,0 +1,37 @@
+id: ""
+name: 要求の検証テスト作成
+slash_command: code-test
+description: 要求から検証テストを作成・実行し、テストを要求を検証するテストケース (TestCase) へ verifies でリンクして、要求ごとの検証結果を報告する
+use_when: 要求 (またはそれを満たす Block) の検証テストを作る・実行するよう依頼された場合
+steps:
+  - no: 1
+    title: 検証する要求と実装の把握
+    instruction: |
+      コードドメイン(code)で実行する。横断エージェントならbuiltin:codeへ委任する。
+      対象の要求ごとにget_code_contextで本文・検証方法・制約(値の範囲・単位)と、満たす Block・実装シンボルを読む。
+      要求を検証するテストケース (TestCase -verify-> 要求) をget_code_contextの testCases で確かめ、
+      trace_element_to_codeでテストケースにリンク済みのテスト(verifies リンク)を調べ、既に検証済みの要求を確かめる。
+      テストケースが無い要求は、delegateでbuiltin:modelにテストケース(事前条件・手順・期待結果)と要求への verify 関係の作成を依頼する(自分ではモデルを変えない)。
+      実装が無い要求はテストを作れないので報告対象にする(実装は /code-implement で行う)。
+    tools: [list_code_workspaces, select_code_workspace, get_code_context, trace_element_to_code, ask_user]
+    done_when: 要求 ID ごとのテストケース・実装シンボル・既存テストの有無の一覧が記録されている
+  - no: 2
+    title: テストの作成
+    instruction: |
+      既存のテストの場所・命名・フレームワークをfile_search/grep_codeで調べて合わせる。
+      テストケースごとに、テストケースの事前条件・手順・期待結果と、検証する要求の文言(しきい値・条件)をそのまま確かめるテストを書く。境界値と異常系も含める。
+      テストの名前か docstring にテストケース名と要求の ID を入れる。新規はcreate_code_file、既存への追加はreplace_string_in_codeで行い、get_diagnosticsでエラー 0件を確かめる。
+    tools: [file_search, grep_code, read_code_file, create_code_file, replace_string_in_code, get_diagnostics]
+    done_when: 要求ごとに作ったテストの一覧と、診断エラーが 0件であることが記録されている
+  - no: 3
+    title: 実行・リンク・報告
+    instruction: |
+      run_code_testsで実行する(承認が要る)。ライブラリが足りなければget_python_envで確かめ、request_python_packagesで理由を添えて承認を依頼する。
+      テストの失敗は実装の不具合か、テストの誤りかを見分ける。テストを弱めて通さない。実装の不具合は報告する。
+      テスト関数ごとに、そのテストが確かめるテストケースへ verifies でリンクする(要求へは直接リンクしない。ファイル全体ではなくテスト関数にピンポイントで張る)。
+      suggest_code_links(paths=テストファイル)が、テストが使う実装のリンク先 → 要求 → テストケースを辿って候補を出す。
+      その suggestions と、補助関数・フィクスチャなどテストケースに対応しないシンボルの理由 (exemptions) を
+      link_code_batchの 1 回で登録し、check_code_link_coverageで未リンク 0件を確かめる。
+      要求ごとに テストケース・検証結果(成功・失敗・未作成)・テスト名を表で報告する。
+    tools: [run_code_tests, get_code_command_output, get_python_env, request_python_packages, suggest_code_links, link_code_batch, link_code_to_element, trace_element_to_code, set_code_link_exemption, check_code_link_coverage]
+    done_when: 各要求の検証結果 (成功・失敗・未作成の件数) とテストケースへ張った verifies リンクの一覧が記録されている
