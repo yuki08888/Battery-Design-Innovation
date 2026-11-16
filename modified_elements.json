@@ -769,5 +769,100 @@
             },
             "className": "Requirement"
         }
+    },
+    {
+        "elementId": "ac91f4d6-d136-48e7-9d0b-76bb13769e7e",
+        "className": "ConstraintBlock",
+        "name": "MOD間バスバ_4ノード非定常熱回路モデル",
+        "recordedAt": "2026-11-11T16:16:52.298914",
+        "operator": "ai",
+        "actor": null,
+        "session": {
+            "id": "chat:589b19e0-2359-4610-9e8d-29f397fe9186",
+            "kind": "chat",
+            "label": "ブロック「MOD間バスバ4ノード熱伝達解析」(ID: 0069e233-b818-4ab6-8abc-7149faa4…",
+            "startedAt": "2026-11-11T16:15:05.443938"
+        },
+        "before": {
+            "id": "ac91f4d6-d136-48e7-9d0b-76bb13769e7e",
+            "name": "MOD間バスバ_4ノード非定常熱回路モデル",
+            "description": "元の4ノード熱回路の熱収支・後退オイラー・Thomas法を継承。rho[ohm*m]、L_b[mm]、S_b[mm^2]からR_b[ohm]とP_b[W]を計算する。端子は対称両端の代表。",
+            "inputNames": [
+                "I",
+                "L_b",
+                "S_b",
+                "rho",
+                "P_w",
+                "P_t",
+                "P_c",
+                "C_b",
+                "C_w",
+                "C_t",
+                "C_c",
+                "R_bw",
+                "R_wt",
+                "R_tc",
+                "R_ba",
+                "R_cool",
+                "T_a",
+                "T_cool",
+                "T_init",
+                "sim_time",
+                "dt",
+                "sim_dt"
+            ],
+            "outputNames": [
+                "T_b_final",
+                "T_w_final",
+                "T_t_final",
+                "T_c_final",
+                "T_b_max",
+                "T_w_max",
+                "T_t_max",
+                "T_c_max",
+                "q_bw",
+                "q_ba",
+                "q_wt",
+                "q_tc",
+                "q_cool",
+                "R_b",
+                "P_b"
+            ],
+            "parameters": {},
+            "code": "R_b = float(rho) * (float(L_b) * 1e-3) / (float(S_b) * 1e-6)\nP_b = float(I) ** 2 * R_b\np_b_actual = P_b\nT_b = float(T_init)\nT_w = float(T_init)\nT_t = float(T_init)\nT_c = float(T_init)\nT_b_max = T_b\nT_w_max = T_w\nT_t_max = T_t\nT_c_max = T_c\nstep_dt = float(sim_dt) if float(sim_dt) > 0 else 1.0\ntotal_time = float(sim_time) if float(sim_time) > 0 else 600.0\nn_steps = int(total_time / step_dt) if step_dt > 0 else 1\ng_bw = 1.0 / float(R_bw)\ng_ba = 1.0 / float(R_ba)\ng_wt = 1.0 / float(R_wt)\ng_tc = 1.0 / float(R_tc)\ng_cool = 1.0 / float(R_cool)\ncap_b_dt = float(C_b) / step_dt\ncap_w_dt = float(C_w) / step_dt\ncap_t_dt = float(C_t) / step_dt\ncap_c_dt = float(C_c) / step_dt\nfor step_idx in range(n_steps):\n    b1 = cap_b_dt + g_bw + g_ba\n    c1 = -g_bw\n    d1 = cap_b_dt * T_b + p_b_actual + g_ba * float(T_a)\n    a2 = -g_bw\n    b2 = cap_w_dt + g_bw + g_wt\n    c2 = -g_wt\n    d2 = cap_w_dt * T_w + float(P_w)\n    a3 = -g_wt\n    b3 = cap_t_dt + g_wt + g_tc\n    c3 = -g_tc\n    d3 = cap_t_dt * T_t + float(P_t)\n    a4 = -g_tc\n    b4 = cap_c_dt + g_tc + g_cool\n    d4 = cap_c_dt * T_c + float(P_c) + g_cool * float(T_cool)\n    c1_p = c1 / b1\n    d1_p = d1 / b1\n    m2 = b2 - a2 * c1_p\n    c2_p = c2 / m2\n    d2_p = (d2 - a2 * d1_p) / m2\n    m3 = b3 - a3 * c2_p\n    c3_p = c3 / m3\n    d3_p = (d3 - a3 * d2_p) / m3\n    m4 = b4 - a4 * c3_p\n    d4_p = (d4 - a4 * d3_p) / m4\n    T_c = d4_p\n    T_t = d3_p - c3_p * T_c\n    T_w = d2_p - c2_p * T_t\n    T_b = d1_p - c1_p * T_w\n    if T_b > T_b_max:\n        T_b_max = T_b\n    if T_w > T_w_max:\n        T_w_max = T_w\n    if T_t > T_t_max:\n        T_t_max = T_t\n    if T_c > T_c_max:\n        T_c_max = T_c\nT_b_final = T_b\nT_w_final = T_w\nT_t_final = T_t\nT_c_final = T_c\nq_bw = (T_b - T_w) / float(R_bw)\nq_ba = (T_b - float(T_a)) / float(R_ba)\nq_wt = (T_w - T_t) / float(R_wt)\nq_tc = (T_t - T_c) / float(R_tc)\nq_cool = (T_c - float(T_cool)) / float(R_cool)",
+            "language": "python",
+            "simulationKind": "time_series",
+            "simulationConfig": {},
+            "verificationOutput": "",
+            "stereotypes": [],
+            "metaData": {
+                "version": 1.0,
+                "createdBy": "Atsushi-Nakata-ZA",
+                "createdDate": "2026-11-11T09:58:41.152122",
+                "ref": null,
+                "reasoning": "ユーザーのコピー新規作成指定に基づき、元の式を保持した別ConstraintBlockを技術制約パッケージに作成する。P_b入力と固定rho_cuのみ廃止し形状連動の発熱出力へ置き換える。",
+                "reasoningHistory": [
+                    {
+                        "reasoning": "ユーザーのコピー新規作成指定に基づき、元の式を保持した別ConstraintBlockを技術制約パッケージに作成する。P_b入力と固定rho_cuのみ廃止し形状連動の発熱出力へ置き換える。",
+                        "date": "2026-11-11T09:58:41.152094",
+                        "operator": "ai",
+                        "by": "Atsushi-Nakata-ZA",
+                        "action": "create",
+                        "sessionId": "chat:5e548a48-37fd-4d5a-957c-82efb735e2fd"
+                    }
+                ],
+                "createdOperator": "ai",
+                "modifiedBy": "Atsushi-Nakata-ZA",
+                "modifiedDate": "2026-11-11T16:14:24.053194",
+                "modifiedOperator": "user",
+                "createdSession": {
+                    "id": "chat:5e548a48-37fd-4d5a-957c-82efb735e2fd",
+                    "kind": "chat",
+                    "label": "モデルの作成を続けてください。",
+                    "startedAt": "2026-11-11T09:56:07.948498"
+                }
+            },
+            "className": "ConstraintBlock"
+        }
     }
 ]
