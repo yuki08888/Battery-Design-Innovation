@@ -1,0 +1,54 @@
+id: ""
+name: インパクト分析
+slash_command: impact-analysis
+description: |
+  変更起点の要素から関係を辿って影響範囲を探索し、関連する他の分析・文書・データも横断して、
+  影響要素ごとに処置を判定する手順。結果は分析レイヤーのインパクト分析に残る (判定は再探索しても保たれる)。
+use_when: |
+  ユーザーが「インパクト分析」「この変更の影響範囲を分析レコードに残して」等を依頼したとき。
+  影響をその場で答えるだけなら /impact (変更影響分析) で足りる。
+steps:
+  - no: 1
+    title: 変更起点の特定
+    instruction: |
+      文脈の「対象の分析」(method=impact) があればそれを使う。search_item / read で変更する要素を特定し、
+      変更内容を整理する。
+    tools: [list_analyses, search_item, read, read_analysis]
+    done_when: 変更起点の要素 ID と変更内容が記録されている
+  - no: 2
+    title: 探索条件の決定
+    instruction: |
+      変更の性質から探索条件を決める。要求・検証への波及は trace、構造の波及は structure を使い、
+      ホップ数は既定 3 (必要なら 1〜10)。向き (both / outgoing / incoming) も理由とともに決める。
+    tools: [get_related_elements]
+    done_when: maxHops / direction / groups の値と理由が記録されている
+  - no: 3
+    title: 探索の実行
+    instruction: |
+      run_impact_analysis で探索する (analysisId 省略時は新規作成)。hitCount と距離別件数を確認する。
+      truncated=true の場合は条件を絞って再実行する。
+    tools: [run_impact_analysis, read_analysis]
+    done_when: run_impact_analysis が success=true を返し、影響要素の件数が確認されている
+  - no: 4
+    title: 関連分析・文書・データの横断
+    instruction: |
+      find_element_analyses で影響要素に紐づく他の分析 (FMEA / FTA など) を確認する。
+      get_linked_content で関連する文書・データを確認する。見直しが必要な分析は報告に挙げる。
+    tools: [find_element_analyses, get_linked_content]
+    done_when: 影響要素に紐づく他の分析の一覧が確認されている
+  - no: 5
+    title: 処置判定
+    instruction: |
+      各 impacted レコードの disposition (action_required / no_impact / needs_review) と rationale を記入する。
+      判断の根拠が無いものは needs_review とする。
+    tools: [read_analysis, edit_analysis_records, read]
+    done_when: 全 impacted レコードの disposition が記録され、未判定が 0件である
+  - no: 6
+    title: 報告
+    instruction: |
+      影響要素の件数 (距離別)、要対応 / 影響なし / 要確認の件数、見直しが必要な他の分析を報告する。
+    tools: [validate_analysis]
+    done_when: 処置判定ごとの件数が報告に含まれている
+strict: true
+allow_skip: false
+max_steps_per_stage: 12

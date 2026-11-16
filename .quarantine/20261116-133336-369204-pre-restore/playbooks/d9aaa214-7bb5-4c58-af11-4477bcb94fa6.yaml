@@ -1,0 +1,52 @@
+id: ""
+name: トレーサビリティ・カバレッジUIの作成
+slash_command: ui-trace
+description: 要求⇔設計⇔検証の追跡表・行列と未カバー検出をカスタムUIとして作る
+use_when: 要求の充足/検証状況の追跡表、関係マトリクス、未カバー要求の一覧をカスタムUIで作る場合
+steps:
+  - no: 1
+    title: 要件のすり合わせ
+    instruction: |
+      対象UIをlist_apps/select_appで特定し、新規はcreate_app(template="trace")で作る。
+      追跡する関係種別(satisfy/verify/deriveReqt/refine/trace/allocate)・起点(要求パッケージ等)・向き・何をもって「カバー済み」とするかを決める。
+      不足はask_userで選択肢 + 既定値を示して確認する。satisfyとverifyを混同しない。
+    tools: [list_apps, select_app, create_app, ask_user]
+    done_when: 起点スコープ・関係種別と向き・カバー判定条件が記録されている
+  - no: 2
+    title: データの特定
+    instruction: |
+      search_project(kind="model")で起点要素と関係の実在を確認する。既存のFreeMatrix/FreeTableがあればsearch_project(kind="views")で定義を読む。
+      useModelQueryのDSL(fromElement → contain_out → satisfy_in 等)の組み立てをread_sdk_recipe(topic="trace-matrix")で確認する。
+      関係が0件のときに「未カバー」と「未取得(エラー)」を区別できる設計にする。
+    tools: [search_project, read_sdk_recipe, read_file]
+    done_when: 使用するDSL・関係種別・起点IDの取得方法(環境変数/選択)が記録されている
+  - no: 3
+    title: 骨格の実装
+    instruction: |
+      ResizableSplitPaneで左に起点ツリー/フィルタ、右にカバレッジ表を置く。表はDataTable、参照はResourceChip。
+      関係種別フィルタと「未カバーのみ」切り替えを用意する。宣言的フック(useModelQuery等)はモデル変更に自動追従する。
+    tools: [create_app_file, multi_replace_string_in_file]
+    done_when: 起点・フィルタ・表の各コンポーネントファイルの一覧が記録されている
+  - no: 4
+    title: 操作の実装
+    instruction: |
+      行クリックでrevealElement(id, {openView:true})、CSV/Excel出力はexportTable、コピーはcopyToClipboardを使う。
+      カバレッジ率は母数と分子を併記する。未取得を0件として扱わない。
+    tools: [multi_replace_string_in_file, replace_string_in_file]
+    done_when: 遷移・出力・コピーの各操作がSDK APIで実装され、カバレッジの母数表示が存在する
+  - no: 5
+    title: 権限の確定
+    instruction: |
+      model.read・files・ui・storage(フィルタ保存)を確認し、既定外はrequest_permissionsで承認を得る。
+    tools: [request_permissions, validate_sdk_usage]
+    done_when: 必要権限の一覧と承認結果が記録され、権限不足(SDK004)が0件
+  - no: 6
+    title: 検証と引き渡し
+    instruction: |
+      validate_app → validate_sdk_usage → test_app_in_sandbox → preview_app(action="inspect")で0件になるまで直す。
+      未カバー検出が実データで正しいことを1件以上確認し、確認できなかった点は未検証と明記する。
+    tools: [diff_app, validate_app, validate_sdk_usage, test_app_in_sandbox, preview_app]
+    done_when: 検証エラー0件・inspectの指摘0件が記録され、未検証事項が明示されている
+strict: false
+allow_skip: true
+max_steps_per_stage: 12

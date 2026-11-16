@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "id": "be3bf3ce-841f-4e19-83d0-cd2bae5d2b11",
+  "method": "impact",
+  "name": "MOD間バスバ 厚み増加の影響分析",
+  "description": "",
+  "status": "draft",
+  "owner": "",
+  "createdAt": "2026-11-11T06:43:26Z",
+  "updatedAt": "2026-11-11T06:43:26Z",
+  "revision": 1,
+  "scope": {
+    "elementIds": [
+      "bfb003ae-5ca9-4544-9fe3-d6b20a8aa2b1",
+      "07cbec3c-d5f1-403e-a108-bfbc792b93cd",
+      "75a37909-2099-46aa-9705-6ed71aaa567c"
+    ],
+    "baseline": {
+      "bfb003ae-5ca9-4544-9fe3-d6b20a8aa2b1": {
+        "name": "thickness",
+        "className": "Property",
+        "hash": "da2ef915a83347533ca4c94f4cc4aa2e33f04e79"
+      },
+      "07cbec3c-d5f1-403e-a108-bfbc792b93cd": {
+        "name": "thicknessMax",
+        "className": "Property",
+        "hash": "5c16c6877b2ca045fbaddf8cf0d3f3b3fec6a89e"
+      },
+      "75a37909-2099-46aa-9705-6ed71aaa567c": {
+        "name": "MOD間バスバ形状",
+        "className": "Block",
+        "hash": "7fa9d3da67702b0a85f88c7c87f2f367882f9b5e"
+      }
+    }
+  },
+  "settings": {},
+  "missingElements": {},
+  "records": [
+    {
+      "id": "r-f18f7a3b490e",
+      "kind": "change",
+      "parentId": null,
+      "order": 0,
+      "status": "open",
+      "fields": {
+        "title": "MOD間バスバ 厚み増加の影響分析",
+        "description": "MOD間バスバの厚み(thickness #{PR163}, 現在値2.0mm, 上限 thicknessMax #{PR169}=2.0)を増やした場合の下流影響（熱・電気・質量・スペース・接続部・検証・要求充足）。モデル読み取りのみ。",
+        "elementIds": [
+          "bfb003ae-5ca9-4544-9fe3-d6b20a8aa2b1",
+          "07cbec3c-d5f1-403e-a108-bfbc792b93cd",
+          "75a37909-2099-46aa-9705-6ed71aaa567c"
+        ]
+      },
+      "computed": {
+        "impactedCount": 0,
+        "dispositionCounts": {
+          "action_required": 0,
+          "no_impact": 0,
+          "needs_review": 0
+        },
+        "undecidedCount": 0
+      }
+    }
+  ],
+  "edges": [],
+  "layout": {},
+  "links": [
+    {
+      "id": "l-64ed2ec6fd81",
+      "recordId": "r-f18f7a3b490e",
+      "elementId": "bfb003ae-5ca9-4544-9fe3-d6b20a8aa2b1",
+      "role": "changed",
+      "origin": "field:elementIds",
+      "note": "",
+      "createdAt": "2026-11-11T06:43:26Z",
+      "operator": "ai"
+    },
+    {
+      "id": "l-ba5629f319d7",
+      "recordId": "r-f18f7a3b490e",
+      "elementId": "07cbec3c-d5f1-403e-a108-bfbc792b93cd",
+      "role": "changed",
+      "origin": "field:elementIds",
+      "note": "",
+      "createdAt": "2026-11-11T06:43:26Z",
+      "operator": "ai"
+    },
+    {
+      "id": "l-dce3c876a4db",
+      "recordId": "r-f18f7a3b490e",
+      "elementId": "75a37909-2099-46aa-9705-6ed71aaa567c",
+      "role": "changed",
+      "origin": "field:elementIds",
+      "note": "",
+      "createdAt": "2026-11-11T06:43:26Z",
+      "operator": "ai"
+    }
+  ]
+}
