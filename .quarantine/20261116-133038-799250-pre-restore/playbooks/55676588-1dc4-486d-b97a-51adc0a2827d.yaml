@@ -1,0 +1,54 @@
+id: ""
+name: 安全・リスク分析サマリ
+slash_command: report-safety
+description: |
+  プロジェクトの分析 (FMEA / DRBFM / FTA / STPA / TARA / RCA) から、要対応の項目と対策状況をまとめる手順。
+  分析は analysis 部品で参照し、数字や表を書き写さない。
+use_when: |
+  ユーザーが「安全分析のまとめ」「リスクの報告書」「FMEA の結果を資料に」「安全審査の資料」等を依頼したとき。
+steps:
+  - no: 1
+    title: 分析の把握
+    instruction: |
+      list_analyses で対象の分析を探し、read_analysis で要対応 (attention) の項目と対策の状況を読む。
+      対象のシステムが決まっていれば find_element_analyses でその要素に紐づく分析を絞る。
+    tools: [list_analyses, read_analysis, find_element_analyses, search_item, list_reports]
+    done_when: 対象の分析 ID の一覧と、それぞれの要対応の件数が分かっている
+  - no: 2
+    title: 構成とデザイン
+    instruction: |
+      get_report_design_guide (data / color / layouts) を読む。create_report (A4、説明用なら slide_16_9) で作り、
+      表紙 → 対象と範囲 → 分析の一覧 → 分析ごとの要対応 → 対策の状況 → 残留リスクと判断を求める事項 の順にページを置く。
+      重大度は状態色 (danger / warn / ok) で表し、それ以外の色を増やさない。
+    tools: [get_report_design_guide, create_report, apply_report_ops]
+    done_when: 構成の全ページが作られ、各ページに名前と説明が存在する
+  - no: 3
+    title: 分析の配置
+    instruction: |
+      分析ごとに analysis 部品を置く: 全体像は mode summary、要対応の表は mode records (limit で行数を絞る)、
+      図で見せる分析 (FTA / STPA) は mode open。分析の数字を text に書き写さない。
+      関連するモデル要素は {{ref:…}} で書く。
+    tools: [apply_report_ops, read_analysis, read]
+    done_when: 分析の一覧の各分析に analysis 部品が存在する
+  - no: 4
+    title: 所見の記述
+    instruction: |
+      分析ごとに所見 (要対応の要点・対策の要否) を text で 2〜4 行書く。根拠の無い判断は書かず「要確認」とする。
+      対象要素の一覧が要るときは binding を preview_report_binding で確かめてから置く。
+    tools: [apply_report_ops, preview_report_binding, get_related_elements]
+    done_when: 各分析のページに所見の text が存在する
+  - no: 5
+    title: 検証と確認
+    instruction: |
+      validate_report のエラーを 0 にし、review_report_design の講評を直す。分析のページは render_report_page で見る。
+    tools: [validate_report, review_report_design, render_report_page, apply_report_ops]
+    done_when: validate_report のエラーが0件
+  - no: 6
+    title: 報告
+    instruction: |
+      レポート名、取り上げた分析と要対応の件数、「要確認」とした判断を報告する。分析そのものは変更していないことを明記する。
+    tools: [validate_report]
+    done_when: 取り上げた分析の ID と要対応の件数が報告に含まれている
+strict: true
+allow_skip: false
+max_steps_per_stage: 12

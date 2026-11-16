@@ -1,0 +1,7 @@
+{
+    "id": "c9f1a042-cfca-4138-920a-776406c99163",
+    "name": "ヘルプ・ドキュメント",
+    "class_name": "AppDocView",
+    "description": "System Factory の使い方ドキュメント",
+    "section_id": "custom-ui-sdk"
+}

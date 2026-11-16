@@ -1,0 +1,54 @@
+id: ""
+name: 開発進捗報告
+slash_command: report-progress
+description: |
+  開発の進捗をモデルから報告する手順。要素の件数 (KPI)・状態や種別の内訳・課題とリスクを
+  スライドか A4 1〜2 枚にまとめ、数字はすべて問い合わせで追従させる。
+use_when: |
+  ユーザーが「進捗報告を作って」「週報 / 月報」「定例会の資料」「進捗のダッシュボード的なスライド」等を依頼したとき。
+steps:
+  - no: 1
+    title: 報告の範囲と指標
+    instruction: |
+      報告の期間・読み手・対象範囲 (起点のパッケージ) を確かめ、指標を決める
+      (例: 要求数・充足済み・検証済み・ブロック数・リスクの高い要求)。
+      search_item / read で、状態やリスクがどのプロパティに入っているかを確かめる。
+    tools: [search_item, read_package_contents, read, list_reports]
+    done_when: 起点の要素 ID と、指標の一覧 (それぞれのプロパティ / 関係) が決まっている
+  - no: 2
+    title: 指標の問い合わせ
+    instruction: |
+      各指標の binding (className / プロパティ / relation の filter) を作り、preview_report_binding で件数を確かめる。
+      内訳 (chart) は group_by にプロパティか '__class' を使う。値の無いプロパティで内訳を作らない。
+    tools: [preview_report_binding, graph_query]
+    done_when: 指標全ての件数を preview_report_binding で検証した
+  - no: 3
+    title: 構成とデザイン
+    instruction: |
+      get_report_design_guide (layouts の slide_kpi / data / color) を読む。
+      create_report (slide_16_9、紙なら A4) で作り、表紙 → サマリ (KPI) → 内訳 → 課題とリスク → 次の予定 の順にページを置く。
+      報告日・期間・版数は set_variables で変数にする (本文にベタ書きしない)。
+    tools: [get_report_design_guide, create_report, apply_report_ops]
+    done_when: 構成の全ページが作られ、報告日・期間が変数として存在する
+  - no: 4
+    title: 部品の配置
+    instruction: |
+      KPI は count を grid (columns 3〜4) で並べ、thresholds で要注意を色分けする (状態色)。
+      内訳は chart (bar / hbar / pie)。課題は list か table (リスク・状態の列)。見出しは結論を一文で書く。
+    tools: [apply_report_ops, preview_report_binding]
+    done_when: 各ページに内容の部品が存在し、数字がすべて問い合わせになっている
+  - no: 5
+    title: 検証と講評
+    instruction: |
+      validate_report のエラーを 0 にし、review_report_design の講評を直す。サマリのページは render_report_page で見る。
+    tools: [validate_report, review_report_design, render_report_page, apply_report_ops]
+    done_when: validate_report のエラーが0件で、review_report_design の warning が0件
+  - no: 6
+    title: 報告
+    instruction: |
+      レポート名、指標ごとの現在の件数、要注意の指標、変数にした項目 (次回は値を変えるだけで再利用できること) を報告する。
+    tools: [validate_report]
+    done_when: レポート ID と指標ごとの件数が報告に含まれている
+strict: true
+allow_skip: false
+max_steps_per_stage: 12

@@ -1,0 +1,50 @@
+id: ""
+name: 比較・トレードスタディUIの作成
+slash_command: ui-compare
+description: 代替案の評価表・重み付け・感度・結果グラフを備えたトレードスタディ用カスタムUIを作る
+use_when: 設計代替案を評価基準と重みで比較し、結果をグラフや表で示すUIを作る場合
+steps:
+  - no: 1
+    title: 要件のすり合わせ
+    instruction: |
+      対象UIをlist_apps/select_appで特定し、新規はcreate_appで作る。
+      代替案(モデル要素か自由入力か)、評価基準・重み・採点尺度、感度分析の要否、結果の出力形式を決める。
+      不足はask_userで選択肢 + 既定値を示して確認する。
+    tools: [list_apps, select_app, create_app, ask_user]
+    done_when: 代替案の取得方法・評価基準と重み・採点尺度が記録されている
+  - no: 2
+    title: データの特定
+    instruction: |
+      代替案をモデルから取る場合はsearch_projectで実在を確認する。数値属性はプロパティ名と単位を確認する。
+      read_sdk_recipe(topic="chart")とread_sdk_recipe(topic="export-table")で書き方を確認する。
+    tools: [search_project, read_sdk_recipe, read_file]
+    done_when: 代替案と評価値のデータ源が記録され、存在するプロパティだけを使っている
+  - no: 3
+    title: 骨格の実装
+    instruction: |
+      評価表(行=代替案、列=基準)と重み入力、合計スコアのグラフ(recharts)を置く。採点と重みはuseStorageStateで保存する。
+      計算は純粋関数に分ける。表示は丸めても内部値は丸めない。
+    tools: [create_app_file, multi_replace_string_in_file]
+    done_when: 評価表・重み入力・グラフの各コンポーネントファイルと計算関数の一覧が記録されている
+  - no: 4
+    title: 操作の実装
+    instruction: |
+      重みを変えると即時に順位とグラフが更新されるようにする。結果はexportTableで出力し、代替案要素へrevealElementで遷移できるようにする。
+    tools: [multi_replace_string_in_file, replace_string_in_file]
+    done_when: 重み変更の反映・出力・遷移の各操作が実装されている
+  - no: 5
+    title: 権限の確定
+    instruction: |
+      storage / model.read / files / ui を確認し、既定外はrequest_permissionsで承認を得る。
+    tools: [request_permissions, validate_sdk_usage]
+    done_when: 必要権限の一覧と承認結果が記録され、権限不足(SDK004)が0件
+  - no: 6
+    title: 検証と引き渡し
+    instruction: |
+      validate_app → validate_sdk_usage → test_app_in_sandbox → preview_app(action="inspect")で0件になるまで直す。
+      重み付き合計を1件以上手計算と照合し、未確認は未検証と明記する。
+    tools: [diff_app, validate_app, validate_sdk_usage, test_app_in_sandbox, preview_app]
+    done_when: 検証エラー0件・inspectの指摘0件・照合結果が記録され、未検証事項が明示されている
+strict: false
+allow_skip: true
+max_steps_per_stage: 12

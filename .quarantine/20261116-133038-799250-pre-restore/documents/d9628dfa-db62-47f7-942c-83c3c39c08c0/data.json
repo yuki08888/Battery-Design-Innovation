@@ -1,0 +1,87 @@
+{
+    "id": "d9628dfa-db62-47f7-942c-83c3c39c08c0",
+    "title": "最大短絡電流時の溶断時間（45PLヒューズ）",
+    "pages": [
+        {
+            "id": "15b468cb-afff-48c0-8b99-8ae1a282370a",
+            "title": "ページ 1",
+            "content": "<h1>建築物のエネルギー消費性能の向上に関する法律（平成27年法律第53号）</h1>\n<table>\n<thead>\n<tr>\n<th>規制対象建築物</th>\n<th>規模</th>\n<th>義務</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>非住宅</td>\n<td>2,000㎡以上</td>\n<td>適合義務</td>\n</tr>\n<tr>\n<td>非住宅</td>\n<td>300㎡以上</td>\n<td>届出義務</td>\n</tr>\n<tr>\n<td>住宅</td>\n<td>300㎡以上</td>\n<td>届出義務</td>\n</tr>\n<tr>\n<td>住宅</td>\n<td>300㎡未満</td>\n<td>努力義務</td>\n</tr>\n</tbody>\n</table>\n<p><strong>建築物のエネルギー消費性能の向上に関する法律（平成27年法律第53号）</strong></p>\n<table>\n<thead>\n<tr>\n<th>規制対象建築物</th>\n<th>規模</th>\n<th>義務</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>非住宅</td>\n<td>300㎡以上</td>\n<td>適合義務</td>\n</tr>\n<tr>\n<td>住宅</td>\n<td>300㎡以上</td>\n<td>届出義務</td>\n</tr>\n<tr>\n<td>住宅</td>\n<td>300㎡未満</td>\n<td>努力義務</td>\n</tr>\n</tbody>\n</table>",
+            "references": [],
+            "sourceImagePath": "ca7726de-a359-494e-b85e-4f79db68b8e5.png",
+            "thumbnailPath": "thumb_ca7726de-a359-494e-b85e-4f79db68b8e5.png",
+            "sections": [],
+            "translations": [],
+            "linkedElementIds": []
+        }
+    ],
+    "references": [],
+    "sourceFilePath": "C:\\Users\\1584550\\AppData\\Roaming\\system_factory\\app_data\\projects\\0c47063b-31ef-45f7-9ab8-67833c1008e7\\documents\\d9628dfa-db62-47f7-942c-83c3c39c08c0\\orgs\\cb6a65ed-2d84-429e-abda-410f6859aec1.pdf",
+    "createdAt": null,
+    "updatedAt": null,
+    "skeleton": null,
+    "headingRules": null,
+    "digest": {
+        "overview": {
+            "summary": "見出し層の内容は、建築物のエネルギー消費性能の向上に関する法律に基づく規制対象建築物の種類・規模と義務を、2つの表で示しています。1つ目の表では、非住宅は2,000㎡以上が適合義務、300㎡以上が届出義務、住宅は300㎡以上が届出義務、300㎡未満が努力義務とされています。2つ目の表では、非住宅300㎡以上が適合義務、住宅300㎡以上が届出義務、300㎡未満が努力義務とされています。タイトルは「最大短絡電流時の溶断時間（45PLヒューズ）」ですが、提示された節の要約は建築物の省エネルギー規制を扱っており、タイトルと内容の対応は見出し層からは確認できません。",
+            "documentKind": "other",
+            "purpose": "建築物の種類と規模に応じた規制上の義務を表で示すこと。",
+            "scope": "提示された見出し層では、非住宅および住宅について、規模別の適合義務・届出義務・努力義務を扱っています。",
+            "keyTopics": [
+                "建築物の省エネルギー規制",
+                "非住宅の規模別義務",
+                "住宅の規模別義務",
+                "2つの表に示された基準の比較"
+            ],
+            "keyTerms": [
+                {
+                    "term": "建築物のエネルギー消費性能の向上に関する法律",
+                    "definition": "見出しに示された、建築物のエネルギー消費性能に関する法令。"
+                },
+                {
+                    "term": "適合義務",
+                    "definition": "表に記載された、所定の規模以上の建築物に課される義務。"
+                },
+                {
+                    "term": "届出義務",
+                    "definition": "表に記載された、所定の規模以上の建築物に課される届出の義務。"
+                },
+                {
+                    "term": "努力義務",
+                    "definition": "表に記載された、住宅300㎡未満に関する義務の区分。"
+                }
+            ],
+            "targetSystem": ""
+        },
+        "outline": [
+            {
+                "id": "f8bdac22-16e5-471e-9f1a-aaa2dd3542ea",
+                "title": "建築物のエネルギー消費性能の向上に関する法律（平成27年法律第53号）",
+                "level": 1,
+                "summary": "規制対象建築物の種類・規模と義務を示す表が2つ掲載されている。1つ目は非住宅が2,000㎡以上で適合義務、300㎡以上で届出義務、住宅が300㎡以上で届出義務・300㎡未満で努力義務とし、2つ目は非住宅300㎡以上を適合義務、住宅300㎡以上を届出義務・300㎡未満を努力義務としている。",
+                "keywords": [
+                    "建築物のエネルギー消費性能の向上に関する法律",
+                    "平成27年法律第53号",
+                    "規制対象建築物",
+                    "非住宅",
+                    "住宅",
+                    "適合義務",
+                    "届出義務",
+                    "努力義務"
+                ],
+                "pageIds": [
+                    "15b468cb-afff-48c0-8b99-8ae1a282370a"
+                ],
+                "children": []
+            }
+        ],
+        "sourceHash": "ed18adb322a44cf8cf8bd8d1dc1f6f5ff5d686bb",
+        "textHash": "cf70d2a85758bebb610026442a3fa7dc145cf6fe",
+        "generatedAt": "2026-10-27T07:26:25.679974",
+        "pageCount": 1,
+        "schemaVersion": 1,
+        "generator": "ai"
+    },
+    "coverage": null,
+    "modelBinding": null,
+    "description": null
+}

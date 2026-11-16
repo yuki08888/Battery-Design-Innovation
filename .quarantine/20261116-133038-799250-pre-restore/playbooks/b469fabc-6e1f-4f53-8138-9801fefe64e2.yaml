@@ -1,0 +1,57 @@
+id: ""
+name: 設計審査資料作成
+slash_command: report-design-review
+description: |
+  設計審査 (DR) 用のスライドをモデルから作る手順。システム概要・要求・アーキテクチャ・検証状況・
+  課題とリスクを 1 ページ 1 メッセージで構成し、件数と一覧はモデルの問い合わせで追従させる。
+use_when: |
+  ユーザーが「DR 資料を作って」「設計審査用のスライド」「レビュー会の資料」等を依頼したとき。
+steps:
+  - no: 1
+    title: 審査の範囲と読み手
+    instruction: |
+      審査の段階 (構想 / 基本 / 詳細)、読み手、対象システム (起点のパッケージ・ブロック) を依頼から確かめる。
+      search_item / read_package_contents で対象を読み、list_views で使える図 (BDD / IBD / 要求図) を探す。
+    tools: [search_item, read_package_contents, read, list_views, list_reports]
+    done_when: 対象システムの要素 ID・審査段階・使う図のビュー ID の一覧が決まっている
+  - no: 2
+    title: 構成とデザインの方針
+    instruction: |
+      get_report_design_guide (layouts / typography / color) を読み、次の構成を基本にする:
+      表紙 → 審査の目的と範囲 → システム概要 (コンテキスト図) → 要求の概要 → アーキテクチャ (BDD / IBD) →
+      検証状況 (件数 + 内訳) → 課題とリスク → 判定を求める事項。
+      create_report (preset slide_16_9) で作り、各ページに name / description と結論を一文で書いた見出しを置く。
+    tools: [get_report_design_guide, create_report, apply_report_ops]
+    done_when: 構成の全ページが作られ、各ページに名前・説明・見出しが存在する
+  - no: 3
+    title: 問い合わせの確認
+    instruction: |
+      要求の件数・未充足の要求 (satisfy incoming の relCountLte 0)・未検証の要求 (verify incoming の relCountLte 0)・
+      状態別の内訳を binding にし、preview_report_binding で件数と中身を確かめる。
+      0 件になる問い合わせは、本当に 0 件か (良い知らせ) と関係の向き違いかを区別する。
+    tools: [preview_report_binding, get_related_elements, graph_query]
+    done_when: 使う問い合わせ全ての件数と意図した要素であることを preview_report_binding で検証した
+  - no: 4
+    title: ページの作成
+    instruction: |
+      表紙は slide_cover の型 (hide_master、field variable で日付・発表者)。概要とアーキテクチャは view 部品 (fit contain) +
+      要点 text の two_column。検証状況は slide_kpi の型 (count 3〜4 個 + chart)。課題は list / table。
+      本文の要素名・値はモデル参照で書き、フッターにページ番号を置く。
+    tools: [apply_report_ops, read, preview_report_binding]
+    done_when: 構成の各ページに内容の部品が存在し、件数・一覧がモデルの問い合わせになっている
+  - no: 5
+    title: 検証と講評
+    instruction: |
+      validate_report のエラーを 0 にし、review_report_design の講評 (見出しなし・小さい文字・文字量過多) を直す。
+      主要なページ (表紙・アーキテクチャ・検証状況) は render_report_page で見る。
+    tools: [validate_report, review_report_design, render_report_page, apply_report_ops]
+    done_when: validate_report のエラーが0件で、review_report_design の warning が0件
+  - no: 6
+    title: 報告
+    instruction: |
+      レポート名、ページ構成、検証状況の数字 (未充足・未検証の件数)、モデルに不足していた情報 (要確認) を報告する。
+    tools: [validate_report]
+    done_when: レポート ID・ページ構成・未充足と未検証の件数が報告に含まれている
+strict: true
+allow_skip: false
+max_steps_per_stage: 12

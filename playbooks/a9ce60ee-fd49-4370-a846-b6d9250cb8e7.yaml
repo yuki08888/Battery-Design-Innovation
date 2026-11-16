@@ -1,0 +1,34 @@
+id: ""
+name: モデルとコードの同期確認
+slash_command: code-sync
+description: モデル要素とコードのリンクの健全性を確かめ、変更されたリンクごとにコードとモデルを突き合わせて「コードを直す / モデルを直す / 問題なし」に分類し、承認されたものを実施する
+use_when: コードの更新後にモデルとの整合を確かめたい場合、リンク切れ・変更済みのリンクを解消したい場合
+steps:
+  - no: 1
+    title: リンクの健全性の確認
+    instruction: |
+      コードドメイン(code)で実行する。横断エージェントならbuiltin:codeへ委任する。
+      check_link_healthで全リンクの状態(ok / moved / modified / ambiguous / broken)を調べる。
+      moved は位置だけが変わったもの(内容は同じ)。ambiguous / broken はcode_git_logで削除か名前変更かを確かめ、relink_codeで正しいシンボルへ付け替える。
+    tools: [list_code_workspaces, select_code_workspace, check_link_health, code_git_log, relink_code]
+    done_when: 状態ごとのリンクの件数と、付け替えたリンクの一覧が記録されている
+  - no: 2
+    title: 変更内容とモデルの突き合わせ
+    instruction: |
+      check_design_consistencyで、リンク先の要素(属性・操作・ポート・要求)とコードの名前・型・引数の不一致、リンク規則違反、紐づけの種類のばらつきを調べる。
+      modified のリンクごとにcode_git_diff/read_code_fileで変更内容を読み、get_code_contextでリンク先の要素(要求・I/F・制約)と比べる。
+      各リンクを分類する: 「コードを直す」(仕様に反する変更)/「モデルを直す」(仕様の方が古い。委任が要る)/「問題なし」。
+      check_code_link_coverageで未リンクのシンボルも洗い出し、suggest_code_linksの候補を添えて、リンクするか対象外の理由を残すかを表に含める。
+      根拠(差分の行番号と、対応する要求・I/F)を添えて表にし、ask_userでどれを実施するか承認を得る。
+    tools: [check_design_consistency, check_code_link_coverage, suggest_code_links, code_git_diff, read_code_file, get_code_context, trace_code_to_model, ask_user]
+    done_when: 各リンクの分類と根拠の一覧、承認された項目の件数が記録されている
+  - no: 3
+    title: 承認された項目の実施
+    instruction: |
+      「コードを直す」はreplace_string_in_code/multi_replace_string_in_codeで直し、get_diagnosticsでエラー 0件を確かめる。
+      「モデルを直す」はdelegateでbuiltin:modelに修正を依頼する(コードドメインからモデルは変更しない)。
+      「問題なし」と直したリンクはverify_code_linkで確認済みにする。
+      未リンクのシンボルは承認に従って、リンク (links) と対象外の理由 (exemptions) をlink_code_batchの 1 回でまとめて登録する。
+      最後にcheck_design_consistencyで不整合が残っていないことを確かめ、実施した項目・残った項目を報告する。
+    tools: [replace_string_in_code, multi_replace_string_in_code, get_diagnostics, verify_code_link, check_link_health, link_code_batch, link_code_to_element, set_code_link_exemption, check_design_consistency]
+    done_when: 実施した項目の一覧、確認済みにしたリンクの件数、未解決のリンクの有無が記録されている
