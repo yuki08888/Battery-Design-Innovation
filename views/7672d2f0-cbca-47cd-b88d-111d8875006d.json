@@ -7,8 +7,8 @@
             "class_name": "DiagramNode",
             "id": "0069e233-b818-4ab6-8abc-7149faa4e6a0",
             "element_id": "0069e233-b818-4ab6-8abc-7149faa4e6a0",
-            "x": -1339.4393384393375,
-            "y": 1388.621989121989,
+            "x": -1134.4393384393375,
+            "y": 1596.121989121989,
             "width": 1742.75,
             "height": 1779.4595959595963,
             "inner_nodes": [
@@ -1442,9 +1442,9 @@
             "routing": "orthogonal"
         }
     ],
-    "scale": 0.7,
-    "offset_x": 730.3988522098824,
-    "offset_y": -1017.6950157685446,
+    "scale": 0.30000000000000004,
+    "offset_x": 430.0566509470925,
+    "offset_y": -395.8050067579478,
     "relationship_type": "containment",
     "visible_relation_types": [
         "composition"
