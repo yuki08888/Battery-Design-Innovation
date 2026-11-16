@@ -1,6 +1,7 @@
 # >>> system-factory internal artifacts (do not edit between markers) >>>
 # アプリが自動生成する一時データ・退避フォルダ（コミット対象外）。
 .backup/
+.ontology_recovery/
 chat_history/
 project_config.json
 git-remote.json
@@ -22,6 +23,10 @@ app_doc_vector_index.json
 .requirement_proposals/
 .restructure_proposals/
 .scripts/
+.code/
+ai_review/index.json
+ai_review/baselines/
+ai_review/shared_provenance.json
 *.corrupt-backup/
 *.corrupt-*
 .ontology-migration-backup-*/
@@ -29,6 +34,7 @@ apps/**/.build/
 apps/**/.preview/
 apps/**/app_build_log.txt
 # <<< system-factory internal artifacts <<<
+
 
 
 
