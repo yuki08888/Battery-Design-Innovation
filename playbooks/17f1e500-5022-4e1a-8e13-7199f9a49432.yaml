@@ -32,14 +32,6 @@ steps:
       - 出力は全分岐で代入する (return 不可)。べき乗は **、数学関数は math.sqrt 等。
       - 式で使う変数はすべて入力か parameters (定数) にする。合否は boolean 出力にする。
       作成ツールは試行実行で検査し、実行できない式は拒否する。
-      実行種別 (simulationKind) を決める:
-      - static: 1 回の計算 (既定)。
-      - time_series: 時間変化。コードで t (時刻) / dt (刻み) / index / state / prev が使える。
-        積分・累積は state で持ち越す (例: x = state.get("x", 0) + v * dt; state["x"] = x)。
-        simulationConfig に duration (終了時刻) / dt / initialState を既定値として書ける。
-      - optimization: 決定変数を inputNames、目的変数を outputNames に宣言し、
-        simulationConfig に {"objective": "<出力名>", "decision_variables": {"<入力名>": {"min": 下限, "max": 上限}},
-        "direction": "minimize"} を書く。探索範囲は根拠のある値だけを使い、無ければユーザーに確認する。
     done_when: 各制約式に全入力・出力パラメータと単位・物理的根拠があり、式の両辺で次元が一致し、単位または役割が未定のパラメータ0件で、式中の全変数が入力または定数として宣言されている
   - no: 3
     title: パラメトリック構造の生成
@@ -76,17 +68,12 @@ steps:
       制約が満たすべき性能要求がある場合、ConstraintBlock から
       Requirement へ satisfy 関係を張る。
       その後 validate_model で検証し、simulation (contextBlockId = 対象 Block) で
-      実際に実行する。mode は制約ブロックの simulationKind から自動で決まる
-      (時系列は simulationConfig に duration / dt、最適化は decision_variables / objective を
-      値プロパティのパスで指定できる)。失敗したら fixHints / error の理由をそのまま直してから再実行する。
-      入力値が原文に無く確定できない場合は、simulation に usePlaceholders=true を付けて
-      仮の値でコードと接続の動作確認だけ行い (valid は null になる)、値が未確定であることを記録する。
-      仮の値をモデルの defaultValue に書き込まないこと。
+      実際に実行する。失敗したら fixHints の理由をそのまま直してから再実行する。
     tools:
       - search_item
       - create_relationship
       - validate_model
-    done_when: 各制約が対応する性能 Requirement と satisfy で接続されるか非該当理由があり、validate_model が error 0件または残る各違反を理由付きで記録し、対象 Block のシミュレーションが実行完了して全出力が数値または boolean になった (入力値が原文に無い場合は usePlaceholders=true の動作確認で実行完了し、値が未確定である旨を記録した)
+    done_when: 各制約が対応する性能 Requirement と satisfy で接続されるか非該当理由があり、validate_model が error 0件または残る各違反を理由付きで記録し、対象 Block のシミュレーションが実行完了して全出力が数値または boolean になった (入力値が原文に無い場合はその旨を記録した)
 strict: true
 allow_skip: false
 max_steps_per_stage: 12

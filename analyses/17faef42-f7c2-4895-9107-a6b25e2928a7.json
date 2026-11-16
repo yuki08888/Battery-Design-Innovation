@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "id": "17faef42-f7c2-4895-9107-a6b25e2928a7",
+  "method": "impact",
+  "name": "MOD間バスバ 板厚増加の影響分析（要求起点）",
+  "description": "",
+  "status": "draft",
+  "owner": "",
+  "createdAt": "2026-11-11T06:43:37Z",
+  "updatedAt": "2026-11-11T06:43:37Z",
+  "revision": 2,
+  "scope": {
+    "elementIds": [
+      "c4679715-2e32-44ff-976a-b3092988d001"
+    ],
+    "baseline": {
+      "c4679715-2e32-44ff-976a-b3092988d001": {
+        "name": "CTR-MB-MT-003 溶接部以外の板厚",
+        "className": "Requirement",
+        "hash": "ba569bbcf9b968815727b37168be57fb8c7d62d7"
+      }
+    }
+  },
+  "settings": {},
+  "missingElements": {},
+  "records": [
+    {
+      "id": "r-fdd27a8d844b",
+      "kind": "change",
+      "parentId": null,
+      "order": 0,
+      "status": "open",
+      "fields": {
+        "title": "MOD間バスバ 板厚増加の影響分析（要求起点）",
+        "description": "板厚要求 CTR-MB-MT-003 #{R10} 起点の trace 探索。モデル読み取りのみ。",
+        "elementIds": [
+          "c4679715-2e32-44ff-976a-b3092988d001"
+        ]
+      },
+      "computed": {
+        "impactedCount": 1,
+        "dispositionCounts": {
+          "action_required": 0,
+          "no_impact": 0,
+          "needs_review": 0
+        },
+        "undecidedCount": 1
+      }
+    },
+    {
+      "id": "r-95ce4a1b140a",
+      "kind": "impacted",
+      "parentId": "r-fdd27a8d844b",
+      "order": 0,
+      "status": "open",
+      "fields": {
+        "title": "MOD間バスバ",
+        "elementId": "7eb21e5d-2fd0-4d4e-a420-476dea4714ea",
+        "analysisRef": "MOD間バスバ 厚み増加の影響分析: MOD間バスバ 厚み増加の影響分析",
+        "distance": 1,
+        "path": [
+          "9b061584-4246-4701-bb0c-022e34322bf9"
+        ],
+        "impactType": "direct"
+      },
+      "computed": {}
+    }
+  ],
+  "edges": [],
+  "layout": {},
+  "links": [
+    {
+      "id": "l-4856c4802d23",
+      "recordId": "r-fdd27a8d844b",
+      "elementId": "c4679715-2e32-44ff-976a-b3092988d001",
+      "role": "changed",
+      "origin": "field:elementIds",
+      "note": "",
+      "createdAt": "2026-11-11T06:43:37Z",
+      "operator": "ai"
+    },
+    {
+      "id": "l-72291aeeffdd",
+      "recordId": "r-95ce4a1b140a",
+      "elementId": "7eb21e5d-2fd0-4d4e-a420-476dea4714ea",
+      "role": "affected",
+      "origin": "field:elementId",
+      "note": "",
+      "createdAt": "2026-11-11T06:43:37Z",
+      "operator": "ai"
+    }
+  ]
+}

@@ -35,11 +35,9 @@ steps:
   - no: 4
     title: IBD の生成
     instruction: |
-      create_detail_diagram(diagramType=ibd, targetElementId=対象 Block) で
-      専用の内部ブロック図を作成する（まず自動配置を適用する。create_free_diagram で
-      part を並べない）。自動配置で表示に問題がある場合だけ update_diagram_layout で修正する。
+      create_internal_block_diagram で内部ブロック図を作成し、レイアウトを整える。
     tools:
-      - create_detail_diagram
+      - create_internal_block_diagram
       - update_diagram_layout
     done_when: 対象 Block の IBD が存在し、設計対象の全 part / port / connector が欠落・未配置0件で表示されている
 strict: true

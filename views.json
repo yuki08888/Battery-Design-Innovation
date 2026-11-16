@@ -125,6 +125,90 @@
             "parent_id": "",
             "icon_key": "RelationalDbView",
             "icon_color": null
+        },
+        {
+            "id": "68c69c5c-612e-46c3-95e4-6fc40371b925",
+            "name": "バスバー接合部4ノード熱伝達解析 - 内部ブロック図",
+            "parent_id": "47f3043f-9748-4d99-a565-f44ab9752328",
+            "icon_key": "DashboardOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "cb329995-8041-480c-9e68-eee030732253",
+            "name": "HVG9691-01_高圧バスバー設計標準書",
+            "parent_id": "",
+            "icon_key": "DescriptionOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "7a7d16a0-03fb-4b99-a195-ff0fca082bf7",
+            "name": "BV-D-05電池パック強度・安全評価　設計標準書",
+            "parent_id": "",
+            "icon_key": "DescriptionOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "f46df692-2e81-46b0-8da6-12e70843b604",
+            "name": "MOD間バスバ形状・寸法図",
+            "parent_id": "5973d24e-444c-40cb-af30-239e610c1f61",
+            "icon_key": "HubOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "6972a621-d020-4ebf-9222-c4af579eb09e",
+            "name": "MOD間バスバ形状連動4ノード熱解析構成図",
+            "parent_id": "5973d24e-444c-40cb-af30-239e610c1f61",
+            "icon_key": "HubOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "7672d2f0-cbca-47cd-b88d-111d8875006d",
+            "name": "MOD間バスバ4ノード熱伝達解析 - 内部ブロック図",
+            "parent_id": "0069e233-b818-4ab6-8abc-7149faa4e6a0",
+            "icon_key": "DashboardOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "1a0197f5-9921-41dd-aa9a-d5277a6dc9b8",
+            "name": "最大短絡電流時の溶断時間（45PLヒューズ）",
+            "parent_id": "",
+            "icon_key": "DescriptionOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "6803f54d-68d5-4d7e-8e4e-30f00cd538a2",
+            "name": "MOD間バスバ形状 - 内部ブロック図",
+            "parent_id": "75a37909-2099-46aa-9705-6ed71aaa567c",
+            "icon_key": "DashboardOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "7465c132-a218-4202-863f-3c14a69f911a",
+            "name": "MOD間バスバ 厚み増加の影響分析（最小範囲）",
+            "parent_id": "",
+            "icon_key": "ShareOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "ca8164be-225f-473a-9ccd-2654c13264ca",
+            "name": "MOD間バスバ 板厚増加の影響分析（要求起点）",
+            "parent_id": "",
+            "icon_key": "ShareOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "fbb046d0-0d4b-4a99-b07d-9e67dc289350",
+            "name": "MOD間バスバ 厚み増加の影響分析",
+            "parent_id": "",
+            "icon_key": "ShareOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "2dc58920-142c-4f9a-873e-3d5f30fb8bef",
+            "name": "MOD間バスバ 厚み増加の影響分析",
+            "parent_id": "",
+            "icon_key": "ShareOutlined",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [
@@ -134,9 +218,14 @@
         "1077a2f6-de39-4daa-81ba-ad4079586789",
         "c004f0eb-190f-4c55-9ea8-31612d2202c7",
         "1fcb0dc4-e491-44ef-ab82-2bc832fc467a",
-        "6d6af6e0-7ce0-49e5-9483-f07ff37faab3"
+        "6d6af6e0-7ce0-49e5-9483-f07ff37faab3",
+        "68c69c5c-612e-46c3-95e4-6fc40371b925",
+        "5aa26d24-925f-4050-a60f-bb8579af9768",
+        "781fc0e1-ce93-405e-a73e-9b05ea0bf9d1",
+        "7672d2f0-cbca-47cd-b88d-111d8875006d",
+        "6803f54d-68d5-4d7e-8e4e-30f00cd538a2"
     ],
-    "current_view_id": "6d6af6e0-7ce0-49e5-9483-f07ff37faab3",
+    "current_view_id": "7672d2f0-cbca-47cd-b88d-111d8875006d",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,

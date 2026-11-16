@@ -1891,27 +1891,12 @@
             "routing": "bezier"
         }
     ],
-    "scale": 0.4,
-    "offset_x": 22.716303049264752,
-    "offset_y": -1.5160587128070802,
+    "scale": 0.39999999999999997,
+    "offset_x": 69.43058876355045,
+    "offset_y": 29.34108414433578,
     "relationship_type": "containment",
     "visible_relation_types": [
-        "containment",
-        "association",
-        "aggregation",
-        "composition",
-        "generalization",
-        "dependency",
-        "realization",
-        "satisfy",
-        "deriveReqt",
-        "trace",
-        "refine",
-        "allocate",
-        "merge",
-        "extend",
-        "include",
-        "verify"
+        "composition"
     ],
     "visible_node_types": [
         "Activity",
