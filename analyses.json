@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "id": "4777a28f-3ddc-4b44-a762-3aa0db02312c",
+      "name": "MOD間バスバ 厚み増加の影響分析",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 0,
+      "method": "impact",
+      "status": "draft",
+      "updated_at": "2026-11-11T06:43:21Z"
+    },
+    {
+      "id": "be3bf3ce-841f-4e19-83d0-cd2bae5d2b11",
+      "name": "MOD間バスバ 厚み増加の影響分析",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 1,
+      "method": "impact",
+      "status": "draft",
+      "updated_at": "2026-11-11T06:43:26Z"
+    },
+    {
+      "id": "5d0a3fbb-69fe-47b3-ade4-f33bb183a962",
+      "name": "MOD間バスバ 厚み増加の影響分析（最小範囲）",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 2,
+      "method": "impact",
+      "status": "draft",
+      "updated_at": "2026-11-11T06:43:32Z"
+    },
+    {
+      "id": "17faef42-f7c2-4895-9107-a6b25e2928a7",
+      "name": "MOD間バスバ 板厚増加の影響分析（要求起点）",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 3,
+      "method": "impact",
+      "status": "draft",
+      "updated_at": "2026-11-11T06:43:37Z"
+    }
+  ],
+  "schema_version": 1
+}
