@@ -12,6 +12,9 @@ analyses/** -merge -text
 apps/** -merge -text
 stereotypes.json -merge -text
 env_var.json -merge -text
+# AI 検証の記録は追記しかしないので、両側の追記行をそのまま合わせる
+# (後の行が勝つので *.jsonl の -merge を上書きする)。
+ai_review/review_log.jsonl merge=union -text
 # <<< system-factory managed <<<
 
 
