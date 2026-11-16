@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "5d0a3fbb-69fe-47b3-ade4-f33bb183a962",
+  "method": "impact",
+  "name": "MOD間バスバ 厚み増加の影響分析（最小範囲）",
+  "description": "",
+  "status": "draft",
+  "owner": "",
+  "createdAt": "2026-11-11T06:43:32Z",
+  "updatedAt": "2026-11-11T06:43:32Z",
+  "revision": 1,
+  "scope": {
+    "elementIds": [
+      "bfb003ae-5ca9-4544-9fe3-d6b20a8aa2b1"
+    ],
+    "baseline": {
+      "bfb003ae-5ca9-4544-9fe3-d6b20a8aa2b1": {
+        "name": "thickness",
+        "className": "Property",
+        "hash": "da2ef915a83347533ca4c94f4cc4aa2e33f04e79"
+      }
+    }
+  },
+  "settings": {},
+  "missingElements": {},
+  "records": [
+    {
+      "id": "r-12eb52fc65f1",
+      "kind": "change",
+      "parentId": null,
+      "order": 0,
+      "status": "open",
+      "fields": {
+        "title": "MOD間バスバ 厚み増加の影響分析（最小範囲）",
+        "description": "厚み #{PR163} 起点の1ホップ影響。モデル読み取りのみ。",
+        "elementIds": [
+          "bfb003ae-5ca9-4544-9fe3-d6b20a8aa2b1"
+        ]
+      },
+      "computed": {
+        "impactedCount": 0,
+        "dispositionCounts": {
+          "action_required": 0,
+          "no_impact": 0,
+          "needs_review": 0
+        },
+        "undecidedCount": 0
+      }
+    }
+  ],
+  "edges": [],
+  "layout": {},
+  "links": [
+    {
+      "id": "l-99d2f2831a9f",
+      "recordId": "r-12eb52fc65f1",
+      "elementId": "bfb003ae-5ca9-4544-9fe3-d6b20a8aa2b1",
+      "role": "changed",
+      "origin": "field:elementIds",
+      "note": "",
+      "createdAt": "2026-11-11T06:43:32Z",
+      "operator": "ai"
+    }
+  ]
+}

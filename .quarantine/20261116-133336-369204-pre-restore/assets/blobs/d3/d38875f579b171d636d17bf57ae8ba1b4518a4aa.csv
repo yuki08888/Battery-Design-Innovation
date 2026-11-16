@@ -1,0 +1,91 @@
+﻿要求ID,紐づけ先ID,関係性
+CTR-IC-001 絶縁カバー絶縁抵抗維持,BATs-003 デブリ・溶融金属による短絡防止,deriveReqt
+CTR-IC-001 絶縁カバー絶縁抵抗維持,BATs-009 高温金属片へのブラスト対策,deriveReqt
+CTR-IC-001 絶縁カバー絶縁抵抗維持,BATs-029 短絡防止構造,deriveReqt
+CTR-IC-001 絶縁カバー絶縁抵抗維持,BATs-044 モジュール間短絡防止,deriveReqt
+CTR-IC-002 活電部・アッパーケース間絶縁保護,BATs-004 活電部の絶縁保護,deriveReqt
+CTR-IC-003 熱拡散中状態変化防止,BATs-005 熱拡散中の形状保持 (BATs-042統合),deriveReqt
+CTR-IC-004 衝突変形後絶縁抵抗維持,BATs-096 後突,deriveReqt
+CTR-IC-004 衝突変形後絶縁抵抗維持,BATs-097 側突,deriveReqt
+CTR-IC-004 衝突変形後絶縁抵抗維持,BATs-098 前突,deriveReqt
+CTR-IC-005 高温金属片破損防止・絶縁抵抗維持,BATs-004 活電部の絶縁保護,deriveReqt
+CTR-IC-005 高温金属片破損防止・絶縁抵抗維持,BATs-009 高温金属片へのブラスト対策,deriveReqt
+CTR-IC-005 高温金属片破損防止・絶縁抵抗維持,BATs-056 保護材内部への噴出物侵入防止,deriveReqt
+CTR-IC-006 短絡経路形成防止,BATs-029 短絡防止構造,deriveReqt
+CTR-IC-006 短絡経路形成防止,BATs-041 排煙空間の確保 (BATs-048/051統合),deriveReqt
+CTR-IC-006 短絡経路形成防止,BATs-042 セル間短絡防止,deriveReqt
+CTR-IC-006 短絡経路形成防止,BATs-044 モジュール間短絡防止,deriveReqt
+CTR-IC-007 噴出物堆積熱パス形成防止構造,BATs-040 噴出物による熱パス形成防止,deriveReqt
+CTR-IC-008 セル間短絡防止絶縁保護構造,BATs-029 短絡防止構造,deriveReqt
+CTR-IC-008 セル間短絡防止絶縁保護構造,BATs-042 セル間短絡防止,deriveReqt
+CTR-IC-009 モジュール間短絡防止・リークパス形成防止,BATs-044 モジュール間短絡防止,deriveReqt
+CTR-IC-010 保護材内部噴出物侵入防止構造,BATs-056 保護材内部への噴出物侵入防止,deriveReqt
+CTR-IC-011 アッパーケースとの隙確保,BATs-041 排煙空間の確保 (BATs-048/051統合),deriveReqt
+CTR-IC-011 アッパーケースとの隙確保,BATs-048 排煙余剰体積確保,deriveReqt
+CTR-IC-011 アッパーケースとの隙確保,BATs-049 排煙経路距離確保,deriveReqt
+CTR-IC-012 高電圧部接触保護（IPXXB）,BAT-004 高圧接触保護構造,deriveReqt
+CTR-IC-012 高電圧部接触保護（IPXXB）,BATs-099 接触保護,deriveReqt
+CTR-IC-013 環境負荷物質の使用禁止,BAT-072 環境負荷物質制限,deriveReqt
+CTR-IC-014 材料表記,BAT-073 材料マーキング・難燃性・VOC規格適合,deriveReqt
+CTR-IC-015 耐熱（800℃×45s＋600℃×600s）後の絶縁性能維持,BATs-003 デブリ・溶融金属による短絡防止,deriveReqt
+CTR-IC-015 耐熱（800℃×45s＋600℃×600s）後の絶縁性能維持,BATs-005 熱拡散中の形状保持 (BATs-042統合),deriveReqt
+CTR-IC-016 セルとの必要立壁寸法,BATs-044-02 MOD間直接リークパス防止,deriveReqt
+CTR-IC-016 セルとの必要立壁寸法,BATs-056 保護材内部への噴出物侵入防止,deriveReqt
+CTR-IC-017 活電部直上のカバー被覆,BATs-004 活電部の絶縁保護,deriveReqt
+CTR-IC-017 活電部直上のカバー被覆,BATs-029 短絡防止構造,deriveReqt
+CTR-IC-018 セル排煙弁直上のカバー配置禁止,BATs-041 排煙空間の確保 (BATs-048/051統合),deriveReqt
+CTR-IC-018 セル排煙弁直上のカバー配置禁止,BATs-049 排煙経路距離確保,deriveReqt
+CTR-IC-019 熱連鎖時の浮き上がり防止,BATs-005 熱拡散中の形状保持 (BATs-042統合),deriveReqt
+CTR-IC-020 固定部の衝撃・振動耐性,BATs-084 実働応力測定（機器部品耐振動）,deriveReqt
+CTR-IC-020 固定部の衝撃・振動耐性,BATs-085 突起乗り越し,deriveReqt
+CTR-IC-020 固定部の衝撃・振動耐性,BATs-087 高速波状路模擬耐久,deriveReqt
+CTR-IC-021 固有振動数,BATs-087 高速波状路模擬耐久,deriveReqt
+CTR-IC-022 衝突時のバスバ保護,BATs-096 後突,deriveReqt
+CTR-IC-022 衝突時のバスバ保護,BATs-097 側突,deriveReqt
+CTR-IC-022 衝突時のバスバ保護,BATs-098 前突,deriveReqt
+CTR-IC-025 難燃性,BAT-073 材料マーキング・難燃性・VOC規格適合,deriveReqt
+CTR-IC-026 絶縁距離（IEC 60664）,BAT-005 絶縁距離性能,deriveReqt
+CTR-IC-027 耐トラッキング性（CTI）,BAT-005 絶縁距離性能,deriveReqt
+CTR-IC-027 耐トラッキング性（CTI）,BATs-106 トラッキング,deriveReqt
+CTR-IC-028 絶縁破壊電圧,BAT-003 絶縁耐力性能,deriveReqt
+CTR-IC-029 体積抵抗率,BAT-002 絶縁抵抗性能,deriveReqt
+CTR-IC-030 吸水時の特性維持,BATs-108 結露,deriveReqt
+CTR-IC-031 耐衝撃,BATs-085 突起乗り越し,deriveReqt
+CTR-IC-032 耐振動,BATs-087 高速波状路模擬耐久,deriveReqt
+CTR-IC-033 締結点たわみ量,BAT-004 高圧接触保護構造,deriveReqt
+CTR-IC-033 締結点たわみ量,BATs-099 接触保護,deriveReqt
+CTR-IC-034 圧縮降伏応力,BATs-085 突起乗り越し,deriveReqt
+CTR-IC-036 初期絶縁抵抗,BAT-002 絶縁抵抗性能,deriveReqt
+CTR-IC-037 自己着火温度,BATs-063 周辺部品の高温自己着火防止,deriveReqt
+CTR-IC-039 ミニモジュール試験後の外観,BATs-005 熱拡散中の形状保持 (BATs-042統合),deriveReqt
+CTR-IC-040 ミニモジュール試験後の絶縁性能,BATs-003 デブリ・溶融金属による短絡防止,deriveReqt
+CTR-IC-041 高温放置耐久,BAT-002 絶縁抵抗性能,deriveReqt
+CTR-IC-041 高温放置耐久,BAT-003 絶縁耐力性能,deriveReqt
+CTR-IC-042 低温放置耐久,BAT-002 絶縁抵抗性能,deriveReqt
+CTR-IC-042 低温放置耐久,BAT-003 絶縁耐力性能,deriveReqt
+CTR-IC-043 高温高湿サイクル耐久,BAT-002 絶縁抵抗性能,deriveReqt
+CTR-IC-043 高温高湿サイクル耐久,BAT-003 絶縁耐力性能,deriveReqt
+CTR-IC-043 高温高湿サイクル耐久,BATs-108 結露,deriveReqt
+CTR-IC-044 振動耐久後の外観・残存トルク,BATs-087 高速波状路模擬耐久,deriveReqt
+CTR-IC-045 熱衝撃耐久,BATs-088 熱衝撃,deriveReqt
+CTR-IC-046 衝撃後の外観・残存トルク,BATs-085 突起乗り越し,deriveReqt
+CTR-IC-047 悪路耐久,BATs-086 悪路模擬耐久,deriveReqt
+CTR-IC-048 波状路耐久,BATs-087 高速波状路模擬耐久,deriveReqt
+CTR-IC-049 各部品との最少隙,BATs-041 排煙空間の確保 (BATs-048/051統合),deriveReqt
+CTR-IC-050 沿面距離,BAT-005 絶縁距離性能,deriveReqt
+CTR-IC-051 モジュール間バスバのラップ保護,BATs-029-03 MOD間バスバ短絡防止,deriveReqt
+CTR-IC-051 モジュール間バスバのラップ保護,BATs-044 モジュール間短絡防止,deriveReqt
+CTR-IC-051 モジュール間バスバのラップ保護,BATs-044-03 ケース・バスバ経由リークパス防止,deriveReqt
+CTR-IC-052 プレート締結ゆるみ,BATs-085 突起乗り越し,deriveReqt
+CTR-IC-052 プレート締結ゆるみ,BATs-086 悪路模擬耐久,deriveReqt
+CTR-IC-052 プレート締結ゆるみ,BATs-087 高速波状路模擬耐久,deriveReqt
+CTR-IC-052 プレート締結ゆるみ,BATs-088-01 熱衝撃 - 締結トルク・軸力,deriveReqt
+CTR-IC-053 プレートすべり,BATs-085 突起乗り越し,deriveReqt
+CTR-IC-053 プレートすべり,BATs-086 悪路模擬耐久,deriveReqt
+CTR-IC-054 プレート座屈,BATs-085 突起乗り越し,deriveReqt
+CTR-IC-055 プレート断面チェック,BATs-086 悪路模擬耐久,deriveReqt
+CTR-IC-055 プレート断面チェック,BATs-087 高速波状路模擬耐久,deriveReqt
+CTR-IC-056 プレート振動・衝撃時変形防止,BATs-085 突起乗り越し,deriveReqt
+CTR-IC-056 プレート振動・衝撃時変形防止,BATs-087 高速波状路模擬耐久,deriveReqt
+CTR-IC-057 リベットはずれ防止,BATs-085 突起乗り越し,deriveReqt
+CTR-IC-058 セル側面ラップ量（隣接モジュール短絡防止）,BATs-044-02 MOD間直接リークパス防止,deriveReqt

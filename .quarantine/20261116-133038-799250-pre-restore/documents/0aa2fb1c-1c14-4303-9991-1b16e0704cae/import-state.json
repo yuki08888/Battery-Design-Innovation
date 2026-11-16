@@ -1,0 +1,15 @@
+{
+  "jobId": "6f879038-1079-433b-a4f4-f4b9e106bbc0",
+  "projectId": "0c47063b-31ef-45f7-9ab8-67833c1008e7",
+  "documentId": "0aa2fb1c-1c14-4303-9991-1b16e0704cae",
+  "state": "cancelled",
+  "phase": "ocr",
+  "totalPages": 223,
+  "completedPages": 0,
+  "failedPages": [],
+  "currentPage": 0,
+  "sourceSha256": "edfaae273e665de0df297cc6e40366f162532ab30fe948a97d23c7d509178de5",
+  "errorCode": null,
+  "errorMessage": null,
+  "updatedAt": 1791006405.5517998
+}

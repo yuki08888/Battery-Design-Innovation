@@ -1,0 +1,45 @@
+id: ""
+name: 分析の見直し (設計変更追従)
+slash_command: analysis-review
+description: |
+  分析が参照するモデル要素の変更・削除をベースライン差分で検知し、影響するレコードを再評価して
+  ベースラインを記録し直す手順。設計変更後に既存の FMEA / FTA / STPA などを追従させるときに使う。
+use_when: |
+  ユーザーが「分析を見直して」「設計変更を分析に反映して」「古くなった分析を更新して」等を依頼したとき。
+steps:
+  - no: 1
+    title: ベースライン差分
+    instruction: |
+      文脈の「対象の分析」があればそれを使う。無ければ list_analyses で対象を確認する。
+      check_analysis_baseline で変更・削除・追加された要素を確認する。ベースラインが無い場合は、
+      現状を確認したうえで手順 4 で記録する。
+    tools: [list_analyses, check_analysis_baseline]
+    done_when: 変更・削除・追加された要素の一覧と件数が確認されている
+  - no: 2
+    title: 影響レコードの特定
+    instruction: |
+      read で変更内容を確認し、read_analysis でその要素を参照するレコード (links / element_ref フィールド) を特定する。
+    tools: [read, read_analysis, find_element_analyses]
+    done_when: 変更要素ごとに影響するレコード ID の一覧が確認されている
+  - no: 3
+    title: 再評価
+    instruction: |
+      影響レコードの記述・評価値・リンクを変更内容に合わせて更新する。削除された要素への参照は外すか代替要素に付け替える。
+      評価値は根拠がある場合のみ変更し、無ければ要確認として残す。
+    tools: [edit_analysis_records, validate_analysis]
+    done_when: 影響する各レコードが更新済みか、要確認の理由が記録されている
+  - no: 4
+    title: ベースライン更新
+    instruction: |
+      再評価を終えたら update_analysis(refreshBaseline=true) で現在のモデルをベースラインとして記録する。
+    tools: [update_analysis, check_analysis_baseline]
+    done_when: check_analysis_baseline の差分が 0件である
+  - no: 5
+    title: 報告
+    instruction: |
+      変更要素の件数、更新したレコード、要確認として残した項目、要対応件数の変化を報告する。
+    tools: [validate_analysis]
+    done_when: 更新したレコードの件数と要確認の項目が報告に含まれている
+strict: true
+allow_skip: false
+max_steps_per_stage: 12

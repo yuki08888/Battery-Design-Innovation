@@ -56,11 +56,13 @@ steps:
   - no: 5
     title: IBD での可視化と検証
     instruction: |
-      create_internal_block_diagram で内部ブロック図を作成し、
-      Port と Connector が意図通り表現されているか確認する。
+      create_detail_diagram(diagramType=ibd, targetElementId=対象 Block) で
+      専用の内部ブロック図を作成し（まず自動配置を適用する）、
+      Port と Connector が意図通り表現されているか read_view で確認する。
+      表示に問題がある場合だけ update_diagram_layout で修正する。
       その後 validate_model で検証する。
     tools:
-      - create_internal_block_diagram
+      - create_detail_diagram
       - update_diagram_layout
       - read_view
       - validate_model

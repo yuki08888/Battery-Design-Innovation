@@ -1,0 +1,62 @@
+id: ""
+name: FMEA
+slash_command: fmea
+description: |
+  AIAG-VDA の 7 ステップに沿って、構造・機能・故障 (モード / 影響 / 原因) を分析し、
+  S / O / D から AP を判定して処置を立てる手順。結果は分析レイヤーの FMEA に残し、モデル要素へトレースする。
+use_when: |
+  ユーザーが「FMEA して」「故障モード影響解析」「故障モードを洗い出して評価して」等を依頼したとき。
+steps:
+  - no: 1
+    title: スコープと構造分析
+    instruction: |
+      文脈の「対象の分析」があればそれを使う。無ければ create_analysis(method=fmea, scopeElementIds=対象要素) で作る。
+      describe_analysis_method(fmea) で item / function / failure_mode / effect / cause / action を確認する。
+      search_item / read_package_contents で対象の構造を読み、item レコードを作って elementId に要素を入れる。
+    tools: [list_analyses, describe_analysis_method, create_analysis, search_item, read_package_contents, read_analysis, edit_analysis_records]
+    done_when: 対象構造の各要素に item レコードが存在し、elementId でトレースされている
+  - no: 2
+    title: 機能分析
+    instruction: |
+      各 item の機能を function レコードとして作る。要求がある機能は requirement に要求文を書き、elementIds に要求要素を入れる。
+    tools: [get_related_elements, read, edit_analysis_records]
+    done_when: 各 item に function が存在し、関連する要求は elementIds に記録されている
+  - no: 3
+    title: 故障分析 (モード / 影響 / 原因)
+    instruction: |
+      各 function の子に failure_mode、その子に effect と cause を作る (仮 ID tmp: で一括作成)。
+      影響先・原因の要素は elementIds に入れる。故障モードは「機能の喪失 / 劣化 / 意図しない動作」の観点で洗い出す。
+    tools: [edit_analysis_records, get_related_elements]
+    done_when: 各 failure_mode に effect と cause が 1 件以上接続されている
+  - no: 4
+    title: リスク評価 (S / O / D → AP)
+    instruction: |
+      effect の severity、cause の occurrence / detection と予防管理・検出管理を記入する。
+      根拠が無い評価値は空欄のままにし「要確認」として控える。根拠がある場合は notes に出典を書く。
+      AP はサーバーが計算する (書かない)。
+    tools: [read, get_linked_content, edit_analysis_records, validate_analysis]
+    done_when: 各 cause の S / O / D が記録されたか、空欄の理由が要確認として記録されている
+  - no: 5
+    title: 最適化 (処置と再評価)
+    instruction: |
+      read_analysis で AP=H / M の cause を確認し、action (予防 / 検出、担当、期限) を作る。
+      処置後の想定評価は根拠がある場合のみ revisedSeverity / revisedOccurrence / revisedDetection に書く。
+    tools: [read_analysis, edit_analysis_records]
+    done_when: AP=H の全 cause に action が接続されている
+  - no: 6
+    title: 要求 / 検証への接続
+    instruction: |
+      設計変更が必要な処置は create_requirement で要求化し、action の elementIds に入れる。
+      検証手段 (テストケース) がある場合は link op の verified_by でトレースする。
+    tools: [create_requirement, create_relationship, search_item, edit_analysis_records]
+    done_when: 要求化した処置の要求 ID が action に記録されている
+  - no: 7
+    title: 検証と報告
+    instruction: |
+      validate_analysis で未評価・未対策を確認する。報告では、故障モード数、AP=H / M の件数と処置状況、
+      空欄の評価値と理由、要求化した項目を示す。
+    tools: [validate_analysis]
+    done_when: validate_analysis の検証結果と AP=H の件数が報告に含まれている
+strict: true
+allow_skip: false
+max_steps_per_stage: 14

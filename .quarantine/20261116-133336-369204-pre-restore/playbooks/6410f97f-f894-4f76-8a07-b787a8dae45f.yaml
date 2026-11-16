@@ -1,0 +1,33 @@
+id: ""
+name: レポート修正
+slash_command: report-revise
+description: |
+  既存のレポートを依頼に沿って直す手順。依頼の範囲だけを変え、検証結果が悪化していないことを確かめる。
+use_when: |
+  ユーザーが開いているレポートや既存のレポートについて「この章を直して」「表を追加して」「あふれを直して」等を依頼したとき。
+steps:
+  - no: 1
+    title: 現状の把握
+    instruction: |
+      文脈の「対象のレポート」か list_reports で対象を決め、read_report (outline) と validate_report で現状を読む。
+      変える部品のページだけ detail="full" + pageIds で読む。
+    tools: [list_reports, read_report, validate_report]
+    done_when: 変更対象のページ・部品の ID と現状の検証件数が分かっている
+  - no: 2
+    title: 修正
+    instruction: |
+      依頼の範囲だけを apply_report_ops で変える。新しい問い合わせは preview_report_binding で確かめてから置く。
+      本文の要素名・値はモデル参照 ({{ref:…}}) で書く。
+    tools: [apply_report_ops, preview_report_binding, read, search_item]
+    done_when: 依頼された変更が全て適用され、変えた部品の ID が分かっている
+  - no: 3
+    title: 確認と報告
+    instruction: |
+      返った issueDelta と validate_report でエラーが増えていないこと (0 件) を確かめ、変えたページは render_report_page で見る。
+      書式を変えたときは review_report_design (pageIds) で周りのページと揃っているかを見る。
+      変更内容と残った警告を報告する。
+    tools: [validate_report, review_report_design, render_report_page, apply_report_ops]
+    done_when: validate_report のエラーが0件で、変更内容が報告に含まれている
+strict: true
+allow_skip: false
+max_steps_per_stage: 12
