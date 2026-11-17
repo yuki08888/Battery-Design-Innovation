@@ -18190,6 +18190,36 @@
       }
     },
     {
+      "id": "29f41d3d-b7e8-47de-bca8-4460974d3f70",
+      "itemType": "asset",
+      "name": "MOD間バスバ(幅30×厚み2.5mm) 4ノード熱伝達・形状構想図",
+      "parentId": "df9478c1-dbec-4e7f-a168-b1ca2be8ede5",
+      "order": 1,
+      "description": "AI 生成イメージ。プロンプト: Isometric engineering concept illustration of an automotive high-voltage battery inter-module busbar made of copper, with increased thickness of 2.5 mm and width of 30 mm. The busbar features a central expansion crank relief bend and dual flat welded terminal ends connecting two battery module terminals. Subtle arrows indicate electric current flow and thermal heat dissipation conduction into the terminal seals, cell body, and cooling plates. Clean modern CAD engineering diagram style, technical drawing aesthetic, clear perspective view, no text labels.",
+      "assetKind": "image",
+      "sha1": "15923dea4133c0e77556d1cc5c15aec51592d664",
+      "ext": "png",
+      "mimeType": "image/png",
+      "width": 1536,
+      "height": 1024,
+      "byteSize": 1160619,
+      "createdAt": "2026-11-17T08:43:39.239628",
+      "updatedAt": "2026-11-17T08:43:45.680041",
+      "aiStatus": "done",
+      "origin": {
+        "kind": "ai_generated",
+        "prompt": "Isometric engineering concept illustration of an automotive high-voltage battery inter-module busbar made of copper, with increased thickness of 2.5 mm and width of 30 mm. The busbar features a central expansion crank relief bend and dual flat welded terminal ends connecting two battery module terminals. Subtle arrows indicate electric current flow and thermal heat dissipation conduction into the terminal seals, cell body, and cooling plates. Clean modern CAD engineering diagram style, technical drawing aesthetic, clear perspective view, no text labels.",
+        "style": "isometric",
+        "chatId": "6005b7c8-7d74-4e1c-b742-78cef30da13d",
+        "messageId": "ca20211b-be5f-499b-b0f4-219f2e702e03",
+        "conceptIds": [
+          "proposed-thick-busbar",
+          "current-busbar-geometry",
+          "thermal-verification-4node"
+        ]
+      }
+    },
+    {
       "id": "ee065ae3-75c8-4f03-b7d2-52109ee04e9e",
       "itemType": "asset",
       "name": "耐熱絶縁カバー設計標準書 p.1",
