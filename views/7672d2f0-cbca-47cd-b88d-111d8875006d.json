@@ -7,8 +7,8 @@
             "class_name": "DiagramNode",
             "id": "0069e233-b818-4ab6-8abc-7149faa4e6a0",
             "element_id": "0069e233-b818-4ab6-8abc-7149faa4e6a0",
-            "x": -1134.4393384393375,
-            "y": 1596.121989121989,
+            "x": -509.4393384393374,
+            "y": 2015.5386557886554,
             "width": 1742.75,
             "height": 1779.4595959595963,
             "inner_nodes": [
@@ -1160,20 +1160,6 @@
         },
         {
             "class_name": "DiagramEdge",
-            "element_id": "ead51c2e-52fb-436b-adb8-568986e74378",
-            "routing": "orthogonal",
-            "control_points": [
-                null,
-                {
-                    "x": -18,
-                    "y": 0,
-                    "o": "v"
-                },
-                null
-            ]
-        },
-        {
-            "class_name": "DiagramEdge",
             "element_id": "1ff69082-0482-461e-a81a-ed457fdc8e13",
             "routing": "bezier"
         },
@@ -1435,16 +1421,11 @@
             "class_name": "DiagramEdge",
             "element_id": "0c8cf0ed-8b55-4910-8a6b-e9a45c9c5614",
             "routing": "orthogonal"
-        },
-        {
-            "class_name": "DiagramEdge",
-            "element_id": "76522239-6d31-4238-8e98-8e34a6714f5c",
-            "routing": "orthogonal"
         }
     ],
-    "scale": 0.30000000000000004,
-    "offset_x": 430.0566509470925,
-    "offset_y": -395.8050067579478,
+    "scale": 0.7999999999999999,
+    "offset_x": 609.9224977636752,
+    "offset_y": -1688.4323989735744,
     "relationship_type": "containment",
     "visible_relation_types": [
         "composition"

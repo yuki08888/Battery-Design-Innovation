@@ -377,6 +377,48 @@
       "item_type": "file",
       "parent_id": null,
       "order": 53
+    },
+    {
+      "id": "f9b7ceed-0b32-444a-bb95-0028d0d1af53",
+      "name": "モデルからのコード実装",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 54
+    },
+    {
+      "id": "98756007-6e10-4632-9b40-e8f886bba9d5",
+      "name": "既存コードからのモデル化",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 55
+    },
+    {
+      "id": "9aee3736-dfed-49a5-912d-1f9c450dae05",
+      "name": "モデルに照らしたコードレビュー",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 56
+    },
+    {
+      "id": "0a1a2ab0-ba86-4a8f-a2a6-372e54e9bbd7",
+      "name": "モデルとコードの同期確認",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 57
+    },
+    {
+      "id": "cbcd6721-c91a-4317-a724-4e6f70d2f553",
+      "name": "要求の検証テスト作成",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 58
+    },
+    {
+      "id": "1a15de1b-3067-4074-ace0-8d984ed727b1",
+      "name": "画面の見た目の確認と修正",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 59
     }
   ],
   "version": 2,
@@ -384,6 +426,12 @@
     "analysis-review",
     "block-hierarchy",
     "change-impact",
+    "code-implement",
+    "code-reverse",
+    "code-review",
+    "code-sync",
+    "code-test",
+    "code-visual-check",
     "custom-ui",
     "database-query",
     "drbfm-analysis",
@@ -452,7 +500,7 @@
     "functional-flow": {
       "item_id": "efb9d512-4bc7-4861-8424-3f5192c003f4",
       "name": "機能フロー設計",
-      "content_hash": "e6d7d03e6c4db7fbfa67213a7f14fb3b14eefdb9face9a0ef206d8fffb215dcd",
+      "content_hash": "901d760b438f0bb4bfac0b9ecca8179c1516944d0a52a56e304e62a9a8f5bb07",
       "managed": true
     },
     "hazard-safety": {
@@ -464,13 +512,13 @@
     "ibd-expand": {
       "item_id": "3421e80d-4dab-482a-8ea8-f62435571a8b",
       "name": "内部構造展開（IBD）",
-      "content_hash": "42ea52c3498c165c3a74cad2c4df5279fa59e99f1bcd23241c8608f98ae7d1cc",
+      "content_hash": "5913085e7b9d0df7041782b19f00a1d2611d5e62f6fd05817a165e9b9298b275",
       "managed": true
     },
     "interface-definition": {
       "item_id": "1f117755-b026-4785-a20b-fa451c456efb",
       "name": "インターフェース定義",
-      "content_hash": "ae0130f54b749e8e673d17fb50a3a84351a2907afe21cb4397f7cd5d35302c54",
+      "content_hash": "90691fa720c7c61283f2dde79bb5943cb179555e8409f220eb6582138db6d82b",
       "managed": true
     },
     "model-review": {
@@ -482,7 +530,7 @@
     "parametric-analysis": {
       "item_id": "17f1e500-5022-4e1a-8e13-7199f9a49432",
       "name": "パラメトリック制約定義",
-      "content_hash": "4b702e642b474d632ea93200fb66aaf7d4182adb5009a34c0cd4008f9112a337",
+      "content_hash": "9181e115d519fc9283d6e62c1cb43b3bf25ebe9937cdd7848c0a66220cd2a4dc",
       "managed": true
     },
     "req-tree": {
@@ -590,13 +638,13 @@
     "media-explanation": {
       "item_id": "f2c316ec-9eed-4fad-976c-529b588145da",
       "name": "非専門家向けの説明ビジュアル",
-      "content_hash": "e95291e2f9875bd9fd0de826441ea8f8dbb05ba9ec9fbd2ed3ef8c3e7e8efccc",
+      "content_hash": "b4af542e2c9bdaeec89060fa3e6d85570fe54b0bd3f54b13a044437e12f2b3b3",
       "managed": true
     },
     "media-generation": {
       "item_id": "6a9c1a8e-7b90-4d3f-81de-ac4341c261db",
       "name": "トレース根拠に基づくメディア生成",
-      "content_hash": "820fb67f7cd8923da36f33362eef5709857789dfac29c6954ce397be7674c3c6",
+      "content_hash": "e09815de25c368d08d11a4045c77d6f6e2377bf3894cb5674ff4ffb085eaf065",
       "managed": true
     },
     "media-manual": {
@@ -614,7 +662,7 @@
     "media-report": {
       "item_id": "25a1afaa-734c-406c-8a26-4cde0b14b2d7",
       "name": "報告書用の正確な図",
-      "content_hash": "9ebbe5f76bb9b5a3de38da1c7136d633b6575489a03122192d1b75ecf021acd5",
+      "content_hash": "21705635b03724386eddcd218273079b62bcb9d840387fb48bae2328cfca9198",
       "managed": true
     },
     "media-review": {
@@ -759,6 +807,42 @@
       "item_id": "d9aaa214-7bb5-4c58-af11-4477bcb94fa6",
       "name": "トレーサビリティ・カバレッジUIの作成",
       "content_hash": "b79aa1a803b4fb6f81a930e3b07cf9c88b294dc302fb0104b065c16f2fc0a752",
+      "managed": true
+    },
+    "code-implement": {
+      "item_id": "f9b7ceed-0b32-444a-bb95-0028d0d1af53",
+      "name": "モデルからのコード実装",
+      "content_hash": "4e988083a2d83189de2f063aa1f2a9672f3148530942aee3a1767f0ac429e1b2",
+      "managed": true
+    },
+    "code-reverse": {
+      "item_id": "98756007-6e10-4632-9b40-e8f886bba9d5",
+      "name": "既存コードからのモデル化",
+      "content_hash": "43c2e271e707cac55c83e2c02080e49304096b1da828dc205613afbe1dbbfa28",
+      "managed": true
+    },
+    "code-review": {
+      "item_id": "9aee3736-dfed-49a5-912d-1f9c450dae05",
+      "name": "モデルに照らしたコードレビュー",
+      "content_hash": "c844df493fadbced0a0b415a992d2e9808fbf54de5dd42e71113bfe4e8e6c467",
+      "managed": true
+    },
+    "code-sync": {
+      "item_id": "0a1a2ab0-ba86-4a8f-a2a6-372e54e9bbd7",
+      "name": "モデルとコードの同期確認",
+      "content_hash": "9a1203134dd9889c7d9e1fc7ca5423fe027c82b16233b420c5cb948c106727a4",
+      "managed": true
+    },
+    "code-test": {
+      "item_id": "cbcd6721-c91a-4317-a724-4e6f70d2f553",
+      "name": "要求の検証テスト作成",
+      "content_hash": "949c9cc5cc66f1f3d26590f43ce3b94c43d297a731c5b95e38afb8c99673d5e8",
+      "managed": true
+    },
+    "code-visual-check": {
+      "item_id": "1a15de1b-3067-4074-ace0-8d984ed727b1",
+      "name": "画面の見た目の確認と修正",
+      "content_hash": "5c8d0b2d099acfc2166a3157826bd4daaf48ce65d5cda06a5d7da6c213ef4a21",
       "managed": true
     }
   }
