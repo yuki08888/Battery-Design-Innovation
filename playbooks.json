@@ -379,42 +379,42 @@
       "order": 53
     },
     {
-      "id": "423b4e64-6521-4568-a0f0-16e505df0ad0",
+      "id": "f9b7ceed-0b32-444a-bb95-0028d0d1af53",
       "name": "モデルからのコード実装",
       "item_type": "file",
       "parent_id": null,
       "order": 54
     },
     {
-      "id": "6ae57055-6134-471c-a730-8a0a9180b7ff",
+      "id": "98756007-6e10-4632-9b40-e8f886bba9d5",
       "name": "既存コードからのモデル化",
       "item_type": "file",
       "parent_id": null,
       "order": 55
     },
     {
-      "id": "b6096e5a-1181-423b-8609-47664d9192d8",
+      "id": "9aee3736-dfed-49a5-912d-1f9c450dae05",
       "name": "モデルに照らしたコードレビュー",
       "item_type": "file",
       "parent_id": null,
       "order": 56
     },
     {
-      "id": "c25475f3-0395-4e7a-9856-9fe659a56024",
+      "id": "0a1a2ab0-ba86-4a8f-a2a6-372e54e9bbd7",
       "name": "モデルとコードの同期確認",
       "item_type": "file",
       "parent_id": null,
       "order": 57
     },
     {
-      "id": "e09387b2-1766-406e-ad99-126d2f4d68c7",
+      "id": "cbcd6721-c91a-4317-a724-4e6f70d2f553",
       "name": "要求の検証テスト作成",
       "item_type": "file",
       "parent_id": null,
       "order": 58
     },
     {
-      "id": "37c20b64-80e5-4b14-a8f2-6fd35c654cda",
+      "id": "1a15de1b-3067-4074-ace0-8d984ed727b1",
       "name": "画面の見た目の確認と修正",
       "item_type": "file",
       "parent_id": null,
@@ -810,37 +810,37 @@
       "managed": true
     },
     "code-implement": {
-      "item_id": "423b4e64-6521-4568-a0f0-16e505df0ad0",
+      "item_id": "f9b7ceed-0b32-444a-bb95-0028d0d1af53",
       "name": "モデルからのコード実装",
       "content_hash": "4e988083a2d83189de2f063aa1f2a9672f3148530942aee3a1767f0ac429e1b2",
       "managed": true
     },
     "code-reverse": {
-      "item_id": "6ae57055-6134-471c-a730-8a0a9180b7ff",
+      "item_id": "98756007-6e10-4632-9b40-e8f886bba9d5",
       "name": "既存コードからのモデル化",
       "content_hash": "43c2e271e707cac55c83e2c02080e49304096b1da828dc205613afbe1dbbfa28",
       "managed": true
     },
     "code-review": {
-      "item_id": "b6096e5a-1181-423b-8609-47664d9192d8",
+      "item_id": "9aee3736-dfed-49a5-912d-1f9c450dae05",
       "name": "モデルに照らしたコードレビュー",
       "content_hash": "c844df493fadbced0a0b415a992d2e9808fbf54de5dd42e71113bfe4e8e6c467",
       "managed": true
     },
     "code-sync": {
-      "item_id": "c25475f3-0395-4e7a-9856-9fe659a56024",
+      "item_id": "0a1a2ab0-ba86-4a8f-a2a6-372e54e9bbd7",
       "name": "モデルとコードの同期確認",
       "content_hash": "9a1203134dd9889c7d9e1fc7ca5423fe027c82b16233b420c5cb948c106727a4",
       "managed": true
     },
     "code-test": {
-      "item_id": "e09387b2-1766-406e-ad99-126d2f4d68c7",
+      "item_id": "cbcd6721-c91a-4317-a724-4e6f70d2f553",
       "name": "要求の検証テスト作成",
       "content_hash": "949c9cc5cc66f1f3d26590f43ce3b94c43d297a731c5b95e38afb8c99673d5e8",
       "managed": true
     },
     "code-visual-check": {
-      "item_id": "37c20b64-80e5-4b14-a8f2-6fd35c654cda",
+      "item_id": "1a15de1b-3067-4074-ace0-8d984ed727b1",
       "name": "画面の見た目の確認と修正",
       "content_hash": "5c8d0b2d099acfc2166a3157826bd4daaf48ce65d5cda06a5d7da6c213ef4a21",
       "managed": true

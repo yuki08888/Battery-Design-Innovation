@@ -1,3 +1,93 @@
+# >>> system-factory managed (do not edit between markers) >>>
+# このブロックはアプリの「.gitignore 設定」UI が管理します。
+# 手動編集はこのマーカーの外側に記述してください。
+
+# --- すべて無視（既定で除外） ---
+*
+
+# --- ディレクトリは中をたどれるよう許可 ---
+!*/
+
+# --- 常に含める: Git の管理メタファイル (変更不可) ---
+!.gitignore
+!.gitattributes
+
+# --- 含める: モデル (models) ---
+!model.json
+!model.jsonl
+!/models/
+!/models/**
+!stereotypes.json
+
+# --- 含める: ビュー (views) ---
+!views.json
+!/views/
+!/views/**
+
+# --- 含める: ドキュメント (documents) ---
+!document.json
+!external_links.json
+!/documents/
+!/documents/**
+
+# --- 含める: オントロジー (ontologies) ---
+!ontology.json
+!/ontologies/
+!/ontologies/**
+
+# --- 含める: データベース (databases) ---
+!databases.json
+!database_folders.json
+!/databases/
+!/databases/**
+
+# --- 明示的に除外（選択 OFF のカテゴリ） ---
+apps/
+workflow.json
+workflows/
+analyses.json
+analyses/
+agents.json
+agents/
+playbooks.json
+playbooks/
+scripts.json
+script_envs.json
+scripts/
+assets/
+env_var.json
+
+# --- 常に除外（変更不可） ---
+.backup/
+chat_history/
+project_config.json
+git-remote.json
+models/manifest.json
+models/*.partition
+vector_store.db
+vector_store.db-wal
+vector_store.db-shm
+vector_index_*.json
+ontology_vector_index.json
+ontology_terminology_index.json
+ontology_element_index.json
+ontologies/*.orphan
+ontologies/*.orphan[0-9]*
+app_doc_vector_index.json
+.merge_proposals/
+.naming_proposals/
+.description_proposals/
+.requirement_proposals/
+.restructure_proposals/
+.scripts/
+*.corrupt-backup/
+*.corrupt-*
+.ontology-migration-backup-*/
+apps/**/.build/
+apps/**/.preview/
+apps/**/app_build_log.txt
+# <<< system-factory managed <<<
+
 # >>> system-factory internal artifacts (do not edit between markers) >>>
 # アプリが自動生成する一時データ・退避フォルダ（コミット対象外）。
 .backup/
