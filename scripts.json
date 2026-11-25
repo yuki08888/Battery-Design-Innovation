@@ -1,5 +1,13 @@
 {
-  "items": [],
+  "items": [
+    {
+      "id": "e8b37576-7852-4b03-9de7-7831debed2ab",
+      "name": "inspect_app",
+      "item_type": "file",
+      "parent_id": null,
+      "order": 0
+    }
+  ],
   "hooks": {},
   "hook_options": {}
 }

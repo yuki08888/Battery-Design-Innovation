@@ -640,11 +640,6 @@
         },
         {
             "class_name": "DiagramEdge",
-            "element_id": "ead51c2e-52fb-436b-adb8-568986e74378",
-            "routing": "orthogonal"
-        },
-        {
-            "class_name": "DiagramEdge",
             "element_id": "e397f32e-5456-4cf5-a64a-6da8b90f4e68",
             "routing": "bezier"
         },

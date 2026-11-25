@@ -209,12 +209,31 @@
             "parent_id": "",
             "icon_key": "ShareOutlined",
             "icon_color": null
+        },
+        {
+            "id": "0ee85fdf-dc87-458a-a603-9ac337ada6f4",
+            "name": "BBM要求仕様書_241209改訂 — 要求図",
+            "parent_id": "0284a020-a1e4-4b58-bb2f-fa4d28036f9e",
+            "icon_key": "HubOutlined",
+            "icon_color": null
+        },
+        {
+            "id": "31b31a9b-ffbc-42e6-af92-ff871b146635",
+            "name": "要求一覧_CTR-IC-012以降_項目形式.pdf",
+            "parent_id": "",
+            "icon_key": "DescriptionOutlined",
+            "icon_color": null
         }
     ],
     "current_tab_ids": [
-        "7672d2f0-cbca-47cd-b88d-111d8875006d"
+        "7672d2f0-cbca-47cd-b88d-111d8875006d",
+        "f0d34f59-afc5-493e-b470-6ea9f849ea8e",
+        "9ebbce52-406e-4fcb-a972-c91d7f8c08cb",
+        "31b31a9b-ffbc-42e6-af92-ff871b146635",
+        "cb329995-8041-480c-9e68-eee030732253",
+        "9751a2b1-7e7d-4b1a-93bc-66f2d9e859fb"
     ],
-    "current_view_id": "7672d2f0-cbca-47cd-b88d-111d8875006d",
+    "current_view_id": "f0d34f59-afc5-493e-b470-6ea9f849ea8e",
     "split_tab_ids": [],
     "split_view_id": null,
     "split_ratio": 50.0,
